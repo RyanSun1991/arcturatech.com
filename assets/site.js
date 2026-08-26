@@ -25,6 +25,13 @@
         toggle.setAttribute("aria-expanded", "false");
       });
     });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && document.body.classList.contains("menu-open")) {
+        document.body.classList.remove("menu-open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.focus();
+      }
+    });
   }
 
   /* ---------- wordmark: measure real path lengths for draw-in ---------- */
