@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arctura Technologies — Insights</title>
+    <link>https://arcturatech.com/insights/</link>
+    <description>Notes from Arctura Technologies Inc. on health data, on-device AI, privacy engineering, and building consumer software in Canada.</description>
+    <language>en</language>
+    <copyright>© 2026 Arctura Technologies Inc.</copyright>
+    <lastBuildDate>Sat, 19 Sep 2026 09:00:00 -0400</lastBuildDate>
+    <atom:link href="https://arcturatech.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Readiness scores are here. A health record's job is to stay legible.</title>
+      <link>https://arcturatech.com/insights/readiness-scores-and-legible-health-records.html</link>
+      <guid isPermaLink="true">https://arcturatech.com/insights/readiness-scores-and-legible-health-records.html</guid>
+      <pubDate>Sat, 19 Sep 2026 09:00:00 -0400</pubDate>
+      <description>Apple's new watches sample heart rate every five seconds. More signal raises the bar for a personal health record: aggregate on device, explain every score, claim less.</description>
+    </item>
+  </channel>
+</rss>
