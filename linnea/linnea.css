@@ -1,0 +1,363 @@
+/* ============================================================
+   Linnea product pages — /linnea/ (en · zh-Hant · zh-Hans) and /linnea/press.html
+   Built on /assets/styles.css: same tokens, type (Sora), header and footer.
+   The page content follows the reader's colour scheme: dark keeps the site's
+   night palette; light swaps the same tokens inside <main class="lnn">.
+   The site header and footer stay on the night palette in both schemes.
+   ============================================================ */
+
+.lnn {
+  --lnn-quiet: #9AA2B5;          /* small print: 7:1 on the night backgrounds */
+  --lnn-accent-hover: var(--gold);
+  --lnn-tile: rgba(234, 239, 247, 0.06);
+  --lnn-btn-ink: #06231E;
+  --lnn-btn-hover: #45C7B1;
+  display: block;
+  background: var(--bg-0);
+  color: var(--ice);
+}
+
+@media (prefers-color-scheme: light) {
+  .lnn {
+    --bg-0: #FFFFFF;
+    --bg-1: #F4F6FA;
+    --bg-2: #FFFFFF;
+    --ice: #0A1120;
+    --cloud: #0A1120;
+    --silver: #3D4555;
+    --faint: #5A6172;
+    --aurora: #1F7466;            /* 5.6:1 on white — the site teal, deepened for text */
+    --line: rgba(10, 17, 32, 0.10);
+    --line-strong: rgba(10, 17, 32, 0.20);
+    --lnn-quiet: #5A6172;
+    --lnn-accent-hover: #155B50;
+    --lnn-tile: rgba(10, 17, 32, 0.05);
+    --lnn-btn-ink: #FFFFFF;
+    --lnn-btn-hover: #155B50;
+  }
+  .lnn ::selection { background: rgba(31, 116, 102, 0.22); color: #0A1120; }
+  /* the header keeps its night bar over a light page (site.js clears .scrolled at the top) */
+  .lnn-page .site-header {
+    background: rgba(7, 13, 24, 0.92);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border-bottom-color: rgba(234, 239, 247, 0.08);
+  }
+}
+
+.lnn a:hover { color: var(--lnn-accent-hover); }
+.lnn .btn.solid { color: var(--lnn-btn-ink); }
+.lnn .btn.solid:hover { background: var(--lnn-btn-hover); border-color: var(--lnn-btn-hover); color: var(--lnn-btn-ink); }
+
+.lnn :lang(zh) { letter-spacing: 0; }
+:lang(zh-Hans) body, body:lang(zh-Hans) {
+  font-family: "Sora", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+}
+:lang(zh-Hant) body, body:lang(zh-Hant) {
+  font-family: "Sora", -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+}
+
+.lnn-vh {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0; border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------- hero ---------- */
+
+.lnn-hero {
+  padding: calc(var(--nav-h) + 56px) 0 80px;
+  background:
+    radial-gradient(1000px 520px at 82% -12%, rgba(55, 181, 160, 0.13) 0%, rgba(55, 181, 160, 0) 60%),
+    var(--bg-1);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+.lnn-hero .wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 64px;
+  align-items: center;
+}
+
+.lnn-lang {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  margin-bottom: 40px;
+}
+.lnn-lang a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--silver);
+}
+.lnn-lang a:hover { color: var(--cloud); }
+.lnn-lang a[aria-current="page"] { background: var(--lnn-tile); color: var(--cloud); }
+
+.lnn-id { display: flex; align-items: center; gap: 16px; }
+.lnn-id picture, .lnn-id img { flex: none; }
+.lnn-icon {
+  width: 64px; height: 64px;
+  border-radius: 14.3px;
+  box-shadow: 0 0 0 1px var(--line);
+}
+.lnn-id h1 { font-size: 24px; font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; color: var(--cloud); }
+.lnn-id h1 .lnn-desc { display: block; margin-top: 2px; font-size: 14px; font-weight: 600; letter-spacing: 0.02em; color: var(--silver); }
+
+.lnn-slogan {
+  margin-top: 32px;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  color: var(--cloud);
+  text-wrap: balance;
+}
+.lnn-slogan .l, .lnn-end h2 .l { display: block; text-wrap: balance; }
+.lnn-slogan:lang(zh) { line-height: 1.3; letter-spacing: 0.01em; }
+.lnn :lang(zh) h1, .lnn :lang(zh) h2, .lnn-slogan:lang(zh), .lnn-faq summary:lang(zh) { word-break: keep-all; overflow-wrap: anywhere; }
+.lnn-lede { margin-top: 22px; max-width: 34em; font-size: 17px; line-height: 1.7; color: var(--silver); }
+
+.lnn-get { margin-top: 36px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+/* App Store badge: Apple artwork, unaltered; clear space = 1/4 of its height on every side */
+.lnn-badge { display: inline-block; padding: 12px; margin: -12px; border-radius: 16px; }
+.lnn-badge img { height: 48px; width: auto; }
+.lnn-badge:hover { color: inherit; }
+
+.lnn-qr { display: flex; align-items: center; gap: 16px; margin: 0; }
+.lnn-qr .code {
+  position: relative;
+  flex: none;
+  width: 124px; height: 124px;
+  padding: 6px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 1px var(--line);
+}
+.lnn-qr .code .qr { width: 100%; height: 100%; }
+.lnn-qr .code .qr-icon {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 28px; height: 28px;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  box-shadow: 0 0 0 3px #FFFFFF;
+}
+.lnn-qr figcaption { max-width: 13em; font-size: 13.5px; line-height: 1.55; color: var(--silver); }
+
+.lnn-meta { margin-top: 30px; font-size: 13.5px; line-height: 1.7; color: var(--lnn-quiet); }
+.lnn-meta span { white-space: nowrap; }
+.lnn-meta span + span::before { content: "·"; margin: 0 8px; }
+
+.lnn-hero-art { justify-self: center; width: 100%; max-width: 430px; }
+.lnn-hero-art img { width: 100%; height: auto; border-radius: 28px; box-shadow: 0 0 0 1px var(--line); }
+
+/* ---------- sections ---------- */
+
+.lnn-sec { padding: 112px 0; }
+.lnn-sec.tint { background: var(--bg-1); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.lnn-sec h2 { color: var(--cloud); }
+.lnn-sec h2:lang(zh) { letter-spacing: 0.01em; line-height: 1.3; }
+
+.lnn-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.78fr);
+  gap: 80px;
+  align-items: center;
+}
+.lnn-feature.flip .lnn-copy { order: 2; }
+.lnn-copy p { margin-top: 20px; max-width: 34em; font-size: 16.5px; line-height: 1.75; color: var(--silver); }
+.lnn-checks { list-style: none; margin-top: 28px; display: grid; gap: 14px; max-width: 34em; }
+.lnn-checks li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.6; color: var(--cloud); }
+.lnn-checks svg { flex: none; width: 18px; height: 18px; margin-top: 3px; color: var(--aurora); }
+
+.lnn-shot { justify-self: center; width: 100%; max-width: 360px; }
+.lnn-shot img { width: 100%; height: auto; border-radius: 24px; box-shadow: 0 0 0 1px var(--line); }
+
+.lnn-watch-grid {
+  list-style: none;
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 18px;
+}
+.lnn-watch-grid img {
+  width: 100%; height: auto;
+  border-radius: 22% / 18%;
+  background: #000000;
+  box-shadow: 0 0 0 1px var(--line-strong);
+}
+
+/* privacy */
+.lnn-privacy { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 72px; align-items: start; }
+.lnn-privacy .lnn-copy p { max-width: 30em; }
+.lnn-facts {
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+  overflow: hidden;
+}
+.lnn-facts li {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px; line-height: 1.6; color: var(--cloud);
+}
+.lnn-facts li:last-child { border-bottom: none; }
+.lnn-facts svg { flex: none; width: 18px; height: 18px; margin-top: 3px; color: var(--aurora); }
+.lnn-textlinks { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: 14.5px; font-weight: 600; }
+
+/* FAQ */
+.lnn-faq { margin-top: 44px; max-width: 840px; border-top: 1px solid var(--line); }
+.lnn-faq details { border-bottom: 1px solid var(--line); }
+.lnn-faq summary {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  padding: 22px 48px 22px 0;
+  font-size: 17px; font-weight: 600; line-height: 1.5; color: var(--cloud);
+}
+.lnn-faq summary::-webkit-details-marker { display: none; }
+.lnn-faq summary::after {
+  content: "";
+  position: absolute;
+  right: 8px; top: 50%;
+  width: 9px; height: 9px;
+  border-right: 2px solid var(--silver);
+  border-bottom: 2px solid var(--silver);
+  transform: translateY(-75%) rotate(45deg);
+  transition: transform 0.25s var(--ease);
+}
+.lnn-faq details[open] summary::after { transform: translateY(-25%) rotate(-135deg); }
+.lnn-faq summary:hover { color: var(--aurora); }
+.lnn-faq details p { padding: 0 48px 26px 0; font-size: 15.5px; line-height: 1.75; color: var(--silver); }
+
+/* closing band */
+.lnn-end { text-align: center; }
+.lnn-end h2 { max-width: 20em; margin: 0 auto; }
+.lnn-end .btn { margin-top: 32px; }
+.lnn-links {
+  margin: 44px auto 0;
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 10px 26px;
+  font-size: 14px; font-weight: 600;
+}
+
+.lnn-legal { padding: 40px 0 48px; background: var(--bg-0); }
+.lnn-legal p { max-width: 860px; font-size: 12.5px; line-height: 1.7; color: var(--lnn-quiet); }
+.lnn-legal p + p { margin-top: 8px; }
+/* the shared footer's small print is #5A6172 on #070D18 (3.1:1); lift it to the site's silver on these pages (6.2:1) */
+.lnn-page .foot-bottom { color: var(--silver); }
+
+/* ---------- press kit ---------- */
+
+.lnn-press-hero .wrap { display: block; }
+.lnn-press-hero .crumb {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin-bottom: 22px;
+  font-size: 11.5px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase;
+}
+.lnn-press-hero .crumb::before { content: ""; width: 22px; height: 2px; background: var(--aurora); opacity: 0.7; }
+.lnn-press-hero h1 { font-size: clamp(34px, 5vw, 54px); font-weight: 700; line-height: 1.12; letter-spacing: -0.02em; color: var(--cloud); }
+.lnn-press-hero .lnn-lede { max-width: 40em; }
+.lnn-press-hero .lnn-get { margin-top: 32px; }
+
+.lnn-about { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 64px; align-items: start; }
+.lnn-about .lnn-copy p:first-of-type { margin-top: 24px; }
+.lnn-quote { font-size: 22px; font-weight: 700; line-height: 1.4; color: var(--cloud); }
+.lnn-quote span { display: block; font-size: 16px; font-weight: 600; color: var(--silver); }
+
+.lnn-sheet {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: minmax(150px, 220px) minmax(0, 1fr);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+  overflow: hidden;
+}
+.lnn-sheet dt, .lnn-sheet dd { padding: 18px 24px; border-bottom: 1px solid var(--line); }
+.lnn-sheet dt { font-size: 13.5px; font-weight: 600; letter-spacing: 0.02em; color: var(--lnn-quiet); }
+.lnn-sheet dd { font-size: 15px; line-height: 1.65; color: var(--cloud); overflow-wrap: anywhere; }
+.lnn-sheet dt:last-of-type, .lnn-sheet dd:last-of-type { border-bottom: none; }
+.lnn-sheet ul { list-style: none; display: grid; gap: 4px; }
+.lnn-sheet .loc { display: inline-block; min-width: 9.5em; color: var(--silver); font-size: 13.5px; }
+
+.lnn-dl-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.lnn-dl {
+  display: flex; flex-direction: column; gap: 14px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+}
+.lnn-dl.wide { grid-column: span 3; }
+.lnn-dl.half { grid-column: span 2; }
+.lnn-dl .prev {
+  display: grid; place-items: center;
+  min-height: 190px;
+  padding: 24px;
+  border-radius: 12px;
+  background: var(--lnn-tile);
+}
+.lnn-dl .prev.on-light { background: #F4F6FA; }
+.lnn-dl .prev.on-dark { background: #0A1120; }
+.lnn-dl .prev img.logo { width: min(100%, 300px); height: auto; }
+.lnn-dl .prev img.icon { width: 120px; height: 120px; border-radius: 26.9px; }
+.lnn-dl h3 { font-size: 16.5px; font-weight: 700; color: var(--cloud); }
+.lnn-dl p { font-size: 14px; line-height: 1.65; color: var(--silver); }
+.lnn-dl .files { display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; font-weight: 600; }
+.lnn-thumbs { list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; }
+.lnn-thumbs img { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 0 0 1px var(--line); }
+.lnn-keyart img { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 0 0 1px var(--line); }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 1024px) {
+  .lnn-hero .wrap { grid-template-columns: 1fr; gap: 56px; }
+  .lnn-hero-art { max-width: 400px; }
+  .lnn-feature, .lnn-privacy, .lnn-about { grid-template-columns: 1fr; gap: 48px; }
+  .lnn-feature.flip .lnn-copy { order: 0; }
+  .lnn-shot { max-width: 340px; }
+  .lnn-watch-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lnn-dl-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lnn-dl.wide, .lnn-dl.half { grid-column: span 2; }
+}
+
+@media (max-width: 760px) {
+  .lnn-hero { padding: calc(var(--nav-h) + 36px) 0 64px; }
+  .lnn-lang { margin-bottom: 32px; }
+  .lnn-slogan { margin-top: 26px; }
+  .lnn-lede { font-size: 16px; }
+  .lnn-qr { display: none; }
+  .lnn-sec { padding: 80px 0; }
+  .lnn-copy p { font-size: 16px; }
+  .lnn-shot { max-width: 300px; }
+  .lnn-watch-grid { gap: 12px; margin-top: 40px; }
+  .lnn-faq summary { font-size: 16px; padding-right: 40px; }
+  .lnn-faq details p { padding-right: 0; }
+  .lnn-sheet { grid-template-columns: 1fr; }
+  .lnn-sheet dt { padding-bottom: 0; border-bottom: none; }
+  .lnn-sheet dd { padding-top: 6px; }
+  .lnn-sheet .loc { display: block; min-width: 0; }
+  .lnn-dl-grid { grid-template-columns: 1fr; }
+  .lnn-dl.wide, .lnn-dl.half { grid-column: auto; }
+  .lnn-thumbs { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lnn-faq summary::after { transition: none; }
+}
