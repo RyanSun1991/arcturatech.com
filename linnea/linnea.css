@@ -46,6 +46,7 @@
 }
 
 .lnn a:hover { color: var(--lnn-accent-hover); }
+.lnn :is(p, li, dd) a:not(.btn):not(.lnn-badge) { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .lnn .btn.solid { color: var(--lnn-btn-ink); }
 .lnn .btn.solid:hover { background: var(--lnn-btn-hover); border-color: var(--lnn-btn-hover); color: var(--lnn-btn-ink); }
 
@@ -157,9 +158,9 @@
 }
 .lnn-qr figcaption { max-width: 13em; font-size: 13.5px; line-height: 1.55; color: var(--silver); }
 
-.lnn-meta { margin-top: 30px; font-size: 13.5px; line-height: 1.7; color: var(--lnn-quiet); }
-.lnn-meta span { white-space: nowrap; }
-.lnn-meta span + span::before { content: "·"; margin: 0 8px; }
+.lnn-meta { list-style: none; margin-top: 30px; display: grid; gap: 4px; font-size: 13.5px; line-height: 1.6; color: var(--lnn-quiet); }
+.lnn-meta li { display: flex; gap: 10px; align-items: baseline; }
+.lnn-meta li::before { content: ""; flex: none; width: 4px; height: 4px; border-radius: 50%; background: currentColor; transform: translateY(-3px); }
 
 .lnn-hero-art { justify-self: center; width: 100%; max-width: 430px; }
 .lnn-hero-art img { width: 100%; height: auto; border-radius: 28px; box-shadow: 0 0 0 1px var(--line); }
