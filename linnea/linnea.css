@@ -362,3 +362,107 @@
 @media (prefers-reduced-motion: reduce) {
   .lnn-faq summary::after { transition: none; }
 }
+
+/* ---------- strengths: measured facts (F-1533, /linnea/strengths*.html; .lnn-draft marks an unpublished review copy) ---------- */
+
+/* The language switch above the crumb sits on its own line (the crumb is inline-flex too). */
+.lnn-press-hero .lnn-lang { display: flex; width: fit-content; margin-bottom: 28px; }
+
+.lnn-draft { padding: calc(var(--nav-h) + 16px) 0 0; background: var(--bg-1); }
+.lnn-draft p {
+  max-width: 860px;
+  padding: 14px 18px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  font-size: 13.5px; line-height: 1.6; color: var(--silver);
+}
+.lnn-draft strong { color: var(--cloud); }
+.lnn-draft + .lnn-hero { padding-top: 48px; }
+
+.lnn-stats {
+  list-style: none;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+/* Four facts (food coverage since 2.6): two by two on wide screens, one column on phones. */
+.lnn-stats.n4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.lnn-stat {
+  padding: 26px 24px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+}
+.lnn-stat .num {
+  display: block;
+  font-size: clamp(36px, 4.2vw, 50px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--cloud);
+  font-variant-numeric: tabular-nums;
+}
+.lnn-stat .cap { display: block; margin-top: 12px; font-size: 15px; line-height: 1.6; color: var(--silver); }
+
+.lnn-method { margin-top: 28px; max-width: 860px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.lnn-method summary {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 48px 18px 0;
+  font-size: 15.5px; font-weight: 600; line-height: 1.5; color: var(--cloud);
+}
+.lnn-method summary::-webkit-details-marker { display: none; }
+.lnn-method summary::after {
+  content: "";
+  position: absolute;
+  right: 8px; top: 50%;
+  width: 8px; height: 8px;
+  border-right: 2px solid var(--silver);
+  border-bottom: 2px solid var(--silver);
+  transform: translateY(-75%) rotate(45deg);
+  transition: transform 0.25s var(--ease);
+}
+.lnn-method[open] summary::after { transform: translateY(-25%) rotate(-135deg); }
+.lnn-method summary:hover { color: var(--aurora); }
+.lnn-method-body { display: grid; gap: 12px; padding: 0 48px 24px 0; }
+.lnn-method-body p { font-size: 14.5px; line-height: 1.75; color: var(--silver); }
+.lnn-method-body .when { color: var(--lnn-quiet); font-size: 13.5px; }
+
+.lnn-table-wrap {
+  margin-top: 36px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-2);
+}
+.lnn-table-wrap + .lnn-table-wrap { margin-top: 24px; }
+.lnn-table-wrap:focus-visible { outline: 2px solid var(--aurora); outline-offset: 2px; }
+.lnn-compare { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 14px; line-height: 1.5; color: var(--cloud); }
+.lnn-compare th, .lnn-compare td { padding: 12px 18px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+.lnn-compare thead th { font-size: 12.5px; font-weight: 600; letter-spacing: 0.02em; color: var(--lnn-quiet); }
+.lnn-compare tbody th { font-weight: 600; white-space: nowrap; }
+.lnn-compare .n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.lnn-compare tr.me { background: var(--lnn-tile); }
+.lnn-compare tr.me th, .lnn-compare tr.me td { font-weight: 700; }
+.lnn-compare tbody tr:last-child th, .lnn-compare tbody tr:last-child td { border-bottom: none; }
+.lnn-compare td a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.lnn-compare caption {
+  caption-side: bottom;
+  padding: 14px 18px 16px;
+  border-top: 1px solid var(--line);
+  text-align: left;
+  font-size: 12.5px; line-height: 1.6; color: var(--lnn-quiet);
+}
+
+@media (max-width: 1024px) {
+  .lnn-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .lnn-stats, .lnn-stats.n4 { grid-template-columns: 1fr; }
+  .lnn-method-body { padding-right: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lnn-method summary::after { transition: none; }
+}
