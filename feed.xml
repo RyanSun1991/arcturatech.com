@@ -6,8 +6,15 @@
     <description>Notes from Arctura Technologies Inc. on health data, on-device AI, privacy engineering, and building consumer software in Canada.</description>
     <language>en</language>
     <copyright>© 2026 Arctura Technologies Inc.</copyright>
-    <lastBuildDate>Mon, 26 Oct 2026 09:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 09:00:00 -0400</lastBuildDate>
     <atom:link href="https://arcturatech.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>A family menu needs everyone's tastes. Here is exactly what Linnea 2.8 took out of end-to-end encryption.</title>
+      <link>https://arcturatech.com/insights/family-menu-end-to-end-encryption-boundary.html</link>
+      <guid isPermaLink="true">https://arcturatech.com/insights/family-menu-end-to-end-encryption-boundary.html</guid>
+      <pubDate>Wed, 28 Oct 2026 09:00:00 -0400</pubDate>
+      <description>Linnea 2.8 adds a shared grocery list and a family menu. Privacy policy 3.2 names the one thing that is not end-to-end encrypted: the tastes a family plans around.</description>
+    </item>
     <item>
       <title>Canada now has a Children's Privacy Code. Here is what Linnea does with a child's health data.</title>
       <link>https://arcturatech.com/insights/childrens-privacy-code-family-health-records.html</link>
