@@ -413,21 +413,10 @@ h2 {
 }
 .feature-list li svg { width: 18px; height: 18px; flex: none; margin-top: 2px; }
 .product-actions { margin-top: 44px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-.appstore-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  border: 1px solid var(--line-strong);
-  border-radius: 12px;
-  padding: 10px 18px;
-  color: var(--ice);
-  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease);
-}
-.appstore-badge:hover { border-color: var(--aurora); color: var(--ice); transform: translateY(-1px); }
-.appstore-badge svg { width: 22px; height: 22px; }
-.appstore-badge .t { display: flex; flex-direction: column; line-height: 1.25; }
-.appstore-badge .t small { font-size: 10px; color: var(--silver); letter-spacing: 0.04em; }
-.appstore-badge .t strong { font-size: 14.5px; font-weight: 600; }
+/* Linnea store badges: Apple's and Google's artwork, unaltered, both 48 px high; clear space = 1/4 of the height */
+.store-badges { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
+.store-badge { display: inline-block; padding: 12px; margin: -12px; border-radius: 16px; }
+.store-badge img { display: block; height: 48px; width: auto; }
 
 .product-visual {
   position: relative;
