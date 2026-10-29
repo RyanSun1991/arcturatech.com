@@ -132,10 +132,15 @@
 .lnn-lede { margin-top: 22px; max-width: 34em; font-size: 17px; line-height: 1.7; color: var(--silver); }
 
 .lnn-get { margin-top: 36px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
-/* App Store badge: Apple artwork, unaltered; clear space = 1/4 of its height on every side */
+/* Store badges: Apple's and Google's artwork, unaltered; clear space = 1/4 of the height on every side.
+   Both badges are 48 px high (Google: the Play badge the same size as, or larger than, other store badges). */
 .lnn-badge { display: inline-block; padding: 12px; margin: -12px; border-radius: 16px; }
 .lnn-badge img { height: 48px; width: auto; }
 .lnn-badge:hover { color: inherit; }
+/* App Store, then Google Play; 24 px apart so neither badge's clear space overlaps the other */
+.lnn-stores { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; }
+/* in the hero the two badges stack beside the App Store QR code (side by side on phones, where the code is hidden) */
+.lnn-get > .lnn-stores { flex-direction: column; align-items: flex-start; }
 
 .lnn-qr { display: flex; align-items: center; gap: 16px; margin: 0; }
 .lnn-qr .code {
@@ -251,7 +256,7 @@
 /* closing band */
 .lnn-end { text-align: center; }
 .lnn-end h2 { max-width: 20em; margin: 0 auto; }
-.lnn-end .btn { margin-top: 32px; }
+.lnn-end-ctas { margin-top: 32px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 16px; }
 .lnn-links {
   margin: 44px auto 0;
   display: flex; flex-wrap: wrap; justify-content: center;
@@ -346,6 +351,7 @@
   .lnn-slogan { margin-top: 26px; }
   .lnn-lede { font-size: 16px; }
   .lnn-qr { display: none; }
+  .lnn-get > .lnn-stores { flex-direction: row; align-items: center; }
   .lnn-sec { padding: 80px 0; }
   .lnn-copy p { font-size: 16px; }
   .lnn-shot { max-width: 300px; }
