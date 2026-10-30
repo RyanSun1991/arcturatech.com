@@ -6,8 +6,15 @@
     <description>Notes from Arctura Technologies Inc. on health data, on-device AI, privacy engineering, and building consumer software in Canada.</description>
     <language>en</language>
     <copyright>© 2026 Arctura Technologies Inc.</copyright>
-    <lastBuildDate>Wed, 28 Oct 2026 09:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 09:00:00 -0400</lastBuildDate>
     <atom:link href="https://arcturatech.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Canada's privacy regulators set out six principles for AI in health. Here is where each one lives inside a health app.</title>
+      <link>https://arcturatech.com/insights/six-principles-for-ai-in-health-inside-a-health-app.html</link>
+      <guid isPermaLink="true">https://arcturatech.com/insights/six-principles-for-ai-in-health-inside-a-health-app.html</guid>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 -0400</pubDate>
+      <description>Canada's privacy regulators published a resolution on AI in health on 29 October. We map its six principles onto what Linnea does, and what it does not.</description>
+    </item>
     <item>
       <title>A family menu needs everyone's tastes. Here is exactly what Linnea 2.8 took out of end-to-end encryption.</title>
       <link>https://arcturatech.com/insights/family-menu-end-to-end-encryption-boundary.html</link>
