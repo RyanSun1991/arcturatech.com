@@ -6,8 +6,15 @@
     <description>Notes from Arctura Technologies Inc. on health data, on-device AI, privacy engineering, and building consumer software in Canada.</description>
     <language>en</language>
     <copyright>© 2026 Arctura Technologies Inc.</copyright>
-    <lastBuildDate>Fri, 30 Oct 2026 09:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 09:00:00 -0500</lastBuildDate>
     <atom:link href="https://arcturatech.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Photo food logging has a benchmark problem. Here is what Linnea's 22.4% is measured on, and what it is not.</title>
+      <link>https://arcturatech.com/insights/photo-food-logging-benchmarks-and-correction.html</link>
+      <guid isPermaLink="true">https://arcturatech.com/insights/photo-food-logging-benchmarks-and-correction.html</guid>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 -0500</pubDate>
+      <description>Two October preprints show why a photo calorie number depends on the dataset and why correction is part of the job. We say what Linnea's 22.4% is measured on.</description>
+    </item>
     <item>
       <title>Canada's privacy regulators set out six principles for AI in health. Here is where each one lives inside a health app.</title>
       <link>https://arcturatech.com/insights/six-principles-for-ai-in-health-inside-a-health-app.html</link>

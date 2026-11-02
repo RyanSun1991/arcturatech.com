@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo food logging has a benchmark problem. Here is what Linnea's 22.4% is measured on, and what it is not. — Insights · Arctura Technologies</title>
+  <meta name="description" content="Two October preprints show why a photo calorie number depends on the dataset and why correction is part of the job. We say what Linnea's 22.4% is measured on.">
+  <link rel="canonical" href="https://arcturatech.com/insights/photo-food-logging-benchmarks-and-correction.html">
+  <meta name="theme-color" content="#0A1120">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Arctura Technologies">
+  <meta property="og:title" content="Photo food logging has a benchmark problem. Here is what Linnea's 22.4% is measured on, and what it is not.">
+  <meta property="og:description" content="Two October preprints show why a photo calorie number depends on the dataset and why correction is part of the job. We say what Linnea's 22.4% is measured on.">
+  <meta property="og:url" content="https://arcturatech.com/insights/photo-food-logging-benchmarks-and-correction.html">
+  <meta property="og:image" content="https://arcturatech.com/assets/og/photo-food-logging-benchmarks-and-correction.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-11-02">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="alternate" type="application/rss+xml" title="Arctura Technologies — Insights" href="/feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Photo food logging has a benchmark problem. Here is what Linnea's 22.4% is measured on, and what it is not.",
+    "description": "Two October preprints show why a photo calorie number depends on the dataset and why correction is part of the job. We say what Linnea's 22.4% is measured on.",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02",
+    "author": {"@type": "Organization", "name": "Arctura Technologies Inc.", "url": "https://arcturatech.com"},
+    "publisher": {"@type": "Organization", "name": "Arctura Technologies Inc.", "url": "https://arcturatech.com"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://arcturatech.com/insights/photo-food-logging-benchmarks-and-correction.html"},
+    "url": "https://arcturatech.com/insights/photo-food-logging-benchmarks-and-correction.html",
+    "image": "https://arcturatech.com/assets/og/photo-food-logging-benchmarks-and-correction.png",
+    "keywords": ["food photo recognition", "dietary assessment", "benchmarks", "Nutrition5k", "model evaluation", "health app engineering"]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header scrolled">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Arctura Technologies home">
+      <span class="peak" aria-hidden="true">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M24 92 L50 12 L76 92" fill="none" stroke="#EAEFF7" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-word" aria-hidden="true">
+        <svg viewBox="-14 -4 538 126" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><path d="M0 102 L26 18 L52 102"/><path d="M74 102 L74 18 L98 18 A 22 22 0 0 1 98 62 L74 62"/><path d="M98 62 L124 102"/><path d="M211 23.6 A 42 42 0 1 0 211 96.4"/><path d="M236 18 L288 18"/><path d="M262 18 L262 102"/><path d="M310 18 L310 74 A 26 26 0 0 0 362 74 L362 18"/><path d="M384 102 L384 18 L408 18 A 22 22 0 0 1 408 62 L384 62"/><path d="M408 62 L434 102"/><path d="M458 102 L484 18 L510 102"/></g></svg>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/solutions.html">Solutions</a></li>
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="/company.html">Company</a></li>
+        <li><a href="/insights/" class="active" aria-current="page">Insights</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn nav-cta" href="/contact.html">Work with us</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <div class="post-hero">
+    <div class="wrap">
+      <a class="post-back" href="/insights/">← All insights</a>
+      <div class="crumb">Insights · Engineering</div>
+      <h1>Photo food logging has a benchmark problem. Here is what Linnea's 22.4% is measured on, and what it is not.</h1>
+      <p class="lede">Two preprints posted in October say the same thing about logging a meal from a photograph: the number does not travel. One shows that a model trained to weigh food from a single photo kept its accuracy only on the dataset it learned from, and that a common way of splitting that dataset overstates accuracy. The other treats correcting a photo result as normal use and measures what it costs. Linnea publishes a photo number of its own, a 22.4% median error. Here is what it is measured on, where the first paper's warning applies to it, and why the second paper is about the part of the product that matters more.</p>
+      <div class="meta">
+        <span>Published <time datetime="2026-11-02">2 November 2026</time></span>
+        <span>·</span>
+        <span>5 min read</span>
+        <span>·</span>
+        <span>By Arctura Technologies</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-body">
+    <div class="wrap">
+      <article class="prose">
+
+        <h2>A gram scale that stays home</h2>
+        <p>The first preprint, posted on 21 October, fine-tuned an image model on 2,253 weighed dishes from Nutrition5k, a public dataset from Google Research of dishes photographed from above and weighed. On dishes from the same dataset its mean error was 24.8 grams, less than half that of a general-purpose vision-language model given no training data. On three outside datasets, with other cameras and foods, it did no better than that untrained model. Its sense of scale failed in two ways: it shifted with how much of the scene was in the frame, and it was wrong by a different factor for each food. Prediction intervals that covered the true weight 90% of the time on Nutrition5k covered it at most half the time elsewhere. A few labeled photographs from the new setting restored much of the accuracy; a larger model did not.</p>
+        <p>The finding that matters most to anyone publishing a number is about the test itself. Nutrition5k photographed many plates repeatedly as ingredients were added, so two dishes taken seconds apart can be almost identical. A test set drawn at random shared those near-twins with the training set, and the model scored better on exactly those dishes. The authors' conclusion fits in one sentence: "Single-image mass estimators therefore need labeled photographs from the setting where they are used."</p>
+
+        <h2>What our 22.4% is measured on</h2>
+        <p>Our photo figure comes from the <a href="/linnea/strengths.html">"Linnea, measured"</a> page: overhead photos of 60 weighed Nutrition5k dishes that were never used to tune Linnea, grouped into 2,000 random days of 4 dishes, measured on 19 October 2026. It is the median error of a day's calories; half of the days came closer. Read against the paper, three things follow. It is a Nutrition5k number, so it is the easy case: the same overhead camera and cafeteria plates, not a phone held over a bowl at a kitchen table. It is a daily number: four dishes average each other out, and a single dish is harder, as the page says. The 60 dishes were held out of tuning, but we have not checked them for near-twins of dishes we did use, the leak the paper describes; until we have, its warning applies to us too.</p>
+        <p>That is why the page lists it last, under 5.7% for a dish computed from its ingredients and weights and 9.5% for a meal described in words or by voice. A number like 22.4% is good for one thing: telling you how much checking to expect.</p>
+
+        <h2>Correction is the product</h2>
+        <p>The second preprint, posted on 30 October by a team at Emory University and the University of Virginia, starts from the observation that a photo rarely settles what a food is, what is hidden in it, how it was prepared or how much there is, so correcting the record is part of normal use rather than a failure. Working with dietitians, the authors name five recurring challenges: foods that look alike, ingredients hidden under others, mixed dishes, preparation such as added oil, and portion. They compare two ways of fixing a wrong record, with thirty people: searching a database and editing fields by hand, as in a widely used commercial app, against telling the system in words what is wrong and verifying what it regenerates. The second was rated at less than two thirds the workload of the first, took about a fifth less time, needed about half the clicks, and was preferred by 27 of the 30. The authors are careful about what that shows: everyone did the manual task first, the errors were given rather than found, and the reference records were self-reported rather than weighed.</p>
+        <p>Linnea is built on the same premise. A photo result is never a number. It is a list of dishes and ingredients to check, with calories, protein and 20 more nutrients, and it shows the portion it assumed so you can change it. Wherever it can, Linnea computes nutrition from official composition tables rather than from a model's guess, so a dish can be corrected ingredient by ingredient before it is saved. Logging a meal from a photo takes three taps, not counting the wait for recognition. What we do not have is the paper's number: how long correcting a photo result takes, and how often people change one. That measurement decides whether photo logging can be kept up, and it is the one we would most like to add to the page.</p>
+
+        <h2>Where the photo goes</h2>
+        <p>Recognizing a meal in a photo is one of the features <a href="/linnea/privacy.html">Linnea's privacy policy</a> lists as run by AI services from other companies. The app asks first: it shows what the feature sends and to whom, and nothing is sent until you agree. It sends the photo you submit, and does not add your name, email address or date of birth, and you can turn AI features off at any time while the rest of Linnea keeps working. A small preview of a meal photo you log is kept on your device only, encrypted, and is deleted with the entry. A photo of a nutrition label is different: it is read on your device and is not uploaded, and so is a scanned paper lab report. We would rather draw that line feature by feature than let "on your device" blur across features it does not cover.</p>
+
+        <h2>How to read any photo-accuracy claim</h2>
+        <p>Three questions settle most of it. Measured on which photographs, taken by whom, and were any of them used to train or tune the model? Per dish or per day, median or mean, and how many? And what happens after the number: can you see what the model assumed and change it before anything is saved, and how long does that take? An app that answers the first two has published a benchmark. Only an app that answers the third has published how it works.</p>
+
+        <div class="post-cta">
+          <p>Every number in this article, and how each was measured, is on one page. If there is a measurement you would want next, tell us.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a class="btn solid" href="/linnea/strengths.html">Linnea, measured</a>
+            <a class="btn" href="/linnea/privacy.html">Privacy policy</a>
+            <a class="btn" href="/contact.html">Contact</a>
+          </div>
+        </div>
+
+        <p class="post-disclaimer">Linnea provides organizational and informational tools only; it does not provide medical advice, diagnosis, or treatment. Always consult a qualified health professional for medical decisions. Nutrition values in Linnea are estimates for logging. The two papers discussed are preprints by authors unconnected with Arctura Technologies Inc.; their findings are summarized, not endorsed, and this article makes no comparison with any other product. Nutrition5k is a dataset published by Google Research. App Store is a service mark of Apple Inc.; Google Play is a trademark of Google LLC. They are referenced for identification only, and Arctura Technologies Inc. is not affiliated with or endorsed by Apple or Google.</p>
+
+        <section class="post-sources" aria-labelledby="sources-h">
+          <h2 id="sources-h">Sources</h2>
+          <ol>
+            <li>arXiv 2610.29025 — "Single-Image Food Mass Estimators Do Not Transfer Their Gram Scale Across Datasets", preprint posted 21 October 2026: <a href="https://arxiv.org/abs/2610.29025" rel="noopener" target="_blank">arxiv.org/abs/2610.29025</a></li>
+            <li>arXiv 2610.41300 — "Toward Low-Burden Image-Based Dietary Assessment Through Human–AI Collaborative Correction", preprint posted 30 October 2026: <a href="https://arxiv.org/abs/2610.41300" rel="noopener" target="_blank">arxiv.org/abs/2610.41300</a></li>
+            <li>"Linnea, measured", recognition accuracy, ease of logging and how each was measured (measured 19 and 20 October 2026): <a href="/linnea/strengths.html">arcturatech.com/linnea/strengths.html</a></li>
+            <li>Linnea Privacy Policy, version 3.2 (effective 28 October 2026), sections 1 and 3: <a href="/linnea/privacy.html">arcturatech.com/linnea/privacy.html</a></li>
+            <li>Linnea on the App Store, listing description as of 2 November 2026: <a href="https://apps.apple.com/app/id6765480037" rel="noopener" target="_blank">apps.apple.com/app/id6765480037</a></li>
+            <li>Nutrition5k, a dataset published by Google Research: <a href="https://github.com/google-research-datasets/Nutrition5k" rel="noopener" target="_blank">github.com/google-research-datasets/Nutrition5k</a></li>
+          </ol>
+        </section>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-bottom" style="margin-top:0;padding-top:0;border-top:none;">
+      <span>© 2026 Arctura Technologies Inc. All rights reserved.</span>
+      <span><a href="/">Home</a> · <a href="/products.html">Products</a> · <a href="/insights/">Insights</a> · <a href="/company.html">Company</a> · <a href="/privacy.html">Privacy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
