@@ -6,8 +6,15 @@
     <description>Notes from Arctura Technologies Inc. on health data, on-device AI, privacy engineering, and building consumer software in Canada.</description>
     <language>en</language>
     <copyright>© 2026 Arctura Technologies Inc.</copyright>
-    <lastBuildDate>Mon, 02 Nov 2026 09:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 09:00:00 -0500</lastBuildDate>
     <atom:link href="https://arcturatech.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Siri AI is opening to every app. "On your device" now has three meanings, and a health app should say which one it means.</title>
+      <link>https://arcturatech.com/insights/siri-ai-and-three-meanings-of-on-your-device.html</link>
+      <guid isPermaLink="true">https://arcturatech.com/insights/siri-ai-and-three-meanings-of-on-your-device.html</guid>
+      <pubDate>Wed, 04 Nov 2026 09:00:00 -0500</pubDate>
+      <description>Apple is opening Siri AI to every app, and iOS 27.2 lets you exclude apps from it. Three things "on your device" can mean, and which one Linnea means for each feature.</description>
+    </item>
     <item>
       <title>Photo food logging has a benchmark problem. Here is what Linnea's 22.4% is measured on, and what it is not.</title>
       <link>https://arcturatech.com/insights/photo-food-logging-benchmarks-and-correction.html</link>
