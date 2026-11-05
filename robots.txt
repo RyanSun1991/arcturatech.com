@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /linnea/t/
+Disallow: /linnea/r/
+Disallow: /linnea/join/
 Sitemap: https://arcturatech.com/sitemap.xml
+Sitemap: https://arcturatech.com/linnea/foods/sitemap.xml

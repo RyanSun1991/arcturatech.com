@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<!--
+  F-1613c (docs/43 §1.4; F-1439 household invites) — https://arcturatech.com/linnea/join/ (site repo:
+  linnea/join/index.html). The household-invite page: https://arcturatech.com/linnea/join/#k=<43 base64url>, the link
+  an organizer shares from 家庭 › 邀请家人 once `universalLinks` is on (features/family/invites/lib/links.ts). The token
+  is in the FRAGMENT. Static: NO server call (connect-src 'none'), no cookie, no storage, no analytics, no
+  third-party request; the page shows no household name or person (it knows none). Every string is set with
+  textContent.
+
+  「已安装？打开 Linnea」 goes through the app scheme `linnea://family/join?token=` on iOS (a Universal Link tapped on its
+  own domain stays in Safari; route-link.ts → routeInviteLink parks it in family.pendingInvite) and an Android
+  `intent://` that falls back to Play. The store links carry `pt` + `ct=household` / `utm_source=household` for
+  attribution only — the token never goes into a store URL (the app reads no household referrer). Joining needs an
+  account (5.1.1(v)); the 8-character code stays in the invitation message, for 家庭 › 加入家庭.
+
+  Strings: deploy/web/join/strings.json (zh-Hans, zh-Hant, en), inlined by `node deploy/web/build-link-pages.mjs`.
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Linnea</title>
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #F2F2F7; --card: #FFFFFF; --label: #000000; --secondary: #6B6B70; --separator: rgba(60, 60, 67, 0.2);
+    --tint: #2B7350; --tint-pressed: #1F5A3E; --on-tint: #FFFFFF; --link: #0066CC; --gray-fill: #E5E5EA;
+    --scrim: rgba(0, 0, 0, 0.45);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000; --card: #1C1C1E; --label: #FFFFFF; --secondary: #98989F; --separator: rgba(84, 84, 88, 0.6);
+      --tint: #5FC48E; --tint-pressed: #5FC48E; --on-tint: #000000; --link: #4DB0FF; --gray-fill: #2C2C30;
+      --scrim: rgba(0, 0, 0, 0.6);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--label);
+    font: 17px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "PingFang TC", "Hiragino Sans",
+      Roboto, "Noto Sans CJK SC", "Noto Sans CJK TC", "Helvetica Neue", Arial, sans-serif;
+  }
+  :lang(zh-Hant) body, body:lang(zh-Hant) { font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "PingFang HK", Roboto, "Noto Sans CJK TC", sans-serif; }
+  main { max-width: 540px; margin: 0 auto; padding: max(24px, env(safe-area-inset-top)) 16px max(32px, env(safe-area-inset-bottom)); }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 24px; }
+  .mark { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 17px; }
+  .mark img { width: 40px; height: 40px; border-radius: 9px; }
+  .langs { display: flex; gap: 4px; }
+  .langs button {
+    min-width: 44px; min-height: 44px; border: 0; border-radius: 22px; background: transparent; color: var(--link);
+    font: inherit; font-size: 15px; cursor: pointer; padding: 0 10px;
+  }
+  .langs button[aria-pressed="true"] { background: var(--gray-fill); color: var(--label); font-weight: 600; }
+  h1 { font-size: 28px; line-height: 1.2; font-weight: 700; margin: 0 0 6px; overflow-wrap: anywhere; }
+  .meta { color: var(--secondary); font-size: 15px; margin: 0 0 20px; }
+  .card { background: var(--card); border-radius: 24px; padding: 8px 0; margin: 0 0 20px; }
+  .card h2 { font-size: 13px; font-weight: 400; color: var(--secondary); margin: 0; padding: 8px 20px 4px; }
+  .card ul { list-style: none; margin: 0; padding: 0; }
+  .card li { padding: 11px 20px; border-top: 0.5px solid var(--separator); overflow-wrap: anywhere; }
+  .card li:first-child { border-top: 0; }
+  .card li.more { color: var(--secondary); }
+  .actions { display: flex; flex-direction: column; gap: 12px; margin: 0 0 20px; }
+  .button {
+    display: flex; align-items: center; justify-content: center; text-align: center; min-height: 50px;
+    padding: 12px 20px; border-radius: 14px; font-weight: 600; text-decoration: none; font-size: 17px; border: 0;
+    cursor: pointer; font-family: inherit;
+  }
+  .button.prominent { background: var(--tint); color: var(--on-tint); }
+  .button.prominent:active { background: var(--tint-pressed); opacity: 0.85; }
+  .button.gray { background: var(--gray-fill); color: var(--label); font-weight: 500; }
+  .button.plain { background: transparent; color: var(--link); font-weight: 500; min-height: 44px; }
+  .stores { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .stores a { display: inline-flex; min-height: 44px; align-items: center; }
+  .stores img { height: 44px; width: auto; }
+  .note { color: var(--secondary); font-size: 15px; text-align: center; margin: 0; }
+  .code { background: var(--card); border-radius: 24px; padding: 16px 20px; margin: 0 0 20px; }
+  .code-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .code-label { color: var(--secondary); font-size: 15px; }
+  .code-value { font-size: 24px; font-weight: 600; letter-spacing: 0.08em; font-variant-numeric: tabular-nums; }
+  .code .button { min-height: 44px; padding: 8px 16px; font-size: 15px; }
+  .state { text-align: center; padding: 32px 0; }
+  .state h1 { margin-bottom: 20px; }
+  footer { border-top: 0.5px solid var(--separator); padding-top: 16px; margin-top: 8px; color: var(--secondary); font-size: 13px; }
+  footer p { margin: 0 0 8px; }
+  footer a { color: var(--link); display: inline-flex; min-height: 44px; align-items: center; margin-right: 16px; }
+  .overlay {
+    position: fixed; inset: 0; background: var(--scrim); display: flex; align-items: flex-start; justify-content: flex-end;
+    padding: 12px 16px; z-index: 10;
+  }
+  .overlay p { background: var(--card); color: var(--label); border-radius: 14px; padding: 14px 16px; margin: 0; max-width: 320px; font-weight: 600; }
+  .lead { font-size: 17px; margin: 0 0 12px; }
+  .terms { color: var(--secondary); font-size: 15px; margin: 0 0 20px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+  [hidden] { display: none !important; }
+  @media (prefers-reduced-motion: no-preference) { .button { transition: background-color 0.15s; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <div class="mark"><img src="/linnea/img/icon-160.png" alt="" width="40" height="40"><span>Linnea</span></div>
+    <nav class="langs" id="langs">
+      <button type="button" data-lang="zh-Hans" lang="zh-Hans">简<span class="sr">体中文</span></button>
+      <button type="button" data-lang="zh-Hant" lang="zh-Hant">繁<span class="sr">體中文</span></button>
+      <button type="button" data-lang="en" lang="en">EN<span class="sr"> · English</span></button>
+    </nav>
+  </div>
+
+  <section id="open" hidden>
+    <h1 id="title"></h1>
+    <p class="terms" id="body"></p>
+    <div class="actions">
+      <a class="button prominent" id="download" href="https://arcturatech.com/linnea/?ct=household"></a>
+      <div class="stores" id="stores" hidden>
+        <a id="store-ios" href="#"><img id="badge-ios" alt="App Store" src="/linnea/img/badge-app-store-zh-hans.svg"></a>
+        <a id="store-android" href="#"><img id="badge-android" alt="Google Play" src="/linnea/img/badge-google-play-zh-hans.svg"></a>
+      </div>
+      <a class="button plain" id="open-app" href="#"></a>
+      <p class="note" id="after-install"></p>
+      <p class="note" id="code-hint"></p>
+    </div>
+  </section>
+
+  <section id="closed" class="state" hidden>
+    <h1 id="closed-title"></h1>
+    <div class="actions">
+      <a class="button gray" id="learn" href="https://arcturatech.com/linnea/?ct=household"></a>
+    </div>
+  </section>
+
+  <footer>
+    <p id="disclaimer"></p>
+    <a id="privacy" href="/linnea/privacy.html"></a><a id="report" href="mailto:support@arcturatech.com"></a>
+  </footer>
+</main>
+<div class="overlay" id="in-app" hidden role="alert"><p id="in-app-text"></p></div>
+
+<script type="application/json" id="linnea-strings">
+<!-- LINNEA-STRINGS:BEGIN -->
+{
+  "zh-Hans": {
+    "html_lang": "zh-Hans",
+    "page_title": "加入家庭 · Linnea",
+    "switch_label": "语言",
+    "title": "家人邀请你在 Linnea 上加入家庭",
+    "body": "加入后，由你决定和家人共享哪些每日汇总。加入家庭需要登录账户。",
+    "download": "下载 Linnea",
+    "open_app": "已安装？打开 Linnea",
+    "after_install": "安装后回到这里，再点一次「已安装？打开 Linnea」。",
+    "code_hint": "打不开链接时，在 Linnea 的「家庭 › 加入家庭」中输入邀请消息里的邀请码。",
+    "not_found": "链接无效",
+    "learn": "了解 Linnea",
+    "in_app": "请点右上角「···」，选择「在浏览器中打开」",
+    "disclaimer": "Linnea 记录的营养数值为估算，仅供记录参考，不构成医疗建议。Linnea 不是医疗器械。",
+    "privacy": "隐私政策",
+    "report": "举报",
+    "report_subject": "举报一个 Linnea 家庭邀请链接"
+  },
+  "zh-Hant": {
+    "html_lang": "zh-Hant",
+    "page_title": "加入家庭 · Linnea",
+    "switch_label": "語言",
+    "title": "家人邀請你在 Linnea 上加入家庭",
+    "body": "加入後，由你決定和家人共享哪些每日彙總。加入家庭需要登入帳號。",
+    "download": "下載 Linnea",
+    "open_app": "已安裝？開啟 Linnea",
+    "after_install": "安裝後回到這裡，再點一次「已安裝？開啟 Linnea」。",
+    "code_hint": "打不開連結時，在 Linnea 的「家庭 › 加入家庭」中輸入邀請訊息裡的邀請碼。",
+    "not_found": "連結無效",
+    "learn": "了解 Linnea",
+    "in_app": "請點右上角「···」，選擇「在瀏覽器中開啟」",
+    "disclaimer": "Linnea 記錄的營養數值為估算，僅供記錄參考，不構成醫療建議。Linnea 不是醫療器材。",
+    "privacy": "隱私權政策",
+    "report": "檢舉",
+    "report_subject": "檢舉一個 Linnea 家庭邀請連結"
+  },
+  "en": {
+    "html_lang": "en",
+    "page_title": "Join a family · Linnea",
+    "switch_label": "Language",
+    "title": "Your family invited you to join them on Linnea",
+    "body": "Once you join, you decide which daily summaries to share with the family. Joining a family needs an account.",
+    "download": "Get Linnea",
+    "open_app": "Have Linnea? Open It",
+    "after_install": "After installing, come back here and tap “Have Linnea? Open It” again.",
+    "code_hint": "If the link doesn’t open, enter the invite code from the invitation in Linnea under Family › Join a Family.",
+    "not_found": "This link isn’t valid",
+    "learn": "About Linnea",
+    "in_app": "Tap ··· at the top right and choose Open in Browser",
+    "disclaimer": "Nutrition values in Linnea are estimates for your records only and are not medical advice. Linnea is not a medical device.",
+    "privacy": "Privacy Policy",
+    "report": "Report",
+    "report_subject": "Report a Linnea family invitation link"
+  }
+}
+<!-- LINNEA-STRINGS:END -->
+</script>
+<script>
+(function () {
+  "use strict";
+  var APP_STORE = "https://apps.apple.com/app/apple-store/id6765480037?pt=128850178&ct=household&mt=8";
+  var PLAY = "https://play.google.com/store/apps/details?id=com.nourishrx.app&referrer=" + encodeURIComponent("utm_source=household");
+  var LANDING = "https://arcturatech.com/linnea/?ct=household";
+  var TOKEN = /^[A-Za-z0-9_-]{43}$/;
+  var raw = document.getElementById("linnea-strings").textContent;
+  var STRINGS = JSON.parse(raw.replace(/<!--[\s\S]*?-->/g, ""));
+  var $ = function (id) { return document.getElementById(id); };
+  var ua = navigator.userAgent || "";
+  var platform = /Android/i.test(ua) ? "android" : /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) ? "ios" : "other";
+  /* Browsers that block store links and Universal Links (docs/43 §1.4). */
+  var BLOCKING_IN_APP = /MicroMessenger|Weibo|DingTalk|AlipayClient| QQ\//i;
+  var inApp = BLOCKING_IN_APP.test(ua);
+
+  function param(text, key) {
+    var parts = text.replace(/^[#?]/, "").split("&");
+    for (var i = 0; i < parts.length; i++) {
+      var eq = parts[i].indexOf("=");
+      if (eq > 0 && parts[i].slice(0, eq) === key) {
+        try { return decodeURIComponent(parts[i].slice(eq + 1)); } catch (e) { return null; }
+      }
+    }
+    return null;
+  }
+  function langFromLocale(locale) {
+    if (!locale) return null;
+    if (/^zh[-_](TW|HK|MO|Hant)/i.test(locale)) return "zh-Hant";
+    if (/^zh/i.test(locale)) return "zh-Hans";
+    return "en";
+  }
+  var lang = langFromLocale(navigator.language) || "zh-Hans";
+  function s(key) { return STRINGS[lang][key]; }
+  function renderCommon() {
+    document.documentElement.lang = s("html_lang");
+    document.title = s("page_title");
+    var buttons = $("langs").querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) buttons[i].setAttribute("aria-pressed", String(buttons[i].getAttribute("data-lang") === lang));
+    $("langs").setAttribute("aria-label", s("switch_label"));
+    $("disclaimer").textContent = s("disclaimer");
+    $("privacy").textContent = s("privacy");
+    $("report").textContent = s("report");
+    $("report").href = "mailto:support@arcturatech.com?subject=" + encodeURIComponent(s("report_subject"));
+    $("in-app-text").textContent = s("in_app");
+    var badge = lang === "zh-Hant" ? "zh-hant" : lang === "en" ? "en" : "zh-hans";
+    $("badge-ios").src = "/linnea/img/badge-app-store-" + badge + ".svg";
+    $("badge-android").src = "/linnea/img/badge-google-play-" + badge + ".svg";
+  }
+
+  var token = param(location.hash, "k");
+  if (token !== null && !TOKEN.test(token)) token = null;
+  function openAppUrl() {
+    if (platform === "android") {
+      return "intent://family/join?token=" + token + "#Intent;scheme=linnea;package=com.nourishrx.app;S.browser_fallback_url=" +
+        encodeURIComponent(PLAY) + ";end";
+    }
+    return "linnea://family/join?token=" + token;
+  }
+
+  function render() {
+    renderCommon();
+    $("learn").textContent = s("learn");
+    if (token === null) {
+      $("closed-title").textContent = s("not_found");
+      $("open").hidden = true;
+      $("closed").hidden = false;
+      return;
+    }
+    $("title").textContent = s("title");
+    $("body").textContent = s("body");
+    $("download").textContent = s("download");
+    $("code-hint").textContent = s("code_hint");
+    if (platform === "other") {
+      $("download").hidden = true;
+      $("stores").hidden = false;
+      $("store-ios").href = APP_STORE;
+      $("store-android").href = PLAY;
+      $("open-app").hidden = true;
+      $("after-install").hidden = true;
+    } else {
+      $("download").hidden = false;
+      $("download").href = platform === "android" ? PLAY : APP_STORE;
+      $("stores").hidden = true;
+      $("open-app").hidden = false;
+      $("open-app").textContent = s("open_app");
+      $("open-app").href = openAppUrl();
+      $("after-install").hidden = platform !== "ios";
+      $("after-install").textContent = s("after_install");
+    }
+    $("closed").hidden = true;
+    $("open").hidden = false;
+  }
+
+  $("langs").addEventListener("click", function (event) {
+    var target = event.target.closest ? event.target.closest("button[data-lang]") : null;
+    if (!target) return;
+    lang = target.getAttribute("data-lang");
+    render();
+  });
+  $("learn").href = LANDING;
+  if (inApp) $("in-app").hidden = false;
+  render();
+})();
+</script>
+</body>
+</html>
