@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<!--
+  F-1613c (docs/43 §4.5, §1.4–1.5, §4.12) — DRAFT of https://arcturatech.com/linnea/t/ (site repo: linnea/t/index.html).
+  The owner reviews it and pushes the site; agents never push the site repo.
+
+  The table-invite link page: https://arcturatech.com/linnea/t/#k=<43 base64url>. The token is in the FRAGMENT, so it
+  never reaches GitHub Pages, a link-preview crawler or a proxy log; the page reads location.hash and sends it only in
+  the body of ONE request, the public preview (POST table-invite-preview, the anon key, no cookie, no credentials).
+  Static HTML, CSS and a few lines of plain JS: no framework, no cookie, no storage, no analytics, no third-party
+  request (the Content-Security-Policy below allows exactly the preview call and the site's own images).
+
+  Shows only what the preview returns for an open link: the inviter's chosen name, which meal, the date, the dish
+  names (≤ 12, then 「等 N 道」) and the link's 「邀请码 ABCD-2345」 with 复制 (the preview returns `short_code` to a token
+  holder only — migration 20261204120200; it is how an iPhone invitee carries the link across the install). NO
+  nutrition number and no health word; no reward wording (docs/45 §5.2). Every
+  string is set with textContent (never innerHTML), so a label or dish name cannot inject markup.
+
+  Strings: deploy/web/table/strings.json (zh-Hans, zh-Hant, en), inlined below between the LINNEA-STRINGS markers by
+  `node deploy/web/build-link-pages.mjs` (its check mode fails when they differ). Language: the invite's locale (the
+  inviter's app language) once the preview answers, else the browser's; the 简 / 繁 / EN switch overrides it.
+
+  The draft keeps a placeholder in LINNEA_PREVIEW.anonKey; `node deploy/web/build-link-pages.mjs` in its out mode
+  (called by deploy/web/site-push.sh) writes the published copy with the PROD anon key from apps/nourishrx/.env.production
+  (public by design — the gateway needs it; the function never reads a user) and refuses a leftover placeholder. The
+  URL is the prod project's; CORS on the function allows https://arcturatech.com.
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self'; connect-src https://xxfuoyeaskdjfajlatkw.supabase.co; base-uri 'none'; form-action 'none'">
+<title>Linnea</title>
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #F2F2F7; --card: #FFFFFF; --label: #000000; --secondary: #6B6B70; --separator: rgba(60, 60, 67, 0.2);
+    --tint: #2B7350; --tint-pressed: #1F5A3E; --on-tint: #FFFFFF; --link: #0066CC; --gray-fill: #E5E5EA;
+    --scrim: rgba(0, 0, 0, 0.45);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #000000; --card: #1C1C1E; --label: #FFFFFF; --secondary: #98989F; --separator: rgba(84, 84, 88, 0.6);
+      --tint: #5FC48E; --tint-pressed: #5FC48E; --on-tint: #000000; --link: #4DB0FF; --gray-fill: #2C2C30;
+      --scrim: rgba(0, 0, 0, 0.6);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--label);
+    font: 17px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "PingFang TC", "Hiragino Sans",
+      Roboto, "Noto Sans CJK SC", "Noto Sans CJK TC", "Helvetica Neue", Arial, sans-serif;
+  }
+  :lang(zh-Hant) body, body:lang(zh-Hant) { font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "PingFang HK", Roboto, "Noto Sans CJK TC", sans-serif; }
+  main { max-width: 540px; margin: 0 auto; padding: max(24px, env(safe-area-inset-top)) 16px max(32px, env(safe-area-inset-bottom)); }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 24px; }
+  .mark { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 17px; }
+  .mark img { width: 40px; height: 40px; border-radius: 9px; }
+  .langs { display: flex; gap: 4px; }
+  .langs button {
+    min-width: 44px; min-height: 44px; border: 0; border-radius: 22px; background: transparent; color: var(--link);
+    font: inherit; font-size: 15px; cursor: pointer; padding: 0 10px;
+  }
+  .langs button[aria-pressed="true"] { background: var(--gray-fill); color: var(--label); font-weight: 600; }
+  h1 { font-size: 28px; line-height: 1.2; font-weight: 700; margin: 0 0 6px; overflow-wrap: anywhere; }
+  .meta { color: var(--secondary); font-size: 15px; margin: 0 0 20px; }
+  .card { background: var(--card); border-radius: 24px; padding: 8px 0; margin: 0 0 20px; }
+  .card h2 { font-size: 13px; font-weight: 400; color: var(--secondary); margin: 0; padding: 8px 20px 4px; }
+  .card ul { list-style: none; margin: 0; padding: 0; }
+  .card li { padding: 11px 20px; border-top: 0.5px solid var(--separator); overflow-wrap: anywhere; }
+  .card li:first-child { border-top: 0; }
+  .card li.more { color: var(--secondary); }
+  .actions { display: flex; flex-direction: column; gap: 12px; margin: 0 0 20px; }
+  .button {
+    display: flex; align-items: center; justify-content: center; text-align: center; min-height: 50px;
+    padding: 12px 20px; border-radius: 14px; font-weight: 600; text-decoration: none; font-size: 17px; border: 0;
+    cursor: pointer; font-family: inherit;
+  }
+  .button.prominent { background: var(--tint); color: var(--on-tint); }
+  .button.prominent:active { background: var(--tint-pressed); opacity: 0.85; }
+  .button.gray { background: var(--gray-fill); color: var(--label); font-weight: 500; }
+  .button.plain { background: transparent; color: var(--link); font-weight: 500; min-height: 44px; }
+  .stores { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .stores a { display: inline-flex; min-height: 44px; align-items: center; }
+  .stores img { height: 44px; width: auto; }
+  .note { color: var(--secondary); font-size: 15px; text-align: center; margin: 0; }
+  .code { background: var(--card); border-radius: 24px; padding: 16px 20px; margin: 0 0 20px; }
+  .code-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .code-label { color: var(--secondary); font-size: 15px; }
+  .code-value { font-size: 24px; font-weight: 600; letter-spacing: 0.08em; font-variant-numeric: tabular-nums; }
+  .code .button { min-height: 44px; padding: 8px 16px; font-size: 15px; }
+  .state { text-align: center; padding: 32px 0; }
+  .state h1 { margin-bottom: 20px; }
+  footer { border-top: 0.5px solid var(--separator); padding-top: 16px; margin-top: 8px; color: var(--secondary); font-size: 13px; }
+  footer p { margin: 0 0 8px; }
+  footer a { color: var(--link); display: inline-flex; min-height: 44px; align-items: center; margin-right: 16px; }
+  .overlay {
+    position: fixed; inset: 0; background: var(--scrim); display: flex; align-items: flex-start; justify-content: flex-end;
+    padding: 12px 16px; z-index: 10;
+  }
+  .overlay p { background: var(--card); color: var(--label); border-radius: 14px; padding: 14px 16px; margin: 0; max-width: 320px; font-weight: 600; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+  [hidden] { display: none !important; }
+  @media (prefers-reduced-motion: no-preference) { .button { transition: background-color 0.15s; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <div class="mark"><img src="/linnea/img/icon-160.png" alt="" width="40" height="40"><span>Linnea</span></div>
+    <nav class="langs" id="langs">
+      <button type="button" data-lang="zh-Hans" lang="zh-Hans">简<span class="sr">体中文</span></button>
+      <button type="button" data-lang="zh-Hant" lang="zh-Hant">繁<span class="sr">體中文</span></button>
+      <button type="button" data-lang="en" lang="en">EN<span class="sr"> · English</span></button>
+    </nav>
+  </div>
+
+  <section id="loading" aria-live="polite"><p class="note" id="loading-text"></p></section>
+
+  <section id="open" hidden>
+    <h1 id="open-title"></h1>
+    <p class="meta" id="open-meta"></p>
+    <div class="card"><h2 id="dishes-label"></h2><ul id="dishes"></ul></div>
+    <div class="actions">
+      <a class="button prominent" id="download" href="https://arcturatech.com/linnea/?ct=table"></a>
+      <div class="stores" id="stores" hidden>
+        <a id="store-ios" href="#"><img id="badge-ios" alt="App Store" src="/linnea/img/badge-app-store-zh-hans.svg"></a>
+        <a id="store-android" href="#"><img id="badge-android" alt="Google Play" src="/linnea/img/badge-google-play-zh-hans.svg"></a>
+      </div>
+      <a class="button plain" id="open-app" href="#"></a>
+      <p class="note" id="after-install"></p>
+    </div>
+    <div class="code" id="code-box" hidden>
+      <div class="code-row">
+        <div><div class="code-label" id="code-label"></div><div class="code-value" id="code-value"></div></div>
+        <button type="button" class="button gray" id="copy"></button>
+      </div>
+      <p class="note" id="code-hint" style="text-align:left;margin-top:8px"></p>
+    </div>
+  </section>
+
+  <section id="closed" class="state" hidden>
+    <h1 id="closed-title"></h1>
+    <div class="actions">
+      <button type="button" class="button prominent" id="retry" hidden></button>
+      <a class="button gray" id="learn" href="https://arcturatech.com/linnea/?ct=table"></a>
+    </div>
+  </section>
+
+  <footer>
+    <p id="disclaimer"></p>
+    <a id="privacy" href="/linnea/privacy.html"></a><a id="report" href="mailto:support@arcturatech.com"></a>
+  </footer>
+</main>
+<div class="overlay" id="in-app" hidden role="alert"><p id="in-app-text"></p></div>
+
+<script type="application/json" id="linnea-strings">
+<!-- LINNEA-STRINGS:BEGIN -->
+{
+  "zh-Hans": {
+    "html_lang": "zh-Hans",
+    "page_title": "家人给你记了一份 · Linnea",
+    "switch_label": "语言",
+    "loading": "正在打开…",
+    "open_title": "{{name}}给你记了一份{{meal}}",
+    "open_meta": {
+      "one": "{{date}} · {{count}} 道菜",
+      "other": "{{date}} · {{count}} 道菜"
+    },
+    "more": "等 {{n}} 道",
+    "meal": {
+      "breakfast": "早饭",
+      "lunch": "午饭",
+      "dinner": "晚饭",
+      "snack": "加餐"
+    },
+    "dishes_label": "菜名",
+    "download": "下载 Linnea，保存这一份",
+    "open_app": "已安装？打开 Linnea",
+    "after_install": "安装后回到这里，再点一次「已安装？打开 Linnea」。",
+    "code_label": "邀请码",
+    "copy": "复制",
+    "copied": "已复制",
+    "code_hint": "安装后打开 Linnea，在首页输入邀请码。",
+    "claimed": "这份已经保存过了",
+    "expired": "这个链接已过期",
+    "revoked": "这个链接已撤回",
+    "learn": "了解 Linnea",
+    "not_found": "链接无效",
+    "rate_limited": "请稍后再试",
+    "offline": "请连接网络后重试",
+    "retry": "重试",
+    "in_app": "请点右上角「···」，选择「在浏览器中打开」",
+    "disclaimer": "Linnea 记录的营养数值为估算，仅供记录参考，不构成医疗建议。Linnea 不是医疗器械。",
+    "privacy": "隐私政策",
+    "report": "举报",
+    "report_subject": "举报一个 Linnea 家人链接"
+  },
+  "zh-Hant": {
+    "html_lang": "zh-Hant",
+    "page_title": "家人幫你記了一份 · Linnea",
+    "switch_label": "語言",
+    "loading": "正在開啟…",
+    "open_title": "{{name}}幫你記了一份{{meal}}",
+    "open_meta": {
+      "one": "{{date}} · {{count}} 道菜",
+      "other": "{{date}} · {{count}} 道菜"
+    },
+    "more": "等 {{n}} 道",
+    "meal": {
+      "breakfast": "早餐",
+      "lunch": "午餐",
+      "dinner": "晚餐",
+      "snack": "點心"
+    },
+    "dishes_label": "菜名",
+    "download": "下載 Linnea，儲存這一份",
+    "open_app": "已安裝？開啟 Linnea",
+    "after_install": "安裝後回到這裡，再點一次「已安裝？開啟 Linnea」。",
+    "code_label": "邀請碼",
+    "copy": "複製",
+    "copied": "已複製",
+    "code_hint": "安裝後開啟 Linnea，在首頁輸入邀請碼。",
+    "claimed": "這份已經儲存過了",
+    "expired": "這個連結已過期",
+    "revoked": "這個連結已撤回",
+    "learn": "了解 Linnea",
+    "not_found": "連結無效",
+    "rate_limited": "請稍後再試",
+    "offline": "請連上網路後重試",
+    "retry": "重試",
+    "in_app": "請點右上角「···」，選擇「在瀏覽器中開啟」",
+    "disclaimer": "Linnea 記錄的營養數值為估算，僅供記錄參考，不構成醫療建議。Linnea 不是醫療器材。",
+    "privacy": "隱私權政策",
+    "report": "檢舉",
+    "report_subject": "檢舉一個 Linnea 家人連結"
+  },
+  "en": {
+    "html_lang": "en",
+    "page_title": "A portion saved for you · Linnea",
+    "switch_label": "Language",
+    "loading": "Opening…",
+    "open_title": "{{name}} saved a portion of their {{meal}} for you",
+    "open_meta": {
+      "one": "{{date}} · {{count}} dish",
+      "other": "{{date}} · {{count}} dishes"
+    },
+    "more": "and {{n}} more",
+    "meal": {
+      "breakfast": "breakfast",
+      "lunch": "lunch",
+      "dinner": "dinner",
+      "snack": "snack"
+    },
+    "dishes_label": "Dishes",
+    "download": "Get Linnea and Save Your Portion",
+    "open_app": "Have Linnea? Open It",
+    "after_install": "After installing, come back here and tap “Have Linnea? Open It” again.",
+    "code_label": "Invite code",
+    "copy": "Copy",
+    "copied": "Copied",
+    "code_hint": "After installing, open Linnea and enter the code on the first screen.",
+    "claimed": "This portion was already saved",
+    "expired": "This link has expired",
+    "revoked": "This link was withdrawn",
+    "learn": "About Linnea",
+    "not_found": "This link isn’t valid",
+    "rate_limited": "Try again later",
+    "offline": "Connect to the internet and try again",
+    "retry": "Try Again",
+    "in_app": "Tap ··· at the top right and choose Open in Browser",
+    "disclaimer": "Nutrition values in Linnea are estimates for your records only and are not medical advice. Linnea is not a medical device.",
+    "privacy": "Privacy Policy",
+    "report": "Report",
+    "report_subject": "Report a Linnea family link"
+  }
+}
+<!-- LINNEA-STRINGS:END -->
+</script>
+<script>
+(function () {
+  "use strict";
+  var LINNEA_PREVIEW = {
+    url: "https://xxfuoyeaskdjfajlatkw.supabase.co/functions/v1/table-invite-preview",
+    anonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh4ZnVveWVhc2tkamZhamxhdGt3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcxMjAxMTgsImV4cCI6MjA5MjY5NjExOH0.GmKQ1jXFGsRbUNERZ67O74ooi791S9b0PethDJAH0ZI"
+  };
+  var APP_STORE = "https://apps.apple.com/app/apple-store/id6765480037?pt=128850178&ct=table&mt=8";
+  var PLAY = "https://play.google.com/store/apps/details?id=com.nourishrx.app";
+  var LANDING = "https://arcturatech.com/linnea/?ct=table";
+  var TOKEN = /^[A-Za-z0-9_-]{43}$/;
+  /* Browsers that block store links and Universal Links (docs/43 §1.4). */
+  var BLOCKING_IN_APP = /MicroMessenger|Weibo|DingTalk|AlipayClient| QQ\//i;
+
+  var raw = document.getElementById("linnea-strings").textContent;
+  var STRINGS = JSON.parse(raw.replace(/<!--[\s\S]*?-->/g, ""));
+  var $ = function (id) { return document.getElementById(id); };
+  var ua = navigator.userAgent || "";
+  var platform = /Android/i.test(ua) ? "android" : /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) ? "ios" : "other";
+
+  function param(text, key) {
+    var parts = text.replace(/^[#?]/, "").split("&");
+    for (var i = 0; i < parts.length; i++) {
+      var eq = parts[i].indexOf("=");
+      if (eq > 0 && parts[i].slice(0, eq) === key) {
+        try { return decodeURIComponent(parts[i].slice(eq + 1)); } catch (e) { return null; }
+      }
+    }
+    return null;
+  }
+  var token = param(location.hash, "k");
+  if (token !== null && !TOKEN.test(token)) token = null;
+
+  function langFromLocale(locale) {
+    if (!locale) return null;
+    if (/^zh[-_](TW|HK|MO|Hant)/i.test(locale)) return "zh-Hant";
+    if (/^zh/i.test(locale)) return "zh-Hans";
+    return "en";
+  }
+  var lang = langFromLocale(navigator.language) || "zh-Hans";
+  var chosen = false;
+  var state = { kind: "loading" };
+
+  function s(key) { return STRINGS[lang][key]; }
+  function fill(text, values) {
+    return text.replace(/\{\{(\w+)\}\}/g, function (_, k) { return values[k] === undefined ? "" : String(values[k]); });
+  }
+  function plural(entry, count) {
+    if (typeof entry === "string") return entry;
+    return count === 1 ? entry.one : entry.other;
+  }
+  function dateText(key) {
+    var p = key.split("-");
+    var d = new Date(Number(p[0]), Number(p[1]) - 1, Number(p[2]), 12);
+    try { return new Intl.DateTimeFormat(lang, { month: "long", day: "numeric" }).format(d); } catch (e) { return key; }
+  }
+  function show(id) {
+    ["loading", "open", "closed"].forEach(function (s) { $(s).hidden = s !== id; });
+  }
+  function storeUrl() {
+    if (platform === "android") return PLAY + "&referrer=" + encodeURIComponent("utm_source=table&k=" + token);
+    return APP_STORE;
+  }
+  function openAppUrl() {
+    if (platform === "android") {
+      return "intent://table/claim?k=" + token + "#Intent;scheme=linnea;package=com.nourishrx.app;S.browser_fallback_url=" +
+        encodeURIComponent(storeUrl()) + ";end";
+    }
+    /* A Universal Link to the page's own domain stays in Safari; the app scheme opens the installed app. */
+    return "linnea://table/claim?k=" + token;
+  }
+
+  function render() {
+    document.documentElement.lang = s("html_lang");
+    document.title = s("page_title");
+    var buttons = $("langs").querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) buttons[i].setAttribute("aria-pressed", String(buttons[i].getAttribute("data-lang") === lang));
+    $("langs").setAttribute("aria-label", s("switch_label"));
+    $("loading-text").textContent = s("loading");
+    $("disclaimer").textContent = s("disclaimer");
+    $("privacy").textContent = s("privacy");
+    $("report").textContent = s("report");
+    $("report").href = "mailto:support@arcturatech.com?subject=" + encodeURIComponent(s("report_subject"));
+    $("in-app-text").textContent = s("in_app");
+    var badge = lang === "zh-Hant" ? "zh-hant" : lang === "en" ? "en" : "zh-hans";
+    $("badge-ios").src = "/linnea/img/badge-app-store-" + badge + ".svg";
+    $("badge-android").src = "/linnea/img/badge-google-play-" + badge + ".svg";
+
+    if (state.kind === "loading") { show("loading"); return; }
+    if (state.kind === "open") {
+      var p = state.preview;
+      var meal = s("meal")[p.meal_slot] || "";
+      var total = p.dishes.length + p.more;
+      $("open-title").textContent = fill(s("open_title"), { name: p.inviter_label, meal: meal });
+      $("open-meta").textContent = fill(plural(s("open_meta"), total), { date: dateText(p.eaten_date_local), count: total });
+      $("dishes-label").textContent = s("dishes_label");
+      var list = $("dishes");
+      while (list.firstChild) list.removeChild(list.firstChild);
+      p.dishes.slice(0, 12).forEach(function (name) {
+        var li = document.createElement("li");
+        li.textContent = name;
+        list.appendChild(li);
+      });
+      if (p.more > 0) {
+        var more = document.createElement("li");
+        more.className = "more";
+        more.textContent = fill(s("more"), { n: p.more });
+        list.appendChild(more);
+      }
+      $("download").textContent = s("download");
+      if (platform === "other") {
+        $("download").hidden = true;
+        $("stores").hidden = false;
+        $("store-ios").href = APP_STORE;
+        $("store-android").href = PLAY + "&referrer=" + encodeURIComponent("utm_source=table&k=" + token);
+        $("open-app").hidden = true;
+        $("after-install").hidden = true;
+      } else {
+        $("download").hidden = false;
+        $("download").href = storeUrl();
+        $("stores").hidden = true;
+        $("open-app").hidden = false;
+        $("open-app").textContent = s("open_app");
+        $("open-app").href = openAppUrl();
+        $("after-install").hidden = platform !== "ios";
+        $("after-install").textContent = s("after_install");
+      }
+      var code = typeof p.short_code === "string" && /^[0-9A-HJKMNPQSTV-Z][0-9A-HJKMNP-TV-Z]{7}$/.test(p.short_code) ? p.short_code : null;
+      $("code-box").hidden = code === null;
+      if (code !== null) {
+        $("code-label").textContent = s("code_label");
+        $("code-value").textContent = code.slice(0, 4) + "-" + code.slice(4);
+        $("copy").textContent = s("copy");
+        $("code-hint").textContent = s("code_hint");
+      }
+      show("open");
+      return;
+    }
+    $("closed-title").textContent = s(state.kind);
+    var retryable = state.kind === "offline" || state.kind === "rate_limited";
+    $("retry").hidden = !retryable;
+    $("retry").textContent = s("retry");
+    $("learn").textContent = s("learn");
+    show("closed");
+  }
+
+  function load() {
+    state = { kind: "loading" };
+    render();
+    if (token === null) { state = { kind: "not_found" }; render(); return; }
+    fetch(LINNEA_PREVIEW.url, {
+      method: "POST",
+      mode: "cors",
+      credentials: "omit",
+      cache: "no-store",
+      referrerPolicy: "no-referrer",
+      headers: { "content-type": "application/json", "authorization": "Bearer " + LINNEA_PREVIEW.anonKey, "apikey": LINNEA_PREVIEW.anonKey },
+      body: JSON.stringify({ token: token })
+    }).then(function (response) {
+      return response.json().catch(function () { return null; }).then(function (body) { return { status: response.status, body: body }; });
+    }).then(function (answer) {
+      var body = answer.body;
+      if (answer.status === 429) { state = { kind: "rate_limited" }; }
+      else if (body && body.ok === true && body.data) {
+        var data = body.data;
+        if (!chosen) lang = langFromLocale(data.locale) || lang;
+        if (data.status === "open" && Array.isArray(data.dishes)) state = { kind: "open", preview: data };
+        else if (data.status === "claimed" || data.status === "expired" || data.status === "revoked") state = { kind: data.status };
+        else state = { kind: "not_found" };
+      } else if (answer.status === 404) { state = { kind: "not_found" }; }
+      else { state = { kind: "rate_limited" }; }
+      render();
+    }).catch(function () {
+      state = { kind: "offline" };
+      render();
+    });
+  }
+
+  $("langs").addEventListener("click", function (event) {
+    var target = event.target.closest ? event.target.closest("button[data-lang]") : null;
+    if (!target) return;
+    lang = target.getAttribute("data-lang");
+    chosen = true;
+    render();
+  });
+  $("retry").addEventListener("click", load);
+  $("copy").addEventListener("click", function () {
+    var text = $("code-value").textContent;
+    var done = function () { $("copy").textContent = s("copied"); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, function () {});
+  });
+  $("learn").href = LANDING;
+  if (BLOCKING_IN_APP.test(ua)) $("in-app").hidden = false;
+  load();
+})();
+</script>
+</body>
+</html>

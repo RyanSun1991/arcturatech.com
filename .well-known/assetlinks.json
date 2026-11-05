@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.nourishrx.app",
+      "sha256_cert_fingerprints": [
+        "DF:9D:14:B4:18:FE:AB:C2:64:F6:46:C7:CC:F4:A3:E8:58:D8:46:82:9F:D6:18:BD:9F:7C:23:2B:38:E0:26:C0",
+        "BB:3C:FF:D4:79:D3:91:B9:3E:21:94:6C:56:0E:3D:70:13:6B:4A:F8:DB:3B:20:A4:29:29:FD:39:A2:85:06:24"
+      ]
+    }
+  }
+]

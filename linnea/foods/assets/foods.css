@@ -1,0 +1,97 @@
+/* deploy/web/foods/foods.css — F-1617b (docs/43 §8.3). The one stylesheet of the food pages, copied by build.mjs to
+   site/assets/foods.css. PRD v5 palette (SPEC §3, @theme/native colors.ts), light and dark; system fonts only; no
+   gradient, no web font, no image. Contrast pairs are checked by deploy/web/foods-build.test.mjs. */
+:root {
+  color-scheme: light dark;
+  --bg: #F2F2F7;
+  --card: #FFFFFF;
+  --label: #000000;
+  --secondary: #6B6B70;
+  --separator: rgba(60, 60, 67, 0.2);
+  --tint: #2B7350;
+  --on-tint: #FFFFFF;
+  --link: #0066CC;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --card: #1C1C1E;
+    --label: #FFFFFF;
+    --secondary: #98989F;
+    --separator: rgba(84, 84, 88, 0.6);
+    --tint: #5FC48E;
+    --on-tint: #000000;
+    --link: #4DB0FF;
+  }
+}
+@media (prefers-color-scheme: light) and (prefers-contrast: more) {
+  :root { --tint: #1F5A3E; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--label);
+  font: 17px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, "Noto Sans CJK SC", "Helvetica Neue", Arial, sans-serif;
+}
+html[lang="zh-Hant"] body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", Roboto, "Noto Sans CJK TC", "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--link); }
+a:focus-visible { outline: 3px solid var(--link); outline-offset: 2px; border-radius: 4px; }
+.skip { position: absolute; left: -9999px; top: 0; }
+.skip:focus { left: 16px; top: 12px; padding: 10px 14px; background: var(--card); color: var(--label); z-index: 1; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; overflow-wrap: break-word; }
+.site { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 0; }
+.brand { display: inline-flex; align-items: center; min-height: 44px; font-size: 20px; font-weight: 600; color: var(--label); text-decoration: none; }
+.langs ul { display: flex; flex-wrap: wrap; gap: 4px 16px; list-style: none; margin: 0; padding: 0; }
+.langs a, .langs span { display: inline-flex; align-items: center; min-height: 44px; font-size: 15px; }
+.langs [aria-current="page"] { color: var(--label); font-weight: 600; }
+.crumbs ol { display: flex; flex-wrap: wrap; gap: 4px; list-style: none; margin: 4px 0 0; padding: 0; font-size: 15px; color: var(--secondary); }
+.crumbs li + li::before { content: "›"; margin-inline-end: 4px; }
+.crumbs a { display: inline-block; min-height: 24px; }
+h1 { margin: 12px 0 4px; font-size: 28px; line-height: 1.2; font-weight: 700; }
+h2 { margin: 0 0 12px; font-size: 20px; line-height: 1.3; font-weight: 600; }
+h3 { margin: 16px 0 8px; font-size: 17px; font-weight: 600; }
+@media (min-width: 600px) { h1 { font-size: 34px; } }
+.aka, .intro { margin: 4px 0 8px; color: var(--secondary); font-size: 15px; }
+.summary {
+  margin: 12px 0 16px;
+  font: 600 20px/1.35 ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "PingFang SC", "PingFang TC", Roboto, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+.card { margin: 16px 0; padding: 16px 20px; background: var(--card); border-radius: 24px; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+caption { padding-bottom: 8px; text-align: start; color: var(--secondary); font-size: 15px; }
+th, td { padding: 10px 0; border-bottom: 1px solid var(--separator); text-align: start; vertical-align: top; font-weight: 400; }
+thead th { color: var(--secondary); font-size: 15px; }
+tbody th { font-weight: 400; }
+.num { padding-inline-start: 12px; text-align: end; white-space: nowrap; }
+thead .num { white-space: normal; }
+th + :not(.num), td + :not(.num) { padding-inline-start: 16px; }
+tr:last-child > * { border-bottom: 0; }
+.method { margin: 12px 0 0; color: var(--secondary); font-size: 15px; }
+.links { list-style: none; margin: 0; padding: 0; }
+.links li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; padding: 10px 0; border-bottom: 1px solid var(--separator); }
+.links li:last-child { border-bottom: 0; }
+.links a { display: inline-flex; align-items: center; min-height: 24px; }
+.links .kcal { color: var(--secondary); font-size: 15px; font-variant-numeric: tabular-nums; }
+.cols { columns: 2 12em; column-gap: 24px; }
+.btn {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 48px; margin-top: 12px; padding: 12px 20px;
+  border-radius: 14px; background: var(--tint); color: var(--on-tint);
+  font-weight: 600; text-align: center; text-decoration: none;
+}
+.btn.plain { background: transparent; color: var(--link); border: 1px solid var(--separator); }
+.credit { margin: 0 0 16px; }
+.credit:last-child { margin-bottom: 0; }
+.credit p { margin: 4px 0; font-size: 15px; overflow-wrap: anywhere; }
+.muted { color: var(--secondary); }
+.az { display: flex; flex-wrap: wrap; gap: 4px; list-style: none; margin: 0 0 8px; padding: 0; }
+.az a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; }
+.disclaimer { margin: 16px 0; color: var(--secondary); font-size: 15px; }
+.foot { padding: 8px 0 48px; color: var(--secondary); font-size: 13px; }
+.foot ul { display: flex; flex-wrap: wrap; gap: 4px 16px; list-style: none; margin: 0 0 8px; padding: 0; }
+.foot a { display: inline-flex; align-items: center; min-height: 44px; }

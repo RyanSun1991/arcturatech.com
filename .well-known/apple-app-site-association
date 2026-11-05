@@ -1,0 +1,28 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "VA9VHBAHAW.com.nourishrx.app"
+        ],
+        "components": [
+          {
+            "/": "/linnea/t/*",
+            "#": "*",
+            "comment": "Table invites (F-1613): /linnea/t/#k=<token>"
+          },
+          {
+            "/": "/linnea/r/*",
+            "#": "*",
+            "comment": "Referrals (F-1614): /linnea/r/#c=<code>"
+          },
+          {
+            "/": "/linnea/join/*",
+            "#": "*",
+            "comment": "Household invites (F-1439): /linnea/join/#k=<token>"
+          }
+        ]
+      }
+    ]
+  }
+}
