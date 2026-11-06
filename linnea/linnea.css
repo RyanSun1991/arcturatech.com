@@ -130,6 +130,9 @@
 .lnn-slogan:lang(zh) { line-height: 1.3; letter-spacing: 0.01em; }
 .lnn :lang(zh) h1, .lnn :lang(zh) h2, .lnn-slogan:lang(zh), .lnn-faq summary:lang(zh) { word-break: keep-all; overflow-wrap: anywhere; }
 .lnn-lede { margin-top: 22px; max-width: 34em; font-size: 17px; line-height: 1.7; color: var(--silver); }
+/* 3.0: one line under the lede that points at the new sections */
+.lnn-new { margin-top: 14px; max-width: 34em; font-size: 15px; line-height: 1.65; color: var(--silver); }
+.lnn-new a { font-weight: 600; color: var(--cloud); }
 
 .lnn-get { margin-top: 36px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
 /* Store badges: Apple's and Google's artwork, unaltered; clear space = 1/4 of the height on every side.
@@ -187,6 +190,9 @@
 }
 .lnn-feature.flip .lnn-copy { order: 2; }
 .lnn-copy p { margin-top: 20px; max-width: 34em; font-size: 16.5px; line-height: 1.75; color: var(--silver); }
+/* a titled part inside a section (3.0: the family plan under family) */
+.lnn-copy h3 { margin-top: 40px; font-size: 19px; font-weight: 700; line-height: 1.4; color: var(--cloud); scroll-margin-top: calc(var(--nav-h) + 24px); }
+.lnn-copy h3 + p { margin-top: 12px; }
 .lnn-checks { list-style: none; margin-top: 28px; display: grid; gap: 14px; max-width: 34em; }
 .lnn-checks li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.6; color: var(--cloud); }
 .lnn-checks svg { flex: none; width: 18px; height: 18px; margin-top: 3px; color: var(--aurora); }
