@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Android's agents have three ways into an app, and one needs nothing from the app. Here is what a health app should say about each. — Insights · Arctura Technologies</title>
+  <meta name="description" content="Android's agents get three ways into an app: declared functions, a remote server or the screen itself. What a health app should say about each, and what Linnea says.">
+  <link rel="canonical" href="https://arcturatech.com/insights/android-intelligence-system-three-ways-into-a-health-app.html">
+  <meta name="theme-color" content="#0A1120">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Arctura Technologies">
+  <meta property="og:title" content="Android's agents have three ways into an app, and one needs nothing from the app. Here is what a health app should say about each.">
+  <meta property="og:description" content="Android's agents get three ways into an app: declared functions, a remote server or the screen itself. What a health app should say about each, and what Linnea says.">
+  <meta property="og:url" content="https://arcturatech.com/insights/android-intelligence-system-three-ways-into-a-health-app.html">
+  <meta property="og:image" content="https://arcturatech.com/assets/og/android-intelligence-system-three-ways-into-a-health-app.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-11-09">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="alternate" type="application/rss+xml" title="Arctura Technologies — Insights" href="/feed.xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Android's agents have three ways into an app, and one needs nothing from the app. Here is what a health app should say about each.",
+    "description": "Android's agents get three ways into an app: declared functions, a remote server or the screen itself. What a health app should say about each, and what Linnea says.",
+    "datePublished": "2026-11-09",
+    "dateModified": "2026-11-09",
+    "author": {"@type": "Organization", "name": "Arctura Technologies Inc.", "url": "https://arcturatech.com"},
+    "publisher": {"@type": "Organization", "name": "Arctura Technologies Inc.", "url": "https://arcturatech.com"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://arcturatech.com/insights/android-intelligence-system-three-ways-into-a-health-app.html"},
+    "url": "https://arcturatech.com/insights/android-intelligence-system-three-ways-into-a-health-app.html",
+    "image": "https://arcturatech.com/assets/og/android-intelligence-system-three-ways-into-a-health-app.png",
+    "keywords": ["Android", "system agents", "AppFunctions", "Computer Control", "privacy engineering", "health app privacy"]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header scrolled">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Arctura Technologies home">
+      <span class="peak" aria-hidden="true">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M24 92 L50 12 L76 92" fill="none" stroke="#EAEFF7" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-word" aria-hidden="true">
+        <svg viewBox="-14 -4 538 126" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"><path d="M0 102 L26 18 L52 102"/><path d="M74 102 L74 18 L98 18 A 22 22 0 0 1 98 62 L74 62"/><path d="M98 62 L124 102"/><path d="M211 23.6 A 42 42 0 1 0 211 96.4"/><path d="M236 18 L288 18"/><path d="M262 18 L262 102"/><path d="M310 18 L310 74 A 26 26 0 0 0 362 74 L362 18"/><path d="M384 102 L384 18 L408 18 A 22 22 0 0 1 408 62 L384 62"/><path d="M408 62 L434 102"/><path d="M458 102 L484 18 L510 102"/></g></svg>
+      </span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/solutions.html">Solutions</a></li>
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="/company.html">Company</a></li>
+        <li><a href="/insights/" class="active" aria-current="page">Insights</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn nav-cta" href="/contact.html">Work with us</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <div class="post-hero">
+    <div class="wrap">
+      <a class="post-back" href="/insights/">← All insights</a>
+      <div class="crumb">Insights · Privacy engineering</div>
+      <h1>Android's agents have three ways into an app, and one needs nothing from the app. Here is what a health app should say about each.</h1>
+      <p class="lede">On 5 November the Android Developers Blog summed up what Google now calls the Android intelligence system: agents such as Gemini carrying out a person's goal across the apps on a phone, and the ways they get in. <a href="/insights/siri-ai-and-three-meanings-of-on-your-device.html">Last week we wrote about Siri AI</a> opening to every app and the three meanings of "on your device". Android's version poses a different question: not only what an app chooses to hand an assistant, but what the assistant can reach when the app hands over nothing. Here are three ways in, drawn from Google's documentation as it reads today, and what a health app should say about each.</p>
+      <div class="meta">
+        <span>Published <time datetime="2026-11-09">9 November 2026</time></span>
+        <span>·</span>
+        <span>5 min read</span>
+        <span>·</span>
+        <span>By Arctura Technologies</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-body">
+    <div class="wrap">
+      <article class="prose">
+
+        <h2>Way one: functions the app declares</h2>
+        <p>The first way is the one a developer builds on purpose. Through AppFunctions, part of the Android platform with a Jetpack library alongside, an app publishes selected features as individual functions. The library writes them into a schema the operating system indexes, and a caller with the right permission, which Google says can be an agent, another app or an assistant such as Gemini, can find a function and run it. Google calls the result Android MCP and says the same functions can feed the system's proactive features too. It needs Android 16 or later; as of May 2026 the Gemini side was still a closed preview for selected testers. A remote MCP server run from the app's own backend is the cross-platform alternative. Google's advice is that encrypted content or sensitive data held on the device should use the local path.</p>
+        <p>For a health app, each declared function is a sentence that belongs in the privacy policy. A function that creates a water entry is a sentence about input, like a widget. A function that returns this week's medication status is a sentence about output to a reader who is neither the user nor us. Keeping the route on the device settles where the data travels, not who reads it. What <a href="/linnea/privacy.html">Linnea's privacy policy</a> says about Android names Health Connect, sign-in, purchases and notification delivery as services Google provides under its own terms, and the <a href="/linnea/">Linnea page</a> lists an app shortcut, a Quick Settings tile and reminders as ways to log. On the Android side, neither names an agent, an assistant or a function registry. Nothing we have published says what, if anything, Linnea declares to the system. As with Siri, the sentence is missing, and we would rather say so.</p>
+
+        <h2>Way two: the screen itself</h2>
+        <p>The second way needs no cooperation from the app. Google describes Computer Control as an Android API still to come, one that lets an assistant preloaded by the device maker carry out tasks in other apps through their user interface. The assistant holds a privileged permission and asks for a session covering up to six apps. The first time it tries, the system shows the user a dialog asking whether the assistant may automate the apps it has named. If the user agrees, the system runs those apps on a background virtual display, much as casting does; the assistant launches them, takes screenshots, decides what to do, and sends taps, swipes and typed text, handing control back to the person for steps such as confirming a transaction. The developer page is explicit that a target app needs no changes; the assistant navigates by analyzing screenshots, and may choose to limit which apps it automates. In the blog post's words, agents can fall back to this route "without requiring any app-side integration". The page describes no switch on the app's side, and we looked for one.</p>
+        <p>This is the way that turns screen design into a data flow. Whatever the app shows, an authorized assistant can read: for a health log, the medication list, the meals, the glucose readings, everything the person sees. End-to-end encryption, which keeps Linnea's health records unreadable to us, does nothing here, because the screen is where the person reads them. The permission sits with the user, where it belongs, but it is granted to an assistant for a session rather than set per app in Settings, and the app is not asked. So the sentence this way calls for is about a reader, not a route: on a phone with such an assistant, software the user authorizes may see what the user sees and act as the user would. Linnea's policy does not contain that sentence. It is the one we would add first, because, as Google documents the framework, it would be true of any app on the device, integrated or not.</p>
+
+        <h2>Way three: notifications and chips</h2>
+        <p>The third way is quieter. Alongside tasks a person asks for, the intelligence system offers what Google calls proactive assistance: suggestion chips on the lock screen, in notifications, on the keyboard and inside apps. For a health app the notification is the surface that matters. Linnea's policy says our notifications carry only fixed text or a signal to update, never your health information, and the Linnea page says reminders show a fixed message, never a medication name or dose, while notifications on Android show counts and status only. A lock screen is the obvious reason for rules like these. They now also bound what a proactive layer can learn from a Linnea notification: that a medication, supplement or water reminder fired, not which one or how much. The keyboard and in-app chips work on what you type and what is on screen, which brings us back to the second way.</p>
+
+        <h2>What a policy should say on Android</h2>
+        <p>Three sentences follow, and only one is in Linnea's policy today. For declared functions: name them, say whether each writes an entry or reads one out, or say there are none. For the screen: say that an assistant the user authorizes may read and operate the app in a session, and that the app has no switch for it, if that is still true when the API ships. For notifications: say what they carry. Linnea's policy does the third. The first two are what we would most like our own policy to gain once the facts settle; one API is upcoming and the other in preview. Until then we will not let "on your device" stand in for them. Apple's switch is per app, in Settings; Google's, as documented, is a dialog when an assistant first asks. Both leave the switch with the user; neither tells the person what is behind the door. That part is the app's to say.</p>
+
+        <div class="post-cta">
+          <p>Linnea's privacy policy draws its lines feature by feature. If an Android line is unclear to you, tell us which.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a class="btn solid" href="/linnea/privacy.html">Privacy policy</a>
+            <a class="btn" href="/products.html">Linnea</a>
+            <a class="btn" href="/contact.html">Contact</a>
+          </div>
+        </div>
+
+        <p class="post-disclaimer">Linnea provides organizational and informational tools only; it does not provide medical advice, diagnosis, or treatment. Always consult a qualified health professional for medical decisions. Android, Google Play, Gemini and Health Connect are trademarks of Google LLC, referenced for identification only; Arctura Technologies Inc. is not affiliated with or endorsed by Google. The Android intelligence system, AppFunctions and Computer Control are described from Google's published developer documentation as read on 9 November 2026; that documentation describes Computer Control as upcoming and the AppFunctions integration with Gemini as a private preview, and availability varies by device, manufacturer and region. Siri is a trademark of Apple Inc., referenced for identification only.</p>
+
+        <section class="post-sources" aria-labelledby="sources-h">
+          <h2 id="sources-h">Sources</h2>
+          <ol>
+            <li>Android Developers Blog, "What's new in intelligent apps at the Android Developer Summit", 5 November 2026: <a href="https://developer.android.com/blog/posts/android-intelligence-system-in-app-agents-ads" rel="noopener" target="_blank">developer.android.com/blog/posts/android-intelligence-system-in-app-agents-ads</a></li>
+            <li>Android Developers, "Connect your app to the Android intelligence system": <a href="https://developer.android.com/ai/intelligence-system" rel="noopener" target="_blank">developer.android.com/ai/intelligence-system</a></li>
+            <li>Android Developers, "Android Computer Control": <a href="https://developer.android.com/ai/computer-control" rel="noopener" target="_blank">developer.android.com/ai/computer-control</a></li>
+            <li>Android Developers, "Overview of AppFunctions": <a href="https://developer.android.com/ai/appfunctions" rel="noopener" target="_blank">developer.android.com/ai/appfunctions</a></li>
+            <li>Apple Support, "About iOS 27 Updates", iOS 27.2 section (Excluded Apps): <a href="https://support.apple.com/en-us/149076" rel="noopener" target="_blank">support.apple.com/en-us/149076</a></li>
+            <li>Linnea Privacy Policy, version 3.3 (effective 9 November 2026), sections 1, 2, 6 and 9: <a href="/linnea/privacy.html">arcturatech.com/linnea/privacy.html</a></li>
+            <li>Linnea for iPhone, Apple Watch and Android, product page (logging entry points on Android; reminders and notifications): <a href="/linnea/">arcturatech.com/linnea/</a></li>
+          </ol>
+        </section>
+
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-bottom" style="margin-top:0;padding-top:0;border-top:none;">
+      <span>© 2026 Arctura Technologies Inc. All rights reserved.</span>
+      <span><a href="/">Home</a> · <a href="/products.html">Products</a> · <a href="/insights/">Insights</a> · <a href="/company.html">Company</a> · <a href="/privacy.html">Privacy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
