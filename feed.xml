@@ -6,8 +6,15 @@
     <description>Notes from Arctura Technologies Inc. on health data, on-device AI, privacy engineering, and building consumer software in Canada.</description>
     <language>en</language>
     <copyright>© 2026 Arctura Technologies Inc.</copyright>
-    <lastBuildDate>Mon, 09 Nov 2026 09:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 09:00:00 -0500</lastBuildDate>
     <atom:link href="https://arcturatech.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Linnea 3.0 is on the App Store. Here is who is asked before anything about your family leaves your account.</title>
+      <link>https://arcturatech.com/insights/linnea-3-0-family-sharing-who-is-asked-first.html</link>
+      <guid isPermaLink="true">https://arcturatech.com/insights/linnea-3-0-family-sharing-who-is-asked-first.html</guid>
+      <pubDate>Wed, 11 Nov 2026 09:00:00 -0500</pubDate>
+      <description>Linnea 3.0 adds family links, Family AI, a family plan and invitations. What each one sends, who is asked first, and the one case where an adult answers for a child.</description>
+    </item>
     <item>
       <title>Android's agents have three ways into an app, and one needs nothing from the app. Here is what a health app should say about each.</title>
       <link>https://arcturatech.com/insights/android-intelligence-system-three-ways-into-a-health-app.html</link>
