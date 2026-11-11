@@ -1,0 +1,2175 @@
+{
+ "client": {
+  "inviteResult": {
+   "eyebrow": "YOUR RELATIONSHIP MAP",
+   "title": "You and {inviter}",
+   "relationLine": "From your side, {inviter} is your {relation}.",
+   "intro": "This is the same pair reading, seen from your side. The six rings have no total: they show how strong the connection and the friction are, separately.",
+   "you": "You",
+   "findingsTitle": "Key findings",
+   "locked": "{count, plural, one {# more finding} other {# more findings}} · sign up to keep this, and a membership shows the rest",
+   "systemsTitle": "By system",
+   "systemsLine": "{system} · {count, plural, one {# finding} other {# findings}}",
+   "systemsNote": "Chart details (bi-wheel, pillar comparison and so on) need full sharing on both sides. {inviter} shares results only by default: you won't see their birth date, time or place.",
+   "keepTitle": "Keep this result",
+   "keepBody": "Sign up and this pair reading appears under Relationships. You or {inviter} can stop sharing at any time.",
+   "keep": "Sign up and keep it",
+   "keepSignedIn": "Save to my account",
+   "linked": "Saved to your account.",
+   "selfFilled": "Your own map is ready too, from the details you entered.",
+   "reward": "You and {inviter} each get 7 days of Plus.",
+   "openShared": "Open in Relationships",
+   "copyLink": "Copy the result link (valid for 30 days)",
+   "copied": "Copied",
+   "computing": "Working out your pair reading. This usually takes a few seconds.",
+   "pendingInviter": "{inviter}'s details aren't ready yet. Check back a little later.",
+   "revoked": "This pair reading has ended: one of you stopped sharing.",
+   "expired": "This result link has expired (30 days).",
+   "unavailable": "This pair reading isn't available any more.",
+   "notFound": "This result can't be found. The link may be incomplete.",
+   "noToken": "No saved result on this device. Open the result link you got when you finished the invitation.",
+   "error": "Can't open this right now. Please try again later.",
+   "linkError": {
+    "alreadyLinked": "This result is already saved to another account.",
+    "ownInvite": "This is an invitation you sent.",
+    "gone": "This pair reading has ended, or the link has expired.",
+    "generic": "Couldn't save it right now. Please try again later."
+   }
+  },
+  "pair": {
+   "title": "Pair reading",
+   "practice": "Try together",
+   "rings": {
+    "footnote": "Six dimensions, read separately — never merged into one number",
+    "a11y": "{ring}: {character}",
+    "character": {
+     "strong": "Strong",
+     "quiet": "Quiet",
+     "friction": "Mostly friction"
+    },
+    "thinEvidence": "Thin evidence",
+    "legendStrength": "Connection",
+    "legendFriction": "Friction",
+    "axis": "{neg} ⇄ {pos}",
+    "evidence": "Evidence"
+   },
+   "findings": {
+    "eyebrow": "KEY FINDINGS",
+    "title": "Key findings · {shown} / {total}",
+    "direction": "{from} → {to}",
+    "mutual": "Both ways",
+    "lockedCta": "Unlock {count, plural, one {# more finding} other {# more findings}} and your conflict scripts",
+    "lockedA11y": "Locked finding — tap to unlock"
+   }
+  },
+  "clip": {
+   "getApp": "Get Armilla",
+   "noLink": "Open this from an invitation link."
+  }
+ },
+ "web": {
+  "landing": {
+   "download": {
+    "eyebrow": "GET THE APP",
+    "title": "Daily awareness, in your pocket",
+    "lead": "Daily energy weather, prompts, journal and widgets live in the app; deep reports, pair invitations and the pro workspace live on the web. One account, synced everywhere.",
+    "ios": "App Store",
+    "iosStatus": "Coming soon",
+    "android": "Google Play",
+    "androidStatus": "Coming later",
+    "web": "Continue in the browser"
+   }
+  }
+ },
+ "systems": {
+  "relationTypes": {
+   "partner": "Partner",
+   "parent": "Parent",
+   "child": "Child",
+   "sibling": "Sibling",
+   "friend": "Friend",
+   "colleague": "Colleague",
+   "businessPartner": "Business partner",
+   "client": "Client",
+   "other": "Other"
+  }
+ },
+ "facts": {
+  "enums": {
+   "baziPattern": {
+    "congCai": "Follow-Wealth",
+    "congEr": "Follow-the-Output",
+    "congQiang": "Follow-the-Strong",
+    "congRuo": "Follow-the-Weak",
+    "congSha": "Follow-Power",
+    "huaQi": "Transformation",
+    "jianLu": "Thriving Self",
+    "pianCai": "Indirect Wealth",
+    "pianYin": "Indirect Resource",
+    "qiSha": "Seven Killings",
+    "shangGuan": "Hurting Officer",
+    "shiShen": "Eating God",
+    "yangRen": "Yang Blade",
+    "zhengCai": "Direct Wealth",
+    "zhengGuan": "Direct Officer",
+    "zhengYin": "Direct Resource"
+   },
+   "body": {
+    "asc": "Ascendant",
+    "chiron": "Chiron",
+    "dsc": "Descendant",
+    "earth": "Earth",
+    "ic": "IC",
+    "jupiter": "Jupiter",
+    "lilith": "Lilith",
+    "mars": "Mars",
+    "mc": "Midheaven",
+    "mercury": "Mercury",
+    "moon": "Moon",
+    "neptune": "Neptune",
+    "northNode": "North Node",
+    "partOfFortune": "Part of Fortune",
+    "pluto": "Pluto",
+    "saturn": "Saturn",
+    "southNode": "South Node",
+    "sun": "Sun",
+    "uranus": "Uranus",
+    "venus": "Venus",
+    "vertex": "Vertex"
+   },
+   "branch": {
+    "chen": "Chen",
+    "chou": "Chou",
+    "hai": "Hai",
+    "mao": "Mao",
+    "shen": "Shen",
+    "si": "Si",
+    "wei": "Wei",
+    "wu": "Wu",
+    "xu": "Xu",
+    "yin": "Yin",
+    "you": "You",
+    "zi": "Zi"
+   },
+   "cogFunction": {
+    "Fe": "Fe",
+    "Fi": "Fi",
+    "Ne": "Ne",
+    "Ni": "Ni",
+    "Se": "Se",
+    "Si": "Si",
+    "Te": "Te",
+    "Ti": "Ti"
+   },
+   "graha": {
+    "jupiter": "Jupiter",
+    "ketu": "Ketu",
+    "mars": "Mars",
+    "mercury": "Mercury",
+    "moon": "Moon",
+    "rahu": "Rahu",
+    "saturn": "Saturn",
+    "sun": "Sun",
+    "venus": "Venus"
+   },
+   "pillar": {
+    "day": "day pillar",
+    "hour": "hour pillar",
+    "month": "month pillar",
+    "year": "year pillar"
+   },
+   "stem": {
+    "bing": "Bing",
+    "ding": "Ding",
+    "geng": "Geng",
+    "gui": "Gui",
+    "ji": "Ji",
+    "jia": "Jia",
+    "ren": "Ren",
+    "wu": "Wu",
+    "xin": "Xin",
+    "yi": "Yi"
+   },
+   "type16": {
+    "ENFJ": "ENFJ",
+    "ENFP": "ENFP",
+    "ENTJ": "ENTJ",
+    "ENTP": "ENTP",
+    "ESFJ": "ESFJ",
+    "ESFP": "ESFP",
+    "ESTJ": "ESTJ",
+    "ESTP": "ESTP",
+    "INFJ": "INFJ",
+    "INFP": "INFP",
+    "INTJ": "INTJ",
+    "INTP": "INTP",
+    "ISFJ": "ISFJ",
+    "ISFP": "ISFP",
+    "ISTJ": "ISTJ",
+    "ISTP": "ISTP"
+   },
+   "wx": {
+    "earth": "Earth",
+    "fire": "Fire",
+    "metal": "Metal",
+    "water": "Water",
+    "wood": "Wood"
+   }
+  },
+  "relation_fact": {
+   "bazi": {
+    "pair": {
+     "branch": {
+      "combine6": {
+       "detail": "One of your branches combines with one of the other’s ({ap} and {bp} pillars): some layer of daily life simply fits, with an effortless understanding.",
+       "phrase": "Branches combine"
+      }
+     },
+     "complement": {
+      "mutual": {
+       "detail": "Your five phases complement each other: what one lacks the other has in abundance, and each chart’s strongest phase is what the other needs. Together you both come into better balance — a rare structure.",
+       "phrase": "Mutual complement"
+      },
+      "one_way": {
+       "detail": "One person’s five phases supply exactly what the other needs: the one supplied feels steadier, and the one supplying deserves to be seen and given back to.",
+       "phrase": "One-way complement"
+      }
+     },
+     "daybranch": {
+      "clash": {
+       "detail": "Your day branches clash: your routines, habits and rhythms of closeness differ, and it shows most once you share a home.",
+       "phrase": "Day branches clash"
+      },
+      "combine6": {
+       "detail": "Your day branches combine: your daily and intimate rhythms match, and living together feels like home.",
+       "phrase": "Day branches combine"
+      }
+     },
+     "daystem": {
+      "clash": {
+       "detail": "Your day stems clash: everyday small things can turn into head-on collisions, and when you talk fast you push against each other — the same tension makes you hard to ignore.",
+       "phrase": "Day stems {sa}–{sb} clash"
+      },
+      "combine": {
+       "detail": "Your day stems form one of the five combinations (transforming toward {el}): a natural affinity that can feel like meeting an old friend, and you drift toward each other without trying.",
+       "phrase": "Day stems {sa}–{sb} combine"
+      },
+      "controls": {
+       "detail": "One person’s day stem restrains the other’s: one of you tends to become the other’s rules and pressure — sometimes exactly the containment the other needs. It comes down to how hard.",
+       "phrase": "{sa} restrains {sb}"
+      },
+      "generates": {
+       "detail": "One person’s day stem feeds the other’s: one of you naturally nourishes and backs the other, who finds firmer footing in the relationship.",
+       "phrase": "{sa} nourishes {sb}"
+      },
+      "same_element": {
+       "detail": "Your day stems share an element ({sa}, {sb}): kindred temperaments that understand each other quickly — and, being alike, neither is keen to give way first.",
+       "phrase": "Same-element day stems"
+      }
+     },
+     "dayun": {
+      "output_meets_power": {
+       "detail": "One of you is in a breaking-out output decade while the other is in a pressured officer decade: you push each other hard, and can both be wound tight at once.",
+       "phrase": "Output decade meets officer decade"
+      },
+      "sync": {
+       "detail": "Your luck pillars point the same way for the next ten years: you rise and settle together and tend to want the same kinds of things at the same time.",
+       "phrase": "Luck pillars in step"
+      }
+     },
+     "sole_element": {
+      "detail": "Taken together, nearly all of your {el} comes from one person: when that person steps away the pair loses that strength, so it is worth turning it into shared agreements rather than leaving it in one head.",
+      "phrase": "{el} sits almost all on one side"
+     }
+    }
+   },
+   "hd": {
+    "pair": {
+     "authority": {
+      "both_emotional": {
+       "detail": "You both have emotional authority: big decisions need time for each of you, so agree on a cooling-off period and avoid deciding on the spot at a high or a low.",
+       "phrase": "Both emotional authority"
+      },
+      "wave_vs_instant": {
+       "detail": "One of you needs the emotional wave to settle before seeing clearly, the other knows in the moment: one feels rushed, the other feels held back. Agreeing that big decisions wait a night helps more than any advice.",
+       "phrase": "Riding the wave × knowing now"
+      }
+     },
+     "companionship": {
+      "detail": "You both hold {channels} whole: on that theme you run at the same frequency — easy as old friends, no explaining needed.",
+      "phrase": "Companionship channel"
+     },
+     "compromise": {
+      "detail": "On {channels}, one of you holds the whole channel and the other only one end: one tends to lead on that theme while the other gives way, and small grievances can build up.",
+      "phrase": "Compromise channel"
+     },
+     "dominance": {
+      "detail": "{channels} lives in only one of you: that person brings energy the other lacks, which the other can learn from — while taking care not to be swept along by it.",
+      "phrase": "Dominance channel"
+     },
+     "electromagnetic": {
+      "many": {
+       "detail": "Each of you holds one end, and together you complete {channels}: you fill each other in, being close feels like being switched on, and the pull comes from difference rather than likeness.",
+       "phrase": "Several electromagnetic channels"
+      },
+      "some": {
+       "detail": "Together you complete {channels}: on that theme you attract and complete each other.",
+       "phrase": "Electromagnetic channel"
+      },
+      "throat": {
+       "detail": "Several of your electromagnetic channels run through the Throat: together, ideas get said and made more easily — a pairing built for expressing and creating together.",
+       "phrase": "Together, expression opens"
+      }
+     },
+     "open_centers": {
+      "few": {
+       "detail": "Together you leave almost no center open: you are rarely bored and rarely quiet as a pair, so each of you needs some time alone to come back to yourself.",
+       "phrase": "Composite almost fully defined"
+      },
+      "shared": {
+       "detail": "Several centers stay open even together: these are the themes where the outside world can sway you both — and good ground to practise on together.",
+       "phrase": "Shared open centers"
+      }
+     },
+     "type": {
+      "manifestor_generator": {
+       "detail": "One of you can initiate without waiting, the other commits for the long haul once responding: the natural split is one starts, one goes deep — as long as the starter informs first and the other checks in first.",
+       "phrase": "One starts, one goes deep"
+      },
+      "projector_generator": {
+       "detail": "One of you needs an invitation before offering a view, the other needs something to respond to before moving: who speaks first often decides where things go.",
+       "phrase": "Waiting to be invited × waiting to respond"
+      },
+      "two_manifestors": {
+       "detail": "You are both types who can start things on your own: each wants to begin on your own timing, and telling each other in advance saves a lot of friction.",
+       "phrase": "Two initiators"
+      }
+     }
+    }
+   },
+   "numerology": {
+    "pair": {
+     "lifepath_lead_support": {
+      "detail": "One of your life paths leans toward leading and mastery, the other toward partnership and care: naturally complementary roles — just make sure the same person is not always the one giving way.",
+      "phrase": "Leading and supporting"
+     },
+     "personal_year_same": {
+      "detail": "You are in the same personal year: this year runs at the same rhythm for you both — good for starting or wrapping things up together.",
+      "phrase": "Personal years in step"
+     },
+     "same_life_path": {
+      "detail": "You share a life path number: your life themes are alike, and it is easy to understand what the other is reaching for.",
+      "phrase": "Same life path number"
+     }
+    }
+   },
+   "psych": {
+    "pair": {
+     "attachment": {
+      "anxious_avoidant": {
+       "detail": "When uneasy, one of you moves closer and seeks reassurance while the other steps back for space: a chase-and-retreat loop that slows down once you both can see it.",
+       "phrase": "Moving closer × stepping back"
+      },
+      "both_anxious": {
+       "detail": "You both care a lot about each other’s responses: close times hold you both, and busy or quiet stretches can unsettle you both at once. A simple agreed “I’m here” signal helps.",
+       "phrase": "Both care about response"
+      },
+      "both_avoidant": {
+       "detail": "You both lean towards independence and tend to process things on your own: you give each other room and it feels easy — and when it matters, remember to say “I need you”.",
+       "phrase": "Both keep some space"
+      },
+      "secure_anchor": {
+       "detail": "One of you has a secure attachment style: the relationship has a steady anchor, making it easier to find your way back to each other after ups and downs.",
+       "phrase": "A secure anchor"
+      }
+     },
+     "bigfive": {
+      "conscientiousness_gap": {
+       "detail": "One of you is orderly and punctual, the other spontaneous and flexible: chores, plans and punctuality are common sources of friction.",
+       "phrase": "Orderly × spontaneous"
+      },
+      "neuroticism_gap": {
+       "detail": "One of you feels strongly and notices early, the other stays even: the steady one can be an anchor — as long as the other’s feelings are not waved off as overthinking.",
+       "phrase": "Sensitive × steady"
+      }
+     },
+     "disc": {
+      "both_dominance": {
+       "detail": "You both like to make the call and push ahead: together you have plenty of drive, and when you disagree things can lock up. Agreeing in advance who decides what helps.",
+       "phrase": "Both like to decide"
+      },
+      "pace_gap": {
+       "detail": "One of you likes to move fast and adjust on the way, the other prefers to think it through and go steadily: the pace gap is a common rub — agreeing up front on when to decide makes it much smoother.",
+       "phrase": "Fast push × steady pace"
+      }
+     },
+     "enneagram": {
+      "same_center": {
+       "detail": "Your Enneagram types share a center: your first reactions under stress are alike, so it is easy to see why the other acts as they do.",
+       "phrase": "Same Enneagram center"
+      }
+     },
+     "types16": {
+      "ei_split": {
+       "detail": "One of you needs to mull things over inside, the other needs to talk to think: on the same issue, one wants quiet while the other wants to discuss it now.",
+       "phrase": "Mull it over × talk it out"
+      },
+      "jp_split": {
+       "detail": "One of you likes to settle things early, the other to keep options open: plans, schedules and deadlines are the usual sticking points.",
+       "phrase": "Settle it × keep it open"
+      },
+      "shared_intuition": {
+       "detail": "You both lean intuitive (N): you love talking about possibilities and meaning, and one of you picks up an idea the moment the other starts it.",
+       "phrase": "Shared intuition"
+      },
+      "shared_sensing": {
+       "detail": "You both lean toward sensing (S): you trust concrete facts and experience, and practical conversations go efficiently.",
+       "phrase": "Shared sensing"
+      },
+      "sn_split": {
+       "detail": "One of you sees patterns and possibilities first, the other facts and details: each can find the other too airy or too fussy — together you see the whole thing.",
+       "phrase": "Big picture × the details"
+      },
+      "tf_split": {
+       "detail": "One of you weighs people and relationships first, the other logic and consistency: in an argument one feels unheard and the other feels unconvinced — and each is holding half of the picture.",
+       "phrase": "People-first × logic-first"
+      }
+     },
+     "values": {
+      "opposite_direction": {
+       "detail": "What each of you values most sits opposite on the values circle: what one weighs heavily, the other weighs less. It lets each of you see the other side — talking through what matters to each before big decisions helps.",
+       "phrase": "Complementary value directions"
+      },
+      "shared_direction": {
+       "detail": "Your values assessments point in a similar direction: many choices need no explaining — the other already knows why you make them.",
+       "phrase": "Similar value directions"
+      }
+     }
+    }
+   },
+   "vedic": {
+    "pair": {
+     "dasha_sync": {
+      "detail": "(Reference) Your current main Dasha rulers are the same or friendly: this chapter of life carries similar themes for you both.",
+      "phrase": "Dashas in step"
+     },
+     "koota": {
+      "gana_low": {
+       "detail": "(Reference) Your Moon nakshatras fall in different temperament groups: traditionally a sign of differing moods and pace that asks for extra patience with each other.",
+       "phrase": "Gana: different"
+      },
+      "gana_match": {
+       "detail": "(Reference) Your Moon nakshatras belong to compatible temperament groups (Gana): traditionally read as a similar everyday pace.",
+       "phrase": "Gana: matched"
+      },
+      "graha_maitri_high": {
+       "detail": "(Reference) The rulers of your Moon signs are friendly to each other: traditionally read as minds and hearts that meet easily.",
+       "phrase": "Graha Maitri: friendly"
+      },
+      "tara_high": {
+       "detail": "(Reference) The Tara count between your nakshatras agrees: traditionally read as each being a help to the other.",
+       "phrase": "Tara: matched"
+      },
+      "yoni_high": {
+       "detail": "(Reference) Your nakshatras’ Yoni symbols agree: traditionally read as a strong instinctive closeness.",
+       "phrase": "Yoni: matched"
+      }
+     }
+    }
+   },
+   "western": {
+    "pair": {
+     "asc_asc_square": {
+      "detail": "Your Ascendants form a hard angle: you meet the world differently — one leads with harmony and mood, the other with structure and rules — so in public you can seem to pull in different directions.",
+      "phrase": "Ascendants at odds"
+     },
+     "jupiter_lifts": {
+      "detail": "One person’s Jupiter lights up the other’s Sun or Moon: around each other you grow more confident and more willing to dream, and the relationship widens your horizons.",
+      "phrase": "Jupiter lifts"
+     },
+     "mars_mars_tension": {
+      "detail": "Your two Mars placements oppose or square each other: you act at different speeds and in different styles, so when one wants to charge the other wants another approach — small things can spark arguments.",
+      "phrase": "Mars against Mars"
+     },
+     "mercury_harmony": {
+      "detail": "Your Mercurys are in harmony: you think along similar lines, can finish each other’s half-sentences, and talking is a pleasure in itself.",
+      "phrase": "Mercury in tune"
+     },
+     "mercury_tension": {
+      "detail": "Your Mercurys form a hard angle: you think and speak differently, so the same sentence can mean two things — worth asking “do you mean…?” more often.",
+      "phrase": "Mercury needs translating"
+     },
+     "moon_mc_conjunction": {
+      "detail": "One person’s Moon sits right on the other’s Midheaven (within {orb}°): emotional support flows naturally toward the other’s work and public life, often without needing to be said.",
+      "phrase": "Moon on the Midheaven"
+     },
+     "moon_moon_harmony": {
+      "detail": "Your Moons are in harmony: your emotional needs are alike, you want similar kinds of care when tired or low, and being together takes little effort.",
+      "phrase": "Moons in harmony"
+     },
+     "moon_moon_tension": {
+      "detail": "Your Moons form a hard angle: you handle feelings differently, and the comfort one of you needs may be exactly what the other finds hardest to give.",
+      "phrase": "Moons at odds"
+     },
+     "node_contact": {
+      "detail": "One person’s personal planet sits on the other’s North Node: the relationship often feels like being drawn toward a direction you want but do not yet know.",
+      "phrase": "Node contact"
+     },
+     "overlay_7th": {
+      "detail": "One person’s Sun, Moon or Venus falls in the other’s 7th house: the other person is naturally seen in the role of partner.",
+      "phrase": "In the partnership house"
+     },
+     "pluto_personal": {
+      "detail": "One person’s Pluto touches the other’s personal planet: a deep, intense pull that can stir wanting control or fearing it — worth naming openly to each other.",
+      "phrase": "Pluto contact"
+     },
+     "saturn_moon": {
+      "detail": "One person’s Saturn presses on the other’s Moon: a strong sense of commitment and duty, which can leave one of you feeling managed and the other feeling leaned on.",
+      "phrase": "Moon–Saturn contact"
+     },
+     "saturn_sun_venus_soft": {
+      "detail": "One person’s Saturn harmonises with the other’s Sun or Venus: the bond has dependable structure and a long view, suited to things that take patience.",
+      "phrase": "Saturn steadies"
+     },
+     "sun_mars_harmony": {
+      "detail": "One person’s Sun harmonises with the other’s Mars: your drives light each other up, and you both have more energy when you work on something together.",
+      "phrase": "Sun–Mars harmony"
+     },
+     "sun_moon_harmony": {
+      "detail": "One person’s Sun meets the other’s Moon in a conjunction or easy aspect: who one of you is becoming is exactly what makes the other feel at home.",
+      "phrase": "Sun and Moon in step"
+     },
+     "uranus_venus_moon": {
+      "detail": "One person’s Uranus touches the other’s Venus or Moon: fresh, exciting and unpredictable — and in need of room for each of you to be free.",
+      "phrase": "Uranus touches Venus or Moon"
+     },
+     "venus_mars_harmony": {
+      "detail": "One person’s Venus meets the other’s Mars in a conjunction or easy aspect: a classic pull, where one person’s charm sparks the other’s pursuit.",
+      "phrase": "Venus–Mars attraction"
+     },
+     "venus_mars_tension": {
+      "detail": "One person’s Venus squares or opposes the other’s Mars: strong attraction with a tug-of-war in it — you tend to want closeness in different ways and at different speeds.",
+      "phrase": "Venus–Mars tension"
+     }
+    }
+   },
+   "ziwei": {
+    "pair": {
+     "ji_into_ming": {
+      "detail": "One person’s Obstruction transformation lands in the other’s Life or Partner palace: this person cares intensely and finds it hard to let go — too much caring can turn into pressure for both.",
+      "phrase": "Obstruction lands on the other"
+     },
+     "lu_into_ming": {
+      "detail": "One person’s Prosperity transformation lands in the other’s Life or Partner palace: this person naturally wants to give, and the other feels well treated.",
+      "phrase": "Prosperity flows to the other"
+     },
+     "ming_in_fude": {
+      "detail": "One person’s Life palace falls in the other’s Fortune palace: in this person’s company, the other feels inwardly at ease and mentally rested.",
+      "phrase": "Life palace in the Fortune palace"
+     },
+     "ming_in_fumu": {
+      "detail": "One person’s Life palace falls in the other’s Parents palace: this person carries a mentor’s weight in the other’s eyes, and their advice tends to land.",
+      "phrase": "Life palace in the Parents palace"
+     },
+     "ming_in_fuqi": {
+      "detail": "One person’s Life palace falls in the other’s Partner palace: the moment one appears, the other naturally places them as a partner, with a hard-to-explain familiarity.",
+      "phrase": "Life palace in the Partner palace"
+     },
+     "ming_in_guanlu": {
+      "detail": "One person’s Life palace falls in the other’s Career palace: in the other’s eyes this person is tied to work and goals — a good pairing for getting things done together.",
+      "phrase": "Life palace in the Career palace"
+     },
+     "ming_in_peers": {
+      "detail": "One person’s Life palace falls in the other’s siblings or friends palace: you relate like friends and companions — level and direct.",
+      "phrase": "Life palace in a peer palace"
+     },
+     "ming_in_resources": {
+      "detail": "One person’s Life palace falls in the other’s Wealth or Property palace: you tend to build resources and a home together.",
+      "phrase": "Life palace in a resource palace"
+     },
+     "mutual_qianyi": {
+      "detail": "Each of your Life palaces falls in the other’s Travel palace: you are each other’s door to the wider world, and after meeting, both your worlds grow larger.",
+      "phrase": "Each other’s Travel palace"
+     }
+    }
+   }
+  }
+ },
+ "insights": {
+  "ontology": {
+   "rings": {
+    "attraction": {
+     "axisNeg": "Drawn by likeness",
+     "axisPos": "Drawn by difference",
+     "describes": "What draws each of you toward the other.",
+     "name": "Attraction"
+    },
+    "communication": {
+     "axisNeg": "Same wavelength",
+     "axisPos": "Two languages — needs translating",
+     "describes": "How easily ideas and words move between you.",
+     "name": "Communication"
+    },
+    "emotion": {
+     "axisNeg": "Each processes alone",
+     "axisPos": "You hold each other",
+     "describes": "How you catch each other’s feelings.",
+     "name": "Emotional bond"
+    },
+    "growth": {
+     "axisNeg": "Settling each other",
+     "axisPos": "Stretching each other",
+     "describes": "How each of you helps the other grow more whole.",
+     "name": "Growth"
+    },
+    "rhythm": {
+     "axisNeg": "In step",
+     "axisPos": "Out of step",
+     "describes": "Whether your pace for deciding, acting and resting matches.",
+     "name": "Rhythm"
+    },
+    "values": {
+     "axisNeg": "Alike",
+     "axisPos": "Complementary",
+     "describes": "How close the things you care about and the directions you value are.",
+     "name": "Values"
+    }
+   },
+   "systems": {
+    "bazi": "BaZi",
+    "face": "Face reading",
+    "hd": "Energy Blueprint",
+    "iching": "I Ching",
+    "numerology": "Numerology",
+    "palm": "Palm reading",
+    "psych": "Psychometrics",
+    "vedic": "Vedic astrology",
+    "western": "Western astrology",
+    "ziwei": "Zi Wei Dou Shu"
+   }
+  },
+  "relation": {
+   "rings": {
+    "attraction": {
+     "friction": {
+      "body": "You come close in different ways and at different speeds, and the more you care, the more you tug. Seeing the tug-of-war brings you closer than pretending it isn’t there.",
+      "practice": "Next time you feel the tug, each say in one sentence, “What I want right now is…”.",
+      "quote": "The pull is strong, and so is the tug-of-war."
+     },
+     "quiet": {
+      "body": "On the charts, the signals of attraction between you are modest. Bonds like this often grow slowly out of familiarity and trust.",
+      "practice": "Do one small new thing together, and notice how each of you shows up in it.",
+      "quote": "Your bond runs on time, not sparks."
+     },
+     "strong": {
+      "body": "The pull often comes from what each of you lacks in yourself. It draws you together — and makes you curious about why the other is so different.",
+      "practice": "Each write down the one quality in the other that draws you most, then swap and read.",
+      "quote": "There’s a pull between you that’s hard to ignore."
+     }
+    },
+    "communication": {
+     "friction": {
+      "body": "You think and speak differently, and misunderstandings often begin with “I thought you meant…”. One extra question can save a whole argument.",
+      "practice": "Next time you feel misunderstood, first ask, “Did you mean…?” before responding.",
+      "quote": "The same sentence means two things between you."
+     },
+     "quiet": {
+      "body": "The charts show few strong communication links between you. That doesn’t mean you can’t talk — just that it takes more deliberate expressing and checking.",
+      "practice": "Set a regular weekly talk, and each share the one thing that mattered most to you that week.",
+      "quote": "Your communication needs a little more intention."
+     },
+     "strong": {
+      "body": "Ideas flow easily between you; one starts and the other picks it up. Because it’s so easy, you sometimes assume the other understood when they didn’t.",
+      "practice": "After discussing something important, ask the other to say it back in their own words.",
+      "quote": "When you talk, you often get it at once."
+     }
+    },
+    "emotion": {
+     "friction": {
+      "body": "The comfort one of you needs may be exactly what the other finds hardest to give. Telling “what I need” apart from “what I assume you need” is your practice.",
+      "practice": "Each write down “the one thing I most want you to do when I’m low,” then swap.",
+      "quote": "You handle feelings in different ways."
+     },
+     "quiet": {
+      "body": "The charts show few strong emotional links between you. Depth of feeling often comes from what you live through together, not just from how you were born.",
+      "practice": "Remember together one small, unforgettable moment you shared, and each describe how it felt.",
+      "quote": "Your emotional bond is growing slowly."
+     },
+     "strong": {
+      "body": "You catch each other’s feelings, and when things are hard the other is often the first person you think of. That comfort needs saying out loud so it isn’t taken for granted.",
+      "practice": "This week, each tell the other once: “When you’re here, I feel…”.",
+      "quote": "Around each other, your hearts settle."
+     }
+    },
+    "growth": {
+     "friction": {
+      "body": "This relationship has a strong push, often carrying you both beyond your comfort zones. When the push gets to be too much, remember to give each other room to breathe.",
+      "practice": "This week, ask the other, “Is there anything you’d like me to push less on lately?”",
+      "quote": "You push each other, and sometimes wind each other up."
+     },
+     "quiet": {
+      "body": "The charts show few strong signals of pushing each other to grow. A relationship like this is more of a harbour — a place to rest after time out in the world.",
+      "practice": "Each share one way you want to grow this year, and ask how the other could support you.",
+      "quote": "Your growth can happen side by side."
+     },
+     "strong": {
+      "body": "What one of you has is what the other needs, and together you’re each more balanced. That complement also means learning from each other, not just leaning on each other.",
+      "practice": "Each write “Because of you, I’ve learned…”, then swap and read.",
+      "quote": "You help each other become more whole."
+     }
+    },
+    "rhythm": {
+     "friction": {
+      "body": "One of you wants fast, the other slow; one wants to settle it, the other to keep looking. The practice isn’t changing each other but agreeing on a pace you can both live with.",
+      "practice": "Agree on one rule for big decisions — say, “we decide after sleeping on it” — and try it for a month.",
+      "quote": "Your rhythms run opposite — and nobody’s wrong."
+     },
+     "quiet": {
+      "body": "The charts show no strong sync or clash in your rhythms. Keeping your own paces while holding some regular shared time is enough.",
+      "practice": "Agree on one fixed shared slot each week, and plan the rest separately.",
+      "quote": "It’s fine for your rhythms to run separately."
+     },
+     "strong": {
+      "body": "You decide, act and rest at similar speeds, so living and working together takes little effort. Being in sync also means tensing up together — watch for each other’s tiredness.",
+      "practice": "Once a month, plan a half-day together with nothing on it.",
+      "quote": "You move in step."
+     }
+    },
+    "values": {
+     "friction": {
+      "body": "On some important things your priorities differ, and you can talk past each other. The difference isn’t the problem — leaving it unspoken is.",
+      "practice": "Pick one thing you disagree on, and each finish the sentence, “This matters to me because…”.",
+      "quote": "You value different directions."
+     },
+     "quiet": {
+      "body": "The charts show few strong value links. Many shared directions form slowly through one concrete choice after another.",
+      "practice": "Next time you choose something together, each name what matters most to you first, then talk it through.",
+      "quote": "Your values will line up through living together."
+     },
+     "strong": {
+      "body": "On things that matter, you often end up on the same side without explaining. That ease makes shared decisions lighter — and it’s worth checking now and then that you still agree.",
+      "practice": "Each write down the three things that matter most over the next three years, and compare the overlap.",
+      "quote": "You care about very similar things."
+     }
+    }
+   },
+   "scripts": {
+    "closeness_vs_space": {
+     "practice": "Agree that whoever needs space says when they’ll be back, and whoever feels uneasy says so directly.",
+     "scene": "Under pressure, one of you moves closer for reassurance and the other steps back for space. The more one chases, the more the other retreats — and the other way round.",
+     "sides": {
+      "closer": {
+       "inner": "When the other pulls back, I start worrying I did something wrong, so I want reassurance even more.",
+       "say": "“I’m feeling a bit uneasy — could you just tell me we’re okay?”"
+      },
+      "spacer": {
+       "inner": "I need some space to come back to myself, and the harder I’m chased, the more I want to hide.",
+       "say": "“I need an hour on my own, and then I’ll come and find you.”"
+      }
+     },
+     "title": "Closeness or space"
+    },
+    "control_vs_yield": {
+     "practice": "Once a month, check together: of recent decisions, which ones did each of you lead?",
+     "scene": "On one theme, the same person always decides and the other goes along, and small grievances pile up over time.",
+     "sides": {
+      "leads": {
+       "inner": "I just want things done well; I hadn’t noticed the other has been giving way all along.",
+       "say": "“What’s your view on this? I’d like to hear what you really think.”"
+      },
+      "yields": {
+       "inner": "Speaking up feels like it’ll cause a fight, so I go along — though I see it differently inside.",
+       "say": "“This time I’d like to try it my way.”"
+      }
+     },
+     "title": "Lead or follow"
+    },
+    "decision_pace": {
+     "practice": "Agree that big decisions wait a night, and set a specific time for the answer.",
+     "scene": "When a big decision comes up, one of you knows right away and the other needs time for the feelings to settle. One feels rushed; the other feels held back.",
+     "sides": {
+      "fast": {
+       "inner": "I already know the answer, and waiting feels like being stuck while the moment slips away.",
+       "say": "“My gut says this. How long do you need? I can wait until then.”"
+      },
+      "slow": {
+       "inner": "I’m not avoiding the decision; I’m just not clear yet. When I’m rushed I panic, and might agree to anything.",
+       "say": "“I need to sleep on it. By this time tomorrow, you’ll have my answer.”"
+      }
+     },
+     "title": "Fast and slow decisions"
+    },
+    "direct_clash": {
+     "practice": "Agree on a pause word; when either says it, you both stop for five minutes.",
+     "scene": "Over everyday things, when you talk fast you butt heads, and one sharp sentence brings on a sharper one.",
+     "sides": {
+      "either": {
+       "inner": "I just want to be clear, but the other’s tone feels like a challenge, so I push harder too.",
+       "say": "“We’re both getting heated — let’s pause five minutes and pick this up again.”"
+      }
+     },
+     "title": "Head-on collisions"
+    },
+    "processing_style": {
+     "practice": "Agree on a rhythm: fifteen quiet minutes apart first, then talk together.",
+     "scene": "When something happens, one of you needs to think quietly first, the other needs to talk it out right away. One feels interrogated; the other feels shut out.",
+     "sides": {
+      "inward": {
+       "inner": "I need to go over it inside first; talking right away only gets out half-formed thoughts.",
+       "say": "“I need a little time to think — can we talk tonight?”"
+      },
+      "outward": {
+       "inner": "I think by talking, and the other’s silence makes me feel shut out.",
+       "say": "“I’d like to think out loud for a bit — you don’t have to respond yet.”"
+      }
+     },
+     "title": "Processing styles"
+    },
+    "same_element_rivalry": {
+     "practice": "Split decision rights by area, and agree in advance who decides what.",
+     "scene": "You’re so alike that you both have strong views on the same thing, and neither is keen to give way first.",
+     "sides": {
+      "either": {
+       "inner": "I know the other gets me, so I’d rather they be the one to give way.",
+       "say": "“Let’s go with yours this time, and I’ll decide next time.”"
+      }
+     },
+     "title": "Too alike to yield"
+    },
+    "structure_vs_flow": {
+     "practice": "Together, write a list of three must-keeps and the parts that can change.",
+     "scene": "Over plans, schedules and deadlines, one of you wants to settle things early and the other wants to keep room to move.",
+     "sides": {
+      "improviser": {
+       "inner": "A rigid plan suffocates me, and I’m afraid of missing chances that turn up.",
+       "say": "“I’m happy to agree a framework — just leave me some room to adjust.”"
+      },
+      "planner": {
+       "inner": "Until it’s settled, it hangs over me and I can’t relax.",
+       "say": "“Let’s lock in the one or two biggest things and keep the rest flexible.”"
+      }
+     },
+     "title": "Plan or flow"
+    },
+    "who_speaks_first": {
+     "practice": "On important matters, agree that one of you invites the other’s view first — and take turns.",
+     "scene": "Something’s stuck: one of you is waiting to be asked before offering a view, the other is waiting for a move or a question first. So both stay silent.",
+     "sides": {
+      "initiates": {
+       "inner": "I’m waiting for a signal — or I’ve already moved ahead without thinking to say so.",
+       "say": "“What do you think? I’d really like your read on this.”"
+      },
+      "waits": {
+       "inner": "I actually see it clearly, but when I speak up unasked it often doesn’t land.",
+       "say": "“I have some thoughts on this — would you like to hear them?”"
+      }
+     },
+     "title": "Who speaks first"
+    }
+   }
+  }
+ },
+ "charts": {
+  "ui": {
+   "view": {
+    "label": "View",
+    "graphic": "Chart",
+    "table": "Table"
+   },
+   "pro": "Pro",
+   "proHint": "Pro mode: show more detail",
+   "replay": "Replay drawing",
+   "sections": {
+    "label": "Sections",
+    "data": "Data",
+    "reading": "Reading",
+    "pro": "Pro"
+   },
+   "now": "Now",
+   "nowShort": "NOW",
+   "degradedTitle": "Some results need a birth time",
+   "degradedNote": "Parts that depend on the birth hour are drawn dashed. Add a birth time and everything recalculates.",
+   "timeSensitive": "Depends on birth time",
+   "sensitiveValues": "Within your birth-time window this could be: {values}",
+   "stableWithin": "Unchanged within {minutes} min of the birth time",
+   "unavailable": "Not available",
+   "notAvailableNoTime": "Needs a birth time",
+   "readingSoon": "The cross-system reading appears here once the resonance engine is connected; below are this chart’s key points.",
+   "engineFacts": "All values below are computed by the chart engine",
+   "computedBy": "Engine {engine} · ephemeris {ephemeris} · tz database {tzdb}",
+   "close": "Close",
+   "yes": "Yes",
+   "no": "No",
+   "none": "None",
+   "dash": "—",
+   "degreesMinutes": "{d}°{m}′",
+   "years": "{from}–{to}",
+   "ageRange": "ages {from}–{to}",
+   "listSep": ", "
+  },
+  "systemStatus": {
+   "sex_required": "Needs a sex for calculation: choose female or male in the birth details.",
+   "year_only": "This system cannot be cast from a birth year alone.",
+   "no_birth_time": "Needs a birth time.",
+   "not_supported": "This parameter combination is not supported yet.",
+   "error": "This system could not be calculated ({code})."
+  },
+  "degrade": {
+   "noBirthTime": "No birth time",
+   "threePillarsOnly": "Three pillars only — estimated from year, month and day",
+   "luckStartApproximate": "Luck-pillar start is approximate",
+   "sexUnknown": "No sex for calculation — luck pillars shown in both directions",
+   "noBirthHour": "No birth hour",
+   "yearOnly": "Birth year only",
+   "birthTimeUnknown": "No birth time",
+   "birthDateUnknown": "No birth date",
+   "moonNakshatraVaries": "The Moon changes nakshatra during this day",
+   "moonSignVaries": "The Moon changes sign during this day",
+   "highLatitudeAscendant": "The Ascendant is unstable at this latitude",
+   "highLatitudeHouseFallback": "This house system is undefined at this latitude; Porphyry is used instead",
+   "chironOutOfRange": "Chiron is outside the ephemeris range",
+   "noTime": "No birth time",
+   "noName": "No name given — name numbers are not calculated",
+   "noLetters": "The name could not be transliterated into letters"
+  },
+  "stem": {
+   "jia": "Jia",
+   "yi": "Yi",
+   "bing": "Bing",
+   "ding": "Ding",
+   "wu": "Wu",
+   "ji": "Ji",
+   "geng": "Geng",
+   "xin": "Xin",
+   "ren": "Ren",
+   "gui": "Gui"
+  },
+  "branch": {
+   "zi": "Zi",
+   "chou": "Chou",
+   "yin": "Yin",
+   "mao": "Mao",
+   "chen": "Chen",
+   "si": "Si",
+   "wu": "Wu",
+   "wei": "Wei",
+   "shen": "Shen",
+   "you": "You",
+   "xu": "Xu",
+   "hai": "Hai"
+  },
+  "animal": {
+   "zi": "Rat",
+   "chou": "Ox",
+   "yin": "Tiger",
+   "mao": "Rabbit",
+   "chen": "Dragon",
+   "si": "Snake",
+   "wu": "Horse",
+   "wei": "Goat",
+   "shen": "Monkey",
+   "you": "Rooster",
+   "xu": "Dog",
+   "hai": "Pig"
+  },
+  "fivePhase": {
+   "wood": "Wood",
+   "fire": "Fire",
+   "earth": "Earth",
+   "metal": "Metal",
+   "water": "Water"
+  },
+  "yinYang": {
+   "yin": "Yin",
+   "yang": "Yang"
+  },
+  "sex": {
+   "female": "female",
+   "male": "male"
+  },
+  "pillar": {
+   "year": "Year",
+   "month": "Month",
+   "day": "Day",
+   "hour": "Hour"
+  },
+  "tenGod": {
+   "biJian": "Friend",
+   "jieCai": "Rob Wealth",
+   "shiShen": "Eating God",
+   "shangGuan": "Hurting Officer",
+   "pianCai": "Indirect Wealth",
+   "zhengCai": "Direct Wealth",
+   "qiSha": "Seven Killings",
+   "zhengGuan": "Direct Officer",
+   "pianYin": "Indirect Resource",
+   "zhengYin": "Direct Resource"
+  },
+  "tenGodGroup": {
+   "companion": "Companion",
+   "output": "Output",
+   "wealth": "Wealth",
+   "power": "Power",
+   "resource": "Resource"
+  },
+  "lifeStage": {
+   "changSheng": "Birth",
+   "muYu": "Bath",
+   "guanDai": "Youth",
+   "linGuan": "Coming of Age",
+   "diWang": "Peak",
+   "shuai": "Decline",
+   "bing": "Ailing",
+   "si": "Stillness",
+   "mu": "Storage",
+   "jue": "Severance",
+   "tai": "Conception",
+   "yang": "Nurture"
+  },
+  "naYin": {
+   "haiZhongJin": "Gold in the Sea",
+   "luZhongHuo": "Furnace Fire",
+   "daLinMu": "Great Forest Wood",
+   "luPangTu": "Roadside Earth",
+   "jianFengJin": "Sword-edge Metal",
+   "shanTouHuo": "Mountain-top Fire",
+   "jianXiaShui": "Ravine Water",
+   "chengTouTu": "City-wall Earth",
+   "baiLaJin": "White Wax Metal",
+   "yangLiuMu": "Willow Wood",
+   "quanZhongShui": "Spring Water",
+   "wuShangTu": "Rooftop Earth",
+   "piLiHuo": "Thunderbolt Fire",
+   "songBaiMu": "Pine and Cypress Wood",
+   "changLiuShui": "Long-flowing Water",
+   "shaZhongJin": "Gold in the Sand",
+   "shanXiaHuo": "Fire below the Mountain",
+   "pingDiMu": "Plains Wood",
+   "biShangTu": "Wall Earth",
+   "jinBoJin": "Gold Leaf",
+   "fuDengHuo": "Lamp Fire",
+   "tianHeShui": "Milky Way Water",
+   "daYiTu": "Post-road Earth",
+   "chaiChuanJin": "Hairpin Gold",
+   "sangZheMu": "Mulberry Wood",
+   "daXiShui": "Great Stream Water",
+   "shaZhongTu": "Earth in the Sand",
+   "tianShangHuo": "Fire in the Sky",
+   "shiLiuMu": "Pomegranate Wood",
+   "daHaiShui": "Great Sea Water"
+  },
+  "shensha": {
+   "tianYi": "Heavenly Noble",
+   "wenChang": "Literary Star",
+   "yiMa": "Travelling Horse",
+   "taoHua": "Peach Blossom",
+   "huaGai": "Canopy",
+   "jiangXing": "General Star",
+   "yangRen": "Yang Blade",
+   "luShen": "Prosperity Star",
+   "tianDe": "Heavenly Virtue",
+   "yueDe": "Monthly Virtue",
+   "hongLuan": "Red Phoenix",
+   "tianXi": "Heavenly Joy",
+   "guChen": "Lone Star",
+   "guaSu": "Solitary Star",
+   "jieSha": "Jie Sha",
+   "wangShen": "Wang Shen",
+   "kuiGang": "Kui Gang"
+  },
+  "interaction": {
+   "stemCombine": "Stem combination",
+   "stemClash": "Stem clash",
+   "stemControl": "Stem control",
+   "branchCombine6": "Six harmony",
+   "branchTrine": "Three harmony",
+   "branchHalfTrine": "Half harmony",
+   "branchMeeting": "Directional meeting",
+   "branchClash": "Clash",
+   "branchPunish": "Punishment",
+   "branchSelfPunish": "Self-punishment",
+   "branchHarm": "Harm",
+   "branchBreak": "Break",
+   "branchHiddenCombine": "Hidden combination"
+  },
+  "strength": {
+   "veryWeak": "Very weak",
+   "weak": "Weak",
+   "balanced": "Balanced",
+   "strong": "Strong",
+   "veryStrong": "Very strong"
+  },
+  "baziPattern": {
+   "zhengGuan": "Direct Officer structure",
+   "qiSha": "Seven Killings structure",
+   "zhengYin": "Direct Resource structure",
+   "pianYin": "Indirect Resource structure",
+   "shiShen": "Eating God structure",
+   "shangGuan": "Hurting Officer structure",
+   "zhengCai": "Direct Wealth structure",
+   "pianCai": "Indirect Wealth structure",
+   "jianLu": "Thriving Self structure",
+   "yangRen": "Yang Blade structure",
+   "congQiang": "Follow-the-Strong",
+   "congRuo": "Follow-the-Weak",
+   "congCai": "Follow-Wealth",
+   "congSha": "Follow-Power",
+   "congEr": "Follow-the-Output",
+   "huaQi": "Transformation structure"
+  },
+  "usefulGodMethod": {
+   "fuyi": "support and restrain",
+   "tiaohou": "climate balance",
+   "tongguan": "bridging",
+   "bingyao": "remedy",
+   "zhuanwang": "dominant element"
+  },
+  "baziSpecial": {
+   "taiYuan": "Conception pillar",
+   "taiXi": "Breath pillar",
+   "mingGong": "Life palace",
+   "shenGong": "Body palace"
+  },
+  "solarTerm": {
+   "liChun": "Start of Spring",
+   "yuShui": "Rain Water",
+   "jingZhe": "Awakening of Insects",
+   "chunFen": "Spring Equinox",
+   "qingMing": "Clear and Bright",
+   "guYu": "Grain Rain",
+   "liXia": "Start of Summer",
+   "xiaoMan": "Grain Buds",
+   "mangZhong": "Grain in Ear",
+   "xiaZhi": "Summer Solstice",
+   "xiaoShu": "Minor Heat",
+   "daShu": "Major Heat",
+   "liQiu": "Start of Autumn",
+   "chuShu": "End of Heat",
+   "baiLu": "White Dew",
+   "qiuFen": "Autumn Equinox",
+   "hanLu": "Cold Dew",
+   "shuangJiang": "Frost’s Descent",
+   "liDong": "Start of Winter",
+   "xiaoXue": "Minor Snow",
+   "daXue": "Major Snow",
+   "dongZhi": "Winter Solstice",
+   "xiaoHan": "Minor Cold",
+   "daHan": "Major Cold"
+  },
+  "bazi": {
+   "rows": {
+    "tenGod": "Ten God",
+    "stem": "Stem",
+    "branch": "Branch",
+    "hidden": "Hidden stems",
+    "lifeStage": "Life stage",
+    "selfStage": "Self stage",
+    "naYin": "Nayin",
+    "kongWang": "Void",
+    "shensha": "Symbolic stars"
+   },
+   "dayMaster": "Day Master",
+   "dayMasterSex": "Day Master · {sex}",
+   "tableLabel": "Four Pillars: {pillars}",
+   "foot": "{clock} · {hour} hour · conception {taiYuan} · life palace {mingGong} · body palace {shenGong}",
+   "footNoTime": "Birth hour unknown · year, month and day pillars only · conception {taiYuan}",
+   "clock": {
+    "trueSolarTime": "True solar time {time}",
+    "standardTime": "Standard time {time}",
+    "wallClock": "Clock time {time}"
+   },
+   "fivePhasesTitle": "Five Phases",
+   "fivePhasesLabel": "Five Phases cycle and strength: {values}",
+   "fivePhasesCaptionOuter": "Ring: generating",
+   "fivePhasesCaptionInner": "Star: controlling",
+   "fivePhasesFoot": "Weighted by hidden stems and the month’s season. {dominant} is strongest; {missing}.",
+   "missingNone": "all five present",
+   "missingSome": "{phases} missing",
+   "judgementTitle": "Assessment · rule engine",
+   "judgementStrength": "Day Master strength",
+   "judgementPattern": "Structure",
+   "judgementUseful": "Favourable",
+   "judgementShensha": "Symbolic stars",
+   "judgementInteractions": "Combinations and clashes",
+   "deLing": "in season",
+   "deDi": "rooted",
+   "deShi": "supported",
+   "notDe": "not {what}",
+   "usefulValue": "favours {favorable} · unfavourable {unfavorable}",
+   "methodValue": "{method} method",
+   "patternRevealed": "main qi revealed",
+   "patternNotRevealed": "main qi not revealed",
+   "patternBasis": "{pillar} {role} {stem}",
+   "reviewNote": "Assessments are pending review by a BaZi consultant before launch",
+   "luckTitle": "Luck pillars · {yinYang} {sex}, {direction}, from age {age}",
+   "luckTitleNoSex": "Luck pillars · no sex for calculation",
+   "luckForward": "forward",
+   "luckBackward": "backward",
+   "luckAlternative": "{sex} · {direction}",
+   "luckStart": "Starts {date} (age {age})",
+   "annualTitle": "{dayun} luck · annual pillars",
+   "annualLoading": "Calculating annual pillars…",
+   "luckLabel": "Luck pillar timeline: {list}",
+   "hiddenRole": {
+    "main": "main",
+    "middle": "middle",
+    "residual": "residual"
+   },
+   "tableColumns": {
+    "item": "Item"
+   },
+   "interactionItem": "{kind}: {members}",
+   "interactionTransforms": "transforms to {element}",
+   "readingDayMaster": "Day Master {stem} {element}, {strength}.",
+   "readingPattern": "{pattern}; favourable elements by {method}: {favorable}; unfavourable: {unfavorable}.",
+   "readingLuck": "Current luck pillar {dayun} ({tenGod}); this year {liunian} ({tenGodYear})."
+  },
+  "sign": {
+   "Aries": "Aries",
+   "Taurus": "Taurus",
+   "Gemini": "Gemini",
+   "Cancer": "Cancer",
+   "Leo": "Leo",
+   "Virgo": "Virgo",
+   "Libra": "Libra",
+   "Scorpio": "Scorpio",
+   "Sagittarius": "Sagittarius",
+   "Capricorn": "Capricorn",
+   "Aquarius": "Aquarius",
+   "Pisces": "Pisces"
+  },
+  "point": {
+   "sun": "Sun",
+   "moon": "Moon",
+   "mercury": "Mercury",
+   "venus": "Venus",
+   "mars": "Mars",
+   "jupiter": "Jupiter",
+   "saturn": "Saturn",
+   "uranus": "Uranus",
+   "neptune": "Neptune",
+   "pluto": "Pluto",
+   "northNode": "North Node",
+   "southNode": "South Node",
+   "chiron": "Chiron",
+   "lilith": "Lilith",
+   "partOfFortune": "Part of Fortune",
+   "asc": "Ascendant",
+   "mc": "Midheaven",
+   "dsc": "Descendant",
+   "ic": "IC",
+   "vertex": "Vertex",
+   "earth": "Earth"
+  },
+  "aspect": {
+   "conjunction": "Conjunction",
+   "opposition": "Opposition",
+   "trine": "Trine",
+   "square": "Square",
+   "sextile": "Sextile",
+   "quincunx": "Quincunx",
+   "semisextile": "Semi-sextile",
+   "semisquare": "Semi-square",
+   "sesquiquadrate": "Sesquiquadrate",
+   "quintile": "Quintile",
+   "biquintile": "Biquintile"
+  },
+  "westPattern": {
+   "grandTrine": "Grand Trine",
+   "tSquare": "T-Square",
+   "grandCross": "Grand Cross",
+   "kite": "Kite",
+   "yod": "Yod",
+   "stellium": "Stellium",
+   "mysticRectangle": "Mystic Rectangle"
+  },
+  "astroElement": {
+   "fire": "Fire",
+   "earth": "Earth",
+   "air": "Air",
+   "water": "Water"
+  },
+  "modality": {
+   "cardinal": "Cardinal",
+   "fixed": "Fixed",
+   "mutable": "Mutable"
+  },
+  "dignity": {
+   "domicile": "Domicile",
+   "exaltation": "Exaltation",
+   "detriment": "Detriment",
+   "fall": "Fall",
+   "peregrine": "Peregrine"
+  },
+  "lunarPhase": {
+   "newMoon": "New Moon",
+   "crescent": "Crescent",
+   "firstQuarter": "First Quarter",
+   "gibbous": "Gibbous",
+   "fullMoon": "Full Moon",
+   "disseminating": "Disseminating",
+   "lastQuarter": "Last Quarter",
+   "balsamic": "Balsamic"
+  },
+  "houseSystem": {
+   "placidus": "Placidus",
+   "koch": "Koch",
+   "porphyry": "Porphyry",
+   "regiomontanus": "Regiomontanus",
+   "campanus": "Campanus",
+   "equal": "Equal",
+   "wholeSign": "Whole Sign",
+   "alcabitius": "Alcabitius",
+   "topocentric": "Topocentric",
+   "morinus": "Morinus",
+   "meridian": "Meridian"
+  },
+  "sect": {
+   "day": "day chart",
+   "night": "night chart"
+  },
+  "west": {
+   "wheelLabel": "Natal chart wheel: Ascendant {asc}, Sun {sun}, Moon {moon}",
+   "wheelLabelNoTime": "Natal chart wheel (no birth time, so no houses or Ascendant): Sun {sun}, Moon {moon}",
+   "foot": "Tropical zodiac · {houseSystem} · {node} · {sect}",
+   "footNoTime": "Tropical zodiac · birth time unknown: no houses, angles or Ascendant; the Moon is shown at local noon",
+   "nodeTrue": "true node",
+   "nodeMean": "mean node",
+   "ascStable": "Ascendant {deg} · stays in sign for {minutes} min of the birth time",
+   "segments": {
+    "planets": "Planets",
+    "aspects": "Aspect grid",
+    "patterns": "Patterns",
+    "houses": "Houses"
+   },
+   "columns": {
+    "point": "Point",
+    "sign": "Sign",
+    "degree": "Degree",
+    "house": "House",
+    "dignity": "Dignity",
+    "motion": "Motion",
+    "aspect": "Aspect",
+    "orb": "Orb",
+    "applying": "Applying",
+    "cusp": "Cusp"
+   },
+   "retrograde": "retrograde",
+   "direct": "direct",
+   "houseN": "House {n}",
+   "applying": "applying",
+   "separating": "separating",
+   "aspectsFoot": "Numbers are orbs in degrees. Blue = harmonious, red = tense, gold = conjunction; Pro mode adds minor aspects.",
+   "patternMembers": "Members: {members}",
+   "patternApex": "Apex: {apex}",
+   "patternNone": "This chart forms no classic aspect pattern.",
+   "legendHarmony": "Harmonious",
+   "legendTension": "Tense",
+   "legendConjunction": "Conjunction",
+   "balanceTitle": "Elements and modes",
+   "dominants": "{element} · {modality} · {planet}; chart ruler {ruler}",
+   "moonPhase": "Moon phase: {phase}",
+   "aspectsLabel": "Aspect grid: {count} aspects",
+   "readingSun": "Sun in {sign}{house}, Moon in {moonSign}, {asc} rising.",
+   "readingSunNoTime": "Sun in {sign}, Moon in {moonSign} (no birth time, so no Ascendant).",
+   "readingPatterns": "Patterns: {patterns}.",
+   "dominantsLabel": "Dominants",
+   "moonPhaseLabel": "Moon phase"
+  },
+  "ziweiPalace": {
+   "ming": "Life",
+   "xiongdi": "Siblings",
+   "fuqi": "Spouse",
+   "zinv": "Children",
+   "caibo": "Wealth",
+   "jie": "Health",
+   "qianyi": "Travel",
+   "puyi": "Friends",
+   "guanlu": "Career",
+   "tianzhai": "Property",
+   "fude": "Wellbeing",
+   "fumu": "Parents"
+  },
+  "ziweiStar": {
+   "ziwei": "Zi Wei",
+   "tianji": "Tian Ji",
+   "taiyang": "Tai Yang",
+   "wuqu": "Wu Qu",
+   "tiantong": "Tian Tong",
+   "lianzhen": "Lian Zhen",
+   "tianfu": "Tian Fu",
+   "taiyin": "Tai Yin",
+   "tanlang": "Tan Lang",
+   "jumen": "Ju Men",
+   "tianxiang": "Tian Xiang",
+   "tianliang": "Tian Liang",
+   "qisha": "Qi Sha",
+   "pojun": "Po Jun",
+   "zuofu": "Zuo Fu",
+   "youbi": "You Bi",
+   "wenchang": "Wen Chang",
+   "wenqu": "Wen Qu",
+   "tiankui": "Tian Kui",
+   "tianyue": "Tian Yue",
+   "lucun": "Lu Cun",
+   "tianma": "Tian Ma",
+   "dikong": "Di Kong",
+   "dijie": "Di Jie",
+   "huoxing": "Huo Xing",
+   "lingxing": "Ling Xing",
+   "qingyang": "Qing Yang",
+   "tuoluo": "Tuo Luo",
+   "hongluan": "Hong Luan",
+   "tianxi": "Tian Xi",
+   "tianyao": "Tian Yao",
+   "xianchi": "Xian Chi",
+   "jieshen": "Jie Shen",
+   "santai": "San Tai",
+   "bazuo": "Ba Zuo",
+   "enguang": "En Guang",
+   "tiangui": "Tian Gui",
+   "longchi": "Long Chi",
+   "fengge": "Feng Ge",
+   "tiancai": "Tian Cai",
+   "tianshou": "Tian Shou",
+   "taifu": "Tai Fu",
+   "fenggao": "Feng Gao",
+   "tianwu": "Tian Wu",
+   "huagai": "Hua Gai",
+   "tianguan": "Tian Guan",
+   "tianfuAdj": "Tian Fu (blessing)",
+   "tianchu": "Tian Chu",
+   "tianyueAdj": "Tian Yue (moon)",
+   "tiande": "Tian De",
+   "yuede": "Yue De",
+   "tiankong": "Tian Kong",
+   "xunkong": "Xun Kong",
+   "jielu": "Jie Lu",
+   "kongwang": "Kong Wang",
+   "guchen": "Gu Chen",
+   "guasu": "Gua Su",
+   "feilian": "Fei Lian",
+   "posui": "Po Sui",
+   "tianxing": "Tian Xing",
+   "yinsha": "Yin Sha",
+   "tianku": "Tian Ku",
+   "tianxu": "Tian Xu",
+   "tianshi": "Tian Shi",
+   "tianshang": "Tian Shang",
+   "nianjie": "Nian Jie",
+   "longde": "Long De",
+   "jiekong": "Jie Kong",
+   "jiesha": "Jie Sha",
+   "dahao": "Da Hao"
+  },
+  "ziweiBrightness": {
+   "miao": "Tem",
+   "wang": "Brt",
+   "de": "Fav",
+   "li": "Fair",
+   "ping": "Neu",
+   "bu": "Weak",
+   "xian": "Fal"
+  },
+  "ziweiHua": {
+   "lu": "Lu",
+   "quan": "Qn",
+   "ke": "Ke",
+   "ji": "Ji"
+  },
+  "ziweiHuaFull": {
+   "lu": "Hua Lu (prosperity)",
+   "quan": "Hua Quan (power)",
+   "ke": "Hua Ke (renown)",
+   "ji": "Hua Ji (obstacle)"
+  },
+  "ziweiChangsheng": {
+   "changsheng": "Birth",
+   "muyu": "Bath",
+   "guandai": "Youth",
+   "linguan": "Coming of Age",
+   "diwang": "Peak",
+   "shuai": "Decline",
+   "bing": "Ailing",
+   "si": "Stillness",
+   "mu": "Storage",
+   "jue": "Severance",
+   "tai": "Conception",
+   "yang": "Nurture"
+  },
+  "ziweiBoshi": {
+   "boshi": "Bo Shi",
+   "lishi": "Li Shi",
+   "qinglong": "Qing Long",
+   "xiaohao": "Xiao Hao",
+   "jiangjun": "Jiang Jun",
+   "zhoushu": "Zhou Shu",
+   "feilian": "Fei Lian",
+   "xishen": "Xi Shen",
+   "bingfu": "Bing Fu",
+   "dahao": "Da Hao",
+   "fubing": "Fu Bing",
+   "guanfu": "Guan Fu"
+  },
+  "ziweiFiveElementsClass": {
+   "water2": "Water 2",
+   "wood3": "Wood 3",
+   "metal4": "Metal 4",
+   "earth5": "Earth 5",
+   "fire6": "Fire 6"
+  },
+  "ziweiSchool": {
+   "sanHe": "San He school",
+   "feiXing": "Flying Stars school",
+   "zhongZhou": "Zhong Zhou school"
+  },
+  "ziweiLeapRule": {
+   "midMonthSplit": "leap month split at mid-month",
+   "asPreviousMonth": "leap month counts as the same month",
+   "asNextMonth": "leap month counts as the next month"
+  },
+  "ziwei": {
+   "scope": {
+    "label": "Period",
+    "natal": "Natal",
+    "decade": "Decade {range}",
+    "annual": "Year {ganzhi}"
+   },
+   "gridLabel": "Zi Wei Dou Shu twelve palaces: Life palace in {ming}, {stars}",
+   "centerSex": "{yinYang} {sex} · {fiveElements}",
+   "centerStars": "Life star {soul} · body star {body}",
+   "centerBirth": "{year} year · {date} · {hour} hour",
+   "centerScope": "Decade {decade} · year {annual}",
+   "body": "Body",
+   "selected": "{palace}",
+   "triLines": "Gold lines: the three-sided and opposite palaces",
+   "emptyPalace": "No major star here — read the opposite palace’s stars.",
+   "starsLine": "Major stars: {stars}",
+   "minorLine": "Minor stars: {stars}",
+   "adjLine": "Other stars: {stars}",
+   "decadeLine": "Decade ages {range} · {ganzhi} · life stage {stage}",
+   "foot": "{school} · {leap} · birth-year transformations: {hua} · purple frame = current decade",
+   "huaItem": "{star} {hua}",
+   "selectHint": "Select any palace to see its three-sided and opposite palaces",
+   "tableColumns": {
+    "palace": "Palace",
+    "ganzhi": "Stem-branch",
+    "major": "Major",
+    "minor": "Minor",
+    "adjective": "Other",
+    "decade": "Decade",
+    "stage": "Stage"
+   },
+   "noHour": "Without the birth hour the Life palace cannot be placed — Zi Wei Dou Shu needs at least the double-hour.",
+   "readingMing": "Life palace in {branch} with {stars}; body palace in {body}.",
+   "readingNoStars": "no major star",
+   "soulBodyLabel": "Life / body star",
+   "huaLabel": "Birth-year transformations"
+  },
+  "graha": {
+   "sun": "Sun",
+   "moon": "Moon",
+   "mars": "Mars",
+   "mercury": "Mercury",
+   "jupiter": "Jupiter",
+   "venus": "Venus",
+   "saturn": "Saturn",
+   "rahu": "Rahu",
+   "ketu": "Ketu",
+   "uranus": "Uranus",
+   "neptune": "Neptune",
+   "pluto": "Pluto"
+  },
+  "grahaShort": {
+   "sun": "Su",
+   "moon": "Mo",
+   "mars": "Ma",
+   "mercury": "Me",
+   "jupiter": "Ju",
+   "venus": "Ve",
+   "saturn": "Sa",
+   "rahu": "Ra",
+   "ketu": "Ke",
+   "uranus": "Ur",
+   "neptune": "Ne",
+   "pluto": "Pl",
+   "lagna": "As"
+  },
+  "nakshatra": {
+   "ashwini": "Horse Twins",
+   "bharani": "Bearer",
+   "krittika": "Cutter",
+   "rohini": "Red One",
+   "mrigashira": "Deer’s Head",
+   "ardra": "Moist One",
+   "punarvasu": "Return of the Light",
+   "pushya": "Nourisher",
+   "ashlesha": "Entwiner",
+   "magha": "Mighty One",
+   "purvaPhalguni": "Former Red One",
+   "uttaraPhalguni": "Latter Red One",
+   "hasta": "Hand",
+   "chitra": "Bright One",
+   "swati": "Independent One",
+   "vishakha": "Forked Branch",
+   "anuradha": "Follower of Radha",
+   "jyeshtha": "Eldest",
+   "mula": "Root",
+   "purvaAshadha": "Early Victory",
+   "uttaraAshadha": "Later Victory",
+   "shravana": "Hearing",
+   "dhanishta": "Wealthiest",
+   "shatabhisha": "Hundred Healers",
+   "purvaBhadrapada": "Former Lucky Feet",
+   "uttaraBhadrapada": "Latter Lucky Feet",
+   "revati": "Wealthy One"
+  },
+  "yoga": {
+   "gajaKesari": "Gaja Kesari Yoga",
+   "budhaAditya": "Budha-Aditya Yoga",
+   "ruchaka": "Ruchaka Yoga (Mahapurusha · Mars)",
+   "bhadra": "Bhadra Yoga (Mahapurusha · Mercury)",
+   "hamsa": "Hamsa Yoga (Mahapurusha · Jupiter)",
+   "malavya": "Malavya Yoga (Mahapurusha · Venus)",
+   "shasha": "Shasha Yoga (Mahapurusha · Saturn)",
+   "rajaYoga": "Raja Yoga",
+   "dhanaYoga": "Dhana Yoga",
+   "kemadruma": "Kemadruma",
+   "neechaBhanga": "Neecha Bhanga",
+   "vipareetaRaja": "Vipareeta Raja Yoga",
+   "chandraMangala": "Chandra-Mangala Yoga"
+  },
+  "vedicDignity": {
+   "exalted": "Exalted",
+   "moolatrikona": "Moolatrikona",
+   "ownSign": "Own sign",
+   "friendly": "Friendly",
+   "neutral": "Neutral",
+   "enemy": "Enemy sign",
+   "debilitated": "Debilitated"
+  },
+  "ayanamsa": {
+   "lahiri": "Lahiri",
+   "raman": "Raman",
+   "krishnamurti": "Krishnamurti (KP)",
+   "faganBradley": "Fagan-Bradley",
+   "trueChitra": "True Chitra",
+   "yukteshwar": "Yukteshwar"
+  },
+  "vedic": {
+   "vargas": {
+    "label": "Divisional chart",
+    "d1": "D1 Rasi",
+    "d9": "D9 Navamsa",
+    "d10": "D10 Dasamsa",
+    "moon": "Moon chart"
+   },
+   "style": {
+    "label": "Style",
+    "north": "North Indian",
+    "south": "South Indian"
+   },
+   "chartLabel": "{style} {varga} chart: Lagna {lagna}",
+   "foot": "{style} · sidereal zodiac · {ayanamsa} {deg} · whole-sign houses · numbers are sign numbers",
+   "footSouth": "South Indian · sidereal zodiac · {ayanamsa} {deg} · signs fixed, Lagna marked with a diagonal",
+   "noLagna": "No birth time: Lagna and houses are unavailable; planets are arranged by sign only.",
+   "nakshatraTitle": "Moon nakshatra",
+   "nakshatraName": "{latin} ({name}) · pada {pada}",
+   "nakshatraBody": "Moon in {sign} {deg} · ruled by {lord}",
+   "nakshatraRing": "Ring of 27 nakshatras: the Moon is in number {n}",
+   "dashaTitle": "Vimshottari Dasha",
+   "dashaCurrent": "Now: {maha} Mahadasha ({mahaStart}–{mahaEnd}) · {antar} Antardasha ({antarStart}–{antarEnd})",
+   "dashaLabel": "Vimshottari Dasha timeline",
+   "yogaTitle": "Yogas",
+   "yogaNone": "No major yoga is formed.",
+   "yogaCancelled": "(cancelled)",
+   "yogaDetail": "{planets} · house {houses}",
+   "lagna": "Lagna",
+   "columns": {
+    "graha": "Graha",
+    "sign": "Sign",
+    "degree": "Degree",
+    "house": "House",
+    "nakshatra": "Nakshatra",
+    "pada": "Pada",
+    "dignity": "Dignity",
+    "lord": "Lord",
+    "start": "Start",
+    "end": "End"
+   },
+   "ashtakavargaTitle": "Ashtakavarga totals",
+   "readingLagna": "Lagna {lagna}, Moon in {moon}, nakshatra {nakshatra} pada {pada}.",
+   "readingDasha": "Currently in {maha} Mahadasha, {antar} Antardasha.",
+   "ayanamsaLabel": "Ayanamsa"
+  },
+  "hdType": {
+   "generator": "Generator",
+   "manifestingGenerator": "Manifesting Generator",
+   "manifestor": "Manifestor",
+   "projector": "Projector",
+   "reflector": "Reflector"
+  },
+  "hdStrategy": {
+   "generator": "To respond",
+   "manifestingGenerator": "To respond, then inform",
+   "manifestor": "To inform before acting",
+   "projector": "Wait for the invitation",
+   "reflector": "Wait a lunar cycle"
+  },
+  "hdAuthority": {
+   "emotional": "Emotional (Solar Plexus)",
+   "sacral": "Sacral",
+   "splenic": "Splenic",
+   "egoManifested": "Ego (manifested)",
+   "egoProjected": "Ego (projected)",
+   "selfProjected": "Self-projected (G center)",
+   "mental": "Mental · environment",
+   "lunar": "Lunar cycle"
+  },
+  "hdNotSelf": {
+   "frustration": "Frustration",
+   "bitterness": "Bitterness",
+   "anger": "Anger",
+   "disappointment": "Disappointment",
+   "frustrationAnger": "Frustration and anger"
+  },
+  "hdDefinition": {
+   "none": "No definition",
+   "single": "Single definition",
+   "split": "Split definition",
+   "tripleSplit": "Triple split",
+   "quadrupleSplit": "Quadruple split"
+  },
+  "hdCenter": {
+   "head": "Head",
+   "ajna": "Ajna",
+   "throat": "Throat",
+   "g": "G center",
+   "heart": "Heart (Ego)",
+   "spleen": "Spleen",
+   "solarPlexus": "Solar Plexus",
+   "sacral": "Sacral",
+   "root": "Root"
+  },
+  "hdCrossAngle": {
+   "right": "Right Angle Cross",
+   "juxtaposition": "Juxtaposition Cross",
+   "left": "Left Angle Cross"
+  },
+  "hdCircuit": {
+   "individual": "Individual",
+   "tribal": "Tribal",
+   "collective": "Collective"
+  },
+  "hdLine": {
+   "1": "Investigator",
+   "2": "Hermit",
+   "3": "Martyr",
+   "4": "Opportunist",
+   "5": "Heretic",
+   "6": "Role Model"
+  },
+  "hdSide": {
+   "personality": "Personality (conscious)",
+   "design": "Design (unconscious)",
+   "both": "Both"
+  },
+  "hdVariable": {
+   "determination": "Determination",
+   "environment": "Environment",
+   "motivation": "Motivation",
+   "perspective": "Perspective"
+  },
+  "hd": {
+   "graphLabel": "Energy Blueprint bodygraph: 64 gates, 36 channels; defined channels {channels}",
+   "graphLabelNone": "Energy Blueprint bodygraph: 64 gates, 36 channels; no defined channels",
+   "design": "Design",
+   "personality": "Personality",
+   "legendPersonality": "Personality (conscious)",
+   "legendDesign": "Design (unconscious)",
+   "legendBoth": "Stripes = both",
+   "rows": {
+    "type": "Type",
+    "strategy": "Strategy",
+    "authority": "Inner authority",
+    "profile": "Profile",
+    "definition": "Definition",
+    "cross": "Incarnation cross",
+    "channels": "Defined channels",
+    "notSelf": "Not-self theme",
+    "openCenters": "Open centers",
+    "designTime": "Design moment",
+    "variables": "Variables (PHS)",
+    "circuits": "Circuits"
+   },
+   "profileValue": "{profile} {a} / {b}",
+   "crossValue": "{angle} · {gates}",
+   "foot": "Design moment = Sun 88° earlier · true node · 13 bodies × 2",
+   "columns": {
+    "body": "Body",
+    "design": "Design",
+    "personality": "Personality",
+    "gate": "Gate",
+    "center": "Center",
+    "side": "Activated by"
+   },
+   "noTimeType": "No birth time: Type, authority, profile and cross need the birth time.",
+   "readingType": "{type}; strategy: {strategy}; inner authority: {authority}; profile {profile}."
+  },
+  "numberKind": {
+   "lifePath": "Life Path",
+   "lifePathDigitSum": "Life Path (digit sum)",
+   "birthday": "Birthday",
+   "expression": "Expression",
+   "soulUrge": "Soul Urge",
+   "personality": "Personality",
+   "maturity": "Maturity",
+   "universalYear": "Universal Year",
+   "personalYear": "Personal Year",
+   "personalMonth": "Personal Month",
+   "personalDay": "Personal Day"
+  },
+  "numberMeaning": {
+   "1": "Independence · initiative",
+   "2": "Cooperation · sensitivity",
+   "3": "Expression · creativity",
+   "4": "Order · steadiness",
+   "5": "Freedom · change",
+   "6": "Responsibility · care",
+   "7": "Reflection · inquiry",
+   "8": "Power · mastery",
+   "9": "Compassion · completion",
+   "11": "Master number · intuition",
+   "22": "Master number · building",
+   "33": "Master number · service and teaching"
+  },
+  "loShuLine": {
+   "4-9-2": "Mental plane",
+   "3-5-7": "Emotional plane",
+   "8-1-6": "Practical plane",
+   "4-3-8": "Planning plane",
+   "9-5-1": "Will plane",
+   "2-7-6": "Action plane",
+   "4-5-6": "Determination",
+   "2-5-8": "Spiritual plane"
+  },
+  "loShuStatus": {
+   "full": "Connected",
+   "partial": "Partial",
+   "empty": "Empty"
+  },
+  "numerology": {
+   "eyebrow": "LO SHU",
+   "title": "Lo Shu grid",
+   "gridLabel": "Lo Shu grid digit counts: {counts}",
+   "foot": "{date} → {digits} · {missing} · gold lines are connected planes",
+   "missing": "missing {list}",
+   "missingNone": "all nine present",
+   "lineRow": "{code} {name}",
+   "lineMissing": "missing {list}",
+   "coreTitle": "Core numbers",
+   "personalYear": "Personal Year {year}",
+   "nameFoot": "Name as {scheme} {latin}, Pythagorean table: {letters} = {value}",
+   "scheme": {
+    "auto": "auto-detected",
+    "latin": "Latin letters",
+    "pinyin": "pinyin"
+   },
+   "noName": "Add a name to calculate Expression, Soul Urge and Personality.",
+   "columns": {
+    "number": "Number",
+    "count": "Count",
+    "line": "Plane",
+    "status": "Status",
+    "kind": "Core number",
+    "value": "Value"
+   },
+   "readingCore": "Life Path {lifePath} ({meaning}), Expression {expression}."
+  },
+  "cogFunction": {
+   "Ni": "Introverted Intuition",
+   "Ne": "Extraverted Intuition",
+   "Si": "Introverted Sensing",
+   "Se": "Extraverted Sensing",
+   "Ti": "Introverted Thinking",
+   "Te": "Extraverted Thinking",
+   "Fi": "Introverted Feeling",
+   "Fe": "Extraverted Feeling"
+  },
+  "types16Role": {
+   "dominant": "Dominant",
+   "auxiliary": "Auxiliary",
+   "tertiary": "Tertiary",
+   "inferior": "Inferior"
+  },
+  "types16Letter": {
+   "E": "Extraversion",
+   "I": "Introversion",
+   "S": "Sensing",
+   "N": "Intuition",
+   "T": "Thinking",
+   "F": "Feeling",
+   "J": "Judging",
+   "P": "Perceiving",
+   "X": "Undecided"
+  },
+  "enneagramCenter": {
+   "gut": "Gut center",
+   "heart": "Heart center",
+   "head": "Head center"
+  },
+  "enneagramInstinct": {
+   "sp": "Self-preservation",
+   "so": "Social",
+   "sx": "One-to-one"
+  },
+  "bigFiveBand": {
+   "low": "Low",
+   "average": "Average",
+   "high": "High",
+   "middle": "Average"
+  },
+  "psych": {
+   "segments": {
+    "types16": "16 Types",
+    "enneagram": "Enneagram",
+    "bigFive": "Big Five"
+   },
+   "emptyTitle": "No assessment results yet",
+   "emptyBody": "Assessments describe how you see yourself right now — set them beside your charts. Answers stay on this device.",
+   "instruments": {
+    "quick12": "Quick estimate · 12 items",
+    "types16": "16 Types · 48 items",
+    "enneagram": "Enneagram · 54 items",
+    "bigfive-ipip-neo-30": "Big Five · 30 items"
+   },
+   "minutes": "about {n} min",
+   "start": "Start",
+   "retake": "Retake",
+   "progress": "Item {n} of {total}",
+   "prev": "Previous",
+   "next": "Next",
+   "skip": "Skip",
+   "submit": "Submit and score",
+   "cancel": "Cancel",
+   "loadingItems": "Loading items…",
+   "quickNote": "Twelve items give only a first estimate with low confidence; the full assessments are more reliable.",
+   "typeCard": "{code} · {name}",
+   "axesLabel": "16 Types: four axis sliders",
+   "stackTitle": "Cognitive function stack",
+   "stackFoot": "{items} items · our own question bank on Jung’s eight functions (no trademarked names)",
+   "enneagramLabel": "Enneagram figure, type {type}, wing {wing}",
+   "enneagramCard": "{label} · {instinct}",
+   "enneagramArrows": "Growth {type}→{growth} (green line); stress {type}→{stress} (red dashed line)",
+   "bigFiveTitle": "Big Five percentiles",
+   "normLabel": "International norm percentiles (Johnson 2014 IPIP-NEO, N = {n})",
+   "normProvisional": "Short-form norms are provisional",
+   "domainRow": "{domain} {value}%",
+   "takeMore": "Take another assessment",
+   "estimate": "estimate",
+   "columns": {
+    "axis": "Axis",
+    "value": "Value",
+    "function": "Function",
+    "role": "Position",
+    "strength": "Strength",
+    "domain": "Domain",
+    "percentile": "Percentile",
+    "band": "Band",
+    "type": "Type",
+    "score": "Score"
+   }
+  },
+  "trigram": {
+   "qian": "Qian",
+   "dui": "Dui",
+   "li": "Li",
+   "zhen": "Zhen",
+   "xun": "Xun",
+   "kan": "Kan",
+   "gen": "Gen",
+   "kun": "Kun"
+  },
+  "trigramImage": {
+   "qian": "Heaven",
+   "dui": "Lake",
+   "li": "Fire",
+   "zhen": "Thunder",
+   "xun": "Wind",
+   "kan": "Water",
+   "gen": "Mountain",
+   "kun": "Earth"
+  },
+  "ichingRelative": {
+   "sibling": "Siblings",
+   "offspring": "Offspring",
+   "wealth": "Wealth",
+   "officer": "Officer",
+   "parent": "Parents"
+  },
+  "ichingSpirit": {
+   "qinglong": "Green Dragon",
+   "zhuque": "Vermilion Bird",
+   "gouchen": "Gou Chen",
+   "tengshe": "Teng She",
+   "baihu": "White Tiger",
+   "xuanwu": "Black Tortoise"
+  },
+  "ichingLine": {
+   "1": "Line 1",
+   "2": "Line 2",
+   "3": "Line 3",
+   "4": "Line 4",
+   "5": "Line 5",
+   "6": "Line 6"
+  },
+  "ichingMarker": {
+   "shi": "Self",
+   "ying": "Other"
+  },
+  "ichingPalaceStage": {
+   "1": "1st generation",
+   "2": "2nd generation",
+   "3": "3rd generation",
+   "4": "4th generation",
+   "5": "5th generation",
+   "pure": "pure",
+   "wandering": "wandering soul",
+   "returning": "returning soul"
+  },
+  "ichingSeason": {
+   "wang": "prosperous",
+   "xiang": "rising",
+   "xiu": "resting",
+   "qiu": "confined",
+   "si": "dormant"
+  },
+  "iching": {
+   "question": "Your question",
+   "questionPlaceholder": "Write what you want to ask (optional; it stays on this page)",
+   "method": {
+    "label": "Casting method",
+    "coins": "Three coins · toss six times yourself",
+    "time": "Cast by the moment"
+   },
+   "toss": "Toss line {n}",
+   "tossHint": "Each tap tosses three coins (device randomness) and builds the hexagram from the bottom up.",
+   "tossed": "{n} of 6 tossed",
+   "coinBack": "Tails",
+   "coinFace": "Heads",
+   "castTime": "Cast for this moment",
+   "recast": "Cast again",
+   "primary": "Primary",
+   "changed": "Changed",
+   "noChange": "No moving lines",
+   "textTitle": "Judgment · moving lines",
+   "linesTitle": "Na Jia · relatives · spirits",
+   "linesLabel": "Six-line Na Jia table",
+   "context": "{date} · {dayPillar} day · {method}",
+   "methodName": {
+    "coins": "three coins",
+    "time": "by the moment",
+    "manual": "entered by hand"
+   },
+   "foot": "{palace} palace, {stage} · self at {shi}, other at {ying} · void {kong}",
+   "lineRef": "{line} {relative}",
+   "columns": {
+    "position": "Line",
+    "spirit": "Spirit",
+    "najia": "Na Jia",
+    "relative": "Relative",
+    "marker": "Self/Other",
+    "moving": "Moving"
+   },
+   "moving": "moving",
+   "hexLabel": "Hexagram {name}: from the bottom {lines}",
+   "yang": "yang",
+   "yin": "yin",
+   "useNine": "All nines",
+   "useSix": "All sixes",
+   "loadingText": "Loading the texts…",
+   "note": "A hexagram offers another angle on your situation — not a verdict.",
+   "placeNote": "Day and hour are reckoned for {place} (time zone and true solar time)."
+  },
+  "capture": {
+   "palmTitle": "Palm reading is captured in the app",
+   "faceTitle": "Face reading is captured in the app",
+   "body": "Palm and face readings use your phone camera; lines, landmarks and proportions are recognised on the device, and the photo never leaves it or reaches our servers. The web does not capture photos.",
+   "selfOnly": "For yourself only — capturing someone else is not supported.",
+   "disclaimer": "These readings enter the synthesis only as low-weight observations, with no health, lifespan or fortune judgements.",
+   "cta": "Get the app"
+  },
+  "sensitivity": {
+   "title": "Birth-time sensitivity",
+   "loading": "Scanning your birth-time window…",
+   "none": "Within the time range you gave, none of the main results change.",
+   "window": "Window: {window}",
+   "fieldRow": "{field}: {values}",
+   "changeAt": "becomes {value} after {time}",
+   "fields": {
+    "ascSign": "Ascendant sign",
+    "mcSign": "Midheaven sign",
+    "house": "{point} house",
+    "hourPillar": "Hour pillar",
+    "mingGong": "BaZi life palace",
+    "shenGong": "BaZi body palace",
+    "strength": "Day Master strength",
+    "soulBranch": "Zi Wei Life palace",
+    "bodyBranch": "Zi Wei body palace",
+    "bodyPalace": "Body palace in",
+    "mingStars": "Life palace stars",
+    "timeIndex": "Double-hour",
+    "lagnaSign": "Lagna",
+    "lagnaNakshatra": "Lagna nakshatra",
+    "lagnaPada": "Lagna pada",
+    "moonPada": "Moon pada",
+    "hdType": "Energy Blueprint type",
+    "hdProfile": "Profile",
+    "hdCross": "Incarnation cross",
+    "hdChannels": "Defined channels",
+    "hdCenters": "Defined centers",
+    "hdAuthority": "Inner authority",
+    "gate": "{side} {body} gate",
+    "line": "{side} {body} line",
+    "yogas": "Yogas",
+    "varga": "{varga} chart"
+   }
+  },
+  "bigFiveDomain": {
+   "openness": "Openness",
+   "conscientiousness": "Conscientiousness",
+   "extraversion": "Extraversion",
+   "agreeableness": "Agreeableness",
+   "neuroticism": "Neuroticism"
+  }
+ },
+ "site": {
+  "language": "Language",
+  "brand": "Armilla",
+  "invitePageTitle": "Invitation · Armilla",
+  "resultPageTitle": "Your relationship chart · Armilla",
+  "loading": "Opening…",
+  "openApp": "Have Armilla? Open in the App",
+  "afterInstall": "After installing, come back here and tap “Open in the App” again.",
+  "orWeb": "No need to install anything — you can fill it in right here.",
+  "inApp": "This browser may not be able to open the app. Tap ··· at the top right and choose Open in Browser.",
+  "retry": "Try Again",
+  "offline": "You seem to be offline. Check your connection and try again.",
+  "learnMore": "About Armilla",
+  "storesTitle": "Get Armilla",
+  "storeComingSoon": "Coming soon",
+  "keepInAppTitle": "Keep this result in the app",
+  "keepInAppBody": "Install Armilla and open the same result link there (or tap “Open in the App” below). Once you sign up, this pair reading appears under People. The result link works for 30 days.",
+  "placeSearching": "Searching…",
+  "placeNoResults": "Nothing found for “{query}”.",
+  "dateKindNote": "Four Pillars dates are converted in the app or on the web; here, please use the Gregorian or lunar calendar.",
+  "footerNote": "Armilla describes tendencies and cycles for self-reflection. It does not predict events and is not a substitute for professional advice.",
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Use",
+  "support": "Help & Support",
+  "report": "Report this link",
+  "reportSubject": "Report an Armilla invitation link",
+  "familyPageTitle": "Join a Family plan · Armilla",
+  "familyJoinBody": "Joining a Family plan needs an Armilla account, so open this invitation in the app: tap the button below if Armilla is installed; otherwise get the app, sign in and tap the invitation link again. The link works once, for 7 days."
+ }
+}

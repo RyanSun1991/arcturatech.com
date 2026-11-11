@@ -1,0 +1,234 @@
+{
+ "client": {
+  "invite": {
+   "level": {
+    "full": {
+     "desc": "完整分享：對方可以看到你的出生日期與時間，以及所有盤面與合盤。",
+     "name": "完整分享"
+    },
+    "resultsOnly": {
+     "desc": "只分享盤面結果：對方可以看到盤面與合盤結果，但看不到你的出生日期、時間和地點。",
+     "name": "只分享盤面結果"
+    },
+    "thisSynastryOnly": {
+     "desc": "僅用於這次合盤：你的資料只用於和對方的這一份合盤，不會出現在對方的其他功能中。",
+     "name": "僅用於這次合盤"
+    }
+   },
+   "eyebrow": "INVITATION",
+   "header": "{inviter} 邀請你一起看看你們的關係星圖",
+   "relationLine": "在 {inviter} 的星圖裡，你是對方的「{relation}」。",
+   "intro": "填寫只需 1 分鐘，不用註冊。分享到什麼程度由你決定，之後也可以隨時撤回。",
+   "levelTitle": "選擇分享級別",
+   "birthTitle": "你的出生資訊",
+   "consent": "我同意璇璣依上面選擇的級別，用我的出生資訊為 {inviter} 計算盤面與合盤。",
+   "adult": "我已年滿 18 歲",
+   "submit": "完成",
+   "privacy": "出生資訊加密保存；對方只能看到你允許的部分。",
+   "done": {
+    "title": "已完成。你隨時可以用同一個連結撤回。",
+    "app": "也可以下載 App，看看你自己的星圖。"
+   },
+   "revoke": {
+    "action": "撤回分享",
+    "confirm": "撤回後，你的出生資料和由此算出的盤面會在 24 小時內刪除。",
+    "done": "已撤回。你的資料會在 24 小時內刪除。"
+   },
+   "revoked": {
+    "title": "這個連結已經失效",
+    "body": "邀請已被撤回。"
+   },
+   "expired": {
+    "title": "這個連結已過期",
+    "body": "請邀請你的人重新傳一個連結。"
+   },
+   "notFound": {
+    "title": "找不到這個邀請",
+    "body": "連結可能不完整。請檢查後再打開，或請對方重新傳送。"
+   },
+   "completed": "這個邀請已經完成了。",
+   "error": "暫時打不開邀請，請稍後再試。",
+   "rateLimited": "操作太頻繁了，請稍後再試。",
+   "keepCopy": "也為我自己保留這份資料：30 天內註冊，就能直接看到自己的星圖；不註冊會自動刪除。",
+   "seeResult": "看看你們的關係星圖"
+  },
+  "clip": {
+   "getApp": "取得璇璣",
+   "noLink": "請從邀請連結打開。"
+  },
+  "family": {
+   "join": {
+    "confirm": "加入 {owner} 的家庭方案。你的檔案、事蹟、日誌與對話仍然只有你自己看得到。",
+    "title": "加入家庭方案",
+    "confirmGeneric": "加入後共享家庭會員。你的檔案、事蹟、日誌和對話仍然只有你自己看得到。",
+    "accept": "加入",
+    "joined": "已加入家庭方案",
+    "ownSub": "加入後你自己的訂閱仍會繼續扣款，可以在 {store} 取消。"
+   }
+  },
+  "birth": {
+   "yearOnly": {
+    "note": "只填出生年份也可以開始。需要日期和時間的部分會以虛線顯示，補充後自動重算。"
+   }
+  }
+ },
+ "web": {
+  "chartNew": {
+   "date": {
+    "label": "出生日期",
+    "kind": "日期型別",
+    "civil": "公曆",
+    "lunar": "農曆",
+    "ganZhi": "干支",
+    "year": "年",
+    "month": "月",
+    "day": "日",
+    "leap": "閏月",
+    "leapHint": "只有當年確有這個閏月時才能選；否則會提示日期不存在。",
+    "civilValue": "{year} 年 {month} 月 {day} 日",
+    "lunarValue": "農曆 {year} 年 {leap}{month} 月 {day} 日",
+    "lunarLeap": "閏",
+    "pillarYear": "年柱",
+    "pillarMonth": "月柱",
+    "pillarDay": "日柱",
+    "pillarHour": "時柱（可選）",
+    "pillarHourNone": "不知道",
+    "ganZhiHint": "按四柱反查公曆日期（1900–2100 年）。選好後會換算成公曆；若有時柱，時間按該時辰的中點。",
+    "find": "查詢日期",
+    "finding": "正在反查…",
+    "candidates": "{count, plural, =0 {沒有找到對應日期} other {找到 # 個日期，請選擇}}",
+    "pick": "選這個",
+    "picked": "已選 {date}",
+    "candidateTime": "{date} {time}",
+    "pillarsRequired": "請先查詢並選擇一個對應的日期。"
+   },
+   "time": {
+    "label": "出生時間",
+    "hour": "時",
+    "minute": "分",
+    "certainty": "時間確定度",
+    "shichen": "時辰",
+    "shichenOption": "{branch}時 {span}",
+    "notes": {
+     "exact": "按出生證明或家人記錄的分鐘時間計算。",
+     "plusMinus15m": "我們會掃描前後 15 分鐘，標出這段時間裡可能變化的結論。",
+     "plusMinus1h": "上升點、宮位、時柱、紫微命宮與人類圖部分閘門可能在這兩小時內變化，相關結論會打上標記。",
+     "shichenOnly": "按時辰中點計算；分鐘級的結論（上升、宮位、人類圖部分閘門）會標為不確定。",
+     "unknown": "不知道出生時間也能排盤：八字只排三柱，西占不排宮位與上升，紫微斗數與人類圖型別需要時辰——這些部分會以虛線顯示並說明。"
+    }
+   },
+   "place": {
+    "label": "出生地",
+    "search": "搜尋城市（中文 / 拼音 / 英文）",
+    "suggestions": "常用城市",
+    "noResults": "沒有找到「{query}」。可以手動輸入經緯度。",
+    "manual": "手動輸入經緯度與時區",
+    "manualHide": "收起手動輸入",
+    "lat": "緯度（北為正）",
+    "lon": "經度（東為正）",
+    "tz": "IANA 時區",
+    "manualName": "座標 {lat}, {lon}",
+    "useManual": "使用這個座標",
+    "selected": "{name} · {coords}",
+    "change": "更換",
+    "tzNote": "按 IANA 歷史時區解析時區變更與夏令時。",
+    "dataNote": "地點庫來自 GeoNames（約 3.7 萬個城市與縣區，CC BY 4.0）；找不到時請用手動座標。",
+    "loading": "正在載入地點庫…",
+    "loadFailed": "地點庫載入失敗。請檢查網路後重試，或手動輸入經緯度。",
+    "required": "請選擇出生地"
+   },
+   "sex": {
+    "label": "排盤性別",
+    "female": "女",
+    "male": "男",
+    "skip": "跳過",
+    "note": "八字大運順逆、紫微斗數排盤需要此項，只用於計算。跳過時八字大運同時給出順逆兩種排法，紫微斗數暫不排盤。"
+   }
+  },
+  "landing": {
+   "download": {
+    "eyebrow": "GET THE APP",
+    "title": "每天的覺察，放在口袋裡",
+    "lead": "每日能量天氣、覺察提示、日誌與小工具在 App 裡；深度報告、合盤邀請與專業工作臺在網頁上。同一個帳號，三端同步。",
+    "ios": "App Store",
+    "iosStatus": "即將上架",
+    "android": "Google Play",
+    "androidStatus": "即將推出",
+    "web": "在瀏覽器中繼續"
+   }
+  }
+ },
+ "systems": {
+  "timeCertainty": {
+   "label": "時間確定度",
+   "exact": "精確",
+   "plusMinus15m": "±15 分鐘",
+   "plusMinus1h": "±1 小時",
+   "shichenOnly": "只知時辰",
+   "dateOnly": "只知日期",
+   "yearOnly": "只知年份",
+   "unknown": "不知道",
+   "timeSensitive": "受出生時間影響",
+   "degradedNote": "缺少時辰的部分以虛線顯示。補充出生時間後會自動重算。"
+  },
+  "relationTypes": {
+   "partner": "伴侶",
+   "parent": "父母",
+   "child": "子女",
+   "sibling": "兄弟姐妹",
+   "friend": "朋友",
+   "colleague": "同事",
+   "businessPartner": "合夥人",
+   "client": "客戶",
+   "other": "其他"
+  }
+ },
+ "charts": {
+  "branch": {
+   "zi": "子",
+   "chou": "丑",
+   "yin": "寅",
+   "mao": "卯",
+   "chen": "辰",
+   "si": "巳",
+   "wu": "午",
+   "wei": "未",
+   "shen": "申",
+   "you": "酉",
+   "xu": "戌",
+   "hai": "亥"
+  },
+  "ui": {
+   "listSep": "、"
+  }
+ },
+ "site": {
+  "language": "語言",
+  "brand": "璇璣",
+  "invitePageTitle": "邀請 · 璇璣",
+  "resultPageTitle": "你們的關係星圖 · 璇璣",
+  "loading": "正在開啟…",
+  "openApp": "已安裝璇璣？在 App 中開啟",
+  "afterInstall": "安裝後回到這裡，再點一次「在 App 中開啟」。",
+  "orWeb": "不想安裝也沒關係，可以直接在這個頁面填寫。",
+  "inApp": "目前的瀏覽器可能無法開啟 App。請點右上角「···」，選擇「在瀏覽器中開啟」。",
+  "retry": "重試",
+  "offline": "網路好像中斷了，請檢查後重試。",
+  "learnMore": "認識璇璣",
+  "storesTitle": "下載璇璣",
+  "storeComingSoon": "即將上架",
+  "keepInAppTitle": "在 App 裡保留這份結果",
+  "keepInAppBody": "安裝璇璣後，用同一個結果連結開啟（或點下方的「在 App 中開啟」），註冊後這份合盤會出現在你的「關係」裡。結果連結 30 天內有效。",
+  "placeSearching": "正在搜尋…",
+  "placeNoResults": "找不到「{query}」。",
+  "dateKindNote": "四柱（干支）日期需要在 App 或網頁版裡換算，這裡請用公曆或農曆填寫。",
+  "footerNote": "璇璣描述的是傾向與週期，供自我覺察；不預測具體事件，也不能取代專業意見。",
+  "privacy": "隱私權政策",
+  "terms": "使用條款",
+  "support": "說明與支援",
+  "report": "檢舉這個連結",
+  "reportSubject": "檢舉一個璇璣邀請連結",
+  "familyPageTitle": "加入家庭方案 · 璇璣",
+  "familyJoinBody": "加入家庭方案需要璇璣帳號，請在 App 裡開啟這個邀請：已安裝時點下方的按鈕；還沒安裝的話，先下載並登入，再點一次邀請連結。邀請連結 7 天內有效，只能使用一次。"
+ }
+}

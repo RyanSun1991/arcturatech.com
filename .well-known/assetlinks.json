@@ -11,5 +11,18 @@
         "BB:3C:FF:D4:79:D3:91:B9:3E:21:94:6C:56:0E:3D:70:13:6B:4A:F8:DB:3B:20:A4:29:29:FD:39:A2:85:06:24"
       ]
     }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.arcturatech.armilla",
+      "sha256_cert_fingerprints": [
+        "CC:7F:6D:F7:79:0B:0B:6B:98:19:A2:E4:14:D3:E9:8D:41:74:70:E9:54:14:4D:16:6E:49:E0:9A:98:72:E3:E4",
+        "B3:C2:DF:B6:01:E3:A1:63:86:63:54:AA:34:A2:14:69:18:E3:1A:2F:DA:BD:EB:7C:59:36:75:E8:28:6D:44:60"
+      ]
+    }
   }
 ]

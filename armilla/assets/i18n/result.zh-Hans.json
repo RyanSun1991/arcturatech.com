@@ -1,0 +1,2175 @@
+{
+ "client": {
+  "inviteResult": {
+   "eyebrow": "你们的关系星图",
+   "title": "你和 {inviter} 的关系星图",
+   "relationLine": "在你这边，{inviter} 是你的「{relation}」。",
+   "intro": "这是从你的视角看的同一份合盘。六个维度不打总分，只看连接和摩擦各有多强。",
+   "you": "你",
+   "findingsTitle": "关键发现",
+   "locked": "还有 {count} 张发现 · 注册后保留，开通会员即可查看",
+   "systemsTitle": "按体系",
+   "systemsLine": "{system} · {count} 张发现",
+   "systemsNote": "体系盘细节（双轮图、四柱对照等）需要双方完整共享才会显示。{inviter} 默认只共享结果，你不会看到 TA 的出生日期、时间和地点。",
+   "keepTitle": "保留这份结果",
+   "keepBody": "注册后，这份合盘会出现在你的「关系」里。你和 {inviter} 任何一方都可以随时停止共享。",
+   "keep": "注册并保留",
+   "keepSignedIn": "保存到我的账号",
+   "linked": "已保存到你的账号。",
+   "selfFilled": "也用你填写的资料建好了你自己的星图。",
+   "reward": "你和 {inviter} 各得到 7 天 Plus。",
+   "openShared": "在「关系」里查看",
+   "copyLink": "复制结果链接（30 天内有效）",
+   "copied": "已复制",
+   "computing": "正在计算你们的合盘，通常只要几秒钟。",
+   "pendingInviter": "{inviter} 那边的资料还没准备好，稍后再来看看。",
+   "revoked": "这份合盘已经结束：其中一方停止了共享。",
+   "expired": "这个结果链接已经过期（30 天）。",
+   "unavailable": "这份合盘暂时看不到了。",
+   "notFound": "找不到这份结果。链接可能不完整。",
+   "noToken": "这台设备上没有保存的结果。请用完成邀请时得到的结果链接打开。",
+   "error": "暂时打不开，请稍后再试。",
+   "linkError": {
+    "alreadyLinked": "这份结果已经保存到另一个账号。",
+    "ownInvite": "这是你自己发出的邀请。",
+    "gone": "这份合盘已经结束或链接已过期。",
+    "generic": "暂时没能保存，请稍后再试。"
+   }
+  },
+  "pair": {
+   "title": "合盘",
+   "practice": "一起练习",
+   "rings": {
+    "footnote": "六个维度分开看，不合成一个分数",
+    "a11y": "{ring}：{character}",
+    "character": {
+     "strong": "明显",
+     "quiet": "平静",
+     "friction": "摩擦为主"
+    },
+    "thinEvidence": "依据较少",
+    "legendStrength": "连结",
+    "legendFriction": "摩擦",
+    "axis": "{neg} ⇄ {pos}",
+    "evidence": "依据"
+   },
+   "findings": {
+    "eyebrow": "KEY FINDINGS",
+    "title": "关键发现 · {shown} / {total}",
+    "direction": "{from} → {to}",
+    "mutual": "双向",
+    "lockedCta": "解锁另外 {count} 个发现与相处剧本",
+    "lockedA11y": "已锁定的发现，点按解锁"
+   }
+  },
+  "clip": {
+   "getApp": "获取璇玑",
+   "noLink": "请从邀请链接打开。"
+  }
+ },
+ "web": {
+  "landing": {
+   "download": {
+    "eyebrow": "GET THE APP",
+    "title": "每天的觉察，放在口袋里",
+    "lead": "每日能量天气、觉察提示、日志与小组件在 App 里；深度报告、合盘邀请与专业工作台在网页上。同一个账号，三端同步。",
+    "ios": "App Store",
+    "iosStatus": "即将上架",
+    "android": "Google Play",
+    "androidStatus": "即将推出",
+    "web": "在浏览器中继续"
+   }
+  }
+ },
+ "systems": {
+  "relationTypes": {
+   "partner": "伴侣",
+   "parent": "父母",
+   "child": "子女",
+   "sibling": "兄弟姐妹",
+   "friend": "朋友",
+   "colleague": "同事",
+   "businessPartner": "合伙人",
+   "client": "客户",
+   "other": "其他"
+  }
+ },
+ "facts": {
+  "enums": {
+   "baziPattern": {
+    "congCai": "从财",
+    "congEr": "从儿",
+    "congQiang": "从强",
+    "congRuo": "从弱",
+    "congSha": "从杀",
+    "huaQi": "化气",
+    "jianLu": "建禄",
+    "pianCai": "偏财",
+    "pianYin": "偏印",
+    "qiSha": "七杀",
+    "shangGuan": "伤官",
+    "shiShen": "食神",
+    "yangRen": "阳刃",
+    "zhengCai": "正财",
+    "zhengGuan": "正官",
+    "zhengYin": "正印"
+   },
+   "body": {
+    "asc": "上升点",
+    "chiron": "凯龙",
+    "dsc": "下降点",
+    "earth": "地球",
+    "ic": "天底",
+    "jupiter": "木星",
+    "lilith": "莉莉丝",
+    "mars": "火星",
+    "mc": "天顶",
+    "mercury": "水星",
+    "moon": "月亮",
+    "neptune": "海王星",
+    "northNode": "北交点",
+    "partOfFortune": "福点",
+    "pluto": "冥王星",
+    "saturn": "土星",
+    "southNode": "南交点",
+    "sun": "太阳",
+    "uranus": "天王星",
+    "venus": "金星",
+    "vertex": "宿命点"
+   },
+   "branch": {
+    "chen": "辰",
+    "chou": "丑",
+    "hai": "亥",
+    "mao": "卯",
+    "shen": "申",
+    "si": "巳",
+    "wei": "未",
+    "wu": "午",
+    "xu": "戌",
+    "yin": "寅",
+    "you": "酉",
+    "zi": "子"
+   },
+   "cogFunction": {
+    "Fe": "Fe",
+    "Fi": "Fi",
+    "Ne": "Ne",
+    "Ni": "Ni",
+    "Se": "Se",
+    "Si": "Si",
+    "Te": "Te",
+    "Ti": "Ti"
+   },
+   "graha": {
+    "jupiter": "木星",
+    "ketu": "计都",
+    "mars": "火星",
+    "mercury": "水星",
+    "moon": "月亮",
+    "rahu": "罗睺",
+    "saturn": "土星",
+    "sun": "太阳",
+    "venus": "金星"
+   },
+   "pillar": {
+    "day": "日柱",
+    "hour": "时柱",
+    "month": "月柱",
+    "year": "年柱"
+   },
+   "stem": {
+    "bing": "丙",
+    "ding": "丁",
+    "geng": "庚",
+    "gui": "癸",
+    "ji": "己",
+    "jia": "甲",
+    "ren": "壬",
+    "wu": "戊",
+    "xin": "辛",
+    "yi": "乙"
+   },
+   "type16": {
+    "ENFJ": "ENFJ",
+    "ENFP": "ENFP",
+    "ENTJ": "ENTJ",
+    "ENTP": "ENTP",
+    "ESFJ": "ESFJ",
+    "ESFP": "ESFP",
+    "ESTJ": "ESTJ",
+    "ESTP": "ESTP",
+    "INFJ": "INFJ",
+    "INFP": "INFP",
+    "INTJ": "INTJ",
+    "INTP": "INTP",
+    "ISFJ": "ISFJ",
+    "ISFP": "ISFP",
+    "ISTJ": "ISTJ",
+    "ISTP": "ISTP"
+   },
+   "wx": {
+    "earth": "土",
+    "fire": "火",
+    "metal": "金",
+    "water": "水",
+    "wood": "木"
+   }
+  },
+  "relation_fact": {
+   "bazi": {
+    "pair": {
+     "branch": {
+      "combine6": {
+       "detail": "两人的地支之间有六合：生活中的某个层面（{ap}柱与{bp}柱）天然契合，相处时有一种不费力的默契。",
+       "phrase": "地支六合"
+      }
+     },
+     "complement": {
+      "mutual": {
+       "detail": "五行互补：一方缺的，另一方满；彼此盘中最旺的五行正是对方需要的。和对方在一起，各自都更平衡——这是合婚里很难得的结构。",
+       "phrase": "用神互补"
+      },
+      "one_way": {
+       "detail": "一方的五行正好补足另一方的喜用：被补足的一方在关系里更踏实，补足的一方也值得被看见与回馈。",
+       "phrase": "单向补益"
+      }
+     },
+     "daybranch": {
+      "clash": {
+       "detail": "两人的日支相冲：作息、生活习惯与亲密时的节奏不同，住在一起后感受最明显。",
+       "phrase": "日支相冲"
+      },
+      "combine6": {
+       "detail": "两人的日支六合：日常与亲密的节奏合拍，生活在一起会有家的感觉。",
+       "phrase": "日支六合"
+      }
+     },
+     "daystem": {
+      "clash": {
+       "detail": "两人日干相冲：日常小事上容易正面冲撞，说话一快就顶上；这股张力也让彼此很难忽视对方。",
+       "phrase": "日干{sa}{sb}相冲"
+      },
+      "combine": {
+       "detail": "两人日干五合（合而化{el}）：彼此之间有天然的亲和，容易一见如故，也会不知不觉向对方靠拢。",
+       "phrase": "日干{sa}{sb}相合"
+      },
+      "controls": {
+       "detail": "一方的日干克另一方：一方容易成为另一方的规矩与压力来源，也可能正是对方需要的约束；关键在于力度。",
+       "phrase": "日干{sa}克{sb}"
+      },
+      "generates": {
+       "detail": "一方的日干生另一方：一方自然地滋养、支持另一方，被支持的一方在这段关系里更容易站稳。",
+       "phrase": "日干{sa}生{sb}"
+      },
+      "same_element": {
+       "detail": "两人日干同属一种五行（{sa}、{sb}）：气质相通、一点就懂；同气也相争，谁都不太愿意先让。",
+       "phrase": "日干同气"
+      }
+     },
+     "dayun": {
+      "output_meets_power": {
+       "detail": "一方正走「打破」的食伤运，另一方正走「被推动」的官杀运：彼此推动力很强，也容易同时紧绷。",
+       "phrase": "食伤运遇官杀运"
+      },
+      "sync": {
+       "detail": "未来十年两人的大运方向一致：同起同落，容易在同一时期想做同一类事。",
+       "phrase": "大运同步"
+      }
+     },
+     "sole_element": {
+      "detail": "两人合看，{el}几乎全部来自一方：这一方缺位时，你们合在一起就少了这部分力量，值得把它写成约定或制度，而不是只留在一个人身上。",
+      "phrase": "{el}几乎全在一方"
+     }
+    }
+   },
+   "hd": {
+    "pair": {
+     "authority": {
+      "both_emotional": {
+       "detail": "两人都是情绪权威：重大决定都需要时间，适合约定「冷却期」，避免在情绪高点或低点当场拍板。",
+       "phrase": "双情绪权威"
+      },
+      "wave_vs_instant": {
+       "detail": "一方要等情绪平复才清楚，另一方在当下就知道：一方觉得被催，另一方觉得被拖。约定「重要决定隔一晚」比任何建议都有用。",
+       "phrase": "等情绪 × 当下知道"
+      }
+     },
+     "companionship": {
+      "detail": "两人都完整地拥有 {channels}：在这个主题上频率相同，像老朋友一样轻松，不需要解释。",
+      "phrase": "伙伴通道"
+     },
+     "compromise": {
+      "detail": "在 {channels} 上，一方完整、另一方只有一端：这个主题上容易由一方主导、另一方迁就，久了会积下小委屈。",
+      "phrase": "妥协通道"
+     },
+     "dominance": {
+      "detail": "{channels} 只在一方身上：这一方把另一方没有的能量带进关系，对方可以借此学习，也要留意不被这股能量淹没。",
+      "phrase": "主导通道"
+     },
+     "electromagnetic": {
+      "many": {
+       "detail": "两人各握通道的一端，合起来接通了 {channels}：彼此补全，靠近时会有明显的「被点亮」的感觉，吸引来自互补而不是相似。",
+       "phrase": "多条电磁通道"
+      },
+      "some": {
+       "detail": "两人合起来接通了 {channels}：在这个主题上彼此吸引、彼此补全。",
+       "phrase": "电磁通道"
+      },
+      "throat": {
+       "detail": "多条电磁通道经过喉咙中心：两个人在一起时，想法更容易说出来、做成作品，是适合一起表达与创作的组合。",
+       "phrase": "在一起，表达被打开"
+      }
+     },
+     "open_centers": {
+      "few": {
+       "detail": "合在一起后几乎没有开放中心：两个人在一起时很少无聊，也很少安静，各自都需要一点独处来回到自己。",
+       "phrase": "合图几乎全定义"
+      },
+      "shared": {
+       "detail": "合图后仍有多个开放中心：这些是你们共同容易被外界带动的主题，也是可以一起练习的地方。",
+       "phrase": "共同的开放中心"
+      }
+     },
+     "type": {
+      "manifestor_generator": {
+       "detail": "一方能发起、少等待，另一方回应后能持续投入：天然分工是「一个开局、一个做深」，前提是开局的一方先告知、做深的一方先确认。",
+       "phrase": "一方开局，一方做深"
+      },
+      "projector_generator": {
+       "detail": "一方需要被邀请才说出判断，另一方需要有东西可回应才动起来：谁先开口，常常决定了一件事的走向。",
+       "phrase": "等邀请 × 等回应"
+      },
+      "two_manifestors": {
+       "detail": "两人都是能自己发起的类型：都想按自己的节奏开局，事先互相告知能省掉很多摩擦。",
+       "phrase": "两位发起者"
+      }
+     }
+    }
+   },
+   "numerology": {
+    "pair": {
+     "lifepath_lead_support": {
+      "detail": "两人的生命灵数一偏开创与掌控、一偏合作与照顾：角色天然互补，也要留意不让一方总在让。",
+      "phrase": "开创与成全"
+     },
+     "personal_year_same": {
+      "detail": "两人今年的个人年相同：这一年的节奏一致，适合一起开始或一起收尾。",
+      "phrase": "个人年同步"
+     },
+     "same_life_path": {
+      "detail": "两人的生命灵数相同：人生主题相近，很容易理解对方在追求什么。",
+      "phrase": "生命灵数相同"
+     }
+    }
+   },
+   "psych": {
+    "pair": {
+     "attachment": {
+      "anxious_avoidant": {
+       "detail": "一方在不安时想靠近、想确认，另一方在压力下想退后、要空间：越追越退的循环，看见它就能慢下来。",
+       "phrase": "靠近 × 退后"
+      },
+      "both_anxious": {
+       "detail": "两人都在意对方的回应：亲近时彼此托住，忙乱或沉默时也容易一起不安。约好一个简单的“我在”信号会有帮助。",
+       "phrase": "两人都在意回应"
+      },
+      "both_avoidant": {
+       "detail": "两人都偏重独立、习惯自己消化：彼此给足空间，相处轻松；需要的时候，也记得主动说一句“我需要你”。",
+       "phrase": "两人都留有空间"
+      },
+      "secure_anchor": {
+       "detail": "其中一方的依恋风格偏安全：关系有一个稳定的锚，起伏时更容易回到彼此身边。",
+       "phrase": "一方依恋安全"
+      }
+     },
+     "bigfive": {
+      "conscientiousness_gap": {
+       "detail": "一方有条理、守时守约，另一方随性灵活：家务、计划与守时是常见的摩擦来源。",
+       "phrase": "有条理 × 随性"
+      },
+      "neuroticism_gap": {
+       "detail": "一方情绪起伏大、感知敏锐，另一方情绪平稳：稳的一方可以是锚，前提是不把对方的感受说成「想太多」。",
+       "phrase": "敏感 × 稳定"
+      }
+     },
+     "disc": {
+      "both_dominance": {
+       "detail": "两人都习惯拿主意、往前推：合作时冲劲十足，意见不同时也容易僵住。事先分好各自拍板的范围会有帮助。",
+       "phrase": "两人都爱拿主意"
+      },
+      "pace_gap": {
+       "detail": "一方习惯快速推进、边做边调，另一方喜欢想清楚再稳步走：节奏差是常见的摩擦点，先约定“什么时候定下来”会顺很多。",
+       "phrase": "快推进 × 稳步走"
+      }
+     },
+     "enneagram": {
+      "same_center": {
+       "detail": "两人的九型属于同一个中心：压力下的第一反应相近，容易理解对方为什么那样做。",
+       "phrase": "九型同中心"
+      }
+     },
+     "types16": {
+      "ei_split": {
+       "detail": "一方需要先在心里内化，另一方需要说出来才想得清楚：同一件事，一方想安静一会儿，另一方想马上聊。",
+       "phrase": "内化 × 讨论"
+      },
+      "jp_split": {
+       "detail": "一方喜欢早点定下来，另一方喜欢保留选择：计划、行程与截止日期是最常见的摩擦点。",
+       "phrase": "定下来 × 再看看"
+      },
+      "shared_intuition": {
+       "detail": "两人都偏直觉（N）：都爱聊可能性与背后的意义，常常一个想法刚起头，对方就接上了。",
+       "phrase": "直觉相通"
+      },
+      "shared_sensing": {
+       "detail": "两人都偏实感（S）：都信任具体的事实与经验，讨论实际的事情很有效率。",
+       "phrase": "实感相通"
+      },
+      "sn_split": {
+       "detail": "一方先看模式与可能，另一方先看事实与细节：容易互相觉得「太飘」或「太琐碎」，合起来却能看全一件事。",
+       "phrase": "看大局 × 看细节"
+      },
+      "tf_split": {
+       "detail": "一方先考虑人与关系，另一方先讲逻辑与一致：争论时一方觉得被冷落，另一方觉得没被讲通，其实各自守住了一半。",
+       "phrase": "顾及人 × 讲道理"
+      }
+     },
+     "values": {
+      "opposite_direction": {
+       "detail": "两人最看重的方向在价值圆环上相对：一个更看重的，正好是另一个较少顾及的。这能让彼此看到另一面，大决定前先聊聊各自在意什么会很有帮助。",
+       "phrase": "看重的方向互补"
+      },
+      "shared_direction": {
+       "detail": "两人的价值观测评在最看重的方向上相近：很多选择不用解释，对方就懂你为什么这样做。",
+       "phrase": "看重的方向相近"
+      }
+     }
+    }
+   },
+   "vedic": {
+    "pair": {
+     "dasha_sync": {
+      "detail": "（参考）两人当前的大运主星相同或彼此友好：这一阶段的人生主题相近。",
+      "phrase": "Dasha 同步"
+     },
+     "koota": {
+      "gana_low": {
+       "detail": "（参考）两人的月宿属于不同的性情类型：传统上提示脾气与步调差异较大，需要更多耐心去适应对方。",
+       "phrase": "Gana 不同"
+      },
+      "gana_match": {
+       "detail": "（参考）两人的月宿属于相近的性情类型（Gana）：传统上认为日常相处的步调接近。",
+       "phrase": "Gana 相合"
+      },
+      "graha_maitri_high": {
+       "detail": "（参考）两人月亮星座的主星彼此友好：传统上认为想法与心意容易相通。",
+       "phrase": "Graha Maitri 友好"
+      },
+      "tara_high": {
+       "detail": "（参考）两人月宿之间的 Tara 计数相合：传统上认为彼此是对方的「助力」。",
+       "phrase": "Tara 相合"
+      },
+      "yoni_high": {
+       "detail": "（参考）两人月宿的 Yoni 象征相合：传统上认为本能层面的亲近感较强。",
+       "phrase": "Yoni 相合"
+      }
+     }
+    }
+   },
+   "western": {
+    "pair": {
+     "asc_asc_square": {
+      "detail": "两人的上升点形成硬相位：面对外界的姿态不同，一方先顾和谐与气氛，另一方先顾结构与规矩，在人前容易各说各的。",
+      "phrase": "上升互刑"
+     },
+     "jupiter_lifts": {
+      "detail": "一方的木星照到另一方的太阳或月亮：在对方身边会更有信心、更敢想，视野因为这段关系而变宽。",
+      "phrase": "木星扶持"
+     },
+     "mars_mars_tension": {
+      "detail": "两人的火星形成对分或四分：行动的节奏与方式相反，一方想冲的时候另一方想换个打法，小事上也容易起争执。",
+      "phrase": "火星互冲"
+     },
+     "mercury_harmony": {
+      "detail": "两人的水星和谐：思路接近，一句话说一半对方就懂，聊天本身就是享受。",
+      "phrase": "水星同频"
+     },
+     "mercury_tension": {
+      "detail": "两人的水星形成硬相位：思考与表达的方式不同，同一句话在两个人那里意思不一样，值得多问一句「你的意思是……？」",
+      "phrase": "水星互译"
+     },
+     "moon_mc_conjunction": {
+      "detail": "一方的月亮正落在另一方的天顶上（容许 {orb}°）：情感上的支持会自然流向对方的事业与被看见，这份支持常常不用说出口。",
+      "phrase": "月亮合天顶"
+     },
+     "moon_moon_harmony": {
+      "detail": "两人的月亮和谐：情绪的需要相近，累了、难过时想要的照顾方式差不多，相处起来很省力。",
+      "phrase": "双月和谐"
+     },
+     "moon_moon_tension": {
+      "detail": "两人的月亮形成硬相位：处理情绪的方式不同，一方需要的安慰，可能正是另一方最不擅长给的。",
+      "phrase": "双月相刑"
+     },
+     "node_contact": {
+      "detail": "一方的个人行星落在另一方的北交点上：这段关系常让人觉得被带向一个想去、却还不熟悉的方向。",
+      "phrase": "交点相触"
+     },
+     "overlay_7th": {
+      "detail": "一方的太阳、月亮或金星落在另一方的第 7 宫：对方自然被放在「伴侣、搭档」的位置上看待。",
+      "phrase": "落入伴侣宫"
+     },
+     "pluto_personal": {
+      "detail": "一方的冥王星触动另一方的个人行星：吸引深而强烈，也容易出现想掌握或怕被掌握的感受，值得彼此坦白说出来。",
+      "phrase": "冥王相触"
+     },
+     "saturn_moon": {
+      "detail": "一方的土星压在另一方的月亮上：承诺感与责任感很强，也可能让一方觉得被管着、另一方觉得被依赖。",
+      "phrase": "月土相位"
+     },
+     "saturn_sun_venus_soft": {
+      "detail": "一方的土星与另一方的太阳或金星和谐：关系里有可靠的结构与长期感，适合一起做需要耐心的事。",
+      "phrase": "土星稳固"
+     },
+     "sun_mars_harmony": {
+      "detail": "一方的太阳与另一方的火星形成和谐相位：行动力互相点燃，一起做事时彼此都更有劲。",
+      "phrase": "日火和谐"
+     },
+     "sun_moon_harmony": {
+      "detail": "一方的太阳与另一方的月亮形成合相或和谐相位：一方想成为的样子，正是另一方感到安心的样子。",
+      "phrase": "日月相照"
+     },
+     "uranus_venus_moon": {
+      "detail": "一方的天王星触动另一方的金星或月亮：新鲜、刺激、不按常理出牌，也需要给彼此留出自由的空间。",
+      "phrase": "天王星触金月"
+     },
+     "venus_mars_harmony": {
+      "detail": "一方的金星与另一方的火星形成合相或和谐相位：经典的吸引组合，一方的魅力正好点燃另一方的追求。",
+      "phrase": "金火相吸"
+     },
+     "venus_mars_tension": {
+      "detail": "一方的金星与另一方的火星形成硬相位：吸引很强，也带着拉扯——想靠近的方式与节奏常常不一样。",
+      "phrase": "金火相刑"
+     }
+    }
+   },
+   "ziwei": {
+    "pair": {
+     "ji_into_ming": {
+      "detail": "一方的生年化忌落入另一方的命宫或夫妻宫：这一方对另一方格外在意、放不下，在意太多时会变成彼此的压力。",
+      "phrase": "化忌入对方命夫"
+     },
+     "lu_into_ming": {
+      "detail": "一方的生年化禄落入另一方的命宫或夫妻宫：这一方自然地想给予，另一方能感到被善待。",
+      "phrase": "化禄入对方命夫"
+     },
+     "ming_in_fude": {
+      "detail": "一方的命宫落在另一方的福德宫：和这一方待在一起，另一方会觉得心里安适、精神放松。",
+      "phrase": "命落福德宫"
+     },
+     "ming_in_fumu": {
+      "detail": "一方的命宫落在另一方的父母宫：这一方在对方眼中带着师长般的分量，提醒与建议容易被听进去。",
+      "phrase": "命落父母宫"
+     },
+     "ming_in_fuqi": {
+      "detail": "一方的命宫落在另一方的夫妻宫：对方一出现，就自然被放进「伴侣」的位置，有一种说不清的熟悉。",
+      "phrase": "命落夫妻宫"
+     },
+     "ming_in_guanlu": {
+      "detail": "一方的命宫落在另一方的官禄宫：在对方眼里，这一方与事业、目标紧紧相连，适合一起做事。",
+      "phrase": "命落官禄宫"
+     },
+     "ming_in_peers": {
+      "detail": "一方的命宫落在另一方的兄弟或仆役宫：相处像朋友、像同伴，平等而直接。",
+      "phrase": "命落兄弟仆役"
+     },
+     "ming_in_resources": {
+      "detail": "一方的命宫落在另一方的财帛或田宅宫：你们容易一起经营资源、一起安一个家。",
+      "phrase": "命落财帛田宅"
+     },
+     "mutual_qianyi": {
+      "detail": "两人的命宫各自落在对方的迁移宫：你们是彼此走向外面世界的那扇门，遇见对方之后，各自的活动半径都会变大。",
+      "phrase": "互为迁移"
+     }
+    }
+   }
+  }
+ },
+ "insights": {
+  "ontology": {
+   "rings": {
+    "attraction": {
+     "axisNeg": "相似相吸",
+     "axisPos": "互补相吸",
+     "describes": "彼此身上让对方想靠近的东西。",
+     "name": "吸引"
+    },
+    "communication": {
+     "axisNeg": "同频·一说就懂",
+     "axisPos": "互译·需要翻译",
+     "describes": "想法与语言在你们之间流动得多顺。",
+     "name": "沟通"
+    },
+    "emotion": {
+     "axisNeg": "各自消化",
+     "axisPos": "彼此托住",
+     "describes": "你们如何接住彼此的感受。",
+     "name": "情感"
+    },
+    "growth": {
+     "axisNeg": "彼此安顿",
+     "axisPos": "彼此推动",
+     "describes": "你们让彼此变成更完整的人的方式。",
+     "name": "成长"
+    },
+    "rhythm": {
+     "axisNeg": "同步",
+     "axisPos": "错峰",
+     "describes": "做决定、行动、休息的步调是否合拍。",
+     "name": "节奏"
+    },
+    "values": {
+     "axisNeg": "相近",
+     "axisPos": "互补",
+     "describes": "你们在意的东西、看重的方向有多接近。",
+     "name": "价值"
+    }
+   },
+   "systems": {
+    "bazi": "八字",
+    "face": "面相",
+    "hd": "人类图",
+    "iching": "易经",
+    "numerology": "数字学",
+    "palm": "手相",
+    "psych": "心理测评",
+    "vedic": "吠陀占星",
+    "western": "西洋占星",
+    "ziwei": "紫微斗数"
+   }
+  },
+  "relation": {
+   "rings": {
+    "attraction": {
+     "friction": {
+      "body": "你们靠近的方式与节奏不太一样，越在意越容易拉扯。看见这份拉扯，比假装它不存在更能让你们靠近。",
+      "practice": "下次感到拉扯时，各自用一句话说出「我此刻想要的是……」。",
+      "quote": "吸引很强，拉扯也很强。"
+     },
+     "quiet": {
+      "body": "在盘面上，你们之间的吸引信号不算强烈。这样的关系常常从熟悉与信任里慢慢长出来。",
+      "practice": "一起做一件新鲜的小事，留意彼此在其中的样子。",
+      "quote": "你们的连结，不靠火花，靠时间。"
+     },
+     "strong": {
+      "body": "这份吸引常常来自彼此身上自己没有的东西。它让你们靠近，也会让你们好奇对方为什么和自己这么不一样。",
+      "practice": "各自写下对方身上最吸引你的一个特质，再交换着读。",
+      "quote": "你们之间，有一股很难忽视的吸引。"
+     }
+    },
+    "communication": {
+     "friction": {
+      "body": "你们思考与表达的方式不同，误会常从「我以为你的意思是」开始。多问一句，往往就能省掉一场争执。",
+      "practice": "下次觉得被误解时，先问「你刚才的意思是……吗？」再回应。",
+      "quote": "同一句话，在你们之间有两种意思。"
+     },
+     "quiet": {
+      "body": "盘面上，你们在沟通上的连结信号不多。这不代表说不通，只是需要更多主动的表达与确认。",
+      "practice": "每周约一次固定的谈话时间，各自说一件这周最在意的事。",
+      "quote": "你们的沟通，需要多一点刻意。"
+     },
+     "strong": {
+      "body": "想法在你们之间流动得很顺，一个人刚起头，另一个人就接上了。正因为太顺，偶尔会以为对方懂了，其实没有。",
+      "practice": "重要的事说完后，请对方用自己的话复述一遍。",
+      "quote": "你们说话，常常一点就通。"
+     }
+    },
+    "emotion": {
+     "friction": {
+      "body": "一方需要的安慰，可能正是另一方最不擅长给的。分清「我需要什么」和「我以为对方需要什么」，是你们的练习。",
+      "practice": "各自写下「难过的时候，我最希望对方做的一件事」，交换着看。",
+      "quote": "你们处理情绪的方式，不太一样。"
+     },
+     "quiet": {
+      "body": "盘面上，你们在情感层面的强信号不多。情感的深度常常来自一起经历的事，而不只是先天的配置。",
+      "practice": "一起回忆一件你们共同经历过的难忘小事，各自说说当时的感受。",
+      "quote": "你们的情感连结，在慢慢生长。"
+     },
+     "strong": {
+      "body": "你们能接住彼此的感受，难过的时候想到的第一个人常常是对方。这份安心也需要被说出来，才不会被当成理所当然。",
+      "practice": "这周各自告诉对方一次：「你在的时候，我会觉得……」。",
+      "quote": "在彼此身边，你们的心会安定下来。"
+     }
+    },
+    "growth": {
+     "friction": {
+      "body": "这段关系有很强的推动力，常常把你们带到舒适区之外。推动太多时，记得也给彼此一点喘息的空间。",
+      "practice": "这周问对方：「最近有什么是你希望我少推一点的？」",
+      "quote": "你们推动彼此，也会让彼此紧绷。"
+     },
+     "quiet": {
+      "body": "盘面上，互相推动的强信号不多。这样的关系更像港湾，适合在外面闯荡之后回来休息。",
+      "practice": "各自分享一个这一年想成长的方向，问问对方可以怎样支持你。",
+      "quote": "你们的成长，可以各自发生。"
+     },
+     "strong": {
+      "body": "一方身上有的，正是另一方需要的，和对方在一起，各自都更平衡。这份互补也意味着要彼此学习，而不只是依赖。",
+      "practice": "各自写下「因为你，我学会了……」，交换着读。",
+      "quote": "你们让彼此变成更完整的人。"
+     }
+    },
+    "rhythm": {
+     "friction": {
+      "body": "一方想快、一方想慢，一方想定下来、一方想再看看。最需要练习的不是改变对方，而是约定一个两人都能接受的节奏。",
+      "practice": "为重要的决定约定一条规则（比如「隔一晚再定」），试行一个月。",
+      "quote": "你们的节奏相反，这不是谁错了。"
+     },
+     "quiet": {
+      "body": "盘面上，你们在节奏上没有明显的同步或冲突信号。各自保留自己的步调，同时留一些固定的共同时间，就足够。",
+      "practice": "约定每周一个固定的共同时段，其余时间各自安排。",
+      "quote": "你们的节奏，各走各的也无妨。"
+     },
+     "strong": {
+      "body": "做决定、行动、休息的节奏，你们很接近，一起生活与做事都不太费力。同步也意味着容易一起紧绷，留意彼此的疲惫。",
+      "practice": "每月一起安排一个什么都不做的半天。",
+      "quote": "你们的步调，很合拍。"
+     }
+    },
+    "values": {
+     "friction": {
+      "body": "在一些重要的事情上，你们的优先顺序不同，容易各说各的。差异本身不是问题，没有被说出来的差异才是。",
+      "practice": "挑一件你们意见不同的事，各自说出「这件事对我重要，是因为……」。",
+      "quote": "你们看重的方向，不太一样。"
+     },
+     "quiet": {
+      "body": "盘面上，价值层面的强信号不多。很多共同的方向，是在一次次具体的选择里慢慢形成的。",
+      "practice": "下次一起做选择时，各自先说出最看重的那一点，再商量。",
+      "quote": "你们的价值观，需要在相处中慢慢对齐。"
+     },
+     "strong": {
+      "body": "在重要的事情上，你们常常不用解释就站在同一边。这份默契让共同的决定变得轻松，也值得偶尔检视是否还一致。",
+      "practice": "各自写下未来三年最重要的三件事，比较一下有多少重叠。",
+      "quote": "你们在意的东西，很接近。"
+     }
+    }
+   },
+   "scripts": {
+    "closeness_vs_space": {
+     "practice": "约定「需要空间时说明回来的时间」，以及「不安时直接说出来」。",
+     "scene": "压力来的时候，一方想靠近、想确认，另一方想退后、要空间。越追越退，越退越追。",
+     "sides": {
+      "closer": {
+       "inner": "对方一退，我就开始担心是不是我做错了什么，于是更想确认。",
+       "say": "「我有点不安，想听你说一句：我们没事。」"
+      },
+      "spacer": {
+       "inner": "我需要一点空间才能回到自己，被追得越紧，我越想躲。",
+       "say": "「我需要一个小时自己待着，然后我会回来找你。」"
+      }
+     },
+     "title": "靠近与空间"
+    },
+    "control_vs_yield": {
+     "practice": "每月检查一次：最近的决定里，各自主导了哪几件。",
+     "scene": "在某个主题上，总是同一个人拿主意、另一个人配合，久了就积下小委屈。",
+     "sides": {
+      "leads": {
+       "inner": "我只是想把事情做好，没意识到对方一直在让。",
+       "say": "「这件事你怎么看？我想听听你真正的想法。」"
+      },
+      "yields": {
+       "inner": "说出来好像会起冲突，所以我先配合，但心里其实有别的想法。",
+       "say": "「这次我想按我的方式试一次。」"
+      }
+     },
+     "title": "主导与顺从"
+    },
+    "decision_pace": {
+     "practice": "约定「重要决定隔一晚」，并约好给答案的具体时间。",
+     "scene": "要做一个重要决定时，一方当下就有答案，另一方需要时间让情绪平复。于是一个觉得被催，一个觉得被拖。",
+     "sides": {
+      "fast": {
+       "inner": "我已经知道答案了，等待让我觉得事情被卡住，好的时机在溜走。",
+       "say": "「我的直觉是这样。你需要多久？我可以等到那时候。」"
+      },
+      "slow": {
+       "inner": "我不是不想决定，我只是还没清楚。被催的时候，我会更慌，甚至随便答应。",
+       "say": "「我需要隔一晚。明天这个时间，我一定给你答案。」"
+      }
+     },
+     "title": "决定的快慢"
+    },
+    "direct_clash": {
+     "practice": "约定一个暂停的暗号，任何一方说出来，两人都停下五分钟。",
+     "scene": "日常小事上，你们说话一快就顶上，一句话引出另一句更重的话。",
+     "sides": {
+      "either": {
+       "inner": "我只是想把话说清楚，但对方的语气让我觉得被挑战，于是我也更用力。",
+       "say": "「我们都有点急了，先停五分钟，再接着说。」"
+      }
+     },
+     "title": "正面冲撞"
+    },
+    "processing_style": {
+     "practice": "约定「先各自安静十五分钟，再一起说」的节奏。",
+     "scene": "遇到事情，一方需要先安静地想，另一方需要马上说出来才能理清。一个觉得被逼问，一个觉得被冷落。",
+     "sides": {
+      "inward": {
+       "inner": "我需要先在心里过一遍，马上开口只会说出还没想好的话。",
+       "say": "「我需要一点时间想想，晚上我们再聊，好吗？」"
+      },
+      "outward": {
+       "inner": "说出来我才想得清楚，对方的沉默让我觉得被关在门外。",
+       "say": "「我想先说说我的想法，你不用马上回应。」"
+      }
+     },
+     "title": "消化方式"
+    },
+    "same_element_rivalry": {
+     "practice": "把决定权按领域分开：哪些事归谁定，事先说好。",
+     "scene": "你们太像了，在同一件事上都有主见，谁都不太愿意先让一步。",
+     "sides": {
+      "either": {
+       "inner": "我知道对方懂我，所以更希望对方先让一步。",
+       "say": "「这件事这次听你的，下次换我来定。」"
+      }
+     },
+     "title": "同气相争"
+    },
+    "structure_vs_flow": {
+     "practice": "一起写一个「必须守住的三件事 + 可以变动的部分」清单。",
+     "scene": "计划、行程与截止日期上，一方想早点定下来，另一方想保留弹性。",
+     "sides": {
+      "improviser": {
+       "inner": "计划太死让我透不过气，我怕错过临时出现的好机会。",
+       "say": "「我愿意先定一个框架，但给我留一些可以调整的空间。」"
+      },
+      "planner": {
+       "inner": "事情没定下来，我心里就一直悬着，没法放松。",
+       "say": "「我们先把最重要的一两件定下来，其余的再随机应变。」"
+      }
+     },
+     "title": "计划与随兴"
+    },
+    "who_speaks_first": {
+     "practice": "重要的事，约定由一方先邀请另一方发表意见，轮流来。",
+     "scene": "一件事卡住了：一方在等被邀请才说出判断，另一方在等对方先动或先问。于是两个人都沉默。",
+     "sides": {
+      "initiates": {
+       "inner": "我在等一个信号，或者我已经往前走了，却没想到要先说一声。",
+       "say": "「你怎么看？我很想听你的判断。」"
+      },
+      "waits": {
+       "inner": "我其实看得很清楚，但没被问到时说出来，常常不被当回事。",
+       "say": "「我对这件事有一些想法，你想听吗？」"
+      }
+     },
+     "title": "谁先开口"
+    }
+   }
+  }
+ },
+ "charts": {
+  "ui": {
+   "view": {
+    "label": "显示方式",
+    "graphic": "图形",
+    "table": "表格"
+   },
+   "pro": "专业",
+   "proHint": "专业模式：显示更多细节",
+   "replay": "重播绘制",
+   "sections": {
+    "label": "内容分段",
+    "data": "数据",
+    "reading": "解读",
+    "pro": "专业"
+   },
+   "now": "现在",
+   "nowShort": "NOW",
+   "degradedTitle": "部分结论需要出生时间",
+   "degradedNote": "缺少时辰的部分以虚线显示。补充出生时间后会自动重算。",
+   "timeSensitive": "受出生时间影响",
+   "sensitiveValues": "出生时间窗口内可能是：{values}",
+   "stableWithin": "出生时间 {minutes} 分钟内不变",
+   "unavailable": "暂不可用",
+   "notAvailableNoTime": "需要出生时间",
+   "readingSoon": "跨体系的完整解读会在共振引擎接入后出现在这里；下面是这张盘的要点。",
+   "engineFacts": "以下数据全部由排盘引擎计算",
+   "computedBy": "引擎 {engine} · 星历 {ephemeris} · 时区库 {tzdb}",
+   "close": "关闭",
+   "yes": "是",
+   "no": "否",
+   "none": "无",
+   "dash": "—",
+   "degreesMinutes": "{d}°{m}′",
+   "years": "{from}–{to}",
+   "ageRange": "{from}–{to} 岁",
+   "listSep": "、"
+  },
+  "systemStatus": {
+   "sex_required": "需要排盘性别：请在出生信息中选择女或男。",
+   "year_only": "只知道出生年份时无法排这个体系。",
+   "no_birth_time": "需要出生时间。",
+   "not_supported": "当前参数组合暂不支持。",
+   "error": "这个体系计算出错（{code}）。"
+  },
+  "degrade": {
+   "noBirthTime": "缺少出生时间",
+   "threePillarsOnly": "只有三柱，按三柱估算",
+   "luckStartApproximate": "起运时间为近似值",
+   "sexUnknown": "未提供排盘性别，大运同时给出顺逆两种",
+   "noBirthHour": "缺少出生时辰",
+   "yearOnly": "只知道出生年份",
+   "birthTimeUnknown": "缺少出生时间",
+   "birthDateUnknown": "缺少出生日期",
+   "moonNakshatraVaries": "这一天里月宿会变化",
+   "moonSignVaries": "这一天里月亮会换星座",
+   "highLatitudeAscendant": "高纬度地区上升点不稳定",
+   "highLatitudeHouseFallback": "高纬度下该宫制无定义，已回退为 Porphyry",
+   "chironOutOfRange": "凯龙超出星历范围",
+   "noTime": "缺少出生时间",
+   "noName": "未填写姓名，姓名数不计算",
+   "noLetters": "姓名无法转写为字母"
+  },
+  "stem": {
+   "jia": "甲",
+   "yi": "乙",
+   "bing": "丙",
+   "ding": "丁",
+   "wu": "戊",
+   "ji": "己",
+   "geng": "庚",
+   "xin": "辛",
+   "ren": "壬",
+   "gui": "癸"
+  },
+  "branch": {
+   "zi": "子",
+   "chou": "丑",
+   "yin": "寅",
+   "mao": "卯",
+   "chen": "辰",
+   "si": "巳",
+   "wu": "午",
+   "wei": "未",
+   "shen": "申",
+   "you": "酉",
+   "xu": "戌",
+   "hai": "亥"
+  },
+  "animal": {
+   "zi": "鼠",
+   "chou": "牛",
+   "yin": "虎",
+   "mao": "兔",
+   "chen": "龙",
+   "si": "蛇",
+   "wu": "马",
+   "wei": "羊",
+   "shen": "猴",
+   "you": "鸡",
+   "xu": "狗",
+   "hai": "猪"
+  },
+  "fivePhase": {
+   "wood": "木",
+   "fire": "火",
+   "earth": "土",
+   "metal": "金",
+   "water": "水"
+  },
+  "yinYang": {
+   "yin": "阴",
+   "yang": "阳"
+  },
+  "sex": {
+   "female": "女",
+   "male": "男"
+  },
+  "pillar": {
+   "year": "年柱",
+   "month": "月柱",
+   "day": "日柱",
+   "hour": "时柱"
+  },
+  "tenGod": {
+   "biJian": "比肩",
+   "jieCai": "劫财",
+   "shiShen": "食神",
+   "shangGuan": "伤官",
+   "pianCai": "偏财",
+   "zhengCai": "正财",
+   "qiSha": "七杀",
+   "zhengGuan": "正官",
+   "pianYin": "偏印",
+   "zhengYin": "正印"
+  },
+  "tenGodGroup": {
+   "companion": "比劫",
+   "output": "食伤",
+   "wealth": "财星",
+   "power": "官杀",
+   "resource": "印星"
+  },
+  "lifeStage": {
+   "changSheng": "长生",
+   "muYu": "沐浴",
+   "guanDai": "冠带",
+   "linGuan": "临官",
+   "diWang": "帝旺",
+   "shuai": "衰",
+   "bing": "病",
+   "si": "死",
+   "mu": "墓",
+   "jue": "绝",
+   "tai": "胎",
+   "yang": "养"
+  },
+  "naYin": {
+   "haiZhongJin": "海中金",
+   "luZhongHuo": "炉中火",
+   "daLinMu": "大林木",
+   "luPangTu": "路旁土",
+   "jianFengJin": "剑锋金",
+   "shanTouHuo": "山头火",
+   "jianXiaShui": "涧下水",
+   "chengTouTu": "城头土",
+   "baiLaJin": "白蜡金",
+   "yangLiuMu": "杨柳木",
+   "quanZhongShui": "泉中水",
+   "wuShangTu": "屋上土",
+   "piLiHuo": "霹雳火",
+   "songBaiMu": "松柏木",
+   "changLiuShui": "长流水",
+   "shaZhongJin": "沙中金",
+   "shanXiaHuo": "山下火",
+   "pingDiMu": "平地木",
+   "biShangTu": "壁上土",
+   "jinBoJin": "金箔金",
+   "fuDengHuo": "覆灯火",
+   "tianHeShui": "天河水",
+   "daYiTu": "大驿土",
+   "chaiChuanJin": "钗钏金",
+   "sangZheMu": "桑柘木",
+   "daXiShui": "大溪水",
+   "shaZhongTu": "沙中土",
+   "tianShangHuo": "天上火",
+   "shiLiuMu": "石榴木",
+   "daHaiShui": "大海水"
+  },
+  "shensha": {
+   "tianYi": "天乙贵人",
+   "wenChang": "文昌",
+   "yiMa": "驿马",
+   "taoHua": "桃花",
+   "huaGai": "华盖",
+   "jiangXing": "将星",
+   "yangRen": "羊刃",
+   "luShen": "禄神",
+   "tianDe": "天德",
+   "yueDe": "月德",
+   "hongLuan": "红鸾",
+   "tianXi": "天喜",
+   "guChen": "孤辰",
+   "guaSu": "寡宿",
+   "jieSha": "劫煞",
+   "wangShen": "亡神",
+   "kuiGang": "魁罡"
+  },
+  "interaction": {
+   "stemCombine": "天干合",
+   "stemClash": "天干冲",
+   "stemControl": "天干克",
+   "branchCombine6": "六合",
+   "branchTrine": "三合",
+   "branchHalfTrine": "半合",
+   "branchMeeting": "三会",
+   "branchClash": "六冲",
+   "branchPunish": "相刑",
+   "branchSelfPunish": "自刑",
+   "branchHarm": "相害",
+   "branchBreak": "相破",
+   "branchHiddenCombine": "暗合"
+  },
+  "strength": {
+   "veryWeak": "极弱",
+   "weak": "偏弱",
+   "balanced": "中和",
+   "strong": "偏强",
+   "veryStrong": "极强"
+  },
+  "baziPattern": {
+   "zhengGuan": "正官格",
+   "qiSha": "七杀格",
+   "zhengYin": "正印格",
+   "pianYin": "偏印格",
+   "shiShen": "食神格",
+   "shangGuan": "伤官格",
+   "zhengCai": "正财格",
+   "pianCai": "偏财格",
+   "jianLu": "建禄格",
+   "yangRen": "羊刃格",
+   "congQiang": "从强格",
+   "congRuo": "从弱格",
+   "congCai": "从财格",
+   "congSha": "从杀格",
+   "congEr": "从儿格",
+   "huaQi": "化气格"
+  },
+  "usefulGodMethod": {
+   "fuyi": "扶抑",
+   "tiaohou": "调候",
+   "tongguan": "通关",
+   "bingyao": "病药",
+   "zhuanwang": "专旺"
+  },
+  "baziSpecial": {
+   "taiYuan": "胎元",
+   "taiXi": "胎息",
+   "mingGong": "命宫",
+   "shenGong": "身宫"
+  },
+  "solarTerm": {
+   "liChun": "立春",
+   "yuShui": "雨水",
+   "jingZhe": "惊蛰",
+   "chunFen": "春分",
+   "qingMing": "清明",
+   "guYu": "谷雨",
+   "liXia": "立夏",
+   "xiaoMan": "小满",
+   "mangZhong": "芒种",
+   "xiaZhi": "夏至",
+   "xiaoShu": "小暑",
+   "daShu": "大暑",
+   "liQiu": "立秋",
+   "chuShu": "处暑",
+   "baiLu": "白露",
+   "qiuFen": "秋分",
+   "hanLu": "寒露",
+   "shuangJiang": "霜降",
+   "liDong": "立冬",
+   "xiaoXue": "小雪",
+   "daXue": "大雪",
+   "dongZhi": "冬至",
+   "xiaoHan": "小寒",
+   "daHan": "大寒"
+  },
+  "bazi": {
+   "rows": {
+    "tenGod": "十神",
+    "stem": "天干",
+    "branch": "地支",
+    "hidden": "藏干",
+    "lifeStage": "星运",
+    "selfStage": "自坐",
+    "naYin": "纳音",
+    "kongWang": "空亡",
+    "shensha": "神煞"
+   },
+   "dayMaster": "日主",
+   "dayMasterSex": "日主 · {sex}",
+   "tableLabel": "八字四柱：{pillars}",
+   "foot": "{clock} {hour}时 · 胎元 {taiYuan} · 命宫 {mingGong} · 身宫 {shenGong}",
+   "footNoTime": "未知时辰 · 只排年、月、日三柱 · 胎元 {taiYuan}",
+   "clock": {
+    "trueSolarTime": "真太阳时 {time}",
+    "standardTime": "标准时 {time}",
+    "wallClock": "钟表时间 {time}"
+   },
+   "fivePhasesTitle": "五行力量",
+   "fivePhasesLabel": "五行生克与力量占比：{values}",
+   "fivePhasesCaptionOuter": "外圈相生",
+   "fivePhasesCaptionInner": "内星相克",
+   "fivePhasesFoot": "按藏干加权、月令旺衰计算。{dominant}最旺；{missing}。",
+   "missingNone": "五行俱全",
+   "missingSome": "缺{phases}",
+   "judgementTitle": "判定 · 规则引擎",
+   "judgementStrength": "日主强弱",
+   "judgementPattern": "格局",
+   "judgementUseful": "喜用",
+   "judgementShensha": "神煞",
+   "judgementInteractions": "合冲刑害",
+   "deLing": "得令",
+   "deDi": "得地",
+   "deShi": "得势",
+   "notDe": "不{what}",
+   "usefulValue": "喜{favorable} · 忌{unfavorable}",
+   "methodValue": "{method}法",
+   "patternRevealed": "本气透出",
+   "patternNotRevealed": "本气未透",
+   "patternBasis": "{pillar}{role}{stem}",
+   "reviewNote": "判定结果需命理顾问复核后上线",
+   "luckTitle": "大运 · {yinYang}{sex}{direction} {age} 岁起运",
+   "luckTitleNoSex": "大运 · 未提供排盘性别",
+   "luckForward": "顺排",
+   "luckBackward": "逆排",
+   "luckAlternative": "{sex}命 · {direction}",
+   "luckStart": "起运 {date}（{age} 岁）",
+   "annualTitle": "{dayun}运 · 流年",
+   "annualLoading": "正在计算流年…",
+   "luckLabel": "大运时间轴：{list}",
+   "hiddenRole": {
+    "main": "本气",
+    "middle": "中气",
+    "residual": "余气"
+   },
+   "tableColumns": {
+    "item": "项目"
+   },
+   "interactionItem": "{kind}：{members}",
+   "interactionTransforms": "化{element}",
+   "readingDayMaster": "日主 {stem}{element}，{strength}。",
+   "readingPattern": "{pattern}，用神取法为{method}：喜{favorable}，忌{unfavorable}。",
+   "readingLuck": "当前大运 {dayun}（{tenGod}），流年 {liunian}（{tenGodYear}）。"
+  },
+  "sign": {
+   "Aries": "白羊",
+   "Taurus": "金牛",
+   "Gemini": "双子",
+   "Cancer": "巨蟹",
+   "Leo": "狮子",
+   "Virgo": "处女",
+   "Libra": "天秤",
+   "Scorpio": "天蝎",
+   "Sagittarius": "射手",
+   "Capricorn": "摩羯",
+   "Aquarius": "水瓶",
+   "Pisces": "双鱼"
+  },
+  "point": {
+   "sun": "太阳",
+   "moon": "月亮",
+   "mercury": "水星",
+   "venus": "金星",
+   "mars": "火星",
+   "jupiter": "木星",
+   "saturn": "土星",
+   "uranus": "天王星",
+   "neptune": "海王星",
+   "pluto": "冥王星",
+   "northNode": "北交点",
+   "southNode": "南交点",
+   "chiron": "凯龙",
+   "lilith": "莉莉丝",
+   "partOfFortune": "福点",
+   "asc": "上升",
+   "mc": "天顶",
+   "dsc": "下降",
+   "ic": "天底",
+   "vertex": "宿命点",
+   "earth": "地球"
+  },
+  "aspect": {
+   "conjunction": "合相",
+   "opposition": "对分相",
+   "trine": "三分相",
+   "square": "四分相",
+   "sextile": "六分相",
+   "quincunx": "梅花相",
+   "semisextile": "半六分相",
+   "semisquare": "半四分相",
+   "sesquiquadrate": "八分之三相",
+   "quintile": "五分相",
+   "biquintile": "倍五分相"
+  },
+  "westPattern": {
+   "grandTrine": "大三角",
+   "tSquare": "T 三角",
+   "grandCross": "大十字",
+   "kite": "风筝",
+   "yod": "上帝之指",
+   "stellium": "星群",
+   "mysticRectangle": "神秘矩形"
+  },
+  "astroElement": {
+   "fire": "火象",
+   "earth": "土象",
+   "air": "风象",
+   "water": "水象"
+  },
+  "modality": {
+   "cardinal": "基本",
+   "fixed": "固定",
+   "mutable": "变动"
+  },
+  "dignity": {
+   "domicile": "入庙",
+   "exaltation": "擢升",
+   "detriment": "失势",
+   "fall": "落陷",
+   "peregrine": "游走"
+  },
+  "lunarPhase": {
+   "newMoon": "新月",
+   "crescent": "娥眉月",
+   "firstQuarter": "上弦月",
+   "gibbous": "盈凸月",
+   "fullMoon": "满月",
+   "disseminating": "亏凸月",
+   "lastQuarter": "下弦月",
+   "balsamic": "残月"
+  },
+  "houseSystem": {
+   "placidus": "Placidus",
+   "koch": "Koch",
+   "porphyry": "Porphyry",
+   "regiomontanus": "Regiomontanus",
+   "campanus": "Campanus",
+   "equal": "等宫制",
+   "wholeSign": "整宫制",
+   "alcabitius": "Alcabitius",
+   "topocentric": "Topocentric",
+   "morinus": "Morinus",
+   "meridian": "子午线制"
+  },
+  "sect": {
+   "day": "日生盘",
+   "night": "夜生盘"
+  },
+  "west": {
+   "wheelLabel": "西洋占星本命盘：上升{asc}，太阳{sun}，月亮{moon}",
+   "wheelLabelNoTime": "西洋占星本命盘（无出生时间，不排宫位与上升）：太阳{sun}，月亮{moon}",
+   "foot": "回归黄道 · {houseSystem} · {node} · {sect}",
+   "footNoTime": "回归黄道 · 未知出生时间：不排宫位、四轴与上升，月亮位置为当日正午",
+   "nodeTrue": "真交点",
+   "nodeMean": "平交点",
+   "ascStable": "上升 {deg} · 出生时间 {minutes} 分钟内不换座",
+   "segments": {
+    "planets": "行星",
+    "aspects": "相位矩阵",
+    "patterns": "格局",
+    "houses": "宫位"
+   },
+   "columns": {
+    "point": "天体",
+    "sign": "星座",
+    "degree": "度数",
+    "house": "宫位",
+    "dignity": "尊贵",
+    "motion": "运动",
+    "aspect": "相位",
+    "orb": "容许度",
+    "applying": "入/出相",
+    "cusp": "宫头"
+   },
+   "retrograde": "逆行",
+   "direct": "顺行",
+   "houseN": "{n} 宫",
+   "applying": "入相",
+   "separating": "出相",
+   "aspectsFoot": "格内数字为容许度（度）。石青为和谐相位，朱膘为张力相位，月金为合相；专业模式显示次要相位。",
+   "patternMembers": "成员：{members}",
+   "patternApex": "顶点：{apex}",
+   "patternNone": "这张盘没有形成典型格局。",
+   "legendHarmony": "和谐",
+   "legendTension": "张力",
+   "legendConjunction": "合相",
+   "balanceTitle": "元素与模式",
+   "dominants": "{element} · {modality} · {planet}；命主星 {ruler}",
+   "moonPhase": "月相：{phase}",
+   "aspectsLabel": "相位矩阵：{count} 个相位",
+   "readingSun": "太阳{sign}{house}，月亮{moonSign}，上升{asc}。",
+   "readingSunNoTime": "太阳{sign}，月亮{moonSign}（无出生时间，不排上升）。",
+   "readingPatterns": "格局：{patterns}。",
+   "dominantsLabel": "主导",
+   "moonPhaseLabel": "月相"
+  },
+  "ziweiPalace": {
+   "ming": "命宫",
+   "xiongdi": "兄弟",
+   "fuqi": "夫妻",
+   "zinv": "子女",
+   "caibo": "财帛",
+   "jie": "疾厄",
+   "qianyi": "迁移",
+   "puyi": "仆役",
+   "guanlu": "官禄",
+   "tianzhai": "田宅",
+   "fude": "福德",
+   "fumu": "父母"
+  },
+  "ziweiStar": {
+   "ziwei": "紫微",
+   "tianji": "天机",
+   "taiyang": "太阳",
+   "wuqu": "武曲",
+   "tiantong": "天同",
+   "lianzhen": "廉贞",
+   "tianfu": "天府",
+   "taiyin": "太阴",
+   "tanlang": "贪狼",
+   "jumen": "巨门",
+   "tianxiang": "天相",
+   "tianliang": "天梁",
+   "qisha": "七杀",
+   "pojun": "破军",
+   "zuofu": "左辅",
+   "youbi": "右弼",
+   "wenchang": "文昌",
+   "wenqu": "文曲",
+   "tiankui": "天魁",
+   "tianyue": "天钺",
+   "lucun": "禄存",
+   "tianma": "天马",
+   "dikong": "地空",
+   "dijie": "地劫",
+   "huoxing": "火星",
+   "lingxing": "铃星",
+   "qingyang": "擎羊",
+   "tuoluo": "陀罗",
+   "hongluan": "红鸾",
+   "tianxi": "天喜",
+   "tianyao": "天姚",
+   "xianchi": "咸池",
+   "jieshen": "解神",
+   "santai": "三台",
+   "bazuo": "八座",
+   "enguang": "恩光",
+   "tiangui": "天贵",
+   "longchi": "龙池",
+   "fengge": "凤阁",
+   "tiancai": "天才",
+   "tianshou": "天寿",
+   "taifu": "台辅",
+   "fenggao": "封诰",
+   "tianwu": "天巫",
+   "huagai": "华盖",
+   "tianguan": "天官",
+   "tianfuAdj": "天福",
+   "tianchu": "天厨",
+   "tianyueAdj": "天月",
+   "tiande": "天德",
+   "yuede": "月德",
+   "tiankong": "天空",
+   "xunkong": "旬空",
+   "jielu": "截路",
+   "kongwang": "空亡",
+   "guchen": "孤辰",
+   "guasu": "寡宿",
+   "feilian": "蜚廉",
+   "posui": "破碎",
+   "tianxing": "天刑",
+   "yinsha": "阴煞",
+   "tianku": "天哭",
+   "tianxu": "天虚",
+   "tianshi": "天使",
+   "tianshang": "天伤",
+   "nianjie": "年解",
+   "longde": "龙德",
+   "jiekong": "截空",
+   "jiesha": "劫杀",
+   "dahao": "大耗"
+  },
+  "ziweiBrightness": {
+   "miao": "庙",
+   "wang": "旺",
+   "de": "得",
+   "li": "利",
+   "ping": "平",
+   "bu": "不",
+   "xian": "陷"
+  },
+  "ziweiHua": {
+   "lu": "禄",
+   "quan": "权",
+   "ke": "科",
+   "ji": "忌"
+  },
+  "ziweiHuaFull": {
+   "lu": "化禄",
+   "quan": "化权",
+   "ke": "化科",
+   "ji": "化忌"
+  },
+  "ziweiChangsheng": {
+   "changsheng": "长生",
+   "muyu": "沐浴",
+   "guandai": "冠带",
+   "linguan": "临官",
+   "diwang": "帝旺",
+   "shuai": "衰",
+   "bing": "病",
+   "si": "死",
+   "mu": "墓",
+   "jue": "绝",
+   "tai": "胎",
+   "yang": "养"
+  },
+  "ziweiBoshi": {
+   "boshi": "博士",
+   "lishi": "力士",
+   "qinglong": "青龙",
+   "xiaohao": "小耗",
+   "jiangjun": "将军",
+   "zhoushu": "奏书",
+   "feilian": "飞廉",
+   "xishen": "喜神",
+   "bingfu": "病符",
+   "dahao": "大耗",
+   "fubing": "伏兵",
+   "guanfu": "官府"
+  },
+  "ziweiFiveElementsClass": {
+   "water2": "水二局",
+   "wood3": "木三局",
+   "metal4": "金四局",
+   "earth5": "土五局",
+   "fire6": "火六局"
+  },
+  "ziweiSchool": {
+   "sanHe": "三合派",
+   "feiXing": "飞星派",
+   "zhongZhou": "中州派"
+  },
+  "ziweiLeapRule": {
+   "midMonthSplit": "闰月月中分界",
+   "asPreviousMonth": "闰月按本月",
+   "asNextMonth": "闰月按下月"
+  },
+  "ziwei": {
+   "scope": {
+    "label": "运限",
+    "natal": "本命",
+    "decade": "大限 {range}",
+    "annual": "流年 {ganzhi}"
+   },
+   "gridLabel": "紫微斗数十二宫：命宫在{ming}，{stars}",
+   "centerSex": "{yinYang}{sex} · {fiveElements}",
+   "centerStars": "命主 {soul} · 身主 {body}",
+   "centerBirth": "{year}年 {date} {hour}时",
+   "centerScope": "大限 {decade} · 流年 {annual}",
+   "body": "身",
+   "selected": "{palace}",
+   "triLines": "金线为三方四正",
+   "emptyPalace": "此宫无主星，借对宫星曜论。",
+   "starsLine": "主星：{stars}",
+   "minorLine": "辅星：{stars}",
+   "adjLine": "杂曜：{stars}",
+   "decadeLine": "大限 {range} 岁 · {ganzhi} · 长生 {stage}",
+   "foot": "{school} · {leap} · 生年四化：{hua} · 紫框为当前大限",
+   "huaItem": "{star}{hua}",
+   "selectHint": "点选任一宫位查看三方四正",
+   "tableColumns": {
+    "palace": "宫位",
+    "ganzhi": "干支",
+    "major": "主星",
+    "minor": "辅星",
+    "adjective": "杂曜",
+    "decade": "大限",
+    "stage": "长生"
+   },
+   "noHour": "缺少出生时辰时无法安命宫，紫微斗数需要出生时间（至少时辰）。",
+   "readingMing": "命宫在{branch}，{stars}；身宫在{body}。",
+   "readingNoStars": "无主星",
+   "soulBodyLabel": "命主 / 身主",
+   "huaLabel": "生年四化"
+  },
+  "graha": {
+   "sun": "太阳",
+   "moon": "月亮",
+   "mars": "火星",
+   "mercury": "水星",
+   "jupiter": "木星",
+   "venus": "金星",
+   "saturn": "土星",
+   "rahu": "罗睺",
+   "ketu": "计都",
+   "uranus": "天王星",
+   "neptune": "海王星",
+   "pluto": "冥王星"
+  },
+  "grahaShort": {
+   "sun": "日",
+   "moon": "月",
+   "mars": "火",
+   "mercury": "水",
+   "jupiter": "木",
+   "venus": "金",
+   "saturn": "土",
+   "rahu": "罗",
+   "ketu": "计",
+   "uranus": "天",
+   "neptune": "海",
+   "pluto": "冥",
+   "lagna": "升"
+  },
+  "nakshatra": {
+   "ashwini": "娄宿",
+   "bharani": "胃宿",
+   "krittika": "昴宿",
+   "rohini": "毕宿",
+   "mrigashira": "觜宿",
+   "ardra": "参宿",
+   "punarvasu": "井宿",
+   "pushya": "鬼宿",
+   "ashlesha": "柳宿",
+   "magha": "星宿",
+   "purvaPhalguni": "张宿",
+   "uttaraPhalguni": "翼宿",
+   "hasta": "轸宿",
+   "chitra": "角宿",
+   "swati": "亢宿",
+   "vishakha": "氐宿",
+   "anuradha": "房宿",
+   "jyeshtha": "心宿",
+   "mula": "尾宿",
+   "purvaAshadha": "箕宿",
+   "uttaraAshadha": "斗宿",
+   "shravana": "女宿",
+   "dhanishta": "虚宿",
+   "shatabhisha": "危宿",
+   "purvaBhadrapada": "室宿",
+   "uttaraBhadrapada": "壁宿",
+   "revati": "奎宿"
+  },
+  "yoga": {
+   "gajaKesari": "Gaja Kesari · 象狮瑜伽",
+   "budhaAditya": "Budha-Aditya · 日水瑜伽",
+   "ruchaka": "Ruchaka · 五大人格局（火星）",
+   "bhadra": "Bhadra · 五大人格局（水星）",
+   "hamsa": "Hamsa · 五大人格局（木星）",
+   "malavya": "Malavya · 五大人格局（金星）",
+   "shasha": "Shasha · 五大人格局（土星）",
+   "rajaYoga": "Raja Yoga · 王者瑜伽",
+   "dhanaYoga": "Dhana Yoga · 财富瑜伽",
+   "kemadruma": "Kemadruma · 孤月格",
+   "neechaBhanga": "Neecha Bhanga · 落陷解除",
+   "vipareetaRaja": "Vipareeta Raja · 逆转王者瑜伽",
+   "chandraMangala": "Chandra-Mangala · 月火瑜伽"
+  },
+  "vedicDignity": {
+   "exalted": "擢升",
+   "moolatrikona": "三方旺",
+   "ownSign": "入庙",
+   "friendly": "友宫",
+   "neutral": "中性",
+   "enemy": "敌宫",
+   "debilitated": "落陷"
+  },
+  "ayanamsa": {
+   "lahiri": "Lahiri",
+   "raman": "Raman",
+   "krishnamurti": "Krishnamurti (KP)",
+   "faganBradley": "Fagan-Bradley",
+   "trueChitra": "True Chitra",
+   "yukteshwar": "Yukteshwar"
+  },
+  "vedic": {
+   "vargas": {
+    "label": "分盘",
+    "d1": "D1 本命",
+    "d9": "D9 九分",
+    "d10": "D10 事业",
+    "moon": "月亮盘"
+   },
+   "style": {
+    "label": "盘式",
+    "north": "北印度",
+    "south": "南印度"
+   },
+   "chartLabel": "{style}式{varga}：Lagna {lagna}",
+   "foot": "{style}式 · 恒星黄道 · {ayanamsa} {deg} · 整宫制 · 数字为星座序号",
+   "footSouth": "南印度式 · 恒星黄道 · {ayanamsa} {deg} · 星座位置固定，Lagna 以斜线标记",
+   "noLagna": "缺少出生时间：Lagna 与宫位不可用，下面只按星座排列行星。",
+   "nakshatraTitle": "月宿",
+   "nakshatraName": "{name} {latin} · 第 {pada} Pada",
+   "nakshatraBody": "月亮{sign} {deg} · 宿主{lord}",
+   "nakshatraRing": "二十七宿环：月亮位于第 {n} 宿",
+   "dashaTitle": "Vimshottari 大运",
+   "dashaCurrent": "当前：{maha}大运（{mahaStart}–{mahaEnd}）· {antar}小运（{antarStart}–{antarEnd}）",
+   "dashaLabel": "Vimshottari 大运时间轴",
+   "yogaTitle": "格局",
+   "yogaNone": "没有成立的主要格局。",
+   "yogaCancelled": "（已破格）",
+   "yogaDetail": "{planets} · 第 {houses} 宫",
+   "lagna": "Lagna",
+   "columns": {
+    "graha": "行星",
+    "sign": "星座",
+    "degree": "度数",
+    "house": "宫",
+    "nakshatra": "星宿",
+    "pada": "Pada",
+    "dignity": "状态",
+    "lord": "宿主",
+    "start": "开始",
+    "end": "结束"
+   },
+   "ashtakavargaTitle": "Ashtakavarga 总分",
+   "readingLagna": "Lagna {lagna}，月亮{moon}，月宿 {nakshatra} 第 {pada} Pada。",
+   "readingDasha": "目前走{maha}大运、{antar}小运。",
+   "ayanamsaLabel": "岁差"
+  },
+  "hdType": {
+   "generator": "生产者",
+   "manifestingGenerator": "显示生产者",
+   "manifestor": "显示者",
+   "projector": "投射者",
+   "reflector": "反映者"
+  },
+  "hdStrategy": {
+   "generator": "等待回应",
+   "manifestingGenerator": "等待回应，再告知",
+   "manifestor": "行动前告知",
+   "projector": "等待邀请",
+   "reflector": "等待一个月亮周期"
+  },
+  "hdAuthority": {
+   "emotional": "情绪（太阳神经丛）",
+   "sacral": "荐骨",
+   "splenic": "直觉（脾）",
+   "egoManifested": "意志力（显示型）",
+   "egoProjected": "意志力（投射型）",
+   "selfProjected": "自我投射（G 中心）",
+   "mental": "环境 · 心智",
+   "lunar": "月亮周期"
+  },
+  "hdNotSelf": {
+   "frustration": "挫败感",
+   "bitterness": "苦涩",
+   "anger": "愤怒",
+   "disappointment": "失望",
+   "frustrationAnger": "挫败与愤怒"
+  },
+  "hdDefinition": {
+   "none": "无定义",
+   "single": "一分人",
+   "split": "二分人",
+   "tripleSplit": "三分人",
+   "quadrupleSplit": "四分人"
+  },
+  "hdCenter": {
+   "head": "头脑中心",
+   "ajna": "逻辑中心",
+   "throat": "喉咙中心",
+   "g": "G 中心",
+   "heart": "意志力中心",
+   "spleen": "直觉中心",
+   "solarPlexus": "情绪中心",
+   "sacral": "荐骨中心",
+   "root": "根部中心"
+  },
+  "hdCrossAngle": {
+   "right": "右角度交叉",
+   "juxtaposition": "并列交叉",
+   "left": "左角度交叉"
+  },
+  "hdCircuit": {
+   "individual": "个人回路",
+   "tribal": "部落回路",
+   "collective": "集体回路"
+  },
+  "hdLine": {
+   "1": "研究者",
+   "2": "隐士",
+   "3": "烈士",
+   "4": "机会主义者",
+   "5": "异端者",
+   "6": "人生典范"
+  },
+  "hdSide": {
+   "personality": "个性（意识）",
+   "design": "设计（潜意识）",
+   "both": "双重激活"
+  },
+  "hdVariable": {
+   "determination": "消化",
+   "environment": "环境",
+   "motivation": "动机",
+   "perspective": "视角"
+  },
+  "hd": {
+   "graphLabel": "人类图身体图：64 闸门 36 通道，定义通道 {channels}",
+   "graphLabelNone": "人类图身体图：64 闸门 36 通道，没有定义通道",
+   "design": "设计",
+   "personality": "个性",
+   "legendPersonality": "个性（意识）",
+   "legendDesign": "设计（潜意识）",
+   "legendBoth": "条纹 = 双重激活",
+   "rows": {
+    "type": "类型",
+    "strategy": "策略",
+    "authority": "内在权威",
+    "profile": "人生角色",
+    "definition": "定义",
+    "cross": "轮回交叉",
+    "channels": "定义通道",
+    "notSelf": "非自己主题",
+    "openCenters": "开放中心",
+    "designTime": "设计时刻",
+    "variables": "变量 PHS",
+    "circuits": "回路占比"
+   },
+   "profileValue": "{profile} {a} / {b}",
+   "crossValue": "{angle} · {gates}",
+   "foot": "太阳回退 88° 弧求设计时刻 · 真交点 · 13 天体 × 2",
+   "columns": {
+    "body": "天体",
+    "design": "设计",
+    "personality": "个性",
+    "gate": "闸门",
+    "center": "中心",
+    "side": "激活"
+   },
+   "noTimeType": "缺少出生时间：类型、权威、角色与交叉需要出生时间才能确定。",
+   "readingType": "{type}，策略是{strategy}；内在权威：{authority}；人生角色 {profile}。"
+  },
+  "numberKind": {
+   "lifePath": "生命灵数",
+   "lifePathDigitSum": "生命灵数（逐位相加）",
+   "birthday": "生日数",
+   "expression": "表达数",
+   "soulUrge": "灵魂数",
+   "personality": "人格数",
+   "maturity": "成熟数",
+   "universalYear": "宇宙年",
+   "personalYear": "个人年",
+   "personalMonth": "个人月",
+   "personalDay": "个人日"
+  },
+  "numberMeaning": {
+   "1": "独立 · 开创",
+   "2": "合作 · 敏感",
+   "3": "表达 · 创意",
+   "4": "秩序 · 踏实",
+   "5": "自由 · 多变",
+   "6": "责任 · 照顾",
+   "7": "内省 · 探究",
+   "8": "力量 · 掌控",
+   "9": "博爱 · 完成",
+   "11": "主数 · 直觉启发",
+   "22": "主数 · 建造实现",
+   "33": "主数 · 奉献导师"
+  },
+  "loShuLine": {
+   "4-9-2": "思维线",
+   "3-5-7": "情感线",
+   "8-1-6": "实践线",
+   "4-3-8": "规划线",
+   "9-5-1": "意志线",
+   "2-7-6": "行动线",
+   "4-5-6": "决心线",
+   "2-5-8": "灵性线"
+  },
+  "loShuStatus": {
+   "full": "已连通",
+   "partial": "部分",
+   "empty": "空缺"
+  },
+  "numerology": {
+   "eyebrow": "LO SHU",
+   "title": "洛书九宫",
+   "gridLabel": "洛书九宫数字分布：{counts}",
+   "foot": "{date} → {digits} · {missing} · 金线为已连通的线",
+   "missing": "缺 {list}",
+   "missingNone": "九宫俱全",
+   "lineRow": "{code} {name}",
+   "lineMissing": "缺 {list}",
+   "coreTitle": "核心数",
+   "personalYear": "个人年 {year}",
+   "nameFoot": "姓名按{scheme} {latin} 以毕达哥拉斯表换算：{letters} = {value}",
+   "scheme": {
+    "auto": "自动识别",
+    "latin": "拉丁字母",
+    "pinyin": "拼音"
+   },
+   "noName": "填写称呼后可计算表达数、灵魂数与人格数。",
+   "columns": {
+    "number": "数字",
+    "count": "出现次数",
+    "line": "连线",
+    "status": "状态",
+    "kind": "核心数",
+    "value": "数值"
+   },
+   "readingCore": "生命灵数 {lifePath}（{meaning}），表达数 {expression}。"
+  },
+  "cogFunction": {
+   "Ni": "内倾直觉",
+   "Ne": "外倾直觉",
+   "Si": "内倾感觉",
+   "Se": "外倾感觉",
+   "Ti": "内倾思考",
+   "Te": "外倾思考",
+   "Fi": "内倾情感",
+   "Fe": "外倾情感"
+  },
+  "types16Role": {
+   "dominant": "主导",
+   "auxiliary": "辅助",
+   "tertiary": "第三",
+   "inferior": "劣势"
+  },
+  "types16Letter": {
+   "E": "外倾",
+   "I": "内倾",
+   "S": "实感",
+   "N": "直觉",
+   "T": "思考",
+   "F": "情感",
+   "J": "判断",
+   "P": "感知",
+   "X": "未定"
+  },
+  "enneagramCenter": {
+   "gut": "本能中心",
+   "heart": "情感中心",
+   "head": "思维中心"
+  },
+  "enneagramInstinct": {
+   "sp": "自我保存",
+   "so": "社交",
+   "sx": "一对一"
+  },
+  "bigFiveBand": {
+   "low": "偏低",
+   "average": "中等",
+   "high": "偏高",
+   "middle": "中等"
+  },
+  "psych": {
+   "segments": {
+    "types16": "16 型",
+    "enneagram": "九型人格",
+    "bigFive": "大五人格"
+   },
+   "emptyTitle": "还没有测评结果",
+   "emptyBody": "测评描述的是此刻你如何看待自己，可以和先天盘面对照。答案只保存在这台设备上。",
+   "instruments": {
+    "quick12": "快速估计 · 12 题",
+    "types16": "16 型 · 48 题",
+    "enneagram": "九型人格 · 54 题",
+    "bigfive-ipip-neo-30": "大五人格 · 30 题"
+   },
+   "minutes": "约 {n} 分钟",
+   "start": "开始",
+   "retake": "重新测评",
+   "progress": "第 {n} / {total} 题",
+   "prev": "上一题",
+   "next": "下一题",
+   "skip": "跳过",
+   "submit": "提交并计分",
+   "cancel": "取消",
+   "loadingItems": "正在载入题目…",
+   "quickNote": "12 题只是初步估计，置信度较低；完整测评更可靠。",
+   "typeCard": "{code} · {name}",
+   "axesLabel": "16 型四维滑轨",
+   "stackTitle": "认知功能栈",
+   "stackFoot": "{items} 题 · 基于荣格八维自研题库（不使用商标名称）",
+   "enneagramLabel": "九型人格图，主型 {type}，翼型 {wing}",
+   "enneagramCard": "{label} · {instinct}",
+   "enneagramArrows": "成长方向 {type}→{growth}（绿线）；压力方向 {type}→{stress}（红色虚线）",
+   "bigFiveTitle": "大五人格百分位",
+   "normLabel": "国际常模百分位（Johnson 2014 IPIP-NEO，N = {n}）",
+   "normProvisional": "简版常模为暂定值",
+   "domainRow": "{domain} {value}%",
+   "takeMore": "补做其他测评",
+   "estimate": "估计",
+   "columns": {
+    "axis": "维度",
+    "value": "数值",
+    "function": "功能",
+    "role": "位置",
+    "strength": "强度",
+    "domain": "维度",
+    "percentile": "百分位",
+    "band": "分档",
+    "type": "型号",
+    "score": "得分"
+   }
+  },
+  "trigram": {
+   "qian": "乾",
+   "dui": "兑",
+   "li": "离",
+   "zhen": "震",
+   "xun": "巽",
+   "kan": "坎",
+   "gen": "艮",
+   "kun": "坤"
+  },
+  "trigramImage": {
+   "qian": "天",
+   "dui": "泽",
+   "li": "火",
+   "zhen": "雷",
+   "xun": "风",
+   "kan": "水",
+   "gen": "山",
+   "kun": "地"
+  },
+  "ichingRelative": {
+   "sibling": "兄弟",
+   "offspring": "子孙",
+   "wealth": "妻财",
+   "officer": "官鬼",
+   "parent": "父母"
+  },
+  "ichingSpirit": {
+   "qinglong": "青龙",
+   "zhuque": "朱雀",
+   "gouchen": "勾陈",
+   "tengshe": "螣蛇",
+   "baihu": "白虎",
+   "xuanwu": "玄武"
+  },
+  "ichingLine": {
+   "1": "初爻",
+   "2": "二爻",
+   "3": "三爻",
+   "4": "四爻",
+   "5": "五爻",
+   "6": "上爻"
+  },
+  "ichingMarker": {
+   "shi": "世",
+   "ying": "应"
+  },
+  "ichingPalaceStage": {
+   "1": "一世",
+   "2": "二世",
+   "3": "三世",
+   "4": "四世",
+   "5": "五世",
+   "pure": "八纯",
+   "wandering": "游魂",
+   "returning": "归魂"
+  },
+  "ichingSeason": {
+   "wang": "旺",
+   "xiang": "相",
+   "xiu": "休",
+   "qiu": "囚",
+   "si": "死"
+  },
+  "iching": {
+   "question": "所问",
+   "questionPlaceholder": "写下你想问的事（可选，只保存在本页）",
+   "method": {
+    "label": "起卦方式",
+    "coins": "三钱法 · 亲手摇六次",
+    "time": "时间起卦"
+   },
+   "toss": "摇第 {n} 爻",
+   "tossHint": "每次点击投掷三枚硬币（设备随机数），自下而上生成六爻。",
+   "tossed": "已摇 {n} / 6",
+   "coinBack": "背",
+   "coinFace": "字",
+   "castTime": "按此刻起卦",
+   "recast": "重新起卦",
+   "primary": "本卦",
+   "changed": "变卦",
+   "noChange": "无动爻",
+   "textTitle": "卦辞 · 动爻",
+   "linesTitle": "纳甲 · 六亲 · 六神",
+   "linesLabel": "六爻纳甲表",
+   "context": "{date} · {dayPillar}日 · {method}",
+   "methodName": {
+    "coins": "三钱法",
+    "time": "时间起卦",
+    "manual": "手动录入"
+   },
+   "foot": "{palace}宫{stage}卦 · 世在{shi}，应在{ying} · 旬空 {kong}",
+   "lineRef": "{line}{relative}",
+   "columns": {
+    "position": "爻位",
+    "spirit": "六神",
+    "najia": "纳甲",
+    "relative": "六亲",
+    "marker": "世应",
+    "moving": "动"
+   },
+   "moving": "动",
+   "hexLabel": "{name}卦：自下而上 {lines}",
+   "yang": "阳",
+   "yin": "阴",
+   "useNine": "用九",
+   "useSix": "用六",
+   "loadingText": "正在载入卦辞…",
+   "note": "卦象是换个角度看处境的提示，不是判决。",
+   "placeNote": "日辰按 {place} 的时区与真太阳时计算。"
+  },
+  "capture": {
+   "palmTitle": "手相需要在 App 内拍摄",
+   "faceTitle": "面相需要在 App 内拍摄",
+   "body": "手相与面相用手机摄像头拍摄，在设备上识别主线、特征点与比例；原图不离开设备，也不会上传到服务器。网页版不提供拍摄。",
+   "selfOnly": "仅限本人，不支持为他人拍摄。",
+   "disclaimer": "形相只作为低权重的观察信号进入整合，不输出健康、寿命与吉凶判断。",
+   "cta": "下载 App"
+  },
+  "sensitivity": {
+   "title": "出生时间敏感度",
+   "loading": "正在扫描出生时间窗口…",
+   "none": "在你给出的时间范围内，主要结论都不会变化。",
+   "window": "窗口：{window}",
+   "fieldRow": "{field}：{values}",
+   "changeAt": "{time} 后变为 {value}",
+   "fields": {
+    "ascSign": "上升星座",
+    "mcSign": "天顶星座",
+    "house": "{point}宫位",
+    "hourPillar": "时柱",
+    "mingGong": "八字命宫",
+    "shenGong": "八字身宫",
+    "strength": "日主强弱",
+    "soulBranch": "紫微命宫",
+    "bodyBranch": "紫微身宫",
+    "bodyPalace": "身宫所在",
+    "mingStars": "命宫主星",
+    "timeIndex": "时辰",
+    "lagnaSign": "Lagna",
+    "lagnaNakshatra": "Lagna 星宿",
+    "lagnaPada": "Lagna Pada",
+    "moonPada": "月亮 Pada",
+    "hdType": "人类图类型",
+    "hdProfile": "人生角色",
+    "hdCross": "轮回交叉",
+    "hdChannels": "定义通道",
+    "hdCenters": "定义中心",
+    "hdAuthority": "内在权威",
+    "gate": "{side}{body}闸门",
+    "line": "{side}{body}爻",
+    "yogas": "格局",
+    "varga": "{varga} 分盘"
+   }
+  },
+  "bigFiveDomain": {
+   "openness": "开放性",
+   "conscientiousness": "尽责性",
+   "extraversion": "外向性",
+   "agreeableness": "宜人性",
+   "neuroticism": "神经质"
+  }
+ },
+ "site": {
+  "language": "语言",
+  "brand": "璇玑",
+  "invitePageTitle": "邀请 · 璇玑",
+  "resultPageTitle": "你们的关系星图 · 璇玑",
+  "loading": "正在打开…",
+  "openApp": "已安装璇玑？在 App 中打开",
+  "afterInstall": "安装后回到这里，再点一次「在 App 中打开」。",
+  "orWeb": "不想安装也没关系，可以直接在这个页面填写。",
+  "inApp": "当前浏览器可能无法打开 App。请点右上角「···」，选择「在浏览器中打开」。",
+  "retry": "重试",
+  "offline": "网络好像断开了，请检查后重试。",
+  "learnMore": "了解璇玑",
+  "storesTitle": "下载璇玑",
+  "storeComingSoon": "即将上架",
+  "keepInAppTitle": "在 App 里保留这份结果",
+  "keepInAppBody": "安装璇玑后，用同一个结果链接打开（或点下面的「在 App 中打开」），注册后这份合盘会出现在你的「关系」里。结果链接 30 天内有效。",
+  "placeSearching": "正在查找…",
+  "placeNoResults": "没有找到「{query}」。",
+  "dateKindNote": "四柱（干支）日期需要在 App 或网页版里换算，这里请用公历或农历填写。",
+  "footerNote": "璇玑描述倾向与周期，供自我觉察；不预测具体事件，也不能替代专业意见。",
+  "privacy": "隐私政策",
+  "terms": "使用条款",
+  "support": "帮助与支持",
+  "report": "举报这个链接",
+  "reportSubject": "举报一个璇玑邀请链接",
+  "familyPageTitle": "加入家庭方案 · 璇玑",
+  "familyJoinBody": "加入家庭方案需要璇玑账号，请在 App 里打开这个邀请：已安装时点下面的按钮；还没有安装的话，先下载并登录，再点一次邀请链接。邀请链接 7 天内有效，只能使用一次。"
+ }
+}

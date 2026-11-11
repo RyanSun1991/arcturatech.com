@@ -3,5 +3,7 @@ Allow: /
 Disallow: /linnea/t/
 Disallow: /linnea/r/
 Disallow: /linnea/join/
+Disallow: /armilla/invite/
+Disallow: /armilla/family/
 Sitemap: https://arcturatech.com/sitemap.xml
 Sitemap: https://arcturatech.com/linnea/foods/sitemap.xml

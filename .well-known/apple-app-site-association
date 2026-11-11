@@ -22,7 +22,72 @@
             "comment": "Household invites (F-1439): /linnea/join/#k=<token>"
           }
         ]
+      },
+      {
+        "appIDs": [
+          "VA9VHBAHAW.com.arcturatech.armilla"
+        ],
+        "components": [
+          {
+            "/": "/armilla",
+            "exclude": true,
+            "comment": "Armilla product page"
+          },
+          {
+            "/": "/armilla/",
+            "exclude": true,
+            "comment": "Armilla product page"
+          },
+          {
+            "/": "/armilla/index.html",
+            "exclude": true,
+            "comment": "Armilla product page"
+          },
+          {
+            "/": "/armilla/privacy*",
+            "exclude": true,
+            "comment": "privacy policy (web page)"
+          },
+          {
+            "/": "/armilla/terms*",
+            "exclude": true,
+            "comment": "terms of use (web page)"
+          },
+          {
+            "/": "/armilla/support*",
+            "exclude": true,
+            "comment": "help & support (web page)"
+          },
+          {
+            "/": "/armilla/account/privacy*",
+            "exclude": true,
+            "comment": "account deletion (web page)"
+          },
+          {
+            "/": "/armilla/assets/*",
+            "exclude": true,
+            "comment": "static files"
+          },
+          {
+            "/": "/armilla/img/*",
+            "exclude": true,
+            "comment": "static files"
+          },
+          {
+            "/": "/armilla/invite/*",
+            "comment": "invites: /armilla/invite/#<token>, /armilla/invite/<token>, /armilla/invite/result#<token> (04 §4.3 / §4.10)"
+          },
+          {
+            "/": "/armilla/*",
+            "comment": "every other app route of 04 §13.2 under /armilla (family/join, people, ask, account/billing …)"
+          }
+        ]
       }
+    ]
+  },
+  "appclips": {
+    "apps": [
+      "VA9VHBAHAW.com.arcturatech.armilla.Clip"
     ]
   }
 }

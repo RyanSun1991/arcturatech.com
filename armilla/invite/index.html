@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-Hans" data-title-zh-hans="邀请 · 璇玑" data-title-zh-hant="邀請 · 璇璣" data-title-en="Invitation · Armilla">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self' https://ulocmjdqsebeuloaxxzk.supabase.co; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>邀请 · 璇玑 — Invitation · Armilla</title>
+  <meta name="description" content="An invitation to see your relationship chart together in Armilla. 邀请你一起看看你们的关系星图。">
+  <meta name="apple-itunes-app" content="app-id=6832763947, app-clip-bundle-id=com.arcturatech.armilla.Clip, app-clip-display=card">
+  <meta name="theme-color" content="#EDEFF1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#080A10" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Armilla · 璇玑">
+  <meta property="og:title" content="璇玑 Armilla · 关系星图邀请 · An invitation">
+  <meta property="og:description" content="填写只需 1 分钟，不用注册，分享到什么程度由你决定。It takes a minute, no account needed, and you decide what to share.">
+  <meta property="og:image" content="https://arcturatech.com/armilla/img/app-icon-1024.png">
+  <link rel="icon" type="image/svg+xml" href="/armilla/img/logo.svg">
+  <link rel="apple-touch-icon" href="/armilla/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/armilla/assets/tokens.css">
+  <link rel="stylesheet" href="/armilla/assets/site.css">
+  <script src="/armilla/assets/lang.js"></script>
+  <script type="module" src="/armilla/assets/invite.js"></script>
+</head>
+<body>
+<!--
+  WP-116 · The invite landing (04 §4.3 item 4, §13). Links: https://arcturatech.com/armilla/invite/#<43-char token>
+  (canonical — the token never reaches the host's logs or a link-preview crawler) or …/armilla/invite/<token>, which
+  the site's 404 page forwards here (deploy/site/fragments/404.armilla.html). With the app installed, the universal
+  link (iOS, AASA /armilla/*) / App Link (Android, pathPrefix /armilla/) opens the app or the App Clip instead.
+  The page talks only to invite-public (assets/api.js); strings are the apps' own (assets/i18n/invite.<lang>.json).
+-->
+<a class="skip" href="#app"><span data-l="zh-Hans">跳到正文</span><span data-l="zh-Hant">跳到正文</span><span data-l="en">Skip to content</span></a>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="/armilla/"><picture><source srcset="/armilla/img/logo.svg" media="(prefers-color-scheme: dark)"><img src="/armilla/img/logo-light.svg" alt="" width="34" height="34"></picture><span class="cn" data-l="zh-Hans">璇玑</span><span class="cn" data-l="zh-Hant">璇璣</span><span class="latin">ARMILLA</span></a>
+    <div class="langs" role="group" aria-label="语言 · 語言 · Language">
+      <a href="?lang=zh-hans" data-set-lang="zh-Hans" lang="zh-Hans" hreflang="zh-Hans">简</a>
+      <a href="?lang=zh-hant" data-set-lang="zh-Hant" lang="zh-Hant" hreflang="zh-Hant">繁</a>
+      <a href="?lang=en" data-set-lang="en" lang="en" hreflang="en">EN</a>
+    </div>
+  </div>
+</header>
+<main class="app">
+  <div class="wrap" id="app">
+    <noscript>
+      <p data-l="zh-Hans">这个页面需要启用 JavaScript 才能填写邀请。也可以下载璇玑 App 后再打开邀请链接。</p>
+      <p data-l="zh-Hant">這個頁面需要啟用 JavaScript 才能填寫邀請。也可以下載璇璣 App 後再開啟邀請連結。</p>
+      <p data-l="en">This page needs JavaScript to fill in the invitation. You can also get the Armilla app and open the link again.</p>
+    </noscript>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap" id="site-foot"></div>
+</footer>
+</body>
+</html>

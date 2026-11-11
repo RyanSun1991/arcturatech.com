@@ -1,0 +1,234 @@
+{
+ "client": {
+  "invite": {
+   "level": {
+    "full": {
+     "desc": "Full sharing: they can see your birth date and time, plus all your charts and your pair reading.",
+     "name": "Share everything"
+    },
+    "resultsOnly": {
+     "desc": "Results only: they see your charts and your pair reading, but not your birth date, time or place.",
+     "name": "Share chart results only"
+    },
+    "thisSynastryOnly": {
+     "desc": "This pair reading only: your details are used for this one pair reading with them and appear nowhere else in their app.",
+     "name": "Only for this synastry"
+    }
+   },
+   "eyebrow": "INVITATION",
+   "header": "{inviter} invited you to look at your relationship map together",
+   "relationLine": "On {inviter}'s map, you're their {relation}.",
+   "intro": "It takes a minute and no account. You decide how much to share, and you can withdraw any time.",
+   "levelTitle": "Choose what to share",
+   "birthTitle": "Your birth details",
+   "consent": "I agree that Armilla uses my birth details to calculate charts and our synastry for {inviter}, at the level chosen above.",
+   "adult": "I'm 18 or older",
+   "submit": "Done",
+   "privacy": "Your birth details are stored encrypted; they only see what you allow.",
+   "done": {
+    "title": "Done. You can withdraw any time with the same link.",
+    "app": "You can also get the app and look at your own map."
+   },
+   "revoke": {
+    "action": "Stop sharing",
+    "confirm": "Your birth details and the charts made from them will be deleted within 24 hours.",
+    "done": "Withdrawn. Your details will be deleted within 24 hours."
+   },
+   "revoked": {
+    "title": "This link no longer works",
+    "body": "The invitation was withdrawn."
+   },
+   "expired": {
+    "title": "This link has expired",
+    "body": "Ask the person who invited you for a new link."
+   },
+   "notFound": {
+    "title": "We couldn't find this invitation",
+    "body": "The link may be incomplete. Check it, or ask them to send it again."
+   },
+   "completed": "This invitation is already complete.",
+   "error": "The invitation can't be opened right now. Please try again later.",
+   "rateLimited": "Too many attempts. Please try again in a little while.",
+   "keepCopy": "Also keep these details for me: sign up within 30 days to see your own map straight away. Otherwise they are deleted automatically.",
+   "seeResult": "See your relationship map"
+  },
+  "clip": {
+   "getApp": "Get Armilla",
+   "noLink": "Open this from an invitation link."
+  },
+  "family": {
+   "join": {
+    "confirm": "Join {owner}’s Family plan. Your profiles, life events, journal and conversations stay visible only to you.",
+    "title": "Join a Family plan",
+    "confirmGeneric": "Joining shares the Family membership. Your profiles, life events, journal and conversations stay visible only to you.",
+    "accept": "Join",
+    "joined": "You joined the Family plan",
+    "ownSub": "Your own subscription keeps renewing after you join — you can cancel it in {store}."
+   }
+  },
+  "birth": {
+   "yearOnly": {
+    "note": "Just the birth year is enough to start. Parts that need the date and time are shown dashed and recalculate once you add them."
+   }
+  }
+ },
+ "web": {
+  "chartNew": {
+   "date": {
+    "label": "Date of birth",
+    "kind": "Calendar",
+    "civil": "Gregorian",
+    "lunar": "Lunar",
+    "ganZhi": "Pillars",
+    "year": "Year",
+    "month": "Month",
+    "day": "Day",
+    "leap": "Leap month",
+    "leapHint": "Only if that year really has this leap month — otherwise you’ll see a ‘date does not exist’ message.",
+    "civilValue": "{day}/{month}/{year}",
+    "lunarValue": "Lunar {year}, {leap}month {month}, day {day}",
+    "lunarLeap": "leap ",
+    "pillarYear": "Year pillar",
+    "pillarMonth": "Month pillar",
+    "pillarDay": "Day pillar",
+    "pillarHour": "Hour pillar (optional)",
+    "pillarHourNone": "Unknown",
+    "ganZhiHint": "Looks up the Gregorian date from the four pillars (1900–2100). With an hour pillar, the time is the middle of that double-hour.",
+    "find": "Find dates",
+    "finding": "Searching…",
+    "candidates": "{count, plural, =0 {No matching date} one {# date found — pick it} other {# dates found — pick one}}",
+    "pick": "Pick",
+    "picked": "Picked {date}",
+    "candidateTime": "{date} {time}",
+    "pillarsRequired": "Find and choose a matching date first."
+   },
+   "time": {
+    "label": "Time of birth",
+    "hour": "Hour",
+    "minute": "Minute",
+    "certainty": "How sure are you?",
+    "shichen": "Double-hour",
+    "shichenOption": "{branch} hour {span}",
+    "notes": {
+     "exact": "Calculated from the minute on the birth certificate or family record.",
+     "plusMinus15m": "We scan 15 minutes either side and mark results that could change in that window.",
+     "plusMinus1h": "The Ascendant, houses, hour pillar, Zi Wei Life palace and some Energy Blueprint gates may change within these two hours — those results are marked.",
+     "shichenOnly": "Calculated at the middle of the double-hour; minute-level results (Ascendant, houses, some gates) are marked uncertain.",
+     "unknown": "You can still get a chart without the time: BaZi uses three pillars, Western skips houses and the Ascendant, and Zi Wei and the Energy Blueprint type need the hour — those parts are drawn dashed and explained."
+    }
+   },
+   "place": {
+    "label": "Place of birth",
+    "search": "Search a city",
+    "suggestions": "Common places",
+    "noResults": "Nothing found for “{query}”. You can enter coordinates instead.",
+    "manual": "Enter coordinates and time zone",
+    "manualHide": "Hide manual entry",
+    "lat": "Latitude (north positive)",
+    "lon": "Longitude (east positive)",
+    "tz": "IANA time zone",
+    "manualName": "Coordinates {lat}, {lon}",
+    "useManual": "Use these coordinates",
+    "selected": "{name} · {coords}",
+    "change": "Change",
+    "tzNote": "Historical time-zone changes and daylight saving come from the IANA database.",
+    "dataNote": "Places from GeoNames (about 37,000 cities and counties, CC BY 4.0). Use coordinates if your town is missing.",
+    "loading": "Loading the place list…",
+    "loadFailed": "The place list could not be loaded. Check your connection and try again, or enter coordinates.",
+    "required": "Please choose a place of birth"
+   },
+   "sex": {
+    "label": "Sex for calculation",
+    "female": "Female",
+    "male": "Male",
+    "skip": "Skip",
+    "note": "BaZi luck-pillar direction and the Zi Wei chart need this; it is used only for calculation. If you skip, BaZi shows both luck directions and Zi Wei is not cast."
+   }
+  },
+  "landing": {
+   "download": {
+    "eyebrow": "GET THE APP",
+    "title": "Daily awareness, in your pocket",
+    "lead": "Daily energy weather, prompts, journal and widgets live in the app; deep reports, pair invitations and the pro workspace live on the web. One account, synced everywhere.",
+    "ios": "App Store",
+    "iosStatus": "Coming soon",
+    "android": "Google Play",
+    "androidStatus": "Coming later",
+    "web": "Continue in the browser"
+   }
+  }
+ },
+ "systems": {
+  "timeCertainty": {
+   "label": "Time certainty",
+   "exact": "Exact",
+   "plusMinus15m": "±15 min",
+   "plusMinus1h": "±1 hour",
+   "shichenOnly": "2-hour window",
+   "dateOnly": "Date only",
+   "yearOnly": "Year only",
+   "unknown": "Don’t know",
+   "timeSensitive": "Depends on birth time",
+   "degradedNote": "Parts that need the birth hour are shown dashed. Add your birth time and everything recalculates."
+  },
+  "relationTypes": {
+   "partner": "Partner",
+   "parent": "Parent",
+   "child": "Child",
+   "sibling": "Sibling",
+   "friend": "Friend",
+   "colleague": "Colleague",
+   "businessPartner": "Business partner",
+   "client": "Client",
+   "other": "Other"
+  }
+ },
+ "charts": {
+  "branch": {
+   "zi": "Zi",
+   "chou": "Chou",
+   "yin": "Yin",
+   "mao": "Mao",
+   "chen": "Chen",
+   "si": "Si",
+   "wu": "Wu",
+   "wei": "Wei",
+   "shen": "Shen",
+   "you": "You",
+   "xu": "Xu",
+   "hai": "Hai"
+  },
+  "ui": {
+   "listSep": ", "
+  }
+ },
+ "site": {
+  "language": "Language",
+  "brand": "Armilla",
+  "invitePageTitle": "Invitation · Armilla",
+  "resultPageTitle": "Your relationship chart · Armilla",
+  "loading": "Opening…",
+  "openApp": "Have Armilla? Open in the App",
+  "afterInstall": "After installing, come back here and tap “Open in the App” again.",
+  "orWeb": "No need to install anything — you can fill it in right here.",
+  "inApp": "This browser may not be able to open the app. Tap ··· at the top right and choose Open in Browser.",
+  "retry": "Try Again",
+  "offline": "You seem to be offline. Check your connection and try again.",
+  "learnMore": "About Armilla",
+  "storesTitle": "Get Armilla",
+  "storeComingSoon": "Coming soon",
+  "keepInAppTitle": "Keep this result in the app",
+  "keepInAppBody": "Install Armilla and open the same result link there (or tap “Open in the App” below). Once you sign up, this pair reading appears under People. The result link works for 30 days.",
+  "placeSearching": "Searching…",
+  "placeNoResults": "Nothing found for “{query}”.",
+  "dateKindNote": "Four Pillars dates are converted in the app or on the web; here, please use the Gregorian or lunar calendar.",
+  "footerNote": "Armilla describes tendencies and cycles for self-reflection. It does not predict events and is not a substitute for professional advice.",
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Use",
+  "support": "Help & Support",
+  "report": "Report this link",
+  "reportSubject": "Report an Armilla invitation link",
+  "familyPageTitle": "Join a Family plan · Armilla",
+  "familyJoinBody": "Joining a Family plan needs an Armilla account, so open this invitation in the app: tap the button below if Armilla is installed; otherwise get the app, sign in and tap the invitation link again. The link works once, for 7 days."
+ }
+}

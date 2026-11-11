@@ -1,0 +1,416 @@
+{
+ "zh-Hans": [
+  {
+   "id": "geo:1816670",
+   "lat": 39.9075,
+   "lon": 116.3972,
+   "tzId": "Asia/Shanghai",
+   "name": {
+    "zh-Hans": "北京",
+    "zh-Hant": "北京",
+    "en": "Beijing"
+   },
+   "region": {
+    "zh-Hans": "中国",
+    "zh-Hant": "中國",
+    "en": "China"
+   },
+   "countryCode": "CN"
+  },
+  {
+   "id": "geo:1796236",
+   "lat": 31.2222,
+   "lon": 121.4581,
+   "tzId": "Asia/Shanghai",
+   "name": {
+    "zh-Hans": "上海",
+    "zh-Hant": "上海",
+    "en": "Shanghai"
+   },
+   "region": {
+    "zh-Hans": "中国",
+    "zh-Hant": "中國",
+    "en": "China"
+   },
+   "countryCode": "CN"
+  },
+  {
+   "id": "geo:1809858",
+   "lat": 23.1167,
+   "lon": 113.25,
+   "tzId": "Asia/Shanghai",
+   "name": {
+    "zh-Hans": "广州",
+    "zh-Hant": "廣州",
+    "en": "Guangzhou"
+   },
+   "region": {
+    "zh-Hans": "中国",
+    "zh-Hant": "中國",
+    "en": "China"
+   },
+   "countryCode": "CN"
+  },
+  {
+   "id": "geo:1795565",
+   "lat": 22.5455,
+   "lon": 114.0683,
+   "tzId": "Asia/Shanghai",
+   "name": {
+    "zh-Hans": "深圳",
+    "zh-Hant": "深圳",
+    "en": "Shenzhen"
+   },
+   "region": {
+    "zh-Hans": "中国",
+    "zh-Hant": "中國",
+    "en": "China"
+   },
+   "countryCode": "CN"
+  },
+  {
+   "id": "geo:1815286",
+   "lat": 30.6667,
+   "lon": 104.0667,
+   "tzId": "Asia/Shanghai",
+   "name": {
+    "zh-Hans": "成都",
+    "zh-Hant": "成都",
+    "en": "Chengdu"
+   },
+   "region": {
+    "zh-Hans": "中国",
+    "zh-Hant": "中國",
+    "en": "China"
+   },
+   "countryCode": "CN"
+  },
+  {
+   "id": "geo:1808926",
+   "lat": 30.2936,
+   "lon": 120.1614,
+   "tzId": "Asia/Shanghai",
+   "name": {
+    "zh-Hans": "杭州",
+    "zh-Hant": "杭州",
+    "en": "Hangzhou"
+   },
+   "region": {
+    "zh-Hans": "中国",
+    "zh-Hant": "中國",
+    "en": "China"
+   },
+   "countryCode": "CN"
+  },
+  {
+   "id": "geo:1819729",
+   "lat": 22.2783,
+   "lon": 114.1747,
+   "tzId": "Asia/Hong_Kong",
+   "name": {
+    "zh-Hans": "香港",
+    "zh-Hant": "香港",
+    "en": "Hong Kong"
+   },
+   "region": {
+    "zh-Hans": "",
+    "zh-Hant": "",
+    "en": ""
+   },
+   "countryCode": "HK"
+  },
+  {
+   "id": "geo:1668341",
+   "lat": 25.0531,
+   "lon": 121.5264,
+   "tzId": "Asia/Taipei",
+   "name": {
+    "zh-Hans": "台北",
+    "zh-Hant": "臺北",
+    "en": "Taipei"
+   },
+   "region": {
+    "zh-Hans": "台湾",
+    "zh-Hant": "台灣",
+    "en": "Taiwan"
+   },
+   "countryCode": "TW"
+  }
+ ],
+ "zh-Hant": [
+  {
+   "id": "geo:1668341",
+   "lat": 25.0531,
+   "lon": 121.5264,
+   "tzId": "Asia/Taipei",
+   "name": {
+    "zh-Hans": "台北",
+    "zh-Hant": "臺北",
+    "en": "Taipei"
+   },
+   "region": {
+    "zh-Hans": "台湾",
+    "zh-Hant": "台灣",
+    "en": "Taiwan"
+   },
+   "countryCode": "TW"
+  },
+  {
+   "id": "geo:1819729",
+   "lat": 22.2783,
+   "lon": 114.1747,
+   "tzId": "Asia/Hong_Kong",
+   "name": {
+    "zh-Hans": "香港",
+    "zh-Hant": "香港",
+    "en": "Hong Kong"
+   },
+   "region": {
+    "zh-Hans": "",
+    "zh-Hant": "",
+    "en": ""
+   },
+   "countryCode": "HK"
+  },
+  {
+   "id": "geo:1673820",
+   "lat": 22.6163,
+   "lon": 120.3133,
+   "tzId": "Asia/Taipei",
+   "name": {
+    "zh-Hans": "高雄",
+    "zh-Hant": "高雄",
+    "en": "Kaohsiung"
+   },
+   "region": {
+    "zh-Hans": "台湾",
+    "zh-Hant": "台灣",
+    "en": "Taiwan"
+   },
+   "countryCode": "TW"
+  },
+  {
+   "id": "geo:1668399",
+   "lat": 24.1469,
+   "lon": 120.6839,
+   "tzId": "Asia/Taipei",
+   "name": {
+    "zh-Hans": "台中",
+    "zh-Hant": "臺中",
+    "en": "Taichung"
+   },
+   "region": {
+    "zh-Hans": "台湾",
+    "zh-Hant": "台灣",
+    "en": "Taiwan"
+   },
+   "countryCode": "TW"
+  },
+  {
+   "id": "geo:1821274",
+   "lat": 22.2006,
+   "lon": 113.5461,
+   "tzId": "Asia/Macau",
+   "name": {
+    "zh-Hans": "澳门",
+    "zh-Hant": "澳門",
+    "en": "Macau"
+   },
+   "region": {
+    "zh-Hans": "",
+    "zh-Hant": "",
+    "en": "Macao"
+   },
+   "countryCode": "MO"
+  },
+  {
+   "id": "geo:1796236",
+   "lat": 31.2222,
+   "lon": 121.4581,
+   "tzId": "Asia/Shanghai",
+   "name": {
+    "zh-Hans": "上海",
+    "zh-Hant": "上海",
+    "en": "Shanghai"
+   },
+   "region": {
+    "zh-Hans": "中国",
+    "zh-Hant": "中國",
+    "en": "China"
+   },
+   "countryCode": "CN"
+  },
+  {
+   "id": "geo:1816670",
+   "lat": 39.9075,
+   "lon": 116.3972,
+   "tzId": "Asia/Shanghai",
+   "name": {
+    "zh-Hans": "北京",
+    "zh-Hant": "北京",
+    "en": "Beijing"
+   },
+   "region": {
+    "zh-Hans": "中国",
+    "zh-Hant": "中國",
+    "en": "China"
+   },
+   "countryCode": "CN"
+  },
+  {
+   "id": "geo:1880252",
+   "lat": 1.2897,
+   "lon": 103.8501,
+   "tzId": "Asia/Singapore",
+   "name": {
+    "zh-Hans": "新加坡",
+    "zh-Hant": "新加坡",
+    "en": "Singapore"
+   },
+   "region": {
+    "zh-Hans": "",
+    "zh-Hant": "",
+    "en": ""
+   },
+   "countryCode": "SG"
+  }
+ ],
+ "en": [
+  {
+   "id": "geo:5128581",
+   "lat": 40.7143,
+   "lon": -74.006,
+   "tzId": "America/New_York",
+   "name": {
+    "zh-Hans": "纽约",
+    "zh-Hant": "紐約",
+    "en": "New York City"
+   },
+   "region": {
+    "zh-Hans": "美国",
+    "zh-Hant": "美國",
+    "en": "United States"
+   },
+   "countryCode": "US"
+  },
+  {
+   "id": "geo:2643743",
+   "lat": 51.5085,
+   "lon": -0.1257,
+   "tzId": "Europe/London",
+   "name": {
+    "zh-Hans": "伦敦",
+    "zh-Hant": "倫敦",
+    "en": "London"
+   },
+   "region": {
+    "zh-Hans": "英国",
+    "zh-Hant": "英國",
+    "en": "United Kingdom"
+   },
+   "countryCode": "GB"
+  },
+  {
+   "id": "geo:5368361",
+   "lat": 34.0522,
+   "lon": -118.2437,
+   "tzId": "America/Los_Angeles",
+   "name": {
+    "zh-Hans": "洛杉矶",
+    "zh-Hant": "洛杉磯",
+    "en": "Los Angeles"
+   },
+   "region": {
+    "zh-Hans": "美国",
+    "zh-Hant": "美國",
+    "en": "United States"
+   },
+   "countryCode": "US"
+  },
+  {
+   "id": "geo:2147714",
+   "lat": -33.8678,
+   "lon": 151.2073,
+   "tzId": "Australia/Sydney",
+   "name": {
+    "zh-Hans": "悉尼",
+    "zh-Hant": "悉尼",
+    "en": "Sydney"
+   },
+   "region": {
+    "zh-Hans": "澳大利亚",
+    "zh-Hant": "澳大利亞",
+    "en": "Australia"
+   },
+   "countryCode": "AU"
+  },
+  {
+   "id": "geo:6167865",
+   "lat": 43.6533,
+   "lon": -79.3839,
+   "tzId": "America/Toronto",
+   "name": {
+    "zh-Hans": "多伦多",
+    "zh-Hant": "多倫多",
+    "en": "Toronto"
+   },
+   "region": {
+    "zh-Hans": "加拿大",
+    "zh-Hant": "加拿大",
+    "en": "Canada"
+   },
+   "countryCode": "CA"
+  },
+  {
+   "id": "geo:1880252",
+   "lat": 1.2897,
+   "lon": 103.8501,
+   "tzId": "Asia/Singapore",
+   "name": {
+    "zh-Hans": "新加坡",
+    "zh-Hant": "新加坡",
+    "en": "Singapore"
+   },
+   "region": {
+    "zh-Hans": "",
+    "zh-Hant": "",
+    "en": ""
+   },
+   "countryCode": "SG"
+  },
+  {
+   "id": "geo:1819729",
+   "lat": 22.2783,
+   "lon": 114.1747,
+   "tzId": "Asia/Hong_Kong",
+   "name": {
+    "zh-Hans": "香港",
+    "zh-Hant": "香港",
+    "en": "Hong Kong"
+   },
+   "region": {
+    "zh-Hans": "",
+    "zh-Hant": "",
+    "en": ""
+   },
+   "countryCode": "HK"
+  },
+  {
+   "id": "geo:1796236",
+   "lat": 31.2222,
+   "lon": 121.4581,
+   "tzId": "Asia/Shanghai",
+   "name": {
+    "zh-Hans": "上海",
+    "zh-Hant": "上海",
+    "en": "Shanghai"
+   },
+   "region": {
+    "zh-Hans": "中国",
+    "zh-Hant": "中國",
+    "en": "China"
+   },
+   "countryCode": "CN"
+  }
+ ]
+}
