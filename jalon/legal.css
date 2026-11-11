@@ -1,0 +1,27 @@
+/* Jalon legal pages (/jalon/*.html): the language switch and anchor offsets. Built by the Jalon repository's
+   docs/legal/hosted/build-site-pages.mjs; the rest of the look comes from /assets/styles.css (legal-hero, prose). */
+.jalon-lang {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  margin-bottom: 28px;
+}
+.jalon-lang a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--silver);
+}
+.jalon-lang a:hover { color: var(--cloud); }
+.jalon-lang a[aria-current="page"] { background: var(--bg-2); color: var(--cloud); }
+.prose h2[id] { scroll-margin-top: calc(var(--nav-h) + 24px); }
+.prose ul ul { margin: 8px 0 8px 22px; }
+.prose a { overflow-wrap: anywhere; }
