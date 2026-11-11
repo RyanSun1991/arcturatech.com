@@ -1,6 +1,7 @@
 /* Armilla invite pages — the only network calls the static site makes (WP-116): the public Edge Functions
  * `invite-public` (GET meta, POST complete / revoke) and `invite-result` (GET the invitee's result), with the public
- * anon key and no cookie, no credentials, no referrer. Same headers and envelope as apps/web/src/lib/cloud/api.ts
+ * publishable key on the `apikey` header only (never as a bearer — WP-121; both functions are verify_jwt = false) and
+ * no cookie, no credentials, no referrer. Same headers and envelope as apps/web/src/lib/cloud/api.ts
  * (`apikey`, `Accept`, JSON body; `{data, meta}` / `{error:{code, details}}`, 20 s timeout). The tokens travel only in
  * the query / body of these requests — never in logs here, never in the page's address. */
 import { apiConfig } from './config.js';

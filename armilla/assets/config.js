@@ -1,8 +1,9 @@
 /* Armilla pages on arcturatech.com (WP-116) — the one place for endpoints, store flags and app identifiers.
  *
- * anonKey: the production anon (publishable) key is public by design — the gateway needs it and the invite functions
- * never read a user. Git keeps the placeholder; `node deploy/site/build.mjs --out <site>/armilla` fills it from
- * ARMILLA_ANON_KEY and refuses to publish without it.
+ * anonKey: the production PUBLISHABLE key (`sb_publishable_…`, WP-121) — public by design: the gateway needs it on the
+ * `apikey` header and the invite functions never read a user. It is never sent as a bearer. Git keeps the placeholder;
+ * `node deploy/site/build.mjs --out <site>/armilla` fills it from ARMILLA_PUBLISHABLE_KEY and refuses to publish
+ * without it (or with a legacy anon JWT / a secret key).
  *
  * region: Edge Functions run in the database's region. Browsers send it as the documented `forceFunctionRegion`
  * query parameter (Supabase "Regional invocations": for CORS requests), the equivalent of the apps' `x-region` header —
@@ -13,7 +14,7 @@
  */
 export const SITE = Object.freeze({
   api: 'https://ulocmjdqsebeuloaxxzk.supabase.co',
-  anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVsb2NtamRxc2ViZXVsb2F4eHprIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQyNjcyMDIsImV4cCI6MjEwOTg0MzIwMn0.vXEw8-x_P2fpyKiUi37TqOFB2JFiK9nf8gUHtWhfD5M',
+  anonKey: 'sb_publishable_N_9kxvdotNXTQDrt2SMymQ_AoMaNE-b',
   region: 'ap-southeast-1',
   base: '/armilla',
   scheme: 'armilla',
