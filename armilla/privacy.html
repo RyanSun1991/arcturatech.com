@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="zh-Hans" data-title-zh-hans="璇玑隐私政策 · 版本 1.1" data-title-zh-hant="璇璣隱私權政策 · 版本 1.1" data-title-en="Armilla Privacy Policy · Version 1.1">
+<html lang="zh-Hans" data-title-zh-hans="璇玑隐私政策 · 版本 1.2" data-title-zh-hant="璇璣隱私權政策 · 版本 1.2" data-title-en="Armilla Privacy Policy · Version 1.2">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Armilla Privacy Policy · 璇玑隐私政策 · Version 1.1</title>
+  <title>Armilla Privacy Policy · 璇玑隐私政策 · Version 1.2</title>
   <meta name="description" content="How Armilla (璇玑) handles your information: what stays on your device, what is encrypted, who processes what, how long it is kept, and how to export or delete it.">
   <link rel="canonical" href="https://arcturatech.com/armilla/privacy">
   <meta name="theme-color" content="#EDEFF1" media="(prefers-color-scheme: light)">
@@ -21,6 +21,10 @@
   WP-116 · Privacy Policy v1.0 (owner acceptance D-40 ①, 2026-11-11 — recorded as accepted, not a lawyer's opinion).
   WP-127 · v1.1 (2026-11-11, owner decision D-42): the Ask model provider is OpenAI (was Anthropic); §8 lists the
   processors Ask may move to (Google Gemini API, Anthropic), with notice before a switch (§6, §14).
+  WP-140 · v1.2 (2026-11-12, owner decision D-44): the analyses (star map, system pages, today, relationships, the 形相
+  reading on the phone) and the report text are written by the same model provider from the engine's chart facts (§6
+  「AI 解读与报告」); what is sent, what is stored (ai_interpretations), when it is deleted; §8 rows, §14 history.
+  v1.1 is archived as privacy-1.1.html.
   Source of truth for every statement: docs/store/privacy/app-privacy.md §0 (data flows) and docs/eng/03 §6;
   docs/store/privacy/policy-source.md maps each section below to its data-flow rows. Change both together, and the
   three languages together (independent texts, same sections and numbers).
@@ -49,7 +53,7 @@
 <article class="prose" data-l="zh-Hans" lang="zh-Hans">
   <p class="eyebrow">PRIVACY POLICY</p>
   <h1>璇玑隐私政策</h1>
-  <p class="doc-meta">璇玑（Armilla）· 版本 1.1 · 2026-11-11 生效</p>
+  <p class="doc-meta">璇玑（Armilla）· 版本 1.2 · 2026-11-12 生效</p>
 
   <p>本政策说明璇玑如何处理你的信息。它适用于 iPhone、iPad 与 Android 上的璇玑 App（含邀请 App Clip）、璇玑的网页版、本站 arcturatech.com/armilla 下的页面，以及支撑它们的服务（合称「璇玑」）。</p>
   <div class="note">
@@ -132,7 +136,7 @@
   <h3>专业版客户</h3>
   <p>如果你用专业版为客户建档，你需要自行取得客户的同意。客户笔记与标签端到端加密，我们读不到。</p>
 
-  <h2 id="zh-hans-6">6. AI 功能（问璇玑）</h2>
+  <h2 id="zh-hans-6">6. AI 功能（问璇玑、AI 解读与报告）</h2>
   <p>「问璇玑」需要账号，未满 18 岁的账户不开放。你提问时，以下内容会在<strong>这一次请求</strong>中发送给我们目前的模型服务商 OpenAI，用来生成回答：</p>
   <ul>
     <li>你的问题与这段对话之前的消息；</li>
@@ -142,6 +146,14 @@
     <li>你开启「AI 读取我的事迹」（默认关闭）时：设备上生成的事迹与近期日志摘要（最多 20 条事迹，每条有长度上限）。摘要只用于这一次回答，我们不保存、不记录。</li>
   </ul>
   <p>为了提示你记录一件人生事迹或保存一条记忆，服务器可能会对<strong>你这一条消息</strong>做一次额外的小型分析；建议只有经你确认才会保存。问题与回答会保存在我们的服务器上（不是端到端加密），你可以随时删除对话。回答若转述了摘要或记忆，会随对话保存。OpenAI 依其 API 服务条款代表我们处理这些内容，不会用它训练模型。模型服务商今后可能改为第 8 节列出的另一家提供方；更换之前，我们会在 App 内或本页面告知。AI 只引用排盘引擎产出的事实，不预测具体事件，也不提供医疗、法律或财务建议。</p>
+  <h3>AI 解读与报告</h3>
+  <p>星图的「AI 综合解读」、各体系页的解读、今日指引、关系解读、形相解读和你购买的报告正文，都由同一家模型服务商 OpenAI 根据排盘引擎计算出的盘面事实撰写，规则与「问璇玑」相同：需要账号，未满 18 岁的账户和未成年人的档案不使用 AI（显示资料库原文）。生成一份解读时，以下内容会在<strong>这一次请求</strong>中发送给 OpenAI：</p>
+  <ul>
+    <li>相关的人（你本人、某位亲友或某段关系）的盘面事实、规则库写好的解读，以及资料库中与这些盘面有关的简短摘录——<strong>不含出生日期、时间和地点，也不含姓名</strong>。共享级别、撤回与未成年人的规则与「问璇玑」相同；</li>
+    <li>形相解读：只在你于手机上请求时，发送手机上的排盘引擎从你自己的手相 / 面相特征得出的观察结论（例如「手型偏水形」）；<strong>照片、图像和面部几何数据从不发送</strong>；</li>
+    <li>你开启「AI 读取我的事迹」或「问璇玑的记忆」时，App 的今日指引与综合解读可能附带与问答相同的事迹 / 日志摘要和记忆，只用于这一次生成；网页版不发送这些内容。</li>
+  </ul>
+  <p>写好的解读会保存在我们的服务器上（不是端到端加密），以便你在网页和其他设备上看到同一份内容，并在你的盘面数据变化时重新生成；它包含在你的数据导出中。删除相关的人、关系或账号会一并删除；某人撤回共享、改变共享级别或被标记为未成年人时，用到此人数据的解读会被删除；你关闭上述两个开关时，用到你自己文字的解读会被删除。报告正文写入报告文件，随报告删除。AI 只引用排盘引擎产出的事实，每句依据都可以点开查看；不预测具体事件。</p>
 
   <h2 id="zh-hans-7">7. 我们如何使用信息与法律依据</h2>
   <ul>
@@ -159,8 +171,8 @@
       <thead><tr><th>提供方</th><th>用途</th><th>位置</th></tr></thead>
       <tbody>
         <tr><td>Supabase</td><td>数据库、登录、文件存储、服务器函数</td><td>新加坡</td></tr>
-        <tr><td>OpenAI</td><td>「问璇玑」的语言模型（目前使用）</td><td>美国</td></tr>
-        <tr><td>Google（Gemini API）、Anthropic</td><td>「问璇玑」今后可能改用的语言模型；只在更换后使用，更换前会告知</td><td>Google：各自的全球设施；Anthropic：美国</td></tr>
+        <tr><td>OpenAI</td><td>「问璇玑」、AI 解读与报告正文的语言模型（目前使用）</td><td>美国</td></tr>
+        <tr><td>Google（Gemini API）、Anthropic</td><td>「问璇玑」与 AI 解读今后可能改用的语言模型；只在更换后使用，更换前会告知</td><td>Google：各自的全球设施；Anthropic：美国</td></tr>
         <tr><td>Apple、Google</td><td>登录、推送通知送达、App 内购买</td><td>各自的全球设施</td></tr>
         <tr><td>Stripe</td><td>只用于网页版结账</td><td>各自的全球设施</td></tr>
       </tbody>
@@ -219,7 +231,7 @@
 
   <h2 id="zh-hans-14">14. 政策的变更</h2>
   <p>我们可能会更新本政策。重要变更会在 App 内或本页面告知，并更新版本与日期。如果变更涉及新的使用目的或新的接收方，我们会重新征求你的同意，而不是以你继续使用视为同意。</p>
-  <p>版本记录：1.0（2026-11-11）首次发布；1.1（2026-11-11）「问璇玑」的模型服务商由 Anthropic 改为 OpenAI，并在第 8 节列出今后可能改用的提供方。</p>
+  <p>版本记录：1.0（2026-11-11）首次发布；1.1（2026-11-11）「问璇玑」的模型服务商由 Anthropic 改为 OpenAI，并在第 8 节列出今后可能改用的提供方；1.2（2026-11-12）星图、体系、今日、关系、形相的解读与报告正文改由 AI 根据盘面事实撰写，第 6 节说明发送、保存与删除的内容。</p>
 
   <h2 id="zh-hans-15">15. 联系我们</h2>
   <p>Arctura Technologies Inc.<br>Unit 10, 1338 Wellington Street West<br>Ottawa, Ontario K1Y 3B7, Canada<br><a href="mailto:privacy@arcturatech.com">privacy@arcturatech.com</a> · 产品帮助：<a href="mailto:support@arcturatech.com">support@arcturatech.com</a></p>
@@ -229,7 +241,7 @@
 <article class="prose" data-l="zh-Hant" lang="zh-Hant">
   <p class="eyebrow">PRIVACY POLICY</p>
   <h1>璇璣隱私權政策</h1>
-  <p class="doc-meta">璇璣（Armilla）· 版本 1.1 · 2026-11-11 生效</p>
+  <p class="doc-meta">璇璣（Armilla）· 版本 1.2 · 2026-11-12 生效</p>
 
   <p>本政策說明璇璣如何處理你的資訊。它適用於 iPhone、iPad 與 Android 上的璇璣 App（含邀請 App Clip）、璇璣的網頁版、本站 arcturatech.com/armilla 底下的頁面，以及支援它們的服務（合稱「璇璣」）。</p>
   <div class="note">
@@ -312,7 +324,7 @@
   <h3>專業版客戶</h3>
   <p>如果你用專業版為客戶建立檔案，你需要自行取得客戶的同意。客戶筆記與標籤採端對端加密，我們讀不到。</p>
 
-  <h2 id="zh-hant-6">6. AI 功能（問璇璣）</h2>
+  <h2 id="zh-hant-6">6. AI 功能（問璇璣、AI 解讀與報告）</h2>
   <p>「問璇璣」需要帳號，未滿 18 歲的帳號無法使用。你提問時，下列內容會在<strong>這一次請求</strong>中傳送給我們目前的模型服務供應商 OpenAI，用來產生回答：</p>
   <ul>
     <li>你的問題與這段對話先前的訊息；</li>
@@ -322,6 +334,14 @@
     <li>你開啟「AI 讀取我的事蹟」（預設關閉）時：裝置上產生的事蹟與近期日誌摘要（最多 20 則事蹟，每則有長度上限）。摘要只用於這一次回答，我們不保存、不記錄。</li>
   </ul>
   <p>為了提示你記錄一則人生事蹟或保存一則記憶，伺服器可能會對<strong>你這一則訊息</strong>做一次額外的小型分析；建議只有經你確認才會保存。問題與回答會保存在我們的伺服器上（不是端對端加密），你可以隨時刪除對話。回答若轉述了摘要或記憶，會隨對話保存。OpenAI 依其 API 服務條款代表我們處理這些內容，不會用來訓練模型。模型服務供應商日後可能改為第 8 節列出的另一家供應商；更換之前，我們會在 App 內或本頁面通知你。AI 只引用排盤引擎產出的事實，不預測具體事件，也不提供醫療、法律或財務建議。</p>
+  <h3>AI 解讀與報告</h3>
+  <p>星圖的「AI 綜合解讀」、各體系頁的解讀、今日指引、關係解讀、形相解讀和你購買的報告正文，都由同一家模型服務供應商 OpenAI 根據排盤引擎計算出的盤面事實撰寫，規則與「問璇璣」相同：需要帳號，未滿 18 歲的帳號和未成年人的檔案不使用 AI（顯示資料庫原文）。產生一份解讀時，下列內容會在<strong>這一次請求</strong>中傳送給 OpenAI：</p>
+  <ul>
+    <li>相關的人（你本人、某位親友或某段關係）的盤面事實、規則庫寫好的解讀，以及資料庫中與這些盤面有關的簡短摘錄——<strong>不含出生日期、時間和地點，也不含姓名</strong>。分享級別、撤回與未成年人的規則與「問璇璣」相同；</li>
+    <li>形相解讀：只在你於手機上請求時，傳送手機上的排盤引擎從你自己的手相／面相特徵得出的觀察結論（例如「手型偏水形」）；<strong>照片、影像和臉部幾何資料從不傳送</strong>；</li>
+    <li>你開啟「AI 讀取我的事蹟」或「問璇璣的記憶」時，App 的今日指引與綜合解讀可能附帶與問答相同的事蹟／日誌摘要和記憶，只用於這一次產生；網頁版不傳送這些內容。</li>
+  </ul>
+  <p>寫好的解讀會保存在我們的伺服器上（不是端對端加密），讓你在網頁和其他裝置上看到同一份內容，並在你的盤面資料變動時重新產生；它包含在你的資料匯出中。刪除相關的人、關係或帳號會一併刪除；某人撤回分享、變更分享級別或被標記為未成年人時，用到此人資料的解讀會被刪除；你關閉上述兩個開關時，用到你自己文字的解讀會被刪除。報告正文寫入報告檔案，隨報告刪除。AI 只引用排盤引擎產出的事實，每句依據都可以點開查看；不預測具體事件。</p>
 
   <h2 id="zh-hant-7">7. 我們如何使用資訊與法律依據</h2>
   <ul>
@@ -339,8 +359,8 @@
       <thead><tr><th>供應商</th><th>用途</th><th>位置</th></tr></thead>
       <tbody>
         <tr><td>Supabase</td><td>資料庫、登入、檔案儲存、伺服器函式</td><td>新加坡</td></tr>
-        <tr><td>OpenAI</td><td>「問璇璣」的語言模型（目前使用）</td><td>美國</td></tr>
-        <tr><td>Google（Gemini API）、Anthropic</td><td>「問璇璣」日後可能改用的語言模型；只在更換後使用，更換前會通知</td><td>Google：各自的全球設施；Anthropic：美國</td></tr>
+        <tr><td>OpenAI</td><td>「問璇璣」、AI 解讀與報告正文的語言模型（目前使用）</td><td>美國</td></tr>
+        <tr><td>Google（Gemini API）、Anthropic</td><td>「問璇璣」與 AI 解讀日後可能改用的語言模型；只在更換後使用，更換前會通知</td><td>Google：各自的全球設施；Anthropic：美國</td></tr>
         <tr><td>Apple、Google</td><td>登入、推播通知送達、App 內購買</td><td>各自的全球設施</td></tr>
         <tr><td>Stripe</td><td>只用於網頁版結帳</td><td>各自的全球設施</td></tr>
       </tbody>
@@ -399,7 +419,7 @@
 
   <h2 id="zh-hant-14">14. 政策的變更</h2>
   <p>我們可能會更新本政策。重要變更會在 App 內或本頁面告知，並更新版本與日期。如果變更涉及新的使用目的或新的接收方，我們會重新徵求你的同意，而不會以你繼續使用視為同意。</p>
-  <p>版本紀錄：1.0（2026-11-11）首次發布；1.1（2026-11-11）「問璇璣」的模型服務供應商由 Anthropic 改為 OpenAI，並在第 8 節列出日後可能改用的供應商。</p>
+  <p>版本紀錄：1.0（2026-11-11）首次發布；1.1（2026-11-11）「問璇璣」的模型服務供應商由 Anthropic 改為 OpenAI，並在第 8 節列出日後可能改用的供應商；1.2（2026-11-12）星圖、體系、今日、關係、形相的解讀與報告正文改由 AI 根據盤面事實撰寫，第 6 節說明傳送、保存與刪除的內容。</p>
 
   <h2 id="zh-hant-15">15. 聯絡我們</h2>
   <p>Arctura Technologies Inc.<br>Unit 10, 1338 Wellington Street West<br>Ottawa, Ontario K1Y 3B7, Canada<br><a href="mailto:privacy@arcturatech.com">privacy@arcturatech.com</a> · 產品說明：<a href="mailto:support@arcturatech.com">support@arcturatech.com</a></p>
@@ -409,7 +429,7 @@
 <article class="prose" data-l="en" lang="en">
   <p class="eyebrow">PRIVACY POLICY</p>
   <h1>Armilla Privacy Policy</h1>
-  <p class="doc-meta">Armilla (璇玑) · Version 1.1 · Effective November 11, 2026</p>
+  <p class="doc-meta">Armilla (璇玑) · Version 1.2 · Effective November 12, 2026</p>
 
   <p>This Privacy Policy explains how Armilla handles your information. It applies to the Armilla apps for iPhone, iPad and Android (including the invitation App Clip), Armilla on the web, the pages under arcturatech.com/armilla, and the services behind them (together, “Armilla”).</p>
   <div class="note">
@@ -492,7 +512,7 @@
   <h3>Pro clients</h3>
   <p>If you use the Pro workspace for clients, you are responsible for having their consent. Client notes and tags are end-to-end encrypted, and we can’t read them.</p>
 
-  <h2 id="en-6">6. AI features (Ask Armilla)</h2>
+  <h2 id="en-6">6. AI features (Ask Armilla, AI readings and reports)</h2>
   <p>Ask Armilla needs an account and isn’t available to accounts under 18. When you ask a question, the following is sent <strong>with that one request</strong> to our current model provider, OpenAI, to write the answer:</p>
   <ul>
     <li>your question and the earlier messages of that conversation;</li>
@@ -502,6 +522,14 @@
     <li>if you turn on “Let AI read my life events” (off by default): summaries of your life events and recent journal made on your device (at most 20 events, each length-limited), used for that one answer and never stored or logged by us.</li>
   </ul>
   <p>To suggest logging a life event or saving a memory, the server may run one extra small analysis of <strong>that single message of yours</strong>; a suggestion is saved only if you confirm it. Questions and answers are stored on our servers (not end-to-end encrypted), and you can delete a conversation at any time; an answer that restates a summary or memory is stored with the conversation. OpenAI processes this content on our behalf under its API terms and does not use it to train its models. We may move Ask to another provider listed in section 8; we will tell you in the app or on this page before we do. The AI cites only facts produced by the calculation engine, does not predict events, and gives no medical, legal or financial advice.</p>
+  <h3>AI readings and reports</h3>
+  <p>The star map’s AI synthesis, each system page’s reading, today’s guidance, relationship readings, the face &amp; palm reading and the text of reports you buy are written by the same model provider, OpenAI, from the chart facts our calculation engine computed. The rules are those of Ask Armilla: an account is needed, and accounts under 18 and profiles of minors never get AI readings (they see the library text). To write a reading, the following is sent <strong>with that one request</strong> to OpenAI:</p>
+  <ul>
+    <li>the chart facts of the people concerned (you, a person or a relationship), the rule library’s ready-made readings, and short excerpts of our library about those placements — <strong>never the birth date, time or place, and never names</strong>. Share levels, withdrawn shares and minors follow the same rules as Ask Armilla;</li>
+    <li>for the face &amp; palm reading, only when you ask for it on your phone: the conclusions your phone’s own calculation engine drew from your own palm or face features (for example “a water-shaped hand”). <strong>Photos, images and facial geometry are never sent</strong>;</li>
+    <li>if you turned on “Let AI read my life events” or Ask Armilla’s memory, the app’s guidance for today and its synthesis may carry the same summaries and memories as a question does, used for that one reading; the website never sends them.</li>
+  </ul>
+  <p>Written readings are stored on our servers (not end-to-end encrypted), so you see the same reading on the web and your other devices, and they are rewritten when your chart data changes; they are part of your data export. Deleting the people, relationship or account concerned deletes them; when someone stops sharing, changes their share level or is marked as a minor, every reading that used their data is deleted; turning off either switch above deletes the readings that used your own words. Report text is part of the report file and goes with it. The AI cites only facts produced by the calculation engine — you can open the basis of every sentence — and does not predict events.</p>
 
   <h2 id="en-7">7. How we use information, and legal bases</h2>
   <ul>
@@ -519,8 +547,8 @@
       <thead><tr><th>Provider</th><th>What for</th><th>Where</th></tr></thead>
       <tbody>
         <tr><td>Supabase</td><td>Database, sign-in, file storage, server functions</td><td>Singapore</td></tr>
-        <tr><td>OpenAI</td><td>The language model behind Ask Armilla (current)</td><td>United States</td></tr>
-        <tr><td>Google (Gemini API), Anthropic</td><td>Language models Ask Armilla may move to — used only after a switch we announce in advance</td><td>Google: their global facilities; Anthropic: United States</td></tr>
+        <tr><td>OpenAI</td><td>The language model behind Ask Armilla, AI readings and report text (current)</td><td>United States</td></tr>
+        <tr><td>Google (Gemini API), Anthropic</td><td>Language models Ask Armilla and AI readings may move to — used only after a switch we announce in advance</td><td>Google: their global facilities; Anthropic: United States</td></tr>
         <tr><td>Apple, Google</td><td>Sign-in, delivering notifications, in-app purchases</td><td>Their global facilities</td></tr>
         <tr><td>Stripe</td><td>Web checkout only</td><td>Their global facilities</td></tr>
       </tbody>
@@ -579,7 +607,7 @@
 
   <h2 id="en-14">14. Changes to this policy</h2>
   <p>We may update this policy. We will announce material changes in the app or on this page and update the version and date. If a change involves a new purpose or new recipients, we will ask for your consent again instead of relying on your continued use.</p>
-  <p>Version history: 1.0 (November 11, 2026), first published; 1.1 (November 11, 2026), Ask Armilla’s model provider changed from Anthropic to OpenAI, and section 8 lists the providers it may move to.</p>
+  <p>Version history: 1.0 (November 11, 2026), first published; 1.1 (November 11, 2026), Ask Armilla’s model provider changed from Anthropic to OpenAI, and section 8 lists the providers it may move to; 1.2 (November 12, 2026), the readings of the star map, systems, today, relationships and face &amp; palm and the text of reports are written by AI from chart facts — section 6 says what is sent, stored and deleted.</p>
 
   <h2 id="en-15">15. Contact us</h2>
   <p>Arctura Technologies Inc.<br>Unit 10, 1338 Wellington Street West<br>Ottawa, Ontario K1Y 3B7, Canada<br><a href="mailto:privacy@arcturatech.com">privacy@arcturatech.com</a> · App help: <a href="mailto:support@arcturatech.com">support@arcturatech.com</a></p>
