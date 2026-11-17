@@ -208,6 +208,20 @@ svg {
   margin: 0 0 10px;
 }
 
+/* WP-213 (D-50 D6): an eyebrow the Chinese catalogs leave empty is not shown. */
+.eyebrow:empty {
+  display: none;
+}
+
+/* WP-237 (D-50 D6): a Chinese eyebrow is set in the brand Chinese face with a CJK tracking, not as Latin capitals. */
+.eyebrow:lang(zh) {
+  font-family: var(--cn);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: none;
+}
+
 h1,
 h2,
 h3 {
@@ -423,6 +437,225 @@ h3 {
   box-shadow: none;
 }
 
+/* ---------- product page v2 (WP-237): picture slots, feature rows, plans ---------- */
+.hero-text {
+  min-width: 0;
+}
+
+.hero .cta-row {
+  margin-top: 4px;
+}
+
+.hero .small {
+  margin: 14px 0 0;
+  max-width: 40em;
+}
+
+/* a slot renders only when its screenshots exist (build.mjs); without them the text stands alone */
+.shot {
+  margin: 0;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.shot .phone {
+  flex: 0 1 250px;
+  min-width: 0;
+}
+
+.shot.two .phone {
+  flex-basis: 210px;
+}
+
+.shot img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  border: 1px solid var(--glass-line);
+  background: var(--bg-2);
+  box-shadow: 0 22px 48px -24px rgb(0 0 0 / 55%);
+}
+
+.features {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0 0;
+}
+
+.feature {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  background: var(--glass);
+  border: 1px solid var(--glass-line);
+  border-radius: var(--radius-card);
+  padding: 22px 20px;
+}
+
+.feature-text {
+  max-width: 46em;
+}
+
+.feature h3 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 15.5px;
+}
+
+.split {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.split-text {
+  min-width: 0;
+}
+
+.prose-flow p {
+  color: var(--ink-2);
+  max-width: 44em;
+  margin: 0 0 14px;
+}
+
+.split > .grid {
+  margin-top: 4px;
+}
+
+.plans {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plan h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.prices {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.prices p {
+  margin: 0;
+}
+
+.price {
+  font-size: 15.5px;
+}
+
+.num {
+  font-family: var(--mono);
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.plan .ticks {
+  margin: 4px 0 0;
+  font-size: 14.5px;
+  color: var(--ink-2);
+}
+
+.once-title {
+  margin: 40px 0 8px;
+}
+
+.once {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 22px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.once-item {
+  background: var(--glass);
+  border: 1px solid var(--glass-line);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.once-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.once-item .small {
+  margin: 0;
+}
+
+.section > .wrap > .small {
+  max-width: 60em;
+  margin: 0 0 8px;
+}
+
+/* ---------- press page (WP-237) ---------- */
+.prose h1 {
+  font-size: clamp(26px, 5vw, 36px);
+}
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--line-2);
+  margin: 26px 0 18px;
+}
+
+.prose blockquote {
+  margin: 16px 0;
+  padding: 2px 16px;
+  border-left: 3px solid var(--brass-2);
+  color: var(--ink-2);
+}
+
+.pack {
+  margin-top: 44px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.pack-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.pack-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 12px;
+}
+
+.pack-list .meta {
+  color: var(--ink-2);
+  font: 13px/1.4 var(--mono);
+}
+
 /* ---------- legal / help pages ---------- */
 .doc {
   padding: 36px 0 48px;
@@ -607,6 +840,40 @@ details.faq p {
 
   .hero .logo {
     order: 2;
+  }
+
+  .hero.has-shot .wrap {
+    grid-template-columns: minmax(0, 1fr) 290px;
+    gap: 48px;
+  }
+
+  .feature {
+    padding: 28px 32px;
+  }
+
+  .feature.has-shot {
+    grid-template-columns: minmax(0, 1fr) 240px;
+  }
+
+  .feature.has-shot:has(.shot.two) {
+    grid-template-columns: minmax(0, 1fr) 420px;
+  }
+
+  .feature.has-shot:nth-child(even) {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+
+  .feature.has-shot:nth-child(even):has(.shot.two) {
+    grid-template-columns: 420px minmax(0, 1fr);
+  }
+
+  .feature.has-shot:nth-child(even) > .shot {
+    order: -1;
+  }
+
+  .split.has-shot {
+    grid-template-columns: minmax(0, 1fr) 250px;
+    gap: 40px;
   }
 }
 
@@ -991,4 +1258,77 @@ hr.rule {
 
 .locked {
   border-style: dashed;
+}
+
+/* the press page prints as one A4 / Letter page per language at 9.75 pt (WP-241's note: it fits at 9.5–10 pt) */
+@media print {
+  @page {
+    margin: 12mm 13mm;
+  }
+
+  .top,
+  .foot,
+  .skip,
+  .pack {
+    display: none !important;
+  }
+
+  body {
+    min-height: 0;
+    background: #fff;
+    color: #000;
+    font-size: 9.75pt;
+    line-height: 1.38;
+  }
+
+  .doc {
+    padding: 0;
+  }
+
+  .doc .wrap {
+    max-width: none;
+    padding: 0;
+  }
+
+  .prose h1 {
+    font-size: 15pt;
+    margin: 0 0 4pt;
+  }
+
+  .prose h2 {
+    font-size: 10.5pt;
+    margin: 7pt 0 2pt;
+    padding-top: 0;
+  }
+
+  .prose ul,
+  .prose ol {
+    padding-left: 1.1em;
+  }
+
+  .prose p,
+  .prose li {
+    color: #000;
+    margin: 0 0 3pt;
+  }
+
+  .prose ul,
+  .prose ol {
+    margin: 0 0 3pt;
+  }
+
+  .prose li + li {
+    margin-top: 2pt;
+  }
+
+  .prose a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .prose hr {
+    border: 0;
+    border-top: 0.5pt solid #999;
+    margin: 7pt 0;
+  }
 }

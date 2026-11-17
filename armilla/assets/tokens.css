@@ -69,6 +69,16 @@
   --hua-ke: #7E97C6;
   --hua-ji: #80808A;
   --on-hua: #FFFFFF;
+  --layer-natal: var(--ink);
+  --layer-decade: #554185;
+  --layer-year: #B06F2D;
+  --layer-month: #2C898E;
+  --layer-day: #86412C;
+  --layer-natal-tint: rgba(23,26,34,.05);
+  --layer-decade-tint: rgba(85,65,133,.10);
+  --layer-year-tint: rgba(176,111,45,.10);
+  --layer-month-tint: rgba(44,137,142,.10);
+  --layer-day-tint: rgba(134,65,44,.10);
   --logo-a: #B9A57C;
   --logo-b: #8A744C;
   --logo-c: #5E4F33;
@@ -90,6 +100,7 @@
   --nebula-opacity: .9;
   /* font */
   --cn: "Noto Serif SC","Songti SC","STSong",serif;
+  --cn-hant: "Noto Serif TC","Songti TC","Noto Serif SC","Songti SC",serif;
   --en: "Cinzel","Trajan Pro",serif;
   --ui: -apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
   --mono: "IBM Plex Mono",ui-monospace,"SF Mono","Menlo",monospace;
@@ -354,6 +365,15 @@
     --c-throat: #B4977A;
     --c-heart: #C7867A;
     --c-sacral: #C7867A;
+    --layer-decade: #9A88CF;
+    --layer-year: #F6BE82;
+    --layer-month: #8BD7DA;
+    --layer-day: #CB836D;
+    --layer-natal-tint: rgba(236,232,223,.06);
+    --layer-decade-tint: rgba(154,136,207,.14);
+    --layer-year-tint: rgba(246,190,130,.14);
+    --layer-month-tint: rgba(139,215,218,.14);
+    --layer-day-tint: rgba(203,131,109,.14);
     --logo-a: #F4EDDD;
     --logo-b: #D6C29A;
     --logo-c: #8F7C57;
@@ -404,6 +424,15 @@
   --c-throat: #B4977A;
   --c-heart: #C7867A;
   --c-sacral: #C7867A;
+  --layer-decade: #9A88CF;
+  --layer-year: #F6BE82;
+  --layer-month: #8BD7DA;
+  --layer-day: #CB836D;
+  --layer-natal-tint: rgba(236,232,223,.06);
+  --layer-decade-tint: rgba(154,136,207,.14);
+  --layer-year-tint: rgba(246,190,130,.14);
+  --layer-month-tint: rgba(139,215,218,.14);
+  --layer-day-tint: rgba(203,131,109,.14);
   --logo-a: #F4EDDD;
   --logo-b: #D6C29A;
   --logo-c: #8F7C57;
@@ -411,4 +440,10 @@
   --logo-star: #FFFBF0;
   --star: 1;
   color-scheme: dark;
+}
+
+/* A Traditional Chinese page is set in the Traditional Chinese face (Taiwan / Hong Kong glyph forms, same metrics).
+ * On <html> only: every element below inherits it, and a page stylesheet can still override it there. */
+:root:lang(zh-Hant) {
+  --cn: var(--cn-hant);
 }

@@ -4,43 +4,44 @@
    "eyebrow": "YOUR RELATIONSHIP MAP",
    "title": "You and {inviter}",
    "relationLine": "From your side, {inviter} is your {relation}.",
-   "intro": "This is the same pair reading, seen from your side. The six rings have no total: they show how strong the connection and the friction are, separately.",
+   "intro": "This is the same pair reading, seen from your side. Rather than a single score, the six rings show where you naturally click and where friction can build, side by side.",
    "you": "You",
    "findingsTitle": "Key findings",
-   "locked": "{count, plural, one {# more finding} other {# more findings}} · sign up to keep this, and a membership shows the rest",
+   "locked": "{count, plural, one {# more finding} other {# more findings}} · sign up to keep this reading, and unlock the rest with a membership",
    "systemsTitle": "By system",
+   "systemsEyebrow": "SYSTEMS",
    "systemsLine": "{system} · {count, plural, one {# finding} other {# findings}}",
-   "systemsNote": "Chart details (bi-wheel, pillar comparison and so on) need full sharing on both sides. {inviter} shares results only by default: you won't see their birth date, time or place.",
-   "keepTitle": "Keep this result",
-   "keepBody": "Sign up and this pair reading appears under Relationships. You or {inviter} can stop sharing at any time.",
+   "systemsNote": "Detailed chart views — like the bi-wheel or Four Pillars side by side — only appear when both of you choose to share everything. By default, {inviter} shares results only, so their birth date, time and place stay hidden.",
+   "keepTitle": "Keep this reading",
+   "keepBody": "Sign up and this pair reading will be saved under People. Either you or {inviter} can stop sharing at any time.",
    "keep": "Sign up and keep it",
    "keepSignedIn": "Save to my account",
    "linked": "Saved to your account.",
-   "selfFilled": "Your own map is ready too, from the details you entered.",
-   "reward": "You and {inviter} each get 7 days of Plus.",
-   "openShared": "Open in Relationships",
-   "copyLink": "Copy the result link (valid for 30 days)",
+   "selfFilled": "We've also put together your own chart from the details you entered.",
+   "reward": "You and {inviter} have each received 7 days of Plus.",
+   "openShared": "Open in People",
+   "copyLink": "Copy link to this reading (valid for 30 days)",
    "copied": "Copied",
-   "computing": "Working out your pair reading. This usually takes a few seconds.",
-   "pendingInviter": "{inviter}'s details aren't ready yet. Check back a little later.",
-   "revoked": "This pair reading has ended: one of you stopped sharing.",
-   "expired": "This result link has expired (30 days).",
-   "unavailable": "This pair reading isn't available any more.",
-   "notFound": "This result can't be found. The link may be incomplete.",
-   "noToken": "No saved result on this device. Open the result link you got when you finished the invitation.",
-   "error": "Can't open this right now. Please try again later.",
+   "computing": "Putting your pair reading together — this usually takes just a few seconds.",
+   "pendingInviter": "{inviter}'s birth details aren't ready yet. Please check back a little later.",
+   "revoked": "This pair reading is no longer available because one of you stopped sharing.",
+   "expired": "This result link has expired (links stay active for 30 days).",
+   "unavailable": "This pair reading is no longer available.",
+   "notFound": "We couldn’t find this result — the link may be incomplete.",
+   "noToken": "We couldn't find a saved reading on this browser. If you kept the result link after filling in your details, open that link directly.",
+   "error": "We can’t open this right now. Please try again in a moment.",
    "linkError": {
-    "alreadyLinked": "This result is already saved to another account.",
-    "ownInvite": "This is an invitation you sent.",
-    "gone": "This pair reading has ended, or the link has expired.",
-    "generic": "Couldn't save it right now. Please try again later."
+    "alreadyLinked": "This reading has already been saved to another account.",
+    "ownInvite": "This is an invitation you sent yourself.",
+    "gone": "Sharing has been stopped for this reading, or the link has expired.",
+    "generic": "We couldn't save this just now. Please try again in a moment."
    }
   },
   "pair": {
    "title": "Pair reading",
    "practice": "Try together",
    "rings": {
-    "footnote": "Six dimensions, read separately — never merged into one number",
+    "footnote": "Six sides of how you get along, read on their own — never boiled down to a single score",
     "a11y": "{ring}: {character}",
     "character": {
      "strong": "Strong",
@@ -64,7 +65,7 @@
   },
   "clip": {
    "getApp": "Get Armilla",
-   "noLink": "Open this from an invitation link."
+   "noLink": "Please open this from an invitation link."
   }
  },
  "web": {
@@ -72,12 +73,12 @@
    "download": {
     "eyebrow": "GET THE APP",
     "title": "Daily awareness, in your pocket",
-    "lead": "Daily energy weather, prompts, journal and widgets live in the app; deep reports, pair invitations and the pro workspace live on the web. One account, synced everywhere.",
+    "lead": "Your daily energy weather, prompts, journal and widgets live in the app; deep reports, pair invitations and the Pro workspace live on the web. One account keeps everything in sync.",
     "ios": "App Store",
     "iosStatus": "Coming soon",
     "android": "Google Play",
     "androidStatus": "Coming later",
-    "web": "Continue in the browser"
+    "web": "Continue in your browser"
    }
   }
  },
@@ -221,65 +222,65 @@
     "pair": {
      "branch": {
       "combine6": {
-       "detail": "One of your branches combines with one of the other’s ({ap} and {bp} pillars): some layer of daily life simply fits, with an effortless understanding.",
+       "detail": "Your earthly branches form a six-harmony combination between the {ap} and {bp} pillars. While heavenly stems show how you come across on the surface, branches govern the grounded realities of daily life. Where these two pillars meet, your habits and instincts fit together quietly, giving you an easy, unforced rapport in that part of life.",
        "phrase": "Branches combine"
       }
      },
      "complement": {
       "mutual": {
-       "detail": "Your five phases complement each other: what one lacks the other has in abundance, and each chart’s strongest phase is what the other needs. Together you both come into better balance — a rare structure.",
+       "detail": "Each of you carries in abundance the very five-phase energy the other's chart needs for balance. Where either of you tends to tip or run thin on your own, the other's natural temperament steadies the scales. It is a rare configuration in BaZi synastry — simply being in each other's orbit helps both of you feel more grounded and whole.",
        "phrase": "Mutual complement"
       },
       "one_way": {
-       "detail": "One person’s five phases supply exactly what the other needs: the one supplied feels steadier, and the one supplying deserves to be seen and given back to.",
-       "phrase": "One-way complement"
+       "detail": "One person's chart is rich in the exact five-phase energy the other's chart needs to find balance. The one receiving that energy often feels calmer, clearer, and better backed simply by having the other around. Because that elemental boost flows mostly one way, it matters that the person providing it is seen, appreciated, and cared for in return.",
+       "phrase": "One-way element support"
       }
      },
      "daybranch": {
       "clash": {
-       "detail": "Your day branches clash: your routines, habits and rhythms of closeness differ, and it shows most once you share a home.",
+       "detail": "Your day branches clash. In BaZi, the day branch is the most private chamber of the chart — how you unwind, your bodily rhythms, and what you need when your guard is down. At a polite distance the difference barely shows, but at close quarters or under the same roof your habits and tempos easily rub against each other, asking for a little extra breathing room on both sides.",
        "phrase": "Day branches clash"
       },
       "combine6": {
-       "detail": "Your day branches combine: your daily and intimate rhythms match, and living together feels like home.",
+       "detail": "Your day branches form a six-harmony combination. The day branch holds who you are in private — your everyday rhythms and how you rest when no one is watching. Because these inner chambers fit together, being at close quarters feels effortless: even in quiet, ordinary hours, your paces match and the air between you feels settled and like home.",
        "phrase": "Day branches combine"
       }
      },
      "daystem": {
       "clash": {
-       "detail": "Your day stems clash: everyday small things can turn into head-on collisions, and when you talk fast you push against each other — the same tension makes you hard to ignore.",
+       "detail": "Your day stems, {sa} and {sb}, meet in a direct clash. Because day stems sit on the surface of the chart, this plays out in everyday reactions and speech: you approach things from opposite angles with the same directness, and when the pace picks up, small disagreements can easily turn into head-on collisions. Yet that very charge keeps the connection awake — neither of you can ever treat the other as background noise.",
        "phrase": "Day stems {sa}–{sb} clash"
       },
       "combine": {
-       "detail": "Your day stems form one of the five combinations (transforming toward {el}): a natural affinity that can feel like meeting an old friend, and you drift toward each other without trying.",
+       "detail": "Your day stems, {sa} and {sb}, form one of the five combinations, leaning toward {el}. The day stem is the core of how each of you meets the world, and a stem combination always joins two different temperaments — one yin, one yang — that lock together on contact. There is an immediate ease between you, as if you already know how to read each other, and over time you naturally tilt toward one another's way of being.",
        "phrase": "Day stems {sa}–{sb} combine"
       },
       "controls": {
-       "detail": "One person’s day stem restrains the other’s: one of you tends to become the other’s rules and pressure — sometimes exactly the containment the other needs. It comes down to how hard.",
+       "detail": "Between the day stems {sa} and {sb}, one naturally restrains the other. In practice, one of you tends to set the frame, the standards, or the limits — which can feel like pressure or scrutiny when pushed too hard, yet also gives the other person structure, steadiness, and a clear edge to lean against. Everything depends on the lightness of the touch.",
        "phrase": "{sa} restrains {sb}"
       },
       "generates": {
-       "detail": "One person’s day stem feeds the other’s: one of you naturally nourishes and backs the other, who finds firmer footing in the relationship.",
+       "detail": "Between the day stems {sa} and {sb}, one naturally feeds and supports the other. One of you instinctively backs, steadies, and makes room for the other, who in turn finds firmer footing and an easier sense of safety in the relationship. So long as the one giving remembers to replenish their own energy, the warmth flows without effort.",
        "phrase": "{sa} nourishes {sb}"
       },
       "same_element": {
-       "detail": "Your day stems share an element ({sa}, {sb}): kindred temperaments that understand each other quickly — and, being alike, neither is keen to give way first.",
+       "detail": "Your day stems ({sa} and {sb}) belong to the same element — what BaZi calls sharing the same qi. You are cut from similar cloth and understand each other's instincts and pride without needing a long explanation. The flip side of being so alike is that when you both dig in, neither of you is naturally inclined to yield first.",
        "phrase": "Same-element day stems"
       }
      },
      "dayun": {
       "output_meets_power": {
-       "detail": "One of you is in a breaking-out output decade while the other is in a pressured officer decade: you push each other hard, and can both be wound tight at once.",
+       "detail": "In your current ten-year luck pillars, one of you is moving through an Output decade — restless to express, question, and break out of old moulds — while the other is in an Officer decade defined by responsibility, pressure, and holding the line. You can balance each other well, one opening fresh air while the other keeps things anchored, yet when you are both stretched thin it is easy to pull in opposite directions at once.",
        "phrase": "Output decade meets officer decade"
       },
       "sync": {
-       "detail": "Your luck pillars point the same way for the next ten years: you rise and settle together and tend to want the same kinds of things at the same time.",
+       "detail": "Over the next ten years, your luck pillars move in the same general direction. Timing shapes a great deal of how two people get along: when your ten-year cycles run in step, you tend to want to push outward, take on new ground, or slow down and consolidate during the same seasons, without one of you having to wait for or drag the other along.",
        "phrase": "Luck pillars in step"
       }
      },
      "sole_element": {
-      "detail": "Taken together, nearly all of your {el} comes from one person: when that person steps away the pair loses that strength, so it is worth turning it into shared agreements rather than leaving it in one head.",
-      "phrase": "{el} sits almost all on one side"
+      "detail": "Looking at your two charts together, nearly all of the {el} between you comes from one person. In daily life, the qualities carried by {el} easily become that person's unspoken job for both of you. That creates a clear division of strengths, but it can also leave one person carrying the whole weight of that role — and leave a gap whenever they step back or run low.",
+      "phrase": "Nearly all {el} sits on one side"
      }
     }
    },
@@ -287,62 +288,62 @@
     "pair": {
      "authority": {
       "both_emotional": {
-       "detail": "You both have emotional authority: big decisions need time for each of you, so agree on a cooling-off period and avoid deciding on the spot at a high or a low.",
+       "detail": "Neither of you is wired for split-second certainty; with emotional authority on both sides, clarity only comes after you have ridden out the highs and lows of a feeling. Together, your moods can sometimes amplify each other—tempting you into rash promises on a shared high or making things look bleaker than they are on a low—and at other times your waves will simply be out of sync. The gift is that neither of you has to apologise for needing time. Letting big decisions wait until the waters have settled for both of you saves you from almost every regret.",
        "phrase": "Both emotional authority"
       },
       "wave_vs_instant": {
-       "detail": "One of you needs the emotional wave to settle before seeing clearly, the other knows in the moment: one feels rushed, the other feels held back. Agreeing that big decisions wait a night helps more than any advice.",
+       "detail": "When it comes to making a call, the two of you run on completely different clocks: one of you has to live with a choice through the highs and lows of a mood before the truth settles, while the other knows in a split second from a gut response or a flash of instinct. Without realising this, the fast decider feels stalled or confused when yesterday's answer shifts today, and the slower decider feels cornered into saying yes too soon—only to regret it by morning. Let the one who knows now register their first instinct, then give the other a night to sleep on it; the answer that survives until tomorrow is the one you can both trust.",
        "phrase": "Riding the wave × knowing now"
       }
      },
      "companionship": {
-      "detail": "You both hold {channels} whole: on that theme you run at the same frequency — easy as old friends, no explaining needed.",
+      "detail": "You each carry the whole of {channels} in your own chart. On the themes of this channel, you are wired the exact same way—there is no guesswork and no need to explain why you do what you do. It brings none of the drama of opposites, offering instead the quiet relief of recognition: a place where you naturally move at the same pace and understand each other without trying.",
       "phrase": "Companionship channel"
      },
      "compromise": {
-      "detail": "On {channels}, one of you holds the whole channel and the other only one end: one tends to lead on that theme while the other gives way, and small grievances can build up.",
+      "detail": "On {channels}, one of you holds the entire channel while the other holds just one gate. This is one of the trickiest dynamics in a composite chart: the person with one end cares about this theme and brings their own way of doing part of it, yet repeatedly finds themselves bending to the other's fixed, already-complete way of operating. Often the one holding the full channel has no idea they are calling the shots, while the other quietly swallows frustration. Seeing the mechanics for what they are keeps a structural imbalance from feeling personal.",
       "phrase": "Compromise channel"
      },
      "dominance": {
-      "detail": "{channels} lives in only one of you: that person brings energy the other lacks, which the other can learn from — while taking care not to be swept along by it.",
+      "detail": "One of you carries the whole of {channels}, while the other has neither end defined. Because the person who is open here has no fixed habit of their own to defend, this rarely turns into a tug-of-war; instead, it is a quality one person reliably brings to the table that the other can lean on, observe and learn from—so long as the open partner takes a breather when that constant energy starts to feel like too much.",
       "phrase": "Dominance channel"
      },
      "electromagnetic": {
       "many": {
-       "detail": "Each of you holds one end, and together you complete {channels}: you fill each other in, being close feels like being switched on, and the pull comes from difference rather than likeness.",
+       "detail": "Across {channels}, each of you holds one half of the circuit, and only when you come together does the current flow. Being in the same room has a distinct charge to it—places where either of you might stall alone suddenly come alive in the other's company. The pull between you isn't built on sameness; it comes from each of you carrying the exact piece the other is missing.",
        "phrase": "Several electromagnetic channels"
       },
       "some": {
-       "detail": "Together you complete {channels}: on that theme you attract and complete each other.",
+       "detail": "You each carry one end of {channels}, and together you bridge the gap. Around the themes of this channel, there is an immediate spark and curiosity between you—something that feels unfinished when you are on your own clicks into place the moment you engage with each other.",
        "phrase": "Electromagnetic channel"
       },
       "throat": {
-       "detail": "Several of your electromagnetic channels run through the Throat: together, ideas get said and made more easily — a pairing built for expressing and creating together.",
-       "phrase": "Together, expression opens"
+       "detail": "Several of your electromagnetic channels connect directly to the Throat centre, where inner thoughts and impulses turn into speech and tangible action. Ideas that either of you might sit on quietly when alone seem to spill out effortlessly once you start talking. Coming at things from different angles, you help each other finish the thought—making you a natural pair not just for lively conversation, but for turning half-formed plans into real work.",
+       "phrase": "Together, ideas find their voice"
       }
      },
      "open_centers": {
       "few": {
-       "detail": "Together you leave almost no center open: you are rarely bored and rarely quiet as a pair, so each of you needs some time alone to come back to yourself.",
-       "phrase": "Composite almost fully defined"
+       "detail": "Put your charts together and eight or all nine centres light up, leaving almost nothing undefined between you. As a pair you are remarkably self-contained—there is always something humming, and you rarely need outside company to feel complete. Yet a room with no open windows can start to feel airless after a while. Stepping apart for time on your own isn't distance; it is simply how each of you lets your open centres breathe and comes back to your own rhythm.",
+       "phrase": "Nearly every centre lit up together"
       },
       "shared": {
-       "detail": "Several centers stay open even together: these are the themes where the outside world can sway you both — and good ground to practise on together.",
-       "phrase": "Shared open centers"
+       "detail": "Even with your charts combined, four or more centres remain open between you. In those areas, neither of you imposes a fixed pattern on the other, giving the relationship plenty of breathing room and an unforced ease. Because neither of you anchors those themes, however, the surrounding environment and other people's moods can easily sweep you both up at once. Recognising when a wave of pressure comes from outside rather than from each other turns these open spaces into shared windows on the world.",
+       "phrase": "Several centres left open together"
       }
      },
      "type": {
       "manifestor_generator": {
-       "detail": "One of you can initiate without waiting, the other commits for the long haul once responding: the natural split is one starts, one goes deep — as long as the starter informs first and the other checks in first.",
-       "phrase": "One starts, one goes deep"
+       "detail": "One of you is wired to get things moving from a standing start in bursts of independent energy; the other has the deep, steady reserves to carry something for the long haul once their gut says yes. You naturally divide into spark and stamina. Friction usually shows up at the handover: if the initiator leaps into action unannounced, the other feels steamrolled, while expecting the initiator to keep up a relentless daily grind only drains them. A simple heads-up before making a move gives the other person something real to respond to, turning two very different paces into a relay.",
+       "phrase": "One initiates, one sustains"
       },
       "projector_generator": {
-       "detail": "One of you needs an invitation before offering a view, the other needs something to respond to before moving: who speaks first often decides where things go.",
-       "phrase": "Waiting to be invited × waiting to respond"
+       "detail": "One of you is built to see the big picture and guide how energy is spent; the other carries the steady engine to build and follow through. The catch is that both of you are wired to wait—one to be genuinely invited before sharing an insight, the other for something concrete to respond to from the gut. Left unbridged, unasked-for advice lands as criticism, and open-ended questions draw a blank. The whole dynamic unlocks once one remembers to ask for the other's perspective, and the other offers clear yes-or-no options to respond to.",
+       "phrase": "Waiting for an invitation × waiting to respond"
       },
       "two_manifestors": {
-       "detail": "You are both types who can start things on your own: each wants to begin on your own timing, and telling each other in advance saves a lot of friction.",
-       "phrase": "Two initiators"
+       "detail": "Neither of you is built to wait for permission or be managed; you both move when an inner urge strikes and guard your autonomy fiercely. The gift of this pairing is that you instinctively understand each other's need for freedom and quiet recovery without taking it personally. The flashpoint comes when you act around each other unannounced, setting off an instant, defensive pushback from both sides. Letting the other know what you are about to do isn't asking for approval—it is the simple courtesy that lowers the walls between two independent forces.",
+       "phrase": "Two independent initiators"
       }
      }
     }
@@ -350,15 +351,15 @@
    "numerology": {
     "pair": {
      "lifepath_lead_support": {
-      "detail": "One of your life paths leans toward leading and mastery, the other toward partnership and care: naturally complementary roles — just make sure the same person is not always the one giving way.",
-      "phrase": "Leading and supporting"
+      "detail": "One of you has a Life Path (1 or 8) wired for agency, direction, and getting things done; the other has a Life Path (2 or 6) wired for harmony, partnership, and looking after the people involved. One naturally pushes forward while the other holds the relationship together—a strong complement, so long as the louder driver leaves room to listen and the peacemaker doesn't always give way.",
+      "phrase": "Direction and care"
      },
      "personal_year_same": {
-      "detail": "You are in the same personal year: this year runs at the same rhythm for you both — good for starting or wrapping things up together.",
+      "detail": "Within numerology's nine-year cycle, you are both in the same Personal Year right now. This year carries the same seasonal rhythm for you both—whether the pull is to start something fresh, put your heads down and build, or clear the decks and rest—so your timing for pushing ahead or slowing down naturally matches.",
       "phrase": "Personal years in step"
      },
      "same_life_path": {
-      "detail": "You share a life path number: your life themes are alike, and it is easy to understand what the other is reaching for.",
+      "detail": "You share the same Life Path number. In numerology, the Life Path points to the central theme and lessons that run through a person's life; having the same number means you recognise each other's drive and sticking points from the inside out. You rarely have to explain why something matters so much to you—the other person already gets it.",
       "phrase": "Same life path number"
      }
     }
@@ -367,82 +368,82 @@
     "pair": {
      "attachment": {
       "anxious_avoidant": {
-       "detail": "When uneasy, one of you moves closer and seeks reassurance while the other steps back for space: a chase-and-retreat loop that slows down once you both can see it.",
+       "detail": "When tension or uncertainty creeps in, your instincts pull in opposite directions: one of you reaches for closeness and reassurance to feel safe again, while the other pulls back into their own space to settle down. That easily sets off a familiar loop — the more one reaches, the more crowded the other feels; the more the other retreats, the more alarmed the first becomes. Naming the pattern makes all the difference: when the one stepping back can say “I just need a breather, I’m still here,” neither of you has to get stuck in the chase.",
        "phrase": "Moving closer × stepping back"
       },
       "both_anxious": {
-       "detail": "You both care a lot about each other’s responses: close times hold you both, and busy or quiet stretches can unsettle you both at once. A simple agreed “I’m here” signal helps.",
-       "phrase": "Both care about response"
+       "detail": "You both care deeply about closeness and pick up quickly on shifts in each other’s tone, warmth, or reply time. At your best, you are wonderfully attentive and generous with reassurance, because you both know what it means to feel held. The flip side is that a hectic day or an unexplained silence can rattle you both at once. Having a simple shorthand — like “swamped today, we’re good” — stops false alarms from snowballing.",
+       "phrase": "Both seek reassurance"
       },
       "both_avoidant": {
-       "detail": "You both lean towards independence and tend to process things on your own: you give each other room and it feels easy — and when it matters, remember to say “I need you”.",
-       "phrase": "Both keep some space"
+       "detail": "You both prize your independence and tend to sort through heavy feelings on your own. Day to day, that makes things refreshingly low-pressure: neither of you crowds the other or takes a need for quiet personally. The only risk is becoming so self-sufficient that you drift into parallel tracks — so when something really weighs on you, it is worth resisting the urge to say “I’m fine” and letting the other person in.",
+       "phrase": "Both value their space"
       },
       "secure_anchor": {
-       "detail": "One of you has a secure attachment style: the relationship has a steady anchor, making it easier to find your way back to each other after ups and downs.",
+       "detail": "One of you brings a secure attachment style to the relationship, giving the bond a steady home base. Being comfortable with closeness without feeling crowded — and able to handle distance without panicking — keeps everyday friction or busy spells from feeling like a threat to what you have, making it much easier to find your way back to each other after ups and downs.",
        "phrase": "A secure anchor"
       }
      },
      "bigfive": {
       "conscientiousness_gap": {
-       "detail": "One of you is orderly and punctual, the other spontaneous and flexible: chores, plans and punctuality are common sources of friction.",
+       "detail": "One of you likes things in order, takes commitments seriously, and feels best when a plan is seen through properly; the other moves more by feel, stays relaxed about structure, and prefers to improvise. Around shared tasks, timing, and everyday order, the first can start to feel they are carrying the load alone, while the second can feel policed. Agreeing on a few clear non-negotiables — and letting the rest be done each person’s own way — saves a lot of wear and tear.",
        "phrase": "Orderly × spontaneous"
       },
       "neuroticism_gap": {
-       "detail": "One of you feels strongly and notices early, the other stays even: the steady one can be an anchor — as long as the other’s feelings are not waved off as overthinking.",
+       "detail": "One of you picks up on shifts and stresses early and feels them deeply, while the other stays on a fairly even keel when things get bumpy. That contrast can work well for you both: one notices subtle undercurrents, and the other offers a steady presence when storms hit. The key is for the steadier side not to wave off the other’s feelings as overthinking, and for the more sensitive side not to mistake calm for indifference.",
        "phrase": "Sensitive × steady"
       }
      },
      "disc": {
       "both_dominance": {
-       "detail": "You both like to make the call and push ahead: together you have plenty of drive, and when you disagree things can lock up. Agreeing in advance who decides what helps.",
-       "phrase": "Both like to decide"
+       "detail": "You both lead with Dominance (D) in DISC: you speak plainly, decide quickly, and naturally reach for the wheel when something needs doing. When you share a goal, you can move mountains together without wasting time tiptoeing around each other. When you disagree, though, neither of you is inclined to yield just to keep the peace, and things can quickly lock up. Dividing up who has the final say in which area keeps you from wrestling over the same wheel.",
+       "phrase": "Both like to take the lead"
       },
       "pace_gap": {
-       "detail": "One of you likes to move fast and adjust on the way, the other prefers to think it through and go steadily: the pace gap is a common rub — agreeing up front on when to decide makes it much smoother.",
+       "detail": "In your DISC styles, one of you likes to get moving quickly and adjust on the fly, while the other prefers to think things through and move at a measured, steady pace. Left unchecked, the faster side can feel held back, and the steadier side can feel rushed into half-baked calls. Giving a little breathing room to weigh things up — along with a clear time to make the call — lets momentum and care work together.",
        "phrase": "Fast push × steady pace"
       }
      },
      "enneagram": {
       "same_center": {
-       "detail": "Your Enneagram types share a center: your first reactions under stress are alike, so it is easy to see why the other acts as they do.",
+       "detail": "Your Enneagram types belong to the same centre — whether gut, heart, or head, you take in the world through the same first radar. Even if your day-to-day habits differ, your gut reactions under pressure and the things you instinctively try to protect come from the same place, making it natural to understand why the other reacts the way they do.",
        "phrase": "Same Enneagram center"
       }
      },
      "types16": {
       "ei_split": {
-       "detail": "One of you needs to mull things over inside, the other needs to talk to think: on the same issue, one wants quiet while the other wants to discuss it now.",
+       "detail": "When something comes up, one of you needs quiet time to sort through it privately before speaking, while the other figures out what they think by talking it through out loud. On the very same issue, one wants a pause and the other wants a conversation right now. Once you both see that silence is not shutting the other out and thinking aloud is not a final verdict, it becomes much easier to give each other that beat.",
        "phrase": "Mull it over × talk it out"
       },
       "jp_split": {
-       "detail": "One of you likes to settle things early, the other to keep options open: plans, schedules and deadlines are the usual sticking points.",
+       "detail": "One of you relaxes once a decision is made and the plan is set, while the other feels most at ease keeping options open so you can adapt as things unfold. Schedules, trips, and deadlines bring the difference out into the open: one feels left hanging when things stay up in the air, and the other feels boxed in when pressed to commit too early. Knowing which decisions truly need locking down and which can stay flexible takes the edge off both of you.",
        "phrase": "Settle it × keep it open"
       },
       "shared_intuition": {
-       "detail": "You both lean intuitive (N): you love talking about possibilities and meaning, and one of you picks up an idea the moment the other starts it.",
+       "detail": "You both lean toward Intuition (N) in the 16 Types. Conversations between you rarely stay on the surface of facts for long — you are both drawn to what sits behind things, where an idea might lead, and how one thought connects to another. One of you can toss out half a notion or a rough metaphor, and the other will pick up the thread without needing every step spelled out.",
        "phrase": "Shared intuition"
       },
       "shared_sensing": {
-       "detail": "You both lean toward sensing (S): you trust concrete facts and experience, and practical conversations go efficiently.",
-       "phrase": "Shared sensing"
+       "detail": "You both lean toward Sensing (S) in the 16 Types. Rather than trading abstract theories, you both trust what you have seen, done, and experienced firsthand. Whether you are working out a practical plan or catching up on life, you speak in concrete examples and real details, making it easy to understand each other without having to decode vague hints.",
+       "phrase": "Grounded in specifics"
       },
       "sn_split": {
-       "detail": "One of you sees patterns and possibilities first, the other facts and details: each can find the other too airy or too fussy — together you see the whole thing.",
-       "phrase": "Big picture × the details"
+       "detail": "Faced with the same situation, one of you looks first for the underlying pattern and what could happen next, while the other looks for solid facts and how things actually work on the ground. In conversation, the first can feel the second is caught up in minutiae, and the second can feel the first is floating off into thin air — yet together, one watches the horizon while the other minds the footing, giving you the whole picture.",
+       "phrase": "Big picture × concrete details"
       },
       "tf_split": {
-       "detail": "One of you weighs people and relationships first, the other logic and consistency: in an argument one feels unheard and the other feels unconvinced — and each is holding half of the picture.",
-       "phrase": "People-first × logic-first"
+       "detail": "When making a call or working through a disagreement, one of you looks first at how it affects the people involved and how everyone feels, while the other looks at whether the logic holds up and the principle is sound. In a heated moment, the first can feel met with coldness, while the second can feel the actual point is being sidestepped — yet each of you is guarding half of what matters: getting the issue right, and looking after the people in it.",
+       "phrase": "People first × logic first"
       }
      },
      "values": {
       "opposite_direction": {
-       "detail": "What each of you values most sits opposite on the values circle: what one weighs heavily, the other weighs less. It lets each of you see the other side — talking through what matters to each before big decisions helps.",
-       "phrase": "Complementary value directions"
+       "detail": "On the values circle, what each of you cares about most sits on opposite sides — for instance, one drawn to change and new ground while the other prizes stability and roots, or one focused on personal drive while the other looks out for the wider group. Each of you naturally watches the blind spot the other leaves unguarded. Before big decisions, asking what each of you is trying to protect turns a tug-of-war into a much fuller view.",
+       "phrase": "Complementary priorities"
       },
       "shared_direction": {
-       "detail": "Your values assessments point in a similar direction: many choices need no explaining — the other already knows why you make them.",
-       "phrase": "Similar value directions"
+       "detail": "In the values questionnaire, what each of you puts first points in the same direction. That kinship shows up most in everyday trade-offs — what is worth spending time and energy on, what you will stand up for, and what kind of life feels well lived. Many of your choices need no long explanation, because the other already understands why they matter to you.",
+       "phrase": "Aligned in what matters"
       }
      }
     }
@@ -450,28 +451,28 @@
    "vedic": {
     "pair": {
      "dasha_sync": {
-      "detail": "(Reference) Your current main Dasha rulers are the same or friendly: this chapter of life carries similar themes for you both.",
+      "detail": "Your current major planetary periods (Mahadashas) are ruled by the same planet, or by planets that are natural friends. Because a Mahadasha sets the tone for a multi-year chapter of life, you are moving through similar weather right now—making it much easier to understand where the other person's energy is going and to keep a shared pace.",
       "phrase": "Dashas in step"
      },
      "koota": {
       "gana_low": {
-       "detail": "(Reference) Your Moon nakshatras fall in different temperament groups: traditionally a sign of differing moods and pace that asks for extra patience with each other.",
+       "detail": "Your Moon nakshatras belong to different temperament groups (Gana). Traditionally, this points to contrasting baseline reflexes and ways of processing things—when something comes up, one of you may want to meet it head-on and sort it out immediately, while the other needs a gentler approach or time to let the dust settle. Giving each other room to digest things at your own speed goes a long way.",
        "phrase": "Gana: different"
       },
       "gana_match": {
-       "detail": "(Reference) Your Moon nakshatras belong to compatible temperament groups (Gana): traditionally read as a similar everyday pace.",
+       "detail": "Your Moon nakshatras fall into the same or closely compatible temperament group (Gana). In Vedic tradition, Gana reflects your baseline temperament and reflex responses to daily life: when it matches, your everyday tempo—how fast you react, how you handle small irritations, and when you want company or quiet—tends to line up naturally.",
        "phrase": "Gana: matched"
       },
       "graha_maitri_high": {
-       "detail": "(Reference) The rulers of your Moon signs are friendly to each other: traditionally read as minds and hearts that meet easily.",
+       "detail": "The planetary rulers of your two Moon signs are on friendly terms (or are the same planet). Because the Moon in Vedic astrology governs how the mind takes in and responds to life, friendly rulers point to an easy mental rapport: you tend to follow each other's train of thought without needing much translation.",
        "phrase": "Graha Maitri: friendly"
       },
       "tara_high": {
-       "detail": "(Reference) The Tara count between your nakshatras agrees: traditionally read as each being a help to the other.",
+       "detail": "Counting from one Moon nakshatra to the other places each of you in a supportive position (Tara) in the Vedic lunar cycle. Traditionally, this is read as a quietly fortunate link: you tend to be a steadying, helpful presence in each other's lives, lending momentum and support when it counts.",
        "phrase": "Tara: matched"
       },
       "yoni_high": {
-       "detail": "(Reference) Your nakshatras’ Yoni symbols agree: traditionally read as a strong instinctive closeness.",
+       "detail": "The animal symbols (Yoni) tied to your Moon nakshatras are the same or naturally friendly. In Vedic tradition, this speaks to an instinctive, sensory ease between two people—a feeling of being comfortable in your own skin around each other, with an unforced warmth that draws you together.",
        "phrase": "Yoni: matched"
       }
      }
@@ -480,75 +481,75 @@
    "western": {
     "pair": {
      "asc_asc_square": {
-      "detail": "Your Ascendants form a hard angle: you meet the world differently — one leads with harmony and mood, the other with structure and rules — so in public you can seem to pull in different directions.",
+      "detail": "Your Ascendants square or oppose each other. You meet the outside world with very different first reflexes: where one of you reaches for structure and a clear plan, the other reads the room and goes with the flow. In public or unfamiliar settings you can easily feel out of step, yet each of you brings the exact presence the other lacks.",
       "phrase": "Ascendants at odds"
      },
      "jupiter_lifts": {
-      "detail": "One person’s Jupiter lights up the other’s Sun or Moon: around each other you grow more confident and more willing to dream, and the relationship widens your horizons.",
+      "detail": "One person’s Jupiter meets the other’s Sun or Moon in a conjunction or easy aspect. There is a generous, encouraging spirit to this contact: around each other, small slights are easily forgiven and bigger possibilities feel within reach. One of you naturally bolsters the other’s confidence, making the world feel wider when you are together.",
       "phrase": "Jupiter lifts"
      },
      "mars_mars_tension": {
-      "detail": "Your two Mars placements oppose or square each other: you act at different speeds and in different styles, so when one wants to charge the other wants another approach — small things can spark arguments.",
+      "detail": "Your two Mars placements square or oppose each other. Your instincts for how and when to act pull at cross-purposes: just as one of you wants to push straight ahead, the other wants to slow down or take a different tack. Everyday logistics can spark quick, sharp clashes, though there is a certain honesty to it—neither of you tiptoes around the other.",
       "phrase": "Mars against Mars"
      },
      "mercury_harmony": {
-      "detail": "Your Mercurys are in harmony: you think along similar lines, can finish each other’s half-sentences, and talking is a pleasure in itself.",
+      "detail": "Your Mercurys meet in a conjunction or easy aspect. Your minds work along compatible lines, so you catch each other’s drift, humour and logic without needing to spell everything out. Whether you are sorting out practical plans or talking late into the night, conversation flows easily between you.",
       "phrase": "Mercury in tune"
      },
      "mercury_tension": {
-      "detail": "Your Mercurys form a hard angle: you think and speak differently, so the same sentence can mean two things — worth asking “do you mean…?” more often.",
+      "detail": "Your Mercurys square or oppose each other. You gather thoughts and put them into words differently: one of you may focus on literal details while the other speaks in broad strokes, or one thinks out loud while the other only speaks once they are sure. Because you can easily talk past each other, it pays to pause and ask what the other actually meant.",
       "phrase": "Mercury needs translating"
      },
      "moon_mc_conjunction": {
-      "detail": "One person’s Moon sits right on the other’s Midheaven (within {orb}°): emotional support flows naturally toward the other’s work and public life, often without needing to be said.",
+      "detail": "One person’s Moon sits right on the other’s Midheaven (within {orb}°). One of you instinctively takes the other’s ambitions, reputation and life in the world to heart, offering quiet emotional backing where they are most visible; the other feels genuinely understood and held in what they are trying to build out there.",
       "phrase": "Moon on the Midheaven"
      },
      "moon_moon_harmony": {
-      "detail": "Your Moons are in harmony: your emotional needs are alike, you want similar kinds of care when tired or low, and being together takes little effort.",
+      "detail": "Your Moons meet in a conjunction or easy aspect. Because the Moon governs everyday habits and emotional reflexes, you unwind in similar ways and reach for the same kind of comfort when life gets heavy. Much of what you feel goes without saying between you, making day-to-day life together feel easy and unforced.",
       "phrase": "Moons in harmony"
      },
      "moon_moon_tension": {
-      "detail": "Your Moons form a hard angle: you handle feelings differently, and the comfort one of you needs may be exactly what the other finds hardest to give.",
+      "detail": "Your Moons square or oppose each other. When you are tired or upset, your emotional reflexes pull in different directions: one may need to talk things through straight away while the other retreats into quiet, or one offers practical fixes when the other just wants warmth. Even with the best intentions, the comfort you instinctively give isn’t always the comfort the other needs.",
       "phrase": "Moons at odds"
      },
      "node_contact": {
-      "detail": "One person’s personal planet sits on the other’s North Node: the relationship often feels like being drawn toward a direction you want but do not yet know.",
+      "detail": "One person’s Sun, Moon or Venus sits on the other’s North Node. Because the North Node points toward the life a person is still learning to grow into, the planet person naturally embodies qualities the other is trying to develop. This connection often acts as a catalyst, nudging one of you past old habits toward a future you quietly want.",
       "phrase": "Node contact"
      },
      "overlay_7th": {
-      "detail": "One person’s Sun, Moon or Venus falls in the other’s 7th house: the other person is naturally seen in the role of partner.",
+      "detail": "One person’s Sun, Moon or Venus falls in the other’s 7th house. Because the 7th house shapes what a person looks for in a true one-to-one partner, the house person instinctively recognises the other as someone meant to sit across the table from them—not just in passing, but as a genuine counterpart.",
       "phrase": "In the partnership house"
      },
      "pluto_personal": {
-      "detail": "One person’s Pluto touches the other’s personal planet: a deep, intense pull that can stir wanting control or fearing it — worth naming openly to each other.",
+      "detail": "One person’s Pluto meets the other’s Sun, Moon or Venus in a conjunction or hard aspect. Nothing about this pull is casual: you seem to see straight past each other’s defences, creating an intense, absorbing bond. Because that depth can also stir possessiveness or quiet struggles over who holds the upper hand, naming fears and boundaries openly matters here more than usual.",
       "phrase": "Pluto contact"
      },
      "saturn_moon": {
-      "detail": "One person’s Saturn presses on the other’s Moon: a strong sense of commitment and duty, which can leave one of you feeling managed and the other feeling leaned on.",
+      "detail": "One person’s Saturn meets the other’s Moon in a conjunction or hard aspect. This brings real weight and staying power to the bond—neither of you takes the other lightly. Yet when feelings are raw, the Moon person can feel judged, cooled down or managed, while the Saturn person can feel cast as the responsible one who always has to hold things together.",
       "phrase": "Moon–Saturn contact"
      },
      "saturn_sun_venus_soft": {
-      "detail": "One person’s Saturn harmonises with the other’s Sun or Venus: the bond has dependable structure and a long view, suited to things that take patience.",
+      "detail": "One person’s Saturn forms a conjunction or easy aspect with the other’s Sun or Venus. Here Saturn brings quiet reliability rather than weight: promises are kept, trust builds steadily over time, and the bond doesn’t depend on constant excitement to hold together. You are well suited to building things that take patience and follow-through.",
       "phrase": "Saturn steadies"
      },
      "sun_mars_harmony": {
-      "detail": "One person’s Sun harmonises with the other’s Mars: your drives light each other up, and you both have more energy when you work on something together.",
+      "detail": "One person’s Sun forms an easy angle with the other’s Mars. Ideas rarely stay on the shelf for long between you: one person’s sense of purpose feeds straight into the other’s drive to act. Whether you are tackling a project or backing each other up, you each feel bolder and more decisive with the other in your corner.",
       "phrase": "Sun–Mars harmony"
      },
      "sun_moon_harmony": {
-      "detail": "One person’s Sun meets the other’s Moon in a conjunction or easy aspect: who one of you is becoming is exactly what makes the other feel at home.",
+      "detail": "One person’s Sun meets the other’s Moon in a conjunction or easy aspect. Who one of you is at your core naturally makes the other feel safe and at home, while the Moon person’s instinctive warmth lets the Sun person drop their guard and feel wholly accepted. There is an effortless sense of holding each other up.",
       "phrase": "Sun and Moon in step"
      },
      "uranus_venus_moon": {
-      "detail": "One person’s Uranus touches the other’s Venus or Moon: fresh, exciting and unpredictable — and in need of room for each of you to be free.",
+      "detail": "One person’s Uranus meets the other’s Venus or Moon in a conjunction or hard aspect. There is a live-wire freshness between you that shakes both of you out of routine and convention. Yet closeness can feel erratic if either person feels boxed in: this bond thrives when you leave plenty of room for independence and the unexpected.",
       "phrase": "Uranus touches Venus or Moon"
      },
      "venus_mars_harmony": {
-      "detail": "One person’s Venus meets the other’s Mars in a conjunction or easy aspect: a classic pull, where one person’s charm sparks the other’s pursuit.",
+      "detail": "One person’s Venus meets the other’s Mars in a conjunction or easy aspect. This is one of astrology’s classic signatures of chemistry: the way one of you expresses warmth and charm naturally draws out the other’s desire and initiative. Affection and playfulness come easily between you, without either person having to try too hard.",
       "phrase": "Venus–Mars attraction"
      },
      "venus_mars_tension": {
-      "detail": "One person’s Venus squares or opposes the other’s Mars: strong attraction with a tug-of-war in it — you tend to want closeness in different ways and at different speeds.",
+      "detail": "One person’s Venus squares or opposes the other’s Mars. The magnetism between you is strong—often electric—but it comes with an edge. Your timing around affection and desire doesn’t always line up: one may want unhurried tenderness just when the other comes on fast, creating a recurring tug between pulling closer and needing breathing room.",
       "phrase": "Venus–Mars tension"
      }
     }
@@ -556,39 +557,39 @@
    "ziwei": {
     "pair": {
      "ji_into_ming": {
-      "detail": "One person’s Obstruction transformation lands in the other’s Life or Partner palace: this person cares intensely and finds it hard to let go — too much caring can turn into pressure for both.",
+      "detail": "One person’s birth-year Obstruction transformation (Hua Ji) lands in the other’s Life or Partner palace. In Zi Wei Dou Shu, Hua Ji is less about simple obstacle than about fixation, deep attachment and what the heart cannot easily set down. When it falls here, the first person finds it almost impossible to take the second person lightly: they worry, notice every small shift and hold on tight. That intensity creates an unmistakable bond, yet when care turns into anxious scrutiny, the second person can feel crowded or weighed down—making breathing room just as important as closeness.",
       "phrase": "Obstruction lands on the other"
      },
      "lu_into_ming": {
-      "detail": "One person’s Prosperity transformation lands in the other’s Life or Partner palace: this person naturally wants to give, and the other feels well treated.",
+      "detail": "One person’s birth-year Prosperity transformation (Hua Lu) lands in the other’s Life or Partner palace. In Zi Wei Dou Shu, Hua Lu marks where a person’s natural warmth, generosity and goodwill flow most freely. When it falls into these core palaces of the second person’s chart, the first person instinctively wants to give, accommodate and bring ease to the other without keeping score—and the second person can feel that warmth directly, experiencing the relationship as a place where they are genuinely cared for.",
       "phrase": "Prosperity flows to the other"
      },
      "ming_in_fude": {
-      "detail": "One person’s Life palace falls in the other’s Fortune palace: in this person’s company, the other feels inwardly at ease and mentally rested.",
+      "detail": "One person’s Life palace falls in the other’s Fortune palace. In Zi Wei Dou Shu, the Fortune palace is the seat of a person’s inner life—their quiet joys, emotional baseline and mental rest. When the first person’s Life palace lands here, their very presence reaches the second person’s inner world. Around them, the second person feels little need to put on a front; tension eases, the mind settles, and even ordinary quiet time together feels restorative.",
       "phrase": "Life palace in the Fortune palace"
      },
      "ming_in_fumu": {
-      "detail": "One person’s Life palace falls in the other’s Parents palace: this person carries a mentor’s weight in the other’s eyes, and their advice tends to land.",
+      "detail": "One person’s Life palace falls in the other’s Parents palace. Beyond literal parents, this palace in Zi Wei Dou Shu represents shelter, guidance and the kind of authority that comes with care. Regardless of your actual ages, the first person carries a steady, mentor-like weight in the second person’s eyes. The first person is naturally inclined to look out for and guide the second, and when the second person is unsure of their footing, advice or reminders from the first tend to sink in where others’ might not.",
       "phrase": "Life palace in the Parents palace"
      },
      "ming_in_fuqi": {
-      "detail": "One person’s Life palace falls in the other’s Partner palace: the moment one appears, the other naturally places them as a partner, with a hard-to-explain familiarity.",
+      "detail": "One person’s Life palace falls in the other’s Partner palace. In Zi Wei Dou Shu, the Partner palace holds a person’s instinctive picture of intimacy and companionship. When the first person’s Life palace sits right in that space, who they naturally are matches the shape of what the second person is drawn to. Often from early on, before either of you has tried very hard, the second person feels an unspoken familiarity and pull—as though a place for this person was already waiting in their life.",
       "phrase": "Life palace in the Partner palace"
      },
      "ming_in_guanlu": {
-      "detail": "One person’s Life palace falls in the other’s Career palace: in the other’s eyes this person is tied to work and goals — a good pairing for getting things done together.",
+      "detail": "One person’s Life palace falls in the other’s Career palace. In Zi Wei Dou Shu, the Career palace governs direction, work and how a person puts plans into action, forming part of the core triad with the Life palace. Because the first person’s Life palace sits here, their way of thinking and getting things done naturally earns the second person’s trust. Whether you are working together, planning ahead or tackling a practical problem in daily life, the first person brings steadiness and momentum to the second person’s goals.",
       "phrase": "Life palace in the Career palace"
      },
      "ming_in_peers": {
-      "detail": "One person’s Life palace falls in the other’s siblings or friends palace: you relate like friends and companions — level and direct.",
+      "detail": "One person’s Life palace falls in the other’s Siblings or Friends palace. In Zi Wei Dou Shu, these two palaces form the axis of peers, close allies and companions on equal footing. Whatever your formal roles in life—whether partners, family or colleagues—the second person naturally experiences the first as a peer and confidant. There is very little ceremony or hierarchy between you: conversation is candid, easy and on the level, much like two good friends walking side by side.",
       "phrase": "Life palace in a peer palace"
      },
      "ming_in_resources": {
-      "detail": "One person’s Life palace falls in the other’s Wealth or Property palace: you tend to build resources and a home together.",
+      "detail": "One person’s Life palace falls in the other’s Wealth or Property palace. In Zi Wei Dou Shu, the Wealth palace governs practical resources and how value is handled, while the Property palace represents home, roots and the spaces where daily life is lived. Having the first person’s Life palace land here ties them directly into the tangible foundations of the second person’s life. Your connection grounds itself easily in the everyday—whether that means managing resources, sharing a roof or steadily building something lasting together.",
       "phrase": "Life palace in a resource palace"
      },
      "mutual_qianyi": {
-      "detail": "Each of your Life palaces falls in the other’s Travel palace: you are each other’s door to the wider world, and after meeting, both your worlds grow larger.",
+      "detail": "Each person’s Life palace falls directly in the other’s Travel palace, making your Life–Travel axes mirror images of one another. In Zi Wei Dou Shu, the Travel palace governs horizons, movement and the world beyond familiar ground. You act as each other’s window onto a wider world: what is everyday territory for one is fresh country for the other. Together, you naturally draw each other out of old routines, introducing new places, ideas and possibilities that neither of you might have stepped into alone.",
       "phrase": "Each other’s Travel palace"
      }
     }
@@ -601,37 +602,37 @@
     "attraction": {
      "axisNeg": "Drawn by likeness",
      "axisPos": "Drawn by difference",
-     "describes": "What draws each of you toward the other.",
+     "describes": "What pulls you towards each other and makes you want to get close.",
      "name": "Attraction"
     },
     "communication": {
      "axisNeg": "Same wavelength",
-     "axisPos": "Two languages — needs translating",
-     "describes": "How easily ideas and words move between you.",
+     "axisPos": "Needs translating",
+     "describes": "How easily you talk things through and understand what the other means.",
      "name": "Communication"
     },
     "emotion": {
-     "axisNeg": "Each processes alone",
-     "axisPos": "You hold each other",
-     "describes": "How you catch each other’s feelings.",
+     "axisNeg": "Sorting things out alone",
+     "axisPos": "Holding each other up",
+     "describes": "How you tune in to each other’s moods and care for one another.",
      "name": "Emotional bond"
     },
     "growth": {
-     "axisNeg": "Settling each other",
+     "axisNeg": "Steadying each other",
      "axisPos": "Stretching each other",
-     "describes": "How each of you helps the other grow more whole.",
+     "describes": "How being around each other shapes and changes you over time.",
      "name": "Growth"
     },
     "rhythm": {
      "axisNeg": "In step",
      "axisPos": "Out of step",
-     "describes": "Whether your pace for deciding, acting and resting matches.",
+     "describes": "Whether you move at a similar pace when deciding, acting and resting.",
      "name": "Rhythm"
     },
     "values": {
      "axisNeg": "Alike",
      "axisPos": "Complementary",
-     "describes": "How close the things you care about and the directions you value are.",
+     "describes": "What matters most to each of you, and how well your priorities line up.",
      "name": "Values"
     }
    },
@@ -652,219 +653,219 @@
    "rings": {
     "attraction": {
      "friction": {
-      "body": "You come close in different ways and at different speeds, and the more you care, the more you tug. Seeing the tug-of-war brings you closer than pretending it isn’t there.",
-      "practice": "Next time you feel the tug, each say in one sentence, “What I want right now is…”.",
-      "quote": "The pull is strong, and so is the tug-of-war."
+      "body": "You can hardly ignore each other, yet getting close is rarely straightforward. Often, the exact trait you first admired in the other person becomes the most frustrating thing to deal with in everyday life; or just as one of you takes a step closer, the other instinctively pulls back a little. There is no lack of pull between you, only a need for a bit of breathing room so you do not crowd each other.",
+      "practice": "Name one trait in the other that you both admire and occasionally find maddening, and compare notes on when it tips from one to the other.",
+      "quote": "The very quality that draws you to each other is often what tests your patience up close."
      },
      "quiet": {
-      "body": "On the charts, the signals of attraction between you are modest. Bonds like this often grow slowly out of familiarity and trust.",
-      "practice": "Do one small new thing together, and notice how each of you shows up in it.",
-      "quote": "Your bond runs on time, not sparks."
+      "body": "When you first met, neither of you probably felt an overwhelming pull, and neither of you had to try hard to impress the other. Yours is a slow-warming bond: familiarity and trust grow quietly out of ordinary hours spent together and things lived through side by side. It may lack sudden excitement at the start, but it makes up for it in comfort and steadiness over time.",
+      "practice": "Spend an hour somewhere neither of you usually goes — an unfamiliar neighbourhood or a different café — and see what you notice about each other outside your usual routine.",
+      "quote": "You are not the type to set off instant fireworks, which makes being together easy and unforced."
      },
      "strong": {
-      "body": "The pull often comes from what each of you lacks in yourself. It draws you together — and makes you curious about why the other is so different.",
-      "practice": "Each write down the one quality in the other that draws you most, then swap and read.",
-      "quote": "There’s a pull between you that’s hard to ignore."
+      "body": "Whether it is because you recognise something familiar in each other or because the other person has qualities you lack, your attention naturally goes to them when you are together. You genuinely want to know what they think and how they do things. That effortless interest makes it easy to get close — though in the beginning it can also make you idealise each other a little before you see the whole picture.",
+      "practice": "Tell each other about one specific moment recently when you looked at the other and thought, “That is so unmistakably you.”",
+      "quote": "You are naturally drawn to each other and genuinely curious about how the other ticks."
      }
     },
     "communication": {
      "friction": {
-      "body": "You think and speak differently, and misunderstandings often begin with “I thought you meant…”. One extra question can save a whole argument.",
-      "practice": "Next time you feel misunderstood, first ask, “Did you mean…?” before responding.",
-      "quote": "The same sentence means two things between you."
+      "body": "You have different habits in conversation: one of you might think out loud while the other takes every passing remark as a final decision; or one focuses strictly on the facts while the other reacts to tone of voice. When talks go wrong between you, it is rarely because you fundamentally disagree — it is usually because the way something was phrased rubbed the other the wrong way, turning the conversation into an argument over “what you meant by that”.",
+      "practice": "When a conversation starts to heat up, pause for a moment and check what you heard in plain words: “So what you’re saying is… Have I got that right?”",
+      "quote": "Even when talking about the same thing, your different ways of speaking and listening can easily cause misunderstandings."
      },
      "quiet": {
-      "body": "The charts show few strong communication links between you. That doesn’t mean you can’t talk — just that it takes more deliberate expressing and checking.",
-      "practice": "Set a regular weekly talk, and each share the one thing that mattered most to you that week.",
-      "quote": "Your communication needs a little more intention."
+      "body": "You are not the kind of pair who never run out of things to talk about, and sitting in the same room without chatting feels completely comfortable. That ease with silence is restful, though if you are not careful, your conversations can shrink down to practicalities and daily errands. Neither of you can read minds, so if something is on your mind, you have to take the initiative and bring it up.",
+      "practice": "Over a meal or a walk, set everyday errands aside and ask each other: “What’s something you’ve been thinking about a lot lately?”",
+      "quote": "You do not need constant conversation when you are together, so what matters needs to be said out loud."
      },
      "strong": {
-      "body": "Ideas flow easily between you; one starts and the other picks it up. Because it’s so easy, you sometimes assume the other understood when they didn’t.",
-      "practice": "After discussing something important, ask the other to say it back in their own words.",
-      "quote": "When you talk, you often get it at once."
+      "body": "You rarely need long explanations to catch each other’s meaning, and even when the conversation jumps from one subject to another, you both keep up naturally. The only trap in understanding each other so quickly is assuming you are on the same page about complex or sensitive matters without actually spelling out the details, only to find out later that you had different things in mind.",
+      "practice": "Next time you agree quickly on something important, pause and ask: “Just so we’re sure, what does this actually look like in practice to you?”",
+      "quote": "Talking comes easily between you — half a sentence is often enough for the other to get the point."
      }
     },
     "emotion": {
      "friction": {
-      "body": "The comfort one of you needs may be exactly what the other finds hardest to give. Telling “what I need” apart from “what I assume you need” is your practice.",
-      "practice": "Each write down “the one thing I most want you to do when I’m low,” then swap.",
-      "quote": "You handle feelings in different ways."
+      "body": "Under stress, your instincts often pull in opposite directions: one of you might want to talk things through right away while the other wants to be left alone for a while; or one jumps straight into fixing the problem when the other just wants a sympathetic ear. Hurt feelings between you rarely come from a lack of care — they happen when you offer the kind of comfort you would want, rather than what the other person actually needs.",
+      "practice": "While you are both in a good mood, tell each other plainly for harder days: “When I’m in a bad mood or overwhelmed, what helps me most from you is…”",
+      "quote": "When one of you is upset, you deal with feelings and show care in very different ways."
      },
      "quiet": {
-      "body": "The charts show few strong emotional links between you. Depth of feeling often comes from what you live through together, not just from how you were born.",
-      "practice": "Remember together one small, unforgettable moment you shared, and each describe how it felt.",
-      "quote": "Your emotional bond is growing slowly."
+      "body": "When something bothers you, your first instinct is usually to deal with it yourself rather than unloading it onto the other person. That keeps your relationship steady and free of emotional drama. Because you are both so self-contained and polite with boundaries, though, you can sometimes keep each other at arm’s length; deeper closeness takes time and grows as you go through hard moments together and let your guard down.",
+      "practice": "Next time something leaves you slightly frustrated or unsure, try mentioning it to the other before you have neatly sorted it out on your own.",
+      "quote": "You each tend to sort through your feelings on your own, keeping your time together light and low-pressure."
      },
      "strong": {
-      "body": "You catch each other’s feelings, and when things are hard the other is often the first person you think of. That comfort needs saying out loud so it isn’t taken for granted.",
-      "practice": "This week, each tell the other once: “When you’re here, I feel…”.",
-      "quote": "Around each other, your hearts settle."
+      "body": "You are naturally sensitive to how the other is doing — when one of you is tired or weighed down by something, the other usually notices before a word is said. Being around each other makes it easy to let your guard down. Because you feel each other’s moods so keenly, though, one person’s bad day can easily bring the other down too. Keeping your own footing helps you support each other better.",
+      "practice": "Recall one small, specific thing the other did recently that made you feel looked after, and tell them about it.",
+      "quote": "You pick up on each other’s moods right away, and neither of you has to put on a brave face when you are together."
      }
     },
     "growth": {
      "friction": {
-      "body": "This relationship has a strong push, often carrying you both beyond your comfort zones. When the push gets to be too much, remember to give each other room to breathe.",
-      "practice": "This week, ask the other, “Is there anything you’d like me to push less on lately?”",
-      "quote": "You push each other, and sometimes wind each other up."
+      "body": "Each of you tends to see right through the excuses the other makes, pushing the other to face things they would rather brush aside. That honesty helps you both grow fast, but nobody wants to feel constantly corrected or pushed. Not every moment between you needs to be about self-improvement — knowing when to drop the critique and simply accept each other as you are gives the relationship room to breathe.",
+      "practice": "Once this week, when you spot the other slipping into a familiar habit you would normally point out, consciously let it pass without comment or advice.",
+      "quote": "You easily spot each other’s blind spots and push each other to improve, though it can be tiring if you never let up."
      },
      "quiet": {
-      "body": "The charts show few strong signals of pushing each other to grow. A relationship like this is more of a harbour — a place to rest after time out in the world.",
-      "practice": "Each share one way you want to grow this year, and ask how the other could support you.",
-      "quote": "Your growth can happen side by side."
+      "body": "There is very little pressure between you to critique, coach, or push each other to improve. Life outside demands plenty of effort already; around each other, you take one another as you are and offer a place to rest. When it comes to personal goals and self-improvement, you each pursue your own path at your own pace without needing to drag the other along.",
+      "practice": "Share one personal project or goal each of you is working on right now — not for advice, just so the other knows what you are up to and can cheer you on.",
+      "quote": "Neither of you is trying to fix or remould the other, so you can simply be yourselves when you are together."
      },
      "strong": {
-      "body": "What one of you has is what the other needs, and together you’re each more balanced. That complement also means learning from each other, not just leaning on each other.",
-      "practice": "Each write “Because of you, I’ve learned…”, then swap and read.",
-      "quote": "You help each other become more whole."
+      "body": "What one of you struggles with is often something the other handles with ease. Better still, you lend each other a hand naturally without making the other person feel small. Just be careful not to rely so completely on the other’s strong points that you stop trying yourself — pay attention to how they handle things, and let some of their strengths rub off on you.",
+      "practice": "Tell the other about one habit or way of handling things that you used to struggle with, but have gotten much better at since knowing them.",
+      "quote": "Your strengths complement each other well, and over time you both pick up new skills from being around the other."
      }
     },
     "rhythm": {
      "friction": {
-      "body": "One of you wants fast, the other slow; one wants to settle it, the other to keep looking. The practice isn’t changing each other but agreeing on a pace you can both live with.",
-      "practice": "Agree on one rule for big decisions — say, “we decide after sleeping on it” — and try it for a month.",
-      "quote": "Your rhythms run opposite — and nobody’s wrong."
+      "body": "When something comes up, the quicker one wants to settle it and get moving right away, easily growing impatient with delays; the slower one needs time to think things through and hates feeling rushed. Neither pace is wrong — speed gets things off the ground, and caution catches mistakes. Instead of pulling at each other to move at the same speed, build a time buffer into how you do things: let the faster one scout ahead, and let the slower one review and refine.",
+      "practice": "When a joint decision comes up, let the quicker one put the options on the table first, then agree on a clear time — say, tomorrow evening — to decide, with no nudging in between.",
+      "quote": "You decide and act at different speeds — one of you likes to move fast, while the other takes their time."
      },
      "quiet": {
-      "body": "The charts show no strong sync or clash in your rhythms. Keeping your own paces while holding some regular shared time is enough.",
-      "practice": "Agree on one fixed shared slot each week, and plan the rest separately.",
-      "quote": "It’s fine for your rhythms to run separately."
+      "body": "Your everyday rhythms neither match beat for beat nor clash with each other. Most of the time, you can comfortably get on with your own things without feeling the need to do everything in lockstep. As long as you agree clearly on the times when your schedules actually need to meet, leaving the rest of the day to each person’s own pace keeps things easy for both of you.",
+      "practice": "Spend an hour this week in the same room doing your own separate things — reading, working, or relaxing — and enjoy the ease of unforced company.",
+      "quote": "You each keep your own routine and pace, without getting in each other’s way."
      },
      "strong": {
-      "body": "You decide, act and rest at similar speeds, so living and working together takes little effort. Being in sync also means tensing up together — watch for each other’s tiredness.",
-      "practice": "Once a month, plan a half-day together with nothing on it.",
-      "quote": "You move in step."
+      "body": "From how quickly you make up your minds and run errands to the moment at a gathering when you are both ready to head home, you move at a very similar speed. Living or working together feels smooth because nobody feels rushed and nobody is left waiting. The only downside is that two people moving at the same tempo can easily overwork together or put off the same chore together, so someone needs to keep an eye on the time now and then.",
+      "practice": "Notice whether the two of you have been non-stop busy lately or putting something off together — and either set aside an afternoon to rest, or take half an hour to clear that task side by side.",
+      "quote": "Whether you are getting things done or taking a break, your everyday paces match naturally."
      }
     },
     "values": {
      "friction": {
-      "body": "On some important things your priorities differ, and you can talk past each other. The difference isn’t the problem — leaving it unspoken is.",
-      "practice": "Pick one thing you disagree on, and each finish the sentence, “This matters to me because…”.",
-      "quote": "You value different directions."
+      "body": "Looking at the same situation, one of you may care most about stability and certainty while the other wants freedom and fresh possibilities; or one focuses on efficiency and results while the other cares more about how people feel along the way. What looks like an argument over a small practical detail is usually a clash between these deeper priorities. You do not need to convert each other — once you understand what the other person is most worried about losing, it becomes much easier to find a middle ground.",
+      "practice": "Pick one issue where you lean different ways, set solutions aside for five minutes, and each answer: “If we do it entirely your way, what I’m most worried about is…”",
+      "quote": "When making a choice, you often care about different things and put them in a different order."
      },
      "quiet": {
-      "body": "The charts show few strong value links. Many shared directions form slowly through one concrete choice after another.",
-      "practice": "Next time you choose something together, each name what matters most to you first, then talk it through.",
-      "quote": "Your values will line up through living together."
+      "body": "Your priorities neither match completely nor clash head-on. That gives your relationship plenty of breathing room: each of you can care about your own interests and standards without needing the other to follow suit. When a decision does involve both of you, there is no need to debate big principles — simply working things out case by case is enough.",
+      "practice": "Next time you are making a shared plan, each name the single requirement you care about most, and stay flexible on the rest.",
+      "quote": "Even when you care about different things in life, you can easily respect each other’s ways and get along well."
      },
      "strong": {
-      "body": "On things that matter, you often end up on the same side without explaining. That ease makes shared decisions lighter — and it’s worth checking now and then that you still agree.",
-      "practice": "Each write down the three things that matter most over the next three years, and compare the overlap.",
-      "quote": "You care about very similar things."
+      "body": "From everyday choices about time and money to deeper principles about how to treat people and get things done, you care about very similar things. You rarely have to argue over basic priorities, which makes joint decisions straightforward. The only catch is that when two people look at a problem from the exact same angle, they tend to miss the exact same blind spots — so on big decisions, it helps to ask for an outside view.",
+      "practice": "Look back at a choice you made together recently and ask: knowing what we know now, would we still choose the same way, or did we both overlook something?",
+      "quote": "You see eye to eye on what is worth taking seriously and what can be let go."
      }
     }
    },
    "scripts": {
     "closeness_vs_space": {
-     "practice": "Agree that whoever needs space says when they’ll be back, and whoever feels uneasy says so directly.",
-     "scene": "Under pressure, one of you moves closer for reassurance and the other steps back for space. The more one chases, the more the other retreats — and the other way round.",
+     "practice": "Make a two-part pact: the one stepping back always offers reassurance and a return time before disappearing, and the one feeling uneasy asks for a quick “we’re okay” straight out instead of testing the waters.",
+     "scene": "When life gets heavy or tense, you recharge in opposite ways. One of you reaches out for connection to feel steady again; the other needs to unplug and retreat into their own corner. The further one pulls back, the harder the other reaches in — and the tighter the knot gets.",
      "sides": {
       "closer": {
-       "inner": "When the other pulls back, I start worrying I did something wrong, so I want reassurance even more.",
-       "say": "“I’m feeling a bit uneasy — could you just tell me we’re okay?”"
+       "inner": "When you suddenly go quiet and distant, my mind starts spinning stories that something’s wrong between us. I’m not trying to crowd you — I just need to know we’re all right.",
+       "say": "“I’m feeling a bit wobbly because you’re quiet — just tell me we’re good, and I’ll happily leave you to have your space.”"
       },
       "spacer": {
-       "inner": "I need some space to come back to myself, and the harder I’m chased, the more I want to hide.",
-       "say": "“I need an hour on my own, and then I’ll come and find you.”"
+       "inner": "My battery is just flat — it’s not about you at all. But when you keep coming after me for a reaction, I feel suffocated and have nothing left to give.",
+       "say": "“We’re completely fine, I promise. I’m just running on empty today — give me an hour to myself to recharge, and then I’ll come and find you.”"
       }
      },
-     "title": "Closeness or space"
+     "title": "Reaching in, pulling back"
     },
     "control_vs_yield": {
-     "practice": "Once a month, check together: of recent decisions, which ones did each of you lead?",
-     "scene": "On one theme, the same person always decides and the other goes along, and small grievances pile up over time.",
+     "practice": "Ban the phrase “I don’t mind” for a week: the one who usually leads holds back their own preference until the other has spoken first, and the one who usually yields practises naming even a small preference out loud.",
+     "scene": "Without either of you meaning to, you’ve fallen into a set pattern: one of you naturally takes the wheel, and the other says “I don’t mind, up to you.” On the surface it looks effortless, until all those unspoken preferences quietly pile up into resentment.",
      "sides": {
       "leads": {
-       "inner": "I just want things done well; I hadn’t noticed the other has been giving way all along.",
-       "say": "“What’s your view on this? I’d like to hear what you really think.”"
+       "inner": "I step in and decide because I want things sorted and you never seem to mind — I genuinely didn’t realise you were biting your tongue to keep the peace.",
+       "say": "“I realise I’m always the one calling the shots here. I’m biting my tongue this time — don’t say ‘easy either way’, tell me what you’d actually like.”"
       },
       "yields": {
-       "inner": "Speaking up feels like it’ll cause a fight, so I go along — though I see it differently inside.",
-       "say": "“This time I’d like to try it my way.”"
+       "inner": "You always seem so sure of what you want that pushing back feels like more trouble than it’s worth. So I go along with it — and then quietly feel like there’s no room for me here.",
+       "say": "“Usually I just go with the flow, but I actually do care about this one. Can we try it my way this time?”"
       }
      },
-     "title": "Lead or follow"
+     "title": "One drives, the other goes along"
     },
     "decision_pace": {
-     "practice": "Agree that big decisions wait a night, and set a specific time for the answer.",
-     "scene": "When a big decision comes up, one of you knows right away and the other needs time for the feelings to settle. One feels rushed; the other feels held back.",
+     "practice": "Separate first impressions from the final call: the faster one shares where they’re leaning straight away, the slower one names a time they’ll come back with an answer, and in between, nobody nudges.",
+     "scene": "Something comes up that needs a decision. One of you knows where you stand almost instantly and wants it settled; the other needs to sit with it and see how it feels tomorrow. Soon one of you feels held up in mid-air, and the other feels backed into a corner.",
      "sides": {
       "fast": {
-       "inner": "I already know the answer, and waiting feels like being stuck while the moment slips away.",
-       "say": "“My gut says this. How long do you need? I can wait until then.”"
+       "inner": "My gut already knows. Leaving it up in the air drains me, and it feels like the window is closing while we sit here hesitating.",
+       "say": "“I know what I’d like to do, so I’ll put my vote on the table. Take the time you need — just tell me when we can revisit it.”"
       },
       "slow": {
-       "inner": "I’m not avoiding the decision; I’m just not clear yet. When I’m rushed I panic, and might agree to anything.",
-       "say": "“I need to sleep on it. By this time tomorrow, you’ll have my answer.”"
+       "inner": "I’m not stalling on purpose. Right now my head is noisy — if you push me for an answer on the spot, I’ll either say yes just to end the conversation and regret it later, or say no out of sheer self-defence.",
+       "say": "“I can’t tell how I feel about it yet. Let me sleep on it — I’ll give you a proper answer tomorrow morning.”"
       }
      },
-     "title": "Fast and slow decisions"
+     "title": "Decide now, or sleep on it"
     },
     "direct_clash": {
-     "practice": "Agree on a pause word; when either says it, you both stop for five minutes.",
-     "scene": "Over everyday things, when you talk fast you butt heads, and one sharp sentence brings on a sharper one.",
+     "practice": "When you’re both in a good mood, pick a slightly ridiculous code word for “brakes”. Whenever either of you uses it mid-argument, you both stop talking for five minutes and change rooms before trying again.",
+     "scene": "It usually starts over nothing much at all. You both have quick reflexes, so a slight edge in one voice draws an instant edge from the other. Within three sentences, you’re no longer talking about the original issue — you’re pushing back against how the other just spoke to you.",
      "sides": {
       "either": {
-       "inner": "I just want to be clear, but the other’s tone feels like a challenge, so I push harder too.",
-       "say": "“We’re both getting heated — let’s pause five minutes and pick this up again.”"
+       "inner": "I wasn’t trying to pick a fight; I just wanted to make my point. Then your tone felt like a shove, and everything in me automatically shoved back.",
+       "say": "“Hold on — we’re just sparring now. Let’s take five minutes to cool off and start that again.”"
       }
      },
-     "title": "Head-on collisions"
+     "title": "Sparks when the pace picks up"
     },
     "processing_style": {
-     "practice": "Agree on a rhythm: fifteen quiet minutes apart first, then talk together.",
-     "scene": "When something happens, one of you needs to think quietly first, the other needs to talk it out right away. One feels interrogated; the other feels shut out.",
+     "practice": "Label the moment before it starts: the outward processor says upfront, “I’m just thinking out loud — no reply needed yet,” or the inward processor takes twenty quiet minutes first with a clear promise of when they’ll come back to talk.",
+     "scene": "When something rattles you, one of you sorts it out by talking — tossing half-formed thoughts into the air to see what makes sense. The other has to go quiet first to untangle it inside. One feels like they’re talking to a brick wall; the other feels flooded and cornered.",
      "sides": {
       "inward": {
-       "inner": "I need to go over it inside first; talking right away only gets out half-formed thoughts.",
-       "say": "“I need a little time to think — can we talk tonight?”"
+       "inner": "My head is still full of static. I can’t hear my own thoughts while you’re talking at me, and if I speak before I’ve sorted it out inside, it’ll come out wrong.",
+       "say": "“I’m not shutting you out — I just need half an hour of quiet to get my thoughts straight, and then I’m all yours.”"
       },
       "outward": {
-       "inner": "I think by talking, and the other’s silence makes me feel shut out.",
-       "say": "“I’d like to think out loud for a bit — you don’t have to respond yet.”"
+       "inner": "Thoughts stay tangled in my head until I hear myself say them out loud. What I’m saying right now is just a rough draft — when you go silent, it feels like you’ve walked out of the room.",
+       "say": "“I just need to think out loud for ten minutes to clear my head. You don’t need to fix it or have an answer ready.”"
       }
      },
-     "title": "Processing styles"
+     "title": "Think it through, or talk it out"
     },
     "same_element_rivalry": {
-     "practice": "Split decision rights by area, and agree in advance who decides what.",
-     "scene": "You’re so alike that you both have strong views on the same thing, and neither is keen to give way first.",
+     "practice": "Stop sharing the same steering wheel: either divide the turf clearly so each of you owns different areas, or take turns being fully in charge while the other sits back without back-seat driving.",
+     "scene": "You don’t clash here because you’re different — you clash because you’re cut from the same cloth. Like two head chefs in one small kitchen, you both have strong instincts on the exact same turf, and neither is wired to take a back seat.",
      "sides": {
       "either": {
-       "inner": "I know the other gets me, so I’d rather they be the one to give way.",
-       "say": "“Let’s go with yours this time, and I’ll decide next time.”"
+       "inner": "I know exactly how this should be done, and biting my tongue while you do it differently goes against every bone in my body — besides, you’re just like me, so why am I the one expected to bend?",
+       "say": "“We’re both too stubborn to share the steering wheel on this. Take the lead this time and I’ll stay out of your way — next one’s mine.”"
       }
      },
-     "title": "Too alike to yield"
+     "title": "Too alike to back down"
     },
     "structure_vs_flow": {
-     "practice": "Together, write a list of three must-keeps and the parts that can change.",
-     "scene": "Over plans, schedules and deadlines, one of you wants to settle things early and the other wants to keep room to move.",
+     "practice": "Agree on the bones and protect the gaps: lock in the two or three non-negotiable anchors early so the planner can rest easy, and deliberately ring-fence pockets of unscheduled time where nothing gets booked.",
+     "scene": "Whether it’s a weekend away or a shared project, one of you can only relax once the key pieces are in the diary; the other feels boxed in by a fixed schedule and wants to see what the day brings. One feels left carrying all the admin; the other feels managed.",
      "sides": {
       "improviser": {
-       "inner": "A rigid plan suffocates me, and I’m afraid of missing chances that turn up.",
-       "say": "“I’m happy to agree a framework — just leave me some room to adjust.”"
+       "inner": "When every hour is spoken for days in advance, it stops feeling like life and starts feeling like a checklist. I need some blank space to breathe and follow the mood.",
+       "say": "“Tell me which bits really matter to have settled now — let’s lock those in, and keep a big pocket of time with nothing planned.”"
       },
       "planner": {
-       "inner": "Until it’s settled, it hangs over me and I can’t relax.",
-       "say": "“Let’s lock in the one or two biggest things and keep the rest flexible.”"
+       "inner": "I’m not trying to control everything — it’s just that unmade plans hum in the back of my head. Once the big pieces are sorted, I can actually switch off and enjoy myself.",
+       "say": "“Let’s just nail down the one or two things that actually need booking so I can relax, and leave the rest of the time completely open.”"
       }
      },
-     "title": "Plan or flow"
+     "title": "Lock it in, or see how it goes"
     },
     "who_speaks_first": {
-     "practice": "On important matters, agree that one of you invites the other’s view first — and take turns.",
-     "scene": "Something’s stuck: one of you is waiting to be asked before offering a view, the other is waiting for a move or a question first. So both stay silent.",
+     "practice": "If you’re the one who usually jumps in, make “What do you see here?” your first move before acting. If you’re the one who waits, knock on the door first: ask if they’d like your take before giving it.",
+     "scene": "You’re looking at the same problem. One of you already sees what’s going on, but holds back until genuinely asked; the other either charges ahead alone or assumes that anyone with an opinion would just speak up. One ends up feeling overlooked, the other feels left to carry the ball alone.",
      "sides": {
       "initiates": {
-       "inner": "I’m waiting for a signal — or I’ve already moved ahead without thinking to say so.",
-       "say": "“What do you think? I’d really like your read on this.”"
+       "inner": "When I have a thought, I just say it — so when you’re quiet, I assume you don’t mind either way, or that I should just get on with it.",
+       "say": "“I’m already running ahead with this — stop me for a second. What are you seeing that I’m missing?”"
       },
       "waits": {
-       "inner": "I actually see it clearly, but when I speak up unasked it often doesn’t land.",
-       "say": "“I have some thoughts on this — would you like to hear them?”"
+       "inner": "I can see where this is heading, but I know from experience that if I offer my view before you’re actually open to it, it either bounces right off or sounds like criticism.",
+       "say": "“I’ve got a few thoughts on this — are you in a place to hear them right now?”"
       }
      },
-     "title": "Who speaks first"
+     "title": "Waiting to be asked, forgetting to ask"
     }
    }
   }
@@ -877,7 +878,7 @@
     "table": "Table"
    },
    "pro": "Pro",
-   "proHint": "Pro mode: show more detail",
+   "proHint": "Pro view: shows finer chart details and calculation notes",
    "replay": "Replay drawing",
    "sections": {
     "label": "Sections",
@@ -887,15 +888,15 @@
    },
    "now": "Now",
    "nowShort": "NOW",
-   "degradedTitle": "Some results need a birth time",
-   "degradedNote": "Parts that depend on the birth hour are drawn dashed. Add a birth time and everything recalculates.",
+   "degradedTitle": "Part of this chart needs a birth time",
+   "degradedNote": "Anything that shifts with the hour of birth is drawn in dashed lines. Add your birth time and the chart will recast itself.",
    "timeSensitive": "Depends on birth time",
-   "sensitiveValues": "Within your birth-time window this could be: {values}",
-   "stableWithin": "Unchanged within {minutes} min of the birth time",
+   "sensitiveValues": "Within your birth-time range, this could be: {values}",
+   "stableWithin": "Unchanged within {minutes} min either side of your birth time",
    "unavailable": "Not available",
    "notAvailableNoTime": "Needs a birth time",
-   "readingSoon": "The cross-system reading appears here once the resonance engine is connected; below are this chart’s key points.",
-   "engineFacts": "All values below are computed by the chart engine",
+   "readingSoon": "The full cross-system reading will appear here once ready; in the meantime, here are the essentials from this chart.",
+   "engineFacts": "Every figure below is calculated directly from the ephemeris and calendar rules",
    "computedBy": "Engine {engine} · ephemeris {ephemeris} · tz database {tzdb}",
    "close": "Close",
    "yes": "Yes",
@@ -908,29 +909,29 @@
    "listSep": ", "
   },
   "systemStatus": {
-   "sex_required": "Needs a sex for calculation: choose female or male in the birth details.",
-   "year_only": "This system cannot be cast from a birth year alone.",
-   "no_birth_time": "Needs a birth time.",
-   "not_supported": "This parameter combination is not supported yet.",
-   "error": "This system could not be calculated ({code})."
+   "sex_required": "This tradition casts differently for female and male charts — please add a sex in your birth details.",
+   "year_only": "A birth year alone isn’t enough to cast this chart — please add the month and day.",
+   "no_birth_time": "A birth time is needed to cast this chart.",
+   "not_supported": "This combination of school and chart settings isn’t supported yet.",
+   "error": "Something went wrong while casting this chart ({code})."
   },
   "degrade": {
    "noBirthTime": "No birth time",
-   "threePillarsOnly": "Three pillars only — estimated from year, month and day",
+   "threePillarsOnly": "Three pillars only — reckoned from year, month and day",
    "luckStartApproximate": "Luck-pillar start is approximate",
-   "sexUnknown": "No sex for calculation — luck pillars shown in both directions",
+   "sexUnknown": "Sex not specified — luck pillars are shown in both forward and backward order",
    "noBirthHour": "No birth hour",
    "yearOnly": "Birth year only",
    "birthTimeUnknown": "No birth time",
    "birthDateUnknown": "No birth date",
-   "moonNakshatraVaries": "The Moon changes nakshatra during this day",
-   "moonSignVaries": "The Moon changes sign during this day",
-   "highLatitudeAscendant": "The Ascendant is unstable at this latitude",
-   "highLatitudeHouseFallback": "This house system is undefined at this latitude; Porphyry is used instead",
+   "moonNakshatraVaries": "The Moon crosses into a new nakshatra during this day",
+   "moonSignVaries": "The Moon moves into a new sign during this day",
+   "highLatitudeAscendant": "At this high latitude, the Ascendant shifts rapidly with small changes in time",
+   "highLatitudeHouseFallback": "This house system cannot divide houses at such a high latitude; Porphyry houses are used instead",
    "chironOutOfRange": "Chiron is outside the ephemeris range",
    "noTime": "No birth time",
-   "noName": "No name given — name numbers are not calculated",
-   "noLetters": "The name could not be transliterated into letters"
+   "noName": "No name entered — name numbers are omitted",
+   "noLetters": "This name could not be converted into Latin letters for numerology"
   },
   "stem": {
    "jia": "Jia",
@@ -1170,7 +1171,7 @@
    },
    "dayMaster": "Day Master",
    "dayMasterSex": "Day Master · {sex}",
-   "tableLabel": "Four Pillars: {pillars}",
+   "tableLabel": "Four Pillars of BaZi: {pillars}",
    "foot": "{clock} · {hour} hour · conception {taiYuan} · life palace {mingGong} · body palace {shenGong}",
    "footNoTime": "Birth hour unknown · year, month and day pillars only · conception {taiYuan}",
    "clock": {
@@ -1179,10 +1180,10 @@
     "wallClock": "Clock time {time}"
    },
    "fivePhasesTitle": "Five Phases",
-   "fivePhasesLabel": "Five Phases cycle and strength: {values}",
+   "fivePhasesLabel": "Five Phases balance and cycle: {values}",
    "fivePhasesCaptionOuter": "Ring: generating",
    "fivePhasesCaptionInner": "Star: controlling",
-   "fivePhasesFoot": "Weighted by hidden stems and the month’s season. {dominant} is strongest; {missing}.",
+   "fivePhasesFoot": "Weighed across hidden stems and the season of birth: {dominant} is strongest, with {missing}.",
    "missingNone": "all five present",
    "missingSome": "{phases} missing",
    "judgementTitle": "Assessment · rule engine",
@@ -1200,13 +1201,13 @@
    "patternRevealed": "main qi revealed",
    "patternNotRevealed": "main qi not revealed",
    "patternBasis": "{pillar} {role} {stem}",
-   "reviewNote": "Assessments are pending review by a BaZi consultant before launch",
+   "reviewNote": "Strength, structure and favourable elements are initial rule-engine assessments, currently being reviewed by our BaZi consultants",
    "luckTitle": "Luck pillars · {yinYang} {sex}, {direction}, from age {age}",
-   "luckTitleNoSex": "Luck pillars · no sex for calculation",
+   "luckTitleNoSex": "Luck pillars · sex not specified",
    "luckForward": "forward",
    "luckBackward": "backward",
    "luckAlternative": "{sex} · {direction}",
-   "luckStart": "Starts {date} (age {age})",
+   "luckStart": "Luck pillars begin {date} (age {age})",
    "annualTitle": "{dayun} luck · annual pillars",
    "annualLoading": "Calculating annual pillars…",
    "luckLabel": "Luck pillar timeline: {list}",
@@ -1221,8 +1222,8 @@
    "interactionItem": "{kind}: {members}",
    "interactionTransforms": "transforms to {element}",
    "readingDayMaster": "Day Master {stem} {element}, {strength}.",
-   "readingPattern": "{pattern}; favourable elements by {method}: {favorable}; unfavourable: {unfavorable}.",
-   "readingLuck": "Current luck pillar {dayun} ({tenGod}); this year {liunian} ({tenGodYear})."
+   "readingPattern": "Structure: {pattern}. By the {method} principle, {favorable} is favourable and {unfavorable} unfavourable.",
+   "readingLuck": "Currently in the {dayun} luck pillar ({tenGod}), with {liunian} ({tenGodYear}) as the annual pillar."
   },
   "sign": {
    "Aries": "Aries",
@@ -1329,13 +1330,13 @@
    "night": "night chart"
   },
   "west": {
-   "wheelLabel": "Natal chart wheel: Ascendant {asc}, Sun {sun}, Moon {moon}",
-   "wheelLabelNoTime": "Natal chart wheel (no birth time, so no houses or Ascendant): Sun {sun}, Moon {moon}",
+   "wheelLabel": "Western natal chart: Ascendant {asc}, Sun {sun}, Moon {moon}",
+   "wheelLabelNoTime": "Western natal chart (birth time unknown; houses and Ascendant omitted): Sun {sun}, Moon {moon}",
    "foot": "Tropical zodiac · {houseSystem} · {node} · {sect}",
-   "footNoTime": "Tropical zodiac · birth time unknown: no houses, angles or Ascendant; the Moon is shown at local noon",
+   "footNoTime": "Tropical zodiac · birth time unknown: houses, angles and Ascendant are omitted, with the Moon placed at local noon",
    "nodeTrue": "true node",
    "nodeMean": "mean node",
-   "ascStable": "Ascendant {deg} · stays in sign for {minutes} min of the birth time",
+   "ascStable": "Ascendant {deg} · stays in this sign within ±{minutes} min of your birth time",
    "segments": {
     "planets": "Planets",
     "aspects": "Aspect grid",
@@ -1359,22 +1360,27 @@
    "houseN": "House {n}",
    "applying": "applying",
    "separating": "separating",
-   "aspectsFoot": "Numbers are orbs in degrees. Blue = harmonious, red = tense, gold = conjunction; Pro mode adds minor aspects.",
-   "patternMembers": "Members: {members}",
+   "aspectsFoot": "Numbers in the grid show the orb in degrees. Blue marks harmonious aspects, red marks tension, and gold marks conjunctions; switch to Pro view for minor aspects.",
+   "patternMembers": "Bodies involved: {members}",
    "patternApex": "Apex: {apex}",
-   "patternNone": "This chart forms no classic aspect pattern.",
+   "patternNone": "No major aspect patterns (such as a Grand Trine or T-Square) are formed in this chart.",
    "legendHarmony": "Harmonious",
    "legendTension": "Tense",
    "legendConjunction": "Conjunction",
    "balanceTitle": "Elements and modes",
    "dominants": "{element} · {modality} · {planet}; chart ruler {ruler}",
-   "moonPhase": "Moon phase: {phase}",
+   "moonPhase": "Natal Moon phase: {phase}",
    "aspectsLabel": "Aspect grid: {count} aspects",
-   "readingSun": "Sun in {sign}{house}, Moon in {moonSign}, {asc} rising.",
-   "readingSunNoTime": "Sun in {sign}, Moon in {moonSign} (no birth time, so no Ascendant).",
-   "readingPatterns": "Patterns: {patterns}.",
+   "readingSun": "Sun in {sign}{house}, Moon in {moonSign}, with {asc} rising.",
+   "readingSunNoTime": "Sun in {sign}, Moon in {moonSign} (birth time unknown, so Ascendant and houses are omitted).",
+   "readingPatterns": "Aspect patterns: {patterns}.",
    "dominantsLabel": "Dominants",
    "moonPhaseLabel": "Moon phase"
+  },
+  "cite": {
+   "luckStart": "luck pillars from age {age}",
+   "westAngles": "Auxiliary Angles",
+   "westHemispheres": "Hemisphere Balance"
   },
   "ziweiPalace": {
    "ming": "Life",
@@ -1535,7 +1541,7 @@
     "decade": "Decade {range}",
     "annual": "Year {ganzhi}"
    },
-   "gridLabel": "Zi Wei Dou Shu twelve palaces: Life palace in {ming}, {stars}",
+   "gridLabel": "Zi Wei Dou Shu twelve palaces: Life Palace in {ming}, {stars}",
    "centerSex": "{yinYang} {sex} · {fiveElements}",
    "centerStars": "Life star {soul} · body star {body}",
    "centerBirth": "{year} year · {date} · {hour} hour",
@@ -1543,14 +1549,14 @@
    "body": "Body",
    "selected": "{palace}",
    "triLines": "Gold lines: the three-sided and opposite palaces",
-   "emptyPalace": "No major star here — read the opposite palace’s stars.",
+   "emptyPalace": "There is no major star in this palace — read it through the stars in the opposite palace.",
    "starsLine": "Major stars: {stars}",
    "minorLine": "Minor stars: {stars}",
    "adjLine": "Other stars: {stars}",
    "decadeLine": "Decade ages {range} · {ganzhi} · life stage {stage}",
-   "foot": "{school} · {leap} · birth-year transformations: {hua} · purple frame = current decade",
+   "foot": "{school} · {leap} · birth-year transformations: {hua} · purple frame marks the current decade",
    "huaItem": "{star} {hua}",
-   "selectHint": "Select any palace to see its three-sided and opposite palaces",
+   "selectHint": "Select any palace to highlight its three-sided and opposite palaces",
    "tableColumns": {
     "palace": "Palace",
     "ganzhi": "Stem-branch",
@@ -1560,8 +1566,8 @@
     "decade": "Decade",
     "stage": "Stage"
    },
-   "noHour": "Without the birth hour the Life palace cannot be placed — Zi Wei Dou Shu needs at least the double-hour.",
-   "readingMing": "Life palace in {branch} with {stars}; body palace in {body}.",
+   "noHour": "Zi Wei Dou Shu places the Life Palace by the hour of birth — please add a birth time (at least the two-hour period).",
+   "readingMing": "Life Palace in {branch} ({stars}); Body Palace in {body}.",
    "readingNoStars": "no major star",
    "soulBodyLabel": "Life / body star",
    "huaLabel": "Birth-year transformations"
@@ -1670,18 +1676,18 @@
     "south": "South Indian"
    },
    "chartLabel": "{style} {varga} chart: Lagna {lagna}",
-   "foot": "{style} · sidereal zodiac · {ayanamsa} {deg} · whole-sign houses · numbers are sign numbers",
-   "footSouth": "South Indian · sidereal zodiac · {ayanamsa} {deg} · signs fixed, Lagna marked with a diagonal",
-   "noLagna": "No birth time: Lagna and houses are unavailable; planets are arranged by sign only.",
+   "foot": "{style} style · sidereal zodiac · {ayanamsa} ({deg}) · whole-sign houses · numbers mark the zodiac signs",
+   "footSouth": "South Indian style · sidereal zodiac · {ayanamsa} ({deg}) · signs stay in fixed boxes, with a diagonal marking the Lagna",
+   "noLagna": "Without a birth time, the Lagna and houses cannot be set; planets are shown by sign alone.",
    "nakshatraTitle": "Moon nakshatra",
    "nakshatraName": "{latin} ({name}) · pada {pada}",
    "nakshatraBody": "Moon in {sign} {deg} · ruled by {lord}",
-   "nakshatraRing": "Ring of 27 nakshatras: the Moon is in number {n}",
+   "nakshatraRing": "Ring of 27 nakshatras: Moon in mansion {n}",
    "dashaTitle": "Vimshottari Dasha",
-   "dashaCurrent": "Now: {maha} Mahadasha ({mahaStart}–{mahaEnd}) · {antar} Antardasha ({antarStart}–{antarEnd})",
+   "dashaCurrent": "Current period: {maha} Mahadasha ({mahaStart}–{mahaEnd}) · {antar} Antardasha ({antarStart}–{antarEnd})",
    "dashaLabel": "Vimshottari Dasha timeline",
    "yogaTitle": "Yogas",
-   "yogaNone": "No major yoga is formed.",
+   "yogaNone": "No major classical yogas are formed in this chart.",
    "yogaCancelled": "(cancelled)",
    "yogaDetail": "{planets} · house {houses}",
    "lagna": "Lagna",
@@ -1698,8 +1704,8 @@
     "end": "End"
    },
    "ashtakavargaTitle": "Ashtakavarga totals",
-   "readingLagna": "Lagna {lagna}, Moon in {moon}, nakshatra {nakshatra} pada {pada}.",
-   "readingDasha": "Currently in {maha} Mahadasha, {antar} Antardasha.",
+   "readingLagna": "Lagna in {lagna}, Moon in {moon}, in the nakshatra of {nakshatra} (pada {pada}).",
+   "readingDasha": "Currently running {maha} Mahadasha and {antar} Antardasha.",
    "ayanamsaLabel": "Ayanamsa"
   },
   "hdType": {
@@ -1781,8 +1787,8 @@
    "perspective": "Perspective"
   },
   "hd": {
-   "graphLabel": "Energy Blueprint bodygraph: 64 gates, 36 channels; defined channels {channels}",
-   "graphLabelNone": "Energy Blueprint bodygraph: 64 gates, 36 channels; no defined channels",
+   "graphLabel": "Energy Blueprint bodygraph (64 gates, 36 channels): defined channels {channels}",
+   "graphLabelNone": "Energy Blueprint bodygraph (64 gates, 36 channels): no defined channels",
    "design": "Design",
    "personality": "Personality",
    "legendPersonality": "Personality (conscious)",
@@ -1804,7 +1810,7 @@
    },
    "profileValue": "{profile} {a} / {b}",
    "crossValue": "{angle} · {gates}",
-   "foot": "Design moment = Sun 88° earlier · true node · 13 bodies × 2",
+   "foot": "Design moment calculated at 88° of solar arc before birth · true node · 13 celestial bodies × 2",
    "columns": {
     "body": "Body",
     "design": "Design",
@@ -1813,8 +1819,8 @@
     "center": "Center",
     "side": "Activated by"
    },
-   "noTimeType": "No birth time: Type, authority, profile and cross need the birth time.",
-   "readingType": "{type}; strategy: {strategy}; inner authority: {authority}; profile {profile}."
+   "noTimeType": "Birth time unknown: your Type, Inner Authority, Profile and Incarnation Cross can shift during the day and need a birth time to be fixed.",
+   "readingType": "{type} (profile {profile}), with {strategy} as your strategy and {authority} as your inner authority."
   },
   "numberKind": {
    "lifePath": "Life Path",
@@ -1861,7 +1867,7 @@
   "numerology": {
    "eyebrow": "LO SHU",
    "title": "Lo Shu grid",
-   "gridLabel": "Lo Shu grid digit counts: {counts}",
+   "gridLabel": "Lo Shu grid digit distribution: {counts}",
    "foot": "{date} → {digits} · {missing} · gold lines are connected planes",
    "missing": "missing {list}",
    "missingNone": "all nine present",
@@ -1869,13 +1875,13 @@
    "lineMissing": "missing {list}",
    "coreTitle": "Core numbers",
    "personalYear": "Personal Year {year}",
-   "nameFoot": "Name as {scheme} {latin}, Pythagorean table: {letters} = {value}",
+   "nameFoot": "Name reckoned from {scheme} ({latin}) using the Pythagorean table: {letters} = {value}",
    "scheme": {
     "auto": "auto-detected",
     "latin": "Latin letters",
     "pinyin": "pinyin"
    },
-   "noName": "Add a name to calculate Expression, Soul Urge and Personality.",
+   "noName": "Add your name to calculate your Expression, Soul Urge and Personality numbers.",
    "columns": {
     "number": "Number",
     "count": "Count",
@@ -1884,7 +1890,7 @@
     "kind": "Core number",
     "value": "Value"
    },
-   "readingCore": "Life Path {lifePath} ({meaning}), Expression {expression}."
+   "readingCore": "Life Path {lifePath} ({meaning}), with an Expression number of {expression}."
   },
   "cogFunction": {
    "Ni": "Introverted Intuition",
@@ -1935,8 +1941,8 @@
     "enneagram": "Enneagram",
     "bigFive": "Big Five"
    },
-   "emptyTitle": "No assessment results yet",
-   "emptyBody": "Assessments describe how you see yourself right now — set them beside your charts. Answers stay on this device.",
+   "emptyTitle": "No questionnaires completed yet",
+   "emptyBody": "Questionnaires reflect how you see yourself right now — an interesting mirror to hold up beside your birth charts. Your answers stay on this device.",
    "instruments": {
     "quick12": "Quick estimate · 12 items",
     "types16": "16 Types · 48 items",
@@ -1952,17 +1958,17 @@
    "skip": "Skip",
    "submit": "Submit and score",
    "cancel": "Cancel",
-   "loadingItems": "Loading items…",
-   "quickNote": "Twelve items give only a first estimate with low confidence; the full assessments are more reliable.",
+   "loadingItems": "Loading questions…",
+   "quickNote": "The 12-question quick version gives only a rough sketch — take the full questionnaires for a steadier, more reliable profile.",
    "typeCard": "{code} · {name}",
    "axesLabel": "16 Types: four axis sliders",
    "stackTitle": "Cognitive function stack",
-   "stackFoot": "{items} items · our own question bank on Jung’s eight functions (no trademarked names)",
-   "enneagramLabel": "Enneagram figure, type {type}, wing {wing}",
+   "stackFoot": "{items} questions · independently written around Jung’s eight cognitive functions (unaffiliated with trademarked tests)",
+   "enneagramLabel": "Enneagram diagram: core type {type}, wing {wing}",
    "enneagramCard": "{label} · {instinct}",
-   "enneagramArrows": "Growth {type}→{growth} (green line); stress {type}→{stress} (red dashed line)",
+   "enneagramArrows": "Growth line {type} → {growth} (solid green) · stress line {type} → {stress} (dashed red)",
    "bigFiveTitle": "Big Five percentiles",
-   "normLabel": "International norm percentiles (Johnson 2014 IPIP-NEO, N = {n})",
+   "normLabel": "Percentiles against international norms (Johnson 2014 IPIP-NEO, N = {n})",
    "normProvisional": "Short-form norms are provisional",
    "domainRow": "{domain} {value}%",
    "takeMore": "Take another assessment",
@@ -2046,14 +2052,14 @@
   },
   "iching": {
    "question": "Your question",
-   "questionPlaceholder": "Write what you want to ask (optional; it stays on this page)",
+   "questionPlaceholder": "Write the question on your mind (optional — stays on this page)",
    "method": {
     "label": "Casting method",
     "coins": "Three coins · toss six times yourself",
     "time": "Cast by the moment"
    },
    "toss": "Toss line {n}",
-   "tossHint": "Each tap tosses three coins (device randomness) and builds the hexagram from the bottom up.",
+   "tossHint": "Each tap tosses three coins using your device’s own randomness, building the six lines from the bottom up.",
    "tossed": "{n} of 6 tossed",
    "coinBack": "Tails",
    "coinFace": "Heads",
@@ -2071,7 +2077,7 @@
     "time": "by the moment",
     "manual": "entered by hand"
    },
-   "foot": "{palace} palace, {stage} · self at {shi}, other at {ying} · void {kong}",
+   "foot": "{palace} palace ({stage}) · Self at {shi}, Other at {ying} · void {kong}",
    "lineRef": "{line} {relative}",
    "columns": {
     "position": "Line",
@@ -2082,28 +2088,28 @@
     "moving": "Moving"
    },
    "moving": "moving",
-   "hexLabel": "Hexagram {name}: from the bottom {lines}",
+   "hexLabel": "Hexagram {name}: lines from bottom to top — {lines}",
    "yang": "yang",
    "yin": "yin",
    "useNine": "All nines",
    "useSix": "All sixes",
-   "loadingText": "Loading the texts…",
-   "note": "A hexagram offers another angle on your situation — not a verdict.",
-   "placeNote": "Day and hour are reckoned for {place} (time zone and true solar time)."
+   "loadingText": "Loading judgment and line texts…",
+   "note": "A hexagram is a mirror for seeing your situation from another angle — never a fixed verdict.",
+   "placeNote": "Day and hour stems are reckoned for {place}, using its time zone and true solar time."
   },
   "capture": {
    "palmTitle": "Palm reading is captured in the app",
    "faceTitle": "Face reading is captured in the app",
-   "body": "Palm and face readings use your phone camera; lines, landmarks and proportions are recognised on the device, and the photo never leaves it or reaches our servers. The web does not capture photos.",
-   "selfOnly": "For yourself only — capturing someone else is not supported.",
-   "disclaimer": "These readings enter the synthesis only as low-weight observations, with no health, lifespan or fortune judgements.",
+   "body": "Palm and face readings are captured with your phone’s camera in the app. Lines, facial landmarks and proportions are recognised directly on your device — your photos never leave your phone or touch our servers. Photo capture isn’t available on the web.",
+   "selfOnly": "Palm and face readings are for your own profile only, and cannot be captured for others.",
+   "disclaimer": "Palm and face readings are only a light supporting reference alongside your charts, and never make claims about health or lifespan.",
    "cta": "Get the app"
   },
   "sensitivity": {
    "title": "Birth-time sensitivity",
-   "loading": "Scanning your birth-time window…",
-   "none": "Within the time range you gave, none of the main results change.",
-   "window": "Window: {window}",
+   "loading": "Checking what shifts across your birth-time range…",
+   "none": "Across the birth time range you entered, the main readings of your charts stay the same.",
+   "window": "Time range: {window}",
    "fieldRow": "{field}: {values}",
    "changeAt": "becomes {value} after {time}",
    "fields": {
@@ -2170,6 +2176,13 @@
   "report": "Report this link",
   "reportSubject": "Report an Armilla invitation link",
   "familyPageTitle": "Join a Family plan · Armilla",
-  "familyJoinBody": "Joining a Family plan needs an Armilla account, so open this invitation in the app: tap the button below if Armilla is installed; otherwise get the app, sign in and tap the invitation link again. The link works once, for 7 days."
+  "familyJoinBody": "Joining a Family plan needs an Armilla account, so open this invitation in the app: tap the button below if Armilla is installed; otherwise get the app, sign in and tap the invitation link again. The link works once, for 7 days.",
+  "eyebrowFamily": "FAMILY",
+  "eyebrowSixRings": "SIX SIDES",
+  "eyebrowSystems": "SYSTEMS",
+  "eyebrowDate": "DATE",
+  "eyebrowTime": "TIME",
+  "eyebrowPlace": "PLACE",
+  "eyebrowForCalculation": "FOR CALCULATION"
  }
 }

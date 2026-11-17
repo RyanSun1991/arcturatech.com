@@ -166,7 +166,7 @@ function readyView(view, inviter) {
   const ringsSec = h(
     'section',
     { 'aria-labelledby': 'rings-h' },
-    h('p', { class: 'eyebrow', 'aria-hidden': 'true', text: 'SIX RINGS' }),
+    h('p', { class: 'eyebrow', 'aria-hidden': 'true', text: t('site.eyebrowSixRings') }),
     h('h2', { id: 'rings-h', class: 'sub', text: t('client.pair.title') }),
     h(
       'div',
@@ -217,7 +217,7 @@ function readyView(view, inviter) {
       ? h(
           'section',
           { 'aria-labelledby': 'ir-sys-h' },
-          h('p', { class: 'eyebrow', 'aria-hidden': 'true', text: 'SYSTEMS' }),
+          h('p', { class: 'eyebrow', 'aria-hidden': 'true', text: t('site.eyebrowSystems') }),
           h('h2', { id: 'ir-sys-h', class: 'sub', text: t('client.inviteResult.systemsTitle') }),
           h('ul', { class: 'card ticks', 'data-testid': 'invite-result-systems' }, ...view.systems.map((x) => h('li', { text: t('client.inviteResult.systemsLine', { system: copy.system(x.system), count: x.findings }) }))),
         )

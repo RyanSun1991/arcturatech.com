@@ -22,7 +22,7 @@ function render() {
   }
   main.replaceChildren(
     ...[
-      h('header', { 'data-testid': 'family-join' }, h('p', { class: 'eyebrow', text: 'FAMILY' }), h('h1', { class: 'title', text: t('client.family.join.title') }), h('p', { text: t('client.family.join.confirmGeneric') })),
+      h('header', { 'data-testid': 'family-join' }, h('p', { class: 'eyebrow', text: t('site.eyebrowFamily') }), h('h1', { class: 'title', text: t('client.family.join.title') }), h('p', { text: t('client.family.join.confirmGeneric') })),
       inAppHint(t),
       h('div', { class: 'card' }, h('p', { text: t('site.familyJoinBody') }), openAppLink(t, `family/join/${token}`), storeBadges(t, currentLang(), 'family')),
     ].filter(Boolean),

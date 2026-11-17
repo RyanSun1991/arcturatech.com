@@ -64,6 +64,11 @@
             "comment": "account deletion (web page)"
           },
           {
+            "/": "/armilla/press*",
+            "exclude": true,
+            "comment": "press page and press pack (web page, files; WP-237)"
+          },
+          {
             "/": "/armilla/assets/*",
             "exclude": true,
             "comment": "static files"

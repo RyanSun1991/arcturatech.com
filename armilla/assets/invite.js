@@ -375,10 +375,10 @@ function formView(meta) {
     'section',
     { 'aria-labelledby': 'birth-h' },
     h('h2', { id: 'birth-h', class: 'sub', text: t('client.invite.birthTitle') }),
-    section('DATE', tc('date.label'), dateBox),
-    section('TIME', tc('time.label'), timeBox),
-    section('PLACE', tc('place.label'), placeHost, placeError),
-    section('FOR CALCULATION', tc('sex.label'), sexBox),
+    section(t('site.eyebrowDate'), tc('date.label'), dateBox),
+    section(t('site.eyebrowTime'), tc('time.label'), timeBox),
+    section(t('site.eyebrowPlace'), tc('place.label'), placeHost, placeError),
+    section(t('site.eyebrowForCalculation'), tc('sex.label'), sexBox),
   );
 
   // consents + submit

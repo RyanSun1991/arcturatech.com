@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="zh-Hans" data-title-zh-hans="删除璇玑账号与数据" data-title-zh-hant="刪除璇璣帳號與資料" data-title-en="Delete your Armilla account and data">
+<html lang="zh-Hans" data-title-zh-hans="删除您的璇玑账号与数据" data-title-zh-hant="刪除您的璇璣帳號與資料" data-title-en="Delete your Armilla account and data">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Delete your Armilla account and data · 删除璇玑账号与数据</title>
+  <title>Delete your Armilla account and data · 删除您的璇玑账号与数据</title>
   <meta name="description" content="How to delete your Armilla (璇玑) account and data — in the app or by email — what is deleted, what is kept and for how long. Armilla is developed by Arctura Technologies Inc.">
   <link rel="canonical" href="https://arcturatech.com/armilla/account/privacy">
   <meta name="theme-color" content="#EDEFF1" media="(prefers-color-scheme: light)">
@@ -18,8 +18,13 @@
 </head>
 <body>
 <!--
-  WP-116 · Account and data deletion page (Google Play "Delete account URL"; App Store 5.1.1(v)). Mirrors the in-app
-  flow of 04 §11.2 and the deletion rules of 03 §6.2 / §6.6 (WP-52). Keep it in step with privacy.html §10–§11.
+  Account and data deletion page — the page Google Play and the App Store link to (Delete account URL; App Store
+  5.1.1(v)). WP-116 first edition; WP-236 (2026-11-15) second edition: three languages, each written by Gemini 4
+  Hydrogen on its own (D-51 / D-64) from the facts in docs/store/privacy/app-privacy.md §0 (0.19 export and deletion,
+  0.18 retention) — now naming event photos, 形相 photos / readings / consent history, birth-time inference records
+  (and the registration kept after deleting an inference), and dispute records (kept without the account link; the
+  code sets no deletion date, and the page says so). The company is named with its e-mail only (D-66). Keep in step
+  with privacy.html §10–§11 and supabase/functions/account-delete.
 -->
 <a class="skip" href="#main"><span data-l="zh-Hans">跳到正文</span><span data-l="zh-Hant">跳到正文</span><span data-l="en">Skip to content</span></a>
 <header class="top">
@@ -44,163 +49,179 @@
 <!-- ======================================================================= zh-Hans -->
 <article class="prose" data-l="zh-Hans" lang="zh-Hans">
   <p class="eyebrow">ACCOUNT &amp; DATA DELETION</p>
-  <h1>删除璇玑账号与数据</h1>
-  <p class="doc-meta">璇玑（Armilla）· 开发者 Arctura Technologies Inc.</p>
+<h1>删除您的璇玑账号与数据</h1>
+<p class="doc-meta">Armilla (璇玑 / 璇璣) · 开发者：Arctura Technologies Inc.</p>
+<p>无论您决定停止使用璇玑，还是想先了解删除账号后哪些信息会被移除、哪些仅作合规保留，本页均为您逐一说明。您可以直接在应用内自助删除并立即生效；无法使用应用时，也可通过邮件申请删除。如果您只想清理部分内容，也可以保留账号并单独删除特定数据。</p>
 
-  <h2>在 App 里删除（推荐）</h2>
-  <ol class="steps">
-    <li>打开璇玑，进入 <strong>我 → 隐私</strong>。</li>
-    <li>如有需要，先点「导出我的数据」保存一份副本。</li>
-    <li>点「<strong>删除账号</strong>」。如果你在 App Store 或 Google Play 有订阅，会先提示你去商店取消——删除账号<strong>不会</strong>自动取消商店订阅；网页版订阅会被立即取消。</li>
-    <li>阅读删除范围，输入「删除」确认，点「永久删除账号」。需要联网；如果没有成功，什么都不会被删除，可以稍后重试。</li>
-  </ol>
-  <p>没有登录时，数据只在这台设备上：在 我 → 隐私 →「清除本机数据」即可全部清除。卸载 App 也会删除设备上的数据，但<strong>不会</strong>删除云端账号。</p>
+<h2>在应用内删除账号（推荐）</h2>
+<p>在应用内自助删除最为快捷，完成确认后立即生效：</p>
+<ol class="steps">
+<li><strong>（可选）先导出您的全部数据：</strong>打开「璇玑」，前往 <strong>我 → 隐私与数据 → 导出</strong>，在「<strong>导出我的数据</strong>」页面下载并保存一份完整的数据副本。</li>
+<li><strong>查看删除范围并处理订阅：</strong>前往 <strong>我 → 隐私与数据 → 删除</strong>，打开「<strong>删除账号</strong>」页面。如果您持有 <strong>App Store</strong> 或 <strong>Google Play</strong> 订阅，应用会提醒您先前往对应应用商店取消订阅——<strong>删除账号不会自动取消商店订阅</strong>。如果您使用的是网页版订阅（通过 Stripe 付款），系统会在删除账号时立即为您取消。</li>
+<li><strong>输入确认词并永久删除：</strong>在「<strong>删除账号</strong>」页面确认将被删除的内容，输入「<strong>删除</strong>」，再点击<strong>永久删除账号</strong>。此操作需要网络连接；如果未能成功提交，任何数据都不会被删除，您可以重新尝试。提交成功后，删除将<strong>立即生效，没有等待期</strong>。</li>
+</ol>
+<p><strong>如果您未登录账号（仅本机使用）：</strong>您的数据仅保存在当前设备上。前往 <strong>我 → 隐私与数据 → 清除本机数据</strong>，输入「<strong>清除</strong>」即可移除设备上的全部数据。直接卸载应用同样会移除本机上的数据，但<strong>不会删除云端账号</strong>。</p>
 
-  <h2>无法使用 App 时，用邮件申请</h2>
-  <p>请用你登录璇玑的邮箱发送邮件至 <a href="mailto:privacy@arcturatech.com?subject=%E5%88%A0%E9%99%A4%E6%88%91%E7%9A%84%E7%92%87%E7%8E%91%E8%B4%A6%E5%8F%B7">privacy@arcturatech.com</a>，标题写「删除我的璇玑账号」。如果你用 Apple 登录并隐藏了邮箱，请注明当时的登录方式。为保护你的账号，我们会先通过该邮箱确认是你本人，然后在 30 天内完成删除并回信告知。请不要在邮件里附上出生资料或恢复短语。</p>
+<h2>无法使用应用时，通过邮件申请删除</h2>
+<p>如果您已无法打开应用，可以通过邮件向 Arctura Technologies Inc. 提交删除申请：</p>
+<ol class="steps">
+<li><strong>发送删除请求邮件：</strong>使用您登录璇玑时所用的邮箱，写信至 <a href="mailto:privacy@arcturatech.com">privacy@arcturatech.com</a>，邮件主题请填写 <strong>Delete my Armilla account</strong>。如果您之前通过 Apple 登录并隐藏了自己的邮箱，请在邮件正文中说明您的登录方式。</li>
+<li><strong>邮箱身份确认：</strong>为保护账号安全，我们会先通过该邮箱地址向您核实请求确实由您本人发起。</li>
+<li><strong>完成删除并通知：</strong>确认无误后，我们会在 <strong>30 天内</strong>为您完成删除，并通过邮件通知您。</li>
+</ol>
+<p><strong>安全提示：</strong>请勿在邮件中附带您的出生信息或恢复短语（recovery phrase）。另请留意，通过邮件删除账号同样不会自动取消 App Store 或 Google Play 订阅，请记得自行前往对应应用商店取消。</p>
 
-  <h2>会删除什么</h2>
-  <ul>
-    <li>你的账号与登录信息；</li>
-    <li>全部档案（包括你为他人填写的档案）及出生资料、盘面与计算结果；</li>
-    <li>人生事迹、日志、占卜记录、测评分数、为他人代答的记录、「问璇玑」的对话与记忆、报告、头像；</li>
-    <li>你的设备登记与加密密钥；</li>
-    <li>你通过邀请共享给别人的资料会被撤回，对方那边的相关结果随之删除；</li>
-    <li>如果你是家庭方案的持有者，家庭解散，成员保留各自的数据但失去家庭会员。</li>
-  </ul>
-  <p>以上数据会立即从我们的在线数据库中删除；文件存储中的头像与报告随后经删除队列清除。备份中的副本随备份轮换过期。</p>
+<h2>删除账号后，哪些数据会被删除</h2>
+<p>账号删除后，您保存在我们实时数据库中的数据会<strong>立即清除</strong>；存放在存储服务中的文件（包括个人头像、PDF 报告、人生事迹照片与形相照片）会在随后立即进入删除队列并移除；系统备份中的副本则会随备份周期轮换而自动过期失效。具体包括：</p>
+<ul>
+<li><strong>账号与登录信息：</strong>您的璇玑账号及全部登录凭据。</li>
+<li><strong>所有档案与命盘数据：</strong>您建立的每一个档案（包括您为他人填写的档案），以及其中的出生信息、各体系命盘和计算引擎据此算出的全部结果。</li>
+<li><strong>人生事迹、日记与测评：</strong>人生事迹及其备注、<strong>人生事迹照片</strong>（以端到端加密形式存储）、日记与日常觉察记录、占卜记录、心理测评得分，以及您在「<strong>你眼中的 TA</strong>」中填写的关于他人的回答。</li>
+<li><strong>「问璇玑」、解读与报告：</strong>「<strong>问璇玑</strong>」的全部对话、星标收藏的回答以及「问璇玑」保留的记忆；已保存的 AI 解读（「<strong>我的解读</strong>」）与分析内容；以及各类报告。</li>
+<li><strong>形相数据与授权记录：</strong>所有<strong>形相（手相与面相）照片及其解读</strong>、您做的修正记录，以及您的形相授权同意历史记录。</li>
+<li><strong>出生时间推定记录：</strong>每次<strong>出生时间推定</strong>的加密记录，包括推定线索、您的回答、推定结果及 AI 给出的判断原因。</li>
+<li><strong>头像、设备与偏好设置：</strong>个人头像、已注册的设备信息与加密密钥，以及您的各项偏好设置。</li>
+<li><strong>通过邀请分享的资料：</strong>您通过邀请向他人分享的个人资料将被撤回，对方侧据此生成的相关结果会被删除，对方留存的您的资料副本会在 <strong>24 小时内</strong>删除。</li>
+<li><strong>家庭方案（Family plan）：</strong>如果您是家庭方案的订阅持有者，家庭群组随之结束——其他成员会保留各自的数据，但会失去家庭会员资格；如果您是家庭成员，则仅终止您本人的会员资格。</li>
+<li><strong>专业版（Pro）数据：</strong>客户档案、客户备注及标签会随账号一并删除。</li>
+</ul>
 
-  <h2>会保留什么，保留多久</h2>
-  <div class="table-scroll">
-    <table>
-      <thead><tr><th>保留的内容</th><th>原因</th><th>期限</th></tr></thead>
-      <tbody>
-        <tr><td>一次性购买的匿名账本（品类、商店、交易号、金额、币种、日期；不含你的身份）</td><td>税务与拒付处理</td><td>购买后 7 年</td></tr>
-        <tr><td>审计记录（去掉账号标识，只有动作代码与计数）</td><td>安全与合规</td><td>2 年</td></tr>
-        <tr><td>使用统计事件（去掉账号标识）</td><td>了解功能使用情况</td><td>25 个月</td></tr>
-        <tr><td>已处理的支付通知（去掉账号标识）</td><td>对账</td><td>180 天</td></tr>
-        <tr><td>一条删除记录（账号编号的哈希值与各类数据的条数）</td><td>证明删除已完成</td><td>与审计记录相同</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p>App Store 与 Google Play 保留的购买记录由 Apple 与 Google 依其政策管理。</p>
+<h2>哪些数据会被保留、原因及保留期限</h2>
+<p>以下少数记录因税务、法律或安全合规原因需要保留，且在账号删除后<strong>均已移除与您本人及账号的关联</strong>：</p>
+<div class="table-scroll"><table><thead><tr><th>保留的数据</th><th>保留原因</th><th>保留期限</th></tr></thead><tbody><tr><td>匿名化的一次性购买流水账（仅含商品类别、购买商店、交易编号、金额、币种与日期，不含您的身份信息）</td><td>税务合规与拒付（chargeback）处理</td><td>自购买之日起 7 年</td></tr><tr><td>网页端付款的支付争议（拒付）记录——包括争议编号与支付编号、状态、原因代码、金额、币种及相关日期（已解除与您账号的关联）</td><td>法律要求我们保留的支付记录</td><td>持续保留；目前尚未设定固定的删除日期</td></tr><tr><td>已移除账号标识的审计记录（仅含操作代码与次数）</td><td>系统安全与合规审计</td><td>2 年</td></tr><tr><td>已移除账号标识的使用统计事件</td><td>了解各项功能的使用情况</td><td>25 个月</td></tr><tr><td>已移除账号标识的已处理支付通知</td><td>财务对账</td><td>180 天</td></tr><tr><td>一条删除记录（仅含您账号编号的哈希值及已删除项目的数量）</td><td>证明删除操作已实际发生</td><td>与审计记录相同（2 年）</td></tr></tbody></table></div>
+<p>此外，通过 App Store 与 Google Play 产生的购买记录由 Apple 和 Google 各自保管，并遵循其各自的隐私政策。</p>
 
-  <h2>只删除部分数据</h2>
-  <ul>
-    <li>单条事迹、日志、档案、对话或记忆可以在 App 里直接删除。</li>
-    <li>停止共享：在对方的档案页选择「停止使用 TA 的资料」，或用邀请链接撤回你自己的资料；对方的出生资料会在 24 小时内删除。</li>
-    <li>关闭「使用数据」「研究数据授权」「AI 读取我的事迹」或「问璇玑的记忆」：我 → 隐私。</li>
-    <li>完全本地模式下选择「删除云端数据」，会删除云端账号但保留这台设备上的数据。</li>
-  </ul>
-  <p>更多说明见<a href="/armilla/privacy">隐私政策</a>。</p>
+<h2>只删除部分数据，而非注销整个账号</h2>
+<p>如果您不想注销整个账号，只想清理特定记录或停用部分云端功能，可以在应用内直接操作：</p>
+<ul>
+<li><strong>删除单项记录：</strong>在应用内，您可以单独删除某一条人生事迹（其附带的照片会一并删除）、单张照片、单条日记与日常觉察记录、单个档案、某段「<strong>问璇玑</strong>」对话、单条「问璇玑」记忆，或某份已保存的「<strong>我的解读</strong>」。</li>
+<li><strong>删除出生时间推定：</strong>删除单次<strong>出生时间推定</strong>会抹除该次推定的具体内容；系统仅保留一条“曾使用过该推定”的登记记录（包含日期、所使用的会员方案或购买项目及次数），该登记记录会在删除对应档案或删除整个账号时一并清除。</li>
+<li><strong>删除形相照片或解读：</strong>您可以单独删除某张<strong>形相</strong>照片或某次形相解读（删除解读时，仅被该次解读使用的照片也会随之删除）。撤回形相 AI 解读的授权同意后，还可一次性删除全部形相照片与解读。</li>
+<li><strong>停止共享资料：</strong>在对方的档案中点击「<strong>停止使用 TA 的资料</strong>」，或通过原邀请链接撤回您自己分享的资料；对应的出生资料会在 <strong>24 小时内</strong>删除。</li>
+<li><strong>关闭隐私与数据开关：</strong>前往 <strong>我 → 隐私与数据</strong>，可随时关闭「<strong>使用数据</strong>」、「<strong>研究数据</strong>」、「<strong>AI 读取我的事迹</strong>」或「<strong>问璇玑的记忆</strong>」。关闭后两项时，曾使用过您文字内容的解读也会一并删除。</li>
+<li><strong>本地模式下仅删除云端数据：</strong>在「<strong>本地模式</strong>」下选择「<strong>删除云端数据</strong>」，即可删除您的云端账号与云端数据，同时将数据保留在当前设备上。</li>
+</ul>
+<p>更多隐私保护与数据处理细则，请参阅我们的<a href="/armilla/privacy">隐私政策</a>（目前以英文提供）。如有任何疑问，请发邮件至 <a href="mailto:privacy@arcturatech.com">privacy@arcturatech.com</a> 联系 Arctura Technologies Inc.。</p>
 </article>
 
 <!-- ======================================================================= zh-Hant -->
 <article class="prose" data-l="zh-Hant" lang="zh-Hant">
   <p class="eyebrow">ACCOUNT &amp; DATA DELETION</p>
-  <h1>刪除璇璣帳號與資料</h1>
-  <p class="doc-meta">璇璣（Armilla）· 開發者 Arctura Technologies Inc.</p>
+<h1>刪除您的璇璣帳號與資料</h1>
+<p class="doc-meta">璇璣（Armilla）· 開發者：Arctura Technologies Inc.</p>
+<p>無論您在 iPhone、Android 或網頁版使用「璇璣」（Armilla），都共用同一個雲端帳號；刪除帳號時，該帳號下的雲端資料會跨平台一併移除。本頁說明如何直接於 App 內或透過電子郵件申請刪除帳號、刪除後會立即移除與去識別化保留哪些資料，以及如何只刪除特定項目而不註銷整個帳號。</p>
 
-  <h2>在 App 裡刪除（建議）</h2>
-  <ol class="steps">
-    <li>開啟璇璣，前往 <strong>我 → 隱私</strong>。</li>
-    <li>如有需要，先點「匯出我的資料」保存一份副本。</li>
-    <li>點「<strong>刪除帳號</strong>」。如果你在 App Store 或 Google Play 有訂閱，會先提醒你到商店取消——刪除帳號<strong>不會</strong>自動取消商店訂閱；網頁版訂閱會立即取消。</li>
-    <li>閱讀刪除範圍，輸入「刪除」確認，點「永久刪除帳號」。需要連網；如果沒有成功，什麼都不會被刪除，可以稍後重試。</li>
-  </ol>
-  <p>沒有登入時，資料只在這台裝置上：在 我 → 隱私 →「清除本機資料」即可全部清除。解除安裝 App 也會刪除裝置上的資料，但<strong>不會</strong>刪除雲端帳號。</p>
+<h2>在 App 內刪除帳號（建議方式）</h2>
+<p>這是最直接且不需等待處理的刪除方式。請確認裝置已連上網路，並依照下列步驟操作：</p>
+<ol class="steps">
+<li><strong>（選用）先匯出並保留資料副本：</strong>開啟璇璣，前往「我」→「隱私與資料」→「匯出」，在「匯出我的資料」畫面下載並留存一份您的完整資料備份。</li>
+<li><strong>檢查並處理您的訂閱：</strong>如果您持有 App Store 或 Google Play 訂閱，請先前往該商店取消訂閱——App 在刪除流程中也會提醒您，因為刪除帳號<strong>不會</strong>自動取消商店訂閱。若您是透過網頁版（Stripe）訂閱，系統會在刪除帳號時立即為您取消訂閱。</li>
+<li><strong>前往刪除帳號畫面：</strong>前往「我」→「隱私與資料」→「刪除」，進入「刪除帳號」畫面，確認頁面上列出的即將刪除資料內容。</li>
+<li><strong>輸入確認詞並確認永久刪除：</strong>在欄位中輸入「刪除」，然後點選「永久刪除帳號」。此步驟必須在有網路連線的情況下執行；如果請求未能順利送出，您的帳號與資料都不會被刪除，您可稍後再試一次。</li>
+</ol>
+<p>在 App 內確認送出後，刪除會<strong>立即生效</strong>，沒有等待期。</p>
+<p><strong>未登入帳號或僅解除安裝 App 的情況：</strong>如果您沒有建立或登入帳號，您的資料只會儲存在目前這部裝置上；前往「我」→「隱私與資料」→「清除本機資料」，依畫面指示輸入「清除」即可移除該裝置上的全部資料。請注意，直接將 App 從裝置解除安裝雖會移除本機資料，但<strong>不會</strong>刪除已建立的雲端帳號。</p>
 
-  <h2>無法使用 App 時，以電子郵件申請</h2>
-  <p>請用你登入璇璣的電子郵件寄信至 <a href="mailto:privacy@arcturatech.com?subject=%E5%88%AA%E9%99%A4%E6%88%91%E7%9A%84%E7%92%87%E7%92%A3%E5%B8%B3%E8%99%9F">privacy@arcturatech.com</a>，主旨寫「刪除我的璇璣帳號」。如果你使用 Apple 登入並隱藏了電子郵件，請註明當時的登入方式。為了保護你的帳號，我們會先透過該信箱確認是你本人，然後在 30 天內完成刪除並回信告知。請不要在郵件裡附上出生資料或復原短語。</p>
+<h2>無法使用 App 時，透過電子郵件申請刪除</h2>
+<p>如果您無法開啟 App 或已無法登入裝置，可以透過電子郵件向開發者 Arctura Technologies Inc. 申請刪除帳號：</p>
+<ol class="steps">
+<li><strong>使用登入信箱寄出申請：</strong>請使用您登入璇璣時所綁定的電子郵件地址，寄信至 <a href="mailto:privacy@arcturatech.com">privacy@arcturatech.com</a>，信件主旨請填寫「Delete my Armilla account」。如果您當初是以「透過 Apple 登入」並選擇隱藏電子郵件地址，請在信中說明您的登入方式。</li>
+<li><strong>完成信箱身分確認：</strong>為保護您的帳號安全，我們會先透過您用來登入的電子郵件地址與您確認這項請求確實由您本人提出。</li>
+<li><strong>完成刪除並通知您：</strong>身分確認無誤後，我們會在 <strong>30 天內</strong>將帳號與資料刪除完畢，並回信通知您。</li>
+</ol>
+<p><strong>安全提醒：</strong>來信時<strong>請勿</strong>提供出生日期、時間、地點等出生資料，也<strong>切勿</strong>附上您的復原短語（recovery phrase）。此外，若您有 App Store 或 Google Play 訂閱，仍請自行前往商店取消；網頁版（Stripe）訂閱則會在帳號刪除時一併取消。</p>
 
-  <h2>會刪除什麼</h2>
-  <ul>
-    <li>你的帳號與登入資訊；</li>
-    <li>所有檔案（包括你為他人填寫的檔案）及出生資料、盤面與計算結果；</li>
-    <li>人生事蹟、日誌、占卜紀錄、測驗分數、為他人代答的紀錄、「問璇璣」的對話與記憶、報告、大頭貼；</li>
-    <li>你的裝置登記與加密金鑰；</li>
-    <li>你透過邀請分享給別人的資料會被撤回，對方那邊的相關結果也隨之刪除；</li>
-    <li>如果你是家庭方案的持有人，家庭解散，成員保留各自的資料但失去家庭會員。</li>
-  </ul>
-  <p>上述資料會立即從我們的線上資料庫刪除；檔案儲存空間中的大頭貼與報告隨後經刪除佇列清除。備份中的副本隨備份輪替過期。</p>
+<h2>刪除帳號時會移除哪些資料</h2>
+<p>確認刪除後，您的帳號與資料會<strong>立即從運作中的線上資料庫移除</strong>；儲存在檔案空間中的檔案（包括個人頭像、報告 PDF 檔、人生事蹟照片與形相照片）會緊接著透過刪除佇列清除；系統備份中的副本則會隨備份輪替自動到期失效。以下是會被刪除的全部項目：</p>
+<ul>
+<li><strong>帳號與登入資訊：</strong>您的璇璣帳號與所有登入驗證資料。</li>
+<li><strong>所有檔案與命盤計算結果：</strong>每一個檔案（包括您為其他人建立的檔案），以及其中的出生資料、各體系命盤與由此計算出的所有結果。</li>
+<li><strong>事蹟、日記、占卜與測評紀錄：</strong>人生事蹟及其筆記、<strong>人生事蹟照片</strong>（採端對端加密儲存）、日記紀錄、占卜紀錄、心理測評分數，以及您填寫關於他人的回答（「你眼中的對方」）。</li>
+<li><strong>「問璇璣」、解讀與報告：</strong>「問璇璣」的所有對話紀錄、已加星號的回答與「問璇璣」保存的記憶；已儲存的 AI 解讀（「我的解讀」）與分析結果；以及各類報告。</li>
+<li><strong>形相照片與解讀紀錄：</strong><strong>形相（手相與面相）照片及其解讀結果</strong>、您的修正紀錄，以及形相分析的同意授權紀錄。</li>
+<li><strong>「出生時間推定」紀錄：</strong><strong>每一筆「出生時間推定」的加密紀錄</strong>，包含線索、您的回答、推定結果以及 AI 判斷理由。</li>
+<li><strong>頭像、裝置與設定：</strong>您的個人頭像、已註冊的裝置與加密金鑰，以及各項偏好設定。</li>
+<li><strong>透過邀請分享給他人的資料：</strong>您透過邀請分享給他人的資料會被撤回，對方帳號中與此相關的結果也會刪除（對方持有的您的資料副本會在 24 小時內刪除）。</li>
+<li><strong>家庭方案：</strong>若您持有家庭方案，家庭方案會隨之終止——其他成員仍會保留各自帳號內的資料，但會失去家庭會員資格；若您是家庭成員，則只會結束您個人的會員資格。</li>
+<li><strong>Pro 方案資料：</strong>若您使用 Pro 版，所有客戶檔案、客戶筆記與標籤會隨帳號一併刪除。</li>
+</ul>
 
-  <h2>會保留什麼，保留多久</h2>
-  <div class="table-scroll">
-    <table>
-      <thead><tr><th>保留的內容</th><th>原因</th><th>期限</th></tr></thead>
-      <tbody>
-        <tr><td>單次購買的匿名帳本（品類、商店、交易編號、金額、幣別、日期；不含你的身分）</td><td>稅務與退單處理</td><td>購買後 7 年</td></tr>
-        <tr><td>稽核紀錄（去除帳號識別，只有動作代碼與計數）</td><td>安全與法遵</td><td>2 年</td></tr>
-        <tr><td>使用統計事件（去除帳號識別）</td><td>了解功能使用情形</td><td>25 個月</td></tr>
-        <tr><td>已處理的付款通知（去除帳號識別）</td><td>對帳</td><td>180 天</td></tr>
-        <tr><td>一筆刪除紀錄（帳號編號的雜湊值與各類資料的筆數）</td><td>證明已完成刪除</td><td>與稽核紀錄相同</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p>App Store 與 Google Play 保留的購買紀錄由 Apple 與 Google 依其政策管理。</p>
+<h2>哪些資料會被保留、原因與保存期限</h2>
+<p>帳號刪除後，僅少數基於稅務、法規、金流對帳或安全需要而留存的紀錄會保留，且<strong>全部都已去除與您帳號及身分的關聯</strong>，無法再連結回您本人：</p>
+<div class="table-scroll"><table><thead><tr><th>保留資料</th><th>保留原因</th><th>保存期限</th></tr></thead><tbody><tr><td>單次購買的匿名帳務紀錄（僅包含類別、商店、交易編號、金額、幣別與日期，不含您的身分資訊）</td><td>稅務申報與交易爭議（爭議款項）處理</td><td>購買日起 7 年</td></tr><tr><td>網頁版付款的爭議款項（chargeback）紀錄——僅包含爭議編號與付款編號、狀態、原因代碼、金額、幣別與日期，已移除與您帳號的連結</td><td>法規要求保存的付款紀錄</td><td>持續保留；目前尚未設定固定的刪除日期</td></tr><tr><td>已移除帳號識別碼的稽核紀錄（僅包含操作代碼與次數）</td><td>系統安全與法規遵循</td><td>2 年</td></tr><tr><td>已移除帳號識別碼的使用統計事件</td><td>了解各項功能的使用情況</td><td>25 個月</td></tr><tr><td>已移除帳號識別碼的已處理付款通知紀錄</td><td>金流對帳</td><td>180 天</td></tr><tr><td>一筆刪除紀錄（僅包含您帳號編號的雜湊值（hash）與已刪除的項目數量）</td><td>作為刪除作業確實已執行的證明</td><td>與稽核紀錄相同（2 年）</td></tr></tbody></table></div>
+<p>由 App Store 與 Google Play 持有的購買紀錄，分別由 Apple 與 Google 依據其各自的隱私與資料保留政策管理。</p>
 
-  <h2>只刪除部分資料</h2>
-  <ul>
-    <li>單一事蹟、日誌、檔案、對話或記憶可以在 App 裡直接刪除。</li>
-    <li>停止分享：在對方的檔案頁選擇「停止使用 TA 的資料」，或用邀請連結撤回你自己的資料；對方的出生資料會在 24 小時內刪除。</li>
-    <li>關閉「使用資料」「研究資料授權」「AI 讀取我的事蹟」或「問璇璣的記憶」：我 → 隱私。</li>
-    <li>在完全本機模式下選擇「刪除雲端資料」，會刪除雲端帳號但保留這台裝置上的資料。</li>
-  </ul>
-  <p>更多說明請見<a href="/armilla/privacy">隱私權政策</a>。</p>
+<h2>只刪除部分資料（不刪除整個帳號）</h2>
+<p>如果您只需要移除特定內容或停止特定資料授權，而不希望刪除整個帳號，可以在 App 內進行以下操作：</p>
+<ul>
+<li><strong>刪除單筆項目：</strong>您可以個別刪除單筆人生事蹟（附屬的事蹟照片會一併刪除）、單張照片、單篇日記紀錄、單一檔案（個人或為他人建立的檔案）、單段「問璇璣」對話、「問璇璣」保存的單筆記憶，或「我的解讀」中已儲存的單筆解讀。</li>
+<li><strong>刪除單筆「出生時間推定」：</strong>刪除後，該次推定的詳細內容（線索、作答、結果與理由）會被抹除；系統只會保留一筆曾使用過推定的登記紀錄（包含日期、所使用的方案或購買項目與次數），該登記紀錄會在您刪除對應檔案或整個帳號時一併刪除。</li>
+<li><strong>刪除形相照片與解讀：</strong>您可以刪除單張形相（手相或面相）照片或單筆形相解讀（刪除解讀時，僅供該次解讀使用的照片也會一併刪除）；若撤回形相的 AI 解讀同意授權，即可一次刪除所有形相照片與全部解讀結果。</li>
+<li><strong>停止分享資料：</strong>在對方的檔案中選擇「停止使用對方的資料」，或透過原本的邀請連結撤回您自己分享出去的資料；對應的出生資料會在 24 小時內刪除。</li>
+<li><strong>關閉隱私與 AI 資料開關：</strong>前往「我」→「隱私與資料」，您可以關閉「使用資料」、「研究資料」、「AI 讀取我的事蹟」或「問璇璣的記憶」。其中，關閉「AI 讀取我的事蹟」或「問璇璣的記憶」時，系統還會一併刪除曾使用您這些文字內容所生成的解讀。</li>
+<li><strong>只刪除雲端帳號並保留本機資料：</strong>在「本機模式」下選擇「刪除雲端資料」，即可刪除您的雲端帳號，同時保留目前這部裝置上的本機資料。</li>
+</ul>
+<p>如需了解完整的資料蒐集與處理方式，請參閱<a href="/armilla/privacy">隱私權政策（提供英文版）</a>。</p>
 </article>
 
 <!-- ======================================================================= en -->
 <article class="prose" data-l="en" lang="en">
   <p class="eyebrow">ACCOUNT &amp; DATA DELETION</p>
-  <h1>Delete your Armilla account and data</h1>
-  <p class="doc-meta">Armilla (璇玑) · Developer: Arctura Technologies Inc.</p>
+<h1>Delete your Armilla account and data</h1>
+<p class="doc-meta">Armilla · Developer: Arctura Technologies Inc.</p>
+<p>One Armilla account and membership work across iPhone, Android, and the web, so deleting your account removes it across all three platforms. Below you can find how to delete your account in the app or by e-mail, what is deleted, what limited information is kept, and how to delete only some of your data.</p>
 
-  <h2>Delete in the app (recommended)</h2>
-  <ol class="steps">
-    <li>Open Armilla and go to <strong>Me › Privacy</strong>.</li>
-    <li>If you like, tap “Export my data” first to keep a copy.</li>
-    <li>Tap “<strong>Delete account</strong>”. If you have an App Store or Google Play subscription, you’re reminded to cancel it in the store first — deleting your account does <strong>not</strong> cancel a store subscription. A web subscription is cancelled immediately.</li>
-    <li>Read what will be deleted, type “DELETE” to confirm and tap “Delete my account permanently”. You need to be online; if it doesn’t go through, nothing is deleted and you can try again.</li>
-  </ol>
-  <p>Without an account, your data is only on this device: Me › Privacy › “Clear this device” removes all of it. Uninstalling the app also removes data on the device, but does <strong>not</strong> delete a cloud account.</p>
+<h2>Delete your account in the app (recommended)</h2>
+<ol class="steps">
+<li><strong>Export a copy of your data first (optional):</strong> If you would like to keep a copy of all your data, open Armilla and go to <strong>Me → Privacy &amp; data → Export</strong> to use <strong>Export my data</strong>.</li>
+<li><strong>Open the deletion screen:</strong> Go to <strong>Me → Privacy &amp; data → Delete</strong> to open <strong>Delete account</strong>.</li>
+<li><strong>Check your subscription:</strong> If you have an App Store or Google Play subscription, the app reminds you to cancel it in that store first — <strong>deleting your Armilla account does not cancel an App Store or Google Play subscription</strong>. A web subscription (Stripe) is cancelled at once when you delete your account.</li>
+<li><strong>Confirm permanent deletion:</strong> Review what will be deleted, type <strong>DELETE</strong>, and tap <strong>Permanently delete account</strong>. This requires an internet connection; if the request does not go through, nothing is deleted and you can try again.</li>
+</ol>
+<p>Deletion is immediate — there is no waiting period.</p>
+<p><strong>If you use Armilla without an account:</strong> Your data is stored only on that device. Go to <strong>Me → Privacy &amp; data → Clear this device</strong> and type <strong>CLEAR</strong> to remove all of it. Uninstalling the app also removes the data on that device, but it does <strong>not</strong> delete a cloud account.</p>
 
-  <h2>Can’t use the app? Ask by email</h2>
-  <p>From the email address you sign in to Armilla with, write to <a href="mailto:privacy@arcturatech.com?subject=Delete%20my%20Armilla%20account">privacy@arcturatech.com</a> with the subject “Delete my Armilla account”. If you signed in with Apple and hid your email, tell us how you signed in. To protect your account, we first confirm through that address that the request is yours, then complete the deletion within 30 days and let you know. Please don’t include birth details or your recovery phrase.</p>
+<h2>Ask to delete your account by e-mail</h2>
+<p>If you cannot use the app, you can ask Arctura Technologies Inc. to delete your account by e-mail at <a href="mailto:privacy@arcturatech.com">privacy@arcturatech.com</a>:</p>
+<ul>
+<li><strong>Send from your sign-in address:</strong> Write from the e-mail address you sign in with.</li>
+<li><strong>Subject line:</strong> Use <strong>Delete my Armilla account</strong>.</li>
+<li><strong>Signed in with Apple:</strong> If you signed in with Apple and hid your e-mail, say how you signed in.</li>
+<li><strong>Do not send sensitive details:</strong> <strong>Do not send birth details or your recovery phrase.</strong></li>
+</ul>
+<p>To protect your account, we first confirm through that e-mail address that the request is yours, then complete the deletion within 30 days and tell you. Remember to cancel any App Store or Google Play subscription directly in that store, as deleting your account does not cancel store subscriptions.</p>
 
-  <h2>What is deleted</h2>
-  <ul>
-    <li>your account and sign-in details;</li>
-    <li>every profile (including those you created for other people), with birth details, charts and calculated results;</li>
-    <li>life events, journal entries, readings, assessment scores, answers you gave about other people, Ask Armilla conversations and memories, reports and profile pictures;</li>
-    <li>your registered devices and encryption keys;</li>
-    <li>details you shared with others through invitations are withdrawn, and the related results on their side are deleted;</li>
-    <li>if you hold a Family plan, the family ends; members keep their own data but lose the family membership.</li>
-  </ul>
-  <p>This data is deleted from our live database immediately; profile pictures and reports in file storage are then removed through the deletion queue. Copies in backups expire as the backups rotate.</p>
+<h2>What is deleted</h2>
+<p>Everything listed below is deleted from our live database at once. Files in storage — profile pictures, report PDFs, life-event photos, and Palm &amp; face photos — are removed right after through the deletion queue. Copies in backups expire as backups rotate.</p>
+<ul>
+<li>Your account and sign-in details.</li>
+<li>Every profile (including the ones you filled in for other people), with birth details, charts, and everything calculated from them.</li>
+<li>Life events and their notes, <strong>life-event photos</strong> (stored end-to-end encrypted), journal entries, divination records, assessment scores, and your answers about other people (<strong>how you see them</strong>).</li>
+<li><strong>Ask Armilla</strong> conversations, starred answers, and the memories Ask Armilla keeps; saved AI readings (<strong>My readings</strong>) and analyses; and reports.</li>
+<li><strong>Palm &amp; face photos and their readings</strong>, your corrections, and your Palm &amp; face consent history.</li>
+<li><strong>Birth-time inference records</strong> (the encrypted record of each inference: its clues, your answers, the result, and the AI's reasons).</li>
+<li>Profile pictures, your registered devices and encryption keys, and your preferences.</li>
+<li><strong>Shared details:</strong> Details you shared with others through invitations are withdrawn, and the related results on their side are deleted (their copy of your details is deleted within 24 hours).</li>
+<li><strong>Family plans:</strong> If you hold a Family plan, the family ends — members keep their own data but lose the family membership. If you are a member, only your membership ends.</li>
+<li><strong>Pro:</strong> Client profiles, client notes, and tags are deleted with the account.</li>
+</ul>
 
-  <h2>What is kept, and for how long</h2>
-  <div class="table-scroll">
-    <table>
-      <thead><tr><th>What is kept</th><th>Why</th><th>How long</th></tr></thead>
-      <tbody>
-        <tr><td>An anonymised ledger of one-time purchases (category, store, transaction number, amount, currency, date — without your identity)</td><td>Tax and chargebacks</td><td>7 years after the purchase</td></tr>
-        <tr><td>Audit records, with your account identifier removed (action codes and counts only)</td><td>Security and compliance</td><td>2 years</td></tr>
-        <tr><td>Usage statistics events, with your account identifier removed</td><td>Understanding how features are used</td><td>25 months</td></tr>
-        <tr><td>Processed payment notifications, with your account identifier removed</td><td>Reconciliation</td><td>180 days</td></tr>
-        <tr><td>One deletion record (a hash of your account number and the number of items deleted)</td><td>Proof that the deletion happened</td><td>As audit records</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p>Purchase records kept by the App Store and Google Play are managed by Apple and Google under their policies.</p>
+<h2>What is kept, why, and for how long</h2>
+<p>After deletion, only the limited information below is kept, and none of it is linked to you any more.</p>
+<div class="table-scroll"><table><thead><tr><th>Kept</th><th>Why</th><th>How long</th></tr></thead><tbody><tr><td>An anonymised ledger of one-time purchases (category, store, transaction number, amount, currency, and date — without your identity)</td><td>Tax and chargebacks</td><td>7 years after the purchase</td></tr><tr><td>Records of payment disputes (chargebacks) on web payments — dispute and payment numbers, status, reason code, amount, currency, and dates — with the link to your account removed</td><td>Payment records the law expects us to keep</td><td>Kept; no fixed deletion date is set yet</td></tr><tr><td>Audit records with your account identifier removed (action codes and counts only)</td><td>Security and compliance</td><td>2 years</td></tr><tr><td>Usage statistics events with your account identifier removed</td><td>Understanding how features are used</td><td>25 months</td></tr><tr><td>Processed payment notifications with your account identifier removed</td><td>Reconciliation</td><td>180 days</td></tr><tr><td>One deletion record (a hash of your account number and the number of items deleted)</td><td>Proof that the deletion happened</td><td>2 years (same as audit records)</td></tr></tbody></table></div>
+<p>Purchase records held by the App Store and Google Play are managed by Apple and Google under their own policies.</p>
 
-  <h2>Deleting only some data</h2>
-  <ul>
-    <li>Delete a single life event, journal entry, profile, conversation or memory directly in the app.</li>
-    <li>Stop sharing: choose “Stop using their details” on their profile, or withdraw your own details with the invitation link; their birth details are deleted within 24 hours.</li>
-    <li>Turn off “Usage data”, “Research data”, “Let AI read my life events” or “Ask memory” in Me › Privacy.</li>
-    <li>In fully local mode, “Delete cloud data” deletes your cloud account and keeps the data on this device.</li>
-  </ul>
-  <p>More in the <a href="/armilla/privacy">Privacy Policy</a>.</p>
+<h2>Delete only some data</h2>
+<p>If you do not want to delete your entire account, you can remove specific data or turn off specific features in Armilla:</p>
+<ul>
+<li><strong>Individual items:</strong> Delete a single life event (its photos go with it), a single photo, a journal entry, a profile, an <strong>Ask Armilla</strong> conversation, a memory, or a saved reading in <strong>My readings</strong>.</li>
+<li><strong>Birth-time inference:</strong> Deleting a <strong>Birth-time inference</strong> erases its content; a registration that the inference was used is kept (date, the plan or purchase it used, and counts) and is deleted with the profile or the account.</li>
+<li><strong>Palm &amp; face photos, readings, and consent:</strong> Delete an individual <strong>Palm &amp; face</strong> photo or reading (deleting a reading also deletes the photos used only by it), or withdraw your AI reading consent to delete all Palm &amp; face photos and readings at once.</li>
+<li><strong>Stop sharing:</strong> Choose <strong>Stop using their details</strong> on the other person's profile, or withdraw your own details with the invitation link; the shared birth details are deleted within 24 hours.</li>
+<li><strong>Privacy switches:</strong> In <strong>Me → Privacy &amp; data</strong>, turn off <strong>Usage data</strong>, <strong>Research data</strong>, <strong>Let AI read my life events</strong>, or <strong>What Armilla remembers</strong>. Turning off <strong>Let AI read my life events</strong> or <strong>What Armilla remembers</strong> also deletes the readings that used your words.</li>
+<li><strong>Local mode:</strong> In <strong>Local mode</strong>, choose <strong>Delete cloud data</strong> to delete your cloud account and keep the data on this device.</li>
+</ul>
+<p>More details are in the <a href="/armilla/privacy">Armilla Privacy Policy</a> (provided in English).</p>
 </article>
 
 </div>
