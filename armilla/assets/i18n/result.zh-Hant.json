@@ -162,6 +162,11 @@
     "Te": "Te",
     "Ti": "Ti"
    },
+   "confidence": {
+    "high": "高",
+    "low": "低",
+    "medium": "中"
+   },
    "graha": {
     "jupiter": "木星",
     "ketu": "計都",

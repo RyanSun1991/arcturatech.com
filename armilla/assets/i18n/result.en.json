@@ -162,6 +162,11 @@
     "Te": "Te",
     "Ti": "Ti"
    },
+   "confidence": {
+    "high": "high",
+    "low": "low",
+    "medium": "medium"
+   },
    "graha": {
     "jupiter": "Jupiter",
     "ketu": "Ketu",
