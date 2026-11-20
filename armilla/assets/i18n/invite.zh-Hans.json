@@ -24,7 +24,6 @@
    "birthTitle": "你的出生信息",
    "birthEyebrow": "",
    "consent": "我同意璇玑按上方的选择，用我的出生信息生成盘面及与 {inviter} 的合盘。",
-   "adult": "我已年满 18 岁",
    "submit": "完成",
    "privacy": "你的出生信息会加密保存，对方只能看到你允许分享的部分。",
    "done": {

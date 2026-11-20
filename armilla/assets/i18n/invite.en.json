@@ -24,7 +24,6 @@
    "birthTitle": "Your birth details",
    "birthEyebrow": "BIRTH DETAILS",
    "consent": "I agree that Armilla may use my birth details to calculate charts and our pair reading for {inviter}, shared only as chosen above.",
-   "adult": "I'm 18 or older",
    "submit": "Done",
    "privacy": "Your birth details are encrypted, and they only ever see what you choose to share.",
    "done": {
