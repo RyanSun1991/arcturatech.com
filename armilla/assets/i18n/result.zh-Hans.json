@@ -184,6 +184,20 @@
     "month": "月柱",
     "year": "年柱"
    },
+   "sign": {
+    "Aquarius": "水瓶",
+    "Aries": "白羊",
+    "Cancer": "巨蟹",
+    "Capricorn": "摩羯",
+    "Gemini": "双子",
+    "Leo": "狮子",
+    "Libra": "天秤",
+    "Pisces": "双鱼",
+    "Sagittarius": "射手",
+    "Scorpio": "天蝎",
+    "Taurus": "金牛",
+    "Virgo": "处女"
+   },
    "stem": {
     "bing": "丙",
     "ding": "丁",
@@ -213,6 +227,20 @@
     "ISFP": "ISFP",
     "ISTJ": "ISTJ",
     "ISTP": "ISTP"
+   },
+   "vedicHouse": {
+    "1": "自我、身体、名望",
+    "2": "家庭、言语、钱财",
+    "3": "手足、勇气、自身努力",
+    "4": "居所、母亲、土地、内心安宁",
+    "5": "学识、子女、创造力",
+    "6": "日常工作、服务、竞争、阻力",
+    "7": "伴侣、婚姻、合作关系、公众往来",
+    "8": "隐秘之事、共享资源、剧变蜕变",
+    "9": "福运、父亲、师长、信念、远行",
+    "10": "事业、社会角色、声誉",
+    "11": "收益、朋友、社群人脉、愿景",
+    "12": "开销、远方异地、退隐、灵性生活"
    },
    "wx": {
     "earth": "土",
@@ -1228,7 +1256,9 @@
    "interactionTransforms": "化{element}",
    "readingDayMaster": "日主为{stem}{element}，{strength}。",
    "readingPattern": "格局属{pattern}，以{method}取用：喜{favorable}，忌{unfavorable}。",
-   "readingLuck": "现行{dayun}大运（{tenGod}），流年逢{liunian}（{tenGodYear}）。"
+   "readingLuck": "现行{dayun}大运（{tenGod}），流年逢{liunian}（{tenGodYear}）。",
+   "readingUsefulLow": "不过这张盘的喜忌各方法看法不一，上面这句只是「{method}」这一取法的结论，懂八字的人对这类盘也常有不同判断，可到「数据」一栏的「喜用」一行查看各方法各自怎么说。",
+   "strengthContested": "强弱相持 · 略{lean}"
   },
   "sign": {
    "Aries": "白羊",
@@ -1339,6 +1369,7 @@
    "wheelLabelNoTime": "西洋占星本命盘（出生时间未知，未排宫位与上升）：太阳{sun}，月亮{moon}",
    "foot": "回归黄道 · {houseSystem} · {node} · {sect}",
    "footNoTime": "回归黄道 · 出生时间未知：不排宫位、四轴与上升，月亮度数按当日正午推算",
+   "conventions": "本命宫位采用 {houseSystem}；小限法（每年轮值“时间主星”的推运技法）则以上升星座为起点，按整宫顺数。三分主星依多罗修斯体系（按日盘、夜盘、共管排列：火象为太阳、木星、土星；土象为金星、月亮、火星；风象为土星、水星、木星；水象为金星、火星、月亮）；先天尊贵采用威廉·李利计分（入庙 5、曜升 4、三分 3、界 2、面 1），其中仅与本盘日夜一致的三分主星得这 3 分。天王星、海王星与冥王星在计算先天尊贵时采用现代守护星座（水瓶、双鱼、天蝎），命主星与主导行星则沿用传统守护星。主导元素、模式与行星因各派并无定法，采用本引擎权重：太阳、月亮、上升点各 3 分；中天、水星、金星、火星各 2 分；木星、土星各 1.5 分；天王星、海王星、冥王星各 1 分。主导元素或模式仅在领先第二名至少 5 个百分点时才会标出。群星指同一星座或同一宫位内至少四颗行星（至少含太阳、月亮、水星、金星或火星之一），或至少三颗行星两两合相；仅由慢速外行星构成（同几个月内出生者皆共有）的组合不计入。",
    "nodeTrue": "真交点",
    "nodeMean": "平交点",
    "ascStable": "上升 {deg} · 出生时间前后 {minutes} 分钟内不换座",
@@ -1650,6 +1681,124 @@
    "vipareetaRaja": "Vipareeta Raja · 逆转王者瑜伽",
    "chandraMangala": "Chandra-Mangala · 月火瑜伽"
   },
+  "yogaState": {
+   "formed": "成",
+   "weak": "弱",
+   "broken": "破"
+  },
+  "yogaCondition": {
+   "lordsOwnDusthanas": "两主星皆兼主第 6、8 或 12 宫",
+   "inDusthana": "落入第 6、8 或 12 宫",
+   "debilitated": "落陷且未化解",
+   "combust": "焦伤（距太阳过近）",
+   "lostWar": "行星交战落败",
+   "strong": "行星强旺",
+   "kendraFromMoon": "木星居月亮起算的角宫（1、4、7、10）",
+   "kendraFromLagna": "木星居命宫起算的角宫（1、4、7、10）",
+   "beneficConnection": "吉星与木星同宫或成相位",
+   "noBeneficConnection": "无吉星与木星同宫或成相位",
+   "enemySign": "木星落入敌星星座",
+   "grahaInKendraFromLagna": "有行星居命宫起算的角宫",
+   "grahaInKendraFromMoon": "有行星与月亮同宫或居其角宫",
+   "dispositorInKendra": "落陷星座主星居命宫或月亮的角宫",
+   "exaltationLordInKendra": "该星入旺星座主星居命宫或月亮的角宫",
+   "bothLordsInKendras": "落陷与入旺星座主星皆居角宫",
+   "aspectedByDispositor": "得落陷星座主星投射相位",
+   "exaltedGrahaInKendra": "在该落陷星座入旺的行星居角宫"
+  },
+  "functionalNature": {
+   "yogaKaraka": "成格吉星",
+   "benefic": "吉星",
+   "mixed": "吉凶参半",
+   "neutral": "中性",
+   "malefic": "凶星"
+  },
+  "functionalRule": {
+   "trikonaLord": "主三方宫（1、5、9 宫）：主吉（34.2）",
+   "yogaKaraka": "兼主角宫与三方宫（34.13）",
+   "kendradhipatiDosha": "天然吉星仅主角宫：吉性受敛（34.2、34.10）",
+   "kendraMalefic": "天然凶星仅主角宫：不作凶论（34.2）",
+   "trishadayaLord": "主 3、6 或 11 宫：带来考验（34.4）",
+   "eighthLord": "主第 8 宫：不吉，兼主三方宫除外（34.6）",
+   "eighthLordExempt": "日月主第 8 宫：不作凶论（34.7）",
+   "association": "主第 2 或 12 宫：随同宫星体与另一主宫而定（34.5）",
+   "nodeHouse": "罗睺／计都：随所落宫位而定（34.16）",
+   "nodeJoinedLord": "罗睺／计都：随同宫行星而定（34.16）",
+   "nodeYogaKaraka": "居角宫或三方宫且联结对应角／三方主星：作成格吉星论（34.17）"
+  },
+  "dashaBand": {
+   "rising": "顺势上扬",
+   "supportive": "助力偏多",
+   "mixed": "顺逆交织",
+   "demanding": "考验偏多",
+   "hard": "颇为艰辛"
+  },
+  "dashaReason": {
+   "yogaKaraka": "为命盘成格吉星",
+   "trikonaLord": "主宰三方宫（1、5 或 9 宫）",
+   "mixedLord": "所主宫位吉凶兼具",
+   "neutralLord": "对此命宫属中性主星",
+   "maleficLord": "主宰考验宫位（3、6、8、11 宫）",
+   "viparita": "6、8、12 宫主星落入此类宫位：逆转成助（Viparīta）",
+   "inGoodHouse": "落入角宫或三方宫",
+   "inDusthana": "落入第 6、8 或 12 宫",
+   "exalted": "处于入旺星座",
+   "ownSign": "处于本垣星座",
+   "enemySign": "落入敌星星座",
+   "debilitated": "处于落陷星座",
+   "debilitationCancelled": "虽落陷但得化解（全解或半解）",
+   "combust": "焦伤（距太阳过近）",
+   "lostWar": "行星交战落败",
+   "joinedTrikonaLord": "与第 5 或第 9 宫主星同宫",
+   "inYoga": "参与古典格局（成或弱）",
+   "nodeHouse": "依所落宫位而定",
+   "nodeJoinedLord": "依同宫行星而定",
+   "nodeYogaKaraka": "作命盘成格吉星论",
+   "fromMahaDusthana": "位于大运主星起的第 6、8 或 12 宫",
+   "fromMahaGood": "居大运主星起的有利宫位",
+   "enemyOfMahaLord": "与大运主星属敌对关系",
+   "kendraTrikonaPair": "角宫主星与三方宫主星大小运互会"
+  },
+  "sadeSatiGrade": {
+   "light": "较轻",
+   "moderate": "中等",
+   "heavy": "较重"
+  },
+  "sadeSatiFactor": {
+   "saturnFunctionalBenefic": "土星对此命宫偏吉",
+   "saturnFunctionalMalefic": "土星对此命宫偏凶",
+   "bindusHigh": "土星所经星座吉点充足",
+   "bindusLow": "土星所经星座吉点较少",
+   "transitDignity": "行运土星居本垣或入旺星座",
+   "jupiterAspect": "行运木星对行运土星呈相位"
+  },
+  "vedicHouse": {
+   "1": "自我、身体、名望",
+   "2": "家庭、言语、钱财",
+   "3": "手足、勇气、自身努力",
+   "4": "居所、母亲、土地、内心安宁",
+   "5": "学识、子女、创造力",
+   "6": "日常工作、服务、竞争、阻力",
+   "7": "伴侣、婚姻、合作关系、公众往来",
+   "8": "隐秘之事、共享资源、剧变蜕变",
+   "9": "福运、父亲、师长、信念、远行",
+   "10": "事业、社会角色、声誉",
+   "11": "收益、朋友、社群人脉、愿景",
+   "12": "开销、远方异地、退隐、灵性生活"
+  },
+  "vedicConvention": {
+   "lagnaLists": "BPHS 第 34 章各命宫清单",
+   "eighthLordGoodWith3711": "第 8 宫主星兼主 3、7 或 11 宫从吉说",
+   "rajaEitherLord": "任一主星兼主 6、8、12 宫即破格说",
+   "rajaWith3And11": "BPHS 34.15 兼计第 3、11 宫说",
+   "nodeStrongLord": "罗睺／计都所落星座主星须强旺说",
+   "sadeSatiFromMoon": "改自月亮星座起算土星吉凶",
+   "compoundFriendship": "兼计临时位置的行星友敌关系",
+   "neechaBhangaTwoConditions": "落陷化解须兼备两项条件说",
+   "gajaKesariFromMoon": "Gaja-Kesarī 仅自月亮起算说",
+   "budhaAdityaCombustBreaks": "水星焦伤即破 Budha-Āditya 格说",
+   "bandEdge": "评分恰落两档交界"
+  },
   "vedicDignity": {
    "exalted": "擢升",
    "moolatrikona": "三方旺",
@@ -1683,6 +1832,7 @@
    "chartLabel": "{style}式 {varga} 盘：Lagna {lagna}",
    "foot": "{style}式 · 恒星黄道 · 岁差 {ayanamsa}（{deg}）· 整宫制 · 格内数字代表星座序号",
    "footSouth": "南印度式 · 恒星黄道 · 岁差 {ayanamsa}（{deg}）· 十二星座位置固定，斜线处为 Lagna（命宫）",
+   "conventions": "罗睺与计都按{node}计算，仅计自所在星座顺数第 7 星座相位（部分流派亦计第 5、第 9 星座相位）。Vimśottarī 与 Yoginī 大运均以 365.25 天为一年。命宫（Lagna）的后天吉凶星依《Bṛhat Parāśara Horā Śāstra》（下称 BPHS）第 34 章通则判定：第 1、5、9 宫主星为吉；第 3、6、8、11 宫主星为凶，除非同时兼主三方宫（第 1、5、9 宫）；太阳与月亮不因主宰第 8 宫而论凶（34.7）；兼主第 3、7 或 11 宫的第 8 宫主星则论为凶（与该章分命宫清单一致）；当该章分命宫清单（34.19–44）对某星的判定与通则不同时，页面会同时显示两者。大小运依 BPHS 第 34、48 章及《Phaladīpikā》第 20 章，综合主星的后天吉凶、所落宫位、庙旺落陷、同宫星体与格局分成五档，小运亦参考其与大运主星的相对宫距（《Phaladīpikā》20.29）。古典格局分为成、弱、破三态：Rāja 格若两主星皆兼主第 6、8 或 12 宫则破（BPHS 34.15），若参格行星落第 6、8、12 宫、落陷、焦伤或交战落败则弱；Gaja-Kesarī 格依 BPHS 36.3 自命宫或月亮起算，须有吉星与木星同宫或成相位，若木星落陷、焦伤或落入敌星星座则破（友敌按 BPHS 第 3 章天然关系判定）；Budha-Āditya 格遇水星焦伤则弱；落陷化解依《Phaladīpikā》7.26–30 任一条件判定；行星交战依《Sūrya Siddhānta》7.19–21（两星相距 1 度以内，居北者胜）。Sade Sati 则依行运土星所经星座的吉点（《Phaladīpikā》26.41）、庙旺落陷状态（26.31）、木星相位（26.30）及土星对本命盘的后天吉凶分级。",
    "noLagna": "出生时间未知，无法确立 Lagna 与宫位；下方仅按星座排布各曜。",
    "nakshatraTitle": "月宿",
    "nakshatraName": "{name} {latin} · 第 {pada} Pada",
@@ -1711,7 +1861,30 @@
    "ashtakavargaTitle": "Ashtakavarga 总分",
    "readingLagna": "Lagna 落{lagna}，月亮落{moon}，宿于 {nakshatra}（第 {pada} Pada）。",
    "readingDasha": "现行{maha}大运、{antar}小运。",
-   "ayanamsaLabel": "岁差"
+   "ayanamsaLabel": "岁差",
+   "periodTitle": "当前大运与小运解读",
+   "periodMaha": "大运：{lord} · {band}",
+   "periodAntar": "小运：{lord} · {band}",
+   "periodTopics": "凸显主题：{topics}",
+   "periodReasons": "判断依据",
+   "periodBetween": "亦可判为「{band}」——{reading}",
+   "sadeSatiLine": "{phase} · {grade}",
+   "sadeSatiFactors": "影响轻重的因素",
+   "functionalTitle": "命宫各星吉凶与主宫",
+   "functionalHouses": "主第 {houses} 宫",
+   "functionalList": "按分命宫清单：{nature}",
+   "yogaDecidedBy": "判定依据：{conditions}",
+   "yogaOther": "若按「{reading}」，此局为「{state}」",
+   "yogaOtherAbsent": "若按「{reading}」，此格局不计",
+   "warLine": "行星交战：{winner} 胜 {loser}",
+   "contested": "两说并存",
+   "chips": {
+    "functional": "{graha} · {nature}",
+    "periodMaha": "{lord}大运 · {band}",
+    "periodAntar": "{lord}小运 · {band}",
+    "sadeSati": "Sade Sati · {grade}",
+    "war": "{winner}／{loser} 交战"
+   }
   },
   "hdType": {
    "generator": "生产者",
@@ -2152,6 +2325,44 @@
    "extraversion": "外向性",
    "agreeableness": "宜人性",
    "neuroticism": "神经质"
+  },
+  "seasonalState": {
+   "wang": "旺",
+   "xiang": "相",
+   "xiu": "休",
+   "qiu": "囚",
+   "si": "死"
+  },
+  "rootKind": {
+   "lu": "禄",
+   "ren": "阳刃",
+   "sameQi": "本气",
+   "changSheng": "长生",
+   "yuQi": "余气",
+   "mu": "墓库",
+   "jiSheng": "寄生"
+  },
+  "strengthModifier": {
+   "floating": "虚浮",
+   "meeting": "三会",
+   "trine": "三合",
+   "halfTrine": "半合",
+   "clash": "受冲",
+   "dryEarth": "燥土",
+   "wetEarth": "湿土",
+   "bound": "合绊",
+   "transformed": "合化"
+  },
+  "usefulGodReason": {
+   "strength": "日主强弱",
+   "source": "力量来源",
+   "candidate": "候选五行",
+   "absent": "原局未见",
+   "climate": "调候",
+   "follow": "从格",
+   "transform": "化格",
+   "disease": "病药",
+   "bridge": "通关"
   }
  },
  "site": {

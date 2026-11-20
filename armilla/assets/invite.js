@@ -39,7 +39,6 @@ const state = {
   level: null,
   draft: emptyDraft(),
   consent: false,
-  adult: false,
   keepCopy: false,
   hasResult: false,
   tried: false,
@@ -80,7 +79,8 @@ function load() {
 }
 
 function ready() {
-  return !!state.level && draftProblems(state.draft).length === 0 && state.consent && state.adult;
+  // WP-341 (D-93 / D-96): no "I am 18 or older" tick — the invitee's consent to the invitation is the one that stays
+  return !!state.level && draftProblems(state.draft).length === 0 && state.consent;
 }
 
 async function submit() {
@@ -395,7 +395,6 @@ function formView(meta) {
     'section',
     { class: 'stack' },
     check('consent', t('client.invite.consent', { inviter }), 'invite-consent'),
-    check('adult', t('client.invite.adult'), 'invite-adult'),
     check('keepCopy', t('client.invite.keepCopy'), 'invite-keep-copy'),
     h('p', { class: 'hint', text: t('client.invite.privacy') }),
     submitBtn,

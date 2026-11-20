@@ -184,6 +184,20 @@
     "month": "month pillar",
     "year": "year pillar"
    },
+   "sign": {
+    "Aquarius": "Aquarius",
+    "Aries": "Aries",
+    "Cancer": "Cancer",
+    "Capricorn": "Capricorn",
+    "Gemini": "Gemini",
+    "Leo": "Leo",
+    "Libra": "Libra",
+    "Pisces": "Pisces",
+    "Sagittarius": "Sagittarius",
+    "Scorpio": "Scorpio",
+    "Taurus": "Taurus",
+    "Virgo": "Virgo"
+   },
    "stem": {
     "bing": "Bing",
     "ding": "Ding",
@@ -213,6 +227,20 @@
     "ISFP": "ISFP",
     "ISTJ": "ISTJ",
     "ISTP": "ISTP"
+   },
+   "vedicHouse": {
+    "1": "self, body, standing",
+    "2": "family, speech, money",
+    "3": "siblings, courage, one's own efforts",
+    "4": "home, mother, land, inner peace",
+    "5": "learning, children, creativity",
+    "6": "daily work, service, competitors, obstacles",
+    "7": "partner, marriage, partnerships, the public",
+    "8": "the hidden, shared resources, upheaval, transformation",
+    "9": "fortune, father, teachers, faith, long journeys",
+    "10": "career, public role, honour",
+    "11": "gains, friends, networks, hopes",
+    "12": "expenses, distant places, retreat, spiritual life"
    },
    "wx": {
     "earth": "Earth",
@@ -1228,7 +1256,9 @@
    "interactionTransforms": "transforms to {element}",
    "readingDayMaster": "Day Master {stem} {element}, {strength}.",
    "readingPattern": "Structure: {pattern}. By the {method} principle, {favorable} is favourable and {unfavorable} unfavourable.",
-   "readingLuck": "Currently in the {dayun} luck pillar ({tenGod}), with {liunian} ({tenGodYear}) as the annual pillar."
+   "readingLuck": "Currently in the {dayun} luck pillar ({tenGod}), with {liunian} ({tenGodYear}) as the annual pillar.",
+   "readingUsefulLow": "Different Bazi methods disagree on this chart, however—the line above reflects only the {method} approach, and experienced readers often view charts like this differently. Check the Favourable row in the Data section to see what each method concludes.",
+   "strengthContested": "Contested · leans {lean}"
   },
   "sign": {
    "Aries": "Aries",
@@ -1339,6 +1369,7 @@
    "wheelLabelNoTime": "Western natal chart (birth time unknown; houses and Ascendant omitted): Sun {sun}, Moon {moon}",
    "foot": "Tropical zodiac · {houseSystem} · {node} · {sect}",
    "footNoTime": "Tropical zodiac · birth time unknown: houses, angles and Ascendant are omitted, with the Moon placed at local noon",
+   "conventions": "Natal houses use {houseSystem}; annual profections (the yearly time-lord technique) count whole signs from the Ascendant's sign instead. Triplicity rulers follow Dorotheus (by day, by night, participating — fire: Sun, Jupiter, Saturn; earth: Venus, Moon, Mars; air: Saturn, Mercury, Jupiter; water: Venus, Mars, Moon); under William Lilly's dignity score (domicile 5, exaltation 4, triplicity 3, term 2, face 1), only the triplicity ruler of the chart's own sect earns the 3 points. Uranus, Neptune, and Pluto are given their modern signs (Aquarius, Pisces, Scorpio) for dignity, while the chart ruler and dominant planet use the traditional rulers. Dominant element, mode, and planet use the engine's own weighting, as no tradition fixes one: Sun, Moon, and Ascendant count 3; Midheaven, Mercury, Venus, and Mars 2; Jupiter and Saturn 1.5; Uranus, Neptune, and Pluto 1. A dominant element or mode is named only when it leads the next-highest by at least 5 percentage points. A stellium requires at least four planets in one sign or house (at least one of them the Sun, Moon, Mercury, Venus, or Mars), or at least three planets all conjunct one another; groups made up solely of slow outer planets, shared by everyone born in the same months, are not counted.",
    "nodeTrue": "true node",
    "nodeMean": "mean node",
    "ascStable": "Ascendant {deg} · stays in this sign within ±{minutes} min of your birth time",
@@ -1650,6 +1681,124 @@
    "vipareetaRaja": "Vipareeta Raja Yoga",
    "chandraMangala": "Chandra-Mangala Yoga"
   },
+  "yogaState": {
+   "formed": "formed",
+   "weak": "weak",
+   "broken": "broken"
+  },
+  "yogaCondition": {
+   "lordsOwnDusthanas": "both lords also rule the 6th, 8th or 12th house",
+   "inDusthana": "in the 6th, 8th or 12th house",
+   "debilitated": "debilitated (not cancelled)",
+   "combust": "too close to the Sun (combust)",
+   "lostWar": "lost a planetary war",
+   "strong": "strong",
+   "kendraFromMoon": "Jupiter in an angle (1st, 4th, 7th, 10th) from the Moon",
+   "kendraFromLagna": "Jupiter in an angle from the ascendant",
+   "beneficConnection": "a benefic joins or aspects Jupiter",
+   "noBeneficConnection": "no benefic joins or aspects Jupiter",
+   "enemySign": "Jupiter in a hostile planet's sign",
+   "grahaInKendraFromLagna": "a planet in an angle from the ascendant",
+   "grahaInKendraFromMoon": "a planet with the Moon or in an angle from it",
+   "dispositorInKendra": "lord of its debilitation sign in an angle from ascendant or Moon",
+   "exaltationLordInKendra": "lord of its exaltation sign in an angle from ascendant or Moon",
+   "bothLordsInKendras": "lords of both its debilitation and exaltation signs in angles",
+   "aspectedByDispositor": "aspected by the lord of its debilitation sign",
+   "exaltedGrahaInKendra": "planet exalted in that debilitation sign in an angle"
+  },
+  "functionalNature": {
+   "yogaKaraka": "yoga-kāraka",
+   "benefic": "benefic",
+   "mixed": "mixed",
+   "neutral": "neutral",
+   "malefic": "malefic"
+  },
+  "functionalRule": {
+   "trikonaLord": "Rules a trine (1st, 5th or 9th): good results (34.2)",
+   "yogaKaraka": "Rules an angle and a trine (34.13)",
+   "kendradhipatiDosha": "Natural benefic ruling only an angle: good held back (34.2, 34.10)",
+   "kendraMalefic": "Natural malefic ruling only an angle: does no harm (34.2)",
+   "trishadayaLord": "Rules the 3rd, 6th or 11th: difficult results (34.4)",
+   "eighthLord": "Rules the 8th: not auspicious unless also a trine lord (34.6)",
+   "eighthLordExempt": "Sun or Moon ruling the 8th: no fault for it (34.7)",
+   "association": "Rules the 2nd or 12th: acts via companions and other house (34.5)",
+   "nodeHouse": "Rāhu / Ketu: gives results of the house it sits in (34.16)",
+   "nodeJoinedLord": "Rāhu / Ketu: gives results of the planet it joins (34.16)",
+   "nodeYogaKaraka": "In an angle or trine, linked to the other kind's lord: acts as yoga-kāraka (34.17)"
+  },
+  "dashaBand": {
+   "rising": "rising",
+   "supportive": "supportive",
+   "mixed": "mixed",
+   "demanding": "demanding",
+   "hard": "hard"
+  },
+  "dashaReason": {
+   "yogaKaraka": "Yoga-kāraka for this ascendant",
+   "trikonaLord": "Rules a trine (1st, 5th or 9th)",
+   "mixedLord": "Lordships pull both ways",
+   "neutralLord": "Neutral lordship for this ascendant",
+   "maleficLord": "Rules difficult houses (3rd, 6th, 8th, 11th)",
+   "viparita": "6th, 8th or 12th lord in one of those houses: difficulty turns around (Viparīta)",
+   "inGoodHouse": "Sits in an angle or trine",
+   "inDusthana": "Sits in the 6th, 8th or 12th house",
+   "exalted": "Exalted",
+   "ownSign": "In its own sign",
+   "enemySign": "In a hostile planet's sign",
+   "debilitated": "Debilitated",
+   "debilitationCancelled": "Debilitated, with cancellation (full or partial)",
+   "combust": "Too close to the Sun (combust)",
+   "lostWar": "Lost a planetary war",
+   "joinedTrikonaLord": "Joined with the 5th or 9th lord",
+   "inYoga": "Part of a formed or weak yoga",
+   "nodeHouse": "Gives results of the house it sits in",
+   "nodeJoinedLord": "Gives results of the planet it joins",
+   "nodeYogaKaraka": "Acts as a yoga-kāraka",
+   "fromMahaDusthana": "Placed 6th, 8th or 12th from the main-period planet",
+   "fromMahaGood": "Well placed from the main-period planet",
+   "enemyOfMahaLord": "Hostile to the main-period planet",
+   "kendraTrikonaPair": "Angle lord and trine lord in each other's periods"
+  },
+  "sadeSatiGrade": {
+   "light": "light",
+   "moderate": "moderate",
+   "heavy": "heavy"
+  },
+  "sadeSatiFactor": {
+   "saturnFunctionalBenefic": "Saturn is supportive for this ascendant",
+   "saturnFunctionalMalefic": "Saturn is difficult for this ascendant",
+   "bindusHigh": "Many benefic points in Saturn's transit sign",
+   "bindusLow": "Few benefic points in Saturn's transit sign",
+   "transitDignity": "Saturn transits its own or exaltation sign",
+   "jupiterAspect": "Transiting Jupiter aspects transiting Saturn"
+  },
+  "vedicHouse": {
+   "1": "self, body, standing",
+   "2": "family, speech, money",
+   "3": "siblings, courage, one's own efforts",
+   "4": "home, mother, land, inner peace",
+   "5": "learning, children, creativity",
+   "6": "daily work, service, competitors, obstacles",
+   "7": "partner, marriage, partnerships, the public",
+   "8": "the hidden, shared resources, upheaval, transformation",
+   "9": "fortune, father, teachers, faith, long journeys",
+   "10": "career, public role, honour",
+   "11": "gains, friends, networks, hopes",
+   "12": "expenses, distant places, retreat, spiritual life"
+  },
+  "vedicConvention": {
+   "lagnaLists": "BPHS 34's list for each ascendant",
+   "eighthLordGoodWith3711": "the reading of an 8th lord with the 3rd, 7th or 11th as good",
+   "rajaEitherLord": "BPHS 34.15 applied when either lord rules the 6th, 8th or 12th",
+   "rajaWith3And11": "the reading including the 3rd and 11th in BPHS 34.15",
+   "nodeStrongLord": "BPHS 34.17 read with a strong lord of the node's sign",
+   "sadeSatiFromMoon": "Saturn's role counted from the Moon's sign",
+   "compoundFriendship": "compound planetary friendship (including chart positions)",
+   "neechaBhangaTwoConditions": "the two-condition rule for cancelling debilitation",
+   "gajaKesariFromMoon": "Gaja-Kesarī counted from the Moon only",
+   "budhaAdityaCombustBreaks": "the rule that combust Mercury breaks Budha-Āditya",
+   "bandEdge": "a score sitting right between two bands"
+  },
   "vedicDignity": {
    "exalted": "Exalted",
    "moolatrikona": "Moolatrikona",
@@ -1683,6 +1832,7 @@
    "chartLabel": "{style} {varga} chart: Lagna {lagna}",
    "foot": "{style} style · sidereal zodiac · {ayanamsa} ({deg}) · whole-sign houses · numbers mark the zodiac signs",
    "footSouth": "South Indian style · sidereal zodiac · {ayanamsa} ({deg}) · signs stay in fixed boxes, with a diagonal marking the Lagna",
+   "conventions": "Rāhu and Ketu are calculated using {node}, casting an aspect to the 7th sign from their position only (another school also counts the 5th and 9th signs). Both Vimśottarī and Yoginī daśā years are 365.25 days. Functional natures for the ascendant (Lagna) follow the general rules of Bṛhat Parāśara Horā Śāstra (BPHS) ch. 34: lords of the 1st, 5th and 9th houses are benefic; lords of the 3rd, 6th, 8th and 11th are malefic unless they also rule a trine; the Sun and Moon carry no fault as 8th lords (34.7), while an 8th lord also ruling the 3rd, 7th or 11th counts as difficult (matching the chapter's ascendant lists); where the ascendant lists (34.19–44) read a planet differently, both readings are shown. Periods are graded into five bands from the planet's functional role, house, dignity, companions and yogas (BPHS 34 and 48; Phaladīpikā ch. 20), with sub-periods also weighed by their placement from the main-period planet (Phaladīpikā 20.29). Yogas appear as formed, weak or broken: Rāja yoga is broken when both lords also rule the 6th, 8th or 12th (BPHS 34.15) and weak when a participant sits in the 6th, 8th or 12th, is debilitated, combust or lost a planetary war; Gaja-Kesarī follows BPHS 36.3 (counted from the ascendant or Moon, with a benefic joining or aspecting Jupiter, and broken by debilitation, combustion or a hostile sign using natural friendship from BPHS ch. 3); Budha-Āditya is weak when Mercury is combust; debilitation is cancelled by any condition in Phaladīpikā 7.26–30; planetary war follows Sūrya Siddhānta 7.19–21 (within one degree, the northern planet prevails). Sade Sati is graded by Saturn's benefic points in its transit sign (Phaladīpikā 26.41), its dignity (26.31), Jupiter's aspect (26.30) and Saturn's role for the ascendant.",
    "noLagna": "Without a birth time, the Lagna and houses cannot be set; planets are shown by sign alone.",
    "nakshatraTitle": "Moon nakshatra",
    "nakshatraName": "{latin} ({name}) · pada {pada}",
@@ -1711,7 +1861,30 @@
    "ashtakavargaTitle": "Ashtakavarga totals",
    "readingLagna": "Lagna in {lagna}, Moon in {moon}, in the nakshatra of {nakshatra} (pada {pada}).",
    "readingDasha": "Currently running {maha} Mahadasha and {antar} Antardasha.",
-   "ayanamsaLabel": "Ayanamsa"
+   "ayanamsaLabel": "Ayanamsa",
+   "periodTitle": "Current period reading",
+   "periodMaha": "Main period: {lord} · {band}",
+   "periodAntar": "Sub-period: {lord} · {band}",
+   "periodTopics": "Brings forward: {topics}",
+   "periodReasons": "Reasons",
+   "periodBetween": "Could also read as {band} ({reading})",
+   "sadeSatiLine": "{phase} · {grade}",
+   "sadeSatiFactors": "What shapes its weight",
+   "functionalTitle": "Planets for your ascendant",
+   "functionalHouses": "Houses {houses}",
+   "functionalList": "Ascendant list: {nature}",
+   "yogaDecidedBy": "Decided by: {conditions}",
+   "yogaOther": "Under {reading}, this would be {state}",
+   "yogaOtherAbsent": "Not counted under {reading}",
+   "warLine": "Planetary war: {winner} prevails over {loser}",
+   "contested": "two readings",
+   "chips": {
+    "functional": "{graha} · {nature}",
+    "periodMaha": "{lord} main period · {band}",
+    "periodAntar": "{lord} sub-period · {band}",
+    "sadeSati": "Sade Sati · {grade}",
+    "war": "{winner} / {loser} war"
+   }
   },
   "hdType": {
    "generator": "Generator",
@@ -2152,6 +2325,44 @@
    "extraversion": "Extraversion",
    "agreeableness": "Agreeableness",
    "neuroticism": "Neuroticism"
+  },
+  "seasonalState": {
+   "wang": "In season",
+   "xiang": "Nourished",
+   "xiu": "Resting",
+   "qiu": "Confined",
+   "si": "Subdued"
+  },
+  "rootKind": {
+   "lu": "Thriving",
+   "ren": "Yang Blade",
+   "sameQi": "Main qi",
+   "changSheng": "Growth",
+   "yuQi": "Residual qi",
+   "mu": "Vault",
+   "jiSheng": "Lodged qi"
+  },
+  "strengthModifier": {
+   "floating": "Floating",
+   "meeting": "Directional trio",
+   "trine": "Trine",
+   "halfTrine": "Half-trine",
+   "clash": "Clashed",
+   "dryEarth": "Dry earth",
+   "wetEarth": "Wet earth",
+   "bound": "Bound",
+   "transformed": "Transformed"
+  },
+  "usefulGodReason": {
+   "strength": "Strength",
+   "source": "Strength source",
+   "candidate": "Candidate element",
+   "absent": "Absent in chart",
+   "climate": "Climate balance",
+   "follow": "Follow pattern",
+   "transform": "Transformation",
+   "disease": "Remedy",
+   "bridge": "Bridging"
   }
  },
  "site": {

@@ -138,9 +138,10 @@ export function canonicalBirth(b) {
   return out;
 }
 
-/** The invite-public POST body of a completed form — the same fields and consents as the web page. */
+/** The invite-public POST body of a completed form — the same fields and consents as the web page (WP-341: no
+ *  confirm_adult — the server ignores it and no age is asked). */
 export function completeBody(token, shareLevel, draft, keepCopy) {
-  return { token, action: 'complete', share_level: shareLevel, birth: toBirthInput(draft), consent: true, confirm_adult: true, keep_copy: !!keepCopy };
+  return { token, action: 'complete', share_level: shareLevel, birth: toBirthInput(draft), consent: true, keep_copy: !!keepCopy };
 }
 
 export const LEVEL_KEY = { full: 'full', results_only: 'resultsOnly', this_synastry_only: 'thisSynastryOnly' };
