@@ -1416,7 +1416,13 @@
   "cite": {
    "luckStart": "{age} 岁起运",
    "westAngles": "辅助轴点",
-   "westHemispheres": "半球分布"
+   "westHemispheres": "半球分布",
+   "dayRelation": "流日与{pillar} · {relation}",
+   "dayMonthRelation": "流日与流月 · {relation}",
+   "transitPlacement": "行运{body}在{sign}座 · 第{house}宫",
+   "transitSign": "行运{body}在{sign}座",
+   "ingressSign": "行运{body}进入{sign}座",
+   "ingressHouse": "行运{body}进入第{house}宫"
   },
   "ziweiPalace": {
    "ming": "命宫",

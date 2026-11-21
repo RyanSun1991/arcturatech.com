@@ -1416,7 +1416,13 @@
   "cite": {
    "luckStart": "luck pillars from age {age}",
    "westAngles": "Auxiliary Angles",
-   "westHemispheres": "Hemisphere Balance"
+   "westHemispheres": "Hemisphere Balance",
+   "dayRelation": "Day & {pillar} Pillar · {relation}",
+   "dayMonthRelation": "Day & Current Month · {relation}",
+   "transitPlacement": "Transit {body} in {sign} · House {house}",
+   "transitSign": "Transit {body} in {sign}",
+   "ingressSign": "Transit {body} enters {sign}",
+   "ingressHouse": "Transit {body} enters House {house}"
   },
   "ziweiPalace": {
    "ming": "Life",
