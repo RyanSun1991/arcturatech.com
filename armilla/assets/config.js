@@ -18,8 +18,8 @@ export const SITE = Object.freeze({
   region: 'ap-southeast-1',
   base: '/armilla',
   scheme: 'armilla',
-  appStore: Object.freeze({ public: false, id: '6832763947', providerToken: '128850178', campaign: 'site_armilla' }),
-  play: Object.freeze({ public: false, package: 'com.arcturatech.armilla', campaign: 'site_armilla' }),
+  appStore: Object.freeze({ public: true, id: '6832763947', providerToken: '128850178', campaign: 'site_armilla' }),
+  play: Object.freeze({ public: true, package: 'com.arcturatech.armilla', campaign: 'site_armilla' }),
   clipBundleId: 'com.arcturatech.armilla.Clip',
 });
 
