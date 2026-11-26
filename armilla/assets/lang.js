@@ -101,6 +101,46 @@
     }
   }
 
+  /* Owner 2026-11-26: a row of eight does not scale — each switcher becomes one compact menu: a <details> whose summary
+   * names the current choice and whose panel lists every language by its own name. Without JavaScript the page's own
+   * row of three stays as it is. */
+  var summaries = [];
+  function labelOf(tag) {
+    return LABELS[tag] || tag.toUpperCase();
+  }
+  function closeMenus(except) {
+    var open = document.querySelectorAll('details.lang-menu[open]');
+    for (var m = 0; m < open.length; m += 1) if (open[m] !== except) open[m].open = false;
+  }
+  function makeMenus() {
+    var groups = document.querySelectorAll('.langs');
+    for (var g = 0; g < groups.length; g += 1) {
+      var group = groups[g];
+      if (group.parentNode && group.parentNode.className === 'lang-menu') continue;
+      var links = group.querySelectorAll('[data-set-lang]');
+      for (var k = 0; k < links.length; k += 1) links[k].textContent = labelOf(links[k].getAttribute('data-set-lang'));
+      var menu = document.createElement('details');
+      menu.className = 'lang-menu';
+      var summary = document.createElement('summary');
+      if (group.getAttribute('aria-label')) summary.setAttribute('title', group.getAttribute('aria-label'));
+      group.parentNode.insertBefore(menu, group);
+      menu.appendChild(summary);
+      menu.appendChild(group);
+      summaries.push(summary);
+    }
+    document.addEventListener('click', function (event) {
+      var inside = event.target && event.target.closest ? event.target.closest('details.lang-menu') : null;
+      closeMenus(event.target.closest && event.target.closest('[data-set-lang]') ? null : inside);
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key !== 'Escape') return;
+      var open = document.querySelector('details.lang-menu[open]');
+      if (!open) return;
+      open.open = false;
+      open.querySelector('summary').focus();
+    });
+  }
+
   var listeners = [];
   function apply(next) {
     var html = document.documentElement;
@@ -114,6 +154,7 @@
       var on = buttons[j].getAttribute('data-set-lang') === next;
       buttons[j].setAttribute('aria-current', on ? 'true' : 'false');
     }
+    for (var m = 0; m < summaries.length; m += 1) summaries[m].textContent = labelOf(next);
   }
 
   window.ArmillaLang = {
@@ -141,6 +182,7 @@
   apply(lang);
   document.addEventListener('DOMContentLoaded', function () {
     addSwitcherEntries();
+    makeMenus();
     apply(lang);
     document.addEventListener('click', function (event) {
       var target = event.target && event.target.closest ? event.target.closest('[data-set-lang]') : null;
