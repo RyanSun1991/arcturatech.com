@@ -5,8 +5,44 @@
 //   import { createPlaceSearch } from '@armilla/content/geo/search.mjs';
 //   const geo = createPlaceSearch({ cities, admin, countries, fold });   // the four TSV files as text
 //   geo.search('台北', { locale: 'zh-Hant', limit: 10 });                 // → [{ geonameId, label, lat, lon, tz, … }]
+//
+// The file is copied verbatim to the company site, so it imports nothing: the locale list below is generated from the
+// registry (WP-374; `node packages/content/geo/gen-locales.mjs`, checked by scripts/main-content-checks.sh).
 
-export const LOCALES = ['zh-Hans', 'zh-Hant', 'en'];
+// <generated-locales> by packages/content/geo/gen-locales.mjs from packages/i18n/locales.json — do not edit
+
+/** Every locale with a name column (README §1), in the order of packages/i18n/locales.json. */
+export const LOCALES = ['zh-Hans', 'zh-Hant', 'en', 'ja', 'ko', 'vi', 'fr', 'es'];
+
+/**
+ * Each locale's name columns in fallback order — the registry's chain (README §4.4): its own column, its `fallback`
+ * locales', then en. A column is the tag without hyphens; `en` is the `name` column of cities.tsv.
+ */
+export const NAME_CHAINS = {
+  'zh-Hans': ['zhHans', 'en'],
+  'zh-Hant': ['zhHant', 'zhHans', 'en'],
+  en: ['en'],
+  ja: ['ja', 'en'],
+  ko: ['ko', 'en'],
+  vi: ['vi', 'en'],
+  fr: ['fr', 'en'],
+  es: ['es', 'en'],
+};
+
+// </generated-locales>
+
+/** The name columns: every locale's own (`en` = `name` in cities.tsv). A file without one of them reads it as empty. */
+const NAME_COLUMNS = [...new Set(Object.values(NAME_CHAINS).map((c) => c[0]))];
+
+/** Dataset v1's name columns: their names are search keys for every reader (README §4.2). */
+const V1_COLUMNS = ['en', 'zhHans', 'zhHant'];
+
+/** The columns added after v1 (WP-374): a reader's own chain ranks with the v1 keys, the others after them (§4.3). */
+const MORE_COLUMNS = NAME_COLUMNS.filter((col) => !V1_COLUMNS.includes(col));
+
+/** The result's `names` (README §4.4): these locales always carry a name (along their chain, as in dataset v1);
+ * every other locale only where the dataset has its own name — never a copy of another locale's. */
+const FILLED = ['en', 'zh-Hans', 'zh-Hant'];
 
 /** Trailing administrative suffixes (after folding) that a query or a name may carry or omit. */
 export const SUFFIXES = new Set(['市', '县', '区', '镇', '乡', '旗']);
@@ -78,10 +114,31 @@ function tierOf(keys, variants) {
   return best;
 }
 
+/** The name in `locale` along its chain (an unknown locale reads as en). */
 function pick(names, locale) {
-  if (locale === 'zh-Hant') return names.zhHant || names.zhHans || names.en;
-  if (locale === 'zh-Hans') return names.zhHans || names.en;
+  for (const col of NAME_CHAINS[locale] ?? NAME_CHAINS.en) if (names[col]) return names[col];
   return names.en;
+}
+
+/** One row's names by column (`en` from `enCol`); a column the file lacks is empty. */
+function namesOf(t, r, enCol) {
+  const names = {};
+  for (const col of NAME_COLUMNS) {
+    const i = t.col(col === 'en' ? enCol : col);
+    names[col] = i < 0 ? '' : r[i];
+  }
+  return names;
+}
+
+/** The result's `names` by locale tag. */
+function namesByLocale(names) {
+  const out = {};
+  for (const l of LOCALES) {
+    const own = names[NAME_CHAINS[l][0]];
+    if (FILLED.includes(l)) out[l] = pick(names, l);
+    else if (own) out[l] = own;
+  }
+  return out;
 }
 
 /**
@@ -92,14 +149,15 @@ export function createPlaceSearch(files) {
   const fold = parseFold(files.fold);
   const norm = (s) => normalize(s, fold);
   const keySet = (...names) => [...new Set(names.filter(Boolean).map(norm).filter(Boolean).flatMap(withoutSuffix))];
+  const moreKeys = (names) => Object.fromEntries(MORE_COLUMNS.map((col) => [col, keySet(names[col])]));
 
   const named = (text, keyCol) => {
     const t = parseTsv(text);
-    const [k, en, hans, hant] = [keyCol, 'en', 'zhHans', 'zhHant'].map(t.col);
+    const k = t.col(keyCol);
     const map = new Map();
     for (const r of t.rows) {
-      const names = { en: r[en], zhHans: r[hans], zhHant: r[hant] };
-      map.set(r[k], { names, keys: keySet(names.en, names.zhHans, names.zhHant) });
+      const names = namesOf(t, r, 'en');
+      map.set(r[k], { names, keys: keySet(...V1_COLUMNS.map((col) => names[col])), more: moreKeys(names) });
     }
     return map;
   };
@@ -107,9 +165,9 @@ export function createPlaceSearch(files) {
   const countries = named(files.countries, 'cc');
 
   const t = parseTsv(files.cities);
-  const c = Object.fromEntries(['id', 'name', 'ascii', 'alias', 'zhHans', 'zhHant', 'cc', 'adm', 'lat', 'lon', 'tz', 'pop'].map((n) => [n, t.col(n)]));
+  const c = Object.fromEntries(['id', 'ascii', 'alias', 'cc', 'adm', 'lat', 'lon', 'tz', 'pop'].map((n) => [n, t.col(n)]));
   const places = t.rows.map((r) => {
-    const names = { en: r[c.name], zhHans: r[c.zhHans], zhHant: r[c.zhHant] };
+    const names = namesOf(t, r, 'name');
     const cc = r[c.cc];
     const admin = admins.get(`${cc}.${r[c.adm]}`);
     const country = countries.get(cc);
@@ -124,7 +182,9 @@ export function createPlaceSearch(files) {
       tz: r[c.tz],
       population: Number(r[c.pop]),
       keys: keySet(names.en, r[c.ascii], names.zhHans, names.zhHant, ...r[c.alias].split('|')),
+      more: moreKeys(names),
       contextKeys: [cc.toLowerCase(), ...(admin?.keys ?? []), ...(country?.keys ?? [])],
+      moreContext: Object.fromEntries(MORE_COLUMNS.map((col) => [col, [...(admin?.more[col] ?? []), ...(country?.more[col] ?? [])]])),
     };
   });
   const byId = new Map(places.map((p) => [p.geonameId, p]));
@@ -146,13 +206,13 @@ export function createPlaceSearch(files) {
       lon: p.lon,
       tz: p.tz,
       population: p.population,
-      names: { en: p.names.en, 'zh-Hans': pick(p.names, 'zh-Hans'), 'zh-Hant': pick(p.names, 'zh-Hant') },
+      names: namesByLocale(p.names),
     };
   }
 
   /**
    * @param {string} query
-   * @param {{locale?: 'zh-Hans'|'zh-Hant'|'en', limit?: number, preferCountries?: string[]}} [opts]
+   * @param {{locale?: string, limit?: number, preferCountries?: string[]}} [opts]  locale: one of LOCALES (another reads as en)
    */
   function search(query, opts = {}) {
     const locale = opts.locale ?? 'en';
@@ -163,19 +223,28 @@ export function createPlaceSearch(files) {
     if (!q) return [];
     const variants = withoutSuffix(q);
     const context = rest.map(norm).filter(Boolean);
+    // The reader's own columns beyond v1 (ja for ja …) count like the v1 keys; the other locales' names still find a
+    // place, ranked after every match of those (a zh-Hant reader typing 台东 gets 臺東 before Tokyo's 台東区).
+    const own = (NAME_CHAINS[locale] ?? NAME_CHAINS.en).filter((col) => MORE_COLUMNS.includes(col));
+    const others = MORE_COLUMNS.filter((col) => !own.includes(col));
 
     const hits = [];
     for (const p of places) {
-      const tier = tierOf(p.keys, variants);
+      let tier = Math.max(tierOf(p.keys, variants), ...own.map((col) => tierOf(p.more[col], variants)));
+      if (tier) tier += 3;
+      else tier = Math.max(0, ...others.map((col) => tierOf(p.more[col], variants)));
       if (!tier) continue;
-      if (!context.every((x) => p.contextKeys.some((k) => k.startsWith(x)))) continue;
+      const contextKeys = own.length ? [...p.contextKeys, ...own.flatMap((col) => p.moreContext[col])] : p.contextKeys;
+      if (!context.every((x) => contextKeys.some((k) => k.startsWith(x)))) continue;
       const pi = prefer.indexOf(p.cc);
       hits.push({ p, tier, pref: pi < 0 ? prefer.length : pi });
     }
     hits.sort((a, b) => b.tier - a.tier || a.pref - b.pref || b.p.population - a.p.population || a.p.geonameId - b.p.geonameId);
-    const top = hits.slice(0, limit).map((h) => h.p);
+    return presentAll(hits.slice(0, limit).map((h) => h.p), locale);
+  }
 
-    // Disambiguation: results sharing (display name, country) also show the first-level division.
+  /** Disambiguation: results sharing (display name, country) also show the first-level division. */
+  function presentAll(top, locale) {
     const seen = new Map();
     for (const p of top) {
       const k = `${pick(p.names, locale)}\u0000${p.cc}`;
@@ -186,6 +255,8 @@ export function createPlaceSearch(files) {
 
   return {
     search,
+    /** The same places (a result list's geonameIds, in order) labelled in another locale, disambiguated within the list. */
+    relabel: (ids, locale = 'en') => presentAll(ids.map((id) => byId.get(Number(id))).filter(Boolean), locale),
     byId: (id, locale = 'en') => {
       const p = byId.get(Number(id));
       return p ? present(p, locale, true) : undefined;

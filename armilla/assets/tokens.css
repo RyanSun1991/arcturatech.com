@@ -101,8 +101,12 @@
   /* font */
   --cn: "Noto Serif SC","Songti SC","STSong",serif;
   --cn-hant: "Noto Serif TC","Songti TC","Noto Serif SC","Songti SC",serif;
+  --cn-han-kana: "Noto Serif JP","Hiragino Mincho ProN","Yu Mincho","Noto Serif SC",serif;
+  --cn-hangul: "Noto Serif KR","AppleMyungjo","Nanum Myeongjo","Noto Serif SC",serif;
   --en: "Cinzel","Trajan Pro",serif;
   --ui: -apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --ui-han-kana: -apple-system,BlinkMacSystemFont,"SF Pro Text","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",system-ui,sans-serif;
+  --ui-hangul: -apple-system,BlinkMacSystemFont,"SF Pro Text","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;
   --mono: "IBM Plex Mono",ui-monospace,"SF Mono","Menlo",monospace;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
@@ -446,4 +450,22 @@
  * On <html> only: every element below inherits it, and a page stylesheet can still override it there. */
 :root:lang(zh-Hant) {
   --cn: var(--cn-hant);
+}
+
+/* A Japanese / Korean page (<html data-script>, the locale registry's script trait) is set in its own serif:
+ * Japanese glyph forms in Noto Serif JP, Hangul in Noto Serif KR — the same metrics and Latin as Noto Serif SC — and its UI
+ * text in its own system faces before the Chinese ones. */
+:root[data-script="han-kana"] {
+  --cn: var(--cn-han-kana);
+  --ui: var(--ui-han-kana);
+}
+
+:root[data-script="hangul"] {
+  --cn: var(--cn-hangul);
+  --ui: var(--ui-hangul);
+}
+
+/* A language whose letters Cinzel lacks (Vietnamese) sets its eyebrows / Latin display text in the serif's Latin. */
+:root:lang(vi) {
+  --en: var(--cn);
 }

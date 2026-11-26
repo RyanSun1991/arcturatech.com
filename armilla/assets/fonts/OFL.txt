@@ -10,6 +10,16 @@ Copyright 2012 Google Inc. All Rights Reserved.
 Noto Serif TC (NotoSerifTC-SemiBold/Black.ttf — subset + static instances of NotoSerifTC[wght].ttf):
 (c) 2017-2024 Adobe (http://www.adobe.com/).
 
+Noto Serif JP (NotoSerifJP-SemiBold/Black.ttf — subset + static instances of NotoSerifJP[wght].ttf, notofonts/noto-cjk):
+(c) 2017-2024 Adobe (http://www.adobe.com/).
+
+Noto Serif KR (NotoSerifKR-SemiBold/Black.ttf — subset + static instances of NotoSerifKR[wght].ttf, notofonts/noto-cjk):
+(c) 2017-2024 Adobe (http://www.adobe.com/).
+
+Noto Serif (NotoSerif-SemiBold.ttf — Latin subset of the static NotoSerif-SemiBold.ttf, notofonts/latin-greek-cyrillic
+release NotoSerif-v2.015):
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/latin-greek-cyrillic)
+
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
 https://openfontlicense.org

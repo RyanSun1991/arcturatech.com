@@ -1,0 +1,242 @@
+{
+ "client": {
+  "invite": {
+   "level": {
+    "full": {
+     "desc": "Podrá ver tu fecha, hora y lugar de nacimiento, además de todas tus cartas y la lectura conjunta de ambos.",
+     "name": "Compartir todo"
+    },
+    "resultsOnly": {
+     "desc": "Podrá ver tus cartas y la lectura conjunta de ambos, pero tu fecha, hora y lugar de nacimiento permanecerán ocultos.",
+     "name": "Solo resultados de las cartas"
+    },
+    "thisSynastryOnly": {
+     "desc": "Tus datos se usarán únicamente para esta lectura conjunta y no aparecerán en ningún otro lugar de su app.",
+     "name": "Solo esta lectura conjunta"
+    }
+   },
+   "eyebrow": "INVITACIÓN",
+   "header": "{inviter} te invitó a explorar juntos el mapa de su relación",
+   "relationLine": "En el mapa de {inviter}, figuras como «{relation}».",
+   "intro": "Te llevará alrededor de un minuto y no necesitas crear una cuenta. Tú decides qué compartir y puedes dejar de hacerlo en cualquier momento.",
+   "levelTitle": "Elige qué compartir",
+   "levelEyebrow": "COMPARTIR",
+   "birthTitle": "Tus datos de nacimiento",
+   "birthEyebrow": "DATOS DE NACIMIENTO",
+   "consent": "Acepto que Armilla use mis datos de nacimiento para calcular mis cartas y nuestra lectura conjunta para {inviter}, compartiéndolos únicamente según lo elegido arriba.",
+   "submit": "Listo",
+   "privacy": "Tus datos de nacimiento se guardan cifrados y la otra persona solo verá lo que elijas compartir.",
+   "done": {
+    "title": "Todo listo. Puedes usar este mismo enlace para dejar de compartir en cualquier momento.",
+    "app": "También puedes descargar la app de Armilla para explorar tu propia carta."
+   },
+   "revoke": {
+    "action": "Dejar de compartir",
+    "confirm": "Cuando dejes de compartir, tus datos de nacimiento y las cartas generadas a partir de ellos se eliminarán en un plazo de 24 horas.",
+    "done": "Dejaste de compartir. Tus datos se eliminarán en un plazo de 24 horas."
+   },
+   "revoked": {
+    "title": "Este enlace ya no funciona",
+    "body": "Esta invitación fue retirada."
+   },
+   "expired": {
+    "title": "Este enlace de invitación expiró",
+    "body": "Pídele a la persona que te invitó que te envíe un enlace nuevo."
+   },
+   "notFound": {
+    "title": "No encontramos esta invitación",
+    "body": "Es posible que falte una parte del enlace. Revísalo o pídele que te lo vuelva a enviar."
+   },
+   "completed": "Esta invitación ya se completó.",
+   "error": "No pudimos abrir esta invitación en este momento. Inténtalo de nuevo en unos instantes.",
+   "rateLimited": "Demasiados intentos seguidos. Espera un momento e inténtalo de nuevo.",
+   "keepCopy": "Guarda también una copia para mí: regístrate en los próximos 30 días para ver tu propia carta al instante, o se eliminará automáticamente.",
+   "seeResult": "Ver el mapa de su relación"
+  },
+  "clip": {
+   "getApp": "Obtener Armilla",
+   "noLink": "Ábrelo desde un enlace de invitación."
+  },
+  "family": {
+   "join": {
+    "confirm": "Únete al plan Familia de {owner}. Tus perfiles, eventos de vida, diario y conversaciones seguirán siendo visibles solo para ti.",
+    "title": "Unirse a un plan Familia",
+    "confirmGeneric": "Al unirte podrás compartir el plan Familia. Tus perfiles, eventos de vida, diario y conversaciones seguirán siendo visibles solo para ti.",
+    "accept": "Unirme",
+    "joined": "Te uniste al plan Familia",
+    "ownSub": "Si ya tienes una suscripción propia, seguirá renovándose después de unirte; puedes cancelarla en {store}."
+   }
+  },
+  "birth": {
+   "yearOnly": {
+    "note": "Puedes empezar solo con el año de nacimiento. Todo lo que requiera la fecha o la hora exactas aparecerá con contorno discontinuo y se completará automáticamente en cuanto lo añadas."
+   }
+  }
+ },
+ "web": {
+  "chartNew": {
+   "date": {
+    "label": "Fecha de nacimiento",
+    "kind": "Calendario",
+    "civil": "Gregoriano",
+    "lunar": "Lunar",
+    "ganZhi": "Pilares",
+    "year": "Año",
+    "month": "Mes",
+    "day": "Día",
+    "leap": "Mes intercalar",
+    "leapHint": "Marca esta opción solo si ese año lunar tuvo un mes intercalar y naciste en el segundo. Te avisaremos si ese año no lo tuvo.",
+    "civilValue": "{day}/{month}/{year}",
+    "lunarValue": "Lunar {year}, mes {month}{leap}, día {day}",
+    "lunarLeap": " intercalar",
+    "pillarYear": "Pilar del año",
+    "pillarMonth": "Pilar del mes",
+    "pillarDay": "Pilar del día",
+    "pillarHour": "Pilar de la hora (opcional)",
+    "pillarHourNone": "Desconocido",
+    "ganZhiHint": "Busca fechas gregorianas entre 1900 y 2100 que coincidan con tus pilares. Si incluyes el pilar de la hora, situaremos la hora de nacimiento en el punto medio de ese bloque de dos horas.",
+    "find": "Buscar fechas",
+    "finding": "Buscando fechas coincidentes…",
+    "candidates": "{count, plural, =0 {No se encontraron fechas coincidentes entre 1900 y 2100} one {Se encontró # fecha coincidente; selecciónala abajo} many {Se encontraron # fechas coincidentes; elige una abajo} other {Se encontraron # fechas coincidentes; elige una abajo}}",
+    "pick": "Elegir",
+    "picked": "Seleccionada: {date}",
+    "candidateTime": "{date} {time}",
+    "pillarsRequired": "Busca primero las fechas coincidentes y elige una para continuar."
+   },
+   "time": {
+    "label": "Hora de nacimiento",
+    "hour": "Hora",
+    "minute": "Minuto",
+    "certainty": "¿Qué tan precisa es la hora?",
+    "shichen": "Hora doble",
+    "shichenOption": "Hora {branch} {span}",
+    "notes": {
+     "exact": "Calcularemos tus cartas al minuto exacto según tu partida de nacimiento o los registros familiares.",
+     "plusMinus15m": "Comprobaremos 15 minutos antes y después, y señalaremos cualquier punto de tu lectura que pueda cambiar dentro de ese margen.",
+     "plusMinus1h": "En una franja de dos horas, el Ascendente, las casas, el pilar de la hora, el Palacio de la vida en Zi Wei y algunas puertas del Mapa energético pueden cambiar de límite; marcaremos con claridad cualquier interpretación que dependa de ellos.",
+     "shichenOnly": "Usaremos el punto medio de ese bloque de dos horas y marcaremos como provisional todo lo que dependa del minuto exacto, como el Ascendente, las casas y las puertas de cambio más rápido.",
+     "unknown": "También puedes generar tus cartas sin hora de nacimiento. En BaZi se calculan los pilares del año, del mes y del día sin el pilar de la hora; en astrología occidental se omiten el Ascendente y las casas; Zi Wei Dou Shu no se calcula sin la hora; y el Mapa energético muestra el tipo indicando que requiere la hora para confirmarse. Todo lo que depende de la hora aparece con líneas discontinuas y su explicación. Puedes editar tus datos de nacimiento en cualquier momento para recalcular todas las cartas. Con una cuenta —para ti o para el perfil de una persona adulta que completes tú— la inferencia de hora de nacimiento también puede estimar el horario más probable a partir de pistas como una franja aproximada que recuerde tu familia, acontecimientos fechados, algunas preguntas de contraste y, en tu propio perfil, observaciones de la palma y el rostro."
+    }
+   },
+   "place": {
+    "label": "Lugar de nacimiento",
+    "search": "Busca una ciudad o localidad",
+    "suggestions": "Lugares frecuentes",
+    "noResults": "No encontramos «{query}». Prueba con una ciudad cercana o introduce las coordenadas directamente.",
+    "manual": "Introducir coordenadas y zona horaria manualmente",
+    "manualHide": "Ocultar entrada manual",
+    "lat": "Latitud (+ norte, − sur)",
+    "lon": "Longitud (+ este, − oeste)",
+    "tz": "Zona horaria IANA",
+    "manualName": "Coordenadas ({lat}, {lon})",
+    "useManual": "Usar estas coordenadas",
+    "selected": "{name} · {coords}",
+    "change": "Cambiar",
+    "tzNote": "Consultamos la base de datos histórica de la IANA para tener en cuenta los cambios de huso horario y el horario de verano del año en que naciste.",
+    "dataNote": "Los datos de lugares proceden de GeoNames (unas 37 000 ciudades y localidades de todo el mundo, CC BY 4.0). Si tu lugar de nacimiento no aparece, puedes introducir sus coordenadas directamente.",
+    "loading": "Cargando ciudades y localidades…",
+    "loadFailed": "No pudimos cargar la lista de lugares. Revisa tu conexión e inténtalo de nuevo, o introduce las coordenadas directamente.",
+    "required": "Elige un lugar de nacimiento"
+   },
+   "sex": {
+    "label": "Sexo para el cálculo",
+    "female": "Femenino",
+    "male": "Masculino",
+    "skip": "Omitir",
+    "note": "Se utiliza únicamente para cálculos tradicionales: en BaZi determina si tus ciclos de suerte de diez años avanzan o retroceden, y Zi Wei Dou Shu lo necesita para poder trazar la carta. Si omites este paso, BaZi mostrará ambas direcciones de los ciclos y Zi Wei quedará en espera hasta que lo añadas."
+   }
+  },
+  "landing": {
+   "download": {
+    "eyebrow": "DESCARGA LA APP",
+    "title": "Tu conciencia diaria, en el bolsillo",
+    "lead": "Tu clima energético diario, las propuestas de conciencia, el diario y los widgets están en la app; los informes profundos, las invitaciones a lecturas conjuntas y el espacio Pro están en la web. Una misma cuenta mantiene todo sincronizado.",
+    "ios": "App Store",
+    "iosStatus": "En pruebas finales",
+    "android": "Google Play",
+    "androidStatus": "En pruebas finales",
+    "web": "Seguir en el navegador"
+   }
+  }
+ },
+ "systems": {
+  "timeCertainty": {
+   "label": "Certeza de la hora",
+   "exact": "Exacta",
+   "plusMinus15m": "±15 min",
+   "plusMinus1h": "±1 hora",
+   "shichenOnly": "Franja de 2 horas",
+   "dateOnly": "Solo fecha",
+   "yearOnly": "Solo año",
+   "unknown": "No la sé",
+   "timeSensitive": "Depende de la hora de nacimiento",
+   "degradedNote": "Lo que depende de la hora de nacimiento aparece con línea discontinua. Si añades tu hora de nacimiento, la carta se recalculará automáticamente."
+  },
+  "relationTypes": {
+   "partner": "Pareja",
+   "parent": "Padre o madre",
+   "child": "Hijo o hija",
+   "sibling": "Hermano o hermana",
+   "friend": "Amigo",
+   "colleague": "Colega",
+   "businessPartner": "Socio",
+   "client": "Cliente",
+   "other": "Otro"
+  }
+ },
+ "charts": {
+  "branch": {
+   "zi": "Zi",
+   "chou": "Chou",
+   "yin": "Yin",
+   "mao": "Mao",
+   "chen": "Chen",
+   "si": "Si",
+   "wu": "Wu",
+   "wei": "Wei",
+   "shen": "Shen",
+   "you": "You",
+   "xu": "Xu",
+   "hai": "Hai"
+  },
+  "ui": {
+   "listSep": ", "
+  }
+ },
+ "site": {
+  "language": "Idioma",
+  "brand": "Armilla",
+  "invitePageTitle": "Invitación · Armilla",
+  "resultPageTitle": "El mapa de su relación · Armilla",
+  "loading": "Abriendo…",
+  "openApp": "¿Ya tienes Armilla? Abrir en la app",
+  "afterInstall": "Cuando termines de instalarla, vuelve aquí y toca otra vez «Abrir en la app».",
+  "orWeb": "Si prefieres no instalar nada, no pasa nada: puedes completarlo aquí mismo.",
+  "inApp": "Es posible que este navegador no pueda abrir la app. Toca «···» arriba a la derecha y elige «Abrir en el navegador».",
+  "retry": "Reintentar",
+  "offline": "Parece que no tienes conexión. Revisa tu red y vuelve a intentarlo.",
+  "learnMore": "Conoce Armilla",
+  "storesTitle": "Descarga Armilla",
+  "storeComingSoon": "Muy pronto",
+  "keepInAppTitle": "Guarda este resultado en la app",
+  "keepInAppBody": "Instala Armilla y abre allí este mismo enlace del resultado (o toca «Abrir en la app» más abajo). En cuanto te registres, esta lectura conjunta aparecerá en Personas. El enlace del resultado funciona durante 30 días.",
+  "placeSearching": "Buscando…",
+  "placeNoResults": "No encontramos nada para «{query}».",
+  "dateKindNote": "Las fechas en Cuatro Pilares (BaZi) se convierten en la app o en la web; aquí, introduce la fecha en el calendario gregoriano o en el lunar.",
+  "footerNote": "Armilla describe tendencias y ciclos para que te conozcas mejor. No predice acontecimientos ni sustituye el consejo de un profesional.",
+  "privacy": "Política de privacidad",
+  "terms": "Términos de uso",
+  "support": "Ayuda y soporte",
+  "report": "Denunciar este enlace",
+  "reportSubject": "Denuncia de un enlace de invitación de Armilla",
+  "familyPageTitle": "Únete a un plan Familia · Armilla",
+  "familyJoinBody": "Para unirte a un plan Familia necesitas una cuenta de Armilla, así que abre esta invitación en la app: si ya la tienes instalada, toca el botón de abajo; si no, descarga la app, inicia sesión y vuelve a tocar el enlace de la invitación. El enlace solo puede usarse una vez y vence a los 7 días.",
+  "eyebrowFamily": "FAMILIA",
+  "eyebrowSixRings": "SEIS DIMENSIONES",
+  "eyebrowSystems": "SISTEMAS",
+  "eyebrowDate": "FECHA",
+  "eyebrowTime": "HORA",
+  "eyebrowPlace": "LUGAR",
+  "eyebrowForCalculation": "DATOS PARA EL CÁLCULO"
+ }
+}

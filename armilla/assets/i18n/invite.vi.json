@@ -1,0 +1,242 @@
+{
+ "client": {
+  "invite": {
+   "level": {
+    "full": {
+     "desc": "Họ có thể xem ngày, giờ, nơi sinh của bạn, cùng toàn bộ các lá số của bạn và phần luận giải chung của hai bạn.",
+     "name": "Chia sẻ đầy đủ"
+    },
+    "resultsOnly": {
+     "desc": "Họ có thể xem các lá số của bạn và phần luận giải chung của hai bạn, nhưng ngày, giờ và nơi sinh của bạn sẽ được ẩn.",
+     "name": "Chỉ kết quả lá số"
+    },
+    "thisSynastryOnly": {
+     "desc": "Thông tin của bạn chỉ dùng để tạo riêng phần luận giải chung này và sẽ không xuất hiện ở bất kỳ mục nào khác trong ứng dụng của họ.",
+     "name": "Chỉ phần luận giải chung này"
+    }
+   },
+   "eyebrow": "LỜI MỜI",
+   "header": "{inviter} mời bạn cùng khám phá lá số mối quan hệ của hai bạn",
+   "relationLine": "Trên lá số của {inviter}, bạn là “{relation}”.",
+   "intro": "Chỉ mất khoảng một phút và không cần tạo tài khoản. Bạn tự chọn mức độ chia sẻ và có thể thu hồi bất cứ lúc nào.",
+   "levelTitle": "Chọn mức độ chia sẻ",
+   "levelEyebrow": "CHIA SẺ",
+   "birthTitle": "Thông tin sinh của bạn",
+   "birthEyebrow": "THÔNG TIN SINH",
+   "consent": "Tôi đồng ý để Armilla sử dụng thông tin sinh của tôi nhằm lập lá số và phần luận giải chung với {inviter}, chỉ chia sẻ theo lựa chọn ở trên.",
+   "submit": "Hoàn tất",
+   "privacy": "Thông tin sinh của bạn được mã hóa, và họ chỉ thấy đúng phần bạn cho phép chia sẻ.",
+   "done": {
+    "title": "Đã xong. Bạn có thể dùng chính liên kết này để dừng chia sẻ bất cứ lúc nào.",
+    "app": "Bạn cũng có thể tải ứng dụng Armilla để tự khám phá lá số của riêng mình."
+   },
+   "revoke": {
+    "action": "Dừng chia sẻ",
+    "confirm": "Sau khi dừng chia sẻ, thông tin sinh của bạn và các lá số được tạo từ đó sẽ bị xóa vĩnh viễn trong vòng 24 giờ.",
+    "done": "Đã dừng chia sẻ. Thông tin của bạn sẽ bị xóa trong vòng 24 giờ."
+   },
+   "revoked": {
+    "title": "Liên kết này không còn hiệu lực",
+    "body": "Lời mời này đã bị thu hồi."
+   },
+   "expired": {
+    "title": "Liên kết mời này đã hết hạn",
+    "body": "Hãy nhờ người đã mời bạn gửi một liên kết mới."
+   },
+   "notFound": {
+    "title": "Không tìm thấy lời mời này",
+    "body": "Liên kết có thể đã bị thiếu một đoạn khi sao chép. Hãy kiểm tra lại hoặc nhờ họ gửi lại cho bạn."
+   },
+   "completed": "Lời mời này đã được hoàn tất.",
+   "error": "Hiện chưa mở được lời mời này. Vui lòng thử lại sau giây lát.",
+   "rateLimited": "Bạn thử hơi nhanh quá — vui lòng đợi một chút rồi thử lại.",
+   "keepCopy": "Lưu tạm một bản cho tôi: đăng ký trong vòng 30 ngày để xem ngay lá số của riêng mình, quá hạn sẽ tự động xóa.",
+   "seeResult": "Xem lá số mối quan hệ của hai bạn"
+  },
+  "clip": {
+   "getApp": "Tải Armilla",
+   "noLink": "Vui lòng mở qua liên kết mời."
+  },
+  "family": {
+   "join": {
+    "confirm": "Tham gia gói Gia đình của {owner}. Hồ sơ, dấu mốc cuộc đời, nhật ký và các cuộc trò chuyện của bạn vẫn chỉ mình bạn xem được.",
+    "title": "Tham gia gói Gia đình",
+    "confirmGeneric": "Tham gia để dùng chung gói Gia đình. Hồ sơ, dấu mốc cuộc đời, nhật ký và các cuộc trò chuyện của bạn vẫn chỉ mình bạn xem được.",
+    "accept": "Tham gia",
+    "joined": "Đã tham gia gói Gia đình",
+    "ownSub": "Nếu bạn đang có gói đăng ký cá nhân, gói đó vẫn sẽ tiếp tục gia hạn sau khi bạn tham gia — bạn có thể vào {store} để hủy."
+   }
+  },
+  "birth": {
+   "yearOnly": {
+    "note": "Chỉ nhớ năm sinh vẫn có thể bắt đầu ngay. Những phần cần đầy đủ ngày hoặc giờ sinh sẽ tạm hiển thị bằng nét đứt, và tự động cập nhật lại khi bạn bổ sung sau."
+   }
+  }
+ },
+ "web": {
+  "chartNew": {
+   "date": {
+    "label": "Ngày sinh",
+    "kind": "Loại lịch",
+    "civil": "Dương lịch",
+    "lunar": "Âm lịch",
+    "ganZhi": "Can Chi",
+    "year": "Năm",
+    "month": "Tháng",
+    "day": "Ngày",
+    "leap": "Tháng nhuận",
+    "leapHint": "Chỉ đánh dấu nếu năm Âm lịch đó có tháng nhuận và bạn sinh vào tháng thứ hai trong hai tháng trùng tên. Hệ thống sẽ báo nếu năm đó không có tháng nhuận này.",
+    "civilValue": "{day}/{month}/{year}",
+    "lunarValue": "Ngày {day} tháng {month}{leap} năm {year} Âm lịch",
+    "lunarLeap": " nhuận",
+    "pillarYear": "Trụ năm",
+    "pillarMonth": "Trụ tháng",
+    "pillarDay": "Trụ ngày",
+    "pillarHour": "Trụ giờ (không bắt buộc)",
+    "pillarHourNone": "Không rõ",
+    "ganZhiHint": "Tìm ngày Dương lịch tương ứng trong khoảng 1900–2100 từ Can Chi Tứ Trụ. Nếu chọn cả Trụ giờ, giờ sinh sẽ được đặt vào chính giữa khung giờ hai tiếng đó.",
+    "find": "Tìm ngày",
+    "finding": "Đang tìm các ngày khớp…",
+    "candidates": "{count, plural, =0 {Không có ngày nào khớp với bộ Can Chi này trong khoảng 1900–2100} other {Tìm thấy # ngày khớp — hãy chọn một ngày bên dưới}}",
+    "pick": "Chọn",
+    "picked": "Đã chọn {date}",
+    "candidateTime": "{date} {time}",
+    "pillarsRequired": "Vui lòng tra cứu các ngày khớp trước và chọn một ngày để tiếp tục."
+   },
+   "time": {
+    "label": "Giờ sinh",
+    "hour": "Giờ",
+    "minute": "Phút",
+    "certainty": "Mức độ chính xác",
+    "shichen": "Giờ Địa Chi",
+    "shichenOption": "Giờ {branch} {span}",
+    "notes": {
+     "exact": "Lá số sẽ được lập chính xác tới từng phút theo giấy chứng sinh hoặc ghi chép của gia đình.",
+     "plusMinus15m": "Chúng tôi sẽ tính thêm mốc trước và sau 15 phút, rồi đánh dấu bất kỳ luận giải nào có thể thay đổi trong khoảng nửa tiếng đó.",
+     "plusMinus1h": "Trong khoảng hai tiếng, Điểm Mọc, các cung nhà chiêm tinh, Trụ giờ Bát Tự, Mệnh Cung Tử Vi và một số Cổng năng lượng có thể bước qua ranh giới — mọi phần phụ thuộc vào chúng sẽ được đánh dấu rõ.",
+     "shichenOnly": "Chúng tôi sẽ lấy thời điểm chính giữa của khung giờ hai tiếng đó và đánh dấu tạm xác định cho những phần phụ thuộc vào từng phút, như Cung Mọc, các cung nhà và những Cổng năng lượng di chuyển nhanh.",
+     "unknown": "Bạn vẫn có thể lập lá số khi chưa rõ giờ sinh. Khi đó Bát Tự dùng ba trụ năm, tháng, ngày (không có Trụ giờ), Chiêm tinh phương Tây bỏ qua Cung Mọc và các cung nhà, Tử Vi Đẩu Số tạm chưa lập lá số vì thiếu giờ sinh, còn Bản đồ năng lượng hiển thị Loại hình kèm lưu ý cần giờ sinh để xác nhận. Mọi phần phụ thuộc vào giờ sinh đều được vẽ bằng nét đứt kèm lý do. Bạn có thể sửa lại thông tin sinh bất cứ lúc nào để tính lại toàn bộ lá số; nếu có tài khoản (cho chính bạn hoặc hồ sơ người trưởng thành do bạn tự điền), tính năng suy đoán giờ sinh còn có thể dựa vào ký ức đại khái của gia đình, các sự kiện có mốc thời gian trong đời, vài câu hỏi phân biệt và — với hồ sơ của chính bạn — quan sát chỉ tay và tướng mặt để tìm ra khoảng giờ khả dĩ nhất."
+    }
+   },
+   "place": {
+    "label": "Nơi sinh",
+    "search": "Tìm thành phố hoặc thị xã nơi sinh",
+    "suggestions": "Địa điểm phổ biến",
+    "noResults": "Không tìm thấy “{query}”. Bạn có thể thử một thành phố lân cận hoặc nhập trực tiếp kinh độ, vĩ độ.",
+    "manual": "Nhập thủ công tọa độ và múi giờ",
+    "manualHide": "Ẩn phần nhập thủ công",
+    "lat": "Vĩ độ (+ Bắc, − Nam)",
+    "lon": "Kinh độ (+ Đông, − Tây)",
+    "tz": "Múi giờ IANA",
+    "manualName": "Tọa độ ({lat}, {lon})",
+    "useManual": "Dùng tọa độ này",
+    "selected": "{name} · {coords}",
+    "change": "Đổi",
+    "tzNote": "Chúng tôi tra cứu cơ sở dữ liệu múi giờ lịch sử IANA để tính đúng thay đổi múi giờ và giờ mùa hè vào năm bạn sinh.",
+    "dataNote": "Dữ liệu địa điểm lấy từ GeoNames (khoảng 37.000 thành phố và thị trấn trên toàn cầu, CC BY 4.0). Nếu nơi sinh của bạn không có trong danh sách, bạn có thể nhập trực tiếp tọa độ.",
+    "loading": "Đang tải danh sách địa điểm…",
+    "loadFailed": "Không thể tải danh sách địa điểm. Vui lòng kiểm tra kết nối và thử lại, hoặc nhập trực tiếp tọa độ.",
+    "required": "Vui lòng chọn nơi sinh"
+   },
+   "sex": {
+    "label": "Giới tính dùng để tính lá số",
+    "female": "Nữ",
+    "male": "Nam",
+    "skip": "Bỏ qua",
+    "note": "Chỉ dùng cho phép tính lịch truyền thống: trong Bát Tự để xác định Đại vận 10 năm đi thuận hay nghịch, còn Tử Vi Đẩu Số bắt buộc cần thông tin này để an sao. Nếu bạn bỏ qua, Bát Tự sẽ hiển thị cả hai chiều Đại vận và Tử Vi sẽ tạm ẩn cho tới khi bạn bổ sung."
+   }
+  },
+  "landing": {
+   "download": {
+    "eyebrow": "TẢI ỨNG DỤNG",
+    "title": "Sự tỉnh thức mỗi ngày, ngay trong túi bạn",
+    "lead": "Thời tiết năng lượng hằng ngày, gợi ý chiêm nghiệm, nhật ký nhanh và tiện ích màn hình chính đều có trong ứng dụng; còn báo cáo chuyên sâu, lời mời xem lá số đôi và không gian làm việc Chuyên sâu nằm trên web. Một tài khoản duy nhất, đồng bộ liền mạch giữa điện thoại và trình duyệt.",
+    "ios": "App Store",
+    "iosStatus": "Đang thử nghiệm giai đoạn cuối",
+    "android": "Google Play",
+    "androidStatus": "Đang thử nghiệm giai đoạn cuối",
+    "web": "Tiếp tục dùng bản web"
+   }
+  }
+ },
+ "systems": {
+  "timeCertainty": {
+   "label": "Độ chính xác giờ sinh",
+   "exact": "Chính xác",
+   "plusMinus15m": "±15 phút",
+   "plusMinus1h": "±1 giờ",
+   "shichenOnly": "Khung 2 giờ",
+   "dateOnly": "Chỉ có ngày sinh",
+   "yearOnly": "Chỉ có năm sinh",
+   "unknown": "Không rõ",
+   "timeSensitive": "Phụ thuộc vào giờ sinh",
+   "degradedNote": "Những phần phụ thuộc vào giờ sinh được đánh dấu bằng nét đứt. Khi bạn bổ sung giờ sinh, lá số sẽ tự động tính lại."
+  },
+  "relationTypes": {
+   "partner": "Nửa kia",
+   "parent": "Cha mẹ",
+   "child": "Con cái",
+   "sibling": "Anh chị em",
+   "friend": "Bạn bè",
+   "colleague": "Đồng nghiệp",
+   "businessPartner": "Đối tác",
+   "client": "Khách hàng",
+   "other": "Khác"
+  }
+ },
+ "charts": {
+  "branch": {
+   "zi": "Tý",
+   "chou": "Sửu",
+   "yin": "Dần",
+   "mao": "Mão",
+   "chen": "Thìn",
+   "si": "Tỵ",
+   "wu": "Ngọ",
+   "wei": "Mùi",
+   "shen": "Thân",
+   "you": "Dậu",
+   "xu": "Tuất",
+   "hai": "Hợi"
+  },
+  "ui": {
+   "listSep": ", "
+  }
+ },
+ "site": {
+  "language": "Ngôn ngữ",
+  "brand": "Armilla",
+  "invitePageTitle": "Lời mời · Armilla",
+  "resultPageTitle": "Lá số đôi của hai bạn · Armilla",
+  "loading": "Đang mở…",
+  "openApp": "Đã có Armilla? Mở trong ứng dụng",
+  "afterInstall": "Cài xong, hãy quay lại đây và chạm “Mở trong ứng dụng” thêm một lần nữa.",
+  "orWeb": "Không muốn cài cũng không sao — bạn có thể điền ngay trên trang này.",
+  "inApp": "Trình duyệt này có thể không mở được ứng dụng. Hãy chạm vào ··· ở góc trên bên phải rồi chọn mở bằng trình duyệt.",
+  "retry": "Thử lại",
+  "offline": "Có vẻ bạn đang mất kết nối mạng. Hãy kiểm tra lại rồi thử lần nữa.",
+  "learnMore": "Tìm hiểu về Armilla",
+  "storesTitle": "Tải Armilla",
+  "storeComingSoon": "Sắp ra mắt",
+  "keepInAppTitle": "Giữ kết quả này trong ứng dụng",
+  "keepInAppBody": "Cài Armilla rồi mở lại chính đường liên kết kết quả này trong ứng dụng (hoặc chạm “Mở trong ứng dụng” bên dưới). Sau khi bạn đăng ký, lá số đôi này sẽ xuất hiện trong mục Kết nối. Đường liên kết kết quả có hiệu lực trong 30 ngày.",
+  "placeSearching": "Đang tìm…",
+  "placeNoResults": "Không tìm thấy “{query}”.",
+  "dateKindNote": "Ngày theo Tứ Trụ (can chi) cần được quy đổi trong ứng dụng hoặc trên bản web; ở đây, bạn vui lòng nhập theo dương lịch hoặc âm lịch.",
+  "footerNote": "Armilla mô tả những khuynh hướng và chu kỳ để bạn tự soi chiếu bản thân; không dự đoán sự việc cụ thể và không thay thế cho lời khuyên chuyên môn.",
+  "privacy": "Chính sách quyền riêng tư",
+  "terms": "Điều khoản sử dụng",
+  "support": "Trợ giúp và hỗ trợ",
+  "report": "Báo cáo liên kết này",
+  "reportSubject": "Báo cáo một liên kết mời của Armilla",
+  "familyPageTitle": "Tham gia gói Gia đình · Armilla",
+  "familyJoinBody": "Để tham gia gói Gia đình, bạn cần có tài khoản Armilla, vì vậy hãy mở lời mời này trong ứng dụng: nếu đã cài Armilla, hãy chạm vào nút bên dưới; nếu chưa, hãy tải ứng dụng, đăng nhập rồi chạm lại vào đường liên kết mời. Liên kết chỉ dùng được một lần, trong vòng 7 ngày.",
+  "eyebrowFamily": "GIA ĐÌNH",
+  "eyebrowSixRings": "SÁU KHÍA CẠNH",
+  "eyebrowSystems": "CÁC HỆ THỐNG",
+  "eyebrowDate": "NGÀY SINH",
+  "eyebrowTime": "GIỜ SINH",
+  "eyebrowPlace": "NƠI SINH",
+  "eyebrowForCalculation": "THÔNG TIN DÙNG ĐỂ TÍNH"
+ }
+}

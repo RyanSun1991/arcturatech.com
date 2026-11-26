@@ -1,0 +1,2499 @@
+{
+ "client": {
+  "inviteResult": {
+   "eyebrow": "VOTRE CARTE RELATIONNELLE",
+   "title": "Vous et {inviter}",
+   "relationLine": "De votre côté, {inviter} est votre {relation}.",
+   "intro": "Il s’agit de la même lecture à deux, vue de votre côté. Plutôt qu’une note unique, les six anneaux montrent côte à côte où vous vous accordez naturellement et où des frictions peuvent apparaître.",
+   "you": "Vous",
+   "findingsTitle": "Points clés",
+   "locked": "{count, plural, one {# point clé supplémentaire} other {# points clés supplémentaires}} · créez un compte pour conserver cette lecture et débloquez la suite avec un abonnement",
+   "systemsTitle": "Par système",
+   "systemsEyebrow": "SYSTÈMES",
+   "systemsLine": "{system} · {count, plural, one {# point clé} other {# points clés}}",
+   "systemsNote": "Les vues détaillées des cartes — comme la double roue ou les Quatre Piliers côte à côte — n’apparaissent que si vous choisissez tous les deux de tout partager. Par défaut, {inviter} ne partage que les résultats : sa date, son heure et son lieu de naissance restent donc masqués.",
+   "keepTitle": "Conserver cette lecture",
+   "keepBody": "Créez un compte et cette lecture à deux sera enregistrée dans Relations. Vous pouvez arrêter le partage à tout moment, tout comme {inviter}.",
+   "keep": "S’inscrire et conserver",
+   "keepSignedIn": "Enregistrer sur mon compte",
+   "linked": "Enregistrée sur votre compte.",
+   "selfFilled": "Nous avons également établi votre propre carte à partir des informations que vous avez saisies.",
+   "reward": "Vous et {inviter} avez chacun reçu 7 jours d’abonnement Plus.",
+   "openShared": "Ouvrir dans Relations",
+   "copyLink": "Copier le lien vers cette lecture (valable 30 jours)",
+   "copied": "Copié",
+   "computing": "Préparation de votre lecture à deux — cela ne prend généralement que quelques secondes.",
+   "pendingInviter": "Les informations de naissance de {inviter} ne sont pas encore prêtes. Merci de revenir un peu plus tard.",
+   "revoked": "Cette lecture à deux n’est plus disponible, car l’un de vous a arrêté le partage.",
+   "expired": "Ce lien vers le résultat a expiré (les liens restent actifs pendant 30 jours).",
+   "unavailable": "Cette lecture à deux n’est plus disponible.",
+   "notFound": "Nous n’avons pas trouvé ce résultat — le lien est peut-être incomplet.",
+   "noToken": "Aucune lecture enregistrée n’a été trouvée dans ce navigateur. Si vous avez conservé le lien du résultat après avoir saisi vos informations, ouvrez-le directement.",
+   "error": "Impossible d’ouvrir ce résultat pour le moment. Veuillez réessayer dans un instant.",
+   "linkError": {
+    "alreadyLinked": "Cette lecture a déjà été enregistrée sur un autre compte.",
+    "ownInvite": "C’est une invitation que vous avez envoyée vous-même.",
+    "gone": "Le partage a été arrêté pour cette lecture, ou le lien a expiré.",
+    "generic": "Impossible de l’enregistrer pour le moment. Veuillez réessayer dans un instant."
+   }
+  },
+  "pair": {
+   "title": "Lecture à deux",
+   "practice": "Essayer ensemble",
+   "rings": {
+    "footnote": "Six facettes de votre entente, lues séparément — jamais réduites à un score unique",
+    "a11y": "{ring} : {character}",
+    "character": {
+     "strong": "Fort",
+     "quiet": "Discret",
+     "friction": "Surtout des frictions"
+    },
+    "thinEvidence": "Peu d’indices",
+    "legendStrength": "Lien",
+    "legendFriction": "Frictions",
+    "axis": "{neg} ⇄ {pos}",
+    "evidence": "Indices"
+   },
+   "findings": {
+    "eyebrow": "POINTS CLÉS",
+    "title": "Points clés · {shown} / {total}",
+    "direction": "{from} → {to}",
+    "mutual": "Réciproque",
+    "lockedCta": "Débloquez {count, plural, one {# autre point clé} other {# autres points clés}} et vos scénarios de conflit",
+    "lockedA11y": "Point clé verrouillé — touchez pour débloquer"
+   }
+  },
+  "clip": {
+   "getApp": "Obtenir Armilla",
+   "noLink": "Veuillez ouvrir ce lien depuis une invitation."
+  }
+ },
+ "web": {
+  "landing": {
+   "download": {
+    "eyebrow": "TÉLÉCHARGER L'APP",
+    "title": "La lucidité au quotidien, dans votre poche",
+    "lead": "Votre météo énergétique du jour, vos pistes de réflexion, votre journal et vos widgets vous accompagnent dans l'application ; les rapports approfondis, les invitations à deux et l'espace Pro vous attendent sur le web. Un seul compte synchronise tout.",
+    "ios": "App Store",
+    "iosStatus": "En phase finale de test",
+    "android": "Google Play",
+    "androidStatus": "En phase finale de test",
+    "web": "Continuer dans le navigateur"
+   }
+  }
+ },
+ "systems": {
+  "relationTypes": {
+   "partner": "Partenaire",
+   "parent": "Parent",
+   "child": "Enfant",
+   "sibling": "Frère ou sœur",
+   "friend": "Ami",
+   "colleague": "Collègue",
+   "businessPartner": "Associé",
+   "client": "Client",
+   "other": "Autre"
+  }
+ },
+ "facts": {
+  "enums": {
+   "baziPattern": {
+    "congCai": "Suivre la richesse",
+    "congEr": "Suivre l’expression",
+    "congQiang": "Suivre la force",
+    "congRuo": "Suivre la faiblesse",
+    "congSha": "Suivre le pouvoir",
+    "huaQi": "Transformation",
+    "jianLu": "Essor personnel",
+    "pianCai": "Richesse indirecte",
+    "pianYin": "Ressource indirecte",
+    "qiSha": "Sept meurtres",
+    "shangGuan": "Officier blessant",
+    "shiShen": "Dieu de la nourriture",
+    "yangRen": "Lame yang",
+    "zhengCai": "Richesse directe",
+    "zhengGuan": "Officier direct",
+    "zhengYin": "Ressource directe"
+   },
+   "body": {
+    "asc": "Ascendant",
+    "chiron": "Chiron",
+    "dsc": "Descendant",
+    "earth": "Terre",
+    "ic": "Fond du Ciel",
+    "jupiter": "Jupiter",
+    "lilith": "Lilith",
+    "mars": "Mars",
+    "mc": "Milieu du Ciel",
+    "mercury": "Mercure",
+    "moon": "Lune",
+    "neptune": "Neptune",
+    "northNode": "Nœud Nord",
+    "partOfFortune": "Part de Fortune",
+    "pluto": "Pluton",
+    "saturn": "Saturne",
+    "southNode": "Nœud Sud",
+    "sun": "Soleil",
+    "uranus": "Uranus",
+    "venus": "Vénus",
+    "vertex": "Vertex"
+   },
+   "branch": {
+    "chen": "Chen",
+    "chou": "Chou",
+    "hai": "Hai",
+    "mao": "Mao",
+    "shen": "Shen",
+    "si": "Si",
+    "wei": "Wei",
+    "wu": "Wu",
+    "xu": "Xu",
+    "yin": "Yin",
+    "you": "You",
+    "zi": "Zi"
+   },
+   "cogFunction": {
+    "Fe": "Fe",
+    "Fi": "Fi",
+    "Ne": "Ne",
+    "Ni": "Ni",
+    "Se": "Se",
+    "Si": "Si",
+    "Te": "Te",
+    "Ti": "Ti"
+   },
+   "confidence": {
+    "high": "élevée",
+    "low": "faible",
+    "medium": "moyenne"
+   },
+   "graha": {
+    "jupiter": "Jupiter",
+    "ketu": "Ketu",
+    "mars": "Mars",
+    "mercury": "Mercure",
+    "moon": "Lune",
+    "rahu": "Rahu",
+    "saturn": "Saturne",
+    "sun": "Soleil",
+    "venus": "Vénus"
+   },
+   "pillar": {
+    "day": "pilier du jour",
+    "hour": "pilier de l’heure",
+    "month": "pilier du mois",
+    "year": "pilier de l’année"
+   },
+   "sign": {
+    "Aquarius": "Verseau",
+    "Aries": "Bélier",
+    "Cancer": "Cancer",
+    "Capricorn": "Capricorne",
+    "Gemini": "Gémeaux",
+    "Leo": "Lion",
+    "Libra": "Balance",
+    "Pisces": "Poissons",
+    "Sagittarius": "Sagittaire",
+    "Scorpio": "Scorpion",
+    "Taurus": "Taureau",
+    "Virgo": "Vierge"
+   },
+   "stem": {
+    "bing": "Bing",
+    "ding": "Ding",
+    "geng": "Geng",
+    "gui": "Gui",
+    "ji": "Ji",
+    "jia": "Jia",
+    "ren": "Ren",
+    "wu": "Wu",
+    "xin": "Xin",
+    "yi": "Yi"
+   },
+   "type16": {
+    "ENFJ": "ENFJ",
+    "ENFP": "ENFP",
+    "ENTJ": "ENTJ",
+    "ENTP": "ENTP",
+    "ESFJ": "ESFJ",
+    "ESFP": "ESFP",
+    "ESTJ": "ESTJ",
+    "ESTP": "ESTP",
+    "INFJ": "INFJ",
+    "INFP": "INFP",
+    "INTJ": "INTJ",
+    "INTP": "INTP",
+    "ISFJ": "ISFJ",
+    "ISFP": "ISFP",
+    "ISTJ": "ISTJ",
+    "ISTP": "ISTP"
+   },
+   "vedicHouse": {
+    "1": "soi, corps, statut",
+    "2": "famille, parole, argent",
+    "3": "fratrie, courage, efforts personnels",
+    "4": "foyer, mère, terre, paix intérieure",
+    "5": "savoir, enfants, créativité",
+    "6": "travail quotidien, service, rivaux, obstacles",
+    "7": "partenaire, mariage, associations, public",
+    "8": "secrets, ressources partagées, bouleversements, transformation",
+    "9": "bonne fortune, père, maîtres, foi, longs voyages",
+    "10": "carrière, rôle public, honneur",
+    "11": "gains, amis, réseaux, espoirs",
+    "12": "dépenses, terres lointaines, retraite, vie spirituelle"
+   },
+   "wx": {
+    "earth": "Terre",
+    "fire": "Feu",
+    "metal": "Métal",
+    "water": "Eau",
+    "wood": "Bois"
+   }
+  },
+  "relation_fact": {
+   "bazi": {
+    "pair": {
+     "branch": {
+      "combine6": {
+       "detail": "Vos branches terrestres forment une combinaison des Six harmonies entre les piliers {ap} et {bp}. Les troncs célestes montrent la surface ; les branches gouvernent le quotidien concret et les fondations. Cette combinaison signifie que, sur une facette de votre rythme de vie ou de vos habitudes, vous vous emboîtez naturellement : sans effort d’ajustement, chacun sait accueillir le pas de l’autre.",
+       "phrase": "Branches en Six harmonies"
+      }
+     },
+     "complement": {
+      "mutual": {
+       "detail": "Les éléments favorables de vos deux thèmes se complètent : l’élément qui manque à l’un et dont il a besoin est justement le plus abondant chez l’autre. Chacun de vous a ses déséquilibres, mais ensemble, c’est comme si la pièce manquante trouvait sa place : vous soutenez naturellement ce qui penche chez l’autre. C’est une configuration rare dans la comparaison de thèmes ; plus le temps passe, plus chacun sent que l’autre l’aide à devenir plus stable et plus entier.",
+       "phrase": "Complémentarité mutuelle"
+      },
+      "one_way": {
+       "detail": "L’élément abondant dans le thème de l’un vient combler exactement l’élément favorable dont l’autre a le plus besoin. La personne qui reçoit ce soutien se sent souvent plus calme et plus à l’aise, comme portée par un vent favorable, simplement en passant du temps ou en réfléchissant avec l’autre ; quant à celle qui apporte ce soutien, elle se dépense souvent sans s’en rendre compte : cela mérite d’être vu, et appelle en retour de la reconnaissance et de l’attention, sur d’autres plans.",
+       "phrase": "Soutien à sens unique"
+      }
+     },
+     "daybranch": {
+      "clash": {
+       "detail": "Vos branches du jour s’entrechoquent. La branche du jour est le palais le plus intime du BaZi : elle abrite les habitudes privées, les rythmes du corps et les sources de sécurité affective de chacun. À distance, la différence se remarque à peine ; mais dès que vous vous rapprochez, que vous partagez le quotidien ou la même pièce, vos façons de vous détendre et vos rythmes peuvent facilement se heurter. Il vous faut alors, à chacun, du temps et de l’espace pour respirer.",
+       "phrase": "Branches du jour en choc"
+      },
+      "combine6": {
+       "detail": "Vos branches du jour forment une combinaison des Six harmonies. La branche du jour, c’est le visage de chacun dans l’intimité, et son quotidien. Vous vous accordez là où la vie est la plus nue : même sans parler, même quand chacun vaque à ses occupations dans la même pièce, vos rythmes se rejoignent naturellement, et l’atmosphère entre vous est apaisée, comme à la maison.",
+       "phrase": "Branches du jour en Six harmonies"
+      }
+     },
+     "daystem": {
+      "clash": {
+       "detail": "Vos troncs du jour, {sa} et {sb}, s’affrontent directement. Les troncs célestes sont en surface : ils gouvernent les réactions et l’expression au quotidien. Vous abordez souvent les choses par des angles exactement opposés, avec pourtant la même franchise de caractère ; quand le ton monte, même une broutille peut tourner à l’affrontement frontal. Mais cette tension agit aussi comme les deux pôles d’un aimant : quoi qu’il arrive, aucun de vous deux ne peut faire comme si l’autre n’existait pas.",
+       "phrase": "Troncs du jour {sa}–{sb} en choc"
+      },
+      "combine": {
+       "detail": "Vos troncs du jour, {sa} et {sb}, se combinent, et cette union tend vers l’élément {el}. Le tronc du jour représente le cœur du tempérament de chacun et sa manière d’aborder le monde ; une combinaison unit toujours un yin et un yang — non parce que vous vous ressemblez, mais parce que, bien que différents, vous vous accordez naturellement. Dès la première rencontre, les défenses tombent facilement ; avec le temps, vous vous rapprochez l’un de l’autre sans même y penser, et chacun fait naître chez l’autre un peu de la qualité de l’élément {el}.",
+       "phrase": "Troncs du jour {sa}–{sb} en combinaison"
+      },
+      "controls": {
+       "detail": "Entre les troncs du jour {sa} et {sb}, l’un contrôle et l’autre reçoit : l’énergie de l’un contient et encadre naturellement celle de l’autre. Dans la relation, la personne qui contrôle a souvent plus de facilité à décider et à fixer les critères, ce qui peut peser sur l’autre sans qu’on s’en rende compte ; mais vu sous un autre angle, cette contrainte aide aussi souvent l’autre à se recentrer et à poser des repères. Que ce soit confortable ou non dépend entièrement du dosage, léger ou appuyé.",
+       "phrase": "{sa} contrôle {sb}"
+      },
+      "generates": {
+       "detail": "Entre les troncs du jour {sa} et {sb}, l’un engendre et l’autre reçoit : l’énergie de l’un soutient et nourrit naturellement celle de l’autre. La personne qui donne veille spontanément sur l’autre, s’inquiète pour elle, la soutient ; la personne soutenue trouve facilement dans cette relation un sentiment de solidité, et agit avec plus d’assurance. Tant que celle qui donne ne s’épuise pas, cette chaleur peut circuler longtemps.",
+       "phrase": "{sa} nourrit {sb}"
+      },
+      "same_element": {
+       "detail": "Vos troncs du jour ({sa} et {sb}) appartiennent au même élément : c’est ce que le BaZi appelle « partager le même souffle ». Vos tempéraments profonds se répondent ; bien des choses n’ont pas besoin d’explication, un regard suffit pour comprendre ce à quoi l’autre tient. Mais justement parce que vous vous ressemblez tant, quand surgit un désaccord ou un bras de fer, chacun connaît la manière de faire de l’autre, et personne ne cède facilement le premier.",
+       "phrase": "Troncs du jour du même élément"
+      }
+     },
+     "dayun": {
+      "output_meets_power": {
+       "detail": "Dans vos piliers de chance actuels, l’un de vous traverse une décennie de l’Expression, tournée vers l’expression de soi et l’envie de briser les cadres, tandis que l’autre vit une décennie du Pouvoir, faite de responsabilités, de charges à porter et de règles à tenir. L’un veut desserrer les liens et changer, l’autre avance sous le poids ; vous pouvez vous éclairer mutuellement — l’un ouvre de nouvelles perspectives, l’autre aide à garder les pieds sur terre —, mais quand la tension monte des deux côtés, vous risquez aussi de vous mettre mutuellement la pression : tenez compte de l’étape que traverse l’autre.",
+       "phrase": "Décennie de l’Expression face à décennie du Pouvoir"
+      },
+      "sync": {
+       "detail": "Au cours des dix prochaines années, les élans et le rythme de vos piliers de chance vont dans le même sens. Ce qu’une relation redoute le plus, c’est que l’un veuille foncer quand l’autre veut se poser ; or vos décennies sont accordées : vous aurez souvent envie de vous lancer à peu près aux mêmes moments, puis de vous recentrer et de vous installer à peu près aux mêmes périodes, si bien que chacun comprend facilement l’état d’esprit et les choix de l’autre.",
+       "phrase": "Piliers de chance en phase"
+      }
+     },
+     "sole_element": {
+      "detail": "Quand on regarde vos deux thèmes ensemble, presque toute la force de l’élément {el} se concentre chez une seule personne. Au quotidien, les qualités liées à l’élément {el} deviennent souvent, sans qu’on y prenne garde, le domaine réservé de cette personne. Cela peut créer une belle complémentarité, mais si vous comptez toujours sur elle pour ce rôle, elle finira par s’épuiser. Mieux vaut vous relayer dans vos habitudes et votre complicité, pour que ce poids ne repose pas sur une seule paire d’épaules.",
+      "phrase": "L’élément {el} presque tout d’un côté"
+     }
+    }
+   },
+   "hd": {
+    "pair": {
+     "authority": {
+      "both_emotional": {
+       "detail": "Chez chacun de vous, l’autorité est émotionnelle : la première réaction n’est jamais la réponse définitive, et la vraie certitude n’émerge qu’une fois la vague retombée. Au quotidien, vos marées émotionnelles s’additionnent parfois — au sommet ensemble, vous risquez de vous engager sur un coup d’enthousiasme ; au creux ensemble, de voir les problèmes plus graves qu’ils ne sont — et parfois elles se décalent : l’un déborde d’entrain quand l’autre est inexplicablement morose. Heureusement, vous comprenez naturellement ce que signifie « je ne peux pas encore le dire ». Pour les décisions importantes, laissez-vous une nuit, quelques jours, et attendez que la mer soit calme des deux côtés pour trancher : c’est toujours votre accord le plus sûr.",
+       "phrase": "Deux autorités émotionnelles"
+      },
+      "wave_vs_instant": {
+       "detail": "Pour décider, vous vivez dans deux temporalités radicalement différentes : l’un de vous a besoin de laisser la question traverser les hauts et les bas de l’émotion, et ne voit clair qu’après une nuit de sommeil ; l’autre sait en un instant, par l’intuition ou une réaction du corps. Sans connaître le fonctionnement de l’autre, la personne rapide trouve l’autre hésitante, voire inconstante ; la personne lente se sent acculée, et même si elle accepte sur le moment, elle risque de le regretter ensuite. En réalité, personne ne prend l’autre à la légère : la personne rapide peut noter sa première intuition, tout en laissant à l’autre une nuit pour décanter ; c’est la réponse qui en ressort qui compte vraiment.",
+       "phrase": "Laisser passer la vague × savoir sur-le-champ"
+      }
+     },
+     "companionship": {
+      "detail": "Chacun de vous possède en entier le canal {channels}. Sur ce terrain, vous fonctionnez exactement de la même manière : pas besoin de vous jauger, ni de vous expliquer longuement « pourquoi je suis comme ça ». Pas de drame des contraires ici, mais une assurance et une complicité de vieux amis : même quand vous divergez ailleurs, sur ce thème, vous comprenez aussitôt le rythme de l’autre.",
+      "phrase": "Canal de compagnonnage"
+     },
+     "compromise": {
+      "detail": "Sur le canal {channels}, l’un de vous possède le canal entier, l’autre n’en tient qu’une extrémité. C’est la configuration qui accumule le plus facilement des frustrations silencieuses : la personne qui n’a qu’une extrémité s’investit elle aussi sur ce thème, avec ses propres attentes, mais a souvent l’impression que sa voix est couverte par la manière établie de l’autre, et finit par céder. La personne qui a le canal entier, elle, agit simplement par instinct, sans même se rendre compte qu’elle mène la danse. Voir là un écart de structure énergétique, et non un manque d’égards de l’un ou de l’autre, évite les rivalités sourdes.",
+      "phrase": "Canal de compromis"
+     },
+     "dominance": {
+      "detail": "Le canal {channels} existe en entier chez l’un de vous, tandis que l’autre a les deux extrémités ouvertes. Comme il n’y a ni attachement ni habitude établie à défendre, la personne ouverte ne se sent généralement pas écrasée ici : elle peut au contraire ressentir de près le talent et l’assurance de l’autre sur ce terrain, et s’en servir. Il suffit de veiller à ne pas se laisser saturer par cette énergie qui fonctionne en continu ; c’est souvent là que vous élargissez mutuellement vos horizons et vous entraînez l’un l’autre.",
+      "phrase": "Canal de dominance"
+     },
+     "electromagnetic": {
+      "many": {
+       "detail": "Sur les canaux {channels}, chacun de vous en tient une moitié, et ce n’est qu’en vous rapprochant que le circuit se ferme. Quand vous êtes ensemble, il y a toujours entre vous ce courant vivant : là où l’un de vous, de son côté, se bloquait ou manquait de force, tout se remet soudain à tourner au contact de l’autre. Cette attirance ne vient pas de ce que vous vous ressemblez, mais de ce que chacun porte précisément la pièce du puzzle qui manque à l’autre.",
+       "phrase": "Plusieurs canaux électromagnétiques"
+      },
+      "some": {
+       "detail": "Chacun de vous porte une extrémité du canal {channels}, et c’est ensemble que vous le complétez. Sur les thèmes de ce canal, il existe entre vous une curiosité et une attraction naturelles : ce qui semblait toujours inachevé quand chacun restait de son côté trouve sa place dès que vous vous rencontrez, comme les deux moitiés d’un fermoir qui s’emboîtent.",
+       "phrase": "Canal électromagnétique"
+      },
+      "throat": {
+       "detail": "Plusieurs canaux électromagnétiques entre vous mènent directement au centre de la Gorge. La Gorge est l’issue par laquelle sentiments et pensées deviennent paroles et actes : ce que chacun de vous rumine depuis longtemps sans le dire, les idées restées en suspens, tout cela surgit naturellement dès que vous vous mettez à parler. Vous complétez la pensée de l’autre sous un angle différent ; vos conversations sont animées, et vous savez aussi transformer ensemble les rêveries en actions ou en œuvres bien réelles.",
+       "phrase": "Ensemble, les idées trouvent leur voix"
+      }
+     },
+     "open_centers": {
+      "few": {
+       "detail": "Une fois vos deux schémas superposés, presque tous les neuf centres sont allumés : il ne reste qu’un centre ouvert, voire aucun. Ensemble, vous formez comme un petit monde autosuffisant, riche et animé, qui n’a presque pas besoin des autres pour combler un vide ; mais justement parce que chaque espace est rempli par l’autre, l’air finit parfois par manquer. Garder des moments chacun de son côté n’est pas une prise de distance : c’est la façon de laisser respirer ce qui, en chacun, a été comblé.",
+       "phrase": "Presque tous les centres allumés ensemble"
+      },
+      "shared": {
+       "detail": "Même une fois vos deux schémas superposés, au moins quatre centres restent ouverts entre vous. Dans ces domaines, aucun de vous n’impose à l’autre un fonctionnement figé, et la relation a naturellement de l’air et de la souplesse. Mais comme personne n’y a de point d’ancrage, les changements extérieurs ou les émotions des autres peuvent facilement vous emporter ensemble, au même moment. En reconnaissant que « cette pression vient de l’extérieur, ce n’est pas un problème entre nous », vous ferez de ces espaces ouverts des fenêtres pour explorer le monde ensemble.",
+       "phrase": "Plusieurs centres restés ouverts ensemble"
+      }
+     },
+     "type": {
+      "manifestor_generator": {
+       "detail": "L’un de vous excelle à créer à partir de rien, à ouvrir la voie sur une impulsion, mais son énergie vient par vagues ; l’autre a besoin que quelque chose se présente pour y répondre et, une fois son « oui » donné, dispose d’une endurance inépuisable pour approfondir. Vous formez naturellement un duo étincelle et endurance. Les frictions surviennent souvent au moment du relais : si la personne qui lance agit sans prévenir, l’autre a l’impression d’être bousculée ; à l’inverse, exiger de celle qui lance qu’elle produise sans relâche, pas à pas, l’épuise tout autant. Il suffit de prévenir avant de démarrer, pour laisser à l’autre le temps d’écouter sa réponse intérieure avant de prendre le relais : vos deux forces s’enchaîneront alors sans heurt.",
+       "phrase": "L’un lance, l’autre approfondit"
+      },
+      "projector_generator": {
+       "detail": "L’un de vous est un guide qui voit l’ensemble, l’autre un moteur d’action à l’énergie durable ; mais chacun de vous deux démarre en « attendant » : la personne qui voit la direction a besoin de se sentir reconnue et invitée pour que ses conseils ne sonnent pas comme des critiques ; celle qui agit a besoin d’options concrètes pour que sa réponse instinctive se déclenche, et bloque plutôt face aux questions ouvertes. Si chacun attend que l’autre bouge, tout se fige. Le nœud se défait pourtant simplement : quand vous voulez un avis, demandez « qu’en penses-tu ? » ; quand vous discutez d’un projet, proposez des choix — « on fait comme ça ? » — et votre vision et votre force d’exécution s’emboîteront parfaitement.",
+       "phrase": "Attendre l’invitation × attendre pour répondre"
+      },
+      "two_manifestors": {
+       "detail": "Vous agissez chacun selon vos propres impulsions intérieures, et aucun de vous n’aime qu’on décide à sa place. Le plus précieux dans cette relation, c’est que vous comprenez d’instinct le besoin d’autonomie et de solitude de l’autre : personne n’a à traîner personne. Mais c’est aussi là que se produit le heurt le plus direct : si chacun fait sa vie sans rien dire, deux énergies aussi puissantes se percutent de front, et la méfiance et la colère s’allument aussitôt. Entre vous, dire « je vais faire ceci » avant d’agir n’est jamais une demande d’autorisation : c’est une marque de respect envers un proche, qui fait tomber instantanément les défenses.",
+       "phrase": "Deux forces d’initiative indépendantes"
+      }
+     }
+    }
+   },
+   "numerology": {
+    "pair": {
+     "lifepath_lead_support": {
+      "detail": "L’un de vous a un chemin de vie 1 ou 8, tourné vers les objectifs, l’autonomie et la conquête ; l’autre un chemin de vie 2 ou 6, tourné vers le lien, la compréhension et le soin. L’un excelle à décider et à faire avancer les choses, l’autre veille davantage aux ressentis de chacun et à la chaleur de la relation : votre répartition des rôles est naturellement complémentaire. Veillez seulement à ce que la personne qui décide ne prenne pas l’habitude de choisir pour vous deux, et que celle qui préserve l’harmonie ne cède pas toujours en silence.",
+      "phrase": "Cap et attention"
+     },
+     "personal_year_same": {
+      "detail": "Dans le cycle de neuf ans de la numérologie, vous êtes cette année dans la même année personnelle. Le rythme de vie que vous traversez est donc très semblable : quand vient le moment de démarrer, l’élan est le même des deux côtés ; quand vient celui de conclure ou de vous reposer, vous avez la même envie de ralentir. C’est une bonne année pour prendre des décisions ensemble et faire avancer vos projets communs.",
+      "phrase": "Années personnelles en phase"
+     },
+     "same_life_path": {
+      "detail": "Vous avez le même chemin de vie. Le chemin de vie désigne les grands thèmes et les valeurs qu’une personne travaille tout au long de son existence ; partager le même nombre signifie que vous suivez la même voie de fond. Pourquoi l’autre tient tant à telle chose, où l’autre a tendance à bloquer : vous le ressentez presque sans avoir à deviner, et vous vous entendez facilement sur les grandes orientations de la vie.",
+      "phrase": "Même chemin de vie"
+     }
+    }
+   },
+   "psych": {
+    "pair": {
+     "attachment": {
+      "anxious_avoidant": {
+       "detail": "Quand une tension ou une incertitude apparaît dans la relation, vos réflexes vont en sens inverse : l’un de vous cherche à se rapprocher, à vérifier que tout va bien entre vous, pour retrouver un sentiment de sécurité ; l’autre recule instinctivement d’un pas et a besoin de se retirer dans son propre espace pour digérer ses émotions. Vous risquez alors d’entrer dans un cercle bien connu : plus l’un cherche à se rapprocher, plus l’autre se dérobe ; plus l’autre se dérobe, plus l’inquiétude grandit en face. Il suffit de reconnaître ensemble ce mouvement : si la personne qui recule peut dire « j’ai juste besoin de souffler, je ne pars pas », celle qui cherche la proximité n’a plus à s’emballer dans ses suppositions.",
+       "phrase": "Se rapprocher × prendre du recul"
+      },
+      "both_anxious": {
+       "detail": "La chaleur de la relation compte beaucoup pour chacun de vous, et vous êtes très sensibles aux changements de ton de l’autre et au délai de ses réponses. Dans vos bons moments, vous savez vous répondre généreusement, parce que chacun sait combien il est important de compter pour quelqu’un, et vous vous portez mutuellement avec solidité. Mais une période chargée, de la fatigue ou un silence passager peuvent aussi vous faire cogiter en même temps et amplifier l’inquiétude des deux côtés. Convenez d’un petit code simple — par exemple « journée chargée, tout va bien entre nous » — pour vous épargner bien des scénarios imaginaires.",
+       "phrase": "Deux personnes attentives aux réponses de l’autre"
+      },
+      "both_avoidant": {
+       "detail": "Votre indépendance compte beaucoup pour chacun de vous, et face aux difficultés, vous avez l’habitude de vous retirer pour digérer les choses de votre côté. L’avantage, c’est que la relation est particulièrement légère : personne ne harcèle l’autre, et chacun respecte le besoin de solitude de l’autre. Seulement, quand chacun de vous a pris l’habitude de dire « ça va, je me débrouille », une couche de politesse finit par s’installer entre vous sans que vous vous en rendiez compte. Dans les moments vraiment difficiles ou fragiles, essayez de rompre avec l’habitude de faire bonne figure et de tendre la main à l’autre : la relation y gagnera en chaleur.",
+       "phrase": "Deux personnes attachées à leur espace"
+      },
+      "secure_anchor": {
+       "detail": "L’un de vous a un style d’attachement plutôt sécure, ce qui donne à la relation un lest stable. La proximité n’étouffe pas cette personne, et une distance passagère ne l’affole pas : cette assurance empêche les disputes ou les périodes chargées de se transformer en doutes sur la relation. Même après une brouille ou un moment d’éloignement, il vous est plus facile, grâce à elle, de revenir l’un vers l’autre.",
+       "phrase": "Un ancrage sécurisant"
+      }
+     },
+     "bigfive": {
+      "conscientiousness_gap": {
+       "detail": "L’un de vous tient à l’ordre et aux engagements, et aime voir les choses prévues se réaliser pas à pas ; l’autre vit davantage au fil de l’humeur, peu attaché aux cadres, et préfère agir selon l’envie et l’état du moment. Dans les accords du quotidien, le partage des tâches ou l’organisation de la vie commune, la première personne a vite l’impression de tout porter seule, la seconde d’être surveillée et encadrée. Mettez-vous d’accord clairement sur les quelques points qui comptent vraiment, et laissez chacun faire le reste à sa manière : vous économiserez beaucoup de tensions.",
+       "phrase": "L’ordre × la spontanéité"
+      },
+      "neuroticism_gap": {
+       "detail": "L’un de vous perçoit finement le moindre frémissement, ses émotions viennent vite et touchent profond ; l’autre a les nerfs plus solides et se laisse rarement déstabiliser dans la tempête. Ce contraste est en fait très complémentaire : la personne sensible capte les changements subtils, la personne stable sert de point d’ancrage quand le vent se lève. Il suffit que la seconde ne balaie pas les ressentis de l’autre d’un « tu te fais trop d’idées », et que la première ne prenne pas le calme de l’autre pour de l’indifférence : vous pourrez alors vous appuyer l’un sur l’autre.",
+       "phrase": "Sensibilité × stabilité"
+      }
+     },
+     "disc": {
+      "both_dominance": {
+       "detail": "Dans vos styles DISC, c’est la Dominance (D) qui ressort chez chacun de vous : parole directe, décisions rapides, et le réflexe de prendre le volant dès que quelque chose se présente. Quand vous visez le même but, inutile de prendre des gants : votre force de propulsion est considérable. Mais dès que vos avis divergent, aucun de vous n’a l’habitude de céder pour préserver la paix, et le bras de fer peut vite se figer. Délimitez clairement à l’avance les domaines où chacun a le dernier mot, pour ne pas vous disputer le même volant : cette fougue deviendra une vraie force commune.",
+       "phrase": "Deux personnes qui aiment décider"
+      },
+      "pace_gap": {
+       "detail": "Dans vos styles DISC, l’un de vous préfère se mettre en mouvement d’abord et ajuster en chemin, en misant sur l’efficacité et l’élan ; l’autre préfère peser le pour et le contre et assurer ses pas avant d’avancer. Quand vous travaillez ou décidez ensemble, la personne rapide trouve facilement l’autre lente et hésitante, et la personne posée a l’impression d’être poussée à trancher dans la précipitation. Accordez d’abord un peu de temps à la réflexion, puis fixez ensemble un moment précis pour décider : vous avancerez sans faux pas.",
+       "phrase": "Avancer vite × avancer sûrement"
+      }
+     },
+     "enneagram": {
+      "same_center": {
+       "detail": "Vos types de l’Ennéagramme appartiennent au même centre — instinctif, émotionnel ou mental : votre « premier radar » pour capter le monde est le même. Face à la pression ou à l’imprévu, même si vos réactions concrètes diffèrent, ce que vous protégez d’instinct et l’inquiétude qui monte en premier viennent souvent de la même source ; vous comprenez donc facilement, au plus profond, pourquoi l’autre réagit ainsi.",
+       "phrase": "Même centre de l’Ennéagramme"
+      }
+     },
+     "types16": {
+      "ei_split": {
+       "detail": "Face à une situation, l’un de vous a besoin d’un temps de calme pour démêler les choses intérieurement, et ne parle qu’une fois au clair ; l’autre réfléchit en parlant, et a besoin du dialogue pour mettre de l’ordre dans ses idées. Si bien que, devant un même événement, l’un veut d’abord du silence, l’autre veut en parler tout de suite. Comprendre que le silence de l’un n’est pas de la froideur, et que le flot de paroles de l’autre n’est pas une mise sous pression, évite que vos rythmes se heurtent.",
+       "phrase": "Digérer en silence × réfléchir à voix haute"
+      },
+      "jp_split": {
+       "detail": "L’un de vous a besoin que les choses soient décidées tôt pour être en paix ; l’autre se sent plus libre en gardant de la marge pour s’ajuster au fil des circonstances. Les itinéraires de voyage, les plannings et les échéances révèlent particulièrement cet écart : l’un trouve angoissant que rien ne soit arrêté, l’autre étouffe quand tout est figé trop tôt. Distinguer ce qui doit vraiment être fixé d’avance et ce qui peut rester ouvert allégera beaucoup votre quotidien.",
+       "phrase": "Trancher × laisser ouvert"
+      },
+      "shared_intuition": {
+       "detail": "Dans les 16 types, vos deux profils penchent vers l’intuition (N). Vos conversations restent rarement à la surface des choses : vous aimez explorer le sens caché, les possibilités qui ne se sont pas encore réalisées, et les liens étonnants entre une chose et une autre. Souvent, il suffit que l’un lance une demi-idée ou une image pour que l’autre, sans avoir besoin de tout le contexte, reprenne aussitôt le fil.",
+       "phrase": "Intuition partagée"
+      },
+      "shared_sensing": {
+       "detail": "Dans les 16 types, vos deux profils penchent vers la sensation (S). Plutôt qu’aux spéculations en l’air, vous faites confiance à ce que vous avez vu de vos yeux et fait de vos mains, et vous accordez de l’importance aux détails tangibles. Qu’il s’agisse de décider comment faire une chose ou de parler de votre vie, vous vous appuyez sur des exemples concrets et des faits réels, et vous vous comprenez sans détour.",
+       "phrase": "Le concret en commun"
+      },
+      "sn_split": {
+       "detail": "Face à une même situation, l’un de vous voit d’abord la trame cachée et les possibilités à venir, l’autre s’attache d’abord aux faits présents et aux détails concrets. Dans la conversation, la personne qui voit loin peut trouver que l’autre s’enlise dans les détails, et la personne concrète, que l’autre plane sans prise sur le réel ; mais quand vous coopérez, l’un regarde l’horizon et l’autre surveille le chemin, et vous voyez les choses dans leur entier.",
+       "phrase": "La vue d’ensemble × les détails"
+      },
+      "tf_split": {
+       "detail": "Pour décider ou face à une dispute, l’un de vous regarde d’abord l’effet sur les personnes et ce que chacun ressent, l’autre regarde d’abord si la logique tient et si les critères sont justes. Quand le ton monte, l’un peut trouver l’autre froid et peu humain, et l’autre, que la discussion esquive le fond du problème. En réalité, chacun de vous garde une moitié essentielle : bien démêler le problème, et prendre soin des personnes.",
+       "phrase": "Les personnes d’abord × la logique d’abord"
+      }
+     },
+     "values": {
+      "opposite_direction": {
+       "detail": "Sur le cercle des valeurs, ce que chacun de vous privilégie se trouve exactement à l’opposé — par exemple, l’un aspire à explorer et à changer, l’autre tient à la stabilité et à la continuité ; ou l’un se concentre sur son propre dépassement, tandis que l’autre se soucie davantage de ses proches et de la communauté. Justement parce que vos centres de gravité diffèrent, l’angle mort de l’un est souvent surveillé par l’autre. Avant une grande décision, ne cherchez pas tout de suite qui a raison : parlez de ce que chacun veut le plus protéger, et vous construirez un choix bien plus complet.",
+       "phrase": "Des priorités complémentaires"
+      },
+      "shared_direction": {
+       "detail": "Dans le questionnaire sur les valeurs, ce qui passe en premier pour chacun de vous va dans la même direction. Cette complicité ne se voit pas forcément dans les grands principes, mais plutôt dans les arbitrages du quotidien — à quoi il vaut la peine de consacrer son temps et son énergie, quel genre de vie paraît solide ou porteur d’avenir. Bien des décisions n’ont pas besoin d’être justifiées depuis le début : l’autre comprend naturellement pourquoi vous faites ce choix.",
+       "phrase": "Les mêmes priorités"
+      }
+     }
+    }
+   },
+   "vedic": {
+    "pair": {
+     "dasha_sync": {
+      "detail": "Vos grandes périodes planétaires actuelles (Mahadasha) sont gouvernées par la même planète, ou par deux planètes amies. Une Mahadasha donne le ton de plusieurs années de vie ; vous traversez en ce moment des climats semblables — période d’ouverture vers l’extérieur ou de mise en réserve des forces —, si bien que vous comprenez facilement les priorités et la situation de l’autre, et que vos pas s’accordent naturellement.",
+      "phrase": "Dashas en phase"
+     },
+     "koota": {
+      "gana_low": {
+       "detail": "Vos nakshatras lunaires appartiennent à des catégories de tempérament (Gana) différentes. Selon la tradition védique, cela signifie que vos réflexes de fond et votre façon de digérer les choses diffèrent — par exemple, face à un problème, l’un aime aller droit au but et régler la question sur-le-champ, l’autre a besoin de douceur et de temps pour se poser d’abord. Reconnaître ce décalage dans vos réactions instinctives, et vous presser un peu moins l’un l’autre, rendra la relation bien plus légère.",
+       "phrase": "Gana : tempéraments différents"
+      },
+      "gana_match": {
+       "detail": "Vos nakshatras lunaires appartiennent à la même catégorie de tempérament (Gana), ou à des catégories proches. La tradition védique y lit le tempérament le plus profond et les réflexes face à la vie : votre vitesse de réaction aux petits tracas du quotidien, votre besoin d’animation ou de calme s’accordent bien ; ensemble, votre rythme est naturel, sans que l’un ait besoin de se plier délibérément à celui de l’autre.",
+       "phrase": "Gana : en accord"
+      },
+      "graha_maitri_high": {
+       "detail": "Les planètes maîtresses de vos deux signes lunaires sont en bons termes (ou sont la même planète). En astrologie védique, la Lune représente l’esprit et la sensibilité ; des maîtres qui s’entendent signifient que vos angles de vue et votre manière de digérer les émotions sont très proches : quand vous parlez, vous n’avez souvent pas besoin d’expliquer tout le contexte pour que l’autre saisisse le sous-entendu.",
+       "phrase": "Graha Maitri : amical"
+      },
+      "tara_high": {
+       "detail": "En comptant d’un nakshatra lunaire à l’autre, vous tombez sur une position favorable et bienveillante (Tara) selon la tradition védique. On voit traditionnellement dans cette combinaison un soutien mutuel : vous apportez facilement à l’autre des occasions heureuses ou un appui solide, et avec l’autre à vos côtés, bien des choses avancent avec plus d’assurance.",
+       "phrase": "Tara : en accord"
+      },
+      "yoni_high": {
+       "detail": "Les animaux symboliques (Yoni) associés à vos nakshatras lunaires sont identiques ou en affinité. Dans la tradition védique, cela désigne une proximité instinctive, immédiate : dans le même espace, vos corps et vos sens se détendent, nul besoin de jouer un rôle, et une sympathie et une attirance naturelles naissent facilement entre vous.",
+       "phrase": "Yoni : en accord"
+      }
+     }
+    }
+   },
+   "western": {
+    "pair": {
+     "asc_asc_square": {
+      "detail": "Vos Ascendants forment un carré ou une opposition. Quand vous entrez dans un nouvel environnement ou faites face à des inconnus, vos premiers réflexes sont très différents : l’un aime d’abord poser des règles et s’assurer d’un plan, l’autre est plus attentif à l’ambiance du moment et suit le mouvement. En sortie ou quand vous recevez ensemble, vous avez souvent l’impression au début de ne pas être au même rythme ; mais avec le temps, vous découvrez que l’autre a justement le sens de l’instant qui vous manque le plus.",
+      "phrase": "Ascendants en tension"
+     },
+     "jupiter_lifts": {
+      "detail": "Le Jupiter de l’un forme une conjonction ou un aspect harmonieux avec le Soleil ou la Lune de l’autre. Cela insuffle à la relation un climat généreux et détendu : auprès de la personne Jupiter, l’autre ose plus facilement essayer de nouvelles choses, voir plus grand, sans craindre les petites erreurs. Il y a entre vous une bienveillance et une indulgence naturelles ; vous vous acharnez rarement sur des broutilles, et votre horizon s’élargit grâce à l’autre.",
+      "phrase": "Jupiter qui élève"
+     },
+     "mars_mars_tension": {
+      "detail": "Vos deux Mars forment un carré ou une opposition. Votre façon d’agir et votre rythme ont tendance à se contrarier : l’un veut trancher et foncer tout de suite, l’autre préfère prendre un autre chemin, ou trouve que le moment n’est pas encore venu. Quand vous faites des choses ensemble au quotidien, même l’ordre des étapes ou la question de savoir qui décide peut faire des étincelles ; mais comme aucun de vous ne prend de détours, une fois l’accrochage passé, il n’en reste aucune rancune.",
+      "phrase": "Mars contre Mars"
+     },
+     "mercury_harmony": {
+      "detail": "Vos deux Mercure forment une conjonction ou un aspect harmonieux. La vitesse de vos pensées et votre manière de saisir l’essentiel s’accordent bien : souvent, l’un n’a pas fini sa phrase que l’autre a déjà compris. Que vous parliez de choses sérieuses ou de tout et de rien, communiquer vous coûte peu, vous saisissez les clins d’œil de l’autre, et rien que bavarder ensemble fait du bien.",
+      "phrase": "Mercure à l’unisson"
+     },
+     "mercury_tension": {
+      "detail": "Vos deux Mercure forment un carré ou une opposition. Vous organisez vos pensées et vous exprimez différemment : l’un tient aux détails littéraux et au raisonnement logique, l’autre parle à grands traits et procède par sauts intuitifs ; ou l’un réfléchit en parlant, quand l’autre ne parle qu’une fois au clair. Sur un même sujet, vous risquez de ne pas parler de la même chose ; prenez le temps de vérifier — « tu veux dire que… ? » — et vous éviterez bien des malentendus.",
+      "phrase": "Mercure à traduire"
+     },
+     "moon_mc_conjunction": {
+      "detail": "La Lune de l’un se trouve exactement sur le Milieu du Ciel de l’autre (à moins de {orb}°). La personne Lune prend naturellement à cœur les efforts, la réputation et les ambitions de l’autre dans le monde, et veille sur sa place dans la société comme on veille sur un proche ; la personne Milieu du Ciel, elle, sent derrière elle, quand elle va de l’avant, une compréhension et un soutien qui n’ont pas besoin de mots.",
+      "phrase": "Lune sur le Milieu du Ciel"
+     },
+     "moon_moon_harmony": {
+      "detail": "Vos deux Lunes forment une conjonction ou un aspect harmonieux. La Lune gouverne le quotidien à huis clos et les réflexes émotionnels — votre façon de vous reposer après une longue journée, le réconfort dont vous avez besoin quand ça ne va pas : tout cela se ressemble profondément. Bien des ressentis subtils n’ont pas besoin d’être expliqués, l’autre les comprend naturellement ; et même quand chacun vaque à ses occupations, être ensemble reste simple et reposant.",
+      "phrase": "Lunes en harmonie"
+     },
+     "moon_moon_tension": {
+      "detail": "Vos deux Lunes forment un carré ou une opposition. Vos instincts pour digérer les émotions diffèrent : face à un souci, l’un peut avoir besoin d’en parler tout de suite pour se libérer, l’autre de calme et de solitude ; ou l’un donne des conseils quand l’autre voudrait juste un mot tendre. Même quand l’intention est pleine de sollicitude, le réconfort offert ne touche pas toujours l’autre : il vous faudra découvrir peu à peu la façon dont chacun aime être soutenu.",
+      "phrase": "Lunes en tension"
+     },
+     "node_contact": {
+      "detail": "Le Soleil, la Lune ou la Vénus de l’un se trouve sur le Nœud Nord de l’autre. Le Nœud Nord représente la direction de vie à laquelle une personne aspire au fond d’elle, sans encore la maîtriser ; or la personne planète incarne naturellement une manière de vivre et des qualités qui offrent à l’autre un modèle vivant. Cette relation agit souvent comme une main qui pousse à sortir des vieilles habitudes familières, pour grandir vers là où l’on veut vraiment aller.",
+      "phrase": "Contact avec le Nœud Nord"
+     },
+     "overlay_7th": {
+      "detail": "Le Soleil, la Lune ou la Vénus de l’un tombe dans la maison 7 de l’autre. La maison 7 dessine l’image qu’une personne se fait du partenaire, de l’associé important ; quand une planète y tombe, la personne qui la reçoit voit souvent d’emblée l’autre comme quelqu’un avec qui avancer côte à côte, dans un lien en tête-à-tête profond, et lui fait naturellement une place au cœur de sa vie.",
+      "phrase": "Dans la maison du partenariat"
+     },
+     "pluto_personal": {
+      "detail": "Le Pluton de l’un forme une conjonction ou un aspect dur avec le Soleil, la Lune ou la Vénus de l’autre. Cette attraction peut difficilement rester en surface : vous semblez percer d’un regard les défenses de l’autre. Quand le lien est profond, il marque au fer rouge ; mais il peut aussi faire naître de la possessivité, des rivalités sourdes, ou la peur d’être sous l’emprise de l’autre. Plus vous mettez sur la table vos craintes et vos limites, moins cette profondeur se transforme en usure.",
+      "phrase": "Contact de Pluton"
+     },
+     "saturn_moon": {
+      "detail": "Le Saturne de l’un forme une conjonction ou un aspect dur avec la Lune de l’autre. Cette relation porte un sens des responsabilités bien réel : aucun de vous ne traite l’autre en étranger, ni ne le lâche facilement. Mais avec le temps, la personne Lune, dans ses moments de fragilité, peut trouver chez l’autre trop de froideur et d’exigence, et se sentir encadrée ; tandis que la personne Saturne a souvent l’impression de devoir s’inquiéter et tout assumer pour l’autre, endossant sans le vouloir le rôle de « l’adulte ».",
+      "phrase": "Contact Lune–Saturne"
+     },
+     "saturn_sun_venus_soft": {
+      "detail": "Le Saturne de l’un forme une conjonction ou un aspect harmonieux avec le Soleil ou la Vénus de l’autre. Ici, Saturne apporte une constance et une fiabilité rassurantes, non une pression. Vous partagez une forte complicité : ce qui est dit est fait, et le lien ne dépend pas de l’excitation du moment. Qu’il s’agisse d’épargner pour acheter un bien ensemble, de travailler ou d’entreprendre côte à côte, ou de traverser ensemble des années ordinaires ou difficiles, chacun peut être pour l’autre un point d’appui fiable.",
+      "phrase": "Saturne qui stabilise"
+     },
+     "sun_mars_harmony": {
+      "detail": "Le Soleil de l’un forme un aspect harmonieux avec le Mars de l’autre. Ensemble, vous restez rarement assis à rêver : les convictions et la vitalité de l’un se branchent directement sur l’élan de l’autre, qui passe tout de suite à l’action. Que ce soit pour monter un projet, partir en balade ou vous encourager mutuellement, avec l’autre à vos côtés, il devient plus facile de vous décider et de vous lancer.",
+      "phrase": "Harmonie Soleil–Mars"
+     },
+     "sun_moon_harmony": {
+      "detail": "Le Soleil de l’un forme une conjonction ou un aspect harmonieux avec la Lune de l’autre. Dans la relation, la manière d’être et les convictions profondes de l’un apportent à l’autre un sentiment de sécurité solide ; et la prévenance et l’accueil de la personne Lune permettent à la personne Soleil de ne pas jouer un rôle : quoi qu’elle montre d’elle-même, elle sera reçue. C’est un soutien mutuel tout naturel.",
+      "phrase": "Soleil et Lune accordés"
+     },
+     "uranus_venus_moon": {
+      "detail": "L’Uranus de l’un forme une conjonction ou un aspect dur avec la Vénus ou la Lune de l’autre. Votre relation tombe rarement dans la routine : elle garde une fraîcheur inattendue qui vous tire de l’inertie. Mais la chaleur et la distance peuvent aussi changer vite ; dès que la relation semble trop fusionnelle ou les règles trop rigides, l’un de vous a instinctivement envie de s’éclipser pour respirer. En vous laissant beaucoup d’espace et de liberté, vous durerez au contraire plus longtemps.",
+      "phrase": "Uranus touche Vénus ou la Lune"
+     },
+     "venus_mars_harmony": {
+      "detail": "La Vénus de l’un forme une conjonction ou un aspect harmonieux avec le Mars de l’autre. C’est la configuration d’attirance la plus classique en astrologie : la façon dont l’un exprime sa beauté et son affection éveille naturellement la passion et l’initiative de l’autre. Entre vous, nul besoin de longues approches : les regards, les plaisanteries et la proximité physique viennent naturellement, et même avec le temps, chacun reste sensible au charme de l’autre.",
+      "phrase": "Attirance Vénus–Mars"
+     },
+     "venus_mars_tension": {
+      "detail": "La Vénus de l’un forme un carré ou une opposition avec le Mars de l’autre. L’attirance reste forte — plus captivante encore, parfois, qu’avec un aspect harmonieux —, mais elle porte en elle un tiraillement : dans la manière de se rapprocher et le moment de le faire, il y a souvent un demi-temps de décalage entre vous. Parfois l’un aspire à la tendresse et à la douceur quand l’autre arrive trop vite, trop fort ; et vous oscillez entre le désir de proximité et le besoin d’espace.",
+      "phrase": "Tension Vénus–Mars"
+     }
+    }
+   },
+   "ziwei": {
+    "pair": {
+     "ji_into_ming": {
+      "detail": "Le Hua Ji (obstacle) de l’année de naissance de l’une des deux personnes tombe dans le Palais de vie ou le Palais du couple de l’autre. En Zi Wei Dou Shu, le Hua Ji n’est pas un simple obstacle : il désigne surtout un attachement profond, une préoccupation, ce que le cœur n’arrive pas à lâcher. Quand il tombe dans ces palais, la première personne a beaucoup de mal à considérer la seconde avec légèreté : elle pense sans cesse à elle, s’inquiète facilement, s’attache aux détails ou oscille entre espoir et crainte. Ce souci très profond tisse entre vous un lien qui ne se dénoue pas, mais une attention trop serrée peut aussi faire manquer d’air à la seconde : il faut trouver la juste mesure entre tenir fort et laisser de l’espace.",
+      "phrase": "Le Hua Ji de l’un pèse sur l’autre"
+     },
+     "lu_into_ming": {
+      "detail": "Le Hua Lu (prospérité) de l’année de naissance de l’une des deux personnes tombe dans le Palais de vie ou le Palais du couple de l’autre. En Zi Wei Dou Shu, le Hua Lu représente l’affection, la fluidité et une bienveillance qui n’attend rien en retour. Quand il entre dans ces palais essentiels, la première personne a sincèrement envie de faire du bien à la seconde : elle est prête à accueillir, à partager, à lui offrir sa douceur et sa bonté ; et la seconde ressent vraiment cette préférence et cette chaleur, avec le sentiment d’être traitée avec soin dans cette relation.",
+      "phrase": "Le Hua Lu de l’un rejoint l’autre"
+     },
+     "ming_in_fude": {
+      "detail": "Le Palais de vie de l’une des deux personnes tombe dans le Palais du bien-être de l’autre. En Zi Wei Dou Shu, le Palais du bien-être gouverne l’état intérieur, les goûts de l’esprit et le fond émotionnel d’une personne. Quand le Palais de vie de la première s’y trouve, sa seule présence touche le monde intérieur de la seconde. Auprès d’elle, la seconde personne n’a pas besoin de se tenir sur ses gardes ni de faire bonne figure ; l’agitation intérieure retombe, et même un moment de silence ou quelques mots échangés au hasard lui apportent une détente profonde et le sentiment d’être portée.",
+      "phrase": "Palais de vie dans le Palais du bien-être"
+     },
+     "ming_in_fumu": {
+      "detail": "Le Palais de vie de l’une des deux personnes tombe dans le Palais des parents de l’autre. En Zi Wei Dou Shu, ce palais représente les aînés, mais aussi la protection, l’orientation et les conseils qui ont du poids. Quand le Palais de vie de la première s’y trouve, quel que soit votre âge réel, elle dégage souvent aux yeux de la seconde une assurance tranquille qui inspire confiance. La première personne a spontanément envie de veiller sur l’autre et de la guider ; et quand la seconde hésite sur une décision, les rappels et les conseils de la première sont souvent ceux qu’elle écoute le plus volontiers.",
+      "phrase": "Palais de vie dans le Palais des parents"
+     },
+     "ming_in_fuqi": {
+      "detail": "Le Palais de vie de l’une des deux personnes tombe dans le Palais du couple de l’autre. En Zi Wei Dou Shu, le Palais du couple porte l’image profonde qu’une personne se fait de l’intimité et du partenaire idéal ; quand le Palais de vie de la première s’y installe, son tempérament correspond naturellement à ce que la seconde imagine d’un partenaire. Souvent, sans tâtonnements ni longs ajustements, la seconde personne pose très tôt son regard sur la première, éprouve une familiarité et une proximité difficiles à expliquer, et lui fait tout naturellement une place intime dans son cœur.",
+      "phrase": "Palais de vie dans le Palais du couple"
+     },
+     "ming_in_guanlu": {
+      "detail": "Le Palais de vie de l’une des deux personnes tombe dans le Palais de la carrière de l’autre. En Zi Wei Dou Shu, le Palais de la carrière touche à l’orientation professionnelle, à la manière d’agir et aux objectifs de vie, et il forme avec le Palais de vie un même triangle de palais. Quand le Palais de vie de la première s’y trouve, sa manière de faire et ses capacités inspirent facilement à la seconde admiration et confiance. Qu’il s’agisse de travailler ensemble au quotidien, de réfléchir à l’avenir ou de faire avancer un projet concret, la première personne apporte à la seconde un sens de la direction et une aide bien réelle : vous formez une alliance d’action très accordée.",
+      "phrase": "Palais de vie dans le Palais de la carrière"
+     },
+     "ming_in_peers": {
+      "detail": "Le Palais de vie de l’une des deux personnes tombe dans le Palais de la fratrie ou le Palais des amis de l’autre. En Zi Wei Dou Shu, ces deux palais forment un même axe, celui des pairs, des amis proches et des compagnons de route. Quand le Palais de vie de la première s’y trouve, quels que soient vos rôles dans la vie — couple, famille ou collaboration —, la seconde personne ressent naturellement face à elle une égalité amicale. Entre vous, peu de manières ni de hiérarchie : la parole est directe, la conversation facile et naturelle, et vous cheminez sans peine côte à côte, en pouvant tout vous dire.",
+      "phrase": "Palais de vie dans un palais des pairs"
+     },
+     "ming_in_resources": {
+      "detail": "Le Palais de vie de l’une des deux personnes tombe dans le Palais de la richesse ou le Palais du patrimoine de l’autre. En Zi Wei Dou Shu, le Palais de la richesse touche aux ressources concrètes et à leur usage, le Palais du patrimoine au logement, aux racines et à l’installation de la vie quotidienne. Quand le Palais de vie de la première se trouve dans l’un d’eux, elle s’intègre facilement aux fondations les plus concrètes de la vie de la seconde. Votre relation ne reste pas dans les mots ou les émotions : c’est dans le quotidien, la gestion de l’argent ou la construction d’un foyer stable que votre complicité est la plus forte, et l’on s’y sent en sécurité.",
+      "phrase": "Palais de vie dans un palais des ressources"
+     },
+     "mutual_qianyi": {
+      "detail": "Le Palais de vie de chacun tombe dans le Palais des voyages de l’autre : vos axes Vie–Voyages se répondent comme en miroir. En Zi Wei Dou Shu, le Palais des voyages représente le lointain, l’horizon et la possibilité de sortir de sa zone de confort. Vous êtes l’un pour l’autre une fenêtre ouverte sur un monde plus vaste : le terrain familier de l’un est justement, pour l’autre, un paysage neuf jamais exploré. Ensemble, vous vous entraînez facilement vers de nouveaux environnements et des choses auxquelles vous n’aviez jamais pensé, et sans vous en rendre compte, vous élargissez de plus en plus le rayon de vos vies.",
+      "phrase": "Chacun dans le Palais des voyages de l’autre"
+     }
+    }
+   }
+  }
+ },
+ "insights": {
+  "ontology": {
+   "rings": {
+    "attraction": {
+     "axisNeg": "Par ressemblance",
+     "axisPos": "Par différence",
+     "describes": "Ce qui, chez l’un et l’autre, vous donne naturellement envie de vous rapprocher.",
+     "name": "Attirance"
+    },
+    "communication": {
+     "axisNeg": "Même longueur d'onde",
+     "axisPos": "Besoin de traduction",
+     "describes": "Avec quelle facilité vous vous expliquez et comprenez ce que l’autre veut dire.",
+     "name": "Communication"
+    },
+    "emotion": {
+     "axisNeg": "Digérer chacun de son côté",
+     "axisPos": "Se soutenir mutuellement",
+     "describes": "Comment vous percevez l’humeur de l’autre et prenez soin l’un de l’autre.",
+     "name": "Lien affectif"
+    },
+    "growth": {
+     "axisNeg": "Se stabiliser mutuellement",
+     "axisPos": "Se stimuler mutuellement",
+     "describes": "Comment, avec le temps, votre présence mutuelle vous influence et vous transforme.",
+     "name": "Croissance"
+    },
+    "rhythm": {
+     "axisNeg": "En phase",
+     "axisPos": "En décalé",
+     "describes": "Si vous avancez au même pas pour décider, agir et vous reposer.",
+     "name": "Rythme"
+    },
+    "values": {
+     "axisNeg": "Proches",
+     "axisPos": "Complémentaires",
+     "describes": "Ce qui compte le plus pour chacun de vous, et si vos priorités s’accordent.",
+     "name": "Valeurs"
+    }
+   },
+   "systems": {
+    "bazi": "BaZi",
+    "face": "Lecture du visage",
+    "hd": "Schéma énergétique",
+    "iching": "Yi Jing",
+    "numerology": "Numérologie",
+    "palm": "Lecture de la main",
+    "psych": "Psychométrie",
+    "vedic": "Astrologie védique",
+    "western": "Astrologie occidentale",
+    "ziwei": "Zi Wei Dou Shu"
+   }
+  },
+  "relation": {
+   "rings": {
+    "attraction": {
+     "friction": {
+      "body": "Vous pouvez difficilement ignorer la présence l’un de l’autre, mais une fois proches, la relation n’est pas toujours simple. Bien souvent, le trait que vous admiriez ou aimiez le plus au départ devient, dans le travail en commun ou la vie de tous les jours, ce qui vous agace le plus ; ou bien, dès que l’un fait un pas vers l’autre, l’autre recule instinctivement un peu. L’attirance ne manque pas entre vous ; c’est la trop grande proximité qui crée les frottements, et garder un peu de distance rend la relation plus confortable.",
+      "practice": "Parlez d’un trait de l’autre que vous admirez et qui, parfois, vous exaspère un peu, et cherchez ensemble à quels moments il bascule d’un côté ou de l’autre.",
+      "quote": "Ce qui vous attire le plus chez l’autre est souvent ce qui, de près, met votre patience à l’épreuve."
+     },
+     "quiet": {
+      "body": "Au début, aucun de vous n’a sans doute trouvé l’autre particulièrement extraordinaire, et vous n’aviez pas besoin de chercher à vous mettre en valeur. Votre affection et votre confiance se sont construites lentement, au fil des rencontres et des choses concrètes faites ensemble, jusqu’à une familiarité qui s’est installée sans bruit. Cette relation manque peut-être de l’excitation des débuts, mais elle a pour elle la solidité et le naturel, et plus le temps passe, plus elle vous détend.",
+      "practice": "Passez un moment dans un endroit où vous n’allez jamais — un quartier inconnu, par exemple — et voyez ce que vous découvrez l’un de l’autre hors de votre cadre habituel.",
+      "quote": "Vous n’êtes pas du genre à faire des étincelles au premier regard, mais être ensemble est simple et paisible."
+     },
+     "strong": {
+      "body": "Peut-être parce que vous vous reconnaissez l’un dans l’autre, ou parce que l’autre possède justement ce qui vous manque : quand vous êtes ensemble, votre attention se tourne sans effort vers l’autre, curieuse de son regard sur les choses et de sa manière de faire. Cet intérêt, qui n’a pas besoin d’être cultivé, vous rapproche facilement ; seulement, au début, quand on se rapproche très vite, on a aussi tendance à idéaliser un peu l’autre, et ce n’est qu’avec le temps qu’on découvre la personne telle qu’elle est.",
+      "practice": "Racontez-vous un moment précis et récent où vous avez regardé l’autre en pensant : « Ça, c’est tellement toi. »",
+      "quote": "Vous vous attirez naturellement, et chacun a envie d’en savoir un peu plus sur l’autre."
+     }
+    },
+    "communication": {
+     "friction": {
+      "body": "Vous n’avez pas les mêmes habitudes de conversation : l’un pense peut-être à voix haute, tandis que l’autre prend au sérieux chaque remarque lancée en passant ; ou l’un ne regarde que le fond, quand l’autre est plus sensible au ton et à l’attitude. Bien souvent, si la discussion dérape, ce n’est pas que vos idées divergent vraiment : c’est qu’une formulation a accroché, et l’on finit par se disputer sur « ce que tu voulais dire au juste ».",
+      "practice": "Quand la conversation commence à s’échauffer, faites une pause et reformulez avec des mots simples ce que vous avez compris : « Si je comprends bien, tu veux dire que… c’est ça ? »",
+      "quote": "Même en parlant de la même chose, vos façons de dire et d’écouter vous font souvent vous méprendre l’un sur l’autre."
+     },
+     "quiet": {
+      "body": "Vous n’êtes pas un duo intarissable, et même côte à côte, chacun à ses occupations, sans parler pendant des heures, vous n’éprouvez aucune gêne. Ce silence est reposant, mais si vous n’y prenez garde, vos échanges peuvent se réduire aux affaires pratiques et aux petites choses du quotidien. L’autre ne peut pas deviner ce qui vous occupe ces temps-ci : si quelque chose vous préoccupe ou vous tient à cœur, c’est à vous d’en parler.",
+      "practice": "Pendant une promenade ou un repas, laissez de côté les sujets pratiques et demandez-vous : « Qu’est-ce qui t’occupe souvent l’esprit ces temps-ci ? »",
+      "quote": "Ensemble, vous n’avez pas besoin de meubler le silence ; mais ce qui vous tient à cœur, il faut le dire."
+     },
+     "strong": {
+      "body": "Parler ensemble ne demande aucun effort : inutile d’exposer longuement le contexte, vous enchaînez naturellement sur ce que l’autre veut dire, et même quand la conversation saute d’un sujet à l’autre, chacun suit le fil. Mais justement parce que vous vous comprenez si bien d’habitude, face à un sujet vraiment complexe ou important, vous risquez de vous dire « pas besoin d’entrer dans les détails, l’autre a compris », pour découvrir à la fin que vous n’aviez pas du tout la même chose en tête.",
+      "practice": "La prochaine fois que vous discutez ensemble d’une chose importante, même si vous pensez être d’accord, posez une question de plus : « Si on fait comme ça, concrètement, tu comptes t’y prendre comment ? »",
+      "quote": "Entre vous, la parole coule de source : souvent, une demi-phrase suffit pour que l’autre comprenne."
+     }
+    },
+    "emotion": {
+     "friction": {
+      "body": "Face aux soucis, vos réflexes diffèrent souvent : l’un a besoin d’en parler tout de suite, l’autre de se retrouver au calme ; ou l’un se met à analyser le problème et à proposer des solutions, quand l’autre voulait simplement un mot de compréhension. Bien souvent, si l’un de vous se sent blessé, ce n’est pas que l’autre s’en moque : c’est que vous vous offrez mutuellement le réconfort que vous voudriez recevoir, et qu’il ne tombe pas juste.",
+      "practice": "Un jour où vous êtes tous les deux de bonne humeur, dites-vous à l’avance : « Les jours où ça ne va pas, voilà ce que tu peux faire qui m’aide le plus : … »",
+      "quote": "Quand ça ne va pas, vous n’avez pas la même manière de traverser vos émotions ni de montrer votre attention."
+     },
+     "quiet": {
+      "body": "Quand quelque chose vous pèse, votre premier réflexe est de le digérer par vous-même plutôt que de déverser d’un coup votre mauvaise humeur sur l’autre. La relation en devient très simple, et vous connaissez rarement ces tiraillements où l’on s’épuise mutuellement. Mais comme vous êtes tous deux très indépendants et très attentifs aux limites, vous pouvez parfois garder une certaine réserve ; une confiance et une intimité plus profondes se construisent souvent peu à peu, après avoir traversé ensemble quelques épreuves et laissé voir à l’autre ses fragilités.",
+      "practice": "La prochaine fois qu’une petite chose vous contrarie ou vous fait hésiter, essayez d’en parler à l’autre sans attendre de l’avoir digérée.",
+      "quote": "Vous avez tous deux l’habitude de digérer vos émotions chacun de votre côté, et vos moments ensemble restent légers, sans pression."
+     },
+     "strong": {
+      "body": "Vous êtes très sensibles à l’état l’un de l’autre : quand la fatigue ou la mauvaise humeur gagne l’un de vous, l’autre le remarque souvent d’un regard, sans qu’un mot soit dit. Après une longue journée dehors, se retrouver auprès de l’autre apporte d’ordinaire un vrai soulagement. Mais parce que vous êtes si perméables à l’humeur de l’autre, il arrive que le moral en berne de l’un fasse baisser celui de l’autre. C’est en restant d’abord stable soi-même que l’on prend le mieux soin de l’autre.",
+      "practice": "Pensez à un petit détail récent par lequel l’autre vous a fait sentir que l’on prenait soin de vous, et racontez-le-lui précisément.",
+      "quote": "Vous percevez vite les changements d’humeur de l’autre, et ensemble, nul besoin de faire bonne figure."
+     }
+    },
+    "growth": {
+     "friction": {
+      "body": "L’autre voit souvent d’un coup d’œil les questions que vous avez l’habitude d’esquiver, ou vous pousse à affronter ce que vous préféreriez laisser filer. Une telle relation fait avancer vite, mais personne ne tient longtemps à être sans cesse corrigé et poussé en avant. Tout n’a pas besoin de servir à « corriger un défaut » : savoir parfois se laisser tranquille et accepter l’autre sans retouche, ici et maintenant, permet à la relation de respirer.",
+      "practice": "Cette semaine, si vous voyez l’autre retomber dans une vieille habitude, retenez-vous de la relever ou de donner un conseil, et laissez l’autre, pour une fois, faire à sa manière, en toute tranquillité.",
+      "quote": "Vous repérez vite les failles l’un de l’autre, ce qui vous fait progresser, mais peut aussi fatiguer."
+     },
+     "quiet": {
+      "body": "Il y a très peu, entre vous, de cette pression qui pousse à se critiquer ou à se faire progresser l’un l’autre. La vie au-dehors demande déjà assez d’efforts ; auprès de l’autre, vous vous acceptez comme vous êtes, et vous offrez à l’autre un endroit où souffler. Quant à vos envies d’apprendre et à vos directions personnelles, chacun y travaille de son côté, sans avoir besoin d’y entraîner l’autre.",
+      "practice": "Parlez chacun d’un petit objectif personnel sur lequel vous travaillez ou que vous aimeriez essayer — pas pour demander conseil, juste pour que l’autre sache « voilà ce que je fais en ce moment ».",
+      "quote": "Aucun de vous ne cherche à changer l’autre : ensemble, vous êtes simplement comme vous êtes."
+     },
+     "strong": {
+      "body": "Ce qui coûte à l’un est souvent ce que l’autre fait les yeux fermés. Et chose rare, cette complémentarité vous aide vraiment, sans jamais donner à l’un le sentiment d’être en dessous. Mais au-delà de l’habitude de compter sur l’autre pour prendre le relais, observez aussi comment l’autre s’y prend, et laissez peu à peu ses points forts devenir un peu les vôtres.",
+      "practice": "Racontez à l’autre une chose qui vous était difficile avant votre rencontre, et qui vous vient bien plus facilement aujourd’hui, grâce à son influence.",
+      "quote": "Vos forces se complètent, et avec le temps, chacun apprend de l’autre de nouveaux savoir-faire."
+     }
+    },
+    "rhythm": {
+     "friction": {
+      "body": "Quand une question se pose, le plus rapide veut trancher et passer à l’action tout de suite, et trouve vite que l’autre traîne ; le plus lent a besoin de temps pour y voir clair, et se sent bousculé, sans assise. En réalité, la vitesse a sa netteté et la lenteur sa prudence ; vouloir à tout prix marcher au même pas ne fait que vous agacer mutuellement. Mieux vaut vous accorder un décalage : que le plus rapide parte en éclaireur et prépare le terrain, et que le plus lent examine et vérifie.",
+      "practice": "Quand une décision commune se présente, laissez le plus rapide exposer d’abord ses idées, puis fixez ensemble un moment précis pour trancher (par exemple « on en reparle demain soir »), sans relancer entre-temps.",
+      "quote": "Vous ne décidez pas et n’agissez pas à la même vitesse : l’un est pressé, l’autre prend son temps."
+     },
+     "quiet": {
+      "body": "Vos rythmes ne sont pas tout à fait synchronisés, mais ils ne se heurtent pas non plus. La plupart du temps, chacun vaque naturellement à ses affaires, sans que tout doive se faire ensemble au même moment. Il suffit de convenir à l’avance des quelques moments où vous devez vraiment vous accorder ; le reste du temps, laissez chacun aller à l’allure qui lui convient, et vous serez tous les deux à l’aise.",
+      "practice": "Cette semaine, trouvez un moment libre pour rester dans la même pièce en faisant chacun autre chose — lire, regarder son téléphone, avancer sur une tâche — et savourez cette présence qui ne dérange pas.",
+      "quote": "Chacun a son emploi du temps et son rythme, sans que vous vous gêniez l’un l’autre."
+     },
+     "strong": {
+      "body": "Pour faire une course, prendre une décision ou sentir, au milieu d’une soirée, qu’il est temps de rentrer, vous allez souvent à la même vitesse. Vivre ou travailler ensemble est fluide : personne ne se sent bousculé, personne n’a l’impression d’attendre. Seulement, quand deux personnes ont exactement le même tempo, elles peuvent aussi s’emballer ensemble jusqu’à oublier de se reposer, ou repousser d’un commun accord la même corvée ; de temps en temps, il faut que l’un de vous tire la sonnette.",
+      "practice": "Regardez si, ces derniers temps, vous enchaînez tous les deux sans pause, ou si vous repoussez ensemble la même chose : prévoyez alors un après-midi de repos à deux, ou une demi-heure pour régler ensemble ce qui traîne.",
+      "quote": "Qu’il s’agisse d’agir ou de vous reposer, vous avancez naturellement au même rythme."
+     }
+    },
+    "values": {
+     "friction": {
+      "body": "Face à une même situation, l’un tient peut-être avant tout à la stabilité et à la sécurité, l’autre à la liberté et à la nouveauté ; ou bien l’un ne regarde que l’efficacité et le résultat, quand l’autre se soucie davantage de ce que l’on vit en chemin. Bien souvent, ce qui ressemble à une dispute sur la manière de faire une petite chose cache en réalité deux échelles de valeurs différentes. Inutile de convaincre l’autre d’adopter la vôtre : comprenez d’abord ce que l’autre a le plus peur de rater ou de perdre, et la discussion deviendra possible.",
+      "practice": "Choisissez un sujet sur lequel vos avis divergent et, sans chercher de solution pour l’instant, dites chacun à votre tour : « Si on fait entièrement comme tu le veux, ce qui m’inquiète le plus, c’est… »",
+      "quote": "Au moment de choisir, vous ne tenez pas aux mêmes choses, ni dans le même ordre."
+     },
+     "quiet": {
+      "body": "Vous ne tenez pas exactement aux mêmes choses, mais vos priorités ne s’affrontent pas non plus. Cela donne à votre relation beaucoup de souplesse : chacun peut avoir ses exigences et ses aspirations, sans que personne ait à se forcer. Quand une décision vous concerne tous les deux, inutile d’en faire une question de principe : réglez chaque chose concrète au cas par cas, cela suffit.",
+      "practice": "La prochaine fois que vous devez décider ensemble de quelque chose (où aller, comment vous organiser…), énoncez chacun la seule exigence qui vous tient le plus à cœur, et laissez le reste se négocier en souplesse.",
+      "quote": "Même si vous ne poursuivez pas les mêmes choses, vous savez vivre côte à côte sans vous gêner."
+     },
+     "strong": {
+      "body": "Des petites choses du quotidien, comme la manière de dépenser l’argent ou d’organiser le temps, jusqu’aux grands principes de vie, vous accordez de l’importance aux mêmes choses, et face à une situation, vous vous retrouvez du même côté sans avoir à débattre. Cet accord rend vos décisions communes très faciles, et vous vous disputez rarement sur les valeurs. Seulement, quand deux personnes pensent de façon trop semblable, elles risquent d’avoir le même angle mort ; pour les grandes décisions, n’hésitez pas à demander un avis extérieur.",
+      "practice": "Revenez sur une décision prise ensemble récemment : si c’était à refaire, choisiriez-vous la même chose ? Y a-t-il un point auquel vous n’aviez pensé ni l’un ni l’autre ?",
+      "quote": "Ce qui mérite d’être pris au sérieux, ce qu’on peut laisser filer : vous voyez les choses de la même façon."
+     }
+    }
+   },
+   "scripts": {
+    "closeness_vs_space": {
+     "practice": "Avant de prendre du recul, la personne qui a besoin d’espace offre d’abord un mot rassurant (« Ce n’est pas à cause de toi, je reviens à telle heure ») ; quand la personne qui veut se rapprocher se sent inquiète, elle demande directement à être rassurée, sans détour ni petit test.",
+     "scene": "Quand la fatigue ou la pression s’installe, vous rechargez vos batteries de façon opposée : l’un a besoin de se rapprocher et de vérifier que tout va bien entre vous pour être rassuré ; l’autre, à court d’énergie, doit se retirer un moment dans sa coquille. Résultat : plus l’un poursuit, plus l’inquiétude monte ; plus l’autre recule, plus la distance grandit.",
+     "sides": {
+      "closer": {
+       "inner": "Quand tu te tais soudain et que tu prends tes distances, je commence à imaginer qu’il y a un problème entre nous. Si je me rapproche, ce n’est pas pour t’ennuyer : j’ai juste besoin de savoir que tout va bien.",
+       "say": "« Tu parles peu aujourd’hui, et ça m’inquiète un peu. Dis-moi juste “tout va bien entre nous”, et je te laisse tranquille sans problème. »"
+      },
+      "spacer": {
+       "inner": "Je suis juste à bout, la tête saturée — ça n’a vraiment rien à voir avec toi. Mais plus tu me poursuis, plus j’étouffe, et je dois user mes dernières forces à te répondre.",
+       "say": "« Tout va bien entre nous, je te promets, ne t’inquiète pas. Je suis juste à plat aujourd’hui : laisse-moi une heure pour souffler, et je reviens vers toi dès que ça va mieux. »"
+      }
+     },
+     "title": "L’un se rapproche, l’autre a besoin d’air"
+    },
+    "control_vs_yield": {
+     "practice": "Bannissez « peu importe » et « comme tu veux » pendant une semaine : la personne qui décide d’habitude se retient de proposer la première et laisse l’autre choisir le plat ou le lieu ; la personne qui s’adapte d’habitude s’exerce à dire à voix haute sa préférence, même légère.",
+     "scene": "Avec le temps, vous avez glissé sans vous en rendre compte dans un schéma figé : l’un a pris l’habitude d’organiser et de trancher, l’autre de dire « peu importe, comme tu veux ». En surface, tout est calme ; mais chaque fois que l’un se range à l’avis de l’autre, une petite frustration non dite s’accumule, jusqu’au jour où un détail fait ressortir tous les vieux comptes.",
+     "sides": {
+      "leads": {
+       "inner": "Comme tu ne disais pas non, j’ai pris les décisions au passage, simplement pour que les choses soient bien faites. Je ne me rendais vraiment pas compte que tu t’effaçais pour t’adapter à moi.",
+       "say": "« Je me rends compte que je décide toujours à ta place. Cette fois, je ne dis rien en premier : peu importe ce que j’en pense, dis-moi ce que tu veux vraiment. »"
+      },
+      "yields": {
+       "inner": "Tu sembles toujours avoir les idées si claires que te contredire me paraît trop fatigant ; c’est plus simple de suivre. Mais à force de céder, j’ai l’impression de ne plus avoir de place dans cette relation.",
+       "say": "« D’habitude, je dis “comme tu veux” pour ne pas compliquer les choses, mais cette fois, j’ai vraiment une idée. On essaie à ma façon pour une fois, d’accord ? »"
+      }
+     },
+     "title": "Décider pour deux, ou dire « comme tu veux »"
+    },
+    "decision_pace": {
+     "practice": "Pour les grandes décisions, séparez la première impression de la décision finale : le plus rapide dit tout de suite vers où penche son choix, le plus lent annonce quand viendra sa réponse, et entre les deux, personne ne relance.",
+     "scene": "Une décision se présente. Pour l’un de vous, la réponse est claire presque aussitôt, et il faudrait que ce soit réglé ; pour l’autre, il faut laisser reposer et voir, demain, ce que la question fait ressentir. Bientôt, l’un a l’impression que tout reste suspendu en l’air, l’autre de se faire acculer.",
+     "sides": {
+      "fast": {
+       "inner": "Mon instinct a déjà tranché. Laisser les choses en suspens m’épuise, et j’ai l’impression que l’élan et la bonne occasion filent pendant qu’on hésite.",
+       "say": "« De mon côté, c’est tout réfléchi : je pencherais pour faire comme ça. Je ne te presse pas, dis-moi simplement quand tu y verras clair. »"
+      },
+      "slow": {
+       "inner": "Je ne fais pas traîner exprès. Pour l’instant, c’est le brouhaha dans ma tête : si tu me pousses à répondre tout de suite, soit je dirai oui pour en finir et je le regretterai après, soit je dirai non par simple réflexe de défense.",
+       "say": "« Je ne sais pas encore ce que j’en pense. Laisse-moi dormir dessus, je te donne une vraie réponse demain avant midi. »"
+      }
+     },
+     "title": "Trancher tout de suite, ou laisser passer la nuit"
+    },
+    "direct_clash": {
+     "practice": "Un jour où l’ambiance est bonne, choisissez ensemble un « mot de freinage » un peu ridicule. Dès que l’un de vous le prononce en pleine dispute, vous vous taisez tous les deux cinq minutes, sans condition, et vous changez de pièce ; une fois la colère retombée, vous ne parlez plus que du sujet lui-même.",
+     "scene": "Tout part souvent d’un détail sans importance. Vous avez tous deux des réflexes rapides, et aucun de vous n’a l’habitude de se taire : un ton un peu sec d’un côté, et l’autre répond aussitôt sur le même ton. Les mots appellent les mots, en trois phrases la colère monte, et à la fin, plus personne ne sait de quoi on se disputait.",
+     "sides": {
+      "either": {
+       "inner": "Je ne cherchais pas la dispute, je voulais juste me faire comprendre. Mais ton ton m’a donné l’impression que tu voulais avoir le dessus, et je n’ai pas pu laisser passer.",
+       "say": "« Stop, là, on est juste en train de se piquer. On prend un verre d’eau, cinq minutes pour souffler, et on reprend calmement. »"
+      }
+     },
+     "title": "Quand les mots s’enchaînent et que ça s’enflamme"
+    },
+    "processing_style": {
+     "practice": "Mettez une étiquette sur le moment avant qu’il commence : la personne qui pense à voix haute annonce « Je fais juste un brouillon, ne le prends pas au pied de la lettre, pas besoin de répondre tout de suite » ; la personne qui a besoin de calme donne une heure de retour précise, au lieu de s’éloigner en silence.",
+     "scene": "Quand un souci ou un imprévu vous secoue, l’un de vous a besoin de vider à voix haute le désordre de ses pensées, et c’est en parlant que tout s’éclaire ; l’autre doit d’abord fermer la porte et tout démêler en silence. Résultat : d’un côté, on a l’impression de parler à un mur ; de l’autre, on se sent bombardé de mots.",
+     "sides": {
+      "inward": {
+       "inner": "Dans ma tête, c’est encore un sac de nœuds. Si tu continues de me parler, je n’arrive plus à penser, et si tu me forces à parler maintenant, ce qui sortira ne sera pas vrai.",
+       "say": "« Je ne t’ignore pas, c’est juste que mon esprit n’a pas encore suivi. Laisse-moi une demi-heure au calme, et dès que j’y vois clair, je viens t’en parler. »"
+      },
+      "outward": {
+       "inner": "Tant que je ne le dis pas, ce que j’ai sur le cœur reste noué. Ce que je dis là n’est qu’un brouillon, pas une conclusion ; mais quand tu te tais, j’ai l’impression que tu me fermes la porte.",
+       "say": "« Tout est embrouillé dans ma tête, j’ai besoin de penser à voix haute. Tu n’as rien à résoudre ni à répondre tout de suite : écoute-moi juste dix minutes. »"
+      }
+     },
+     "title": "Se taire d’abord, ou d’abord en parler"
+    },
+    "same_element_rivalry": {
+     "practice": "Puisque vous savez tous deux tenir la barre, ne vous disputez pas le même gouvernail : ou bien partagez les terrains, chacun ayant le dernier mot sur le sien ; ou bien prenez les commandes à tour de rôle, et ce jour-là, la personne qui n’est pas aux commandes se contente de profiter, sans jamais donner de consignes.",
+     "scene": "Ce n’est pas parce que vous êtes différents que vous vous disputez ici, mais justement parce que vous vous ressemblez trop : sur le même terrain, vous avez tous deux des idées arrêtées et des exigences précises, comme deux chefs dans une seule cuisine. Et parce que vous connaissez si bien le caractère de l’autre, chacun se dit : « Puisque tu me comprends, pourquoi ce ne serait pas toi qui cèdes ? »",
+     "sides": {
+      "either": {
+       "inner": "Je sais exactement comment il faut faire ; me plier à ta façon me hérisse de partout. Et puis tu es exactement comme moi : pourquoi est-ce à moi de faire l’effort ?",
+       "say": "« On a tous les deux des idées trop arrêtées là-dessus, arrêtons de nous disputer le volant. Cette fois, on fait entièrement comme tu veux, je ne dis rien ; la prochaine, c’est moi qui décide. »"
+      }
+     },
+     "title": "Trop semblables pour céder"
+    },
+    "structure_vs_flow": {
+     "practice": "Essayez la méthode « charpente et espaces libres » : ne fixez à chaque fois que deux ou trois points incontournables (un billet de train, une échéance), et réservez exprès dans l’agenda un créneau « sans rien de prévu », où personne n’a le droit de rien ajouter.",
+     "scene": "Qu’il s’agisse d’un week-end, d’un voyage ou d’un projet en cours, l’un de vous ne se sent tranquille qu’une fois le programme et les étapes fixés ; l’autre, devant un planning plein, a l’impression d’aller au bureau, et préfère décider le jour même, selon l’humeur. L’un trouve l’autre peu fiable ; l’autre trouve que tout est bien trop crispé.",
+     "sides": {
+      "improviser": {
+       "inner": "Quand chaque heure est déjà fixée des jours à l’avance, rien qu’à le voir, ça m’épuise ; tout le plaisir de l’attente se transforme en liste de tâches à cocher.",
+       "say": "« Mettons-nous d’accord maintenant sur les grandes lignes et sur l’essentiel, mais garde-moi une demi-journée vide, et on suivra notre envie le moment venu, d’accord ? »"
+      },
+      "planner": {
+       "inner": "Ce n’est pas que j’aime tout contrôler : tant que les choses ne sont pas calées, une corde reste tendue dans ma tête. Une fois l’essentiel décidé, je peux enfin me détendre et en profiter.",
+       "say": "« Fixons d’abord les deux choses les plus importantes, pour que j’aie l’esprit tranquille ; pour le reste du temps, c’est toi qui décides, et on verra bien où on atterrit. »"
+      }
+     },
+     "title": "Tout prévoir, ou voir venir"
+    },
+    "who_speaks_first": {
+     "practice": "Si c’est vous qui vous lancez d’habitude, faites de « Qu’est-ce que tu en penses ? » votre premier geste avant d’agir. Si c’est vous qui attendez, n’attendez pas pour rien : frappez à la porte en demandant « Tu veux savoir ce que j’en pense ? »",
+     "scene": "Vous faites face au même problème. L’un de vous voit déjà de quoi il retourne, mais attend qu’on lui pose vraiment la question pour parler ; l’autre fonce déjà de son côté, ou suppose que quelqu’un qui a un avis le dirait spontanément. Au bout du compte, l’un se sent ignoré, et l’autre a l’impression que son partenaire s’est soudain mis en retrait.",
+     "sides": {
+      "initiates": {
+       "inner": "Quand j’ai une idée, je la dis, tout simplement. Alors quand tu ne dis rien, je pense que ça t’est égal, ou que c’est à moi de m’en occuper.",
+       "say": "« Je fonce tête baissée — arrête-moi une seconde. Tu vois sûrement des choses qui m’échappent : qu’est-ce que tu en penses ? »"
+      },
+      "waits": {
+       "inner": "Je vois très bien où ça mène, mais je sais d’expérience que si je donne mon avis avant que tu aies envie de l’entendre, soit il glisse sur toi, soit il sonne comme une critique.",
+       "say": "« J’ai quelques idées là-dessus. Tu as envie de les entendre maintenant ? »"
+      }
+     },
+     "title": "Attendre qu’on demande, oublier de demander"
+    }
+   }
+  }
+ },
+ "charts": {
+  "ui": {
+   "view": {
+    "label": "Affichage",
+    "graphic": "Graphique",
+    "table": "Tableau"
+   },
+   "pro": "Pro",
+   "proHint": "Mode Pro : affiche plus de détails sur le thème et les notes de calcul",
+   "replay": "Rejouer le tracé",
+   "sections": {
+    "label": "Sections",
+    "data": "Données",
+    "reading": "Lecture",
+    "pro": "Pro"
+   },
+   "now": "Maintenant",
+   "nowShort": "MAINT.",
+   "degradedTitle": "Une partie de ce thème requiert l'heure de naissance",
+   "degradedNote": "Les éléments qui varient selon l'heure de naissance sont tracés en pointillés. Ajoutez votre heure de naissance pour recalculer le thème automatiquement.",
+   "timeSensitive": "Dépend de l'heure de naissance",
+   "sensitiveValues": "Dans votre plage d'heure de naissance, il pourrait s'agir de : {values}",
+   "stableWithin": "Inchangé à ±{minutes} min autour de votre heure de naissance",
+   "unavailable": "Non disponible",
+   "notAvailableNoTime": "Heure de naissance requise",
+   "readingSoon": "La lecture croisée complète apparaîtra ici dès qu'elle sera prête ; en attendant, voici l'essentiel de ce thème.",
+   "engineFacts": "Toutes les données ci-dessous sont calculées directement à partir des éphémérides et des règles calendaires",
+   "computedBy": "Moteur {engine} · éphémérides {ephemeris} · base tz {tzdb}",
+   "close": "Fermer",
+   "yes": "Oui",
+   "no": "Non",
+   "none": "Aucun",
+   "dash": "—",
+   "degreesMinutes": "{d}°{m}′",
+   "years": "{from}–{to}",
+   "ageRange": "{from}–{to} ans",
+   "listSep": ", ",
+   "labelSep": " : ",
+   "clauseSep": " ; ",
+   "comma": ", ",
+   "sentenceSep": ". ",
+   "quote": "« {text} »",
+   "paren": " ({text})",
+   "pair": "{a} et {b}",
+   "addPrefix": "＋ ",
+   "plusPrefix": "+ ",
+   "ganzhi": "{stem}-{branch}",
+   "sectionNumber": "{n}.",
+   "sectionNumeral": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "10",
+    "11": "11",
+    "12": "12",
+    "13": "13",
+    "14": "14",
+    "15": "15",
+    "16": "16",
+    "17": "17",
+    "18": "18",
+    "19": "19"
+   },
+   "sectionHeading": "[{title}]",
+   "sectionHeadingPlain": "{title}",
+   "patternModality": "{modality}",
+   "lunarMonth": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "10",
+    "11": "11",
+    "12": "12"
+   },
+   "lunarDay": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "10",
+    "11": "11",
+    "12": "12",
+    "13": "13",
+    "14": "14",
+    "15": "15",
+    "16": "16",
+    "17": "17",
+    "18": "18",
+    "19": "19",
+    "20": "20",
+    "21": "21",
+    "22": "22",
+    "23": "23",
+    "24": "24",
+    "25": "25",
+    "26": "26",
+    "27": "27",
+    "28": "28",
+    "29": "29",
+    "30": "30"
+   },
+   "lunarMonthDay": "{day}/{month}",
+   "lunarMonthDayLeap": "{day}/{month} (intercalaire)",
+   "lunarShort": "{leap, select, yes {interc. } other {}}M{month} J{day}",
+   "civilDate": "d MMM yyyy",
+   "civilDateLong": "d MMMM yyyy",
+   "eyebrowDate": "EEE · d MMM yyyy"
+  },
+  "systemStatus": {
+   "sex_required": "Cette tradition calcule différemment les thèmes féminins et masculins. Veuillez indiquer le sexe dans les données de naissance.",
+   "year_only": "L’année de naissance seule ne suffit pas pour établir ce thème. Veuillez ajouter le mois et le jour.",
+   "no_birth_time": "L’heure de naissance est nécessaire pour établir ce thème.",
+   "not_supported": "Cette combinaison d’école et de paramètres n’est pas encore prise en charge.",
+   "error": "Une erreur s’est produite lors du calcul de ce thème ({code})."
+  },
+  "degrade": {
+   "noBirthTime": "Sans heure de naissance",
+   "threePillarsOnly": "Trois piliers uniquement — calculé d’après l’année, le mois et le jour",
+   "luckStartApproximate": "Le début des piliers de chance est approximatif",
+   "sexUnknown": "Sexe non renseigné — les piliers de chance sont affichés en ordre direct et inversé",
+   "noBirthHour": "Sans heure de naissance",
+   "yearOnly": "Année de naissance uniquement",
+   "birthTimeUnknown": "Sans heure de naissance",
+   "birthDateUnknown": "Sans date de naissance",
+   "moonNakshatraVaries": "La Lune change de nakshatra au cours de cette journée",
+   "moonSignVaries": "La Lune change de signe au cours de cette journée",
+   "highLatitudeAscendant": "À cette latitude élevée, l’Ascendant varie très rapidement selon l’heure exacte",
+   "highLatitudeHouseFallback": "Ce système de domification ne peut pas diviser les maisons à une latitude aussi élevée. Les maisons Porphyre sont utilisées à la place.",
+   "chironOutOfRange": "Chiron est hors de la plage des éphémérides",
+   "noTime": "Sans heure de naissance",
+   "noName": "Aucun nom renseigné — les nombres liés au nom ne sont pas calculés",
+   "noLetters": "Ce nom n’a pas pu être converti en lettres latines pour la numérologie",
+   "readingNeeded": "Impossible de calculer les nombres du nom à partir des seuls caractères sans savoir comment il se prononce. Ajoutez la lecture en kana ou en hangeul dans le profil pour les afficher."
+  },
+  "stem": {
+   "jia": "Jia",
+   "yi": "Yi",
+   "bing": "Bing",
+   "ding": "Ding",
+   "wu": "Wu",
+   "ji": "Ji",
+   "geng": "Geng",
+   "xin": "Xin",
+   "ren": "Ren",
+   "gui": "Gui"
+  },
+  "branch": {
+   "zi": "Zi",
+   "chou": "Chou",
+   "yin": "Yin",
+   "mao": "Mao",
+   "chen": "Chen",
+   "si": "Si",
+   "wu": "Wu",
+   "wei": "Wei",
+   "shen": "Shen",
+   "you": "You",
+   "xu": "Xu",
+   "hai": "Hai"
+  },
+  "animal": {
+   "zi": "Rat",
+   "chou": "Buffle",
+   "yin": "Tigre",
+   "mao": "Lapin",
+   "chen": "Dragon",
+   "si": "Serpent",
+   "wu": "Cheval",
+   "wei": "Chèvre",
+   "shen": "Singe",
+   "you": "Coq",
+   "xu": "Chien",
+   "hai": "Cochon"
+  },
+  "fivePhase": {
+   "wood": "Bois",
+   "fire": "Feu",
+   "earth": "Terre",
+   "metal": "Métal",
+   "water": "Eau"
+  },
+  "yinYang": {
+   "yin": "Yin",
+   "yang": "Yang"
+  },
+  "sex": {
+   "female": "féminin",
+   "male": "masculin"
+  },
+  "pillar": {
+   "year": "Année",
+   "month": "Mois",
+   "day": "Jour",
+   "hour": "Heure"
+  },
+  "tenGod": {
+   "biJian": "Ami",
+   "jieCai": "Voleur de richesse",
+   "shiShen": "Dieu de la nourriture",
+   "shangGuan": "Officier blessant",
+   "pianCai": "Richesse indirecte",
+   "zhengCai": "Richesse directe",
+   "qiSha": "Sept meurtres",
+   "zhengGuan": "Officier direct",
+   "pianYin": "Ressource indirecte",
+   "zhengYin": "Ressource directe"
+  },
+  "tenGodGroup": {
+   "companion": "Compagnon",
+   "output": "Expression",
+   "wealth": "Richesse",
+   "power": "Pouvoir",
+   "resource": "Ressource"
+  },
+  "lifeStage": {
+   "changSheng": "Naissance",
+   "muYu": "Bain",
+   "guanDai": "Jeunesse",
+   "linGuan": "Âge adulte",
+   "diWang": "Apogée",
+   "shuai": "Déclin",
+   "bing": "Langueur",
+   "si": "Immobilité",
+   "mu": "Réserve",
+   "jue": "Rupture",
+   "tai": "Conception",
+   "yang": "Gestation"
+  },
+  "naYin": {
+   "haiZhongJin": "Or dans la mer",
+   "luZhongHuo": "Feu du fourneau",
+   "daLinMu": "Bois de la grande forêt",
+   "luPangTu": "Terre du bord du chemin",
+   "jianFengJin": "Métal du fil de l’épée",
+   "shanTouHuo": "Feu au sommet de la montagne",
+   "jianXiaShui": "Eau du ravin",
+   "chengTouTu": "Terre des remparts",
+   "baiLaJin": "Métal de cire blanche",
+   "yangLiuMu": "Bois de saule",
+   "quanZhongShui": "Eau de source",
+   "wuShangTu": "Terre des toits",
+   "piLiHuo": "Feu de la foudre",
+   "songBaiMu": "Bois de pin et de cyprès",
+   "changLiuShui": "Eau au long cours",
+   "shaZhongJin": "Or dans le sable",
+   "shanXiaHuo": "Feu au pied de la montagne",
+   "pingDiMu": "Bois des plaines",
+   "biShangTu": "Terre des murs",
+   "jinBoJin": "Feuille d’or",
+   "fuDengHuo": "Feu de la lampe",
+   "tianHeShui": "Eau de la Voie lactée",
+   "daYiTu": "Terre de la grande route",
+   "chaiChuanJin": "Or des parures",
+   "sangZheMu": "Bois de mûrier",
+   "daXiShui": "Eau du grand ruisseau",
+   "shaZhongTu": "Terre dans le sable",
+   "tianShangHuo": "Feu du ciel",
+   "shiLiuMu": "Bois de grenadier",
+   "daHaiShui": "Eau de la grande mer"
+  },
+  "shensha": {
+   "tianYi": "Noble céleste",
+   "wenChang": "Étoile des lettres",
+   "yiMa": "Cheval voyageur",
+   "taoHua": "Fleur de pêcher",
+   "huaGai": "Baldaquin",
+   "jiangXing": "Étoile du général",
+   "yangRen": "Lame yang",
+   "luShen": "Étoile de prospérité",
+   "tianDe": "Vertu céleste",
+   "yueDe": "Vertu mensuelle",
+   "hongLuan": "Phénix rouge",
+   "tianXi": "Joie céleste",
+   "guChen": "Étoile solitaire",
+   "guaSu": "Étoile isolée",
+   "jieSha": "Jie Sha",
+   "wangShen": "Wang Shen",
+   "kuiGang": "Kui Gang"
+  },
+  "interaction": {
+   "stemCombine": "Combinaison de troncs",
+   "stemClash": "Conflit de troncs",
+   "stemControl": "Contrôle de troncs",
+   "branchCombine6": "Six harmonies",
+   "branchTrine": "Trois harmonies",
+   "branchHalfTrine": "Demi-harmonie",
+   "branchMeeting": "Réunion directionnelle",
+   "branchClash": "Conflit",
+   "branchPunish": "Punition",
+   "branchSelfPunish": "Auto-punition",
+   "branchHarm": "Dommage",
+   "branchBreak": "Destruction",
+   "branchHiddenCombine": "Combinaison cachée"
+  },
+  "strength": {
+   "veryWeak": "Très faible",
+   "weak": "Faible",
+   "balanced": "Équilibré",
+   "strong": "Fort",
+   "veryStrong": "Très fort"
+  },
+  "baziPattern": {
+   "zhengGuan": "Structure de l’Officier direct",
+   "qiSha": "Structure des Sept meurtres",
+   "zhengYin": "Structure de la Ressource directe",
+   "pianYin": "Structure de la Ressource indirecte",
+   "shiShen": "Structure du Dieu de la nourriture",
+   "shangGuan": "Structure de l’Officier blessant",
+   "zhengCai": "Structure de la Richesse directe",
+   "pianCai": "Structure de la Richesse indirecte",
+   "jianLu": "Structure de l’Essor personnel",
+   "yangRen": "Structure de la Lame yang",
+   "congQiang": "Suivre la force",
+   "congRuo": "Suivre la faiblesse",
+   "congCai": "Suivre la richesse",
+   "congSha": "Suivre le pouvoir",
+   "congEr": "Suivre l’expression",
+   "huaQi": "Structure de transformation"
+  },
+  "usefulGodMethod": {
+   "fuyi": "soutien et modération",
+   "tiaohou": "équilibre climatique",
+   "tongguan": "médiation",
+   "bingyao": "remède",
+   "zhuanwang": "élément dominant"
+  },
+  "baziSpecial": {
+   "taiYuan": "Pilier de conception",
+   "taiXi": "Pilier du souffle",
+   "mingGong": "Palais de vie",
+   "shenGong": "Palais du corps"
+  },
+  "solarTerm": {
+   "liChun": "Début du printemps",
+   "yuShui": "Eau de pluie",
+   "jingZhe": "Éveil des insectes",
+   "chunFen": "Équinoxe de printemps",
+   "qingMing": "Pure clarté",
+   "guYu": "Pluie des céréales",
+   "liXia": "Début de l’été",
+   "xiaoMan": "Petite plénitude",
+   "mangZhong": "Grains en épi",
+   "xiaZhi": "Solstice d’été",
+   "xiaoShu": "Petite chaleur",
+   "daShu": "Grande chaleur",
+   "liQiu": "Début de l’automne",
+   "chuShu": "Fin des chaleurs",
+   "baiLu": "Rosée blanche",
+   "qiuFen": "Équinoxe d’automne",
+   "hanLu": "Rosée froide",
+   "shuangJiang": "Descente du givre",
+   "liDong": "Début de l’hiver",
+   "xiaoXue": "Petite neige",
+   "daXue": "Grande neige",
+   "dongZhi": "Solstice d’hiver",
+   "xiaoHan": "Petit froid",
+   "daHan": "Grand froid"
+  },
+  "bazi": {
+   "rows": {
+    "tenGod": "Dix Dieux",
+    "stem": "Tronc",
+    "branch": "Branche",
+    "hidden": "Troncs cachés",
+    "lifeStage": "Phase de vie",
+    "selfStage": "Phase propre",
+    "naYin": "Na Yin",
+    "kongWang": "Kong Wang",
+    "shensha": "Étoiles symboliques"
+   },
+   "dayMaster": "Maître du Jour",
+   "dayMasterSex": "Maître du Jour · {sex}",
+   "tableLabel": "Quatre Piliers du BaZi : {pillars}",
+   "foot": "{clock} · heure {hour} · conception {taiYuan} · palais de vie {mingGong} · palais du corps {shenGong}",
+   "footNoTime": "Heure de naissance inconnue · piliers de l'année, du mois et du jour uniquement · conception {taiYuan}",
+   "clock": {
+    "trueSolarTime": "Heure solaire vraie {time}",
+    "standardTime": "Heure standard {time}",
+    "wallClock": "Heure d'horloge {time}"
+   },
+   "fivePhasesTitle": "Cinq Phases",
+   "fivePhasesLabel": "Équilibre et cycle des Cinq Phases : {values}",
+   "fivePhasesCaptionOuter": "Cercle : engendrement",
+   "fivePhasesCaptionInner": "Étoile : contrôle",
+   "fivePhasesFoot": "Pondéré selon les troncs cachés et la saison de naissance : {dominant} domine, {missing}.",
+   "missingNone": "les cinq phases sont présentes",
+   "missingSome": "absence de {phases}",
+   "judgementTitle": "Analyse · moteur de règles",
+   "judgementStrength": "Force du Maître du Jour",
+   "judgementPattern": "Structure",
+   "judgementUseful": "Favorables",
+   "judgementShensha": "Étoiles symboliques",
+   "judgementInteractions": "Combinaisons et chocs",
+   "deLing": "en saison",
+   "deDi": "enraciné",
+   "deShi": "soutenu",
+   "notDe": "pas {what}",
+   "usefulValue": "favorable : {favorable} · défavorable : {unfavorable}",
+   "methodValue": "méthode {method}",
+   "patternRevealed": "qi principal révélé",
+   "patternNotRevealed": "qi principal non révélé",
+   "patternBasis": "{pillar} · {role} {stem}",
+   "reviewNote": "La force, la structure et les éléments favorables sont des évaluations initiales du moteur de règles, en cours de vérification par nos consultants en BaZi",
+   "luckTitle": "Piliers de chance · {sex} {yinYang}, {direction}, dès {age} ans",
+   "luckTitleNoSex": "Piliers de chance · sexe non précisé",
+   "luckForward": "sens direct",
+   "luckBackward": "sens inverse",
+   "luckAlternative": "{sex} · {direction}",
+   "luckStart": "Début des piliers de chance le {date} ({age} ans)",
+   "annualTitle": "Période {dayun} · piliers annuels",
+   "annualLoading": "Calcul des piliers annuels…",
+   "luckLabel": "Chronologie des piliers de chance : {list}",
+   "hiddenRole": {
+    "main": "Qi principal",
+    "middle": "Qi médian",
+    "residual": "Qi résiduel"
+   },
+   "tableColumns": {
+    "item": "Rubrique"
+   },
+   "interactionItem": "{kind} : {members}",
+   "interactionTransforms": "se transforme en {element}",
+   "readingDayMaster": "Maître du Jour {stem} {element}, {strength}.",
+   "readingPattern": "Structure : {pattern}. Selon le principe {method} : favorable {favorable}, défavorable {unfavorable}.",
+   "readingLuck": "Actuellement dans le pilier de chance {dayun} ({tenGod}), avec {liunian} ({tenGodYear}) comme pilier annuel.",
+   "readingUsefulLow": "Toutefois, les différentes méthodes BaZi divergent sur ce thème : la ligne ci-dessus ne reflète que l'approche « {method} », et les praticiens expérimentés interprètent souvent ce type de carte différemment. Consultez la ligne « Favorables » dans la section Données pour voir la conclusion de chaque méthode.",
+   "strengthContested": "Partagé · tendance {lean}"
+  },
+  "sign": {
+   "Aries": "Bélier",
+   "Taurus": "Taureau",
+   "Gemini": "Gémeaux",
+   "Cancer": "Cancer",
+   "Leo": "Lion",
+   "Virgo": "Vierge",
+   "Libra": "Balance",
+   "Scorpio": "Scorpion",
+   "Sagittarius": "Sagittaire",
+   "Capricorn": "Capricorne",
+   "Aquarius": "Verseau",
+   "Pisces": "Poissons"
+  },
+  "point": {
+   "sun": "Soleil",
+   "moon": "Lune",
+   "mercury": "Mercure",
+   "venus": "Vénus",
+   "mars": "Mars",
+   "jupiter": "Jupiter",
+   "saturn": "Saturne",
+   "uranus": "Uranus",
+   "neptune": "Neptune",
+   "pluto": "Pluton",
+   "northNode": "Nœud Nord",
+   "southNode": "Nœud Sud",
+   "chiron": "Chiron",
+   "lilith": "Lilith",
+   "partOfFortune": "Part de Fortune",
+   "asc": "Ascendant",
+   "mc": "Milieu du Ciel",
+   "dsc": "Descendant",
+   "ic": "Fond du Ciel",
+   "vertex": "Vertex",
+   "earth": "Terre"
+  },
+  "aspect": {
+   "conjunction": "Conjonction",
+   "opposition": "Opposition",
+   "trine": "Trigone",
+   "square": "Carré",
+   "sextile": "Sextile",
+   "quincunx": "Quinconce",
+   "semisextile": "Semi-sextile",
+   "semisquare": "Semi-carré",
+   "sesquiquadrate": "Sesqui-carré",
+   "quintile": "Quintile",
+   "biquintile": "Biquintile"
+  },
+  "westPattern": {
+   "grandTrine": "Grand Trigone",
+   "tSquare": "Carré en T",
+   "grandCross": "Grande Croix",
+   "kite": "Cerf-volant",
+   "yod": "Yod",
+   "stellium": "Stellium",
+   "mysticRectangle": "Rectangle mystique"
+  },
+  "astroElement": {
+   "fire": "Feu",
+   "earth": "Terre",
+   "air": "Air",
+   "water": "Eau"
+  },
+  "modality": {
+   "cardinal": "Cardinal",
+   "fixed": "Fixe",
+   "mutable": "Mutable"
+  },
+  "dignity": {
+   "domicile": "Domicile",
+   "exaltation": "Exaltation",
+   "detriment": "Exil",
+   "fall": "Chute",
+   "peregrine": "Pérégrin"
+  },
+  "lunarPhase": {
+   "newMoon": "Nouvelle Lune",
+   "crescent": "Premier croissant",
+   "firstQuarter": "Premier quartier",
+   "gibbous": "Lune gibbeuse",
+   "fullMoon": "Pleine Lune",
+   "disseminating": "Lune disséminante",
+   "lastQuarter": "Dernier quartier",
+   "balsamic": "Lune balsamique"
+  },
+  "houseSystem": {
+   "placidus": "Placidus",
+   "koch": "Koch",
+   "porphyry": "Porphyre",
+   "regiomontanus": "Regiomontanus",
+   "campanus": "Campanus",
+   "equal": "Maisons égales",
+   "wholeSign": "Signes entiers",
+   "alcabitius": "Alcabitius",
+   "topocentric": "Topocentrique",
+   "morinus": "Morinus",
+   "meridian": "Méridien"
+  },
+  "sect": {
+   "day": "thème diurne",
+   "night": "thème nocturne"
+  },
+  "west": {
+   "wheelLabel": "Thème natal occidental : Ascendant {asc}, Soleil {sun}, Lune {moon}",
+   "wheelLabelNoTime": "Thème natal occidental (heure de naissance inconnue ; maisons et Ascendant omis) : Soleil {sun}, Lune {moon}",
+   "foot": "Zodiaque tropical · {houseSystem} · {node} · {sect}",
+   "footNoTime": "Zodiaque tropical · heure de naissance inconnue : maisons, angles et Ascendant omis, Lune calculée à midi heure locale",
+   "conventions": "Les maisons natales utilisent {houseSystem} ; les profections annuelles (technique du maître annuel du temps) avancent quant à elles en signes entiers à partir du signe de l'Ascendant. Les maîtres de triplicité suivent Dorothée de Sidon (diurne, nocturne, participant — Feu : Soleil, Jupiter, Saturne ; Terre : Vénus, Lune, Mars ; Air : Saturne, Mercure, Jupiter ; Eau : Vénus, Mars, Lune) ; selon le barème de dignités de William Lilly (domicile 5, exaltation 4, triplicité 3, terme 2, face 1), seul le maître de triplicité correspondant à la secte du thème obtient ces 3 points. Pour le calcul des dignités, Uranus, Neptune et Pluton reçoivent leurs domiciles modernes (Verseau, Poissons, Scorpion), tandis que le maître du thème et la planète dominante utilisent les maîtres traditionnels. Aucune tradition ne fixant de barème unique, l'élément, le mode et la planète dominants utilisent la pondération propre au moteur : Soleil, Lune et Ascendant comptent pour 3 ; Milieu du Ciel, Mercure, Vénus et Mars pour 2 ; Jupiter et Saturne pour 1,5 ; Uranus, Neptune et Pluton pour 1. Un élément ou un mode dominant n'est désigné que s'il devance le suivant d'au moins 5 points de pourcentage. Un stellium exige au moins quatre planètes dans un même signe ou une même maison (dont au moins le Soleil, la Lune, Mercure, Vénus ou Mars), ou au moins trois planètes toutes conjointes entre elles ; les regroupements composés uniquement de planètes lentes extérieures, communs à toutes les personnes nées au cours des mêmes mois, ne sont pas pris en compte.",
+   "nodeTrue": "nœud vrai",
+   "nodeMean": "nœud moyen",
+   "ascStable": "Ascendant {deg} · reste dans ce signe à ±{minutes} min de votre heure de naissance",
+   "segments": {
+    "planets": "Planètes",
+    "aspects": "Grille d'aspects",
+    "patterns": "Figures",
+    "houses": "Maisons"
+   },
+   "columns": {
+    "point": "Point",
+    "sign": "Signe",
+    "degree": "Degré",
+    "house": "Maison",
+    "dignity": "Dignité",
+    "motion": "Mouvement",
+    "aspect": "Aspect",
+    "orb": "Orbe",
+    "applying": "Application",
+    "cusp": "Cuspide"
+   },
+   "retrograde": "rétrograde",
+   "direct": "direct",
+   "houseN": "Maison {n}",
+   "applying": "appliquant",
+   "separating": "séparant",
+   "aspectsFoot": "Les nombres dans la grille indiquent l'orbe en degrés. Le bleu signale les aspects harmonieux, le rouge les tensions et l'or les conjonctions ; passez en Mode Pro pour afficher les aspects mineurs.",
+   "patternMembers": "Astres impliqués : {members}",
+   "patternApex": "Sommet : {apex}",
+   "patternNone": "Aucune figure d'aspects majeure (comme un Grand Trigone ou un Carré en T) ne se forme dans ce thème.",
+   "legendHarmony": "Harmonieux",
+   "legendTension": "Tendu",
+   "legendConjunction": "Conjonction",
+   "balanceTitle": "Éléments et modes",
+   "dominants": "{element} · {modality} · {planet} ; maître du thème {ruler}",
+   "moonPhase": "Phase lunaire natale : {phase}",
+   "aspectsLabel": "Grille d'aspects : {count} aspects",
+   "readingSun": "Soleil en {sign}{house}, Lune en {moonSign}, Ascendant {asc}.",
+   "readingSunNoTime": "Soleil en {sign}, Lune en {moonSign} (heure de naissance inconnue ; Ascendant et maisons omis).",
+   "readingPatterns": "Figures d'aspects : {patterns}.",
+   "dominantsLabel": "Dominantes",
+   "moonPhaseLabel": "Phase lunaire"
+  },
+  "cite": {
+   "luckStart": "piliers de chance dès {age} ans",
+   "westAngles": "Angles auxiliaires",
+   "westHemispheres": "Équilibre des hémisphères",
+   "dayRelation": "Jour et pilier {pillar} · {relation}",
+   "dayMonthRelation": "Jour et mois en cours · {relation}",
+   "transitPlacement": "Transit : {body} en {sign} · Maison {house}",
+   "transitSign": "Transit : {body} en {sign}",
+   "ingressSign": "Transit : {body} entre en {sign}",
+   "ingressHouse": "Transit : {body} entre en Maison {house}"
+  },
+  "ziweiPalace": {
+   "ming": "Vie",
+   "xiongdi": "Fratrie",
+   "fuqi": "Couple",
+   "zinv": "Enfants",
+   "caibo": "Richesse",
+   "jie": "Santé",
+   "qianyi": "Voyages",
+   "puyi": "Amis",
+   "guanlu": "Carrière",
+   "tianzhai": "Patrimoine",
+   "fude": "Bien-être",
+   "fumu": "Parents"
+  },
+  "ziweiStar": {
+   "ziwei": "Zi Wei",
+   "tianji": "Tian Ji",
+   "taiyang": "Tai Yang",
+   "wuqu": "Wu Qu",
+   "tiantong": "Tian Tong",
+   "lianzhen": "Lian Zhen",
+   "tianfu": "Tian Fu",
+   "taiyin": "Tai Yin",
+   "tanlang": "Tan Lang",
+   "jumen": "Ju Men",
+   "tianxiang": "Tian Xiang",
+   "tianliang": "Tian Liang",
+   "qisha": "Qi Sha",
+   "pojun": "Po Jun",
+   "zuofu": "Zuo Fu",
+   "youbi": "You Bi",
+   "wenchang": "Wen Chang",
+   "wenqu": "Wen Qu",
+   "tiankui": "Tian Kui",
+   "tianyue": "Tian Yue",
+   "lucun": "Lu Cun",
+   "tianma": "Tian Ma",
+   "dikong": "Di Kong",
+   "dijie": "Di Jie",
+   "huoxing": "Huo Xing",
+   "lingxing": "Ling Xing",
+   "qingyang": "Qing Yang",
+   "tuoluo": "Tuo Luo",
+   "hongluan": "Hong Luan",
+   "tianxi": "Tian Xi",
+   "tianyao": "Tian Yao",
+   "xianchi": "Xian Chi",
+   "jieshen": "Jie Shen",
+   "santai": "San Tai",
+   "bazuo": "Ba Zuo",
+   "enguang": "En Guang",
+   "tiangui": "Tian Gui",
+   "longchi": "Long Chi",
+   "fengge": "Feng Ge",
+   "tiancai": "Tian Cai",
+   "tianshou": "Tian Shou",
+   "taifu": "Tai Fu",
+   "fenggao": "Feng Gao",
+   "tianwu": "Tian Wu",
+   "huagai": "Hua Gai",
+   "tianguan": "Tian Guan",
+   "tianfuAdj": "Tian Fu (bénédiction)",
+   "tianchu": "Tian Chu",
+   "tianyueAdj": "Tian Yue (lune)",
+   "tiande": "Tian De",
+   "yuede": "Yue De",
+   "tiankong": "Tian Kong",
+   "xunkong": "Xun Kong",
+   "jielu": "Jie Lu",
+   "kongwang": "Kong Wang",
+   "guchen": "Gu Chen",
+   "guasu": "Gua Su",
+   "feilian": "Fei Lian",
+   "posui": "Po Sui",
+   "tianxing": "Tian Xing",
+   "yinsha": "Yin Sha",
+   "tianku": "Tian Ku",
+   "tianxu": "Tian Xu",
+   "tianshi": "Tian Shi",
+   "tianshang": "Tian Shang",
+   "nianjie": "Nian Jie",
+   "longde": "Long De",
+   "jiekong": "Jie Kong",
+   "jiesha": "Jie Sha",
+   "dahao": "Da Hao"
+  },
+  "ziweiBrightness": {
+   "miao": "Tem",
+   "wang": "Vif",
+   "de": "Fav",
+   "li": "Bon",
+   "ping": "Neu",
+   "bu": "Faib",
+   "xian": "Chute"
+  },
+  "ziweiHua": {
+   "lu": "Lu",
+   "quan": "Qn",
+   "ke": "Ke",
+   "ji": "Ji"
+  },
+  "ziweiHuaFull": {
+   "lu": "Hua Lu (prospérité)",
+   "quan": "Hua Quan (pouvoir)",
+   "ke": "Hua Ke (renommée)",
+   "ji": "Hua Ji (obstacle)"
+  },
+  "ziweiChangsheng": {
+   "changsheng": "Naissance",
+   "muyu": "Bain",
+   "guandai": "Jeunesse",
+   "linguan": "Âge adulte",
+   "diwang": "Apogée",
+   "shuai": "Déclin",
+   "bing": "Langueur",
+   "si": "Immobilité",
+   "mu": "Réserve",
+   "jue": "Rupture",
+   "tai": "Conception",
+   "yang": "Gestation"
+  },
+  "ziweiBoshi": {
+   "boshi": "Bo Shi",
+   "lishi": "Li Shi",
+   "qinglong": "Qing Long",
+   "xiaohao": "Xiao Hao",
+   "jiangjun": "Jiang Jun",
+   "zhoushu": "Zhou Shu",
+   "feilian": "Fei Lian",
+   "xishen": "Xi Shen",
+   "bingfu": "Bing Fu",
+   "dahao": "Da Hao",
+   "fubing": "Fu Bing",
+   "guanfu": "Guan Fu"
+  },
+  "ziweiFiveElementsClass": {
+   "water2": "Eau 2",
+   "wood3": "Bois 3",
+   "metal4": "Métal 4",
+   "earth5": "Terre 5",
+   "fire6": "Feu 6"
+  },
+  "ziweiSchool": {
+   "sanHe": "école San He",
+   "feiXing": "école des Étoiles volantes",
+   "zhongZhou": "école Zhong Zhou"
+  },
+  "ziweiLeapRule": {
+   "midMonthSplit": "mois intercalaire divisé à mi-mois",
+   "asPreviousMonth": "mois intercalaire compté comme le même mois",
+   "asNextMonth": "mois intercalaire compté comme le mois suivant"
+  },
+  "ziwei": {
+   "scope": {
+    "label": "Période",
+    "natal": "Natal",
+    "decade": "Décennie {range}",
+    "annual": "Année {ganzhi}"
+   },
+   "gridLabel": "Douze palais du Zi Wei Dou Shu : Palais de vie en {ming}, {stars}",
+   "centerSex": "{sex} {yinYang} · {fiveElements}",
+   "centerStars": "Étoile de vie {soul} · étoile du corps {body}",
+   "centerBirth": "Année {year} · {date} · heure {hour}",
+   "centerScope": "Décennie {decade} · année {annual}",
+   "body": "Corps",
+   "selected": "{palace}",
+   "triLines": "Lignes dorées : palais en triade et opposé",
+   "emptyPalace": "Ce palais ne contient aucune étoile majeure ; lisez-le à travers les étoiles du palais opposé.",
+   "starsLine": "Étoiles majeures : {stars}",
+   "minorLine": "Étoiles mineures : {stars}",
+   "adjLine": "Autres étoiles : {stars}",
+   "decadeLine": "Décennie {range} ans · {ganzhi} · phase de vie {stage}",
+   "foot": "{school} · {leap} · transformations natales : {hua} · le cadre violet indique la décennie actuelle",
+   "huaItem": "{star} {hua}",
+   "selectHint": "Sélectionnez un palais pour mettre en évidence ses palais en triade et opposé",
+   "tableColumns": {
+    "palace": "Palais",
+    "ganzhi": "Tronc-branche",
+    "major": "Majeures",
+    "minor": "Mineures",
+    "adjective": "Autres",
+    "decade": "Décennie",
+    "stage": "Phase"
+   },
+   "noHour": "Le Zi Wei Dou Shu place le Palais de vie selon l'heure de naissance — veuillez ajouter une heure de naissance (au moins la tranche de deux heures).",
+   "readingMing": "Palais de vie en {branch} ({stars}) ; Palais du corps en {body}.",
+   "readingNoStars": "aucune étoile majeure",
+   "soulBodyLabel": "Étoile de vie / du corps",
+   "huaLabel": "Transformations natales"
+  },
+  "graha": {
+   "sun": "Soleil",
+   "moon": "Lune",
+   "mars": "Mars",
+   "mercury": "Mercure",
+   "jupiter": "Jupiter",
+   "venus": "Vénus",
+   "saturn": "Saturne",
+   "rahu": "Rahu",
+   "ketu": "Ketu",
+   "uranus": "Uranus",
+   "neptune": "Neptune",
+   "pluto": "Pluton"
+  },
+  "grahaShort": {
+   "sun": "So",
+   "moon": "Lu",
+   "mars": "Ma",
+   "mercury": "Me",
+   "jupiter": "Ju",
+   "venus": "Vé",
+   "saturn": "Sa",
+   "rahu": "Ra",
+   "ketu": "Ke",
+   "uranus": "Ur",
+   "neptune": "Ne",
+   "pluto": "Pl",
+   "lagna": "As"
+  },
+  "nakshatra": {
+   "ashwini": "Jumeaux cavaliers",
+   "bharani": "La Porteuse",
+   "krittika": "La Tranchante",
+   "rohini": "La Rouge",
+   "mrigashira": "Tête de cerf",
+   "ardra": "L'Humide",
+   "punarvasu": "Retour de la lumière",
+   "pushya": "Le Nourricier",
+   "ashlesha": "L'Enlaceuse",
+   "magha": "La Puissante",
+   "purvaPhalguni": "Première Rouge",
+   "uttaraPhalguni": "Seconde Rouge",
+   "hasta": "Main",
+   "chitra": "La Brillante",
+   "swati": "L'Indépendante",
+   "vishakha": "Branche fourchue",
+   "anuradha": "Suivante de Radha",
+   "jyeshtha": "L'Aînée",
+   "mula": "Racine",
+   "purvaAshadha": "Première Victoire",
+   "uttaraAshadha": "Seconde Victoire",
+   "shravana": "Écoute",
+   "dhanishta": "La Plus Riche",
+   "shatabhisha": "Cent Guérisseurs",
+   "purvaBhadrapada": "Premiers Pieds fastes",
+   "uttaraBhadrapada": "Seconds Pieds fastes",
+   "revati": "La Prospère"
+  },
+  "yoga": {
+   "gajaKesari": "Yoga Gaja Kesari",
+   "budhaAditya": "Yoga Budha-Aditya",
+   "ruchaka": "Yoga Ruchaka (Mahapurusha · Mars)",
+   "bhadra": "Yoga Bhadra (Mahapurusha · Mercure)",
+   "hamsa": "Yoga Hamsa (Mahapurusha · Jupiter)",
+   "malavya": "Yoga Malavya (Mahapurusha · Vénus)",
+   "shasha": "Yoga Shasha (Mahapurusha · Saturne)",
+   "rajaYoga": "Raja Yoga",
+   "dhanaYoga": "Dhana Yoga",
+   "kemadruma": "Kemadruma",
+   "neechaBhanga": "Neecha Bhanga",
+   "vipareetaRaja": "Vipareeta Raja Yoga",
+   "chandraMangala": "Yoga Chandra-Mangala"
+  },
+  "yogaState": {
+   "formed": "formé",
+   "weak": "faible",
+   "broken": "rompu"
+  },
+  "yogaCondition": {
+   "lordsOwnDusthanas": "les deux maîtres gouvernent aussi la 6e, la 8e ou la 12e maison",
+   "inDusthana": "en 6e, 8e ou 12e maison",
+   "debilitated": "en chute (non annulée)",
+   "combust": "trop proche du Soleil (combuste)",
+   "lostWar": "a perdu une guerre planétaire",
+   "strong": "planète forte",
+   "kendraFromMoon": "Jupiter dans un angle (1re, 4e, 7e, 10e) depuis la Lune",
+   "kendraFromLagna": "Jupiter dans un angle depuis l'ascendant",
+   "beneficConnection": "une planète bénéfique est conjointe à Jupiter ou l'aspecte",
+   "noBeneficConnection": "aucune planète bénéfique n'est conjointe à Jupiter ni ne l'aspecte",
+   "enemySign": "Jupiter dans le signe d'une planète ennemie",
+   "grahaInKendraFromLagna": "une planète dans un angle depuis l'ascendant",
+   "grahaInKendraFromMoon": "une planète avec la Lune ou dans un angle depuis elle",
+   "dispositorInKendra": "le maître de son signe de chute dans un angle depuis l'ascendant ou la Lune",
+   "exaltationLordInKendra": "le maître de son signe d'exaltation dans un angle depuis l'ascendant ou la Lune",
+   "bothLordsInKendras": "les maîtres de ses signes de chute et d'exaltation dans des angles",
+   "aspectedByDispositor": "reçoit l'aspect du maître de son signe de chute",
+   "exaltedGrahaInKendra": "la planète exaltée dans ce signe de chute dans un angle"
+  },
+  "functionalNature": {
+   "yogaKaraka": "yoga-kāraka",
+   "benefic": "bénéfique",
+   "mixed": "mixte",
+   "neutral": "neutre",
+   "malefic": "maléfique"
+  },
+  "functionalRule": {
+   "trikonaLord": "Gouverne un trigone (1re, 5e ou 9e) : résultats favorables (34.2)",
+   "yogaKaraka": "Gouverne un angle et un trigone (34.13)",
+   "kendradhipatiDosha": "Bénéfique naturel ne gouvernant qu'un angle : bienfaits retenus (34.2, 34.10)",
+   "kendraMalefic": "Maléfique naturel ne gouvernant qu'un angle : ne nuit pas (34.2)",
+   "trishadayaLord": "Gouverne la 3e, la 6e ou la 11e : résultats difficiles (34.4)",
+   "eighthLord": "Gouverne la 8e : peu favorable, à moins de gouverner aussi un trigone (34.6)",
+   "eighthLordExempt": "Soleil ou Lune gouvernant la 8e : sans effet défavorable (34.7)",
+   "association": "Gouverne la 2e ou la 12e : agit selon les planètes conjointes et l'autre maison gouvernée (34.5)",
+   "nodeHouse": "Rāhu / Ketu : donne les résultats de la maison occupée (34.16)",
+   "nodeJoinedLord": "Rāhu / Ketu : donne les résultats de la planète conjointe (34.16)",
+   "nodeYogaKaraka": "Dans un angle ou un trigone, lié au maître de l'autre catégorie : agit comme yoga-kāraka (34.17)"
+  },
+  "dashaBand": {
+   "rising": "en essor",
+   "supportive": "favorable",
+   "mixed": "mixte",
+   "demanding": "exigeant",
+   "hard": "difficile"
+  },
+  "dashaReason": {
+   "yogaKaraka": "Yoga-kāraka pour cet ascendant",
+   "trikonaLord": "Gouverne un trigone (1re, 5e ou 9e)",
+   "mixedLord": "Maîtrises aux effets opposés",
+   "neutralLord": "Maîtrise neutre pour cet ascendant",
+   "maleficLord": "Gouverne des maisons difficiles (3e, 6e, 8e, 11e)",
+   "viparita": "Maître de la 6e, 8e ou 12e dans l'une d'elles : la difficulté se renverse (Viparīta)",
+   "inGoodHouse": "Se trouve dans un angle ou un trigone",
+   "inDusthana": "Se trouve en 6e, 8e ou 12e maison",
+   "exalted": "En exaltation",
+   "ownSign": "En domicile",
+   "enemySign": "Dans le signe d'une planète ennemie",
+   "debilitated": "En chute",
+   "debilitationCancelled": "En chute, avec annulation (totale ou partielle)",
+   "combust": "Trop proche du Soleil (combuste)",
+   "lostWar": "A perdu une guerre planétaire",
+   "joinedTrikonaLord": "En conjonction avec le maître de la 5e ou de la 9e maison",
+   "inYoga": "Participe à un yoga formé ou faible",
+   "nodeHouse": "Donne les résultats de la maison occupée",
+   "nodeJoinedLord": "Donne les résultats de la planète conjointe",
+   "nodeYogaKaraka": "Agit comme yoga-kāraka",
+   "fromMahaDusthana": "En 6e, 8e ou 12e position depuis la planète de la grande période",
+   "fromMahaGood": "En position favorable par rapport à la planète de la grande période",
+   "enemyOfMahaLord": "Hostile à la planète de la grande période",
+   "kendraTrikonaPair": "Maître d'un angle et maître d'un trigone réunis en grande et sous-période"
+  },
+  "sadeSatiGrade": {
+   "light": "léger",
+   "moderate": "modéré",
+   "heavy": "lourd"
+  },
+  "sadeSatiFactor": {
+   "saturnFunctionalBenefic": "Saturne est favorable pour cet ascendant",
+   "saturnFunctionalMalefic": "Saturne est difficile pour cet ascendant",
+   "bindusHigh": "Nombreux points bénéfiques dans le signe de transit de Saturne",
+   "bindusLow": "Peu de points bénéfiques dans le signe de transit de Saturne",
+   "transitDignity": "Saturne transite son domicile ou son signe d'exaltation",
+   "jupiterAspect": "Jupiter en transit aspecte Saturne en transit"
+  },
+  "vedicHouse": {
+   "1": "soi, corps, statut",
+   "2": "famille, parole, argent",
+   "3": "fratrie, courage, efforts personnels",
+   "4": "foyer, mère, terre, paix intérieure",
+   "5": "savoir, enfants, créativité",
+   "6": "travail quotidien, service, rivaux, obstacles",
+   "7": "partenaire, mariage, associations, public",
+   "8": "secrets, ressources partagées, bouleversements, transformation",
+   "9": "bonne fortune, père, maîtres, foi, longs voyages",
+   "10": "carrière, rôle public, honneur",
+   "11": "gains, amis, réseaux, espoirs",
+   "12": "dépenses, terres lointaines, retraite, vie spirituelle"
+  },
+  "vedicConvention": {
+   "lagnaLists": "la liste du BPHS 34 pour chaque ascendant",
+   "eighthLordGoodWith3711": "la lecture qui tient pour favorable un maître de la 8e gouvernant aussi la 3e, la 7e ou la 11e",
+   "rajaEitherLord": "l'application du BPHS 34.15 dès que l'un des deux maîtres gouverne la 6e, la 8e ou la 12e",
+   "rajaWith3And11": "la lecture incluant la 3e et la 11e dans le BPHS 34.15",
+   "nodeStrongLord": "la lecture du BPHS 34.17 exigeant un maître fort pour le signe du nœud",
+   "sadeSatiFromMoon": "le rôle de Saturne compté depuis le signe de la Lune",
+   "compoundFriendship": "l'amitié planétaire composée (tenant compte des positions dans le thème)",
+   "neechaBhangaTwoConditions": "la règle des deux conditions pour annuler une chute",
+   "gajaKesariFromMoon": "Gaja-Kesarī compté uniquement depuis la Lune",
+   "budhaAdityaCombustBreaks": "la règle selon laquelle Mercure combuste rompt le Budha-Āditya",
+   "bandEdge": "un score situé juste à la limite entre deux niveaux"
+  },
+  "vedicDignity": {
+   "exalted": "Exaltation",
+   "moolatrikona": "Moolatrikona",
+   "ownSign": "Domicile",
+   "friendly": "Signe ami",
+   "neutral": "Neutre",
+   "enemy": "Signe ennemi",
+   "debilitated": "Chute"
+  },
+  "ayanamsa": {
+   "lahiri": "Lahiri",
+   "raman": "Raman",
+   "krishnamurti": "Krishnamurti (KP)",
+   "faganBradley": "Fagan-Bradley",
+   "trueChitra": "True Chitra",
+   "yukteshwar": "Yukteshwar"
+  },
+  "vedic": {
+   "vargas": {
+    "label": "Carte divisionnelle",
+    "d1": "D1 Rasi",
+    "d9": "D9 Navamsa",
+    "d10": "D10 Dasamsa",
+    "moon": "Thème lunaire"
+   },
+   "style": {
+    "label": "Style",
+    "north": "Nord-indien",
+    "south": "Sud-indien"
+   },
+   "chartLabel": "Thème {varga} {style} : Lagna {lagna}",
+   "foot": "Style {style} · zodiaque sidéral · {ayanamsa} ({deg}) · maisons en signes entiers · les chiffres indiquent les signes du zodiaque",
+   "footSouth": "Style sud-indien · zodiaque sidéral · {ayanamsa} ({deg}) · les signes restent dans des cases fixes, une diagonale marque le Lagna",
+   "conventions": "Rāhu et Ketu sont calculés selon le {node} et n'aspectent que le 7e signe à partir de leur position (une autre école compte aussi les 5e et 9e signes). Les années des daśā Vimśottarī et Yoginī comptent toutes deux 365,25 jours. La nature fonctionnelle des planètes pour l'ascendant (Lagna) suit les règles générales du Bṛhat Parāśara Horā Śāstra (BPHS), ch. 34 : les maîtres des 1re, 5e et 9e maisons sont bénéfiques ; les maîtres des 3e, 6e, 8e et 11e sont maléfiques, à moins qu'ils ne gouvernent aussi un trigone ; le Soleil et la Lune n'encourent aucune faute en tant que maîtres de la 8e maison (34.7), tandis qu'un maître de la 8e gouvernant également la 3e, la 7e ou la 11e compte comme difficile (conformément aux listes par ascendant du chapitre) ; lorsque les listes par ascendant (34.19–44) donnent une autre lecture pour une planète, les deux lectures sont affichées. Les périodes sont classées en cinq niveaux selon le rôle fonctionnel de la planète, sa maison, sa dignité, ses compagnons et ses yogas (BPHS 34 et 48 ; Phaladīpikā ch. 20), les sous-périodes étant en outre évaluées selon leur position par rapport à la planète de la période principale (Phaladīpikā 20.29). Les yogas apparaissent comme formés, faibles ou rompus : un Rāja-yoga est rompu lorsque ses deux maîtres gouvernent aussi la 6e, la 8e ou la 12e maison (BPHS 34.15), et faible lorsqu'un participant occupe la 6e, la 8e ou la 12e maison, est en chute, combuste ou a perdu une guerre planétaire ; le Gaja-Kesarī suit BPHS 36.3 (compté depuis l'ascendant ou la Lune, avec une planète bénéfique conjointe à Jupiter ou l'aspectant, et rompu par la chute, la combustion ou le passage dans le signe d'une planète ennemie selon les amitiés naturelles du BPHS ch. 3) ; le Budha-Āditya est faible lorsque Mercure est combuste ; la chute est annulée par l'une quelconque des conditions de Phaladīpikā 7.26–30 ; la guerre planétaire suit le Sūrya Siddhānta 7.19–21 (à moins d'un degré d'écart, la planète située le plus au nord l'emporte). Le Sade Sati est évalué d'après les points bénéfiques de Saturne dans son signe de transit (Phaladīpikā 26.41), sa dignité (26.31), l'aspect de Jupiter (26.30) et le rôle de Saturne pour l'ascendant.",
+   "noLagna": "Sans heure de naissance, le Lagna et les maisons ne peuvent pas être déterminés ; les planètes sont affichées uniquement par signe.",
+   "nakshatraTitle": "Nakshatra de la Lune",
+   "nakshatraName": "{latin} ({name}) · pada {pada}",
+   "nakshatraBody": "Lune en {sign} {deg} · gouvernée par {lord}",
+   "nakshatraRing": "Anneau des 27 nakshatras : Lune dans la demeure {n}",
+   "dashaTitle": "Vimshottari Dasha",
+   "dashaCurrent": "Période actuelle : Mahadasha {maha} ({mahaStart}–{mahaEnd}) · Antardasha {antar} ({antarStart}–{antarEnd})",
+   "dashaLabel": "Chronologie du Vimshottari Dasha",
+   "yogaTitle": "Yogas",
+   "yogaNone": "Aucun yoga classique majeur ne se forme dans ce thème.",
+   "yogaCancelled": "(annulé)",
+   "yogaDetail": "{planets} · maison {houses}",
+   "lagna": "Lagna",
+   "columns": {
+    "graha": "Graha",
+    "sign": "Signe",
+    "degree": "Degré",
+    "house": "Maison",
+    "nakshatra": "Nakshatra",
+    "pada": "Pada",
+    "dignity": "Dignité",
+    "lord": "Maître",
+    "start": "Début",
+    "end": "Fin"
+   },
+   "ashtakavargaTitle": "Totaux Ashtakavarga",
+   "readingLagna": "Lagna en {lagna}, Lune en {moon}, dans le nakshatra {nakshatra} (pada {pada}).",
+   "readingDasha": "Période actuelle : Mahadasha {maha} et Antardasha {antar}.",
+   "ayanamsaLabel": "Ayanamsa",
+   "periodTitle": "Lecture de la période actuelle",
+   "periodMaha": "Période principale : {lord} · {band}",
+   "periodAntar": "Sous-période : {lord} · {band}",
+   "periodTopics": "Thèmes mis en avant : {topics}",
+   "periodReasons": "Critères",
+   "periodBetween": "Peut aussi se lire comme {band} ({reading})",
+   "sadeSatiLine": "{phase} · {grade}",
+   "sadeSatiFactors": "Ce qui en module l'intensité",
+   "functionalTitle": "Planètes selon votre ascendant",
+   "functionalHouses": "Maisons {houses}",
+   "functionalList": "Liste par ascendant : {nature}",
+   "yogaDecidedBy": "Critères déterminants : {conditions}",
+   "yogaOther": "Selon {reading}, il serait {state}",
+   "yogaOtherAbsent": "Non comptabilisé selon {reading}",
+   "warLine": "Guerre planétaire : {winner} l'emporte sur {loser}",
+   "contested": "deux lectures",
+   "chips": {
+    "functional": "{graha} · {nature}",
+    "periodMaha": "{lord} (période principale) · {band}",
+    "periodAntar": "{lord} (sous-période) · {band}",
+    "sadeSati": "Sade Sati · {grade}",
+    "war": "Guerre {winner} / {loser}"
+   }
+  },
+  "hdType": {
+   "generator": "Générateur",
+   "manifestingGenerator": "Générateur manifesteur",
+   "manifestor": "Manifesteur",
+   "projector": "Projecteur",
+   "reflector": "Réflecteur"
+  },
+  "hdStrategy": {
+   "generator": "Attendre pour répondre",
+   "manifestingGenerator": "Attendre pour répondre, puis informer",
+   "manifestor": "Informer avant d'agir",
+   "projector": "Attendre l'invitation",
+   "reflector": "Attendre un cycle lunaire"
+  },
+  "hdAuthority": {
+   "emotional": "Émotionnelle (plexus solaire)",
+   "sacral": "Sacrale",
+   "splenic": "Splénique",
+   "egoManifested": "Ego (manifesté)",
+   "egoProjected": "Ego (projeté)",
+   "selfProjected": "Auto-projetée (centre G)",
+   "mental": "Mentale · environnement",
+   "lunar": "Cycle lunaire"
+  },
+  "hdNotSelf": {
+   "frustration": "Frustration",
+   "bitterness": "Amertume",
+   "anger": "Colère",
+   "disappointment": "Déception",
+   "frustrationAnger": "Frustration et colère"
+  },
+  "hdDefinition": {
+   "none": "Aucune définition",
+   "single": "Définition simple",
+   "split": "Définition double",
+   "tripleSplit": "Définition triple",
+   "quadrupleSplit": "Définition quadruple"
+  },
+  "hdCenter": {
+   "head": "Tête",
+   "ajna": "Ajna",
+   "throat": "Gorge",
+   "g": "Centre G",
+   "heart": "Cœur (ego)",
+   "spleen": "Rate",
+   "solarPlexus": "Plexus solaire",
+   "sacral": "Sacral",
+   "root": "Racine"
+  },
+  "hdCrossAngle": {
+   "right": "Croix d'angle droit",
+   "juxtaposition": "Croix de juxtaposition",
+   "left": "Croix d'angle gauche"
+  },
+  "hdCircuit": {
+   "individual": "Individuel",
+   "tribal": "Tribal",
+   "collective": "Collectif"
+  },
+  "hdLine": {
+   "1": "Investigateur",
+   "2": "Ermite",
+   "3": "Martyr",
+   "4": "Opportuniste",
+   "5": "Hérétique",
+   "6": "Modèle de rôle"
+  },
+  "hdSide": {
+   "personality": "Personnalité (conscient)",
+   "design": "Design (inconscient)",
+   "both": "Les deux"
+  },
+  "hdVariable": {
+   "determination": "Détermination",
+   "environment": "Environnement",
+   "motivation": "Motivation",
+   "perspective": "Perspective"
+  },
+  "hd": {
+   "graphLabel": "Graphe corporel du Schéma énergétique (64 portes, 36 canaux) : canaux définis {channels}",
+   "graphLabelNone": "Graphe corporel du Schéma énergétique (64 portes, 36 canaux) : aucun canal défini",
+   "design": "Design",
+   "personality": "Personnalité",
+   "legendPersonality": "Personnalité (conscient)",
+   "legendDesign": "Design (inconscient)",
+   "legendBoth": "Rayures = les deux",
+   "rows": {
+    "type": "Type",
+    "strategy": "Stratégie",
+    "authority": "Autorité intérieure",
+    "profile": "Profil",
+    "definition": "Définition",
+    "cross": "Croix d’incarnation",
+    "channels": "Canaux définis",
+    "notSelf": "Thème du non-soi",
+    "openCenters": "Centres ouverts",
+    "designTime": "Moment du Design",
+    "variables": "Variables (PHS)",
+    "circuits": "Circuits"
+   },
+   "profileValue": "{profile} {a} / {b}",
+   "crossValue": "{angle} · {gates}",
+   "foot": "Moment du Design calculé à 88° d’arc solaire avant la naissance · nœud vrai · 13 astres × 2",
+   "columns": {
+    "body": "Astre",
+    "design": "Design",
+    "personality": "Personnalité",
+    "gate": "Porte",
+    "center": "Centre",
+    "side": "Activé par"
+   },
+   "noTimeType": "Heure de naissance inconnue : le Type, l’Autorité intérieure, le Profil et la Croix d’incarnation peuvent varier au cours de la journée et nécessitent une heure de naissance précise.",
+   "readingType": "{type} (profil {profile}), avec pour stratégie {strategy} et pour autorité intérieure {authority}."
+  },
+  "numberKind": {
+   "lifePath": "Chemin de vie",
+   "lifePathDigitSum": "Chemin de vie (somme des chiffres)",
+   "birthday": "Jour de naissance",
+   "expression": "Expression",
+   "soulUrge": "Élan spirituel",
+   "personality": "Personnalité",
+   "maturity": "Maturité",
+   "universalYear": "Année universelle",
+   "personalYear": "Année personnelle",
+   "personalMonth": "Mois personnel",
+   "personalDay": "Jour personnel"
+  },
+  "numberMeaning": {
+   "1": "Indépendance · initiative",
+   "2": "Coopération · sensibilité",
+   "3": "Expression · créativité",
+   "4": "Ordre · stabilité",
+   "5": "Liberté · changement",
+   "6": "Responsabilité · bienveillance",
+   "7": "Introspection · recherche",
+   "8": "Pouvoir · maîtrise",
+   "9": "Compassion · accomplissement",
+   "11": "Maître nombre · intuition",
+   "22": "Maître nombre · construction",
+   "33": "Maître nombre · service et enseignement"
+  },
+  "loShuLine": {
+   "4-9-2": "Plan mental",
+   "3-5-7": "Plan émotionnel",
+   "8-1-6": "Plan pratique",
+   "4-3-8": "Plan d'organisation",
+   "9-5-1": "Plan de volonté",
+   "2-7-6": "Plan d'action",
+   "4-5-6": "Plan de détermination",
+   "2-5-8": "Plan spirituel"
+  },
+  "loShuStatus": {
+   "full": "Complet",
+   "partial": "Partiel",
+   "empty": "Vide"
+  },
+  "numerology": {
+   "eyebrow": "LO SHU",
+   "title": "Grille du Lo Shu",
+   "gridLabel": "Répartition des chiffres dans la grille du Lo Shu : {counts}",
+   "foot": "{date} → {digits} · {missing} · les traits dorés indiquent les plans complets",
+   "missing": "manque {list}",
+   "missingNone": "les neuf présents",
+   "lineRow": "{code} {name}",
+   "lineMissing": "manque {list}",
+   "coreTitle": "Nombres clés",
+   "personalYear": "Année personnelle {year}",
+   "nameFoot": "Nom calculé selon la table de Pythagore ({scheme}, {latin}) : {letters} = {value}",
+   "scheme": {
+    "auto": "détection automatique",
+    "latin": "lettres latines",
+    "pinyin": "pinyin"
+   },
+   "noName": "Ajoutez votre nom pour calculer vos nombres d’Expression, d’Élan spirituel et de Personnalité.",
+   "columns": {
+    "number": "Chiffre",
+    "count": "Occurrences",
+    "line": "Plan",
+    "status": "État",
+    "kind": "Nombre clé",
+    "value": "Valeur"
+   },
+   "readingCore": "Chemin de vie {lifePath} ({meaning}), avec un nombre d’Expression {expression}."
+  },
+  "cogFunction": {
+   "Ni": "Intuition introvertie",
+   "Ne": "Intuition extravertie",
+   "Si": "Sensation introvertie",
+   "Se": "Sensation extravertie",
+   "Ti": "Pensée introvertie",
+   "Te": "Pensée extravertie",
+   "Fi": "Sentiment introverti",
+   "Fe": "Sentiment extraverti"
+  },
+  "types16Role": {
+   "dominant": "Dominante",
+   "auxiliary": "Auxiliaire",
+   "tertiary": "Tertiaire",
+   "inferior": "Inférieure"
+  },
+  "types16Letter": {
+   "E": "Extraversion",
+   "I": "Introversion",
+   "S": "Sensation",
+   "N": "Intuition",
+   "T": "Pensée",
+   "F": "Sentiment",
+   "J": "Jugement",
+   "P": "Perception",
+   "X": "Indéterminé"
+  },
+  "enneagramCenter": {
+   "gut": "Centre instinctif",
+   "heart": "Centre émotionnel",
+   "head": "Centre mental"
+  },
+  "enneagramInstinct": {
+   "sp": "Auto-préservation",
+   "so": "Social",
+   "sx": "Tête-à-tête"
+  },
+  "bigFiveBand": {
+   "low": "Faible",
+   "average": "Moyen",
+   "high": "Élevé",
+   "middle": "Moyen"
+  },
+  "psych": {
+   "segments": {
+    "types16": "16 Types",
+    "enneagram": "Ennéagramme",
+    "bigFive": "Big Five"
+   },
+   "emptyTitle": "Aucun questionnaire complété pour l’instant",
+   "emptyBody": "Les questionnaires reflètent la façon dont vous vous percevez aujourd’hui : un miroir intéressant à mettre en regard de vos thèmes de naissance. Vos réponses restent sur cet appareil.",
+   "instruments": {
+    "quick12": "Estimation rapide · 12 questions",
+    "types16": "16 Types · 48 questions",
+    "enneagram": "Ennéagramme · 54 questions",
+    "bigfive-ipip-neo-30": "Big Five · 30 questions"
+   },
+   "minutes": "environ {n} min",
+   "start": "Commencer",
+   "retake": "Refaire",
+   "progress": "Question {n} sur {total}",
+   "prev": "Précédent",
+   "next": "Suivant",
+   "skip": "Passer",
+   "submit": "Valider et calculer",
+   "cancel": "Annuler",
+   "loadingItems": "Chargement des questions…",
+   "quickNote": "La version rapide en 12 questions n’offre qu’une ébauche : répondez aux questionnaires complets pour obtenir un profil plus fin et fiable.",
+   "typeCard": "{code} · {name}",
+   "axesLabel": "16 Types : quatre curseurs d’axes",
+   "stackTitle": "Pile des fonctions cognitives",
+   "stackFoot": "{items} questions · rédigé de manière indépendante à partir des huit fonctions cognitives de Jung (sans lien avec des marques déposées)",
+   "enneagramLabel": "Diagramme de l’Ennéagramme : type principal {type}, aile {wing}",
+   "enneagramCard": "{label} · {instinct}",
+   "enneagramArrows": "Flèche de croissance {type} → {growth} (trait plein vert) · flèche de stress {type} → {stress} (pointillés rouges)",
+   "bigFiveTitle": "Percentiles Big Five",
+   "normLabel": "Percentiles selon les normes internationales (Johnson 2014 IPIP-NEO, N = {n})",
+   "normProvisional": "Normes provisoires pour la version courte",
+   "domainRow": "{domain} {value} %",
+   "takeMore": "Passer un autre questionnaire",
+   "estimate": "estimation",
+   "columns": {
+    "axis": "Axe",
+    "value": "Valeur",
+    "function": "Fonction",
+    "role": "Position",
+    "strength": "Force",
+    "domain": "Dimension",
+    "percentile": "Percentile",
+    "band": "Niveau",
+    "type": "Type",
+    "score": "Score"
+   }
+  },
+  "trigram": {
+   "qian": "Qian",
+   "dui": "Dui",
+   "li": "Li",
+   "zhen": "Zhen",
+   "xun": "Xun",
+   "kan": "Kan",
+   "gen": "Gen",
+   "kun": "Kun"
+  },
+  "trigramImage": {
+   "qian": "Ciel",
+   "dui": "Lac",
+   "li": "Feu",
+   "zhen": "Tonnerre",
+   "xun": "Vent",
+   "kan": "Eau",
+   "gen": "Montagne",
+   "kun": "Terre"
+  },
+  "ichingRelative": {
+   "sibling": "Fratrie",
+   "offspring": "Descendance",
+   "wealth": "Richesse",
+   "officer": "Autorité",
+   "parent": "Parents"
+  },
+  "ichingSpirit": {
+   "qinglong": "Dragon azur",
+   "zhuque": "Oiseau vermillon",
+   "gouchen": "Gou Chen",
+   "tengshe": "Teng She",
+   "baihu": "Tigre blanc",
+   "xuanwu": "Tortue noire"
+  },
+  "ichingLine": {
+   "1": "Trait 1",
+   "2": "Trait 2",
+   "3": "Trait 3",
+   "4": "Trait 4",
+   "5": "Trait 5",
+   "6": "Trait 6"
+  },
+  "ichingMarker": {
+   "shi": "Soi",
+   "ying": "Autre"
+  },
+  "ichingPalaceStage": {
+   "1": "1re génération",
+   "2": "2e génération",
+   "3": "3e génération",
+   "4": "4e génération",
+   "5": "5e génération",
+   "pure": "pur",
+   "wandering": "âme errante",
+   "returning": "âme de retour"
+  },
+  "ichingSeason": {
+   "wang": "prospère",
+   "xiang": "en essor",
+   "xiu": "au repos",
+   "qiu": "entravé",
+   "si": "en sommeil"
+  },
+  "iching": {
+   "question": "Votre question",
+   "questionPlaceholder": "Formulez la question qui vous habite (facultatif — reste sur cette page)",
+   "method": {
+    "label": "Méthode de tirage",
+    "coins": "Trois pièces · six lancers à la main",
+    "time": "Tirage selon l’instant"
+   },
+   "toss": "Lancer le trait {n}",
+   "tossHint": "Chaque pression lance trois pièces grâce au hasard local de votre appareil, construisant les six traits de bas en haut.",
+   "tossed": "{n} sur 6 lancés",
+   "coinBack": "Pile",
+   "coinFace": "Face",
+   "castTime": "Tirer selon cet instant",
+   "recast": "Nouveau tirage",
+   "primary": "Principal",
+   "changed": "Transformé",
+   "noChange": "Aucun trait mutant",
+   "textTitle": "Jugement · traits mutants",
+   "linesTitle": "Na Jia · parentés · esprits",
+   "linesLabel": "Tableau Na Jia des six traits",
+   "context": "{date} · jour {dayPillar} · {method}",
+   "methodName": {
+    "coins": "trois pièces",
+    "time": "selon l’instant",
+    "manual": "saisie manuelle"
+   },
+   "foot": "Palais {palace} ({stage}) · Soi en {shi}, Autre en {ying} · Xun Kong {kong}",
+   "lineRef": "{line} {relative}",
+   "columns": {
+    "position": "Trait",
+    "spirit": "Esprit",
+    "najia": "Na Jia",
+    "relative": "Parenté",
+    "marker": "Soi/Autre",
+    "moving": "Mutant"
+   },
+   "moving": "mutant",
+   "hexLabel": "Hexagramme {name} : traits de bas en haut — {lines}",
+   "yang": "yang",
+   "yin": "yin",
+   "useNine": "Tous les neuf",
+   "useSix": "Tous les six",
+   "loadingText": "Chargement du jugement et des textes des traits…",
+   "note": "Un hexagramme est un miroir pour envisager votre situation sous un autre angle, jamais un verdict figé.",
+   "placeNote": "Les troncs du jour et de l’heure sont calculés pour {place}, selon son fuseau horaire et le temps solaire vrai.",
+   "rendering": "Traduction moderne"
+  },
+  "capture": {
+   "palmTitle": "La lecture de la main se fait dans l’app",
+   "faceTitle": "La lecture du visage se fait dans l’app",
+   "body": "Les lectures de la main et du visage se réalisent avec l’appareil photo de votre téléphone dans l’app. Les lignes de la paume, les repères du visage et les proportions sont analysés directement sur votre appareil. Vos photos ne quittent jamais votre téléphone et ne sont envoyées à aucun serveur. La capture photo n’est pas disponible sur le web.",
+   "selfOnly": "Les lectures de la main et du visage sont réservées à votre propre profil et ne peuvent pas être réalisées pour d’autres personnes.",
+   "disclaimer": "Les lectures de la main et du visage servent uniquement de repère complémentaire léger à côté de vos thèmes, et ne formulent aucune affirmation sur la santé ni l’espérance de vie.",
+   "cta": "Télécharger l’app"
+  },
+  "sensitivity": {
+   "title": "Sensibilité à l'heure de naissance",
+   "loading": "Vérification des variations sur votre plage d'heure de naissance…",
+   "none": "Sur la plage horaire que vous avez saisie, les conclusions principales de vos thèmes restent identiques.",
+   "window": "Plage horaire : {window}",
+   "fieldRow": "{field} : {values}",
+   "changeAt": "devient {value} après {time}",
+   "fields": {
+    "ascSign": "Signe de l'Ascendant",
+    "mcSign": "Signe du Milieu du Ciel",
+    "house": "Maison ({point})",
+    "hourPillar": "Pilier de l'heure",
+    "mingGong": "Palais de vie BaZi",
+    "shenGong": "Palais du corps BaZi",
+    "strength": "Force du Maître du Jour",
+    "soulBranch": "Palais de vie Zi Wei",
+    "bodyBranch": "Palais du corps Zi Wei",
+    "bodyPalace": "Emplacement du Palais du corps",
+    "mingStars": "Étoiles du Palais de vie",
+    "timeIndex": "Heure double",
+    "lagnaSign": "Lagna",
+    "lagnaNakshatra": "Nakshatra du Lagna",
+    "lagnaPada": "Pada du Lagna",
+    "moonPada": "Pada de la Lune",
+    "hdType": "Type du Schéma énergétique",
+    "hdProfile": "Profil",
+    "hdCross": "Croix d'incarnation",
+    "hdChannels": "Canaux définis",
+    "hdCenters": "Centres définis",
+    "hdAuthority": "Autorité intérieure",
+    "gate": "Porte {body} ({side})",
+    "line": "Ligne {body} ({side})",
+    "yogas": "Yogas",
+    "varga": "Thème {varga}"
+   }
+  },
+  "bigFiveDomain": {
+   "openness": "Ouverture",
+   "conscientiousness": "Conscienciosité",
+   "extraversion": "Extraversion",
+   "agreeableness": "Agréabilité",
+   "neuroticism": "Névrosisme"
+  },
+  "seasonalState": {
+   "wang": "En saison",
+   "xiang": "Nourri",
+   "xiu": "Au repos",
+   "qiu": "Entravé",
+   "si": "Effacé"
+  },
+  "rootKind": {
+   "lu": "Essor",
+   "ren": "Lame yang",
+   "sameQi": "Qi principal",
+   "changSheng": "Croissance",
+   "yuQi": "Qi résiduel",
+   "mu": "Coffre",
+   "jiSheng": "Qi hébergé"
+  },
+  "strengthModifier": {
+   "floating": "Flottant",
+   "meeting": "Trio directionnel",
+   "trine": "Trigone",
+   "halfTrine": "Demi-trigone",
+   "clash": "En conflit",
+   "dryEarth": "Terre sèche",
+   "wetEarth": "Terre humide",
+   "bound": "Lié",
+   "transformed": "Transformé"
+  },
+  "usefulGodReason": {
+   "strength": "Force",
+   "source": "Source de force",
+   "candidate": "Élément candidat",
+   "absent": "Absent du thème",
+   "climate": "Équilibre climatique",
+   "follow": "Structure suiveuse",
+   "transform": "Transformation",
+   "disease": "Remède",
+   "bridge": "Médiation"
+  }
+ },
+ "site": {
+  "language": "Langue",
+  "brand": "Armilla",
+  "invitePageTitle": "Invitation · Armilla",
+  "resultPageTitle": "Votre carte relationnelle · Armilla",
+  "loading": "Ouverture…",
+  "openApp": "Vous avez Armilla ? Ouvrir dans l’application",
+  "afterInstall": "Une fois l’application installée, revenez ici et touchez de nouveau « Ouvrir dans l’application ».",
+  "orWeb": "Pas besoin d’installer quoi que ce soit : vous pouvez remplir le formulaire directement ici.",
+  "inApp": "Ce navigateur ne pourra peut-être pas ouvrir l’application. Touchez ··· en haut à droite, puis choisissez « Ouvrir dans le navigateur ».",
+  "retry": "Réessayer",
+  "offline": "Vous semblez hors ligne. Vérifiez votre connexion, puis réessayez.",
+  "learnMore": "Découvrir Armilla",
+  "storesTitle": "Télécharger Armilla",
+  "storeComingSoon": "Bientôt disponible",
+  "keepInAppTitle": "Gardez ce résultat dans l’application",
+  "keepInAppBody": "Installez Armilla, puis ouvrez ce même lien de résultat avec l’application (ou touchez « Ouvrir dans l’application » ci-dessous). Après votre inscription, vous retrouverez cette lecture à deux dans Relations. Le lien de résultat reste valable 30 jours.",
+  "placeSearching": "Recherche en cours…",
+  "placeNoResults": "Aucun résultat pour « {query} ».",
+  "dateKindNote": "Les dates des Quatre Piliers se convertissent dans l’application ou sur la version web ; ici, indiquez une date du calendrier grégorien ou lunaire.",
+  "footerNote": "Armilla décrit des tendances et des cycles pour mieux se connaître, sans prédire d’événements précis ni remplacer l’avis d’un professionnel.",
+  "privacy": "Politique de confidentialité",
+  "terms": "Conditions d’utilisation",
+  "support": "Aide et assistance",
+  "report": "Signaler ce lien",
+  "reportSubject": "Signalement d’un lien d’invitation Armilla",
+  "familyPageTitle": "Rejoindre une offre Famille · Armilla",
+  "familyJoinBody": "Pour rejoindre une offre Famille, il faut un compte Armilla : ouvrez donc cette invitation dans l’application. Si Armilla est installée, touchez le bouton ci-dessous ; sinon, téléchargez l’application, connectez-vous, puis touchez à nouveau le lien d’invitation. Ce lien ne peut servir qu’une seule fois, pendant 7 jours.",
+  "eyebrowFamily": "FAMILLE",
+  "eyebrowSixRings": "SIX DIMENSIONS",
+  "eyebrowSystems": "SYSTÈMES",
+  "eyebrowDate": "DATE",
+  "eyebrowTime": "HEURE",
+  "eyebrowPlace": "LIEU",
+  "eyebrowForCalculation": "DONNÉES DU CALCUL"
+ }
+}

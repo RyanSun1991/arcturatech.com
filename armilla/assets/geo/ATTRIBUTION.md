@@ -8,7 +8,7 @@ database (export dump: `cities15000`, `cities1000`, `admin1CodesASCII`, `admin2C
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 **Changes made**: places selected and de-duplicated; Chinese names selected, shortened, borrowed from divisions or
-corrected by hand; Traditional Chinese names partly generated with OpenCC; English names of division features shortened;
+corrected by hand; Japanese, Korean, Vietnamese, French and Spanish names selected from the alternate names (WP-374); Traditional Chinese names partly generated with OpenCC; English names of division features shortened;
 coordinates rounded to 4 decimals; time zones normalized (mainland China → Asia/Shanghai); search aliases added.
 GeoNames provides the data "as is", without warranty.
 

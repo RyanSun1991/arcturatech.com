@@ -1,0 +1,2499 @@
+{
+ "client": {
+  "inviteResult": {
+   "eyebrow": "LÁ SỐ MỐI QUAN HỆ CỦA BẠN",
+   "title": "Bạn và {inviter}",
+   "relationLine": "Từ góc nhìn của bạn, {inviter} là {relation} của bạn.",
+   "intro": "Đây là cùng một bản luận giải hai người, nhưng được mở ra từ góc nhìn của bạn. Thay vì chấm một điểm số chung, sáu vòng tròn sẽ đặt cạnh nhau những điểm hai người dễ đồng điệu và những chỗ có thể nảy sinh ma sát.",
+   "you": "Bạn",
+   "findingsTitle": "Phát hiện chính",
+   "locked": "Còn {count} phát hiện nữa · đăng ký để lưu bản luận giải này, và mở khóa phần còn lại với gói Hội viên",
+   "systemsTitle": "Theo từng hệ thống",
+   "systemsEyebrow": "HỆ THỐNG",
+   "systemsLine": "{system} · {count} phát hiện",
+   "systemsNote": "Các phần xem chi tiết — như vòng sao đôi hay đối chiếu Tứ Trụ cạnh nhau — chỉ hiện ra khi cả hai cùng chọn chia sẻ đầy đủ. Mặc định, {inviter} chỉ chia sẻ phần kết quả nên ngày, giờ và nơi sinh của họ sẽ luôn được ẩn.",
+   "keepTitle": "Lưu giữ bản luận giải này",
+   "keepBody": "Khi đăng ký, bản luận giải hai người này sẽ được lưu trong mục Kết nối. Bạn hoặc {inviter} đều có thể ngừng chia sẻ bất cứ lúc nào.",
+   "keep": "Đăng ký và lưu lại",
+   "keepSignedIn": "Lưu vào tài khoản của tôi",
+   "linked": "Đã lưu vào tài khoản của bạn.",
+   "selfFilled": "Chúng tôi cũng đã lập sẵn lá số riêng của bạn từ thông tin bạn vừa nhập.",
+   "reward": "Bạn và {inviter} mỗi người đều nhận được 7 ngày Hội viên Plus.",
+   "openShared": "Mở trong Kết nối",
+   "copyLink": "Sao chép liên kết kết quả (hiệu lực 30 ngày)",
+   "copied": "Đã sao chép",
+   "computing": "Đang lập bản luận giải hai người — việc này thường chỉ mất vài giây.",
+   "pendingInviter": "Thông tin ngày sinh của {inviter} chưa hoàn tất. Vui lòng quay lại xem sau ít phút.",
+   "revoked": "Bản luận giải hai người này không còn xem được nữa vì một trong hai bạn đã ngừng chia sẻ.",
+   "expired": "Liên kết đến kết quả này đã hết hạn (liên kết có hiệu lực trong 30 ngày).",
+   "unavailable": "Bản luận giải hai người này hiện không còn khả dụng.",
+   "notFound": "Không tìm thấy kết quả này — liên kết có thể bị thiếu hoặc không đầy đủ.",
+   "noToken": "Không tìm thấy bản luận giải nào được lưu trên trình duyệt này. Nếu bạn đã lưu lại liên kết kết quả sau khi điền thông tin, hãy mở trực tiếp liên kết đó.",
+   "error": "Hiện chưa mở được kết quả này. Vui lòng thử lại sau giây lát.",
+   "linkError": {
+    "alreadyLinked": "Bản luận giải này đã được lưu vào một tài khoản khác.",
+    "ownInvite": "Đây là lời mời do chính bạn gửi đi.",
+    "gone": "Bản luận giải này đã bị ngừng chia sẻ, hoặc liên kết đã hết hạn.",
+    "generic": "Hiện chưa lưu được. Vui lòng thử lại sau giây lát."
+   }
+  },
+  "pair": {
+   "title": "Hợp lá số",
+   "practice": "Thử cùng nhau",
+   "rings": {
+    "footnote": "Sáu khía cạnh trong cách hai người hòa hợp, được đọc độc lập — không bao giờ quy về một điểm số chung",
+    "a11y": "{ring}: {character}",
+    "character": {
+     "strong": "Nổi bật",
+     "quiet": "Tĩnh lặng",
+     "friction": "Chủ yếu là ma sát"
+    },
+    "thinEvidence": "Ít căn cứ",
+    "legendStrength": "Gắn kết",
+    "legendFriction": "Ma sát",
+    "axis": "{neg} ⇄ {pos}",
+    "evidence": "Căn cứ"
+   },
+   "findings": {
+    "eyebrow": "PHÁT HIỆN CHÍNH",
+    "title": "Phát hiện chính · {shown} / {total}",
+    "direction": "{from} → {to}",
+    "mutual": "Hai chiều",
+    "lockedCta": "Mở khóa {count} phát hiện còn lại và kịch bản ứng xử",
+    "lockedA11y": "Phát hiện chưa mở khóa — chạm để mở khóa"
+   }
+  },
+  "clip": {
+   "getApp": "Tải Armilla",
+   "noLink": "Vui lòng mở qua liên kết mời."
+  }
+ },
+ "web": {
+  "landing": {
+   "download": {
+    "eyebrow": "TẢI ỨNG DỤNG",
+    "title": "Sự tỉnh thức mỗi ngày, ngay trong túi bạn",
+    "lead": "Thời tiết năng lượng hằng ngày, gợi ý chiêm nghiệm, nhật ký nhanh và tiện ích màn hình chính đều có trong ứng dụng; còn báo cáo chuyên sâu, lời mời xem lá số đôi và không gian làm việc Chuyên sâu nằm trên web. Một tài khoản duy nhất, đồng bộ liền mạch giữa điện thoại và trình duyệt.",
+    "ios": "App Store",
+    "iosStatus": "Đang thử nghiệm giai đoạn cuối",
+    "android": "Google Play",
+    "androidStatus": "Đang thử nghiệm giai đoạn cuối",
+    "web": "Tiếp tục dùng bản web"
+   }
+  }
+ },
+ "systems": {
+  "relationTypes": {
+   "partner": "Nửa kia",
+   "parent": "Cha mẹ",
+   "child": "Con cái",
+   "sibling": "Anh chị em",
+   "friend": "Bạn bè",
+   "colleague": "Đồng nghiệp",
+   "businessPartner": "Đối tác",
+   "client": "Khách hàng",
+   "other": "Khác"
+  }
+ },
+ "facts": {
+  "enums": {
+   "baziPattern": {
+    "congCai": "Tòng Tài",
+    "congEr": "Tòng Nhi",
+    "congQiang": "Tòng Cường",
+    "congRuo": "Tòng Nhược",
+    "congSha": "Tòng Sát",
+    "huaQi": "Hóa Khí",
+    "jianLu": "Kiến Lộc",
+    "pianCai": "Thiên Tài",
+    "pianYin": "Thiên Ấn",
+    "qiSha": "Thất Sát",
+    "shangGuan": "Thương Quan",
+    "shiShen": "Thực Thần",
+    "yangRen": "Dương Nhận",
+    "zhengCai": "Chính Tài",
+    "zhengGuan": "Chính Quan",
+    "zhengYin": "Chính Ấn"
+   },
+   "body": {
+    "asc": "Điểm Mọc",
+    "chiron": "Chiron",
+    "dsc": "Điểm Lặn",
+    "earth": "Trái Đất",
+    "ic": "Thiên Để",
+    "jupiter": "Sao Mộc",
+    "lilith": "Lilith",
+    "mars": "Sao Hỏa",
+    "mc": "Thiên Đỉnh",
+    "mercury": "Sao Thủy",
+    "moon": "Mặt Trăng",
+    "neptune": "Sao Hải Vương",
+    "northNode": "Bắc Giao Điểm",
+    "partOfFortune": "Điểm May Mắn",
+    "pluto": "Sao Diêm Vương",
+    "saturn": "Sao Thổ",
+    "southNode": "Nam Giao Điểm",
+    "sun": "Mặt Trời",
+    "uranus": "Sao Thiên Vương",
+    "venus": "Sao Kim",
+    "vertex": "Điểm Định Mệnh"
+   },
+   "branch": {
+    "chen": "Thìn",
+    "chou": "Sửu",
+    "hai": "Hợi",
+    "mao": "Mão",
+    "shen": "Thân",
+    "si": "Tỵ",
+    "wei": "Mùi",
+    "wu": "Ngọ",
+    "xu": "Tuất",
+    "yin": "Dần",
+    "you": "Dậu",
+    "zi": "Tý"
+   },
+   "cogFunction": {
+    "Fe": "Fe",
+    "Fi": "Fi",
+    "Ne": "Ne",
+    "Ni": "Ni",
+    "Se": "Se",
+    "Si": "Si",
+    "Te": "Te",
+    "Ti": "Ti"
+   },
+   "confidence": {
+    "high": "cao",
+    "low": "thấp",
+    "medium": "trung bình"
+   },
+   "graha": {
+    "jupiter": "Sao Mộc",
+    "ketu": "Kế Đô",
+    "mars": "Sao Hỏa",
+    "mercury": "Sao Thủy",
+    "moon": "Mặt Trăng",
+    "rahu": "La Hầu",
+    "saturn": "Sao Thổ",
+    "sun": "Mặt Trời",
+    "venus": "Sao Kim"
+   },
+   "pillar": {
+    "day": "trụ ngày",
+    "hour": "trụ giờ",
+    "month": "trụ tháng",
+    "year": "trụ năm"
+   },
+   "sign": {
+    "Aquarius": "Bảo Bình",
+    "Aries": "Bạch Dương",
+    "Cancer": "Cự Giải",
+    "Capricorn": "Ma Kết",
+    "Gemini": "Song Tử",
+    "Leo": "Sư Tử",
+    "Libra": "Thiên Bình",
+    "Pisces": "Song Ngư",
+    "Sagittarius": "Nhân Mã",
+    "Scorpio": "Bọ Cạp",
+    "Taurus": "Kim Ngưu",
+    "Virgo": "Xử Nữ"
+   },
+   "stem": {
+    "bing": "Bính",
+    "ding": "Đinh",
+    "geng": "Canh",
+    "gui": "Quý",
+    "ji": "Kỷ",
+    "jia": "Giáp",
+    "ren": "Nhâm",
+    "wu": "Mậu",
+    "xin": "Tân",
+    "yi": "Ất"
+   },
+   "type16": {
+    "ENFJ": "ENFJ",
+    "ENFP": "ENFP",
+    "ENTJ": "ENTJ",
+    "ENTP": "ENTP",
+    "ESFJ": "ESFJ",
+    "ESFP": "ESFP",
+    "ESTJ": "ESTJ",
+    "ESTP": "ESTP",
+    "INFJ": "INFJ",
+    "INFP": "INFP",
+    "INTJ": "INTJ",
+    "INTP": "INTP",
+    "ISFJ": "ISFJ",
+    "ISFP": "ISFP",
+    "ISTJ": "ISTJ",
+    "ISTP": "ISTP"
+   },
+   "vedicHouse": {
+    "1": "bản thân, cơ thể, danh tiếng",
+    "2": "gia đình, lời nói, tiền bạc",
+    "3": "anh chị em, lòng dũng cảm, nỗ lực tự thân",
+    "4": "nhà cửa, mẹ, đất đai, sự bình yên nội tâm",
+    "5": "học vấn, con cái, sức sáng tạo",
+    "6": "công việc hằng ngày, phụng sự, cạnh tranh, trở ngại",
+    "7": "nửa kia, hôn nhân, quan hệ hợp tác, công chúng",
+    "8": "chuyện ẩn khuất, nguồn lực chung, biến cố, chuyển hóa",
+    "9": "phúc vận, cha, thầy cô, niềm tin, những chuyến đi xa",
+    "10": "sự nghiệp, vai trò xã hội, uy tín",
+    "11": "thu hoạch, bạn bè, mạng lưới quan hệ, khát vọng",
+    "12": "chi tiêu, phương xa, ẩn dật, đời sống tâm linh"
+   },
+   "wx": {
+    "earth": "Thổ",
+    "fire": "Hỏa",
+    "metal": "Kim",
+    "water": "Thủy",
+    "wood": "Mộc"
+   }
+  },
+  "relation_fact": {
+   "bazi": {
+    "pair": {
+     "branch": {
+      "combine6": {
+       "detail": "Địa chi của hai người tạo thành lục hợp giữa trụ {ap} và trụ {bp}. Thiên can chủ về bề ngoài, địa chi chủ về đời sống thường ngày và nền móng thực tế; cặp lục hợp này cho thấy ở một khía cạnh nào đó trong nhịp sống hay thói quen hành xử, hai người tự nhiên ăn khớp, không cần cố ý dung hòa vẫn đón được bước chân của nhau.",
+       "phrase": "Địa chi lục hợp"
+      }
+     },
+     "complement": {
+      "mutual": {
+       "detail": "Ngũ hành hỷ dụng của hai người bổ sung cho nhau: hành còn yếu, rất cần mượn lực trong lá số người này lại chính là khí dồi dào nhất trong lá số người kia. Mỗi người đều có chỗ thiên lệch, nhưng ở cạnh nhau lại như ghép được góc còn thiếu, tự nhiên đỡ lấy những chỗ mất cân bằng của nhau. Đây là một cách cục rất hiếm có khi so hai lá số; càng ở bên nhau lâu, càng cảm thấy đối phương khiến mình vững vàng, trọn vẹn hơn.",
+       "phrase": "Dụng thần bù trừ cho nhau"
+      },
+      "one_way": {
+       "detail": "Hành vượng trong lá số của một người vừa khéo bù vào hỷ dụng thần mà người kia cần nhất. Bên được bù chỉ cần ở cạnh đối phương, cùng bàn bạc chuyện gì là dễ thấy lòng yên, mọi việc trôi chảy, như được mượn thuận gió; còn bên cung cấp sức đỡ ấy thường vô tình tỏa ra sự tiêu hao, đáng được nhìn thấy, và cũng cần được đáp lại, chăm sóc ở những phương diện khác.",
+       "phrase": "Dụng thần bổ trợ một chiều"
+      }
+     },
+     "daybranch": {
+      "clash": {
+       "detail": "Chi ngày của hai người xung nhau. Chi ngày là cung gần gũi nhất trong Bát Tự, cất giữ thói quen sinh hoạt riêng tư, nhịp sinh hoạt và nguồn cảm giác an toàn của một người. Khi giữ chút khoảng cách thì chưa chắc đã thấy; nhưng một khi lại gần, sớm tối bên nhau hay ở chung một nhà, cách thư giãn và nhịp sống thường ngày của hai người dễ va vào nhau, cần chừa cho mỗi người thời gian và không gian để thở.",
+       "phrase": "Chi ngày tương xung"
+      },
+      "combine6": {
+       "detail": "Chi ngày của hai người lục hợp. Chi ngày đại diện cho dáng vẻ thật và sinh hoạt thường ngày của một người khi lui về trạng thái riêng tư. Hai người hợp nhịp ở chính nơi gần nhất với nền cuộc sống; dù không nói gì, chỉ ở cùng một không gian, mỗi người bận việc riêng, nhịp sống vẫn tự nhiên quyện vào nhau, khiến người ta thấy yên ổn, thư thái.",
+       "phrase": "Chi ngày lục hợp"
+      }
+     },
+     "daystem": {
+      "clash": {
+       "detail": "Can ngày {sa} và {sb} của hai người xung nhau trực diện. Thiên can nằm ở bề mặt, chủ về phản ứng và cách bày tỏ thường ngày; góc nhìn sự việc của hai người thường ngược hẳn nhau, mà tính nết lại cùng dứt khoát như nhau. Ngày thường lời qua tiếng lại nhanh một chút là chuyện nhỏ cũng dễ thành đối đầu; nhưng sức căng ấy cũng như hai cực của nam châm, khiến hai người dù thế nào cũng khó mà xem nhau như không khí.",
+       "phrase": "Can ngày {sa} – {sb} tương xung"
+      },
+      "combine": {
+       "detail": "Can ngày {sa} và {sb} của hai người tương hợp, khí hợp nghiêng về {el}. Can ngày đại diện cho tính tình và cách hành xử cốt lõi nhất của mỗi người; một âm một dương hợp nhau, thường không phải vì tính nết giống nhau, mà là rõ ràng khác nhau mà lại bẩm sinh hợp gu. Lần đầu gặp đã dễ buông bỏ phòng bị; ở bên nhau lâu, hai người càng bất giác xích lại gần nhau, khơi lên nơi nhau một phần khí chất của {el}.",
+       "phrase": "Can ngày {sa} – {sb} tương hợp"
+      },
+      "controls": {
+       "detail": "Giữa can ngày {sa} và {sb} có một bên khắc, một bên chịu khắc; khí thế của một người tự nhiên thu liễm, ràng buộc người kia. Khi ở bên nhau, bên chủ khắc thường dễ đưa ra chủ ý, đặt ra tiêu chuẩn, vô hình trung tạo áp lực cho đối phương; nhưng nhìn từ góc khác, sự ràng buộc ấy cũng thường giúp người kia gom lại tâm trí, đứng vững nề nếp. Dễ chịu hay không, hoàn toàn tùy vào chừng mực nặng hay nhẹ.",
+       "phrase": "Can ngày {sa} khắc {sb}"
+      },
+      "generates": {
+       "detail": "Giữa can ngày {sa} và {sb} có một bên sinh, một bên nhận; khí của một người tự nhiên nâng đỡ, nuôi dưỡng người kia. Bên chủ sinh thường bất giác đỡ đần, lo lắng, ủng hộ cho đối phương; còn bên được sinh phù rất dễ tìm thấy sự vững vàng trong mối quan hệ này, làm việc cũng tự tin hơn. Chỉ cần người cho đi không vắt cạn bản thân, hơi ấm ấy sẽ còn chảy mãi.",
+       "phrase": "Can ngày {sa} sinh {sb}"
+      },
+      "same_element": {
+       "detail": "Can ngày của hai người ({sa}, {sb}) cùng thuộc một hành, là điều Bát Tự gọi là “đồng khí”. Tận trong cốt cách, tính nết hai người tương thông; nhiều chuyện không cần giải thích nhiều, chỉ một ánh mắt là hiểu được sự kiên định của đối phương. Nhưng cũng chính vì quá giống nhau, khi có bất đồng hay ganh đua, cả hai đều rõ đường đi nước bước của đối phương, chẳng ai dễ cúi đầu nhường bước trước.",
+       "phrase": "Can ngày đồng khí"
+      }
+     },
+     "dayun": {
+      "output_meets_power": {
+       "detail": "Trong bước đại vận hiện tại, một người đang đi vận Thực Thương, chú trọng bày tỏ, muốn phá bỏ khuôn khổ; người kia lại đi vận Quan Sát, chú trọng trách nhiệm, cần gánh việc và giữ nề nếp. Một người muốn cởi trói tìm đổi thay, một người đang mang nặng mà đi tới; hai người vừa có thể đánh thức nhau — một người giúp đối phương mở mang suy nghĩ, một người giúp đối phương giữ vững trận địa — vừa dễ gây áp lực cho nhau khi cả hai cùng căng thẳng, nên cần thông cảm nhiều hơn cho giai đoạn mà đối phương đang trải qua.",
+       "phrase": "Vận Thực Thương gặp vận Quan Sát"
+      },
+      "sync": {
+       "detail": "Trong mười năm tới, hướng lên xuống và nhịp của đại vận hai người khá đồng nhất. Trong một mối quan hệ, điều đáng ngại nhất là một người muốn lao tới, một người muốn nghỉ; còn đại vận sắp tới của hai người cùng tần số, thường sẽ muốn bước ra ngoài vào khoảng thời gian gần nhau, rồi lại muốn thu xếp yên ổn vào khoảng thời gian gần nhau, nên rất dễ hiểu được tâm cảnh và lựa chọn hiện tại của nhau.",
+       "phrase": "Đại vận đồng nhịp"
+      }
+     },
+     "sole_element": {
+      "detail": "Gộp lá số của hai người lại mà xem, sức mạnh của hành {el} gần như dồn hết vào một người. Điều này có nghĩa là trong sinh hoạt thường ngày, phần tính chất gắn với {el} thường vô tình trở thành “việc chuyên trách” của riêng người ấy. Bình thường thì có thể bù trừ cho nhau, nhưng nếu việc gì cũng trông vào một bên gánh vác, lâu dần khó tránh mệt mỏi; chi bằng trong sự ăn ý và thói quen, hãy phụ thêm một tay, đừng để sức nặng ấy chỉ đè lên vai một người.",
+      "phrase": "Khí {el} dồn về một phía"
+     }
+    }
+   },
+   "hd": {
+    "pair": {
+     "authority": {
+      "both_emotional": {
+       "detail": "Cả hai đều thuộc thẩm quyền cảm xúc; với bất kỳ ai trong hai người, phản ứng đầu tiên lúc đó đều không phải câu trả lời cuối cùng, sự chắc chắn thật sự chỉ hiện ra sau khi những thăng trầm cảm xúc đã lắng xuống. Khi ở bên nhau, sóng cảm xúc của hai người có lúc chồng lên nhau — cùng ở đỉnh thì dễ nhất thời hứng lên mà hứa hẹn, cùng ở đáy thì lại dễ thấy vấn đề nặng nề quá mức; có lúc lại lệch nhau, một người đang hào hứng, người kia lại chùng xuống không rõ vì sao. May là hai người bẩm sinh thông cảm được cảm giác “giờ mình vẫn chưa nói chắc được”. Gặp quyết định quan trọng, hãy cho nhau thời gian ngủ một giấc, thong thả vài ngày, đợi sóng gió ở cả hai phía đều lặng rồi mới chốt — đó luôn là sự ăn ý chắc chắn nhất.",
+       "phrase": "Cả hai cùng thẩm quyền cảm xúc"
+      },
+      "wave_vs_instant": {
+       "detail": "Trong chuyện ra quyết định, hai người sống trong hai tốc độ thời gian hoàn toàn khác nhau: một người cần để sự việc đi qua một lượt thăng trầm cảm xúc trong lòng, ngủ một giấc rồi mới nhìn rõ suy nghĩ thật của mình; người kia dựa vào trực giác hay phản ứng cơ thể ngay lúc đó, chỉ trong chớp mắt đã biết câu trả lời. Nếu không hiểu cấu trúc của nhau, người nhanh sẽ thấy đối phương do dự, thậm chí nói rồi lại đổi; người chậm thì cảm thấy bị dồn ép từng bước, dù tại chỗ có gượng nhận lời, về sau cũng dễ đổi ý. Thật ra chẳng ai qua loa với ai cả — người nhanh có thể ghi lại trực giác đầu tiên của mình, đồng thời chừa cho người chậm khoảng thời gian qua đêm để lắng đọng; câu trả lời có được khi ấy mới thật sự có giá trị.",
+       "phrase": "Chờ cảm xúc × Biết ngay lúc này"
+      }
+     },
+     "companionship": {
+      "detail": "Mỗi người đều có trọn vẹn {channels}. Trong lĩnh vực này, cách vận hành của hai người giống hệt nhau, không cần dò xét, cũng không cần tốn lời giải thích “vì sao mình lại như vậy”. Ở đây không có sự kịch tính do bù trừ mang lại, mà có một sự chắc chắn và ăn ý như bạn cũ — dù ở những mặt khác có bất đồng, trở về chủ đề này, hai người luôn lập tức hiểu được nhịp của nhau.",
+      "phrase": "Kênh đồng hành"
+     },
+     "compromise": {
+      "detail": "Ở {channels}, một người có trọn cả kênh, người kia chỉ nắm một đầu. Đây là cấu trúc dễ tích tụ những ấm ức vô hình nhất khi ở bên nhau: người chỉ nắm một đầu vốn cũng có sự dấn thân và kỳ vọng của riêng mình với việc này, nhưng luôn cảm thấy tiếng nói của mình bị cách làm đã định sẵn của đối phương lấn át, cuối cùng đành nhường nhịn chiều theo; còn người có trọn cả kênh chỉ hành xử theo bản năng, thường hoàn toàn không nhận ra mình đang chiếm thế chủ đạo. Nhìn rõ đây là chênh lệch của cấu trúc năng lượng chứ không phải ai không thông cảm cho ai, thì khi ở bên nhau mới không âm thầm giằng co.",
+      "phrase": "Kênh thỏa hiệp"
+     },
+     "dominance": {
+      "detail": "{channels} tồn tại trọn vẹn ở một người, còn người kia để trống cả hai đầu của kênh này. Vì không có sự va chạm của chấp niệm hay thói quen sẵn có, người để trống thường không cảm thấy bị áp chế ở đây, mà ngược lại có thể cảm nhận ở cự ly gần, mượn lấy tài năng và sự vững vàng của đối phương trong việc này. Chỉ cần để ý đừng để luồng năng lượng vận hành liên tục ấy làm mình quá đầy, đây thường là nơi hai người mở mang tầm mắt cho nhau, cùng kéo nhau đi lên.",
+      "phrase": "Kênh chủ đạo"
+     },
+     "electromagnetic": {
+      "many": {
+       "detail": "Trên các kênh {channels}, mỗi người nắm một nửa, chỉ khi lại gần nhau mới nối thông được cả mạch. Khi hai người ở cạnh nhau, luôn có một cảm giác sống động như được đối phương “cấp điện” — những chỗ mà một mình mắc kẹt hay không dồn được sức, gặp đối phương bỗng nhiên chuyển động. Sức hút này không phải vì hai người giống nhau đến mức nào, mà vì nơi đối phương có đúng mảnh ghép mà bạn còn thiếu.",
+       "phrase": "Nhiều kênh điện từ"
+      },
+      "some": {
+       "detail": "Mỗi người mang một đầu của {channels}, ở cạnh nhau mới nối thông được kênh này. Ở chủ đề này, hai người có một sự tò mò và lực hút tự nhiên với nhau — những việc khi một mình luôn thấy thiếu một hơi, vừa chạm vào đối phương là đã có chỗ đứng, như hai nửa khóa cài khớp lại.",
+       "phrase": "Kênh điện từ"
+      },
+      "throat": {
+       "detail": "Giữa hai người có nhiều kênh điện từ nối thẳng tới Trung tâm Cổ họng. Cổ họng là lối ra để biến cảm nhận và ý nghĩ bên trong thành lời nói và hành động — những lời bình thường mỗi người xoay rất lâu trong lòng mà chưa nói ra, những ý tưởng chưa thành hình, chỉ cần hai người bắt đầu trò chuyện là tự nhiên trào ra. Hai người từ những góc nhìn khác nhau nói tiếp cho trọn ý của nhau, không chỉ trò chuyện hăng say, mà cũng rất dễ cùng nhau biến ý nghĩ suông thành hành động hay tác phẩm thực sự.",
+       "phrase": "Ở cạnh nhau, ý tưởng có tiếng nói"
+      }
+     },
+     "open_centers": {
+      "few": {
+       "detail": "Gộp biểu đồ của hai người lại, chín trung tâm năng lượng gần như đều được thắp sáng, chỉ còn một hoặc thậm chí không còn trung tâm mở nào. Khi ở bên nhau, hai người như một thế giới nhỏ tự cung tự cấp, đầy đủ, náo nhiệt, gần như không cần người ngoài lấp vào chỗ trống; nhưng cũng vì mọi khoảng trống đều đã được nhau lấp đầy, ở lâu khó tránh cảm giác kín mít, không có chỗ để thở. Chừa ra không gian ở một mình cho mỗi người, không phải vì xa cách, mà để những cảm nhận đã bị lấp đầy của cả hai được thông thoáng trở lại.",
+       "phrase": "Hợp bàn gần như sáng hết các trung tâm"
+      },
+      "shared": {
+       "detail": "Dù chồng hai biểu đồ lên nhau, giữa hai người vẫn còn từ bốn trung tâm mở trở lên. Điều này có nghĩa là trong những lĩnh vực ấy, không ai áp đặt khuôn mẫu cố định của mình lên người kia, ở bên nhau có sẵn khoảng trống và sự thư thái tự nhiên. Tuy nhiên, vì cả hai đều không có điểm neo cố định ở đây, khi gặp thay đổi của môi trường bên ngoài hay cảm xúc của người khác, hai người rất dễ cùng lúc bị cuốn theo. Nhận ra được “áp lực này thật ra đến từ bên ngoài, không phải chuyện giữa hai chúng ta”, những khoảng trống ấy sẽ trở thành ô cửa để hai người cùng khám phá thế giới.",
+       "phrase": "Hợp bàn còn để mở nhiều trung tâm"
+      }
+     },
+     "type": {
+      "manifestor_generator": {
+       "detail": "Một người giỏi tạo ra từ con số không, dựa vào thôi thúc mà phá thế trước, nhưng sức lực bùng lên từng đợt; người kia thì cần có việc bày ra trước mắt để khơi phản hồi, một khi đã gật đầu dấn thân thì có sức bền không cạn để làm cho sâu, cho thấu. Hai người là cặp đôi “người thắp lửa và người giữ lửa” tự nhiên. Va chạm thường xảy ra ở khoảnh khắc chuyển giao: nếu người mở màn không nói tiếng nào mà hành động luôn, người kia sẽ thấy như bị đẩy đi; ngược lại, nếu đòi người mở màn cũng phải đều đặn cho ra liên tục, cũng sẽ khiến họ nghẹt thở. Chỉ cần báo một tiếng trước khi khởi xướng, để đối phương có cơ hội nghe theo phản hồi trong lòng rồi mới nhận gậy, hai luồng sức mạnh sẽ tiếp sức nhau trơn tru.",
+       "phrase": "Một người mở màn, một người đào sâu"
+      },
+      "projector_generator": {
+       "detail": "Một người là người dẫn đường nhìn rõ toàn cục, một người là người hành động có động năng bền bỉ, nhưng cơ chế khởi động của cả hai lại đều là “chờ”: người nhìn phương hướng cần cảm thấy được công nhận, được mời, thì lời khuyên nói ra mới không giống như bắt bẻ; người phụ trách hành động thì cần những lựa chọn cụ thể để khơi phản hồi trực giác, trước những câu hỏi bỏ ngỏ ngược lại dễ bị tắc. Nếu cả hai đều chờ đối phương động trước, tình thế sẽ rơi vào bế tắc. Gỡ nút thắt này thật ra rất đơn giản: khi cần lời khuyên, hãy chủ động hỏi một câu “bạn thấy sao”; khi bàn bạc việc gì, dùng nhiều câu hỏi lựa chọn kiểu “hay là làm thế này nhé”, tầm nhìn và sức thực thi của hai người sẽ ăn khớp hoàn hảo.",
+       "phrase": "Chờ lời mời × Chờ để phản hồi"
+      },
+      "two_manifestors": {
+       "detail": "Cả hai đều là người khởi xướng quen hành động theo thôi thúc bên trong, không muốn bị người khác sắp đặt. Điều quý giá nhất của mối quan hệ này là hai người bẩm sinh hiểu khao khát tự chủ và không gian riêng của nhau, chẳng ai phải kéo ai đi; nhưng va chạm trực tiếp nhất cũng nằm ở đây — nếu mỗi người tự làm việc của mình mà không nói một tiếng, hai luồng năng lượng mạnh mẽ ngang nhau đâm sầm vào nhau, lập tức sẽ dấy lên sự phòng bị và cơn giận. Giữa hai người, nói một câu “mình chuẩn bị làm việc này” trước khi hành động tuyệt nhiên không phải là xin phép, mà là sự tôn trọng coi đối phương như người nhà, có thể lập tức gỡ bỏ phòng bị của cả hai.",
+       "phrase": "Hai người khởi xướng độc lập"
+      }
+     }
+    }
+   },
+   "numerology": {
+    "pair": {
+     "lifepath_lead_support": {
+      "detail": "Số đường đời của hai người, một người là 1 hoặc 8 — nghiêng về mục tiêu, tự chủ và khai phá; một người là 2 hoặc 6 — nghiêng về gắn kết, thấu hiểu và chăm sóc. Một người giỏi đưa ra chủ ý, đẩy mọi việc đi tới; một người để ý hơn đến cảm nhận của nhau và hơi ấm của mối quan hệ, sự phân công tự nhiên bù trừ cho nhau. Chỉ cần để ý đừng để người đưa ra chủ ý quen quyết định thay cho cả hai, cũng đừng để người chu toàn đại cục lúc nào cũng lặng lẽ nhường nhịn.",
+      "phrase": "Khai phá và chu toàn"
+     },
+     "personal_year_same": {
+      "detail": "Trong vòng tuần hoàn chín năm của số đường đời, năm nay hai người đang đi cùng một con số “năm cá nhân”. Điều này có nghĩa là nhịp sống mà hai người đối mặt năm nay rất đồng nhất — khi cần xuất phát thì đều muốn lao tới, khi cần khép lại hay nghỉ ngơi thì cũng đều muốn chậm lại; năm nay rất hợp để cùng nhau quyết định, đẩy những kế hoạch chung đi tới.",
+      "phrase": "Năm cá nhân đồng nhịp"
+     },
+     "same_life_path": {
+      "detail": "Hai người có cùng số đường đời. Số đường đời chỉ về bài học cốt lõi và định hướng giá trị mà một người tu tập đi tu tập lại cả đời; cùng số nghĩa là hai người đang đi trên cùng một đường ray nền tảng — vì sao đối phương cố chấp với một việc, lại dễ mắc kẹt ở đâu, bạn gần như không cần đoán đã đồng cảm được, rất dễ đạt được sự đồng thuận về phương hướng lớn trong đời.",
+      "phrase": "Cùng số đường đời"
+     }
+    }
+   },
+   "psych": {
+    "pair": {
+     "attachment": {
+      "anxious_avoidant": {
+       "detail": "Khi mối quan hệ có biến động hay áp lực tăng lên, phản ứng bản năng của hai người lại ngược nhau: một người muốn xích lại gần, muốn xác nhận cả hai vẫn ổn, để tìm lại cảm giác an toàn; người kia lại bản năng lùi ra một bước, cần trốn vào không gian riêng để tiêu hóa cảm xúc trước. Điều này rất dễ rơi vào vòng lặp “càng đuổi càng trốn, càng trốn càng hoảng”. Chỉ cần cùng nhận ra nhịp này — người lùi lại nói một câu “mình chỉ cần yên tĩnh một chút, không phải là bỏ đi đâu” — người muốn lại gần sẽ không phải càng đuổi càng gấp trong những đoán định.",
+       "phrase": "Xích lại gần × Lùi ra sau"
+      },
+      "both_anxious": {
+       "detail": "Cả hai đều rất để tâm đến hơi ấm trong mối quan hệ, đặc biệt nhạy với sự thay đổi giọng điệu, tốc độ trả lời tin nhắn của đối phương. Lúc trạng thái tốt, hai người đều biết hồi đáp đủ đầy, vì mỗi người đều hiểu “được đặt trong lòng” quan trọng đến thế nào, có thể vững vàng nâng đỡ nhau. Nhưng khi gặp bận rộn, mệt mỏi hay một lúc im lặng, cũng dễ cả hai cùng nghĩ nhiều, khuếch đại nỗi bất an. Ngày thường hẹn trước một câu ám hiệu đơn giản — như “hôm nay chỉ là bận thôi, mình vẫn ổn” — sẽ giúp hai người đỡ được rất nhiều suy nghĩ lung tung.",
+       "phrase": "Cả hai đều để tâm đến hồi đáp của nhau"
+      },
+      "both_avoidant": {
+       "detail": "Cả hai đều rất coi trọng sự độc lập, gặp chuyện cũng quen đóng cửa tự mình tiêu hóa trước. Điểm tốt là ở bên nhau đặc biệt nhẹ nhàng, không ai dồn ép ai, cũng biết tôn trọng nhu cầu ở một mình của đối phương. Chỉ là khi cả hai đều quen nói “mình không sao, mình tự lo được”, sẽ vô tình ngăn ra một lớp khách sáo. Vào những lúc thật sự khó chịu hay yếu lòng, hãy thử phá thói quen gắng gượng một chút, chủ động đưa tay về phía đối phương, mối quan hệ sẽ thêm hơi ấm.",
+       "phrase": "Cả hai đều coi trọng không gian riêng"
+      },
+      "secure_anchor": {
+       "detail": "Trong hai người có một người mang phong cách gắn bó an toàn, như thể mối quan hệ được lắp thêm một khối dằn khoang vững chắc. Trước sự thân mật không thấy bị nuốt chửng, trước khoảng cách tạm thời cũng không dễ hoảng hốt; sự chắc chắn ấy giúp những lần tranh cãi hay những lúc bận rộn không dễ leo thang thành nghi ngờ về mối quan hệ. Dù thỉnh thoảng có giận dỗi, có lơ đãng, hai người cũng dễ dàng theo sự chắc chắn ấy mà quay về bên nhau.",
+       "phrase": "Điểm neo an toàn vững vàng"
+      }
+     },
+     "bigfive": {
+      "conscientiousness_gap": {
+       "detail": "Một người coi trọng trật tự, giữ lời hứa, việc đã sắp xếp xong là muốn theo đúng từng bước mà làm; người kia tùy hứng, thoải mái, không mấy bị khuôn phép trói buộc, thích làm theo tâm trạng và trạng thái lúc ấy. Khi rơi vào những thỏa thuận thường ngày, sự phân công hay nếp sinh hoạt, người thứ nhất dễ thấy như mình đang một mình lo toan, người thứ hai dễ thấy như bị theo dõi, bị quản thúc. Thỏa thuận rõ những giới hạn thật sự quan trọng, còn những chuyện nhỏ khác cứ để mỗi người làm theo cách mình thấy dễ chịu, sẽ đỡ được không ít hao tổn.",
+       "phrase": "Ngăn nắp × Tùy hứng"
+      },
+      "neuroticism_gap": {
+       "detail": "Một người nhạy bén với mọi động tĩnh nhỏ, cảm xúc đến nhanh và cũng thấm sâu; người kia thần kinh khá vững, gặp sóng gió cũng không dễ hoảng. Sự tương phản này thật ra rất bù trừ: người nhạy bén có thể nhận ra những thay đổi tinh tế, người điềm tĩnh có thể làm cột trụ khi gió nổi lên. Chỉ cần người điềm tĩnh đừng gạt đi bằng một câu “bạn nghĩ nhiều quá”, và người nhạy bén cũng đừng xem sự bình thản của đối phương là không quan tâm, hai người sẽ mượn được sức của nhau.",
+       "phrase": "Nhạy cảm × Vững vàng"
+      }
+     },
+     "disc": {
+      "both_dominance": {
+       "detail": "Về phong cách hành xử (DISC), cả hai đều nổi trội ở kiểu Chủ đạo (D): nói năng thẳng thắn, làm việc quyết đoán, gặp chuyện đều quen đưa tay cầm lấy tay lái. Khi mục tiêu thống nhất, hai người không cần khách sáo vòng vo, sức đẩy cực mạnh; nhưng một khi ý kiến trái nhau, chẳng ai quen lùi một bước trước để giữ hòa khí, rất dễ đối đầu cứng rắn rồi bế tắc. Ngày thường hãy phân rõ địa bàn mà mỗi người được quyết, đừng để hai người cùng giành một tay lái, luồng hăng hái ấy sẽ trở thành sức mạnh chung thật sự.",
+       "phrase": "Cả hai đều thích đưa ra chủ ý"
+      },
+      "pace_gap": {
+       "detail": "Về phong cách hành xử (DISC), một người quen bắt tay vào làm trước, vừa đi vừa chỉnh, coi trọng hiệu suất và đà tiến; người kia lại có xu hướng nghĩ thấu lợi hại trước, đặt chân cho vững rồi mới đi tiếp. Khi hợp tác hay bàn bạc, người nhanh dễ thấy đối phương chậm nửa nhịp, do dự; người chắc chắn lại dễ thấy mình bị giục phải chốt vội vàng. Hãy chừa trước một chút khoảng đệm cho việc suy nghĩ, rồi hẹn rõ thời điểm chốt, như vậy vừa chạy được, lại không đến nỗi hụt chân.",
+       "phrase": "Đẩy nhanh × Đi chắc"
+      }
+     },
+     "enneagram": {
+      "same_center": {
+       "detail": "Nhóm Enneagram của hai người thuộc cùng một trung tâm — dù cùng ở trung tâm Bản năng, Tình cảm hay Tư duy, “chiếc ra-đa đầu tiên” để đón nhận tín hiệu từ bên ngoài của hai người là tương thông. Khi gặp áp lực hay tình huống bất ngờ, dù cách làm cụ thể khác nhau, những gì hai người vô thức bảo vệ, nỗi bất an trỗi lên đầu tiên trong lòng thường cùng một gốc, nên rất dễ hiểu từ trong cốt cách vì sao đối phương lại phản ứng như vậy.",
+       "phrase": "Cùng trung tâm Enneagram"
+      }
+     },
+     "types16": {
+      "ei_split": {
+       "detail": "Khi gặp chuyện, một người cần chừa thời gian yên tĩnh để sắp xếp đầu mối trong lòng, nghĩ rõ rồi mới mở lời; người kia lại vừa nói vừa nghĩ, phải nhờ cuộc trò chuyện mới gỡ được ý nghĩ cho thông. Vì thế, khi cùng một việc xảy ra, một người muốn yên lặng một chút, người kia lại muốn nói ra ngay. Hiểu rằng sự im lặng của một người không phải là lạnh nhạt, và việc nói không ngừng của người kia cũng không phải là ép buộc, nhịp của hai người mới không va vào nhau.",
+       "phrase": "Tự mình tiêu hóa × Vừa nói vừa nghĩ"
+      },
+      "jp_split": {
+       "detail": "Một người cần chốt mọi việc sớm thì trong lòng mới yên, người kia lại thấy chừa khoảng trống, tùy tình hình mà điều chỉnh mới thoải mái. Lịch trình đi chơi, kế hoạch công việc và hạn chót là những nơi dễ lộ ra sự chênh lệch này nhất: một người thấy treo lơ lửng chưa quyết khiến mình lo âu, người kia thấy chốt quá cứng khiến mình ngột ngạt. Phân rõ việc nào phải định trước, việc nào có thể để ngỏ, ở bên nhau sẽ nhẹ nhõm hơn nhiều.",
+       "phrase": "Chốt luôn × Để xem đã"
+      },
+      "shared_intuition": {
+       "detail": "Trong 16 Nhóm tính cách, cả hai đều nghiêng về trực giác (N). Khi trò chuyện, hai người hiếm khi chỉ dừng ở bề mặt sự việc, mà thích nghiền ngẫm ý nghĩa phía sau, những khả năng chưa xảy ra, và những mối liên hệ kỳ lạ giữa việc này với việc khác. Thường thì một người vừa buông ra nửa ý nghĩ hay một phép so sánh, người kia chưa cần nghe hết đầu đuôi đã nối tiếp được câu chuyện.",
+       "phrase": "Cùng thiên về trực giác"
+      },
+      "shared_sensing": {
+       "detail": "Trong 16 Nhóm tính cách, cả hai đều nghiêng về giác quan (S). So với những suy đoán lơ lửng trên không, hai người tin hơn vào những điều tận mắt thấy, tận tay làm, cũng coi trọng những chi tiết xác thực trước mắt. Dù là bàn xem một việc nên làm thế nào, hay kể chuyện cuộc sống của mỗi người, hai người đều quen dùng ví dụ cụ thể và tình hình thực tế để nói, không cần vòng vo vẫn hiểu được ý nhau.",
+       "phrase": "Cùng bám vào điều cụ thể"
+      },
+      "sn_split": {
+       "detail": "Trước cùng một sự việc, một người nhìn thấy mạch ngầm phía sau và những khả năng tương lai trước, người kia chú ý đến sự thật trước mắt và những chi tiết thực tế trước. Khi trò chuyện, người thứ nhất dễ thấy đối phương cứ loanh quanh ở những chỗ vụn vặt, người thứ hai lại dễ thấy ý nghĩ của đối phương quá bay bổng, chẳng có chỗ bám; nhưng một khi phối hợp được, một người nhìn phương hướng, một người nhìn dưới chân, ngược lại có thể nhìn sự việc rất trọn vẹn.",
+       "phrase": "Nhìn đại cục × Nhìn chi tiết"
+      },
+      "tf_split": {
+       "detail": "Khi ra quyết định hay khi tranh cãi, một người sẽ nhìn trước xem việc này ảnh hưởng thế nào đến con người, trong lòng mỗi người có dễ chịu không; người kia nhìn trước xem logic có thông không, tiêu chuẩn có công bằng không. Lúc lời qua tiếng lại, người thứ nhất dễ thấy đối phương lạnh lùng, thiếu tình người; người thứ hai dễ thấy đối phương né nặng tìm nhẹ, không bàn đúng vào việc. Thật ra mỗi người đang giữ một nửa quan trọng: vừa phải làm rõ sự việc, vừa phải chăm lo cho con người.",
+       "phrase": "Nghĩ cho người × Nói lý lẽ"
+      }
+     },
+     "values": {
+      "opposite_direction": {
+       "detail": "Trên vòng tròn giá trị, những điều mỗi người coi trọng nhất lại nằm ở hai phía đối diện — chẳng hạn một người hướng về khám phá, đổi thay, người kia coi trọng sự an ổn, bảo toàn; hoặc một người tập trung vào việc vượt lên của bản thân, người kia lại lo nghĩ nhiều hơn cho những người xung quanh và cộng đồng. Chính vì trọng tâm khác nhau, góc khuất mà một người dễ bỏ qua thường có người kia trông chừng thay. Khi gặp quyết định lớn, khoan vội tranh đúng sai, hãy nói cho nhau nghe điều mình muốn giữ gìn nhất trong lòng là gì, ngược lại có thể ghép nên một lựa chọn chu toàn hơn.",
+       "phrase": "Coi trọng những điều bù trừ"
+      },
+      "shared_direction": {
+       "detail": "Trong bài trắc nghiệm giá trị sống, những điều đứng đầu trong lòng hai người cùng hướng về một phía. Sự ăn ý này không nhất thiết thể hiện ở những đạo lý lớn, mà ẩn nhiều hơn trong những lựa chọn thường ngày — thời gian và sức lực bỏ vào đâu thì đáng, cuộc sống thế nào mới gọi là vững vàng hay có điều để hướng tới. Nhiều quyết định bạn không cần giải thích lý do từ đầu, đối phương tự nhiên đã hiểu vì sao bạn chọn như vậy.",
+       "phrase": "Coi trọng những điều tương đồng"
+      }
+     }
+    }
+   },
+   "vedic": {
+    "pair": {
+     "dasha_sync": {
+      "detail": "Mahadasha hiện tại của hai người do cùng một hành tinh cai quản, hoặc hai chủ tinh thân thiện với nhau. Mahadasha quyết định nhịp chủ đạo của một người trong nhiều năm; lúc này hai người đang ở những giai đoạn có “khí hậu” giống nhau — dù cùng đang mở mang ra bên ngoài, hay cùng đang lắng đọng tích lực, hai người đều rất dễ hiểu trọng tâm và hoàn cảnh hiện tại của nhau, bước chân tự nhiên hợp nhịp.",
+      "phrase": "Dasha đồng nhịp"
+     },
+     "koota": {
+      "gana_low": {
+       "detail": "Nakshatra Mặt Trăng của hai người thuộc những nhóm tính khí (Gana) khác nhau. Truyền thống Vệ Đà cho rằng điều này có nghĩa là tính khí tầng sâu và cách tiêu hóa sự việc của hai người không giống nhau lắm — chẳng hạn khi gặp tình huống, một người quen thẳng thắn, giải quyết ngay tại chỗ, người kia lại cần một khoảng đệm nhẹ nhàng hoặc tự mình yên lặng trước. Nhìn rõ độ chênh thời gian trong phản ứng bản năng này, bớt thúc giục một chút, ở bên nhau sẽ nhẹ nhõm hơn nhiều.",
+       "phrase": "Gana: khác nhau"
+      },
+      "gana_match": {
+       "detail": "Nakshatra Mặt Trăng của hai người rơi vào cùng một nhóm tính khí (Gana), hoặc những nhóm hợp nhau. Truyền thống Vệ Đà dùng nó để xem tính khí và bản năng xử sự tầng sâu nhất của một người: tốc độ phản ứng trước những chuyện vụn vặt thường ngày, nhu cầu náo nhiệt hay yên tĩnh của hai người khá hợp nhịp; ở bên nhau, bước chân tự nhiên, không mấy cần cố ý chiều theo nhịp của đối phương.",
+       "phrase": "Gana: tương hợp"
+      },
+      "graha_maitri_high": {
+       "detail": "Chủ tinh của Cung Mặt Trăng hai người thân thiện với nhau (hoặc là cùng một hành tinh). Trong Chiêm tinh Vệ Đà, Mặt Trăng đại diện cho tâm trí và khả năng cảm nhận; hai chủ tinh hợp nhau nghĩa là góc nhìn sự việc và cách tiêu hóa cảm xúc của hai người rất gần nhau, ngày thường trò chuyện thường không cần tốn sức giải thích đầu đuôi, đối phương đã hiểu được ý ngoài lời.",
+       "phrase": "Graha Maitri: thân thiện"
+      },
+      "tara_high": {
+       "detail": "Đếm từ Nakshatra Mặt Trăng của người này sang người kia, điểm rơi đúng vào vị trí Nakshatra cát lợi, tương trợ (Tara) theo truyền thống Vệ Đà. Theo truyền thống, sự kết hợp này được xem là “trợ lực” của nhau: trong cuộc sống, hai người dễ mang đến cho nhau những cơ hội thuận lợi hay sự ủng hộ vững chắc; có đối phương bên cạnh, nhiều việc tiến hành sẽ chắc chắn hơn.",
+       "phrase": "Tara: tương hợp"
+      },
+      "yoni_high": {
+       "detail": "Biểu tượng (Yoni) ứng với Nakshatra Mặt Trăng của hai người giống nhau hoặc thân thiện với nhau. Trong truyền thống Vệ Đà, điều này đại diện cho một sự gần gũi bản năng không cần nghĩ ngợi — khi ở cùng một không gian, cơ thể và giác quan của hai người đều thả lỏng, không cần gồng mình, rất dễ nảy sinh sự thân thiết và sức hút tự nhiên với nhau.",
+       "phrase": "Yoni: tương hợp"
+      }
+     }
+    }
+   },
+   "western": {
+    "pair": {
+     "asc_asc_square": {
+      "detail": "Điểm Mọc của hai người tạo góc vuông góc hoặc đối đỉnh. Phản ứng đầu tiên khi bước vào một môi trường mới, khi ứng xử với người ngoài của hai người hoàn toàn khác nhau: một người quen đặt quy tắc trước, nắm chắc kế hoạch; người kia coi trọng bầu không khí tại chỗ hơn, thuận thế mà làm. Khi ra ngoài hay cùng tiếp khách, ban đầu thường thấy đối phương không cùng nhịp với mình, nhưng lâu dần sẽ nhận ra nơi đối phương có đúng kiểu phản ứng tại chỗ mà mình thiếu nhất.",
+      "phrase": "Điểm Mọc va chạm"
+     },
+     "jupiter_lifts": {
+      "detail": "Sao Mộc của một người tạo góc trùng tụ hoặc hài hòa với Mặt Trời hay Mặt Trăng của người kia. Điều này thổi vào mối quan hệ một bầu không khí rộng lượng, thoải mái: ở bên người có Sao Mộc, người kia thường tự tin hơn để thử điều mới, nghĩ lớn hơn, không sợ mắc chút sai lầm. Giữa hai người tự nhiên có thiện ý và sự bao dung, hiếm khi giằng co vì chuyện lông gà vỏ tỏi, tầm nhìn cũng nhờ nhau mà rộng mở hơn.",
+      "phrase": "Sao Mộc nâng đỡ"
+     },
+     "mars_mars_tension": {
+      "detail": "Sao Hỏa của hai người tạo góc vuông góc hoặc đối đỉnh. Cách dồn sức và nhịp làm việc của hai người dễ ngược chiều nhau: một người muốn chốt ngay mà lao tới, người kia lại muốn đi đường khác, hoặc thấy chưa đến lúc. Khi cùng làm việc thường ngày, ngay cả những chuyện nhỏ như sắp xếp các bước thế nào, ai là người quyết, cũng dễ tóe lửa; nhưng cũng vì chẳng ai vòng vo, va chạm xong một trận sảng khoái lại chẳng để bụng qua đêm.",
+      "phrase": "Sao Hỏa đối đầu"
+     },
+     "mercury_harmony": {
+      "detail": "Sao Thủy của hai người tạo góc trùng tụ hoặc hài hòa. Tốc độ xoay chuyển ý nghĩ và góc nắm trọng điểm của hai người rất hợp nhau, thường bên này vừa nói được nửa câu, bên kia đã hiểu ý. Dù là bàn việc chính hay tán gẫu trên trời dưới đất, công sức để hiểu nhau rất thấp, bắt được câu đùa của nhau, chỉ trò chuyện thôi cũng đã thấy sảng khoái.",
+      "phrase": "Sao Thủy đồng tần số"
+     },
+     "mercury_tension": {
+      "detail": "Sao Thủy của hai người tạo góc vuông góc hoặc đối đỉnh. Cách tổ chức suy nghĩ và cách nói của hai người không giống nhau lắm: một người có thể coi trọng chi tiết câu chữ và suy luận logic, người kia quen nói ý chính, nhảy theo trực giác; hoặc một người vừa nói vừa nghĩ, người kia nghĩ rõ rồi mới mở lời. Khi nói về cùng một việc, dễ thành ông nói gà bà nói vịt; dừng lại xác nhận thêm một câu “ý bạn là…”, sẽ tránh được không ít hiểu lầm.",
+      "phrase": "Sao Thủy cần phiên dịch"
+     },
+     "moon_mc_conjunction": {
+      "detail": "Mặt Trăng của một người trùng tụ ngay trên Thiên Đỉnh của người kia (sai số trong vòng {orb}°). Bên có Mặt Trăng rất tự nhiên để tâm đến sự bôn ba bên ngoài, danh tiếng và những theo đuổi lâu dài của đối phương, thấu hiểu hoàn cảnh xã hội của đối phương như chăm sóc người nhà; còn bên có Thiên Đỉnh, khi xông pha ra ngoài, cảm nhận được phía sau mình có một sự thấu hiểu và nâng đỡ không cần nói thành lời.",
+      "phrase": "Mặt Trăng trùng tụ Thiên Đỉnh"
+     },
+     "moon_moon_harmony": {
+      "detail": "Mặt Trăng của hai người tạo góc trùng tụ hoặc hài hòa. Mặt Trăng chủ về đời sống thường ngày khi đóng cửa và bản năng cảm xúc — mệt thì muốn nghỉ ngơi thế nào, buồn thì muốn được an ủi ra sao, nền tảng của hai người rất gần nhau. Nhiều cảm nhận tinh tế không cần tốn lời giải thích, đối phương tự nhiên hiểu; ngày thường ở cạnh nhau, dù mỗi người làm việc riêng cũng thấy thoải mái, nhẹ lòng.",
+      "phrase": "Hai Mặt Trăng hài hòa"
+     },
+     "moon_moon_tension": {
+      "detail": "Mặt Trăng của hai người tạo góc vuông góc hoặc đối đỉnh. Bản năng tiêu hóa cảm xúc của hai người không giống nhau lắm: khi gặp chuyện phiền lòng, có thể một người vội muốn nói ra cho nhẹ, người kia chỉ muốn yên lặng ở một mình; hoặc một người quen đưa lời khuyên, người kia chỉ muốn một câu nói thân tình. Rõ ràng là xuất phát từ sự quan tâm, nhưng lời an ủi đưa đi lại thường khiến đối phương không đón được, cần từ từ tìm hiểu cách mà mỗi người muốn được chăm sóc.",
+      "phrase": "Hai Mặt Trăng trái chiều"
+     },
+     "node_contact": {
+      "detail": "Mặt Trời, Mặt Trăng hoặc Sao Kim của một người trùng tụ trên Bắc Giao Điểm của người kia. Bắc Giao Điểm đại diện cho hướng đi cuộc đời mà một người khao khát trong lòng nhưng vẫn chưa đủ thuần thục; còn lối sống và phẩm chất mà bên có hành tinh tự nhiên mang theo, vừa khéo dựng lên cho đối phương một hình mẫu sống động. Mối quan hệ này thường như một đôi tay, đẩy người ta bước ra khỏi những thói quen cũ quen thuộc, lớn lên về phía nơi mình muốn đến hơn.",
+      "phrase": "Chạm Giao Điểm"
+     },
+     "overlay_7th": {
+      "detail": "Mặt Trời, Mặt Trăng hoặc Sao Kim của một người rơi vào nhà 7 của người kia. Nhà 7 liên quan đến hình dung trong lòng một người về “bạn đời, người cộng sự quan trọng” — khi hành tinh rơi vào đây, bên có nhà ấy rất dễ ngay từ cái nhìn đầu tiên đã xem đối phương là người có thể sánh vai, gắn bó sâu sắc một đối một, tự nhiên sẵn lòng đặt đối phương vào vị trí trung tâm trong cuộc sống của mình.",
+      "phrase": "Rơi vào nhà bạn đời"
+     },
+     "pluto_personal": {
+      "detail": "Sao Diêm Vương của một người tạo góc trùng tụ hoặc góc chiếu căng với Mặt Trời, Mặt Trăng hay Sao Kim của người kia. Lực hút này khó mà dừng lại ở bề mặt hời hợt; hai người như nhìn một cái đã thấu lớp phòng bị của nhau. Khi gắn kết sâu thì khắc cốt ghi tâm, nhưng cũng dễ nảy sinh ham muốn chiếm hữu, sự ganh đua ngầm, hay nỗi bất an sợ bị đối phương nắm thóp. Càng bày ra nói rõ những điều e ngại và giới hạn trong lòng, chiều sâu ấy càng không biến thành sự hao mòn bên trong.",
+      "phrase": "Chạm Sao Diêm Vương"
+     },
+     "saturn_moon": {
+      "detail": "Sao Thổ của một người tạo góc trùng tụ hoặc góc chiếu căng với Mặt Trăng của người kia. Trong mối quan hệ này có một tinh thần trách nhiệm nặng trĩu, hai bên đều không dễ coi nhau là người ngoài hay tùy tiện buông tay. Nhưng ở bên nhau lâu, bên Mặt Trăng khi yếu lòng dễ thấy đối phương quá lạnh lùng, khó tính, như bị quản thúc; còn bên Sao Thổ lại thường thấy mình phải lo lắng, gánh đỡ cho đối phương, bất giác khoác lên vai trò “người lớn”.",
+      "phrase": "Góc chiếu Mặt Trăng – Sao Thổ"
+     },
+     "saturn_sun_venus_soft": {
+      "detail": "Sao Thổ của một người tạo góc trùng tụ hoặc hài hòa với Mặt Trời hay Sao Kim của người kia. Ở đây Sao Thổ mang lại sự vững vàng và chữ tín khiến người ta yên tâm, chứ không phải cảm giác áp bức. Sự ăn ý nói được làm được giữa hai người rất mạnh, không dựa vào sự náo nhiệt nhất thời để duy trì; dù là cùng tích góp mua nhà, cùng làm việc khởi nghiệp, hay cùng nhau đi qua những năm tháng bình lặng hoặc vất vả, hai người đều có thể là điểm tựa đáng tin của nhau.",
+      "phrase": "Sao Thổ giữ vững"
+     },
+     "sun_mars_harmony": {
+      "detail": "Mặt Trời của một người tạo góc chiếu hài hòa với Sao Hỏa của người kia. Khi ở bên nhau, hai người hiếm khi ngồi không nghĩ suông — chủ kiến và sức sống của một người vừa khéo nối vào sự hăng hái nói là làm của người kia. Dù là cùng làm ăn, cùng đi chơi hay động viên nhau, có đối phương bên cạnh, người ta dễ quyết định và cất bước hơn.",
+      "phrase": "Mặt Trời – Sao Hỏa hài hòa"
+     },
+     "sun_moon_harmony": {
+      "detail": "Mặt Trời của một người tạo góc trùng tụ hoặc hài hòa với Mặt Trăng của người kia. Trong mối quan hệ, cốt cách và chủ kiến của một người vừa khéo mang lại cho người kia cảm giác an toàn vững vàng; còn sự săn sóc và bao dung của bên Mặt Trăng cũng khiến bên Mặt Trời thấy mình không cần gồng lên, thể hiện con người thật thế nào cũng sẽ được đón nhận. Đây là một sự “nâng đỡ lẫn nhau” rất tự nhiên.",
+      "phrase": "Mặt Trời và Mặt Trăng soi chiếu nhau"
+     },
+     "uranus_venus_moon": {
+      "detail": "Sao Thiên Vương của một người tạo góc trùng tụ hoặc góc chiếu căng với Sao Kim hay Mặt Trăng của người kia. Cách hai người ở bên nhau hiếm khi rơi vào lối mòn, luôn mang chút mới mẻ bất ngờ, có thể lay tỉnh nhau khỏi quán tính tẻ nhạt. Chỉ là nhiệt độ và khoảng cách đôi khi cũng thay đổi nhanh; một khi thấy mối quan hệ quá dính, quy tắc quá cứng, sẽ có người bản năng muốn rút ra để thở. Chừa đủ không gian riêng và tự do cho nhau, ngược lại có thể ở bên nhau lâu dài.",
+      "phrase": "Sao Thiên Vương chạm Sao Kim, Mặt Trăng"
+     },
+     "venus_mars_harmony": {
+      "detail": "Sao Kim của một người tạo góc trùng tụ hoặc hài hòa với Sao Hỏa của người kia. Đây là cấu hình hấp dẫn kinh điển nhất trong chiêm tinh: cách một người bộc lộ vẻ đẹp và thiện cảm, tự nhiên khơi dậy nhiệt tình và sự chủ động của người kia. Giữa hai người không mấy cần tốn sức dò xét; ánh mắt, câu đùa và sự gần gũi thể xác đều rất tự nhiên, ở bên nhau lâu vẫn dễ bị sức quyến rũ của đối phương làm rung động.",
+      "phrase": "Sao Kim – Sao Hỏa hút nhau"
+     },
+     "venus_mars_tension": {
+      "detail": "Sao Kim của một người tạo góc vuông góc hoặc đối đỉnh với Sao Hỏa của người kia. Sức hút vẫn mạnh mẽ, thậm chí khiến người ta khó rời mắt hơn cả góc chiếu hài hòa, chỉ là bên trong mang theo một sự giằng kéo: trong chuyện gần gũi thế nào, lúc nào thì lại gần, nhịp của hai người thường lệch nhau nửa nhịp. Có khi một người muốn sự dịu dàng săn sóc, người kia lại đến quá gấp, quá mạnh, dễ giằng co qua lại giữa khao khát gần gũi và muốn có không gian riêng.",
+      "phrase": "Sao Kim – Sao Hỏa căng thẳng"
+     }
+    }
+   },
+   "ziwei": {
+    "pair": {
+     "ji_into_ming": {
+      "detail": "Hóa Kỵ năm sinh của một người rơi vào cung Mệnh hoặc cung Phu Thê của người kia. Trong Tử Vi Đẩu Số, Hóa Kỵ không đơn thuần là trở ngại, mà còn đại diện cho sự chấp niệm sâu xa, nỗi vương vấn và những điều không buông được. Khi Hóa Kỵ năm sinh của một người rơi vào cung Mệnh hay Phu Thê của người kia, người này rất khó đối xử với người kia bằng tâm thế bình thường — trong lòng lúc nào cũng chứa chuyện của đối phương, dễ lo lắng, để ý từng chi tiết hay lo được lo mất. Sự để tâm cực sâu này khiến giữa hai người có một sợi dây gắn bó không dứt, nhưng cũng dễ vì quan tâm quá dày mà khiến người kia thấy nghẹt thở; cần tìm được chừng mực giữa nắm chặt và chừa khoảng trống.",
+      "phrase": "Hóa Kỵ nhập Mệnh, Phu Thê của đối phương"
+     },
+     "lu_into_ming": {
+      "detail": "Hóa Lộc năm sinh của một người rơi vào cung Mệnh hoặc cung Phu Thê của người kia. Trong Tử Vi Đẩu Số, Hóa Lộc đại diện cho tình duyên, sự thuận lợi và tấm lòng không mong đền đáp. Khi Hóa Lộc năm sinh của một người bay vào cung cốt lõi của người kia, người này thường tự đáy lòng muốn đối xử tốt với người kia, sẵn lòng bao dung, sẻ chia, dành sự ôn hòa và thiện ý cho đối phương; còn người kia cũng cảm nhận được một cách chân thật sự ưu ái và hơi ấm ấy, thấy mình được đối đãi bằng cả tấm lòng trong mối quan hệ này.",
+      "phrase": "Hóa Lộc nhập Mệnh, Phu Thê của đối phương"
+     },
+     "ming_in_fude": {
+      "detail": "Cung Mệnh của một người rơi vào cung Phúc Đức của người kia. Trong Tử Vi Đẩu Số, cung Phúc Đức cai quản trạng thái nội tâm, sở thích tinh thần và nền cảm xúc của một người. Khi cung Mệnh của một người rơi vào đây, nghĩa là chính sự hiện diện của người này đã có thể chạm đến tận sâu trong lòng người kia. Ở bên người này, người kia thường không cần gồng mình hay cố thể hiện, sự bồn chồn trong lòng dễ chậm lại; dù chỉ lặng lẽ ở cạnh nhau, tùy ý trò chuyện vài câu, cũng cảm thấy tinh thần được thả lỏng, được nâng đỡ một cách yên ổn.",
+      "phrase": "Cung Mệnh rơi vào cung Phúc Đức"
+     },
+     "ming_in_fumu": {
+      "detail": "Cung Mệnh của một người rơi vào cung Phụ Mẫu của người kia. Trong Tử Vi Đẩu Số, cung Phụ Mẫu ngoài đại diện cho bậc bề trên, còn tượng trưng cho sự che chở, dẫn dắt và những lời khuyên có trọng lượng. Khi cung Mệnh của một người rơi vào vị trí này, không liên quan đến tuổi tác thực tế của hai người, người này trong mắt người kia thường mang sẵn một khí chất điềm tĩnh, khiến người ta tin phục. Người này sẽ bất giác chăm lo, nhắc nhở đối phương; còn khi người kia gặp chuyện chưa quyết được, những lời nhắc nhở và góp ý của người này cũng thường dễ được nghe lọt tai hơn.",
+      "phrase": "Cung Mệnh rơi vào cung Phụ Mẫu"
+     },
+     "ming_in_fuqi": {
+      "detail": "Cung Mệnh của một người rơi vào cung Phu Thê của người kia. Cung Phu Thê chứa đựng hình dung tầng sâu của một người về mối quan hệ thân mật và người bạn đời lý tưởng; khi cung Mệnh của một người vừa khéo ngồi vào vị trí này, tính cách và khí chất vốn có của họ rất dễ khớp với hình dung về bạn đời trong lòng người kia. Thường chẳng cần cố ý dung hòa hay dò xét, người kia từ rất sớm đã dừng ánh mắt trên người này, nảy sinh một cảm giác quen thuộc và gần gũi khó nói thành lời, tự nhiên dành sẵn trong lòng một chỗ thân mật cho đối phương.",
+      "phrase": "Cung Mệnh rơi vào cung Phu Thê"
+     },
+     "ming_in_guanlu": {
+      "detail": "Cung Mệnh của một người rơi vào cung Quan Lộc của người kia. Trong Tử Vi Đẩu Số, cung Quan Lộc liên quan đến hướng đi sự nghiệp, phong cách làm việc và mục tiêu cuộc đời, lại cùng thuộc tam phương với cung Mệnh. Khi cung Mệnh của một người ngồi vào cung Quan Lộc của người kia, cách xử sự và năng lực của người này rất dễ khiến người kia nảy sinh sự trân trọng và tin tưởng. Dù là cộng tác làm việc thường ngày, hay trong cuộc sống cùng bàn kế hoạch tương lai, đẩy một việc cụ thể đi tới, người này đều có thể mang lại cho người kia cảm giác định hướng và sự giúp sức thiết thực, là một đồng minh hành động rất hợp nhịp.",
+      "phrase": "Cung Mệnh rơi vào cung Quan Lộc"
+     },
+     "ming_in_peers": {
+      "detail": "Cung Mệnh của một người rơi vào cung Huynh Đệ hoặc cung Nô Bộc (cung Giao Hữu) của người kia. Trong Tử Vi Đẩu Số, hai cung này nối thành một trục, đại diện cho những người ngang hàng, bạn tri kỷ và mối quan hệ đồng hành sánh vai. Khi cung Mệnh của một người rơi vào đây, dù ngoài đời hai người là bạn đời, người nhà hay cộng sự, người kia khi đối diện với người này đều tự nhiên nảy sinh một cảm giác bình đẳng như bạn bè. Hai người ở bên nhau bớt khách sáo và kiểu cách, nói chuyện thẳng thắn, trò chuyện nhẹ nhàng tự nhiên, rất dễ trở thành những người cùng đường chuyện gì cũng nói được với nhau.",
+      "phrase": "Cung Mệnh rơi vào Huynh Đệ, Nô Bộc"
+     },
+     "ming_in_resources": {
+      "detail": "Cung Mệnh của một người rơi vào cung Tài Bạch hoặc cung Điền Trạch của người kia. Trong Tử Vi Đẩu Số, cung Tài Bạch liên quan đến nguồn lực thực tế và chi dùng, còn cung Điền Trạch đại diện cho chỗ ở, nền tảng và sự ổn định của cuộc sống thường ngày. Khi cung Mệnh của một người rơi vào một trong hai cung này, người này sẽ rất dễ hòa vào nền tảng sinh hoạt thiết thực nhất của người kia. Mối quan hệ của hai người không chỉ dừng ở lời nói hay cảm xúc, mà đặc biệt ăn ý trong chuyện cơm áo gạo tiền, kế hoạch tài chính hay cùng nhau vun đắp một không gian yên ổn, khiến người ta thấy vững vàng, đáng tin cậy.",
+      "phrase": "Cung Mệnh rơi vào Tài Bạch, Điền Trạch"
+     },
+     "mutual_qianyi": {
+      "detail": "Cung Mệnh của hai người rơi đúng vào cung Thiên Di của nhau, trục Mệnh – Thiên Di là trong và ngoài của nhau. Trong Tử Vi Đẩu Số, cung Thiên Di đại diện cho phương xa, tầm mắt và khả năng bước ra khỏi vùng an toàn. Hai người như ô cửa sổ dẫn nhau đến một thế giới rộng lớn hơn — khoảng trời mà người này đã quá quen thuộc, lại chính là phong cảnh mới mẻ người kia chưa từng đặt chân tới. Đi cùng nhau rồi, hai người rất dễ dắt nhau tiếp xúc với môi trường mới, thử những điều trước đây chưa từng nghĩ tới, bất giác đẩy bán kính cuộc sống của mỗi người càng lúc càng rộng ra.",
+      "phrase": "Là cung Thiên Di của nhau"
+     }
+    }
+   }
+  }
+ },
+ "insights": {
+  "ontology": {
+   "rings": {
+    "attraction": {
+     "axisNeg": "Hút nhau vì tương đồng",
+     "axisPos": "Hút nhau vì khác biệt",
+     "describes": "Điều gì ở mỗi người khiến hai bạn tự nhiên muốn đến gần nhau.",
+     "name": "Sức hút"
+    },
+    "communication": {
+     "axisNeg": "Nói là hiểu ngay",
+     "axisPos": "Cần phiên dịch",
+     "describes": "Nói cho rõ suy nghĩ của mình và hiểu được ý nhau dễ đến mức nào.",
+     "name": "Giao tiếp"
+    },
+    "emotion": {
+     "axisNeg": "Tự mình giải tỏa",
+     "axisPos": "Nâng đỡ lẫn nhau",
+     "describes": "Hai bạn cảm nhận tâm trạng của nhau ra sao, và quan tâm nhau thế nào.",
+     "name": "Cảm xúc"
+    },
+    "growth": {
+     "axisNeg": "Giúp nhau vững vàng",
+     "axisPos": "Thúc đẩy lẫn nhau",
+     "describes": "Ở bên nhau lâu, hai bạn mang lại cho nhau những ảnh hưởng và đổi thay thế nào.",
+     "name": "Trưởng thành"
+    },
+    "rhythm": {
+     "axisNeg": "Đồng nhịp",
+     "axisPos": "Lệch nhịp",
+     "describes": "Nhịp bước khi quyết định, hành động, nghỉ ngơi của hai bạn có ăn khớp không.",
+     "name": "Nhịp điệu"
+    },
+    "values": {
+     "axisNeg": "Tương đồng",
+     "axisPos": "Bù trừ",
+     "describes": "Mỗi người để tâm đến điều gì, và hướng coi trọng của hai bạn có hợp nhau không.",
+     "name": "Giá trị sống"
+    }
+   },
+   "systems": {
+    "bazi": "Bát Tự",
+    "face": "Xem tướng mặt",
+    "hd": "Bản đồ năng lượng",
+    "iching": "Kinh Dịch",
+    "numerology": "Thần số học",
+    "palm": "Xem chỉ tay",
+    "psych": "Trắc nghiệm tâm lý",
+    "vedic": "Chiêm tinh Vệ Đà",
+    "western": "Chiêm tinh phương Tây",
+    "ziwei": "Tử Vi Đẩu Số"
+   }
+  },
+  "relation": {
+   "rings": {
+    "attraction": {
+     "friction": {
+      "body": "Hai bạn khó mà làm ngơ trước sự hiện diện của nhau, nhưng đến gần rồi lại thường thấy không dễ hòa hợp. Nhiều khi, chính cái nét bạn từng nể hay thích nhất ở người kia, đến lúc cùng làm việc, cùng sống những ngày thường, lại thành điều khiến bạn đau đầu nhất; hoặc cứ một người vừa muốn bước lại gần, người kia lại theo bản năng muốn lùi ra một chút. Giữa hai bạn không thiếu sức hút, chỉ là gần quá thì dễ va chạm, chừa ra một chút khoảng cách lại thấy dễ chịu hơn.",
+      "practice": "Nói về một nét ở người kia khiến bạn “vừa nể, đôi khi lại hơi chịu không nổi”, rồi cùng xem nó lộ rõ nhất vào những lúc nào.",
+      "quote": "Điều ở người kia cuốn hút bạn nhất, khi gần nhau lâu, thường cũng là điều thử thách sự kiên nhẫn của bạn nhất."
+     },
+     "quiet": {
+      "body": "Lúc mới quen, có lẽ cả hai đều không thấy người kia có gì quá đặc biệt, cũng chẳng cần bận tâm thể hiện mình trước mặt nhau. Tình cảm và niềm tin giữa hai bạn ấm lên chậm, nhờ những lần gặp gỡ thường ngày, những việc cụ thể cùng làm, rồi chẳng biết từ lúc nào đã thân. Mối quan hệ này tuy thiếu chút mới lạ, chút kích thích của buổi đầu, nhưng được cái chắc chắn, tự nhiên, càng ở lâu càng thấy thư thả.",
+      "practice": "Cùng nhau ở một lúc tại nơi hai bạn chưa bao giờ ghé — chẳng hạn dạo quanh một khu phố lạ — xem khi rời khỏi khung cảnh quen thuộc, mỗi người trông ra sao.",
+      "quote": "Hai bạn không phải kiểu vừa gặp đã tóe lửa, nhưng ở bên nhau thì bình dị và thoải mái."
+     },
+     "strong": {
+      "body": "Có thể vì hai bạn có những điểm giống nhau, cũng có thể vì người kia có đúng cái mặt mà bạn còn thiếu. Dù là gì, khi ở cạnh người này, sự chú ý của bạn cứ tự nhiên dồn về phía họ: tò mò họ nghĩ gì về một chuyện, rồi sẽ làm ra sao. Thứ thiện cảm và hứng thú chẳng cần cố vun đắp ấy khiến hai bạn dễ đến gần nhau; chỉ là thuở đầu, khi đến gần quá nhanh, cũng dễ nghĩ về nhau đẹp hơn thực tế, phải ở cạnh lâu mới dần thấy rõ con người thật.",
+      "practice": "Kể cho nhau nghe một khoảnh khắc cụ thể gần đây: lúc bạn nhìn người kia và nghĩ thầm “đúng là chỉ có bạn mới như vậy”.",
+      "quote": "Hai bạn dễ bị nhau cuốn hút, ở cạnh nhau lúc nào cũng muốn hiểu người kia thêm một chút."
+     }
+    },
+    "communication": {
+     "friction": {
+      "body": "Thói quen nói chuyện của hai bạn không giống nhau: có thể một người quen vừa nói vừa nghĩ, người kia lại coi câu buột miệng là thật; hoặc một người chỉ xét chuyện đúng hay sai, người kia lại để ý hơn đến giọng điệu và thái độ. Nhiều lần câu chuyện đổ vỡ không phải vì ý kiến khác nhau đến thế, mà vì vướng ở cách diễn đạt của một câu nào đó, rốt cuộc thành ra cãi nhau xem “câu vừa rồi của bạn rốt cuộc là ý gì”.",
+      "practice": "Khi câu chuyện bắt đầu hơi căng, hãy dừng lại một chút, nhắc lại điều mình vừa nghe bằng lời thật đơn giản để xác nhận với người kia: “Ý bạn là… đúng không?”",
+      "quote": "Rõ ràng đang nói về cùng một chuyện, vậy mà hai bạn hay hiểu lầm nhau chỉ vì cách nói và cách nghe khác nhau."
+     },
+     "quiet": {
+      "body": "Giữa hai bạn không có những chủ đề nói mãi không hết; kể cả ngồi cạnh nhau mỗi người một việc, nửa ngày không ai nói gì, cũng chẳng thấy ngượng. Sự yên lặng ấy rất dễ chịu, nhưng nếu không để ý, chuyện trò hằng ngày dễ chỉ còn lại việc chính và những chuyện lặt vặt. Người kia không thể tự đoán ra dạo này bạn đang nghĩ gì; có tâm sự hay điều gì để bụng, bạn phải tự mình mở lời.",
+      "practice": "Khi đi dạo hay ăn cơm, gác những việc lặt vặt sang một bên và hỏi người kia: “Dạo này có chuyện gì bạn hay nghĩ đến nhất?”",
+      "quote": "Ở cạnh nhau, hai bạn không cần cố tìm chuyện để nói, nhưng có điều gì trong lòng thì phải chủ động nói ra."
+     },
+     "strong": {
+      "body": "Trò chuyện với người kia là chuyện rất nhẹ nhàng: không cần rào đón trước sau, hai bạn vẫn nối tiếp được ý nhau; dù câu chuyện đột ngột rẽ sang hướng khác, người kia vẫn theo kịp mạch nghĩ của bạn. Nhưng cũng vì ngày thường quá hợp chuyện, gặp việc thật sự phức tạp hay hệ trọng, hai bạn dễ mặc định “không cần nói kỹ thế người kia cũng hiểu”, để rồi đến cuối mới nhận ra hai người nghĩ về hai điều khác hẳn nhau.",
+      "practice": "Lần tới khi cùng bàn một chuyện quan trọng, dù thấy đã thống nhất rồi, hãy hỏi thêm một câu: “Nếu làm theo cách này, cụ thể bạn định làm thế nào?”",
+      "quote": "Hai bạn nói chuyện rất ăn ý, nhiều khi mới nói nửa câu, người kia đã hiểu."
+     }
+    },
+    "emotion": {
+     "friction": {
+      "body": "Gặp chuyện phiền lòng, phản ứng bản năng của hai bạn thường khác nhau: có thể một người muốn tìm ai đó tâm sự ngay, người kia chỉ muốn ở một mình cho lòng lắng lại; hoặc một người lo phân tích vấn đề, góp ý cách giải quyết, trong khi người kia thật ra chỉ cần một câu thấu hiểu. Nhiều khi bạn thấy tủi thân không phải vì người kia không quan tâm, mà vì cả hai đều đang quan tâm nhau theo “cách mình cần”, nên chưa chạm đúng điều người kia cần.",
+      "practice": "Nhân lúc cả hai đang vui vẻ, nói trước với nhau: “Nếu có hôm mình không ổn, bạn làm thế nào thì giúp mình được nhiều nhất?”",
+      "quote": "Khi lòng không vui, cách hai bạn tự gỡ cảm xúc và cách quan tâm người khác không giống nhau."
+     },
+     "quiet": {
+      "body": "Có chuyện trong lòng, hai bạn thường quen tự mình gỡ trước, ít khi trút ngay cảm xúc xấu lên người kia. Điều đó khiến hai bạn ở bên nhau rất đỡ mệt, hiếm có những lúc giằng co qua lại, bào mòn lẫn nhau. Nhưng cũng vì cả hai đều quá độc lập, quá giữ ý, đôi khi khó tránh có phần khách sáo; niềm tin và sự thân thiết sâu hơn thường phải đợi đến khi cùng trải qua vài chuyện khó, đã thấy dáng vẻ yếu lòng của nhau, rồi mới dần dần hình thành.",
+      "practice": "Lần tới gặp một chuyện nhỏ khiến bạn hơi buồn bực hay phân vân, thử đừng đợi đến khi tự gỡ xong, hãy nói với người kia một câu trước.",
+      "quote": "Hai bạn quen tự mình giải tỏa cảm xúc, nên ở bên nhau nhẹ nhàng, không nặng gánh tâm lý."
+     },
+     "strong": {
+      "body": "Hai bạn rất nhạy với trạng thái của nhau: hôm nào ai mệt, ai không vui, thường chẳng cần mở lời, người kia nhìn một cái là biết. Sau một ngày bận rộn bên ngoài, trở về bên nhau thường khiến người ta yên lòng, thở phào nhẹ nhõm. Nhưng cũng vì quá dễ chịu ảnh hưởng của nhau, có lúc một người buồn, người kia cũng buồn lây. Giữ vững được cảm xúc của mình trước, bạn mới chăm lo cho người kia tốt hơn.",
+      "practice": "Nghĩ xem gần đây người kia đã khiến bạn thấy mình được quan tâm qua chi tiết nhỏ nào, rồi kể cụ thể chuyện nhỏ ấy cho họ nghe.",
+      "quote": "Hai bạn dễ nhận ra cảm xúc của nhau đổi khác, ở trước mặt nhau không cần phải gắng gượng."
+     }
+    },
+    "growth": {
+     "friction": {
+      "body": "Người kia thường liếc qua là thấy ngay vấn đề bạn quen né tránh, hoặc buộc bạn phải đối diện những chuyện ngày thường bạn chỉ muốn cho qua. Ở cạnh một người như vậy quả thật tiến bộ rất nhanh, nhưng cứ bị bắt lỗi, bị đẩy về phía trước mãi thì ai cũng chịu không nổi. Không phải lúc nào cũng cần đem ra để “sửa khuyết điểm”; thỉnh thoảng bỏ qua cho nhau, để người kia cứ là chính mình như hiện tại, mối quan hệ mới thả lỏng được.",
+      "practice": "Tuần này, nếu thấy người kia lại mắc một tật cũ, thử nhịn đừng nói thẳng ra, cũng đừng góp ý, cứ để họ thoải mái làm theo cách của mình một lần.",
+      "quote": "Hai bạn dễ nhìn ra tật xấu của nhau, có thể đẩy nhau tiến bộ, nhưng đôi lúc cũng khiến người ta mệt."
+     },
+     "quiet": {
+      "body": "Giữa hai bạn hiếm có cái áp lực soi mói lẫn nhau, nhất định phải giục người kia tiến bộ. Chuyện bên ngoài đã đủ khiến người ta bận lòng, trở về bên nhau, hai bạn dễ đón nhận con người vốn có của nhau hơn, dành cho người kia một chốn có thể yên tâm thở ra. Còn chuyện mỗi người muốn học gì, muốn đi về đâu, cứ tự mình cố gắng là được, không nhất thiết phải kéo người kia theo.",
+      "practice": "Kể cho nhau nghe một mục tiêu nhỏ của riêng mình mà dạo này bạn đang loay hoay hay muốn thử, không cần người kia góp ý, chỉ để nhau biết “mình đang làm chuyện này”.",
+      "quote": "Hai bạn không lúc nào cũng nghĩ cách thay đổi người kia, ở bên nhau thế nào thoải mái thì cứ thế mà làm."
+     },
+     "strong": {
+      "body": "Điểm yếu của người này thường lại đúng là việc người kia làm tiện tay. Hiếm có ở chỗ, sự bù trừ ấy giúp được nhau thật sự, mà không khiến người yếu hơn thấy mình thấp kém. Có điều, ngoài thói quen để người kia đỡ giúp phần mình chưa giỏi, ngày thường cũng nên để ý xem người kia xử lý vấn đề ra sao, dần dần học lấy cái hay của họ cho mình.",
+      "practice": "Nghĩ xem có việc gì trước khi quen người kia bạn còn rất vụng, nhưng giờ nhờ ảnh hưởng của họ đã làm trơn tru hơn nhiều, rồi kể cho họ nghe.",
+      "quote": "Năng lực của hai bạn bù trừ cho nhau rất tốt, ở cạnh nhau lâu, ai cũng học thêm được bản lĩnh mới từ người kia."
+     }
+    },
+    "rhythm": {
+     "friction": {
+      "body": "Gặp chuyện, người nhanh luôn muốn chốt ngay, làm liền, dễ thấy người kia lề mề, không dứt khoát; người chậm thì cần thời gian nghĩ cho rõ, lúc nào cũng thấy mình bị giục đi, trong lòng không yên. Thật ra nhanh có cái gọn gàng của nhanh, chậm có cái chắc chắn của chậm, cứ ép phải cùng một nhịp thì chỉ khiến cả hai sốt ruột. Chi bằng chừa cho nhau một khoảng lệch thời gian: người nhanh đi trước lo liệu, dò đường, người chậm xem kỹ và kiểm lại.",
+      "practice": "Gặp việc cần cùng quyết, để người nóng vội nói ý mình ra trước, rồi chừa cho người chậm một mốc thời gian rõ ràng (chẳng hạn “tối mai mình chốt”), và ở giữa thì đừng giục.",
+      "quote": "Hai bạn quyết định và hành động với tốc độ khác nhau: một người tính nóng vội, một người nhịp chậm rãi."
+     },
+     "quiet": {
+      "body": "Nhịp làm việc của hai bạn không hoàn toàn đồng điệu, nhưng cũng không khiến nhau khó chịu. Phần lớn thời gian, hai bạn có thể rất tự nhiên mỗi người làm việc của mình, không cần chuyện gì cũng phải buộc vào nhau làm cùng lúc. Chỉ cần hẹn trước cho rõ những mốc thật sự cần phối hợp, thời gian còn lại ai theo nhịp nấy cho thoải mái, cả hai lại thấy tự tại.",
+      "practice": "Tuần này tìm một khoảng rảnh, thử ngồi chung một phòng mà mỗi người làm việc riêng — người đọc sách, người lướt điện thoại hay lo nốt việc đang dở — tận hưởng cái cảm giác có nhau mà không làm phiền nhau.",
+      "quote": "Hai bạn mỗi người một việc, giờ giấc và nhịp độ khác nhau, nhưng ở bên nhau không làm phiền nhau."
+     },
+     "strong": {
+      "body": "Từ chuyện ra ngoài làm việc, chốt một quyết định, cho đến lúc cuộc vui kéo tới mấy giờ thì muốn về nghỉ, tốc độ của hai bạn thường rất giống nhau. Khi sống chung hay làm việc cùng, hiếm khi có ai thấy mình bị giục, cũng hiếm khi có ai phải ngồi chờ. Chỉ là khi nhịp của hai người quá giống nhau, cũng dễ cùng nhau bận quá đà mà quên nghỉ, hoặc ăn ý cùng đẩy một việc phiền phức lùi mãi về sau; thỉnh thoảng cần có một người chủ động nhắc.",
+      "practice": "Thử để ý xem dạo này có phải cả hai đang quay cuồng không nghỉ, hay đang cùng nhau gác lại một việc chưa làm; hẹn nhau nghỉ hẳn nửa ngày, hoặc cùng ngồi nửa tiếng giải quyết cho xong việc đang treo ấy.",
+      "quote": "Dù là làm việc hay nghỉ ngơi, nhịp sống thường ngày của hai bạn đều rất ăn khớp."
+     }
+    },
+    "values": {
+     "friction": {
+      "body": "Trước cùng một chuyện, có thể một người coi trọng sự yên ổn, chắc chắn hơn, người kia lại muốn tự do và những thử nghiệm mới; hoặc một người chỉ nhìn hiệu quả và kết quả, người kia để tâm nhiều hơn đến cảm nhận trong quá trình. Nhiều khi bề ngoài hai bạn tranh cãi một chuyện nhỏ nên làm thế nào, nhưng bên dưới là thước đo mỗi người coi trọng khác nhau. Không nhất thiết phải thuyết phục người kia theo thước đo của bạn; hiểu trước người kia sợ làm hỏng hay sợ mất điều gì nhất, mọi chuyện mới dễ bàn.",
+      "practice": "Chọn một chuyện hai bạn nhìn khác nhau, khoan bàn cách giải quyết, chỉ để mỗi người nói: “Nếu hoàn toàn làm theo ý bạn, điều mình lo nhất là…”",
+      "quote": "Khi phải lựa chọn, những điều hai bạn coi trọng và thứ tự ưu tiên thường không giống nhau."
+     },
+     "quiet": {
+      "body": "Những điều hai bạn coi trọng không hoàn toàn giống nhau, nhưng cũng không đối chọi gay gắt. Điều này lại khiến hai bạn ở bên nhau thật thoải mái — bạn có những điều bạn chăm chút, người kia có những điều họ theo đuổi, chẳng ai phải ép ai. Gặp chuyện cần hai người cùng quyết, không cần nâng lên thành nguyên tắc lớn, cứ việc nào ra việc nấy, gặp chuyện cụ thể nào thì bàn chuyện ấy là đủ.",
+      "practice": "Lần tới khi cùng quyết định một việc (như đi đâu, sắp xếp ra sao), mỗi người nói trước một yêu cầu mình nhất định không bỏ, phần còn lại cứ thuận theo mà bàn.",
+      "quote": "Dù mỗi người theo đuổi một điều khác nhau, hai bạn vẫn không can thiệp vào nhau mà sống hòa thuận."
+     },
+     "strong": {
+      "body": "Nhỏ thì chuyện tiêu tiền, sắp xếp thời gian hằng ngày, lớn thì nguyên tắc làm người, làm việc, những điều hai bạn coi trọng rất gần nhau; có chuyện xảy ra, chẳng cần nói nhiều đã đứng về cùng một phía. Sự đồng điệu ấy khiến hai bạn cùng ra quyết định rất dứt khoát, hiếm khi tranh cãi vì khác biệt quan niệm sống. Chỉ là khi hai người nghĩ quá giống nhau, cũng dễ cùng bỏ sót một góc khuất; gặp chuyện lớn, đừng ngại nghe thêm ý kiến của người ngoài.",
+      "practice": "Nói về một quyết định gần đây hai bạn cùng đưa ra: nếu được làm lại, hai bạn có còn chọn như vậy không? Có điều gì lúc ấy chưa tính đến không?",
+      "quote": "Chuyện gì đáng để nghiêm túc, chuyện gì có thể cho qua, hai bạn nhìn rất giống nhau."
+     }
+    }
+   },
+   "scripts": {
+    "closeness_vs_space": {
+     "practice": "Người cần khoảng riêng, trước khi lùi ra hãy trao trước một lời trấn an (“không phải tại bạn đâu, mấy giờ mình quay lại”); người muốn lại gần, khi thấy bất an hãy hỏi thẳng một câu xác nhận, không cần vòng vo dò xét.",
+     "scene": "Khi mệt hay có áp lực, cách hai bạn nạp lại năng lượng ngược hẳn nhau: một người muốn sát lại gần, xác nhận hai người vẫn ổn mới yên lòng; người kia thì như cạn pin, phải thu mình vào vỏ một lúc. Kết quả là một người càng đuổi càng hoảng, một người càng lùi càng xa.",
+     "sides": {
+      "closer": {
+       "inner": "Bạn đột nhiên lạnh đi, không nói gì, trong lòng mình bắt đầu đoán già đoán non có phải giữa chúng mình có chuyện gì không. Mình sán lại không phải để làm phiền bạn, chỉ muốn chắc rằng chúng mình vẫn ổn.",
+       "say": "“Thấy hôm nay bạn ít nói, lòng mình hơi chênh vênh. Bạn chỉ cần nói với mình một câu ‘chúng mình vẫn ổn’, là mình yên tâm để bạn ở một mình.”"
+      },
+      "spacer": {
+       "inner": "Chỉ là mình mệt rã rời, đầu quá tải rồi, thật sự không nhắm vào bạn. Nhưng bạn càng đuổi sát, mình càng thấy ngột ngạt, đến chút sức cuối cùng cũng phải đem ra để đối phó.",
+       "say": "“Chúng mình vẫn ổn mà, bạn đừng nghĩ nhiều. Chỉ là hôm nay mình cạn pin rồi, để mình ngồi một mình một tiếng cho đầu óc trống trơn, hồi lại rồi mình tìm bạn.”"
+      }
+     },
+     "title": "Một người muốn lại gần, một người cần thở"
+    },
+    "control_vs_yield": {
+     "practice": "Cấm dùng câu “tùy” và “sao cũng được” trong một tuần: người quen cầm trịch nhịn đừng đưa phương án ra trước, đợi người kia chọn món, chọn chỗ trước; người quen nhường nhịn, dù chỉ hơi nghiêng về một phía thôi, cũng tập nói nó ra thành lời.",
+     "scene": "Ngày qua ngày, hai bạn đã trượt vào một nếp cố định lúc nào không hay: một người quen lo liệu và quyết, người kia quen nói “tùy, nghe bạn”. Bề ngoài sóng yên biển lặng, nhưng thật ra mỗi lần thuận theo lại tích thêm một chút ấm ức không nói ra, cho đến một ngày, chỉ vì một chuyện nhỏ, mọi chuyện cũ bỗng bị lôi hết ra.",
+     "sides": {
+      "leads": {
+       "inner": "Thấy bạn không phản đối, mình tiện tay quyết luôn, cũng chỉ mong mọi việc được êm xuôi, thật sự không nhận ra rằng bạn vẫn luôn chịu thiệt để chiều theo mình.",
+       "say": "“Mình nhận ra chuyện này mình cứ quen quyết thay bạn. Lần này mình không nói trước, bạn đừng bận tâm mình nghĩ gì, hãy cho mình biết bạn thật sự muốn gì.”"
+      },
+      "yields": {
+       "inner": "Lần nào bạn cũng chắc chắn như thế, mình thấy làm trái ý bạn tốn sức quá, thôi thì chiều theo cho xong. Nhưng nhường mãi rồi, lại thấy trong mối quan hệ này hình như không có chỗ cho mình.",
+       "say": "“Bình thường mình nói ‘sao cũng được’ là cho đỡ phiền, nhưng chuyện này mình thật ra có ý riêng. Lần này làm theo ý mình một lần, được không?”"
+      }
+     },
+     "title": "Người cầm trịch, và người nói “sao cũng được”"
+    },
+    "decision_pace": {
+     "practice": "Gặp chuyện lớn, hãy tách “đang nghiêng về hướng nào” ra khỏi “quyết định cuối cùng”: người muốn nhanh bày ý mình ra trước, người cần thời gian hẹn rõ khi nào sẽ trả lời, và trong khoảng thời gian ấy, không ai hỏi dồn.",
+     "scene": "Có một chuyện cần quyết. Một người trong hai bạn gần như biết ngay mình muốn gì, chỉ mong chốt cho xong; người kia lại thấy lúc này chưa nói chắc được, phải để đó, qua một đêm mới yên tâm. Thế là người muốn nhanh bực bội vì chuyện cứ treo lơ lửng, còn người muốn chậm thấy mình bị dồn từng bước.",
+     "sides": {
+      "fast": {
+       "inner": "Phản ứng đầu tiên của mình đã rất rõ rồi. Chuyện cứ treo lơ lửng mới là thứ làm mình mệt nhất, mà còn chần chừ nữa thì cả cái hứng lẫn cơ hội tốt đều trôi mất.",
+       "say": "“Mình nghĩ xong rồi, mình nghiêng về cách này. Mình không giục đâu, khi nào bạn nghĩ kỹ thì báo mình một tiếng là được.”"
+      },
+      "slow": {
+       "inner": "Mình đâu có cố tình dây dưa. Lúc này đầu óc còn rối, nếu bắt mình phải trả lời ngay, mình chỉ có thể gật đại cho xong rồi sau lại hối, hoặc theo bản năng mà nói “không” trước đã.",
+       "say": "“Chuyện này giờ mình chưa chắc được. Để mình ngủ một đêm xem cảm giác thế nào, trước trưa mai mình sẽ trả lời bạn rõ ràng.”"
+      }
+     },
+     "title": "Chốt ngay, hay để thêm một chút"
+    },
+    "direct_clash": {
+     "practice": "Nhân lúc không khí đang vui, hẹn nhau một “ám hiệu phanh gấp” hơi buồn cười một chút. Đang cãi mà chỉ cần một người nói ra từ đó, cả hai im lặng vô điều kiện năm phút, rời khỏi chỗ đang đứng, đợi lửa giận nguội rồi mới bàn đúng chuyện ban đầu thôi.",
+     "scene": "Khởi đầu thường chỉ là một chuyện cỏn con. Hai bạn đều phản ứng nhanh, chẳng ai quen nhịn, một người giọng hơi gắt một chút, người kia theo bản năng đáp trả ngay. Lời qua tiếng lại, chỉ dăm ba câu là lửa giận đã bốc lên, đến cuối chẳng còn biết đang cãi nhau vì chuyện gì.",
+     "sides": {
+      "either": {
+       "inner": "Mình vốn không định cãi, chỉ nóng lòng muốn nói cho rõ lý lẽ. Nhưng cái giọng của bạn nghe như đang đè đầu mình, thế là mình không nuốt trôi được nữa.",
+       "say": "“Dừng lại đã, giờ mình đang giận dỗi nhau rồi. Rót cốc nước, nghỉ năm phút, lát nữa mình nói chuyện đàng hoàng.”"
+      }
+     },
+     "title": "Lời qua tiếng lại, cứng đối cứng"
+    },
+    "processing_style": {
+     "practice": "Dán trước cho nhau một “nhãn miễn trách”: người hay nói ra, trước khi mở lời hãy báo trước “mình chỉ đang nháp thôi, đừng coi là thật, cũng không cần đáp ngay”; người cần lặng đi, khi muốn yên tĩnh hãy nói rõ bao giờ sẽ quay lại, đừng im lặng mà bỏ đi.",
+     "scene": "Gặp chuyện phiền lòng hay tình huống bất ngờ, một người trong hai bạn phải đổ hết mớ suy nghĩ lộn xộn trong lòng ra, vừa nói mới vừa gỡ được; người kia lại phải đóng cửa lại trước, tự lặng lẽ nghĩ qua một lượt trong đầu. Thế là người muốn nói thấy như đang nói chuyện với bức tường, còn người muốn lặng thấy bên tai mình như bị dội bom.",
+     "sides": {
+      "inward": {
+       "inner": "Đầu mình lúc này vẫn còn là một mớ bòng bong, bạn cứ đuổi theo nói mãi, mình không sao nghĩ được; giờ mà ép mình mở miệng, những gì nói ra chắc chắn không phải điều thật lòng.",
+       "say": "“Mình không phải không muốn để ý đến bạn, chỉ là đầu mình chưa xoay kịp. Cho mình ở một mình nửa tiếng, nghĩ thông rồi mình tìm bạn nói chuyện ngay.”"
+      },
+      "outward": {
+       "inner": "Không nói ra thì chuyện trong lòng cứ thắt nút mãi. Những gì mình đang nói chỉ là bản nháp, chưa phải kết luận, nhưng bạn im lặng làm mình thấy như bị đóng cửa ở ngoài.",
+       "say": "“Giờ đầu mình rối lắm, chỉ muốn nói thành tiếng cho thông. Bạn không cần giải quyết giúp, cũng không cần đáp lại ngay, nghe mình nói mười phút là được.”"
+      }
+     },
+     "title": "Lặng đi một chút, hay nói ra trước"
+    },
+    "same_element_rivalry": {
+     "practice": "Đã cả hai cùng giỏi cầm lái thì đừng cùng nắm một tay lái: hoặc chia rõ địa phận theo từng mảng, mảng của ai người đó quyết; hoặc thay phiên nhau làm chủ, hôm nay ai không cầm trịch thì cứ việc tận hưởng, tuyệt đối không chỉ tay năm ngón.",
+     "scene": "Hai bạn va chạm không phải vì khác nhau, mà chính vì quá giống nhau — cùng có chủ kiến, cùng có tiêu chuẩn ở đúng một chỗ, như hai bếp trưởng đứng chung một gian bếp. Cũng vì quá hiểu tính nhau, nên ai cũng nghĩ “bạn đã hiểu mình như thế, sao không thể nhường mình một bước trước?”.",
+     "sides": {
+      "either": {
+       "inner": "Chuyện này mình nắm quá rõ rồi, bắt mình làm theo cách của bạn thì cả người mình khó chịu; mà bạn rõ ràng cũng cùng một kiểu người với mình, sao không thể thông cảm cho mình một lần?",
+       "say": "“Chuyện này hai đứa mình đều có chủ kiến quá, thôi đừng giành tay lái nữa. Lần này làm hết theo ý bạn, mình không xen vào; lần sau đổi lại để mình cầm trịch.”"
+      }
+     },
+     "title": "Quá giống nhau, chẳng ai chịu lùi trước"
+    },
+    "structure_vs_flow": {
+     "practice": "Dùng cách “khung xương + khoảng trống”: mỗi lần chỉ chốt hai, ba mốc cứng không thể đổi (như vé tàu xe, hạn chót), đồng thời cố ý khoanh ra trong lịch một khoảng “hoàn toàn không sắp xếp gì”, không ai được nhét việc vào đó.",
+     "scene": "Dù là cuối tuần làm gì, đi du lịch hay việc đang trong tay, một người trong hai bạn phải chốt xong lịch trình và chỗ nghỉ trước thì mới yên tâm; người kia hễ thấy kế hoạch kín mít là thấy như đang đi làm, lúc nào cũng muốn để đến hôm đó xem hứng rồi tính. Một người thấy người kia không đáng tin cậy, một người thấy người kia quá căng thẳng.",
+     "sides": {
+      "improviser": {
+       "inner": "Đến cả mấy ngày sau mấy giờ làm gì cũng phải ấn định từ bây giờ, chỉ nhìn thôi mình đã thấy mệt, bao nhiêu háo hức cũng thành ra chạy sô cho xong nhiệm vụ.",
+       "say": "“Hướng chính và những điều không thể lùi thì mình chốt ngay bây giờ, nhưng chừa cho mình nửa ngày trống ở giữa, đến lúc đó tùy hứng mà đi, được không?”"
+      },
+      "planner": {
+       "inner": "Mình không phải thích quản chuyện, mà là việc còn lơ lửng chưa đâu vào đâu thì sợi dây trong đầu mình cứ căng mãi. Chốt sớm một chút, mình mới thật sự thả lỏng mà vui được.",
+       "say": "“Mình chốt cứng hai việc quan trọng nhất trước cho mình yên tâm, thời gian còn lại nghe bạn hết, đi đến đâu hay đến đó.”"
+      }
+     },
+     "title": "Chốt trước, hay tùy tình hình"
+    },
+    "who_speaks_first": {
+     "practice": "Người hay lên tiếng trước hãy biến câu “bạn thấy sao?” thành động tác cố định trước khi bắt tay vào làm; người quen chờ được mời cũng không cần ngồi đợi suông, có thể gõ cửa trước bằng một câu: “Bạn có muốn nghe ý mình không?”",
+     "scene": "Rõ ràng là việc hai người cùng đối mặt, vậy mà một người đã nhìn ra mấu chốt từ lâu, lại quen chờ được hỏi mới lên tiếng; người kia thì hoặc đã tự mình lao lên phía trước, hoặc nghĩ rằng “có ý kiến thì đương nhiên bạn sẽ nói thẳng”. Rốt cuộc một người thấy mình không được coi trọng, một người thấy sao tự dưng người kia lại đứng ngoài cuộc.",
+     "sides": {
+      "initiates": {
+       "inner": "Mình có gì là nói thẳng luôn, thấy bạn im lặng, mình còn tưởng bạn không có ý kiến gì, hoặc mặc định để mình lo liệu.",
+       "say": "“Mình mải nghĩ một mình về phía trước rồi — chuyện này chắc bạn nhìn chuẩn hơn mình, bạn thấy thế nào?”"
+      },
+      "waits": {
+       "inner": "Thật ra mình thấy rất rõ, nhưng kinh nghiệm cho mình biết: lúc người kia chưa sẵn sàng nghe mà cứ nói, thì nghe chẳng khác gì đang bắt lỗi, nói cũng bằng thừa.",
+       "say": "“Chuyện này mình thấy ra được vài điều rồi, giờ bạn có muốn nghe thử không?”"
+      }
+     },
+     "title": "Người chờ được hỏi, người quên hỏi"
+    }
+   }
+  }
+ },
+ "charts": {
+  "ui": {
+   "view": {
+    "label": "Hiển thị",
+    "graphic": "Biểu đồ",
+    "table": "Bảng"
+   },
+   "pro": "Chuyên sâu",
+   "proHint": "Chế độ chuyên sâu: hiển thị thêm chi tiết lá số và ghi chú tính toán",
+   "replay": "Phát lại nét vẽ",
+   "sections": {
+    "label": "Các mục",
+    "data": "Dữ liệu",
+    "reading": "Luận giải",
+    "pro": "Chuyên sâu"
+   },
+   "now": "Hiện tại",
+   "nowShort": "HIỆN TẠI",
+   "degradedTitle": "Một phần lá số cần có giờ sinh",
+   "degradedNote": "Những phần thay đổi theo giờ sinh được vẽ bằng nét đứt. Khi bạn bổ sung giờ sinh, lá số sẽ tự động lập lại.",
+   "timeSensitive": "Phụ thuộc vào giờ sinh",
+   "sensitiveValues": "Trong khoảng giờ sinh của bạn, mục này có thể là: {values}",
+   "stableWithin": "Không đổi trong vòng {minutes} phút trước hoặc sau giờ sinh",
+   "unavailable": "Chưa khả dụng",
+   "notAvailableNoTime": "Cần có giờ sinh",
+   "readingSoon": "Phần luận giải tổng hợp liên hệ thống sẽ sớm hiển thị tại đây; trước mắt, hãy xem những điểm cốt lõi của riêng lá số này.",
+   "engineFacts": "Mọi số liệu dưới đây đều được tính toán chính xác theo lịch thiên văn và quy tắc lịch pháp",
+   "computedBy": "Bộ tính {engine} · lịch thiên văn {ephemeris} · dữ liệu múi giờ {tzdb}",
+   "close": "Đóng",
+   "yes": "Có",
+   "no": "Không",
+   "none": "Không có",
+   "dash": "—",
+   "degreesMinutes": "{d}°{m}′",
+   "years": "{from}–{to}",
+   "ageRange": "{from}–{to} tuổi",
+   "listSep": ", ",
+   "labelSep": ": ",
+   "clauseSep": "; ",
+   "comma": ", ",
+   "sentenceSep": ". ",
+   "quote": "“{text}”",
+   "paren": " ({text})",
+   "pair": "{a} & {b}",
+   "addPrefix": "＋ ",
+   "plusPrefix": "+ ",
+   "ganzhi": "{stem} {branch}",
+   "sectionNumber": "{n}.",
+   "sectionNumeral": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "10",
+    "11": "11",
+    "12": "12",
+    "13": "13",
+    "14": "14",
+    "15": "15",
+    "16": "16",
+    "17": "17",
+    "18": "18",
+    "19": "19"
+   },
+   "sectionHeading": "[{title}]",
+   "sectionHeadingPlain": "{title}",
+   "patternModality": "{modality}",
+   "lunarMonth": {
+    "1": "Giêng",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "9",
+    "10": "10",
+    "11": "11",
+    "12": "Chạp"
+   },
+   "lunarDay": {
+    "1": "mùng 1",
+    "2": "mùng 2",
+    "3": "mùng 3",
+    "4": "mùng 4",
+    "5": "mùng 5",
+    "6": "mùng 6",
+    "7": "mùng 7",
+    "8": "mùng 8",
+    "9": "mùng 9",
+    "10": "mùng 10",
+    "11": "ngày 11",
+    "12": "ngày 12",
+    "13": "ngày 13",
+    "14": "ngày 14",
+    "15": "ngày 15",
+    "16": "ngày 16",
+    "17": "ngày 17",
+    "18": "ngày 18",
+    "19": "ngày 19",
+    "20": "ngày 20",
+    "21": "ngày 21",
+    "22": "ngày 22",
+    "23": "ngày 23",
+    "24": "ngày 24",
+    "25": "ngày 25",
+    "26": "ngày 26",
+    "27": "ngày 27",
+    "28": "ngày 28",
+    "29": "ngày 29",
+    "30": "ngày 30"
+   },
+   "lunarMonthDay": "{day} tháng {month}",
+   "lunarMonthDayLeap": "{day} tháng {month} nhuận",
+   "lunarShort": "{day} tháng {month}{leap, select, yes { nhuận} other {}}",
+   "civilDate": "d MMM, yyyy",
+   "civilDateLong": "d MMMM, yyyy",
+   "eyebrowDate": "EEE · dd MMM, yyyy"
+  },
+  "systemStatus": {
+   "sex_required": "Hệ thống này lập lá số khác nhau giữa nam và nữ — vui lòng bổ sung giới tính trong thông tin sinh của bạn.",
+   "year_only": "Chỉ có năm sinh thì chưa đủ để lập lá số này — vui lòng bổ sung ngày và tháng sinh.",
+   "no_birth_time": "Cần bổ sung giờ sinh để lập lá số này.",
+   "not_supported": "Hiện chưa hỗ trợ kết hợp trường phái và tùy chọn lập lá số này.",
+   "error": "Đã xảy ra sự cố khi lập lá số này ({code})."
+  },
+  "degrade": {
+   "noBirthTime": "Thiếu giờ sinh",
+   "threePillarsOnly": "Thiếu Trụ giờ — tạm tính theo ba trụ năm, tháng, ngày",
+   "luckStartApproximate": "Thời điểm khởi đại vận chỉ mang tính ước lượng",
+   "sexUnknown": "Chưa có giới tính — đại vận được hiển thị theo cả hai chiều thuận và nghịch",
+   "noBirthHour": "Thiếu giờ sinh",
+   "yearOnly": "Chỉ có năm sinh",
+   "birthTimeUnknown": "Thiếu giờ sinh",
+   "birthDateUnknown": "Thiếu ngày sinh",
+   "moonNakshatraVaries": "Mặt Trăng chuyển sang nakshatra mới trong ngày này, vị trí cụ thể tùy thuộc vào giờ sinh",
+   "moonSignVaries": "Mặt Trăng chuyển sang cung hoàng đạo mới trong ngày này, vị trí cụ thể tùy thuộc vào giờ sinh",
+   "highLatitudeAscendant": "Nơi sinh ở vĩ độ cao nên Điểm Mọc thay đổi rất nhanh theo thời gian",
+   "highLatitudeHouseFallback": "Hệ thống chia nhà đã chọn không thể áp dụng ở vĩ độ cao này; đã chuyển sang hệ thống Porphyry",
+   "chironOutOfRange": "Chiron nằm ngoài phạm vi lịch thiên văn",
+   "noTime": "Thiếu giờ sinh",
+   "noName": "Chưa nhập họ tên — tạm bỏ qua các chỉ số theo tên",
+   "noLetters": "Không thể chuyển tên này sang chữ cái Latinh để tính chỉ số thần số học",
+   "readingNeeded": "Không thể tính các con số từ tên nếu chỉ có chữ Hán mà chưa rõ cách đọc. Hãy bổ sung cách đọc bằng kana hoặc Hangul trong Hồ sơ để hiển thị."
+  },
+  "stem": {
+   "jia": "Giáp",
+   "yi": "Ất",
+   "bing": "Bính",
+   "ding": "Đinh",
+   "wu": "Mậu",
+   "ji": "Kỷ",
+   "geng": "Canh",
+   "xin": "Tân",
+   "ren": "Nhâm",
+   "gui": "Quý"
+  },
+  "branch": {
+   "zi": "Tý",
+   "chou": "Sửu",
+   "yin": "Dần",
+   "mao": "Mão",
+   "chen": "Thìn",
+   "si": "Tỵ",
+   "wu": "Ngọ",
+   "wei": "Mùi",
+   "shen": "Thân",
+   "you": "Dậu",
+   "xu": "Tuất",
+   "hai": "Hợi"
+  },
+  "animal": {
+   "zi": "Chuột",
+   "chou": "Trâu",
+   "yin": "Hổ",
+   "mao": "Mèo",
+   "chen": "Rồng",
+   "si": "Rắn",
+   "wu": "Ngựa",
+   "wei": "Dê",
+   "shen": "Khỉ",
+   "you": "Gà",
+   "xu": "Chó",
+   "hai": "Lợn"
+  },
+  "fivePhase": {
+   "wood": "Mộc",
+   "fire": "Hỏa",
+   "earth": "Thổ",
+   "metal": "Kim",
+   "water": "Thủy"
+  },
+  "yinYang": {
+   "yin": "Âm",
+   "yang": "Dương"
+  },
+  "sex": {
+   "female": "nữ",
+   "male": "nam"
+  },
+  "pillar": {
+   "year": "Trụ năm",
+   "month": "Trụ tháng",
+   "day": "Trụ ngày",
+   "hour": "Trụ giờ"
+  },
+  "tenGod": {
+   "biJian": "Tỷ Kiên",
+   "jieCai": "Kiếp Tài",
+   "shiShen": "Thực Thần",
+   "shangGuan": "Thương Quan",
+   "pianCai": "Thiên Tài",
+   "zhengCai": "Chính Tài",
+   "qiSha": "Thất Sát",
+   "zhengGuan": "Chính Quan",
+   "pianYin": "Thiên Ấn",
+   "zhengYin": "Chính Ấn"
+  },
+  "tenGodGroup": {
+   "companion": "Tỷ Kiếp",
+   "output": "Thực Thương",
+   "wealth": "Tài Tinh",
+   "power": "Quan Sát",
+   "resource": "Ấn Tinh"
+  },
+  "lifeStage": {
+   "changSheng": "Trường Sinh",
+   "muYu": "Mộc Dục",
+   "guanDai": "Quan Đới",
+   "linGuan": "Lâm Quan",
+   "diWang": "Đế Vượng",
+   "shuai": "Suy",
+   "bing": "Bệnh",
+   "si": "Tử",
+   "mu": "Mộ",
+   "jue": "Tuyệt",
+   "tai": "Thai",
+   "yang": "Dưỡng"
+  },
+  "naYin": {
+   "haiZhongJin": "Hải Trung Kim",
+   "luZhongHuo": "Lư Trung Hỏa",
+   "daLinMu": "Đại Lâm Mộc",
+   "luPangTu": "Lộ Bàng Thổ",
+   "jianFengJin": "Kiếm Phong Kim",
+   "shanTouHuo": "Sơn Đầu Hỏa",
+   "jianXiaShui": "Giản Hạ Thủy",
+   "chengTouTu": "Thành Đầu Thổ",
+   "baiLaJin": "Bạch Lạp Kim",
+   "yangLiuMu": "Dương Liễu Mộc",
+   "quanZhongShui": "Tuyền Trung Thủy",
+   "wuShangTu": "Ốc Thượng Thổ",
+   "piLiHuo": "Tích Lịch Hỏa",
+   "songBaiMu": "Tùng Bách Mộc",
+   "changLiuShui": "Trường Lưu Thủy",
+   "shaZhongJin": "Sa Trung Kim",
+   "shanXiaHuo": "Sơn Hạ Hỏa",
+   "pingDiMu": "Bình Địa Mộc",
+   "biShangTu": "Bích Thượng Thổ",
+   "jinBoJin": "Kim Bạch Kim",
+   "fuDengHuo": "Phú Đăng Hỏa",
+   "tianHeShui": "Thiên Hà Thủy",
+   "daYiTu": "Đại Trạch Thổ",
+   "chaiChuanJin": "Thoa Xuyến Kim",
+   "sangZheMu": "Tang Đố Mộc",
+   "daXiShui": "Đại Khê Thủy",
+   "shaZhongTu": "Sa Trung Thổ",
+   "tianShangHuo": "Thiên Thượng Hỏa",
+   "shiLiuMu": "Thạch Lựu Mộc",
+   "daHaiShui": "Đại Hải Thủy"
+  },
+  "shensha": {
+   "tianYi": "Thiên Ất Quý Nhân",
+   "wenChang": "Văn Xương",
+   "yiMa": "Dịch Mã",
+   "taoHua": "Đào Hoa",
+   "huaGai": "Hoa Cái",
+   "jiangXing": "Tướng Tinh",
+   "yangRen": "Dương Nhận",
+   "luShen": "Lộc Thần",
+   "tianDe": "Thiên Đức",
+   "yueDe": "Nguyệt Đức",
+   "hongLuan": "Hồng Loan",
+   "tianXi": "Thiên Hỷ",
+   "guChen": "Cô Thần",
+   "guaSu": "Quả Tú",
+   "jieSha": "Kiếp Sát",
+   "wangShen": "Vong Thần",
+   "kuiGang": "Khôi Cương"
+  },
+  "interaction": {
+   "stemCombine": "Thiên can hợp",
+   "stemClash": "Thiên can xung",
+   "stemControl": "Thiên can khắc",
+   "branchCombine6": "Lục hợp",
+   "branchTrine": "Tam hợp",
+   "branchHalfTrine": "Bán hợp",
+   "branchMeeting": "Tam hội",
+   "branchClash": "Lục xung",
+   "branchPunish": "Tương hình",
+   "branchSelfPunish": "Tự hình",
+   "branchHarm": "Tương hại",
+   "branchBreak": "Tương phá",
+   "branchHiddenCombine": "Ám hợp"
+  },
+  "strength": {
+   "veryWeak": "Rất yếu",
+   "weak": "Yếu",
+   "balanced": "Trung hòa",
+   "strong": "Mạnh",
+   "veryStrong": "Rất mạnh"
+  },
+  "baziPattern": {
+   "zhengGuan": "Chính Quan cách",
+   "qiSha": "Thất Sát cách",
+   "zhengYin": "Chính Ấn cách",
+   "pianYin": "Thiên Ấn cách",
+   "shiShen": "Thực Thần cách",
+   "shangGuan": "Thương Quan cách",
+   "zhengCai": "Chính Tài cách",
+   "pianCai": "Thiên Tài cách",
+   "jianLu": "Kiến Lộc cách",
+   "yangRen": "Dương Nhận cách",
+   "congQiang": "Tòng Cường cách",
+   "congRuo": "Tòng Nhược cách",
+   "congCai": "Tòng Tài cách",
+   "congSha": "Tòng Sát cách",
+   "congEr": "Tòng Nhi cách",
+   "huaQi": "Hóa Khí cách"
+  },
+  "usefulGodMethod": {
+   "fuyi": "phù ức",
+   "tiaohou": "điều hậu",
+   "tongguan": "thông quan",
+   "bingyao": "bệnh dược",
+   "zhuanwang": "chuyên vượng"
+  },
+  "baziSpecial": {
+   "taiYuan": "Thai Nguyên",
+   "taiXi": "Thai Tức",
+   "mingGong": "Mệnh Cung",
+   "shenGong": "Thân Cung"
+  },
+  "solarTerm": {
+   "liChun": "Lập Xuân",
+   "yuShui": "Vũ Thủy",
+   "jingZhe": "Kinh Trập",
+   "chunFen": "Xuân Phân",
+   "qingMing": "Thanh Minh",
+   "guYu": "Cốc Vũ",
+   "liXia": "Lập Hạ",
+   "xiaoMan": "Tiểu Mãn",
+   "mangZhong": "Mang Chủng",
+   "xiaZhi": "Hạ Chí",
+   "xiaoShu": "Tiểu Thử",
+   "daShu": "Đại Thử",
+   "liQiu": "Lập Thu",
+   "chuShu": "Xử Thử",
+   "baiLu": "Bạch Lộ",
+   "qiuFen": "Thu Phân",
+   "hanLu": "Hàn Lộ",
+   "shuangJiang": "Sương Giáng",
+   "liDong": "Lập Đông",
+   "xiaoXue": "Tiểu Tuyết",
+   "daXue": "Đại Tuyết",
+   "dongZhi": "Đông Chí",
+   "xiaoHan": "Tiểu Hàn",
+   "daHan": "Đại Hàn"
+  },
+  "bazi": {
+   "rows": {
+    "tenGod": "Thập Thần",
+    "stem": "Thiên Can",
+    "branch": "Địa Chi",
+    "hidden": "Tàng Can",
+    "lifeStage": "Tinh Vận",
+    "selfStage": "Tự Tọa",
+    "naYin": "Nạp Âm",
+    "kongWang": "Không Vong",
+    "shensha": "Thần Sát"
+   },
+   "dayMaster": "Nhật Chủ",
+   "dayMasterSex": "Nhật Chủ · {sex}",
+   "tableLabel": "Bát Tự Tứ Trụ: {pillars}",
+   "foot": "{clock} · giờ {hour} · Thai Nguyên {taiYuan} · Mệnh Cung {mingGong} · Thân Cung {shenGong}",
+   "footNoTime": "Chưa rõ giờ sinh · chỉ lập ba trụ năm, tháng, ngày · Thai Nguyên {taiYuan}",
+   "clock": {
+    "trueSolarTime": "Giờ mặt trời thực {time}",
+    "standardTime": "Giờ chuẩn {time}",
+    "wallClock": "Giờ đồng hồ {time}"
+   },
+   "fivePhasesTitle": "Sức mạnh Ngũ Hành",
+   "fivePhasesLabel": "Tương sinh tương khắc và phân bổ Ngũ Hành: {values}",
+   "fivePhasesCaptionOuter": "Vòng ngoài: Tương sinh",
+   "fivePhasesCaptionInner": "Ngôi sao trong: Tương khắc",
+   "fivePhasesFoot": "Tính theo Tàng Can Địa Chi và vượng suy của Nguyệt Lệnh: {dominant} vượng nhất, {missing}.",
+   "missingNone": "Ngũ Hành đầy đủ",
+   "missingSome": "khuyết {phases}",
+   "judgementTitle": "Nhận định · Bộ quy tắc",
+   "judgementStrength": "Độ mạnh Nhật chủ",
+   "judgementPattern": "Cách Cục",
+   "judgementUseful": "Hỷ Dụng",
+   "judgementShensha": "Thần Sát",
+   "judgementInteractions": "Hợp Xung Hình Hại",
+   "deLing": "đắc lệnh",
+   "deDi": "đắc địa",
+   "deShi": "đắc thế",
+   "notDe": "không {what}",
+   "usefulValue": "Hỷ {favorable} · Kỵ {unfavorable}",
+   "methodValue": "Phương pháp {method}",
+   "patternRevealed": "Bản khí thấu xuất",
+   "patternNotRevealed": "Bản khí chưa thấu",
+   "patternBasis": "{pillar} · {role} {stem}",
+   "reviewNote": "Độ mạnh Nhật chủ, Cách cục và Hỷ Dụng là nhận định bước đầu từ bộ quy tắc, hiện đang được các chuyên gia Bát Tự của chúng tôi rà soát và hiệu chỉnh từng mục",
+   "luckTitle": "Đại Vận · {yinYang} {sex}, {direction}, khởi vận năm {age} tuổi",
+   "luckTitleNoSex": "Đại Vận · Chưa nhập giới tính (hiển thị cả thuận và nghịch)",
+   "luckForward": "đi thuận",
+   "luckBackward": "đi nghịch",
+   "luckAlternative": "{sex} · {direction}",
+   "luckStart": "Khởi vận vào {date} ({age} tuổi)",
+   "annualTitle": "Vận {dayun} · Lưu Niên",
+   "annualLoading": "Đang tính Lưu Niên…",
+   "luckLabel": "Dòng thời gian Đại Vận: {list}",
+   "hiddenRole": {
+    "main": "Bản khí",
+    "middle": "Trung khí",
+    "residual": "Dư khí"
+   },
+   "tableColumns": {
+    "item": "Mục"
+   },
+   "interactionItem": "{kind}: {members}",
+   "interactionTransforms": "hóa {element}",
+   "readingDayMaster": "Nhật chủ là {stem} {element}, {strength}.",
+   "readingPattern": "Cách cục thuộc {pattern}, theo phép {method}: hỷ {favorable}, kỵ {unfavorable}.",
+   "readingLuck": "Hiện đang ở Đại Vận {dayun} ({tenGod}), Lưu Niên gặp {liunian} ({tenGodYear}).",
+   "readingUsefulLow": "Tuy nhiên, các trường phái Bát Tự có quan điểm khác nhau về Hỷ Kỵ đối với lá số này — câu trên chỉ là kết luận theo cách tiếp cận “{method}”, và người am hiểu Bát Tự thường có góc nhìn khác với những lá số như vậy. Bạn có thể xem từng phương pháp luận giải thế nào tại dòng “Hỷ Dụng” trong mục “Dữ liệu”.",
+   "strengthContested": "Cường nhược giằng co · hơi thiên về {lean}"
+  },
+  "sign": {
+   "Aries": "Bạch Dương",
+   "Taurus": "Kim Ngưu",
+   "Gemini": "Song Tử",
+   "Cancer": "Cự Giải",
+   "Leo": "Sư Tử",
+   "Virgo": "Xử Nữ",
+   "Libra": "Thiên Bình",
+   "Scorpio": "Bọ Cạp",
+   "Sagittarius": "Nhân Mã",
+   "Capricorn": "Ma Kết",
+   "Aquarius": "Bảo Bình",
+   "Pisces": "Song Ngư"
+  },
+  "point": {
+   "sun": "Mặt Trời",
+   "moon": "Mặt Trăng",
+   "mercury": "Sao Thủy",
+   "venus": "Sao Kim",
+   "mars": "Sao Hỏa",
+   "jupiter": "Sao Mộc",
+   "saturn": "Sao Thổ",
+   "uranus": "Sao Thiên Vương",
+   "neptune": "Sao Hải Vương",
+   "pluto": "Sao Diêm Vương",
+   "northNode": "Bắc Giao Điểm",
+   "southNode": "Nam Giao Điểm",
+   "chiron": "Chiron",
+   "lilith": "Lilith",
+   "partOfFortune": "Điểm May Mắn",
+   "asc": "Điểm Mọc",
+   "mc": "Thiên Đỉnh",
+   "dsc": "Điểm Lặn",
+   "ic": "Thiên Để",
+   "vertex": "Điểm Định Mệnh",
+   "earth": "Trái Đất"
+  },
+  "aspect": {
+   "conjunction": "Trùng tụ",
+   "opposition": "Đối đỉnh",
+   "trine": "Tam hợp",
+   "square": "Vuông góc",
+   "sextile": "Lục hợp",
+   "quincunx": "Bất tương hợp",
+   "semisextile": "Bán lục hợp",
+   "semisquare": "Bán vuông",
+   "sesquiquadrate": "Tam bát phân",
+   "quintile": "Ngũ phân",
+   "biquintile": "Bội ngũ phân"
+  },
+  "westPattern": {
+   "grandTrine": "Đại tam hợp",
+   "tSquare": "Tam giác chữ T",
+   "grandCross": "Đại thập tự",
+   "kite": "Cánh diều",
+   "yod": "Ngón tay Thượng Đế",
+   "stellium": "Tụ tinh",
+   "mysticRectangle": "Hình chữ nhật huyền bí"
+  },
+  "astroElement": {
+   "fire": "Lửa",
+   "earth": "Đất",
+   "air": "Khí",
+   "water": "Nước"
+  },
+  "modality": {
+   "cardinal": "Thống lĩnh",
+   "fixed": "Cố định",
+   "mutable": "Linh hoạt"
+  },
+  "dignity": {
+   "domicile": "Nhập miếu",
+   "exaltation": "Vượng vị",
+   "detriment": "Thất thế",
+   "fall": "Lạc hãm",
+   "peregrine": "Lưu lạc"
+  },
+  "lunarPhase": {
+   "newMoon": "Trăng non",
+   "crescent": "Trăng lưỡi liềm",
+   "firstQuarter": "Trăng thượng huyền",
+   "gibbous": "Trăng dần tròn",
+   "fullMoon": "Trăng tròn",
+   "disseminating": "Trăng dần khuyết",
+   "lastQuarter": "Trăng hạ huyền",
+   "balsamic": "Trăng tàn"
+  },
+  "houseSystem": {
+   "placidus": "Placidus",
+   "koch": "Koch",
+   "porphyry": "Porphyry",
+   "regiomontanus": "Regiomontanus",
+   "campanus": "Campanus",
+   "equal": "Chia đều",
+   "wholeSign": "Toàn cung",
+   "alcabitius": "Alcabitius",
+   "topocentric": "Topocentric",
+   "morinus": "Morinus",
+   "meridian": "Kinh tuyến"
+  },
+  "sect": {
+   "day": "bản đồ sao ban ngày",
+   "night": "bản đồ sao ban đêm"
+  },
+  "west": {
+   "wheelLabel": "Bản đồ sao bản mệnh phương Tây: Điểm Mọc {asc}, Mặt Trời {sun}, Mặt Trăng {moon}",
+   "wheelLabelNoTime": "Bản đồ sao bản mệnh phương Tây (không rõ giờ sinh; lược bỏ nhà và Điểm Mọc): Mặt Trời {sun}, Mặt Trăng {moon}",
+   "foot": "Hoàng đạo nhiệt đới · {houseSystem} · {node} · {sect}",
+   "footNoTime": "Hoàng đạo nhiệt đới · không rõ giờ sinh: lược bỏ các nhà, bốn trục và Điểm Mọc; vị trí Mặt Trăng tính theo chính ngọ giờ địa phương",
+   "conventions": "Các nhà bản mệnh dùng hệ {houseSystem}; kỹ thuật tiểu hạn niên (chủ tinh theo năm) đếm theo hệ Toàn cung tính từ cung của Điểm Mọc. Chủ tinh tam nguyên theo hệ thống Dorotheus (theo thứ tự ngày, đêm, đồng chủ quản — Lửa: Mặt Trời, Sao Mộc, Sao Thổ; Đất: Sao Kim, Mặt Trăng, Sao Hỏa; Khí: Sao Thổ, Sao Thủy, Sao Mộc; Nước: Sao Kim, Sao Hỏa, Mặt Trăng); theo thang điểm tôn quý của William Lilly (nhập miếu 5, vượng 4, tam nguyên 3, phân giới 2, diện 1), chỉ chủ tinh tam nguyên tương ứng với phe ngày hoặc đêm của bản đồ sao mới được tính 3 điểm này. Sao Thiên Vương, Sao Hải Vương và Sao Diêm Vương dùng các cung chủ quản hiện đại (Bảo Bình, Song Ngư, Bọ Cạp) khi tính điểm tôn quý, trong khi chủ tinh bản đồ sao và hành tinh chủ đạo dùng các chủ tinh truyền thống. Vì không có trường phái nào quy định thống nhất, nguyên tố, tính chất và hành tinh chủ đạo được tính theo trọng số riêng của hệ thống: Mặt Trời, Mặt Trăng và Điểm Mọc tính 3 điểm; Thiên Đỉnh, Sao Thủy, Sao Kim và Sao Hỏa 2 điểm; Sao Mộc và Sao Thổ 1,5 điểm; Sao Thiên Vương, Sao Hải Vương và Sao Diêm Vương 1 điểm. Nguyên tố hoặc tính chất chủ đạo chỉ được nêu tên khi dẫn trước mức cao thứ hai ít nhất 5 điểm phần trăm. Tụ tinh (stellium) đòi hỏi ít nhất bốn hành tinh trong cùng một cung hoặc một nhà (trong đó có ít nhất một trong các thiên thể Mặt Trời, Mặt Trăng, Sao Thủy, Sao Kim hoặc Sao Hỏa), hoặc ít nhất ba hành tinh đôi một trùng tụ với nhau; các nhóm chỉ gồm các hành tinh vòng ngoài di chuyển chậm — vốn giống nhau ở mọi người sinh trong cùng vài tháng — sẽ không được tính.",
+   "nodeTrue": "giao điểm thực",
+   "nodeMean": "giao điểm trung bình",
+   "ascStable": "Điểm Mọc {deg} · giữ nguyên cung này trong khoảng ±{minutes} phút quanh giờ sinh",
+   "segments": {
+    "planets": "Hành tinh",
+    "aspects": "Bảng góc chiếu",
+    "patterns": "Cấu trúc góc",
+    "houses": "Các nhà"
+   },
+   "columns": {
+    "point": "Thiên thể",
+    "sign": "Cung",
+    "degree": "Độ",
+    "house": "Nhà",
+    "dignity": "Tôn quý",
+    "motion": "Chuyển động",
+    "aspect": "Góc chiếu",
+    "orb": "Dung sai",
+    "applying": "Tiến/Tách",
+    "cusp": "Đỉnh nhà"
+   },
+   "retrograde": "nghịch hành",
+   "direct": "thuận hành",
+   "houseN": "Nhà {n}",
+   "applying": "tiến vào",
+   "separating": "tách ra",
+   "aspectsFoot": "Các con số trong ô thể hiện dung sai (độ). Màu xanh lam biểu thị góc hài hòa, màu đỏ biểu thị góc căng thẳng, màu vàng kim biểu thị góc trùng tụ; bật Chế độ chuyên sâu để xem các góc phụ.",
+   "patternMembers": "Các thiên thể tham gia: {members}",
+   "patternApex": "Đỉnh góc: {apex}",
+   "patternNone": "Bản đồ sao này không hình thành các cấu trúc góc chiếu lớn (như Đại tam hợp hay Tam giác chữ T).",
+   "legendHarmony": "Hài hòa",
+   "legendTension": "Căng thẳng",
+   "legendConjunction": "Trùng tụ",
+   "balanceTitle": "Nguyên tố và tính chất",
+   "dominants": "{element} · {modality} · {planet}; chủ tinh bản đồ sao {ruler}",
+   "moonPhase": "Pha Mặt Trăng khi sinh: {phase}",
+   "aspectsLabel": "Bảng góc chiếu: {count} góc chiếu",
+   "readingSun": "Mặt Trời ở {sign}{house}, Mặt Trăng ở {moonSign}, Điểm Mọc ở {asc}.",
+   "readingSunNoTime": "Mặt Trời ở {sign}, Mặt Trăng ở {moonSign} (không rõ giờ sinh nên lược bỏ Điểm Mọc và các nhà).",
+   "readingPatterns": "Cấu trúc góc chiếu: {patterns}.",
+   "dominantsLabel": "Chủ đạo",
+   "moonPhaseLabel": "Pha Mặt Trăng"
+  },
+  "cite": {
+   "luckStart": "khởi vận từ {age} tuổi",
+   "westAngles": "Điểm trục phụ",
+   "westHemispheres": "Phân bố bán cầu",
+   "dayRelation": "Lưu nhật và {pillar} · {relation}",
+   "dayMonthRelation": "Lưu nhật và lưu nguyệt · {relation}",
+   "transitPlacement": "{body} quá cảnh tại {sign} · Nhà {house}",
+   "transitSign": "{body} quá cảnh tại {sign}",
+   "ingressSign": "{body} quá cảnh tiến vào {sign}",
+   "ingressHouse": "{body} quá cảnh tiến vào Nhà {house}"
+  },
+  "ziweiPalace": {
+   "ming": "Mệnh",
+   "xiongdi": "Huynh Đệ",
+   "fuqi": "Phu Thê",
+   "zinv": "Tử Tức",
+   "caibo": "Tài Bạch",
+   "jie": "Tật Ách",
+   "qianyi": "Thiên Di",
+   "puyi": "Nô Bộc",
+   "guanlu": "Quan Lộc",
+   "tianzhai": "Điền Trạch",
+   "fude": "Phúc Đức",
+   "fumu": "Phụ Mẫu"
+  },
+  "ziweiStar": {
+   "ziwei": "Tử Vi",
+   "tianji": "Thiên Cơ",
+   "taiyang": "Thái Dương",
+   "wuqu": "Vũ Khúc",
+   "tiantong": "Thiên Đồng",
+   "lianzhen": "Liêm Trinh",
+   "tianfu": "Thiên Phủ",
+   "taiyin": "Thái Âm",
+   "tanlang": "Tham Lang",
+   "jumen": "Cự Môn",
+   "tianxiang": "Thiên Tướng",
+   "tianliang": "Thiên Lương",
+   "qisha": "Thất Sát",
+   "pojun": "Phá Quân",
+   "zuofu": "Tả Phù",
+   "youbi": "Hữu Bật",
+   "wenchang": "Văn Xương",
+   "wenqu": "Văn Khúc",
+   "tiankui": "Thiên Khôi",
+   "tianyue": "Thiên Việt",
+   "lucun": "Lộc Tồn",
+   "tianma": "Thiên Mã",
+   "dikong": "Địa Không",
+   "dijie": "Địa Kiếp",
+   "huoxing": "Hỏa Tinh",
+   "lingxing": "Linh Tinh",
+   "qingyang": "Kình Dương",
+   "tuoluo": "Đà La",
+   "hongluan": "Hồng Loan",
+   "tianxi": "Thiên Hỷ",
+   "tianyao": "Thiên Diêu",
+   "xianchi": "Hàm Trì",
+   "jieshen": "Giải Thần",
+   "santai": "Tam Thai",
+   "bazuo": "Bát Tọa",
+   "enguang": "Ân Quang",
+   "tiangui": "Thiên Quý",
+   "longchi": "Long Trì",
+   "fengge": "Phượng Các",
+   "tiancai": "Thiên Tài",
+   "tianshou": "Thiên Thọ",
+   "taifu": "Thai Phụ",
+   "fenggao": "Phong Cáo",
+   "tianwu": "Thiên Vu",
+   "huagai": "Hoa Cái",
+   "tianguan": "Thiên Quan",
+   "tianfuAdj": "Thiên Phúc",
+   "tianchu": "Thiên Trù",
+   "tianyueAdj": "Thiên Nguyệt",
+   "tiande": "Thiên Đức",
+   "yuede": "Nguyệt Đức",
+   "tiankong": "Thiên Không",
+   "xunkong": "Tuần Không",
+   "jielu": "Triệt Lộ",
+   "kongwang": "Không Vong",
+   "guchen": "Cô Thần",
+   "guasu": "Quả Tú",
+   "feilian": "Phi Liêm",
+   "posui": "Phá Toái",
+   "tianxing": "Thiên Hình",
+   "yinsha": "Âm Sát",
+   "tianku": "Thiên Khốc",
+   "tianxu": "Thiên Hư",
+   "tianshi": "Thiên Sứ",
+   "tianshang": "Thiên Thương",
+   "nianjie": "Niên Giải",
+   "longde": "Long Đức",
+   "jiekong": "Triệt Không",
+   "jiesha": "Kiếp Sát",
+   "dahao": "Đại Hao"
+  },
+  "ziweiBrightness": {
+   "miao": "Miếu",
+   "wang": "Vượng",
+   "de": "Đắc",
+   "li": "Lợi",
+   "ping": "Bình",
+   "bu": "Bất",
+   "xian": "Hãm"
+  },
+  "ziweiHua": {
+   "lu": "Lộc",
+   "quan": "Quyền",
+   "ke": "Khoa",
+   "ji": "Kỵ"
+  },
+  "ziweiHuaFull": {
+   "lu": "Hóa Lộc",
+   "quan": "Hóa Quyền",
+   "ke": "Hóa Khoa",
+   "ji": "Hóa Kỵ"
+  },
+  "ziweiChangsheng": {
+   "changsheng": "Trường Sinh",
+   "muyu": "Mộc Dục",
+   "guandai": "Quan Đới",
+   "linguan": "Lâm Quan",
+   "diwang": "Đế Vượng",
+   "shuai": "Suy",
+   "bing": "Bệnh",
+   "si": "Tử",
+   "mu": "Mộ",
+   "jue": "Tuyệt",
+   "tai": "Thai",
+   "yang": "Dưỡng"
+  },
+  "ziweiBoshi": {
+   "boshi": "Bác Sĩ",
+   "lishi": "Lực Sĩ",
+   "qinglong": "Thanh Long",
+   "xiaohao": "Tiểu Hao",
+   "jiangjun": "Tướng Quân",
+   "zhoushu": "Tấu Thư",
+   "feilian": "Phi Liêm",
+   "xishen": "Hỷ Thần",
+   "bingfu": "Bệnh Phù",
+   "dahao": "Đại Hao",
+   "fubing": "Phục Binh",
+   "guanfu": "Quan Phủ"
+  },
+  "ziweiFiveElementsClass": {
+   "water2": "Thủy Nhị Cục",
+   "wood3": "Mộc Tam Cục",
+   "metal4": "Kim Tứ Cục",
+   "earth5": "Thổ Ngũ Cục",
+   "fire6": "Hỏa Lục Cục"
+  },
+  "ziweiSchool": {
+   "sanHe": "Tam Hợp phái",
+   "feiXing": "Phi Tinh phái",
+   "zhongZhou": "Trung Châu phái"
+  },
+  "ziweiLeapRule": {
+   "midMonthSplit": "tháng nhuận chia giữa tháng",
+   "asPreviousMonth": "tháng nhuận tính theo tháng chính",
+   "asNextMonth": "tháng nhuận tính theo tháng sau"
+  },
+  "ziwei": {
+   "scope": {
+    "label": "Vận hạn",
+    "natal": "Bản mệnh",
+    "decade": "Đại hạn {range}",
+    "annual": "Lưu niên {ganzhi}"
+   },
+   "gridLabel": "Lá số Tử Vi Đẩu Số 12 cung: Mệnh Cung tại {ming}, {stars}",
+   "centerSex": "{yinYang} {sex} · {fiveElements}",
+   "centerStars": "Mệnh chủ {soul} · Thân chủ {body}",
+   "centerBirth": "Năm {year} · {date} · giờ {hour}",
+   "centerScope": "Đại hạn {decade} · Lưu niên {annual}",
+   "body": "Thân",
+   "selected": "{palace}",
+   "triLines": "Đường vàng: Tam Phương Tứ Chính",
+   "emptyPalace": "Cung này vô chính diệu, có thể mượn các sao ở cung đối diện (Xung Chiếu) để cùng luận giải.",
+   "starsLine": "Chính tinh: {stars}",
+   "minorLine": "Phụ tinh: {stars}",
+   "adjLine": "Tạp diệu: {stars}",
+   "decadeLine": "Đại hạn {range} tuổi · {ganzhi} · Trường Sinh {stage}",
+   "foot": "{school} · {leap} · Tứ Hóa năm sinh: {hua} · khung tím đánh dấu Đại hạn hiện tại",
+   "huaItem": "{star} {hua}",
+   "selectHint": "Chạm vào một cung bất kỳ để xem đường nối Tam Phương Tứ Chính",
+   "tableColumns": {
+    "palace": "Cung",
+    "ganzhi": "Can Chi",
+    "major": "Chính tinh",
+    "minor": "Phụ tinh",
+    "adjective": "Tạp diệu",
+    "decade": "Đại hạn",
+    "stage": "Trường Sinh"
+   },
+   "noHour": "Tử Vi Đẩu Số an Mệnh lập Cục theo giờ sinh — vui lòng bổ sung giờ sinh (ít nhất là khoảng giờ 2 tiếng).",
+   "readingMing": "Mệnh Cung an tại {branch} ({stars}); Thân Cung ở {body}.",
+   "readingNoStars": "vô chính diệu",
+   "soulBodyLabel": "Mệnh chủ / Thân chủ",
+   "huaLabel": "Tứ Hóa năm sinh"
+  },
+  "graha": {
+   "sun": "Mặt Trời",
+   "moon": "Mặt Trăng",
+   "mars": "Sao Hỏa",
+   "mercury": "Sao Thủy",
+   "jupiter": "Sao Mộc",
+   "venus": "Sao Kim",
+   "saturn": "Sao Thổ",
+   "rahu": "La Hầu",
+   "ketu": "Kế Đô",
+   "uranus": "Sao Thiên Vương",
+   "neptune": "Sao Hải Vương",
+   "pluto": "Sao Diêm Vương"
+  },
+  "grahaShort": {
+   "sun": "Su",
+   "moon": "Mo",
+   "mars": "Ma",
+   "mercury": "Me",
+   "jupiter": "Ju",
+   "venus": "Ve",
+   "saturn": "Sa",
+   "rahu": "Ra",
+   "ketu": "Ke",
+   "uranus": "Ur",
+   "neptune": "Ne",
+   "pluto": "Pl",
+   "lagna": "As"
+  },
+  "nakshatra": {
+   "ashwini": "Lâu Tú",
+   "bharani": "Vị Tú",
+   "krittika": "Mão Tú",
+   "rohini": "Tất Tú",
+   "mrigashira": "Chủy Tú",
+   "ardra": "Sâm Tú",
+   "punarvasu": "Tỉnh Tú",
+   "pushya": "Quỷ Tú",
+   "ashlesha": "Liễu Tú",
+   "magha": "Tinh Tú",
+   "purvaPhalguni": "Trương Tú",
+   "uttaraPhalguni": "Dực Tú",
+   "hasta": "Chẩn Tú",
+   "chitra": "Giác Tú",
+   "swati": "Cang Tú",
+   "vishakha": "Đê Tú",
+   "anuradha": "Phòng Tú",
+   "jyeshtha": "Tâm Tú",
+   "mula": "Vĩ Tú",
+   "purvaAshadha": "Cơ Tú",
+   "uttaraAshadha": "Đẩu Tú",
+   "shravana": "Nữ Tú",
+   "dhanishta": "Hư Tú",
+   "shatabhisha": "Nguy Tú",
+   "purvaBhadrapada": "Thất Tú",
+   "uttaraBhadrapada": "Bích Tú",
+   "revati": "Khuê Tú"
+  },
+  "yoga": {
+   "gajaKesari": "Gaja Kesari · Cách cục Tượng Sư",
+   "budhaAditya": "Budha-Aditya · Cách cục Nhật Thủy",
+   "ruchaka": "Ruchaka · Ngũ Đại Nhân (Sao Hỏa)",
+   "bhadra": "Bhadra · Ngũ Đại Nhân (Sao Thủy)",
+   "hamsa": "Hamsa · Ngũ Đại Nhân (Sao Mộc)",
+   "malavya": "Malavya · Ngũ Đại Nhân (Sao Kim)",
+   "shasha": "Shasha · Ngũ Đại Nhân (Sao Thổ)",
+   "rajaYoga": "Raja Yoga · Cách cục Vương Giả",
+   "dhanaYoga": "Dhana Yoga · Cách cục Tài Phú",
+   "kemadruma": "Kemadruma · Cách cục Cô Nguyệt",
+   "neechaBhanga": "Neecha Bhanga · Hóa giải lạc hãm",
+   "vipareetaRaja": "Vipareeta Raja · Cách cục Nghịch Chuyển Vương Giả",
+   "chandraMangala": "Chandra-Mangala · Cách cục Nguyệt Hỏa"
+  },
+  "yogaState": {
+   "formed": "thành cách",
+   "weak": "yếu",
+   "broken": "bị phá"
+  },
+  "yogaCondition": {
+   "lordsOwnDusthanas": "cả hai chủ tinh đều kiêm cai quản nhà 6, 8 hoặc 12",
+   "inDusthana": "nằm tại nhà 6, 8 hoặc 12",
+   "debilitated": "lạc hãm và chưa được hóa giải",
+   "combust": "bị thiêu đốt (quá gần Mặt Trời)",
+   "lostWar": "thua trong giao chiến hành tinh",
+   "strong": "hành tinh cường vượng",
+   "kendraFromMoon": "Sao Mộc ở nhà góc (nhà 1, 4, 7, 10) tính từ Mặt Trăng",
+   "kendraFromLagna": "Sao Mộc ở nhà góc (nhà 1, 4, 7, 10) tính từ Cung Mọc",
+   "beneficConnection": "cát tinh đồng cung hoặc chiếu góc tới Sao Mộc",
+   "noBeneficConnection": "không có cát tinh đồng cung hoặc chiếu góc tới Sao Mộc",
+   "enemySign": "Sao Mộc rơi vào cung địch",
+   "grahaInKendraFromLagna": "có hành tinh ở nhà góc tính từ Cung Mọc",
+   "grahaInKendraFromMoon": "có hành tinh đồng cung với Mặt Trăng hoặc ở nhà góc tính từ Mặt Trăng",
+   "dispositorInKendra": "chủ tinh của cung lạc hãm ở nhà góc tính từ Cung Mọc hoặc Mặt Trăng",
+   "exaltationLordInKendra": "chủ tinh của cung vượng vị ở nhà góc tính từ Cung Mọc hoặc Mặt Trăng",
+   "bothLordsInKendras": "chủ tinh của cả cung lạc hãm lẫn cung vượng vị đều ở nhà góc",
+   "aspectedByDispositor": "được chủ tinh của cung lạc hãm chiếu góc tới",
+   "exaltedGrahaInKendra": "hành tinh vượng vị tại cung lạc hãm đó nằm ở nhà góc"
+  },
+  "functionalNature": {
+   "yogaKaraka": "cát tinh thành cách",
+   "benefic": "cát tinh",
+   "mixed": "cát hung đan xen",
+   "neutral": "trung tính",
+   "malefic": "hung tinh"
+  },
+  "functionalRule": {
+   "trikonaLord": "Cai quản nhà tam hợp (nhà 1, 5 hoặc 9): mang lại cát lợi (34.2)",
+   "yogaKaraka": "Kiêm cai quản cả nhà góc và nhà tam hợp (34.13)",
+   "kendradhipatiDosha": "Cát tinh tự nhiên chỉ cai quản nhà góc: tính cát bị tiết giảm (34.2, 34.10)",
+   "kendraMalefic": "Hung tinh tự nhiên chỉ cai quản nhà góc: không luận là hung (34.2)",
+   "trishadayaLord": "Cai quản nhà 3, 6 hoặc 11: mang đến thử thách (34.4)",
+   "eighthLord": "Cai quản nhà 8: bất lợi, trừ khi kiêm chủ tinh nhà tam hợp (34.6)",
+   "eighthLordExempt": "Mặt Trời hoặc Mặt Trăng cai quản nhà 8: không luận là hung (34.7)",
+   "association": "Cai quản nhà 2 hoặc 12: xét theo hành tinh đồng cung và nhà còn lại (34.5)",
+   "nodeHouse": "La Hầu / Kế Đô: cho kết quả theo nhà mà nó tọa thủ (34.16)",
+   "nodeJoinedLord": "La Hầu / Kế Đô: cho kết quả theo hành tinh đồng cung (34.16)",
+   "nodeYogaKaraka": "Ở nhà góc hoặc nhà tam hợp và liên kết với chủ tinh nhóm nhà còn lại: luận như cát tinh thành cách (34.17)"
+  },
+  "dashaBand": {
+   "rising": "thuận đà đi lên",
+   "supportive": "nhiều trợ lực",
+   "mixed": "thuận nghịch đan xen",
+   "demanding": "nhiều thử thách",
+   "hard": "khá gian nan"
+  },
+  "dashaReason": {
+   "yogaKaraka": "Là cát tinh thành cách của Cung Mọc này",
+   "trikonaLord": "Cai quản nhà tam hợp (nhà 1, 5 hoặc 9)",
+   "mixedLord": "Các nhà cai quản có cả cát lẫn hung",
+   "neutralLord": "Là chủ tinh trung tính đối với Cung Mọc này",
+   "maleficLord": "Cai quản các nhà thử thách (nhà 3, 6, 8, 11)",
+   "viparita": "Chủ tinh nhà 6, 8 hoặc 12 rơi vào chính nhóm nhà này: nghịch chuyển thành trợ lực (Viparīta)",
+   "inGoodHouse": "Nằm tại nhà góc hoặc nhà tam hợp",
+   "inDusthana": "Nằm tại nhà 6, 8 hoặc 12",
+   "exalted": "Ở vị trí vượng vị",
+   "ownSign": "Ở cung nhập miếu",
+   "enemySign": "Rơi vào cung địch",
+   "debilitated": "Ở vị trí lạc hãm",
+   "debilitationCancelled": "Lạc hãm nhưng được hóa giải (toàn phần hoặc một phần)",
+   "combust": "Bị thiêu đốt (quá gần Mặt Trời)",
+   "lostWar": "Thua trong giao chiến hành tinh",
+   "joinedTrikonaLord": "Đồng cung với chủ tinh nhà 5 hoặc nhà 9",
+   "inYoga": "Tham gia cách cục cổ điển (thành cách hoặc yếu)",
+   "nodeHouse": "Cho kết quả theo nhà mà nó tọa thủ",
+   "nodeJoinedLord": "Cho kết quả theo hành tinh đồng cung",
+   "nodeYogaKaraka": "Luận như cát tinh thành cách của bản đồ sao",
+   "fromMahaDusthana": "Nằm ở nhà thứ 6, 8 hoặc 12 tính từ chủ tinh Đại vận",
+   "fromMahaGood": "Ở vị trí thuận lợi tính từ chủ tinh Đại vận",
+   "enemyOfMahaLord": "Xung khắc với chủ tinh Đại vận",
+   "kendraTrikonaPair": "Chủ tinh nhà góc và chủ tinh nhà tam hợp tương hội trong Đại vận và Tiểu vận"
+  },
+  "sadeSatiGrade": {
+   "light": "nhẹ",
+   "moderate": "trung bình",
+   "heavy": "nặng"
+  },
+  "sadeSatiFactor": {
+   "saturnFunctionalBenefic": "Sao Thổ thiên về cát lợi đối với Cung Mọc này",
+   "saturnFunctionalMalefic": "Sao Thổ thiên về bất lợi đối với Cung Mọc này",
+   "bindusHigh": "Cung mà Sao Thổ đi qua có nhiều điểm cát",
+   "bindusLow": "Cung mà Sao Thổ đi qua có ít điểm cát",
+   "transitDignity": "Sao Thổ quá cảnh qua cung nhập miếu hoặc vượng vị",
+   "jupiterAspect": "Sao Mộc quá cảnh chiếu góc tới Sao Thổ quá cảnh"
+  },
+  "vedicHouse": {
+   "1": "bản thân, cơ thể, danh tiếng",
+   "2": "gia đình, lời nói, tiền bạc",
+   "3": "anh chị em, lòng dũng cảm, nỗ lực tự thân",
+   "4": "nhà cửa, mẹ, đất đai, sự bình yên nội tâm",
+   "5": "học vấn, con cái, sức sáng tạo",
+   "6": "công việc hằng ngày, phụng sự, cạnh tranh, trở ngại",
+   "7": "nửa kia, hôn nhân, quan hệ hợp tác, công chúng",
+   "8": "chuyện ẩn khuất, nguồn lực chung, biến cố, chuyển hóa",
+   "9": "phúc vận, cha, thầy cô, niềm tin, những chuyến đi xa",
+   "10": "sự nghiệp, vai trò xã hội, uy tín",
+   "11": "thu hoạch, bạn bè, mạng lưới quan hệ, khát vọng",
+   "12": "chi tiêu, phương xa, ẩn dật, đời sống tâm linh"
+  },
+  "vedicConvention": {
+   "lagnaLists": "danh sách theo từng Cung Mọc trong BPHS chương 34",
+   "eighthLordGoodWith3711": "cách luận chủ tinh nhà 8 kiêm quản nhà 3, 7 hoặc 11 là cát",
+   "rajaEitherLord": "áp dụng BPHS 34.15 khi một trong hai chủ tinh kiêm quản nhà 6, 8 hoặc 12",
+   "rajaWith3And11": "cách luận tính thêm nhà 3 và nhà 11 trong BPHS 34.15",
+   "nodeStrongLord": "cách luận BPHS 34.17 đòi hỏi chủ tinh cung La Hầu / Kế Đô phải cường vượng",
+   "sadeSatiFromMoon": "xét tính cát hung của Sao Thổ tính từ cung Mặt Trăng",
+   "compoundFriendship": "quan hệ bạn – địch tổng hợp giữa các hành tinh (tính cả vị trí trên bản đồ sao)",
+   "neechaBhangaTwoConditions": "quy tắc cần đủ hai điều kiện để hóa giải lạc hãm",
+   "gajaKesariFromMoon": "cách luận Gaja-Kesarī chỉ tính từ Mặt Trăng",
+   "budhaAdityaCombustBreaks": "quy tắc Sao Thủy bị thiêu đốt sẽ phá vỡ cách cục Budha-Āditya",
+   "bandEdge": "điểm số nằm ngay ranh giới giữa hai mức đánh giá"
+  },
+  "vedicDignity": {
+   "exalted": "Vượng vị",
+   "moolatrikona": "Moolatrikona",
+   "ownSign": "Nhập miếu",
+   "friendly": "Cung bạn",
+   "neutral": "Trung tính",
+   "enemy": "Cung địch",
+   "debilitated": "Lạc hãm"
+  },
+  "ayanamsa": {
+   "lahiri": "Lahiri",
+   "raman": "Raman",
+   "krishnamurti": "Krishnamurti (KP)",
+   "faganBradley": "Fagan-Bradley",
+   "trueChitra": "True Chitra",
+   "yukteshwar": "Yukteshwar"
+  },
+  "vedic": {
+   "vargas": {
+    "label": "Lá số phân cung",
+    "d1": "D1 Bản mệnh",
+    "d9": "D9 Navamsa",
+    "d10": "D10 Dasamsa",
+    "moon": "Lá số Mặt Trăng"
+   },
+   "style": {
+    "label": "Kiểu lá số",
+    "north": "Bắc Ấn",
+    "south": "Nam Ấn"
+   },
+   "chartLabel": "Lá số {varga} kiểu {style}: Lagna {lagna}",
+   "foot": "Kiểu {style} · Hoàng đạo thiên văn · Tuế sai {ayanamsa} ({deg}) · Hệ Toàn cung · Số trong ô biểu thị thứ tự cung hoàng đạo",
+   "footSouth": "Kiểu Nam Ấn · Hoàng đạo thiên văn · Tuế sai {ayanamsa} ({deg}) · Vị trí 12 cung cố định, đường chéo đánh dấu Lagna (cung Mệnh)",
+   "conventions": "La Hầu và Kế Đô được tính theo {node}, chỉ xét góc chiếu tới cung thứ 7 tính từ vị trí của chúng (một trường phái khác tính thêm cả cung thứ 5 và thứ 9). Mỗi năm đại vận Vimśottarī và Yoginī đều tính bằng 365,25 ngày. Tính chất cát hung hậu thiên theo cung Mọc (Lagna) tuân theo nguyên tắc chung trong chương 34 bộ Bṛhat Parāśara Horā Śāstra (BPHS): chủ tinh các nhà 1, 5 và 9 là cát tinh; chủ tinh các nhà 3, 6, 8 và 11 là hung tinh trừ khi đồng thời chủ quản một nhà tam phương; Mặt Trời và Mặt Trăng không bị tính lỗi khi làm chủ nhà 8 (34.7), còn chủ tinh nhà 8 đồng thời chủ quản nhà 3, 7 hoặc 11 được tính là bất lợi (khớp với bảng liệt kê theo từng Lagna trong chương này); khi bảng theo từng Lagna (34.19–44) luận giải một hành tinh khác với nguyên tắc chung, cả hai cách luận đều được hiển thị. Các giai đoạn vận hạn được phân thành năm bậc dựa trên vai trò hậu thiên, vị trí nhà, trạng thái nhập miếu/lạc hãm, các hành tinh đồng cung và cách cục của chủ tinh (BPHS chương 34 và 48; Phaladīpikā chương 20), trong đó tiểu vận còn xét thêm vị trí so với hành tinh chủ đại vận (Phaladīpikā 20.29). Các cách cục (Yoga) hiển thị ở ba trạng thái thành cách, yếu hoặc bị phá: cách cục Rāja bị phá khi cả hai chủ tinh đều đồng thời chủ quản nhà 6, 8 hoặc 12 (BPHS 34.15), và yếu khi một hành tinh tham gia nằm ở nhà 6, 8 hoặc 12, bị lạc hãm, bị thiêu đốt hoặc thua trong giao chiến hành tinh; Gaja-Kesarī xét theo BPHS 36.3 (tính từ Lagna hoặc Mặt Trăng, có cát tinh đồng cung hoặc chiếu góc tới Sao Mộc, và bị phá khi lạc hãm, bị thiêu đốt hoặc rơi vào cung địch theo quan hệ bạn–thù tự nhiên trong BPHS chương 3); Budha-Āditya yếu khi Sao Thủy bị thiêu đốt; hóa giải lạc hãm áp dụng bất kỳ điều kiện nào trong Phaladīpikā 7.26–30; giao chiến hành tinh xét theo Sūrya Siddhānta 7.19–21 (trong vòng 1 độ, hành tinh ở phía bắc thắng). Sade Sati được phân bậc dựa trên số điểm cát của Sao Thổ tại cung quá cảnh (Phaladīpikā 26.41), trạng thái vượng/lạc hãm (26.31), góc chiếu của Sao Mộc (26.30) và vai trò của Sao Thổ đối với Lagna.",
+   "noLagna": "Không rõ giờ sinh nên không thể xác định Lagna và các nhà; bên dưới chỉ bày các hành tinh theo cung hoàng đạo.",
+   "nakshatraTitle": "Nakshatra Mặt Trăng",
+   "nakshatraName": "{latin} ({name}) · Pada {pada}",
+   "nakshatraBody": "Mặt Trăng ở {sign} {deg} · chủ tinh {lord}",
+   "nakshatraRing": "Vòng 27 Nakshatra: Mặt Trăng ở cung tú thứ {n}",
+   "dashaTitle": "Vimshottari Dasha",
+   "dashaCurrent": "Vận hiện tại: Đại vận {maha} ({mahaStart}–{mahaEnd}) · Tiểu vận {antar} ({antarStart}–{antarEnd})",
+   "dashaLabel": "Dòng thời gian Vimshottari Dasha",
+   "yogaTitle": "Cách cục (Yoga)",
+   "yogaNone": "Lá số này không hình thành cách cục (Yoga) cổ điển lớn nào.",
+   "yogaCancelled": "(bị phá)",
+   "yogaDetail": "{planets} · Nhà {houses}",
+   "lagna": "Lagna",
+   "columns": {
+    "graha": "Hành tinh",
+    "sign": "Cung",
+    "degree": "Độ",
+    "house": "Nhà",
+    "nakshatra": "Nakshatra",
+    "pada": "Pada",
+    "dignity": "Trạng thái",
+    "lord": "Chủ tinh",
+    "start": "Bắt đầu",
+    "end": "Kết thúc"
+   },
+   "ashtakavargaTitle": "Tổng điểm Ashtakavarga",
+   "readingLagna": "Lagna ở {lagna}, Mặt Trăng ở {moon}, thuộc Nakshatra {nakshatra} (Pada {pada}).",
+   "readingDasha": "Hiện đang trong đại vận {maha} và tiểu vận {antar}.",
+   "ayanamsaLabel": "Tuế sai",
+   "periodTitle": "Luận giải vận hạn hiện tại",
+   "periodMaha": "Đại vận: {lord} · {band}",
+   "periodAntar": "Tiểu vận: {lord} · {band}",
+   "periodTopics": "Chủ đề nổi bật: {topics}",
+   "periodReasons": "Căn cứ luận giải",
+   "periodBetween": "Cũng có thể luận là \"{band}\" ({reading})",
+   "sadeSatiLine": "{phase} · {grade}",
+   "sadeSatiFactors": "Các yếu tố ảnh hưởng mức độ",
+   "functionalTitle": "Các hành tinh theo Lagna",
+   "functionalHouses": "Nhà {houses}",
+   "functionalList": "Bảng theo Lagna: {nature}",
+   "yogaDecidedBy": "Căn cứ xác định: {conditions}",
+   "yogaOther": "Nếu xét theo \"{reading}\", cách cục này ở trạng thái \"{state}\"",
+   "yogaOtherAbsent": "Nếu xét theo \"{reading}\", cách cục này không được tính",
+   "warLine": "Giao chiến hành tinh: {winner} thắng {loser}",
+   "contested": "hai cách luận",
+   "chips": {
+    "functional": "{graha} · {nature}",
+    "periodMaha": "Đại vận {lord} · {band}",
+    "periodAntar": "Tiểu vận {lord} · {band}",
+    "sadeSati": "Sade Sati · {grade}",
+    "war": "Giao chiến {winner} / {loser}"
+   }
+  },
+  "hdType": {
+   "generator": "Người kiến tạo",
+   "manifestingGenerator": "Người kiến tạo hiển lộ",
+   "manifestor": "Người hiển lộ",
+   "projector": "Người phóng chiếu",
+   "reflector": "Người phản chiếu"
+  },
+  "hdStrategy": {
+   "generator": "Chờ để phản hồi",
+   "manifestingGenerator": "Chờ để phản hồi, rồi thông báo",
+   "manifestor": "Thông báo trước khi hành động",
+   "projector": "Chờ lời mời",
+   "reflector": "Chờ một chu kỳ trăng"
+  },
+  "hdAuthority": {
+   "emotional": "Cảm xúc (Đám rối mặt trời)",
+   "sacral": "Xương cùng",
+   "splenic": "Trực giác (Lá lách)",
+   "egoManifested": "Ý chí (hiển lộ)",
+   "egoProjected": "Ý chí (phóng chiếu)",
+   "selfProjected": "Tự phóng chiếu (Trung tâm G)",
+   "mental": "Tâm trí · môi trường",
+   "lunar": "Chu kỳ trăng"
+  },
+  "hdNotSelf": {
+   "frustration": "Bức bối",
+   "bitterness": "Cay đắng",
+   "anger": "Giận dữ",
+   "disappointment": "Thất vọng",
+   "frustrationAnger": "Bức bối và giận dữ"
+  },
+  "hdDefinition": {
+   "none": "Không định nghĩa",
+   "single": "Định nghĩa đơn",
+   "split": "Định nghĩa tách đôi",
+   "tripleSplit": "Định nghĩa tách ba",
+   "quadrupleSplit": "Định nghĩa tách bốn"
+  },
+  "hdCenter": {
+   "head": "Trung tâm Đầu",
+   "ajna": "Trung tâm Ajna",
+   "throat": "Trung tâm Cổ họng",
+   "g": "Trung tâm G",
+   "heart": "Trung tâm Tim (Ý chí)",
+   "spleen": "Trung tâm Lá lách",
+   "solarPlexus": "Trung tâm Cảm xúc",
+   "sacral": "Trung tâm Xương cùng",
+   "root": "Trung tâm Gốc"
+  },
+  "hdCrossAngle": {
+   "right": "Thập tự góc phải",
+   "juxtaposition": "Thập tự kề cận",
+   "left": "Thập tự góc trái"
+  },
+  "hdCircuit": {
+   "individual": "Mạch cá nhân",
+   "tribal": "Mạch bộ tộc",
+   "collective": "Mạch tập thể"
+  },
+  "hdLine": {
+   "1": "Nhà nghiên cứu",
+   "2": "Ẩn sĩ",
+   "3": "Người tử vì đạo",
+   "4": "Người nắm bắt cơ hội",
+   "5": "Người dị giáo",
+   "6": "Hình mẫu"
+  },
+  "hdSide": {
+   "personality": "Tính cách (ý thức)",
+   "design": "Thiết kế (vô thức)",
+   "both": "Cả hai"
+  },
+  "hdVariable": {
+   "determination": "Tiêu hóa",
+   "environment": "Môi trường",
+   "motivation": "Động lực",
+   "perspective": "Góc nhìn"
+  },
+  "hd": {
+   "graphLabel": "Biểu đồ cơ thể Bản đồ năng lượng (64 cổng, 36 kênh): kênh định nghĩa {channels}",
+   "graphLabelNone": "Biểu đồ cơ thể Bản đồ năng lượng (64 cổng, 36 kênh): không có kênh định nghĩa",
+   "design": "Thiết kế",
+   "personality": "Tính cách",
+   "legendPersonality": "Tính cách (ý thức)",
+   "legendDesign": "Thiết kế (vô thức)",
+   "legendBoth": "Vạch sọc = cả hai",
+   "rows": {
+    "type": "Loại hình",
+    "strategy": "Chiến lược",
+    "authority": "Thẩm quyền nội tại",
+    "profile": "Hồ sơ",
+    "definition": "Định nghĩa",
+    "cross": "Thập tự hóa thân",
+    "channels": "Kênh định nghĩa",
+    "notSelf": "Chủ đề phi ngã",
+    "openCenters": "Trung tâm mở",
+    "designTime": "Thời điểm thiết kế",
+    "variables": "Biến số (PHS)",
+    "circuits": "Mạch năng lượng"
+   },
+   "profileValue": "{profile} {a} / {b}",
+   "crossValue": "{angle} · {gates}",
+   "foot": "Thời điểm thiết kế tính theo góc Mặt Trời lùi 88° trước khi sinh · giao điểm thực · 13 thiên thể × 2",
+   "columns": {
+    "body": "Thiên thể",
+    "design": "Thiết kế",
+    "personality": "Tính cách",
+    "gate": "Cổng",
+    "center": "Trung tâm",
+    "side": "Kích hoạt"
+   },
+   "noTimeType": "Chưa rõ giờ sinh: Loại hình, Thẩm quyền nội tại, Hồ sơ và Thập tự hóa thân trong Bản đồ năng lượng có thể thay đổi trong ngày và cần có giờ sinh mới xác định được.",
+   "readingType": "Loại hình {type} (hồ sơ {profile}), với chiến lược là {strategy} và thẩm quyền nội tại là {authority}."
+  },
+  "numberKind": {
+   "lifePath": "Số đường đời",
+   "lifePathDigitSum": "Số đường đời (cộng từng chữ số)",
+   "birthday": "Số ngày sinh",
+   "expression": "Số biểu đạt",
+   "soulUrge": "Số linh hồn",
+   "personality": "Số nhân cách",
+   "maturity": "Số trưởng thành",
+   "universalYear": "Năm thế giới",
+   "personalYear": "Năm cá nhân",
+   "personalMonth": "Tháng cá nhân",
+   "personalDay": "Ngày cá nhân"
+  },
+  "numberMeaning": {
+   "1": "Độc lập · tiên phong",
+   "2": "Hợp tác · nhạy cảm",
+   "3": "Biểu đạt · sáng tạo",
+   "4": "Trật tự · vững vàng",
+   "5": "Tự do · thay đổi",
+   "6": "Trách nhiệm · chăm sóc",
+   "7": "Chiêm nghiệm · tìm tòi",
+   "8": "Sức mạnh · làm chủ",
+   "9": "Bác ái · trọn vẹn",
+   "11": "Số bậc thầy · trực giác",
+   "22": "Số bậc thầy · kiến tạo",
+   "33": "Số bậc thầy · phụng sự và dẫn dắt"
+  },
+  "loShuLine": {
+   "4-9-2": "Trục tư duy",
+   "3-5-7": "Trục cảm xúc",
+   "8-1-6": "Trục thực tế",
+   "4-3-8": "Trục kế hoạch",
+   "9-5-1": "Trục ý chí",
+   "2-7-6": "Trục hành động",
+   "4-5-6": "Trục quyết tâm",
+   "2-5-8": "Trục tâm linh"
+  },
+  "loShuStatus": {
+   "full": "Đầy đủ",
+   "partial": "Một phần",
+   "empty": "Trống"
+  },
+  "numerology": {
+   "eyebrow": "LẠC THƯ",
+   "title": "Cửu cung Lạc Thư",
+   "gridLabel": "Phân bố chữ số trên Cửu cung Lạc Thư: {counts}",
+   "foot": "{date} → {digits} · {missing} · đường màu vàng là các trục đầy đủ",
+   "missing": "thiếu {list}",
+   "missingNone": "đủ cả chín cung",
+   "lineRow": "{code} {name}",
+   "lineMissing": "thiếu {list}",
+   "coreTitle": "Các chỉ số cốt lõi",
+   "personalYear": "Năm cá nhân {year}",
+   "nameFoot": "Tên được quy đổi từ {scheme} ({latin}) theo bảng chữ cái Pythagoras: {letters} = {value}",
+   "scheme": {
+    "auto": "nhận diện tự động",
+    "latin": "chữ cái Latin",
+    "pinyin": "bính âm"
+   },
+   "noName": "Thêm họ tên hoặc tên thường gọi để tính Số biểu đạt, Số linh hồn và Số nhân cách.",
+   "columns": {
+    "number": "Số",
+    "count": "Số lần xuất hiện",
+    "line": "Trục",
+    "status": "Trạng thái",
+    "kind": "Chỉ số cốt lõi",
+    "value": "Giá trị"
+   },
+   "readingCore": "Số đường đời là {lifePath} ({meaning}), cùng Số biểu đạt là {expression}."
+  },
+  "cogFunction": {
+   "Ni": "Trực giác hướng nội",
+   "Ne": "Trực giác hướng ngoại",
+   "Si": "Giác quan hướng nội",
+   "Se": "Giác quan hướng ngoại",
+   "Ti": "Tư duy hướng nội",
+   "Te": "Tư duy hướng ngoại",
+   "Fi": "Cảm xúc hướng nội",
+   "Fe": "Cảm xúc hướng ngoại"
+  },
+  "types16Role": {
+   "dominant": "Chủ đạo",
+   "auxiliary": "Hỗ trợ",
+   "tertiary": "Thứ ba",
+   "inferior": "Thứ yếu"
+  },
+  "types16Letter": {
+   "E": "Hướng ngoại",
+   "I": "Hướng nội",
+   "S": "Giác quan",
+   "N": "Trực giác",
+   "T": "Tư duy",
+   "F": "Cảm xúc",
+   "J": "Nguyên tắc",
+   "P": "Linh hoạt",
+   "X": "Chưa xác định"
+  },
+  "enneagramCenter": {
+   "gut": "Trung tâm bản năng",
+   "heart": "Trung tâm cảm xúc",
+   "head": "Trung tâm tư duy"
+  },
+  "enneagramInstinct": {
+   "sp": "Tự bảo toàn",
+   "so": "Xã hội",
+   "sx": "Một đối một"
+  },
+  "bigFiveBand": {
+   "low": "Thấp",
+   "average": "Trung bình",
+   "high": "Cao",
+   "middle": "Trung bình"
+  },
+  "psych": {
+   "segments": {
+    "types16": "16 Tính cách",
+    "enneagram": "Enneagram",
+    "bigFive": "Big Five"
+   },
+   "emptyTitle": "Chưa hoàn thành bài trắc nghiệm nào",
+   "emptyBody": "Các bài trắc nghiệm phản ánh cách bạn nhìn nhận bản thân ở hiện tại — một tấm gương thú vị để đối chiếu cùng lá số bẩm sinh. Câu trả lời của bạn chỉ được lưu trên thiết bị này.",
+   "instruments": {
+    "quick12": "Ước tính nhanh · 12 câu",
+    "types16": "16 Nhóm tính cách · 48 câu",
+    "enneagram": "Enneagram · 54 câu",
+    "bigfive-ipip-neo-30": "Big Five · 30 câu"
+   },
+   "minutes": "khoảng {n} phút",
+   "start": "Bắt đầu",
+   "retake": "Làm lại",
+   "progress": "Câu {n} / {total}",
+   "prev": "Câu trước",
+   "next": "Câu tiếp",
+   "skip": "Bỏ qua",
+   "submit": "Nộp bài và chấm điểm",
+   "cancel": "Hủy",
+   "loadingItems": "Đang tải câu hỏi…",
+   "quickNote": "Bản rút gọn 12 câu chỉ phác họa nét khái quát — hãy làm bộ câu hỏi đầy đủ để có kết quả ổn định và đáng tin cậy hơn.",
+   "typeCard": "{code} · {name}",
+   "axesLabel": "16 Nhóm tính cách: bốn thanh trượt trục",
+   "stackTitle": "Thứ tự chức năng nhận thức",
+   "stackFoot": "{items} câu hỏi · được biên soạn độc lập dựa trên tám chức năng nhận thức của Jung (không liên quan đến các bài kiểm tra mang thương hiệu)",
+   "enneagramLabel": "Biểu đồ Enneagram: nhóm chính {type}, cánh {wing}",
+   "enneagramCard": "{label} · {instinct}",
+   "enneagramArrows": "Hướng phát triển {type} → {growth} (nét liền xanh) · hướng căng thẳng {type} → {stress} (nét đứt đỏ)",
+   "bigFiveTitle": "Phân vị Big Five",
+   "normLabel": "Phân vị theo chuẩn mực quốc tế (Johnson 2014 IPIP-NEO, N = {n})",
+   "normProvisional": "Chuẩn mực cho bản rút gọn chỉ mang tính tạm thời",
+   "domainRow": "{domain} {value}%",
+   "takeMore": "Làm thêm bài trắc nghiệm khác",
+   "estimate": "ước tính",
+   "columns": {
+    "axis": "Trục",
+    "value": "Giá trị",
+    "function": "Chức năng",
+    "role": "Vị trí",
+    "strength": "Độ mạnh",
+    "domain": "Yếu tố",
+    "percentile": "Phân vị",
+    "band": "Phân mức",
+    "type": "Nhóm",
+    "score": "Điểm"
+   }
+  },
+  "trigram": {
+   "qian": "Càn",
+   "dui": "Đoài",
+   "li": "Ly",
+   "zhen": "Chấn",
+   "xun": "Tốn",
+   "kan": "Khảm",
+   "gen": "Cấn",
+   "kun": "Khôn"
+  },
+  "trigramImage": {
+   "qian": "Trời",
+   "dui": "Đầm",
+   "li": "Lửa",
+   "zhen": "Sấm",
+   "xun": "Gió",
+   "kan": "Nước",
+   "gen": "Núi",
+   "kun": "Đất"
+  },
+  "ichingRelative": {
+   "sibling": "Huynh Đệ",
+   "offspring": "Tử Tôn",
+   "wealth": "Thê Tài",
+   "officer": "Quan Quỷ",
+   "parent": "Phụ Mẫu"
+  },
+  "ichingSpirit": {
+   "qinglong": "Thanh Long",
+   "zhuque": "Chu Tước",
+   "gouchen": "Câu Trần",
+   "tengshe": "Đằng Xà",
+   "baihu": "Bạch Hổ",
+   "xuanwu": "Huyền Vũ"
+  },
+  "ichingLine": {
+   "1": "Hào 1",
+   "2": "Hào 2",
+   "3": "Hào 3",
+   "4": "Hào 4",
+   "5": "Hào 5",
+   "6": "Hào 6"
+  },
+  "ichingMarker": {
+   "shi": "Thế",
+   "ying": "Ứng"
+  },
+  "ichingPalaceStage": {
+   "1": "Nhất Thế",
+   "2": "Nhị Thế",
+   "3": "Tam Thế",
+   "4": "Tứ Thế",
+   "5": "Ngũ Thế",
+   "pure": "Bát Thuần",
+   "wandering": "Du Hồn",
+   "returning": "Quy Hồn"
+  },
+  "ichingSeason": {
+   "wang": "Vượng",
+   "xiang": "Tướng",
+   "xiu": "Hưu",
+   "qiu": "Tù",
+   "si": "Tử"
+  },
+  "iching": {
+   "question": "Điều bạn muốn hỏi",
+   "questionPlaceholder": "Viết điều bạn đang băn khoăn (không bắt buộc — chỉ lưu trên trang này)",
+   "method": {
+    "label": "Cách gieo quẻ",
+    "coins": "Ba đồng xu · tự tay gieo sáu lần",
+    "time": "Lập quẻ theo thời điểm"
+   },
+   "toss": "Gieo hào {n}",
+   "tossHint": "Mỗi lần chạm sẽ gieo ba đồng xu ngẫu nhiên ngay trên thiết bị, lập từng hào từ hào 1 đến hào 6, từ dưới lên trên.",
+   "tossed": "Đã gieo {n} / 6",
+   "coinBack": "Sấp",
+   "coinFace": "Ngửa",
+   "castTime": "Lập quẻ lúc này",
+   "recast": "Gieo lại",
+   "primary": "Quẻ gốc",
+   "changed": "Quẻ biến",
+   "noChange": "Không có hào động",
+   "textTitle": "Lời quẻ · hào động",
+   "linesTitle": "Nạp Giáp · Lục Thân · Lục Thần",
+   "linesLabel": "Bảng Lục Hào Nạp Giáp",
+   "context": "{date} · Ngày {dayPillar} · {method}",
+   "methodName": {
+    "coins": "ba đồng xu",
+    "time": "theo thời điểm",
+    "manual": "nhập thủ công"
+   },
+   "foot": "Cung {palace} ({stage}) · Thế ở {shi}, Ứng ở {ying} · Tuần Không {kong}",
+   "lineRef": "{line} {relative}",
+   "columns": {
+    "position": "Hào",
+    "spirit": "Lục Thần",
+    "najia": "Nạp Giáp",
+    "relative": "Lục Thân",
+    "marker": "Thế/Ứng",
+    "moving": "Động"
+   },
+   "moving": "động",
+   "hexLabel": "Quẻ {name}: các hào từ dưới lên trên — {lines}",
+   "yang": "dương",
+   "yin": "âm",
+   "useNine": "Dụng Cửu",
+   "useSix": "Dụng Lục",
+   "loadingText": "Đang tải lời quẻ và lời hào…",
+   "note": "Quẻ tượng như tấm gương soi chiếu hoàn cảnh từ một góc nhìn khác, chứ không phải phán quyết bất biến.",
+   "placeNote": "Can chi ngày giờ gieo quẻ được tính theo múi giờ và giờ Mặt Trời thực tại {place}.",
+   "rendering": "Bản dịch hiện đại"
+  },
+  "capture": {
+   "palmTitle": "Xem chỉ tay cần chụp ảnh trong ứng dụng",
+   "faceTitle": "Xem tướng mặt cần chụp ảnh trong ứng dụng",
+   "body": "Phần xem chỉ tay và xem tướng mặt cần chụp bằng camera điện thoại trên ứng dụng. Các đường chỉ tay, đường nét và tỷ lệ khuôn mặt đều được nhận diện trực tiếp trên thiết bị — ảnh của bạn không rời khỏi điện thoại và không tải lên máy chủ nào. Phiên bản web hiện chưa hỗ trợ chụp ảnh.",
+   "selfOnly": "Tính năng xem chỉ tay và xem tướng mặt chỉ áp dụng cho hồ sơ của chính bạn, hiện chưa hỗ trợ chụp cho người khác.",
+   "disclaimer": "Xem chỉ tay và xem tướng mặt chỉ mang tính tham khảo bổ trợ nhẹ nhàng bên cạnh các lá số khác, không đưa ra nhận định về sức khỏe hay tuổi thọ.",
+   "cta": "Tải ứng dụng"
+  },
+  "sensitivity": {
+   "title": "Độ nhạy theo giờ sinh",
+   "loading": "Đang kiểm tra các thay đổi trong khoảng giờ sinh của bạn…",
+   "none": "Trong khoảng giờ sinh bạn đã nhập, các kết luận chính của lá số không bị ảnh hưởng.",
+   "window": "Khoảng thời gian: {window}",
+   "fieldRow": "{field}: {values}",
+   "changeAt": "chuyển thành {value} sau {time}",
+   "fields": {
+    "ascSign": "Cung Điểm Mọc",
+    "mcSign": "Cung Thiên Đỉnh",
+    "house": "Nhà của {point}",
+    "hourPillar": "Trụ giờ",
+    "mingGong": "Mệnh Cung Bát Tự",
+    "shenGong": "Thân Cung Bát Tự",
+    "strength": "Độ mạnh Nhật chủ",
+    "soulBranch": "Mệnh Cung Tử Vi",
+    "bodyBranch": "Thân Cung Tử Vi",
+    "bodyPalace": "Vị trí Thân Cung",
+    "mingStars": "Chính tinh Mệnh Cung",
+    "timeIndex": "Canh giờ",
+    "lagnaSign": "Lagna",
+    "lagnaNakshatra": "Lagna Nakshatra",
+    "lagnaPada": "Lagna Pada",
+    "moonPada": "Pada của Mặt Trăng",
+    "hdType": "Loại hình Bản đồ năng lượng",
+    "hdProfile": "Vai trò cuộc đời",
+    "hdCross": "Thập tự luân hồi",
+    "hdChannels": "Kênh xác định",
+    "hdCenters": "Trung tâm xác định",
+    "hdAuthority": "Thẩm quyền nội tại",
+    "gate": "Cổng {body} ({side})",
+    "line": "Hào {body} ({side})",
+    "yogas": "Cách cục Yoga",
+    "varga": "Lá số {varga}"
+   }
+  },
+  "bigFiveDomain": {
+   "openness": "Cởi mở",
+   "conscientiousness": "Tận tâm",
+   "extraversion": "Hướng ngoại",
+   "agreeableness": "Hòa nhã",
+   "neuroticism": "Bất ổn cảm xúc"
+  },
+  "seasonalState": {
+   "wang": "Vượng",
+   "xiang": "Tướng",
+   "xiu": "Hưu",
+   "qiu": "Tù",
+   "si": "Tử"
+  },
+  "rootKind": {
+   "lu": "Lộc",
+   "ren": "Dương Nhận",
+   "sameQi": "Bản khí",
+   "changSheng": "Trường Sinh",
+   "yuQi": "Dư khí",
+   "mu": "Mộ khố",
+   "jiSheng": "Ký sinh"
+  },
+  "strengthModifier": {
+   "floating": "Hư phù",
+   "meeting": "Tam hội",
+   "trine": "Tam hợp",
+   "halfTrine": "Bán hợp",
+   "clash": "Bị xung",
+   "dryEarth": "Táo thổ",
+   "wetEarth": "Thấp thổ",
+   "bound": "Hợp bán",
+   "transformed": "Hợp hóa"
+  },
+  "usefulGodReason": {
+   "strength": "Độ mạnh Nhật chủ",
+   "source": "Nguồn sức mạnh",
+   "candidate": "Ngũ hành dự chọn",
+   "absent": "Không có trong nguyên cục",
+   "climate": "Điều hậu",
+   "follow": "Tòng cách",
+   "transform": "Hóa cách",
+   "disease": "Bệnh dược",
+   "bridge": "Thông quan"
+  }
+ },
+ "site": {
+  "language": "Ngôn ngữ",
+  "brand": "Armilla",
+  "invitePageTitle": "Lời mời · Armilla",
+  "resultPageTitle": "Lá số đôi của hai bạn · Armilla",
+  "loading": "Đang mở…",
+  "openApp": "Đã có Armilla? Mở trong ứng dụng",
+  "afterInstall": "Cài xong, hãy quay lại đây và chạm “Mở trong ứng dụng” thêm một lần nữa.",
+  "orWeb": "Không muốn cài cũng không sao — bạn có thể điền ngay trên trang này.",
+  "inApp": "Trình duyệt này có thể không mở được ứng dụng. Hãy chạm vào ··· ở góc trên bên phải rồi chọn mở bằng trình duyệt.",
+  "retry": "Thử lại",
+  "offline": "Có vẻ bạn đang mất kết nối mạng. Hãy kiểm tra lại rồi thử lần nữa.",
+  "learnMore": "Tìm hiểu về Armilla",
+  "storesTitle": "Tải Armilla",
+  "storeComingSoon": "Sắp ra mắt",
+  "keepInAppTitle": "Giữ kết quả này trong ứng dụng",
+  "keepInAppBody": "Cài Armilla rồi mở lại chính đường liên kết kết quả này trong ứng dụng (hoặc chạm “Mở trong ứng dụng” bên dưới). Sau khi bạn đăng ký, lá số đôi này sẽ xuất hiện trong mục Kết nối. Đường liên kết kết quả có hiệu lực trong 30 ngày.",
+  "placeSearching": "Đang tìm…",
+  "placeNoResults": "Không tìm thấy “{query}”.",
+  "dateKindNote": "Ngày theo Tứ Trụ (can chi) cần được quy đổi trong ứng dụng hoặc trên bản web; ở đây, bạn vui lòng nhập theo dương lịch hoặc âm lịch.",
+  "footerNote": "Armilla mô tả những khuynh hướng và chu kỳ để bạn tự soi chiếu bản thân; không dự đoán sự việc cụ thể và không thay thế cho lời khuyên chuyên môn.",
+  "privacy": "Chính sách quyền riêng tư",
+  "terms": "Điều khoản sử dụng",
+  "support": "Trợ giúp và hỗ trợ",
+  "report": "Báo cáo liên kết này",
+  "reportSubject": "Báo cáo một liên kết mời của Armilla",
+  "familyPageTitle": "Tham gia gói Gia đình · Armilla",
+  "familyJoinBody": "Để tham gia gói Gia đình, bạn cần có tài khoản Armilla, vì vậy hãy mở lời mời này trong ứng dụng: nếu đã cài Armilla, hãy chạm vào nút bên dưới; nếu chưa, hãy tải ứng dụng, đăng nhập rồi chạm lại vào đường liên kết mời. Liên kết chỉ dùng được một lần, trong vòng 7 ngày.",
+  "eyebrowFamily": "GIA ĐÌNH",
+  "eyebrowSixRings": "SÁU KHÍA CẠNH",
+  "eyebrowSystems": "CÁC HỆ THỐNG",
+  "eyebrowDate": "NGÀY SINH",
+  "eyebrowTime": "GIỜ SINH",
+  "eyebrowPlace": "NƠI SINH",
+  "eyebrowForCalculation": "THÔNG TIN DÙNG ĐỂ TÍNH"
+ }
+}
