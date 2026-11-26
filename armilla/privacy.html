@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en" data-title-zh-hans="隐私政策 - 璇玑" data-title-zh-hant="隱私權政策｜璇璣 Armilla" data-title-en="Armilla Privacy Policy · Version 1.6">
+<html lang="en" data-title-zh-hans="隐私政策 - 璇玑" data-title-zh-hant="隱私權政策｜璇璣 Armilla" data-title-en="Armilla Privacy Policy · Version 1.7">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Armilla Privacy Policy · Version 1.6</title>
+  <title>Armilla Privacy Policy · Version 1.7</title>
   <meta name="description" content="How Armilla (璇玑) handles your information: what stays on your device, what is encrypted, who processes what, how long it is kept, and how to export or delete it.">
   <link rel="canonical" href="https://arcturatech.com/armilla/privacy">
   <meta name="theme-color" content="#EDEFF1" media="(prefers-color-scheme: light)">
@@ -18,20 +18,19 @@
 </head>
 <body>
 <!--
-  Armilla Privacy Policy — v1.6 (WP-354, effective 2026-11-21; publish-ready, not published by WP-354).
-  v1.6 = v1.5 with AI processing described in general terms (the owner, 2026-11-20: no AI company named, no per-feature
-  table): the opening pointer, the short version's AI sentence, §6 (the first three paragraphs; palm & face "Separate
-  consent" and "Analysis"), §8 (one row for AI service providers in place of the company rows; the table "Which company
-  each AI feature uses now", its paragraph and its live lookup — assets/ai-providers.js, CSP connect-src — removed), §14
-  (the first paragraph, the 1.1 / 1.3 / 1.4 / 1.5 history items, the 1.6 item). Every changed passage and the three cells of
-  §8's row are Gemini 4 Argon's, placed unchanged (docs/eng/reports/WP-354.md; request and answer in
-  docs/eng/reports/WP-354/, node docs/eng/reports/WP-354/land.mjs --check). Data by WP-354: the version lines and dates.
-  v1.5 is archived as privacy-1.5.html. A later version: archive this file as privacy-1.6.html (canonical privacy-1.6,
-  noindex) and write the new publication date into the version line and the new history entry.
+  Armilla Privacy Policy — v1.7 (WP-414, effective 2026-11-26; publish-ready, not published by WP-414).
+  v1.7 = v1.6 with the install-source record of growth.installSource (WP-402, decision M-2 = B), described with four
+  facts (docs/eng/reports/WP-414/requests/context-3.md): §3 (the paragraph before the list; the Usage data item and a
+  new item "Install attribution"), §14 (the 1.7 history item), the opening pointer. Every changed passage is Gemini 4
+  Argon's, placed unchanged (requests, answers and placement in docs/eng/reports/WP-414/,
+  node docs/eng/reports/WP-414/land.mjs --check). Data by WP-414: the version number (title, version line, zh-Hans
+  note) and the date slot — on the day of publishing: node docs/eng/reports/WP-414/land.mjs --date YYYY-MM-DD
+  (build.mjs --check refuses the slot until then). v1.6 is archived as privacy-1.6.html. A later version: archive this
+  file as privacy-1.7.html (canonical privacy-1.7, noindex) and write the new publication date into the version line
+  and the new history entry.
   History: v1.0 WP-116 (2026-11-11), v1.1 WP-127 (D-42), v1.2 WP-140 (D-44), v1.3 WP-236 (2026-11-17), v1.4 WP-342
-  (2026-11-20), v1.5 WP-349 (2026-11-21). The rest of the text is v1.5's (and, before it, v1.4's / v1.3's: the whole text
-  written by Gemini from docs/store/privacy/app-privacy.md §0). Provided in ENGLISH ONLY: the zh-Hans / zh-Hant views
-  show this English article under one line in their language (Gemini's).
+  (2026-11-20), v1.5 WP-349 (2026-11-21), v1.6 WP-354 (2026-11-21). The rest of the text is v1.6's. Provided in
+  ENGLISH ONLY: the zh-Hans / zh-Hant views show this English article under one line in their language (Gemini's).
 -->
 <a class="skip" href="#main"><span data-l="zh-Hans">跳到正文</span><span data-l="zh-Hant">跳到正文</span><span data-l="en">Skip to content</span></a>
 <header class="top">
@@ -54,12 +53,12 @@
 <div class="wrap">
 
 <article class="prose" lang="en">
-  <div class="note" data-l="zh-Hans" lang="zh-Hans"><p>以下《隐私政策》（1.6 版）仅提供英文版本，如有任何疑问，请联系 privacy@arcturatech.com。</p></div>
+  <div class="note" data-l="zh-Hans" lang="zh-Hans"><p>以下《隐私政策》（1.7 版）仅提供英文版本，如有任何疑问，请联系 privacy@arcturatech.com。</p></div>
   <div class="note" data-l="zh-Hant" lang="zh-Hant"><p>以下《隱私權政策》僅提供英文版；若對內容有任何疑問，歡迎來信至 privacy@arcturatech.com 與我們聯繫。</p></div>
   <p class="eyebrow">PRIVACY POLICY</p>
 <h1>Armilla Privacy Policy</h1>
-<p class="doc-meta">Version 1.6 · Effective 2026-11-21</p>
-<p>This Privacy Policy explains how personal information is handled across Armilla: the Armilla app for iPhone (which can also be installed on iPad as an iPhone app), including its App Clip for opening invitations without installing the app; the Armilla app for Android phones; the web app at armilla.arcturatech.com; the product, legal, and invitation pages at arcturatech.com/armilla; and the services behind them (hosted on Supabase in Singapore). One Armilla account and one membership work across iPhone, Android, and the web. You can open this page at any time in the app under <strong>Me → About → Terms &amp; privacy</strong>. This policy is provided in English only. If you read version 1.5, Section 14 lists what changed in version 1.6.</p>
+<p class="doc-meta">Version 1.7 · Effective 2026-11-26</p>
+<p>This Privacy Policy explains how personal information is handled across Armilla: the Armilla app for iPhone (which can also be installed on iPad as an iPhone app), including its App Clip for opening invitations without installing the app; the Armilla app for Android phones; the web app at armilla.arcturatech.com; the product, legal, and invitation pages at arcturatech.com/armilla; and the services behind them (hosted on Supabase in Singapore). One Armilla account and one membership work across iPhone, Android, and the web. You can open this page at any time in the app under <strong>Me → About → Terms &amp; privacy</strong>. This policy is provided in English only. If you read version 1.6, Section 14 lists what changed in version 1.7.</p>
 <div class="note"><p><strong>The short version:</strong> You can use Armilla without an account, or turn on <strong>Local-only mode</strong> so nothing leaves your device. When you sign in, birth details are stored with field-level encryption (AES-256-GCM), while journal text, life-event notes, life-event photos, Ask memories, and Pro client notes are end-to-end encrypted on your devices — we cannot read or see them. AI features require a signed-in account and are processed by third-party AI service providers acting on our behalf through their paid APIs; none of them may use what we send to train or improve its models, and palm &amp; face photos and readings are handled only by the provider that reads the photos and never passed to another provider. Palm and face photo uploads require a separate, explicit consent. We never sell or rent your personal information, show no ads, and use no third-party analytics or tracking tools. You can export your data or delete single items or your entire account at any time in <strong>Me → Privacy &amp; data</strong>.</p></div>
 
   <nav aria-label="Contents">
@@ -98,7 +97,7 @@
 <p>You can turn on <strong>Local-only mode</strong> at <strong>Me → Privacy &amp; data → Local mode</strong>. When it is on, the app sends no business requests at all: cloud sync, AI features, invitations, the Family plan, purchases, and usage statistics all stop, while everything stored on your device continues to work locally.</p>
 <p>If you are signed in when you turn on Local-only mode, you choose between two options: <strong>"pause sync and sign out (your cloud data is kept)"</strong> or <strong>"delete cloud data"</strong> (which deletes your cloud data in the same way as deleting your account under Section 11). Either way, any profiles that other people shared with you are removed from that device, because a withdrawal by them can only reach your device through sync.</p>
 <h2 id="en-3">3. What information we collect</h2>
-<p>Everything collected when you sign in or use online features is linked to your account. None of it is used for advertising or combined with data from other companies.</p>
+<p>Everything collected when you sign in or use online features is linked to your account. None of it is used to show ads or combined with data from other companies; the only advertising-related use is measuring, in aggregate, which of our own campaigns bring people who go on to use Armilla.</p>
 <ul>
 <li><strong>Account information:</strong> Your e-mail address and an internal account number. You can sign in with <strong>Apple</strong> (which may provide a relay e-mail address), with <strong>Google</strong>, or with a six-digit code we e-mail to you. The sign-in code e-mail is sent from our company mailbox through <strong>Google's Gmail</strong> (Section 8), which handles your e-mail address and the code in order to deliver it. We never receive your Apple or Google password.</li>
 <li><strong>Birth details:</strong> Birth date, birth time, birthplace, how sure you are of the time, and the sex used for the calculation — for you and for people you add. On our server they are stored with field-level encryption (<strong>AES-256-GCM</strong>), with the encryption keys kept separate from the database. Only a small number of server functions decrypt them (chart calculation, listing your profiles, generating your data export, and birth-time inference), and every decryption is written to an audit record.</li>
@@ -112,7 +111,8 @@
 <li><strong>Purchases and entitlements:</strong> Store transaction numbers, product, dates, and status (from Apple App Store, Google Play, or on the web through <strong>Stripe</strong>). We never see your payment card details. Free membership periods (for example from an invitation) are stored as entitlement records, not purchases. For web payments disputed with your bank, we keep a dispute record (Section 10). You can review your plan and purchases at <strong>Me → Membership &amp; purchases</strong> (<strong>Plan</strong>, <strong>Family members</strong>, <strong>My purchases</strong>).</li>
 <li><strong>Devices and notifications:</strong> The push token registered for notifications (Apple APNs on iPhone / Google FCM on Android) and a record of the notifications we queued or sent (type and date only, with no message text), kept for 90 days.</li>
 <li><strong>Preferences that follow you across devices:</strong> Chart settings, display density, your daily reminder settings, accuracy weights, the home screen you chose, and up to the three profiles you looked at most recently.</li>
-<li><strong>Usage data:</strong> Our own usage events — only fixed codes, counts, yes/no values, and durations, never anything you typed and never birth details. Usage data is off by default in the EU / EEA, the UK, and Switzerland until you agree; on by default elsewhere (the region comes from your device or browser language settings); and never collected in Local-only mode. Switch: <strong>Me → Privacy &amp; data → Usage data</strong>. We use no third-party analytics, crash-reporting, or advertising tools.</li>
+<li><strong>Usage data:</strong> Our own usage events — only fixed codes, counts, yes/no values, and durations, never anything you typed and never birth details. Usage data is off by default in the EU / EEA, the UK, and Switzerland until you agree; on by default elsewhere (the region comes from your device or browser language settings); and never collected in Local-only mode. Switch: <strong>Me → Privacy &amp; data → Usage data</strong>. We use no third-party analytics, crash-reporting, or ad-tracking tools.</li>
+<li><strong>Install attribution:</strong> When usage data is on, we record once per installation which of our own advertisements or links led to the install — campaign-level codes from Apple's and Google's own install-attribution services, or the campaign parameters of the link — to see, in aggregate, which campaigns bring people who go on to use Armilla. No advertising identifier is read, no tracking permission is asked, and the record is not combined with other companies' data or used to show ads. It follows the same <strong>Usage data</strong> switch and is kept and deleted on the same terms as other usage data.</li>
 <li><strong>Security records:</strong> To prevent abuse, public endpoints (such as the invitation page) store a one-way cryptographic hash of the visitor's IP address, using a salt that changes daily, for at most 8 days; it cannot be turned back into the IP address.</li>
 <li><strong>E-mails you send us:</strong> Your e-mail address and what you write to us.</li>
 </ul>
@@ -245,6 +245,7 @@
 <li><strong>Version 1.4 (2026-11-20):</strong> Removed age tiers and all age-based limits: Armilla no longer calculates or checks anyone's age from birth details or stores an age band; removed the under-13 device-only mode and account pause, the 13–17 limits, and the 18+ condition on <strong>Ask Armilla</strong>, AI readings and analyses, <strong>AI palm &amp; face reading</strong> (which remains limited to the account holder's own hands and face), and <strong>Birth-time inference</strong>; minors' profiles are no longer excluded from AI features or share images, and data is no longer deleted because a profile or account is a minor's; <strong>Usage data</strong> now uses the same regional defaults for every account; Section 12 now states only that Armilla is for people aged 13 and over (the App Store and Google Play age rating); and Section 8's published fallback now shows the assignment on 2026-11-20 (one AI provider for every feature).</li>
 <li><strong>Version 1.5 (2026-11-21):</strong> Added a third AI provider alongside the existing two, including its no-training and data-retention terms (the short version, Section 6, and Section 8); described automatic per-request fallback to a backup provider when the provider handling a feature cannot take a request, while keeping palm &amp; face photos and readings — as well as Ask questions and birth-time inferences that use palm &amp; face observations — exclusively with the provider that reads the photos with no backup; added a backup-provider column to the Section 8 table and updated that day's published provider assignment across features; and updated Section 14 to reflect moving features or falling back among the providers.</li>
 <li><strong>Version 1.6 (2026-11-21):</strong> Described AI processing in general terms as third-party AI service providers acting on our behalf, without naming individual AI companies (the short version, Section 6, Section 8, Section 14, and the version history); replaced the individual AI provider rows in Section 8 with a single row for AI service providers and removed the per-feature provider table and its live server lookup; removed the separate AI notice from the sign-in screen (Section 6), as signing in means agreeing to the Terms and this policy; and updated the palm &amp; face consent description to refer to the provider generally without re-prompting people who had already agreed.</li>
+<li><strong>Version 1.7 (2026-11-26):</strong> When usage data is on, Armilla now records once per installation which of our own campaigns or links led to the install (using Apple's and Google's own install-attribution services or link campaign parameters, without reading advertising identifiers or asking for tracking permission) to see in aggregate which campaigns bring people who go on to use Armilla (Section 3).</li>
 </ul>
 <h2 id="en-15">15. Contact</h2>
 <p><strong>Arctura Technologies Inc.</strong><br>Privacy inquiries and rights requests: <a href="mailto:privacy@arcturatech.com">privacy@arcturatech.com</a><br>Product help: <a href="mailto:support@arcturatech.com">support@arcturatech.com</a></p>
