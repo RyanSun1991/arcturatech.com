@@ -37,10 +37,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* one language at a time once lang.js has chosen; all three without JavaScript */
+/* one language at a time once lang.js has chosen; all of them without JavaScript (WP-415: the five new languages of
+   the generated pages too — a page that does not hold one shows its chain's, so data-lang is never one it lacks) */
 html[data-lang="zh-Hans"] [data-l]:not([data-l="zh-Hans"]),
 html[data-lang="zh-Hant"] [data-l]:not([data-l="zh-Hant"]),
-html[data-lang="en"] [data-l]:not([data-l="en"]) {
+html[data-lang="en"] [data-l]:not([data-l="en"]),
+html[data-lang="ja"] [data-l]:not([data-l="ja"]),
+html[data-lang="ko"] [data-l]:not([data-l="ko"]),
+html[data-lang="vi"] [data-l]:not([data-l="vi"]),
+html[data-lang="fr"] [data-l]:not([data-l="fr"]),
+html[data-lang="es"] [data-l]:not([data-l="es"]) {
   display: none !important;
 }
 
